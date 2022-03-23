@@ -21,7 +21,7 @@
 .sb-title h1 {
     color: #fff;
     font-size: 22px;
-    font-family: 'SBAggroB';
+    font-family: 'SBAggroM';
     text-align: center;
     padding: 25px;
 }
@@ -57,7 +57,7 @@
 .sb-price h2 {
     color: #333;
     font-size: 32px;
-    font-family: 'SBAggroB';
+    font-family: 'SBAggroM';
 }
 
 .sb-price h2 span {
