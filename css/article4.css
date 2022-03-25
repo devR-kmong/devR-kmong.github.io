@@ -44,15 +44,26 @@
     align-items: center;
 }
 
-.review-title-top h1 {
+.review-name {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.review-name img {
+    width: 50px;
+    border-radius: 100px;
+}
+
+.review-name h1 {
     color: #333;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .review-sub-title h5 {
     color: #333;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 17px;
+    font-weight: 400;
 }
 
 .review-star {
@@ -69,12 +80,20 @@
 }
 
 .review-info p {
-    color: #222;
-    font-size: 15px;
+    color: #333;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 25px;
+    font-family: 'Pretendard-Light';
+    line-height: 23px;
     text-align: left;
+    transform: rotate(0) !important;
 }
 
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
 
 /*==================================================*/

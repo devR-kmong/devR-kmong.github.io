@@ -35,6 +35,10 @@
     letter-spacing: -0.02em !important;
 }
 
+.article-title a:hover {
+    color: #006eff;
+    text-decoration: underline;
+}
 
 /*==================================================*/
 @media (max-width: 1450px) {

@@ -56,9 +56,18 @@
     letter-spacing: 0 !important;
 }
 
-.phone {
+.owl-dots {
+    display: none;
+}
+
+.carousel {
+    width: 390px;
     position: absolute;
     bottom: -100px; right: 0;
+}
+
+.owl-item {
+    width: 100%;
 }
 
 
@@ -83,7 +92,7 @@
         width: 100%;
     }
 
-    .phone {
+    .carousel {
         position: unset;
     }
 }
