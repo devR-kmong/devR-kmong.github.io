@@ -131,3 +131,10 @@
         line-height: 27px;
     }
 }
+
+
+@media (max-width: 406px) {
+    .carousel {
+        width: 100%;
+    }
+}
