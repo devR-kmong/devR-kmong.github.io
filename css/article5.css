@@ -63,7 +63,7 @@
 .carousel {
     width: 390px;
     position: absolute;
-    bottom: -100px; right: 0;
+    bottom: -101px; right: 0;
 }
 
 .owl-item {
