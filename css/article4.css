@@ -1,0 +1,39 @@
+.article4 {
+    background-color: #e6f5ff;
+}
+
+.a4-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.a4-box {
+    width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+    text-align: center;
+}
+
+.a4-box h1 {
+    color: #222;
+    font-size: 33px;
+    margin-bottom: .5rem;
+}
+
+.a4-box p {
+    color: #222;
+    font-size: 17px;
+}
+
+.a4-notice ul li {
+    list-style: circle;
+    padding: 4px 0;
+}
+
+
+/*==================================================*/

@@ -1,0 +1,35 @@
+.article2 {
+    background-color: #ffe6ef;
+}
+
+.a2-box {
+    width: 500px;
+    padding: 40px 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a2-box-info h1 {
+    color: #222;
+    font-size: 24px;
+    margin-bottom: .5rem;
+}
+
+.a2-box-info h3 {
+    color: #222;
+    font-size: 18px;
+    font-family: 'notokr-regular';
+    font-weight: normal;
+    margin-bottom: .4rem;
+}
+
+.a2-box-info p {
+    color: #222;
+    font-size: 16px;
+}
+
+/*==================================================*/

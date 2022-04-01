@@ -1,0 +1,28 @@
+.article5 {
+    background: url(../images/a5-bg.jpg);
+}
+
+.a5-notice ul li {
+    list-style: disc;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'NanumSquare';
+    letter-spacing: -0.01em !important;
+    padding: 10px 0;
+}
+
+.a5-notice h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.01em !important;
+    margin-top: 2rem;
+}
+
+.a5-notice span {
+    font-size: 45px;
+    font-style: italic;
+}
+
+/*==================================================*/

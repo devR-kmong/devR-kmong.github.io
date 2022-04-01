@@ -1,0 +1,48 @@
+.a1-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1-sub-title {
+    color: #444;
+    font-size: 17px;
+    font-family: 'notokr-bold';
+    margin-bottom: 1rem;
+}
+
+.a1-box {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: #ffd3e3;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a1-box h1 {
+    color: #fc357e;
+    font-size: 30px;
+    font-family: 'Poppins';
+}
+
+.a1-box h3 {
+    color: #1f1f1f;
+}
+
+.a1-wrapper ul li {
+    color: #333;
+    padding: 3px 0;
+    list-style-type: circle;
+}
+
+.a1-notice {
+    margin-top: 2rem;
+}
+
+
+/*==================================================*/

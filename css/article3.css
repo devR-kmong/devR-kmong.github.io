@@ -1,0 +1,32 @@
+.a3-location {
+    display: flex;
+    gap: 1rem;
+}
+
+.a3-location h1 {
+    color: #108567;
+    width: 150px;
+    height: 150px;
+    font-size: 24px;
+    font-family: 'notokr-black';
+    padding-top: 56px;
+    text-align: center;
+    background-color: #d3fff4;
+    border-radius: 50%;
+}
+
+.a3-sub {
+    color: #555;
+    font-size: 20px;
+    font-family: 'notokr-regular';
+    margin: 2rem 0;
+}
+
+.article3 ul li {
+    list-style: circle;
+    color: #333;
+    padding: 3px 0;
+}
+
+
+/*==================================================*/
