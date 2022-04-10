@@ -1,0 +1,98 @@
+#complex-tab {
+    width: 100%;
+}
+
+#complex-tab input {
+    display: none;
+}
+
+.tabBtn-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tabBtn-wrapper label {
+    display: block;
+}
+
+.tabBtn {
+    flex: 1;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .3);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.tabBtn:hover {
+    background-color: rgba(255, 255, 255, .025);
+}
+
+.tabBtn h3 {
+    color: #aaa;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.tab-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    display: none;
+}
+
+#first:checked ~ .ti1 {display: flex; justify-content: center; align-items: center;}
+#second:checked ~ .ti2 {display: flex; justify-content: center; align-items: center;}
+
+#first:checked ~ .tabBtn-wrapper > .tabBtn:nth-child(1) {background-color: rgba(255, 255, 255, .025);}
+#second:checked ~ .tabBtn-wrapper > .tabBtn:nth-child(2) {background-color: rgba(255, 255, 255, .025);}
+
+#first:checked ~ .tabBtn-wrapper > .tabBtn:nth-child(1) h3 {color: var(--main-color);}
+#second:checked ~ .tabBtn-wrapper > .tabBtn:nth-child(2) h3 {color: var(--main-color);}
+
+
+
+.tab-box-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.tab-box {
+    flex: 1;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, .025);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.tab-box:hover {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.tab-box h1 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: .3rem;
+}
+
+.tab-box h4 {
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: .7rem;
+}
+
+.tab-box p {
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 200;
+}

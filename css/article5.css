@@ -1,0 +1,25 @@
+.a5-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.a5-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.a5-box img {
+    width: 205px;
+    transition: all .3s;
+}
+
+.a5-box img:hover {
+    transform: scale(1.15);
+}

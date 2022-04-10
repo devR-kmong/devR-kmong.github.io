@@ -1,0 +1,56 @@
+.a1-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.a1-box-wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.a1-box {
+    flex: 1;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, .025);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    transition: all .3s;
+}
+
+.a1-box:hover {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.a1-box-image ion-icon {
+    color: var(--main-color);
+    font-size: 70px;
+}
+
+.a1-box-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.a1-box-info h1 {
+    color: #fff;
+    font-size: 22px;
+}
+
+.a1-box-info p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 25px;
+}
