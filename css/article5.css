@@ -9,7 +9,6 @@
 
 .a5-box {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 4rem;
@@ -22,4 +21,38 @@
 
 .a5-box img:hover {
     transform: scale(1.15);
+}
+
+
+/*==================================================*/
+@media (max-width: 1070px) {
+    .a5-wrapper {
+        gap: 3rem;
+    }
+
+    .a5-box {
+        gap: 3rem;
+    }
+
+    .a5-box img {
+        width: 155px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .a5-box {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 415px) {
+    .a5-wrapper, .a5-box {
+        gap: 2rem;
+    }
+
+    .a5-box img {
+        width: 103px;
+    }
 }

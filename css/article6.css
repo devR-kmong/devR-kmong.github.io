@@ -44,3 +44,46 @@
     font-size: 17px;
     line-height: 25px;
 }
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .a6-image {
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a6-box-wrapper {
+        gap: 1rem;
+    }
+    
+    .a6-box {
+        gap: .5rem;
+    }
+
+    .a6-info p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .a6-image {
+        height: 60px;
+        border-radius: 10px;
+    }
+
+    .a6-image img {
+        opacity: .7;
+        border-radius: 10px;
+    }
+
+    .a6-info p {
+        font-size: 12px;
+        line-height: 15px;
+        word-break: break-all !important;
+    }
+}

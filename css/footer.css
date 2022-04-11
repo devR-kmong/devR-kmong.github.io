@@ -81,3 +81,68 @@ footer {
     display: flex;
     width: 100px;
 }
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .footer-top {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        padding: 40px 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        background-color: #080808;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+
+    .empty {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .footer-top {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding: 40px 20px;
+    }
+
+    .footer-bottom {
+        padding: 20px;
+    }
+
+    .logo-f {
+        width: 75px;
+    }
+
+    .footer-box {
+        gap: 0;
+    }
+
+    .footer-list {
+        gap: .5rem;
+    }
+
+    .footer-list li {
+        font-size: 13px;
+    }
+}
