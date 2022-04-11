@@ -58,6 +58,16 @@
     background-color: var(--main-color);
 }
 
+.pBtn-wrapper a span {
+    color: #eee;
+    margin-left: 3rem;
+    transition: all .3s;
+}
+
+.pBtn-wrapper a span:hover {
+    color: var(--main-color);
+}
+
 .p-image {
     display: flex;
     flex-direction: column;

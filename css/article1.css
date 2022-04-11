@@ -30,7 +30,7 @@
     background-color: rgba(255, 255, 255, .05);
 }
 
-.a1-box-image ion-icon {
+.a1-box-image i {
     color: var(--main-color);
     font-size: 70px;
 }
