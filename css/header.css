@@ -50,7 +50,7 @@ nav ul {
 
 nav ul li a {
     color: #fff;
-    letter-spacing: -0.02em;
+    font-family: 'Anek Tamil';
     transition: all .3s;
 }
 
@@ -86,7 +86,7 @@ nav ul a li:hover {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     header {
         height: 75px;
     }

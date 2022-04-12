@@ -21,7 +21,9 @@
 
 .p-text h1 {
     color: #fff;
-    font-size: 55px;
+    font-size: 60px;
+    line-height: 70px;
+    font-family: 'Anek Tamil';
     margin-bottom: 1rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
@@ -44,7 +46,8 @@
     width: 150px;
     height: 45px;
     color: #050915;
-    font-size: 14px;
+    font-size: 15px;
+    font-family: 'Anek Tamil';
     font-weight: 600;
     background-color: #fff;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
@@ -110,6 +113,7 @@
 @media (max-width: 630px) {
     .p-text h1 {
         font-size: 40px;
+        line-height: 52px;
     }
 
     .p-text p {
