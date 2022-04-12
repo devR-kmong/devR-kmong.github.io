@@ -16,7 +16,7 @@
     position: relative;
     width: 48%;
     padding: 20px;
-    background-color: #000a12;
+    background-color: #0516226e;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
 }
 
@@ -35,7 +35,8 @@
     width: 16px;
     height: 16px;
     display: block;
-    background-color: #000a12;
+    border-radius: 50%;
+    background-color: #0516226e;
     transform: rotate(45deg);
 }
 
@@ -46,7 +47,8 @@
     width: 16px;
     height: 16px;
     display: block;
-    background-color: #000a12;
+    border-radius: 50%;
+    background-color: #0516226e;
     transform: rotate(45deg);
 }
 
