@@ -83,4 +83,11 @@
         gap: .3rem;
     }
 
+    .floating {
+        bottom: 20px; right: 20px;
+    }
+
+    .top-ico {
+        width: 30px;
+    }
 }
