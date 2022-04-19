@@ -23,14 +23,14 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #222;
     font-size: 17px;
     font-weight: 500;
     letter-spacing: -0.0625em;
 }
 
 nav ul a li {
-    color: #fff;
+    color: #222;
     font-size: 17px;
     font-weight: 500;
     letter-spacing: -0.0625em;
@@ -107,14 +107,14 @@ nav ul a li {
     .bar1, .bar2, .bar3 {
         width: 24px;
         height: 2px;
-        background-color: #fff;
+        background-color: #222;
         margin: 6px 0;
       }
       
       .change .bar1 {
         -webkit-transform: rotate(-45deg) translate(-5px, 2px);
         transform: rotate(-45deg) translate(-5px, 2px);
-        background-color: #fff;
+        background-color: #222;
       }
       
       .change .bar2 {opacity: 0;}
@@ -122,7 +122,7 @@ nav ul a li {
       .change .bar3 {
         -webkit-transform: rotate(45deg) translate(-9px, -6px);
         transform: rotate(45deg) translate(-9px, -6px);
-        background-color: #fff;
+        background-color: #222;
       }
     
     #check:checked ~ ul {top: 60px;}

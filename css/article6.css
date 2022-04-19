@@ -1,11 +1,12 @@
 .article6 {
-    height: 1080px;
+    height: 1230px;
     background: url(../images/a6-bg.png) no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
 .a6-text-wrapper {
-    color: #fff;
+    color: #222;
     text-align: center;
     padding-bottom: 650px;
 }
@@ -29,7 +30,6 @@
 @media (max-width: 768px) {
     .article6 {
         height: 800px;
-        background-position: center;
     }
 
     .a6-text-wrapper {

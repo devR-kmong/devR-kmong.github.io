@@ -20,7 +20,7 @@
 }
 
 .p-text h1 {
-    color: #fff;
+    color: #222;
     font-size: 70px;
     line-height: 77px;
     letter-spacing: -0.04em;
@@ -45,6 +45,13 @@
 
 
 /*==================================================*/
+@media (max-width: 1600px) {
+    .promotion {
+        background-position: right;
+    }
+}
+
+
 @media (max-width: 1250px) {
     .promotion-wrapper {
         width: 100%;
