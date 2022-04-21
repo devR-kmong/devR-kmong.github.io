@@ -1,0 +1,71 @@
+.a2-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.a2-box {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, .03);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.a2-box:hover {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.a2-box-title h1 {
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+
+.a2-box-title h5 {
+    color: #777;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.a2-box-info p {
+    color: #ddd;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+
+/*==================================================*/
+@media (max-width: 550px) {
+    .a2-box-wrapper {
+        gap: .7rem;
+    }
+    
+    .a2-box-title {
+        text-align: center;
+    }
+    
+    .a2-box-title h1 {
+        font-size: 20px;
+    }
+
+    .a2-box-title h5 {
+        font-size: 15px;
+    }
+
+    .a2-box-info p {
+        font-size: 15px;
+        line-height: 24px;
+        word-break: break-all;
+    }
+}
