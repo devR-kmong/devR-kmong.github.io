@@ -126,12 +126,10 @@ table th {
   display: flex;
   flex-direction: column;
   gap: .5rem;
-  padding-left: 20px;
 }
 
 .table-notice ul li {
   font-size: 15px;
-  list-style: circle;
 }
 
 
