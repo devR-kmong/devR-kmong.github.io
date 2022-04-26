@@ -1,0 +1,84 @@
+.article6 {
+    background-color: #f0f8ff;
+}
+
+.a6-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.a6-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.a6-right {
+    justify-content: flex-end;
+}
+
+.speech-bubble {
+    background: #fff;
+    border-radius: 4px;
+    width: 700px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .07);
+}
+
+.speech-bubble::after {
+    border-left: 20px solid transparent;
+    border-top: 20px solid #fff;
+    bottom: -20px;
+    content: "";
+    position: absolute;
+    left: 20px;
+}
+
+.a6-right > .speech-bubble::after {
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #fff;
+    bottom: -20px;
+    content: "";
+    position: absolute;
+    right: 20px;
+}
+
+.speech-bubble h1 {
+    color: #222;
+    font-size: 20px;
+    margin-bottom: .5rem;
+}
+
+.speech-bubble p {
+    color: #222;
+    line-height: 1.5;
+    transform: rotate(0) !important;
+}
+
+
+/*==================================================*/
+@media (max-width: 800px) {
+    .speech-bubble {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .speech-bubble {
+        border-radius: 10px;
+    }
+
+    .speech-bubble h1 {
+        font-size: 17px;
+    }
+
+    .speech-bubble p {
+        font-size: 15px;
+    }
+}
