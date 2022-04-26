@@ -1,0 +1,107 @@
+.promotion {
+    width: 100%;
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion-wrapper {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-text h1 {
+    color: #fff;
+    font-size: 60px;
+    line-height: 70px;
+    font-family: 'Anek Tamil', sans-serif;
+    margin-bottom: 2.5rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.p-text a {
+    width: 170px;
+}
+
+.pBtn {
+    outline: none;
+    border: none;
+    width: 170px;
+    height: 45px;
+    color: #fff;
+    font-size: 14px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.pBtn:hover {
+    background-color: #8a5f2c;
+}
+
+.scrollDown {
+    position: absolute;
+    bottom: 40px;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    animation: upDown 1.5s ease-in-out infinite;
+}
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-7px);
+	}
+	50% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform:  translateY(-7px);
+	}
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1125px) {
+    
+
+    .promotion-wrapper {
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5rem;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .p-text h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 1rem;
+    }
+
+    .pBtn {
+        width: 210px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
