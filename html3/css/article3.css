@@ -21,7 +21,10 @@
     background-color: #fff;
     padding: 20px;
     gap: .5rem;
-    transition: all .3s;
+}
+
+.a3-box:hover {
+    background-color: aquamarine;
 }
 
 .a3-box h3 {
