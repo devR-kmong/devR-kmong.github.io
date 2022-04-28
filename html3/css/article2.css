@@ -35,12 +35,19 @@
     letter-spacing: -0.04em;
 }
 
+.a2-wrapper p {
+    color: var(--main-color);
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    margin: 3rem 0 2rem 0;
+}
+
 .a2-wrapper h5 {
     color: #555;
     font-size: 17px;
     line-height: 25px;
     font-weight: 500;
-    margin-top: 2.5rem;
     text-align: center;
 }
 
@@ -69,6 +76,11 @@
 
     .phone-Number ion-icon {
         font-size: 30px;
+    }
+
+    .a2-wrapper p {
+        font-size: 40px;
+        margin: 2rem 0 1rem 0;
     }
 
     .a2-wrapper h5 {
