@@ -1,34 +1,104 @@
 .article3 {
-    height: 400px !important;
-    background: url(../images/a3-bg.png);
+    background-color: #f8fcfa;
 }
 
-.a3-text h1 {
-    color: #fff;
-    font-size: 45px;
-    line-height: 1.3;
+.a3-wrapper {
+    width: 592px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.a3-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .07);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    gap: .5rem;
+    transition: all .3s;
+}
+
+.a3-box h3 {
+    color: #3d3d3d;
+    font-size: 30px;
     font-weight: 800;
-    margin-bottom: 1.3rem;
-    text-align: center;
-    animation: blink 1s step-end infinite;
 }
 
-.a3-text p {
-    color: #fff;
-    font-size: 22px;
+.a3-box h3 span {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.a3-box ion-icon {
+    color: #3d3d3d;
+    font-size: 25px;
+}
+
+.a3-box p {
+    color: var(--main-color);
+    font-size: 33px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.bottom-notice p {
+    color: #aaa;
     line-height: 1.5;
     text-align: center;
+    margin-top: 4rem;
 }
 
-@keyframes blink {
-    50% {opacity: 0;}
+.bottom-notice p br {
+    display: none;
 }
-
 
 /*==================================================*/
+@media (max-width: 650px) {
+    .a3-wrapper {
+        width: 100%;
+    }
+    
+    .a3-box {
+        padding: 15px;
+    }
+
+    .a3-box ion-icon {
+        font-size: 18px;
+    }
+}
+
+
 @media (max-width: 500px) {
-    .a3-text h1 {
-        font-size: 40px;
-        margin-bottom: .7rem;
+    .a3-wrapper {
+        gap: 1rem;
+    }
+
+    .a3-box {
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .07);
+    }
+
+    .a3-box h3, .a3-box p {
+        font-size: 18px;
+    }
+
+    .a3-box h3 span {
+        font-size: 16px;
+    }
+
+    .bottom-notice p {
+        font-size: 13px;
+        margin-top: 2rem;
+    }
+
+    .bottom-notice p br {
+        display: block;
     }
 }

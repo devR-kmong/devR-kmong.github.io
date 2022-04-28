@@ -15,8 +15,8 @@ footer {
 
 
 /*==================================================*/
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .footer-wrapper p {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
