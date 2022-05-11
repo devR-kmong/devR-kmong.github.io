@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    padding: 30px 20px;
+}
+
+.footer-wrapper {
+    width: 1200px;
+    display: flex;
+}
+
+.footer-wrapper p {
+    color: #bbb;
+    font-size: 15px;
+    line-height: 1.6;
+    transform: rotate(0);
+    letter-spacing: 0;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .footer-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .footer-wrapper p {
+        font-size: 13px;
+    }
+}
