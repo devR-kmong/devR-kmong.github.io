@@ -37,7 +37,7 @@ header {
 }
 
 .logo i {
-    color: #ffa724;
+    color: var(--main-color);
     font-size: 20px;
 }
 

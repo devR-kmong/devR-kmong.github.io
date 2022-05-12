@@ -39,9 +39,10 @@
     font-size: 15px;
     font-family: 'Pretendard';
     outline: none;
-    border: 1px solid #ddd;
-    background-color: rgba(255, 255, 255, .7);
-    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 10px;
     transition: all .3s;
 }
 
@@ -53,9 +54,10 @@
     font-size: 15px;
     font-family: 'Pretendard';
     outline: none;
-    border: 1px solid #ddd;
-    background-color: rgba(255, 255, 255, .7);
-    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 10px;
     transition: all .3s;
 }
 
@@ -68,25 +70,11 @@
     font-family: 'Pretendard';
     line-height: 25px;
     outline: none;
-    border: 1px solid #ddd;
-    background-color: rgba(255, 255, 255, .7);
-    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 10px;
     transition: all .3s;
-}
-
-.form-wrapper .inputbox:focus {
-    border: 1px solid #ecbbbb;
-    background-color: #fff5f5;
-}
-
-.form-wrapper .selectbox:focus {
-    border: 1px solid #ecbbbb;
-    background-color: #fff5f5;
-}
-
-.form-wrapper .textbox:focus {
-    border: 1px solid #ecbbbb;
-    background-color: #fff5f5;
 }
 
 .button-wrapper {
@@ -234,29 +222,20 @@ select option {
 
     .form-wrapper .inputbox {
         height: 48px;
-        margin: .3rem 0;
         padding: 10px 13px;
         font-size: 13px;
-        border: 1px solid #bbb;
-        border-radius: 8px;
     }
 
     .form-wrapper .selectbox {
         height: 48px;
-        margin: .3rem 0;
         padding: 10px 13px;
         font-size: 13px;
-        border: 1px solid #bbb;
-        border-radius: 8px;
     }
 
     .form-wrapper .textbox {
         height: 150px;
-        margin: .3rem 0 1rem 0;
         padding: 10px 13px;
         font-size: 13px;
-        border: 1px solid #bbb;
-        border-radius: 8px;
     }
 
     .personal-label p {
