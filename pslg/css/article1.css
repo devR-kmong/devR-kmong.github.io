@@ -1,9 +1,6 @@
-/* .article1 {
-    background: url(../images/a1-bg.png);
-} */
-
 .article1 {
     position: relative;
+    overflow: hidden;
 }
 
 .glow1 {
