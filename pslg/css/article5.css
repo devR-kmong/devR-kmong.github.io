@@ -1,0 +1,46 @@
+.article5 {
+    position: relative;
+    padding: 20px 0;
+    background-color: #461616;
+}
+
+.a5-notice p {
+    color: #bea6a6;
+    width: 750px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.a5-close {
+    position: absolute;
+    top: 28px; right: 30px;
+}
+
+.a5-close ion-icon {
+    color: #bea6a6;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .a5-notice p {
+        width: 100%;
+        padding: 0 20px;
+        font-size: 12px;
+    }
+
+    .a5-notice p br {
+        display: none;
+    }
+
+    .a5-close {
+        top: 10px; right: 10px;
+    }
+    
+    .a5-close ion-icon {
+        font-size: 20px;
+    }
+}

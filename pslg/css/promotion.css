@@ -1,0 +1,139 @@
+.promotion {
+    width: 100%;
+    height: 100vh !important;
+    background: url(../images/hero.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion-wrapper {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.p-text {
+    width: 500px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .05);
+    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .4);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.p-text p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: .5rem;
+}
+
+.p-text h2 {
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 2rem;
+}
+
+.p-text h1 {
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .05);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.p-text h1:hover {
+    background-color: rgba(255, 255, 255, .08);
+}
+
+.p-text h1:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.p-text h1:nth-child(4) {
+    margin-bottom: 2rem;
+}
+
+.p-text h3 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.p-text span {
+    color: #ff2929;
+    font-size: 22px;
+    font-weight: 800;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {opacity: 0;}
+}
+
+
+.scrollDown {
+    position: absolute;
+    bottom: 40px;
+    transform: translate(-50%, -50%);
+    animation: upDown 1.5s ease-in-out infinite;
+}
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-7px);
+	}
+	50% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform:  translateY(-7px);
+	}
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .p-text {
+        box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
+    }
+    
+    .p-text p {
+        font-size: 17px;
+    }
+    
+    .p-text h2 {
+        font-size: 26px;
+    }
+
+    .p-text h1 {
+        font-size: 17px;
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .2);
+    }
+    
+    .p-text h3 {
+        font-size: 16px;
+    }
+
+    .p-text span {
+        font-size: 20px;
+    }
+}

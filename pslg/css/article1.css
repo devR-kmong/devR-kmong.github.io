@@ -1,0 +1,154 @@
+/* .article1 {
+    background: url(../images/a1-bg.png);
+} */
+
+.article1 {
+    position: relative;
+}
+
+.glow1 {
+    position: absolute;
+    top: 10px;
+    opacity: .7;
+    z-index: 1;
+}
+
+.a1-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 2;
+}
+
+.a1-box-group {
+    width: 50%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .05);
+    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .4);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.a1-box-group h1 em {
+    font-size: 40px
+}
+
+.a1-box-group h1 span {
+    color: #aaa;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.a1-box {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, .03);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.a1-box:hover {
+    background-color: rgba(255, 255, 255, .07);
+}
+
+.a1-box p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.a1-box h2 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.a1-box h3 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.a1-box h2 span {
+    color: var(--sub-color);
+    font-weight: 800;
+}
+
+.a1-box h3 span {
+    color: #ff4040;
+    font-weight: 800;
+}
+
+.a1-notice p {
+    color: #ddd;
+    font-size: 20px;
+    margin-top: 4rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .a1-box-group {
+        padding: 20px;
+        border-radius: 20px;
+    }
+    
+    .a1-box-group h1 {
+        font-size: 18px;
+    }
+    
+    .a1-box-group h1 em {
+        font-size: 30px
+    }
+
+    .a1-box-group h1 span {
+        font-size: 12px;
+    }
+
+    .a1-box p {
+        font-size: 16px;
+    }
+
+    .a1-box h2 {
+        font-size: 22px;
+    }
+
+    .a1-box h3 {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .a1-box-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .a1-box-group {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .a1-box h2 {
+        font-size: 20px;
+    }
+
+    .a1-box h3 {
+        font-size: 20px;
+    }
+
+    .a1-notice p {
+        font-size: 15px;
+        margin-top: 3rem;
+    }
+}

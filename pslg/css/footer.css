@@ -1,0 +1,25 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #03050e;
+    padding: 30px 20px;
+}
+
+.footer-wrapper {
+    display: flex;
+}
+
+.footer-wrapper p {
+    color: #ccc;
+    font-size: 13px;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .footer-wrapper p {
+        font-size: 11px;
+    }
+}

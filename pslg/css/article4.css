@@ -1,0 +1,13 @@
+.article4 {
+    position: relative;
+}
+
+.glow4 {
+    position: absolute;
+    top: 10px;
+    opacity: .7;
+    z-index: 1;
+}
+
+
+/*==================================================*/
