@@ -113,10 +113,6 @@
 
 
 @media (max-width: 768px) {
-    .promotion {
-        height: 700px !important;
-    }
-    
     .p-text {
         box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
     }
