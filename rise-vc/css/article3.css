@@ -1,0 +1,30 @@
+.article3 {
+    position: relative;
+}
+
+.a3-sub-title {
+    position: absolute;
+    top: 30px;
+    opacity: .7;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

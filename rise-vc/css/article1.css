@@ -1,0 +1,94 @@
+.article1 {
+    position: relative;
+    padding: 100px 0 400px 0;
+}
+
+.a1-sub-title {
+    position: absolute;
+    top: 30px;
+    opacity: .7;
+}
+
+.a1-info p {
+    color: #363219;
+    padding: 20px 70px;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    border: 3px solid #fed700;
+    background-color: #fff7ca;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin-bottom: 10rem;
+}
+
+.a1-box-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1-box {
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.a1-box:hover {
+    transform: scale(1.1);
+}
+
+.a1-box h1 {
+    color: #2c1f79;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.hexagon {
+    position: absolute;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.hexagon1 {
+    transform: translate(-420px, -40px);
+}
+
+.hexagon2 {
+    transform: translate(-260px, 250px);
+}
+
+.hexagon3 {
+    transform: translate(420px, -40px);
+}
+
+.hexagon4 {
+    transform: translate(260px, 250px);
+}
+
+.hexagon-before {
+    transform: translate(0, 0);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pointer {
+    position: absolute;
+    top: 150px; right: 0;
+    transition: .3s;
+    opacity: .8;
+    animation: zoomzoom .5s infinite ease-in-out;
+}
+
+.pointer-remove {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes zoomzoom {
+    50% {transform: scale(1.2)}
+}
