@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="css/article4.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/floating.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="shortcut icon" href="images/favicon.ico"  type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>라이즈 VC</title>
 </head>
 
@@ -95,11 +95,6 @@
                         RISE Virtual Class Features
                     </p>
                 </div>
-                <div class="a1-info">
-                    <p>
-                        "검증된 강사 · 교재와 함께 체계화된 학습 관리 시스템을 경험해보세요"
-                    </p>
-                </div>
                 <div class="a1-wrapper">
                     <div class="a1-box-wrapper">
                         <img src="images/hexagon1.png" class="hexagon hexagon1 hexagon-before">
@@ -108,11 +103,8 @@
                         <img src="images/hexagon4.png" class="hexagon hexagon4 hexagon-before">
                         <div class="a1-box">
                             <h1>
-                                이 모든 것이<br/>
-                                라이즈 화상영어의 혜택!
+                                RISE is different
                             </h1>
-                            <img src="images/a1-logo.png" class="a1-logo">
-                            <img src="images/pointer.png" class="pointer">
                         </div>
                     </div>
                 </div>
@@ -170,7 +162,7 @@
                             <img src="images/s3.png">
                         </div>
                     </div>
-                    <!-- <div class="swiper-pagination"></div> -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -226,10 +218,13 @@
 </script>
 
 <script> // 특징 마우스 오버 시 액션 코드입니다
-    $('.a1-box').mouseover(function(){
-        $('.hexagon').removeClass('hexagon-before')
-        $('.pointer').addClass('pointer-remove')
-    });
+    $(window).scroll(function() {
+                if ($(this).scrollTop() > 600) {
+                    $('.hexagon').removeClass('hexagon-before');
+                } else {
+                    $('.hexagon').addClass('hexagon-before');
+                }
+            });
 </script>
 
 <script> // 육각형 클릭 시 이동 경로입니다
@@ -256,7 +251,7 @@
         mousewheel: {
             enabled: true,
             sensitivity: 1,
-            releaseOnEdges: true,
+            releaseOnEdges: false,
         },
         pagination: {
             el: ".swiper-pagination",

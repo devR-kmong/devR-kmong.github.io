@@ -1,10 +1,11 @@
 .article3 {
     position: relative;
+    padding: 120px 0;
 }
 
 .a3-sub-title {
     position: absolute;
-    top: 30px;
+    top: 60px;
     opacity: .7;
 }
 

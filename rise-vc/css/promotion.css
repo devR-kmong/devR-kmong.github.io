@@ -50,18 +50,14 @@
     width: 260px;
     height: 60px;
     border-radius: 50px;
-    background-color: #ecb612;
+    background-color: var(--color-2);
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     transition: all .3s;
     cursor: pointer;
 }
 
-.pBtn:hover {
-    background-color: #ffcb31;
-}
-
 .pBtn p {
-    color: #222;
+    color: #fff;
     font-size: 18px;
     font-weight: 800;
 }
