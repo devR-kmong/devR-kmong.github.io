@@ -1,0 +1,73 @@
+.article-sub {
+    padding-top: 100px;
+}
+
+.sub-title {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.sub-title h1 {
+    position: relative;
+    color: #222;
+    font-size: 40px;
+    font-family: 'GmarketSansBold';
+    letter-spacing: -0.0625em;
+    z-index: 1;
+}
+
+.sub-title h1 span {
+    position: absolute;
+    top: -80px; left: 140px;
+    color: #eee;
+    font-size: 160px;
+    letter-spacing: -0.0625em;
+    z-index: -1;
+}
+
+.sub-title-long h1 span {
+    top: -80px; left: 250px;
+}
+
+.sub-title h1 span em {
+    color: var(--color-2);
+    font-style: normal;
+    opacity: .8;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.a-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a-wrapper-right {
+    flex-direction: row-reverse;
+}
+
+.a-text {
+    width: 700px;
+}
+
+.a-text h2 {
+    color: #222;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
+}
+
+.a-text p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.4;
+}

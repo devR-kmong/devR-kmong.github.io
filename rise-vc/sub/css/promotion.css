@@ -1,0 +1,40 @@
+.promotion {
+    width: 100%;
+    height: 500px !important;
+    display: flex;
+    background: url(../images/p-bg.png);
+    z-index: 3;
+}
+
+.promotion-wrapper {
+    width: 1300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.p-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.p-text h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.p-text p {
+    color: #eee;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .1);
+}

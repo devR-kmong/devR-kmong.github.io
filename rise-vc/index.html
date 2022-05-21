@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--스타일시트 '여기서부터-->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/promotion.css">
     <link rel="stylesheet" href="css/article_common.css">
@@ -15,14 +17,20 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/floating.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="shortcut icon" href="images/favicon.ico"  type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!--스크롤 액션 스타일시트-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"> <!--웹아이콘 코드-->
+    <link rel="shortcut icon" href="images/favicon.ico"  type="image/x-icon"> <!--홈페이지 아이콘(파비콘)-->
+    <!--여기까지 그대로 head 안에 붙여넣으세요(경로체크)'-->
+
     <title>라이즈 VC</title>
 </head>
 
 <body>
     <!--우측하단 플로팅 아이콘-->
     <div class="floating">
-        <a href="#"><img src="images/top.png"></a>
+        <a href="/"><div class="topBtn">
+            <i class="ri-arrow-up-s-line"></i>
+        </div></a>
     </div>
 
     <!--임의로 제작한 헤더입니다. 스타일시트는 css/header.css-->
@@ -46,7 +54,7 @@
                 <a href=""><li>교육과정</li></a>
                 <a href=""><li>수강신청</li></a>
                 <a href=""><li>고객센터</li></a>
-                <a href=""><li>교재 판매몰</li></a>
+                <a href=""><li>교재판매몰</li></a>
                 <a href=""><li>마이페이지</li></a>
             </ul>
         </nav>
@@ -67,18 +75,18 @@
         <section class="article promotion">
             <div class="promotion-wrapper">
                 <div class="p-text">
-                    <p>
+                    <p data-aos="fade-down" data-aos-duration="1500">
                         RISE Virtual Class -
                     </p>
-                    <h1>
+                    <h1 data-aos="fade-right" data-aos-duration="1500">
                         라이즈 화상영어
                     </h1>
-                    <h5>
+                    <h5 data-aos="fade-left" data-aos-duration="1500">
                         검증된 <b>영어권 원어민 강사</b>와
                         <b>매일매일</b> 영어하는 똑똑한 습관!<br/>
                         <b>언제 어디서나</b> 가능한 화상수업!
                     </h5>
-                    <a href="https://vc.riseclass.co.kr/apply/_index3_.html"><button class="pBtn"><p>수강하러 가기 +</p></button></a>
+                    <a href="https://vc.riseclass.co.kr/apply/_index3_.html"><button class="pBtn" data-aos="fade-up" data-aos-duration="1500"><p>수강하러 가기 +</p></button></a>
                 </div>
             </div>
         </section>
@@ -130,9 +138,9 @@
                         학부모와 학생이 폭 넓게 다양한 수업을 선택할 수 있습니다.
                     </p>
                     <div class="a2-box-wrapper">
-                        <a href="슬라이드26"></a>
-                        <a href="슬라이드27"></a>
-                        <a href="슬라이드28"></a>
+                        <a href="sub/roadmap-a.html" data-aos="fade-up" data-aos-duration="1500"></a>
+                        <a href="sub/roadmap-b.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"></a>
+                        <a href="sub/roadmap-c.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"></a>
                     </div>
                 </div>
             </div>
@@ -150,7 +158,7 @@
                         FAQ
                     </p>
                 </div>
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="images/s1.png">
@@ -171,13 +179,13 @@
         <section class="article article4">
             <div class="article-wrapper">
                 <div class="a4-wrapper">
-                    <img src="images/a4-title.png">
-                    <p>
+                    <img src="images/a4-title.png" data-aos="fade-down" data-aos-duration="1500">
+                    <p data-aos="fade-up" data-aos-duration="1500">
                         라이즈 화상영어와 즐겁게 배우고 눈에 띄게 성장한<br/>
                         학부모님과 아이들의 수강후기를 살펴보세요!
                     </p>
                     <a href="https://vc.riseclass.co.kr/review/review.html" target="blank">
-                        <button class="btn" type="button">
+                        <button class="btn" type="button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                             <span class="shadow"></span>
                             <span class="edge"></span>
                             <span class="front">수강후기 바로가기</span>
@@ -198,7 +206,17 @@
     </footer>
 </body>
 
+<!-- 제이쿼리 -->
 <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+<!-- 스크롤 애니메이션 -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true
+    })
+</script>
+
 <script> // 우측 하단 플로팅 아이콘 스크롤 액션 코드입니다
     $(document).ready(function() {
  
@@ -217,6 +235,17 @@
     });
 </script>
 
+<!--부드러운 스크롤 이벤트-->
+<script src="js/jquery.scrollTo.min.js"></script>
+<script>
+    $(function () {
+        $('.floating a').click(function (e) {
+            $.scrollTo(this.hash || 0, 500);
+            e.preventDefault();
+        });
+    });
+</script>
+
 <script> // 특징 마우스 오버 시 액션 코드입니다
     $(window).scroll(function() {
                 if ($(this).scrollTop() > 600) {
@@ -229,16 +258,16 @@
 
 <script> // 육각형 클릭 시 이동 경로입니다
     $('.hexagon1').click(function(){
-        $(location).attr("href", "https://www.naver.com/")
+        $(location).attr("href", "sub/features.html#1")
     })
     $('.hexagon2').click(function(){
-        $(location).attr("href", "https://www.naver.com/")
+        $(location).attr("href", "sub/features.html#2")
     })
     $('.hexagon3').click(function(){
-        $(location).attr("href", "https://www.naver.com/")
+        $(location).attr("href", "sub/features.html#4")
     })
     $('.hexagon4').click(function(){
-        $(location).attr("href", "https://www.naver.com/")
+        $(location).attr("href", "sub/features.html#3")
     })
 </script>
 

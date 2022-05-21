@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--★★★경로체크 꼭 하세요!!★★★-->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/article_common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/floating.css">
+    <link rel="stylesheet" href="css/promotion.css">
+    <link rel="stylesheet" href="css/roadmap.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="shortcut icon" href="../images/favicon.ico"  type="image/x-icon">
+    <title>라이즈 VC 로드맵</title>
+</head>
+
+<body>
+    <!--우측하단 플로팅 아이콘-->
+    <div class="floating">
+        <a href="/"><div class="topBtn">
+            <i class="ri-arrow-up-s-line"></i>
+        </div></a>
+    </div>
+
+    <!--임의로 제작한 헤더입니다. 스타일시트는 css/header.css-->
+    <header>
+        <div class="gnb">
+            <ul class="gnbText">
+                <li><a href="">Log in</a></li>
+                <div class="gnbText-line"></div>
+                <li><a href="">회원가입</a></li>
+            </ul>
+            <ul class="gnbBtn">
+                <a href=""><li>강의실</li></a>
+                <a href=""><li>Recruiting</li></a>
+            </ul>
+        </div>
+        <nav>
+            <div class="logo">
+                <a href="/"><img src="../images/logo.png" class="logo"></a>
+            </div>
+            <ul>
+                <a href=""><li>교육과정</li></a>
+                <a href=""><li>수강신청</li></a>
+                <a href=""><li>고객센터</li></a>
+                <a href=""><li>교재판매몰</li></a>
+                <a href=""><li>마이페이지</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--여기서부터 Title Page 입니다. 스타일시트는 sub/css/promotion.css-->
+        <section class="article promotion roadmap">
+            <div class="promotion-wrapper">
+                <div class="p-text">
+                    <h1>
+                        라이즈 화상영어 로드맵
+                    </h1>
+                    <p>
+                        RISE VC RoadMap
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--여기서부터 라이즈 화상영어 로드맵입니다. 스타일시트는 sub/css/roadmap.css-->
+        <section class="article article-sub">
+            <div class="article-wrapper">
+                <div class="tabBtn-wrapper">
+                    <a href="roadmap-a.html">
+                        <div class="tabBtn">
+                            <h1>
+                                1:1 프리미엄 화상영어
+                            </h1>
+                        </div>
+                    </a>
+                    <a href="roadmap-b.html" class="focus">
+                        <div class="tabBtn">
+                            <h1>
+                                1:N 소그룹 화상영어
+                            </h1>
+                        </div>
+                    </a>
+                    <a href="roadmap-c.html">
+                        <div class="tabBtn">
+                            <h1>
+                                1:N 방학특강 소그룹 화상영어
+                            </h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!--푸터-->
+    <footer>
+        <div class="footer-wrapper">
+            <p>
+                Copyright © Rise Education Korea. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+<!-- 제이쿼리 -->
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+<!-- 스크롤 애니메이션 -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true
+    })
+</script>
+
+<script> // 우측 하단 플로팅 아이콘 스크롤 액션 코드입니다
+    $(document).ready(function() {
+ 
+        $(".floating").hide();
+        $(function() {
+ 
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 200) {
+                    $('.floating').fadeIn();
+                } else {
+                    $('.floating').fadeOut();
+                }
+            });
+        });
+ 
+    });
+</script>
+
+<!--부드러운 스크롤 이벤트-->
+<script src="../js/jquery.scrollTo.min.js"></script>
+<script>
+    $(function () {
+        $('.floating a').click(function (e) {
+            $.scrollTo(this.hash || 0, 500);
+            e.preventDefault();
+        });
+    });
+</script>
+
+<script> // 인터넷 익스플로러 접속 막는 스크립트 코트입니다
+    if (window.navigator.userAgent.match(/MSIE|Internet Explorer|Trident/i)) {
+        // IE!!
+        window.location = 'https://support.microsoft.com/ko-kr/office/%ec%97%b0%ea%b2%b0%ed%95%98%eb%a0%a4%eb%8a%94-%ec%9b%b9-%ec%82%ac%ec%9d%b4%ed%8a%b8%ea%b0%80-internet-explorer%ec%97%90%ec%84%9c-%ec%9e%91%eb%8f%99%ed%95%98%ec%a7%80-%ec%95%8a%ec%8a%b5%eb%8b%88%eb%8b%a4-8f5fc675-cd47-414c-9535-12821ddfc554?ui=ko-kr&rs=ko-kr&ad=kr';
+    }
+</script>
+
+</html>

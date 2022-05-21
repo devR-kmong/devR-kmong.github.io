@@ -7,10 +7,34 @@
     z-index: 999;
 }
 
+.topBtn {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    background: var(--color-2);
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(243, 220, 88, 0.4);
+    -webkit-animation: pulseAnim 1.3s infinite;
+    animation: pulseAnim 1.3s infinite;
+}
 
-/*=========================================================*/
-@media (max-width: 768px) {
-    .floating a img {
-        width: 29px;
-    }
+.topBtn i {
+    color: #fff;
+    font-size: 22px;
+    animation: none;
+}
+
+@keyframes pulseAnim {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 179, 64, 0.582);
+	}
+	70% {
+		box-shadow: 0 0 0 15px rgb(151 213 229 / 0%);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgb(151 213 229 / 0%);
+	}
 }
