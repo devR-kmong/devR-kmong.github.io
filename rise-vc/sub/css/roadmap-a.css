@@ -126,7 +126,7 @@ table td:hover {
 
 .speech-box-wrapper {
     position: absolute;
-    bottom: 110px;
+    bottom: 80px;
     width: 1200px;
     display: flex;
     padding-left: 200px;
