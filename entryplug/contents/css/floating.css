@@ -1,0 +1,11 @@
+.floating {
+    position: fixed;
+    bottom: 30px; right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    z-index: 999;
+}
+
+
+/*=========================================================*/

@@ -1,0 +1,25 @@
+.a4-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.a4-wrapper h1 {
+    color: #ddd;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.partners-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    flex-wrap: wrap;
+}
