@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="contents/css/article3.css">
     <link rel="stylesheet" href="contents/css/article4.css">
     <link rel="stylesheet" href="contents/css/article5.css">
+    <link rel="stylesheet" href="contents/css/article6.css">
+    <link rel="stylesheet" href="contents/css/article7.css">
     <link rel="stylesheet" href="contents/css/form.css">
     <link rel="stylesheet" href="contents/css/footer.css">
     <link rel="stylesheet" href="contents/css/floating.css">
@@ -226,23 +228,28 @@
                     <h1>문의하기</h1>
                     <p>Contact Us</p>
                 </div>
-                <div class="form-wrapper">
-                    <form class="gform"
-                        action=""
-                        method="POST" onSubmit="alert('문의가 성공적으로 접수되었습니다!');">
-                        <input type="text" name="name" placeholder="이름" class="inputbox" autocomplete="off" required />
-                        <input type="email" name="email" placeholder="이메일" class="inputbox" autocomplete="off" required />
-                        <textarea name="message" placeholder="문의사항" class="textbox" autocomplete="off"></textarea>
-                        <div class="button-wrapper">
-                            <div class="check">
-                                <input type="checkbox" id="cb" checked="checked" required />
-                                <label for="cb" class="personal-label"><p>개인정보처리방침 동의</p></label>  
+                <div class="a7-wrapper">
+                    <div class="map-wrapper">
+                        <iframe src="https://api.mapbox.com/styles/v1/1manbul/cl3lcuzvy000m14paq0efs1ge.html?title=false&access_token=pk.eyJ1IjoiMW1hbmJ1bCIsImEiOiJja3hzZW9jcng1OGMxMnZreWY5YjIyb3c0In0.bQjI0JkCEA15e6B2T7ocWA&zoomwheel=true#17.23/37.485247/127.1153" title="Entryplug" style="border:none;"></iframe>
+                    </div>
+                    <div class="form-wrapper">
+                        <form class="gform"
+                            action=""
+                            method="POST" onSubmit="alert('문의가 성공적으로 접수되었습니다!');">
+                            <input type="text" name="name" placeholder="이름" class="inputbox" autocomplete="off" required />
+                            <input type="email" name="email" placeholder="이메일" class="inputbox" autocomplete="off" required />
+                            <textarea name="message" placeholder="문의사항" class="textbox" autocomplete="off"></textarea>
+                            <div class="button-wrapper">
+                                <div class="check">
+                                    <input type="checkbox" id="cb" checked="checked" required />
+                                    <label for="cb" class="personal-label"><p>개인정보처리방침 동의</p></label>  
+                                </div>
+                                <div class="submit">
+                                    <button type="submit" class="submitBtn">전송하기</button>
+                                </div>
                             </div>
-                            <div class="submit">
-                                <button type="submit" class="submitBtn">전송하기</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
