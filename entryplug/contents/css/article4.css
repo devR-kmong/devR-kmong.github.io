@@ -23,3 +23,33 @@
     gap: 3.5rem;
     flex-wrap: wrap;
 }
+
+.partners-wrapper img {
+    opacity: .5;
+}
+
+.partners-wrapper img:hover {
+    opacity: 1;
+}
+
+.partners-wrapper img:nth-child(2n) {
+    animation: upDown 3s ease-in-out infinite;
+}
+
+.partners-wrapper img:nth-child(2n-1) {
+    animation: upDown 3s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+
+@keyframes floating {
+	0% {
+		transform:  translateY(-2px);
+	}
+	50% {
+		transform: translateY(2px);
+	}
+	100% {
+		transform:  translateY(-2px);
+	}
+}
