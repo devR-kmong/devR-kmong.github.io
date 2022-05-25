@@ -1,10 +1,12 @@
 .form-wrapper {
-    width: 100%;
+    width: 50%;
     height: auto;
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
     transition: all .3s;
     margin-top: .5rem;
+    border-radius: 0 30px 30px 0;
 }
 
 .form-wrapper .inputbox {
@@ -36,6 +38,14 @@
     border: none;
     outline: none;
     transition: all .3s;
+}
+
+.form-wrapper .inputbox:hover {
+    background-color: rgba(255, 255, 255, .07);
+}
+
+.form-wrapper .textbox:hover {
+    background-color: rgba(255, 255, 255, .07);
 }
 
 .form-wrapper .inputbox:focus {
@@ -74,7 +84,7 @@ textarea::placeholder {
 }
 
 .personal-label p {
-    color:#ccc;
+    color:#aaa;
     font-size: 15px;
     padding-left: 4px;
     user-select: none;
@@ -92,17 +102,24 @@ textarea::placeholder {
 }
 
 .submitBtn {
-    color: #fff;
-    width: 220px;
-    height: 50px;
-    font-size: 16px;
-    font-weight: 500;
+    color: #aaa;
+    width: 200px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 400;
     font-family: 'Pretendard';
-    background-color: var(--main-color);
-    border: none;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid #333;
     outline: none;
     cursor: pointer;
     transition: all .3s;
+}
+
+.submitBtn:hover {
+    color: #eee;
+    background-color: rgba(255, 255, 255, .03);
+    border: 1px solid #555;
 }
 
 .submitBtn:disabled {
@@ -135,13 +152,6 @@ textarea::placeholder {
 
     .submitBtn {
         width: 200px;
-        margin-top: 1rem;
-    }
-}
-
-
-@media (max-width: 375px) {
-    .submitBtn {
         margin-top: 1rem;
     }
 }
