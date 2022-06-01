@@ -149,7 +149,7 @@
         <!--여기서부터 FAQ입니다. 스타일시트는 css/article3.css-->
         <section class="article article3">
             <img src="images/a3-sub-title.png" class="a3-sub-title">
-            <div class="article-wrapper">
+            <div class="article-wrapper slider-wrapper">
                 <div class="article-title">
                     <h1>
                         자주 묻는 질문
@@ -158,7 +158,7 @@
                         FAQ
                     </p>
                 </div>
-                <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="images/s1.png">
@@ -170,6 +170,8 @@
                             <img src="images/s3.png">
                         </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
@@ -177,19 +179,28 @@
 
         <!--여기서부터 수강후기입니다. 스타일시트는 css/article4.css-->
         <section class="article article4">
+            <img src="images/a4-sub-title.png" class="a4-sub-title">
             <div class="article-wrapper">
+                <div class="article-title">
+                    <h1>
+                        수강후기
+                    </h1>
+                    <p>
+                        REVIEW
+                    </p>
+                </div>
                 <div class="a4-wrapper">
-                    <img src="images/a4-title.png" data-aos="fade-down" data-aos-duration="1500">
-                    <p data-aos="fade-up" data-aos-duration="1500">
+                    <!-- <p data-aos="fade-up" data-aos-duration="1500">
                         라이즈 화상영어와 즐겁게 배우고 눈에 띄게 성장한<br/>
                         학부모님과 아이들의 수강후기를 살펴보세요!
-                    </p>
+                    </p> -->
+                    <img src="images/review.png" class="review">
                     <a href="https://vc.riseclass.co.kr/review/review.html" target="blank">
-                        <button class="btn" type="button" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <button class="btn" type="button" data-aos="fade-up" data-aos-duration="1500">
                             <span class="shadow"></span>
                             <span class="edge"></span>
-                            <span class="front">수강후기 바로가기</span>
-                        </button>
+                            <span class="front">리얼 수강후기 보러가기</span>
+                        </button> 
                     </a>
                 </div>
             </div>
@@ -274,13 +285,16 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script> //FAQ 슬라이더 코드입니다
     var swiper = new Swiper(".mySwiper", {
-        direction: "horizontal",
         slidesPerView: 1,
-        spaceBetween: 30,
+        loop: true,
         mousewheel: {
             enabled: true,
             sensitivity: 1,
-            releaseOnEdges: false,
+            releaseOnEdges: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
         pagination: {
             el: ".swiper-pagination",

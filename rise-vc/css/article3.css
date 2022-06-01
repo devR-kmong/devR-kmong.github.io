@@ -3,14 +3,20 @@
     padding: 120px 0;
 }
 
+.slider-wrapper {
+    width: 1600px;
+}
+
 .a3-sub-title {
     position: absolute;
     top: 60px;
     opacity: .7;
 }
 
-.swiper {
+.mySwiper {
     width: 100%;
+    border-radius: 40px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .05);
 }
 
 .swiper-slide {
@@ -28,4 +34,3 @@
     justify-content: center;
     align-items: center;
 }
-

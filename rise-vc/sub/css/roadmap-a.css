@@ -46,9 +46,14 @@ table td:hover {
     -webkit-filter: none;
 }
 
-.t-v-level {
+.t-v-level h1 {
     font-size: 16px;
     font-weight: 700;
+}
+
+.t-v-level p {
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .t-v-l-1 {
@@ -123,82 +128,12 @@ table td:hover {
     background-color: #ffc6b5;
 }
 
-
-.speech-box-wrapper {
-    position: absolute;
-    bottom: 80px;
-    width: 1200px;
-    display: flex;
-    padding-left: 200px;
-    z-index: 99;
-}
-
-.speech-box {
-    width: 160px;
-    height: 90px;
-    margin: auto;
-    padding: 10px;
-    background: #333;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
-    border-radius: 10px;
-    position: relative;
-    transition: all .6s;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.speech-box:after {
-    content: "";
-    display: inline-block;
-    border-style: solid;
-    border-width: 10px 10px 0;
-    border-color: #333 transparent;
-    position: absolute;
-    bottom: -10px;
-    left: 20px;
-}
-
-.speech-box p {
-    color: #fff;
-    font-size: 15px;
-    line-height: 1.4;
-    word-break: break-all;
-}
-
-.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
-
-
 /*---*/
 .t2-v {
     color: #222;
     font-size: 16px;
     font-weight: 700;
 }
-
-.t2-v-1 {
-    background-color: #fff2cc;
-}
-
-.t2-v-2 {
-    background-color: #c4e0b2;
-}
-
-.t2-v-3 {
-    background-color: #bbd6ee;
-}
-
-.t2-v-4 {
-    background-color: #f7caac;
-}
-
-.t2-v-5 {
-    background-color: #ffccff;
-}
-
 
 .t2-book {
     padding: 0;

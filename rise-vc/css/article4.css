@@ -1,5 +1,12 @@
 .article4 {
-    background: url(../images/a4-bg.png);
+    position: relative;
+    background-color: #e7e4ff;
+}
+
+.a4-sub-title {
+    position: absolute;
+    top: 30px;
+    opacity: .7;
 }
 
 .a4-wrapper {
@@ -25,7 +32,7 @@ button.btn {
     border: 0;
     padding: 0;
     border-radius: 10px;
-    background-color: #fd8503;
+    background-color: #956cff;
     cursor: pointer;
     outline-offset: 4px;
     position: relative;
@@ -50,7 +57,7 @@ button.btn .front {
     font-size: 19px;
     font-weight: 700;
     color: #fff;
-    background-color: #fd8503;
+    background-color: #956cff;
     transform: translateY(-8px);
     transition: transform 0.4s cubic-bezier(.3, .7, .4, 1);
 }
@@ -61,7 +68,7 @@ button.btn .shadow {
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    background: #aa5d0b;
+    background: #774de2;
     transform: translateY(2px);
     filter: blur(4px);
 }
@@ -72,5 +79,5 @@ button.btn .edge {
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    background: #cf7413;
+    background: #7f58e2;
 }

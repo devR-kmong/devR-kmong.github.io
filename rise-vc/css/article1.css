@@ -20,7 +20,7 @@
 .a1-box h1 {
     color: #777;
     font-size: 55px;
-    font-family: 'Poppins';
+    font-family: 'Futura Hv BT';
     font-weight: 600;
     line-height: 1.4;
     text-align: center;
@@ -54,4 +54,10 @@
     transform: translate(0, 0);
     opacity: 0;
     visibility: hidden;
+}
+
+
+@font-face {
+    font-family: 'Futura Hv BT';
+    src: url('../fonts/FUTURAHI.TTF') format('truetype');
 }

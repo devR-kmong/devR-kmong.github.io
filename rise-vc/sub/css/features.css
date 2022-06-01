@@ -30,10 +30,27 @@
 }
 
 .sub-title h1 span em {
-    color: var(--color-2);
     font-style: normal;
     opacity: .8;
 }
+
+.sub-title-1 h1 span em {
+    color: #e84f35;
+}
+
+.sub-title-2 h1 span em {
+    color: #fd8503;
+}
+
+.sub-title-3 h1 span em {
+    color: #4dd778;
+}
+
+.sub-title-4 h1 span em {
+    color: #5269ff;
+}
+
+
 
 @font-face {
     font-family: 'GmarketSansBold';

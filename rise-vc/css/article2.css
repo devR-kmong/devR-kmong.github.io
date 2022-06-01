@@ -1,7 +1,7 @@
 .article2 {
     position: relative;
     padding: 140px 0;
-    background-color: #f8fcfa;
+    background-color: #fffae4;
 }
 
 .a2-sub-title {
@@ -35,7 +35,7 @@
     width: 380px;
     height: 300px;
     border-radius: 30px;
-    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3);
 }
 
 .a2-box-wrapper a:nth-child(1) {
@@ -64,7 +64,7 @@
     height: 100%;
     border-radius: 30px;
     transition: all .3s;
-    text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .3);
     background-color: rgba(0, 0, 0, .4);
 }
 
@@ -86,7 +86,7 @@
     height: 100%;
     border-radius: 30px;
     transition: all .3s;
-    text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .3);
     background-color: rgba(0, 0, 0, .4);
 }
 
@@ -108,7 +108,7 @@
     height: 100%;
     border-radius: 30px;
     transition: all .3s;
-    text-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, .3);
     background-color: rgba(0, 0, 0, .4);
 }
 
