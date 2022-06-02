@@ -1,0 +1,183 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    width: 100%;
+    height: auto;
+}
+
+.main-box {
+    padding: 120px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box h1 {
+    color: #222;
+    font-size: 85px;
+    font-weight: 800;
+    font-family: 'Vitro_core';
+    letter-spacing: -0.04em;
+    margin-bottom: .5rem;
+}
+
+@font-face {
+    font-family: 'Vitro_core';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-box h5 {
+    color: #666;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    margin-bottom: 2rem;
+}
+
+.linkBtn {
+    width: 500px;
+    height: 62px;
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .3);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.linkBtn:hover {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+}
+
+.linkBtn p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    transition: .3s;
+}
+
+
+/*-------------------------------------*/
+.contents-box-wrapper {
+    width: 90%;
+    border-radius: 30px 30px 0 0;
+}
+
+.box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    flex: 1;
+    width: auto;
+    height: 300px;
+    padding: 30px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box:hover {
+    background-color: #eee;
+}
+
+.box h1 {
+    color: var(--main-color);
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+
+.box p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.features li {
+    color: #222;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+
+
+
+
+
+/*-------------------------------------*/
+.box1 {
+    height: 450px !important;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-radius: 30px 0 0 0;
+    background: #f1f1f1;
+}
+
+.box2 {
+    height: 450px !important;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0 30px 0 0;
+    background: #f1f1f1;
+}
+
+.box3 {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background: #f1f1f1;
+}
+
+.box4 {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background: #f1f1f1;
+}
+
+.box5 {
+    border-bottom: 1px solid #ddd;
+    background: #f1f1f1;
+}
+
+.box6 {
+    border-right: 1px solid #ddd;
+    background: #f1f1f1;
+}
+
+.box7 {
+    border-right: 1px solid #ddd;
+    background: #f1f1f1;
+}
+
+.box8 {
+    background: #f1f1f1;
+}
+
+
+/*-------------------------------------*/
+.footer-box {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background: #111;
+}
+
+.footer-box ul li {
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.7;
+}
