@@ -119,6 +119,7 @@ main {
     color: #333;
     font-size: 20px;
     line-height: 1.6;
+    word-break: break-all;
 }
 
 .box p b {
@@ -136,6 +137,17 @@ main {
     line-height: 1.6;
 }
 
+.box p a {
+    color: #1882f4;
+}
+
+.box p a:hover {
+    text-decoration: underline;
+}
+
+.box p br {
+    display: none;
+}
 
 
 /*-------------------------------------*/

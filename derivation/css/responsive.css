@@ -26,6 +26,10 @@
     .box {
         height: auto;
     }
+
+    .box p br {
+        display: block;
+    }
 }
 
 
@@ -117,5 +121,13 @@
     .box span {
         font-size: 14px;
         line-height: 1.2;
+    }
+
+    .footer-box {
+        padding: 20px 30px;
+    }
+
+    .footer-box ul li {
+        font-size: 13px;
     }
 }
