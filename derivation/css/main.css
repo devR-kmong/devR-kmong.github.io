@@ -7,16 +7,19 @@ main {
 }
 
 .main-box {
-    width: 100%;
+    width: 90%;
     height: auto;
-}
-
-.main-box {
     padding: 120px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    background: url(../images/main.png) no-repeat;
+    background-position: right;
+    background-size: cover;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .07);
+    margin: 1.5rem 0;
 }
 
 .main-box h1 {
@@ -85,6 +88,12 @@ main {
     gap: 1.5rem;
 }
 
+.box-group {
+    flex: 1;
+    display: flex;
+    gap: 1.5rem;
+}
+
 .box {
     flex: 1;
     width: auto;
@@ -110,13 +119,49 @@ main {
     color: #333;
     font-size: 20px;
     line-height: 1.6;
-    margin-bottom: 1rem;
 }
 
 .box p b {
     font-weight: 800;
     background-color: #d5e6ff;
 }
+
+.box2 p {
+    margin-bottom: .5rem;
+}
+
+.box span {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+/*-------------------------------------*/
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.footer-box {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .07);
+    background: #111;
+}
+
+.footer-box ul li {
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
 
 
 /*-------------------------------------*/
@@ -166,30 +211,3 @@ main {
 .box8 {
     background: #f1f1f1;
 } */
-
-
-/*-------------------------------------*/
-footer {
-    width: 100%;
-    margin-top: 1.5rem;
-}
-
-.footer-box {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #111;
-}
-
-.footer-box ul {
-    width: 90%;
-}
-
-.footer-box ul li {
-    color: #fff;
-    font-weight: 400;
-    line-height: 1.8;
-}
