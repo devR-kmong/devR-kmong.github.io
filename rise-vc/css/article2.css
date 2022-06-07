@@ -73,7 +73,7 @@
 }
 
 .a2-box-wrapper a:nth-child(2)::after {
-    content: '1:N 소그룹 화상영어';
+    content: '그룹 화상영어';
     color: #fff;
     font-size: 26px;
     font-weight: 800;
@@ -95,7 +95,7 @@
 }
 
 .a2-box-wrapper a:nth-child(3)::after {
-    content: '1:N 방학특강 소그룹 화상영어';
+    content: '방학특강 화상영어';
     color: #fff;
     font-size: 26px;
     font-weight: 800;

@@ -30,46 +30,55 @@
     font-weight: 700;
 }
 
-.table-title {
+.roadmap-title {
     width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.roadmap-title h1 {
+    color: #5269ff;
+    font-size: 38px;
+    font-family: 'yg-jalnan';
+    letter-spacing: -0.04em;
+    margin-bottom: .8rem;
+}
+
+.roadmap-title p {
+    color: #222;
+    font-size: 22px;
+    line-height: 1.8;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+
+.roadmap-title p span {
+    color: #222;
+    padding: 1px 2px;
+    font-weight: 800;
+    background-color: #eef2ff;
+}
+
+.roadmap-title h5 {
+    color: #666;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
+}
+
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .table-title h1 {
     color: #222;
     font-size: 30px;
     font-weight: 800;
-    margin-bottom: .8rem;
-}
-
-.table-title p {
-    color: #666;
-    font-size: 18px;
-    line-height: 1.8;
-    font-weight: 400;
-}
-
-.table-title p span {
-    color: #222;
-    padding: 2px 4px;
-    font-weight: 800;
-    border-radius: 5px;
-    background-color: #d3d9ff;
-}
-
-.table-title p em {
-    color: red;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-}
-
-
-.table-title h5 {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
