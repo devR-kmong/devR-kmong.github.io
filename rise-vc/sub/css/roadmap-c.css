@@ -134,13 +134,12 @@
 
 .table-notice p {
     color: #222;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.8;
 }
 
 .table-notice p span {
     color: #222;
-    padding: 2px 4px;
     font-weight: 700;
     background-color: #f7cdc9;
 }
