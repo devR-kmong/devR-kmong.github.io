@@ -62,3 +62,69 @@
     font-family: 'Futura Hv BT';
     src: url('../fonts/FUTURAHI.TTF') format('truetype');
 }
+
+
+
+/*==================================================*/
+@media (max-width: 1200px) {
+    .article1 {
+        padding: 20px 0 200px 0;
+    }
+    
+    .a1-box h1 {
+        margin-top: 430px;
+    }
+    
+    .hexagon1 {
+        transform: translate(-160px, -80px);
+    }
+
+    .hexagon2 {
+        transform: translate(-160px, 350px);
+    }
+    
+    .hexagon3 {
+        transform: translate(160px, -80px);
+    }
+    
+    .hexagon4 {
+        transform: translate(160px, 350px);
+    }
+}
+
+
+@media (max-width: 700px) {
+    .article1 {
+        padding: 80px 0 120px 0;
+        overflow-x: hidden;
+    }
+
+    .a1-sub-title {
+        top: 60px;
+    }
+    
+    .a1-box h1 {
+        font-size: 35px;
+        margin-top: 185px;
+    }
+
+    .hexagon {
+        width: 220px;
+    }
+    
+    .hexagon1 {
+        transform: translate(-120px, -120px);
+    }
+
+    .hexagon2 {
+        transform: translate(-120px, 150px);
+    }
+    
+    .hexagon3 {
+        transform: translate(120px, -120px);
+    }
+    
+    .hexagon4 {
+        transform: translate(120px, 150px);
+    }
+}

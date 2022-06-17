@@ -28,6 +28,11 @@
     margin-bottom: 7rem;
 }
 
+.r-b-box-group {
+    display: flex;
+    gap: 1rem;
+}
+
 .r-b-box {
     flex: 1;
     padding: 30px;
@@ -66,4 +71,20 @@
     line-height: 1.3;
     text-align: center;
     cursor: default;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .r-b-box-wrapper {
+        flex-direction: column;
+    }
+
+    .r-b-box i {
+        font-size: 50px;
+    }
+
+    .r-b-box p {
+        font-size: 16px;
+    }
 }

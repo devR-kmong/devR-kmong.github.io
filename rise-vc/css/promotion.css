@@ -106,3 +106,28 @@
         padding: 0 20px;
     }
 }
+
+
+@media (max-width: 768px) {
+    .p-text h1 {
+        font-size: 50px;
+    }
+
+    .p-text h5 {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+    
+    .p-text h5 br {
+        display: none;
+    }
+
+    .pBtn {
+        width: 240px;
+        height: 55px;
+    }
+
+    .pBtn p {
+        font-size: 16px;
+    }
+}

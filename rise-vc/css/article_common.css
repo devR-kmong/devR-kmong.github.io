@@ -48,8 +48,16 @@
 }
 
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
     .article {
         padding: 40px 0;
+    }
+
+    .article-title h1 {
+        font-size: 30px;
+    }
+
+    .article-title p {
+        font-size: 17px;
     }
 }

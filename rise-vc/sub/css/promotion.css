@@ -7,7 +7,6 @@
 }
 
 .promotion-wrapper {
-    width: 1300px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -26,7 +25,9 @@
 .p-text h1 {
     color: #222;
     font-size: 45px;
+    line-height: 1.3;
     font-weight: 800;
+    text-align: center;
     margin-bottom: .5rem;
 }
 
@@ -36,4 +37,16 @@
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
+}
+
+
+/*==================================================*/
+@media (max-width: 600px) {
+    .p-text h1 {
+        font-size: 35px;
+    }
+
+    .p-text p br {
+        display: none;
+    }
 }

@@ -14,9 +14,8 @@
     text-align: center;
     line-height: 60px;
     color: #fff;
-    background: var(--color-2);
+    background: #5269ff;
     cursor: pointer;
-    box-shadow: 0 0 0 rgba(243, 220, 88, 0.4);
     -webkit-animation: pulseAnim 1.3s infinite;
     animation: pulseAnim 1.3s infinite;
 }
@@ -29,7 +28,7 @@
 
 @keyframes pulseAnim {
 	0% {
-		box-shadow: 0 0 0 0 rgba(255, 179, 64, 0.582);
+		box-shadow: 0 0 0 0 rgba(64, 99, 255, 0.582);
 	}
 	70% {
 		box-shadow: 0 0 0 15px rgb(151 213 229 / 0%);
@@ -37,4 +36,18 @@
 	100% {
 		box-shadow: 0 0 0 0 rgb(151 213 229 / 0%);
 	}
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .topBtn {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .topBtn i {
+        font-size: 17px;
+    }
 }

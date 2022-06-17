@@ -54,6 +54,7 @@ button.btn {
     cursor: pointer;
     outline-offset: 4px;
     position: relative;
+    margin-top: 1rem;
 }
 button.btn:hover .front {
     transform: translateY(-6px);
@@ -100,3 +101,15 @@ button.btn .edge {
     background: #4254c7;
 }
 
+
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    button.btn .front {
+        min-width: 320px;
+        height: 52px;
+        line-height: 53px;
+        font-size: 15px;
+    }
+}

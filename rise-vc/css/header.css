@@ -81,3 +81,12 @@ nav ul li {
 nav ul li:hover {
     background-color: #000;
 }
+
+
+
+/*==================================================*/
+@media (max-width: 1600px) { 
+    nav ul {
+        display: none;
+    }
+}

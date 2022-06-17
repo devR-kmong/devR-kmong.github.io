@@ -152,3 +152,54 @@ table td:hover {
     background-color: #eee;
 }
 
+
+
+
+/*==================================================*/
+@media (max-width: 600px) {
+    table th,
+    table td {
+        padding: 1em .3em;
+    }
+    
+    thead {
+        display: none;
+    }
+
+    .t-category {
+        font-size: 12px;
+    }
+
+    .t-v-level h1 {
+        font-size: 13px;
+    }
+
+    .t-v-level p {
+        font-size: 13px;
+    }
+
+    .t-grade {
+        font-size: 13px;
+    }
+
+    .t-vc {
+        font-size: 13px;
+    }
+
+    .t2-category {
+        height: 70px;
+        font-size: 13px;
+    }
+
+    .t2-v {
+        font-size: 13px;
+    }
+
+    .t2-book {
+        padding: 0 20px;
+    }
+
+    .t2-book-phonics {
+        padding: 0;
+    }
+}

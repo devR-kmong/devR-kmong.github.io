@@ -11,6 +11,7 @@
     width: 100%;
     padding: 12px 0;
     text-align: center;
+    border-radius: 5px;
     background-color: #eee;
 }
 
@@ -23,6 +24,10 @@
     color: #888;
     font-size: 18px;
     font-weight: 400;
+}
+
+.tabBtn-m {
+    display: none;
 }
 
 .focus h1 {
@@ -81,4 +86,30 @@
     font-size: 30px;
     font-weight: 800;
     margin-bottom: 1.5rem;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 600px) {
+    .tabBtn-pc {
+        display: none;
+    }
+    
+    .tabBtn-m {
+        display: block;
+    }
+
+    .roadmap-title h1 {
+        font-size: 30px;
+        margin-bottom: .5rem;
+    }
+
+    .roadmap-title p {
+        font-size: 18px;
+    }
+
+    .table-title h1 {
+        font-size: 24px;
+    }
 }
