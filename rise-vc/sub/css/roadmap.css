@@ -113,3 +113,28 @@
         font-size: 24px;
     }
 }
+
+
+@media (max-width: 450px) {
+    .tabBtn-wrapper a {
+        padding: 10px 0;
+    }
+
+    .tabBtn h1 {
+        font-size: 16px;
+    }
+
+    .roadmap-title h1 {
+        font-size: 24px;
+    }
+
+    .roadmap-title p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .table-title h1 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+}

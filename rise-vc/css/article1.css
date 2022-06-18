@@ -96,7 +96,7 @@
 @media (max-width: 700px) {
     .article1 {
         padding: 80px 0 120px 0;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .a1-sub-title {
@@ -126,5 +126,32 @@
     
     .hexagon4 {
         transform: translate(120px, 150px);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .article1 {
+        padding: 60px 0;
+    }
+    
+    .hexagon {
+        width: 170px;
+    }
+
+    .hexagon1 {
+        transform: translate(-90px, -100px);
+    }
+
+    .hexagon2 {
+        transform: translate(-90px, 130px);
+    }
+    
+    .hexagon3 {
+        transform: translate(90px, -100px);
+    }
+    
+    .hexagon4 {
+        transform: translate(90px, 130px);
     }
 }

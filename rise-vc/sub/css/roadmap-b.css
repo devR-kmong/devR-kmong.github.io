@@ -88,3 +88,19 @@
         font-size: 16px;
     }
 }
+
+
+@media (max-width: 450px) {
+    .r-b-box {
+        padding: 25px 10px;
+        gap: .5rem;
+    }
+    
+    .r-b-box i {
+        font-size: 35px;
+    }
+
+    .r-b-box p {
+        font-size: 13px;
+    }
+}

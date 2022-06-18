@@ -69,3 +69,12 @@
         display: block;
     }
 }
+
+
+@media (max-width: 450px) {
+    .mySwiper {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: none;
+    }
+}

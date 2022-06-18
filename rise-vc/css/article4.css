@@ -18,12 +18,6 @@
     gap: 1rem;
 }
 
-.a4-wrapper p {
-    color: #222;
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: -0.02em;
-    margin: 2rem 0;
+.a4-wrapper img {
+    margin-bottom: 2rem;
 }

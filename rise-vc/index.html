@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/article3.css">
     <link rel="stylesheet" href="css/article4.css">
     <link rel="stylesheet" href="css/article5.css">
+    <link rel="stylesheet" href="css/articlex.css">
     <link rel="stylesheet" href="sub/css/roadmap-a.css">
     <link rel="stylesheet" href="sub/css/roadmap-b.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -116,8 +117,9 @@
             </div>
         </section>
 
-        <section class="article">
+        <section class="article articlex">
             <div class="article-wrapper">
+                <img src="images/ax-sub-title.png" class="ax-sub-title">
                 <div class="article-title">
                     <h1>
                         라이즈 화상영어 로드맵
@@ -479,14 +481,29 @@
     });
 </script>
 
-<script> // 특징 마우스 오버 시 액션 코드입니다
-    $(window).scroll(function() {
-                if ($(this).scrollTop() > 2600) {
-                    $('.hexagon').removeClass('hexagon-before');
-                } else {
-                    $('.hexagon').addClass('hexagon-before');
-                }
-            });
+<script> 
+    
+</script>
+
+<script> // '특징' 마우스 스크롤 시 헥사곤 액션 코드입니다
+    if (window.innerWidth < 500) {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 2000) {
+                $('.hexagon').removeClass('hexagon-before');
+            } else {
+                $('.hexagon').addClass('hexagon-before');
+            }
+        });
+    }
+    else {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 2600) {
+                $('.hexagon').removeClass('hexagon-before');
+            } else {
+                $('.hexagon').addClass('hexagon-before');
+            }
+        });
+    }
 </script>
 
 <script> // 육각형 클릭 시 이동 경로입니다

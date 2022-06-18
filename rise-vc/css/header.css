@@ -90,3 +90,38 @@ nav ul li:hover {
         display: none;
     }
 }
+
+
+
+@media (max-width: 450px) {
+    .gnb {
+        height: 30px;
+    }
+    
+    .gnbText {
+        font-size: 12px;
+    }
+
+    .gnbText-line {
+        height: 15px;
+    }
+
+    .gnbBtn {
+        height: 30px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .gnbBtn li {
+        width: 70px;
+    }
+
+    .logo {
+        width: 47px;
+    }
+
+    nav {
+        height: 70px;
+        padding: 0 20px;
+    }
+}

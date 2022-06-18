@@ -100,6 +100,8 @@
 @media (max-width: 1000px) {
     .a-wrapper {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 4rem;
     }
 }
@@ -144,5 +146,37 @@
 
     .a-text p {
         font-size: 15px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a-wrapper {
+        gap: 2rem;
+    }
+    
+    .a-image {
+        width: 60%;
+    }
+    
+    .sub-title h1 {
+        font-size: 30px;
+    }
+
+    .sub-title h1 span {
+        top: -40px; left: 115px;
+        font-size: 100px;
+    }
+
+    .sub-title-long h1 span {
+        left: 190px;
+    }
+
+    .a-text h2 {
+        font-size: 18px;
+    }
+
+    .a-text p {
+        font-size: 13px;
     }
 }

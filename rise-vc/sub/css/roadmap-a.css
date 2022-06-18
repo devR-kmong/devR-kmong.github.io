@@ -148,6 +148,7 @@ table td:hover {
 }
 
 .t2-book {
+    height: 105px;
     padding: 0;
     background-color: #eee;
 }
@@ -196,10 +197,48 @@ table td:hover {
     }
 
     .t2-book {
+        height: 70px;
         padding: 0 20px;
     }
 
     .t2-book-phonics {
         padding: 0;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .t-category {
+        font-size: 10px;
+    }
+    
+    .t-v-level h1 {
+        font-size: 11px;
+    }
+    
+    .t-grade {
+        font-size: 10px;
+    }
+
+    .t-vc {
+        font-size: 11px;
+    }
+
+    .t2-category {
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .t2-v {
+        font-size: 11px;
+    }
+
+    .t2-book {
+        height: 50px;
+        padding: 0 10px;
+    }
+
+    .t2-book img {
+        height: 40px;
     }
 }

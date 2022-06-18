@@ -86,3 +86,19 @@
         font-size: 18px;
     }
 }
+
+
+@media (max-width: 450px) {
+    .a5-wrapper {
+        padding-top: 0;
+        gap: 1.5erm;
+    }
+
+    .a5-text h1 {
+        font-size: 18px;
+    }
+
+    .a5-step ul li {
+        font-size: 16px;
+    }
+}
