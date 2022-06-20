@@ -1,0 +1,147 @@
+.a6-bg {
+    background-color: #f8f8f8;
+}
+
+.a6Btn {
+    width: 650px;
+    height: 70px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.a6Btn:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+}
+
+.a6Btn p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+/*==================================================*/
+table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+table thead {
+    color: #222 !important;
+    font-size: 15px;
+    font-weight: 600;
+    border-top: 2px solid #333;
+    background-color: #f1f1f1;
+}
+
+table th,
+table td {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    word-break: break-all !important;
+}
+
+table td {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+table tbody tr:hover {
+    background-color: #f8f8f8;
+}
+
+table tbody tr:hover .C-sellerq {
+    color: var(--main-color);
+}
+
+table tbody td {
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+table tbody td:first-child {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.table-notice {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.table-notice ul {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.table-notice ul li {
+    color: #555;
+    font-size: 16px;
+}
+
+
+
+/*==================================================*/
+.Compare tbody tr td {
+    padding: 15px 0;
+}
+
+.C-sellerq {
+    color: #333;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+/*==================================================*/
+.supportMK tbody td {
+    padding: 12px 0;
+}
+
+.supportMK tbody td i {
+    color: #23a177;
+    font-size: 26px;
+}
+
+.supportMK tbody td img {
+    padding-top: 8px;
+}
+
+
+/*==================================================*/
+.noFee tbody tr:hover {
+    background-color: transparent;
+}
+
+.noFee tbody tr td {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 100px 0;
+}
+
+.noFee tbody tr td span {
+    color: #df2f2f;
+    font-size: 33px;
+    font-weight: 800;
+}
+
+
+
+/*==================================================*/

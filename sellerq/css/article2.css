@@ -1,0 +1,31 @@
+.article2 {
+    background-color: #f8fcfa;
+}
+
+.a2-text {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.a2-text h2 {
+    color: #333;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: .7rem;
+}
+
+.a2-text h2 span {
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.a2-text p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+
+
+/*==================================================*/

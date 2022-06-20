@@ -1,0 +1,39 @@
+.a3-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.a3-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.a3-box-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.a3-box-info h1 {
+    color: #222;
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: .5rem;
+}
+
+.a3-box-info p {
+    color: #444;
+    font-size: 18px;
+}
+
+.a3-box img {
+    border-radius: 30px;
+}
+
+
+
+/*==================================================*/
