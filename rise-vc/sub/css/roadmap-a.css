@@ -153,7 +153,9 @@ table td:hover {
     background-color: #eee;
 }
 
-
+.b-phonics-m {
+    display: none;
+}
 
 
 /*==================================================*/
@@ -203,6 +205,14 @@ table td:hover {
 
     .t2-book-phonics {
         padding: 0;
+    }
+
+    .b-phonics {
+        display: none;
+    }
+
+    .b-phonics-m {
+        display: block;
     }
 }
 

@@ -177,6 +177,10 @@
     margin-bottom: .8rem;
 }
 
+.r-c-image img {
+    width: 600px;
+}
+
 
 
 /*==================================================*/
@@ -281,6 +285,10 @@
     }
 
     .t3-type {
+        font-size: 10px;
+    }
+
+    .t-vc {
         font-size: 10px;
     }
 
