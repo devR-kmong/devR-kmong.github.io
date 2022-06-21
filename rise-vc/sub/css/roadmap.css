@@ -96,6 +96,9 @@ table tbody tr td br {
     display: none;
 }
 
+.t-grade br {
+    display: block;
+}
 
 
 /*==================================================*/
