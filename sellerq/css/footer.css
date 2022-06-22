@@ -40,14 +40,8 @@ footer {
         gap: .5rem;
     }
 
-    .footer-wrapper p {
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 768px) {
     .footer-wrapper p {    
+        width: 100%;
         line-height: 1.8;
     }
 
