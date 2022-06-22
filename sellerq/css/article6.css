@@ -64,7 +64,7 @@ table tbody tr:hover {
 }
 
 table tbody tr:hover .C-sellerq {
-    color: var(--main-color);
+    color: #df2f2f;
 }
 
 table tbody td {
@@ -96,6 +96,9 @@ table tbody td:first-child {
     font-size: 16px;
 }
 
+.td-logo {
+    width: 100px;
+}
 
 
 /*==================================================*/
@@ -104,9 +107,29 @@ table tbody td:first-child {
 }
 
 .C-sellerq {
-    color: #333;
+    color: #0077bf;
     font-size: 17px;
     font-weight: 700;
+}
+
+.nf-text {
+    color: #df2f2f;
+    font-size: 60px;
+    font-weight: unset;
+    font-family: 'KOHIBaeumOTF';
+    margin-bottom: .5rem;
+    animation: blink 1s step-end infinite;
+}
+
+@font-face {
+    font-family: 'KOHIBaeumOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes blink {
+    50% {opacity: 0;}
 }
 
 
