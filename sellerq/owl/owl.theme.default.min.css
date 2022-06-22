@@ -54,3 +54,13 @@
 .owl-theme .owl-dots .owl-dot:hover span {
     background: #869791
 }
+
+
+/*==================================================*/
+@media (max-width: 600px) {
+    .owl-dot span {
+        width: 6px !important;
+        height: 6px !important;
+        margin: 2px 4px !important;
+    }
+}

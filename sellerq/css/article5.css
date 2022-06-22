@@ -9,9 +9,15 @@
 }
 
 .a5-icon-group {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5rem;
+}
+
+.a5-icons {
+    display: flex;
     gap: 5rem;
 }
 
@@ -56,8 +62,6 @@
 }
 
 
-
-/*==================================================*/
 .a5-wrapper-2 {
     width: 100%;
     display: flex;
@@ -103,4 +107,86 @@
 
 
 /*==================================================*/
+@media (max-width: 1100px) {
+    .a5-icon-group {
+        gap: 2rem;
+    }
 
+    .a5-icons {
+        gap: 2rem;
+    }
+
+    .a5-wrapper-2 {
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a5-wrapper {
+        gap: 2rem;
+    }
+    
+    .a5-icon-group {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .article5 {
+        padding-bottom: 0 !important;
+    }
+      
+    .a5-icon {
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        border-radius: 50%;
+    }
+
+    .a5-icon i {
+        font-size: 40px;
+    }
+
+    .a5-text p {
+        font-size: 13px;
+    }
+
+    .a5-wrapper-2 {
+        gap: 0;
+    }
+
+    .a5-items {
+        gap: 0;
+    }
+
+    .a5-items {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .a5-items:last-child {
+        border-bottom: none;
+    }
+
+    .a5-icon-group-2 {
+        padding-bottom: 40px;
+    }
+    
+    .a5-circle {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        background-color: transparent;
+    }
+
+    .a5-circle img {
+        width: 100px;
+    }
+
+    .a5-circle p {
+        margin-top: .5rem;
+    }
+}

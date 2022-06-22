@@ -1,3 +1,7 @@
+.article3 {
+    overflow: hidden;
+}
+
 .a3-box-wrapper {
     width: 100%;
     display: flex;
@@ -37,3 +41,33 @@
 
 
 /*==================================================*/
+@media (max-width: 768px) {
+    .a3-box-info h1 {
+        font-size: 20px;
+    }
+
+    .a3-box-info p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a3-box-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .a3-box img {
+        width: 396px;
+        border-radius: 20px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a3-box-wrapper {
+        gap: 2rem;
+    }
+}

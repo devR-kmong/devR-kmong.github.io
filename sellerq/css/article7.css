@@ -51,3 +51,48 @@
 
 
 /*==================================================*/
+@media (max-width: 1000px) {
+    .a7-box i {
+        font-size: 85px;
+    }
+
+    .a7-box p {
+        font-size: 17px;
+    }
+
+    .a7-box-number h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 650px) {    
+    .a7-box i {
+        font-size: 65px;
+        margin-bottom: .5rem;
+    }
+
+    .a7-box p {
+        font-size: 15px;
+        margin-bottom: .5rem;
+    }
+
+    .a7-box-number h1 {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 450px) {    
+    .a7-box i {
+        font-size: 50px;
+    }
+
+    .a7-box p {
+        font-size: 13px;
+    }
+
+    .a7-box-number h1 {
+        font-size: 22px;
+    }
+}

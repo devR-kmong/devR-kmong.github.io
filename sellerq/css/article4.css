@@ -62,3 +62,31 @@
 
 
 /*==================================================*/
+@media (max-width: 600px) {
+    .a4-box-title {
+        font-size: 20px;
+    }
+
+    .a4-box {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-box-title {
+        font-size: 16px;
+    }
+
+    .a4-box i {
+        font-size: 40px;
+    }
+
+    .a4-box h3 {
+        font-size: 16px;
+    }
+
+    .a4-box p {
+        font-size: 16px;
+    }
+}

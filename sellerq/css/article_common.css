@@ -35,7 +35,10 @@
     color: #222;
     font-size: 33px;
     font-weight: 800;
-    margin-bottom: .5rem;
+}
+
+.article-title h1 br {
+    display: none;
 }
 
 .article-title h1 span {
@@ -52,6 +55,7 @@
     color: #777;
     font-size: 18px;
     line-height: 1.4;
+    margin-top: .5rem;
 }
 
 
@@ -68,5 +72,30 @@
 @media (max-width: 850px) {
     .article {
         padding: 40px 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .article-title h2 {
+        font-size: 18px;
+    }
+    
+    .article-title h1 {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    .article-title h1 br {
+        display: block;
+    }
+
+    .article-title p {
+        font-size: 16px;
+        margin-top: .7rem;
+    }
+
+    .article-title p br {
+        display: none;
     }
 }
