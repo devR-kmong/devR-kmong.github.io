@@ -63,6 +63,7 @@
                 <a href="https://www.funnacademy.com" target="_blank"><li>교육문의/신청</li></a>
                 <a href="/notice.asp"><li>공지사항</li></a>
             </ul>
+            <div class="overlay"></div>
         </nav>
     </header>
     <main>
@@ -1498,6 +1499,11 @@
 
 <script>
     $('nav ul li a').click(function(){
+        $('#check').prop('checked', false)
+        $('.menuBtns').removeClass('change')
+    })
+
+    $('.overlay').click(function () {
         $('#check').prop('checked', false)
         $('.menuBtns').removeClass('change')
     })
