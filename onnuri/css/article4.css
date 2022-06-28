@@ -1,0 +1,236 @@
+.article4 {
+    background-color: #f8f8f8;
+}
+
+.process {
+    margin-bottom: 5rem;
+}
+
+.process-wrapper {
+    padding-right: 20px;
+    position: relative;
+    display: flex;
+    gap: 10rem;
+}
+
+.process-line {
+    position: absolute;
+    top: 20px; left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 91%;
+    height: 1px;
+    background: #a6d7ff;
+    z-index: 2;
+}
+
+.process-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    gap: 1rem;
+}
+
+.process-circle {
+    width: 40px;
+    height: 40px;
+    background: var(--main-color);
+    border-radius: 30px;
+    z-index: 3;
+}
+
+.process-info p {
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    text-align: center;
+}
+
+
+
+.p-circle1 {
+    background: #76d3ff;
+}
+
+.p-info1 p {
+    color: #76d3ff;
+}
+
+.p-circle2 {
+    background: #4fc3f7;
+}
+
+.p-info2 p {
+    color: #4fc3f7;
+}
+
+.p-circle3 {
+    background: #03a9f4;
+}
+
+.p-info3 p {
+    color: #03a9f4;
+}
+
+.p-circle4 {
+    background: #0288d1;
+}
+
+.p-info4 p {
+    color: #0288d1;
+}
+
+.p-circle5 {
+    background: #01579b;
+}
+
+.p-info5 p {
+    color: #01579b;
+}
+
+
+
+.a4-box-wrapper {
+    width: 1600px;
+    display: flex;
+    gap: 1rem;
+}
+
+.a4-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    gap: .3rem;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .07);
+    background-color: #fff;
+}
+
+.a4-image ion-icon {
+    color: var(--main-color);
+    font-size: 55px;
+}
+
+.vial-w {
+    display: none;
+}
+
+.a4-text {
+    text-align: center;
+}
+
+.a4-text h1 {
+    color: #222;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: .3rem;
+}
+
+.a4-text p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.a4-box:hover {
+    background-color: var(--main-color);
+}
+
+.a4-box:hover .a4-text h1 {
+    color: #fff;
+}
+
+.a4-box:hover .a4-text p {
+    color: #fff;
+}
+
+.a4-box:hover .a4-image ion-icon {
+    color: #fff;
+}
+
+.a4-box:hover .vial {
+    display: none;
+}
+
+.a4-box:hover .vial-w {
+    display: flex;
+    margin-bottom: 4px;
+}
+
+
+
+
+/*=========================================================*/
+@media (max-width: 1650px) {
+    .a4-box-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .process-wrapper {
+        gap: 4rem;
+    }
+
+    .process-line {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .process {
+        margin-bottom: 2.5rem;
+    }
+
+    .process-wrapper {
+        gap: 3rem;
+    }
+
+    .process-info p {
+        font-size: 18px;
+    }
+
+    .a4-text h1 {
+        font-size: 18px;
+    }
+
+    .a4-text p {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .process {
+        margin-bottom: 1.5rem;
+    }
+
+    .process-wrapper {
+        gap: 1.5rem;
+        padding-right: 10px;
+    }
+
+    .process-circle {
+        width: 23px;
+        height: 23px;
+    }
+
+    .process-line {
+        top: 12px;
+    }
+    
+    .process-info p {
+        font-size: 12px;
+    }
+
+    .a4-box-wrapper {
+        flex-direction: column;
+    }
+}
