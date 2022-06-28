@@ -52,7 +52,6 @@
     border: none;
     border-bottom: 1px solid #aaa;
     background-color: transparent;
-    transition: all .3s;
 }
 
 .form-wrapper .inputbox:focus {

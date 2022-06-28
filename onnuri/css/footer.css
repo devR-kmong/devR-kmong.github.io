@@ -46,4 +46,8 @@ footer {
         flex-direction: column;
         padding: 30px 20px;
     }
+
+    .f-item p {
+        font-size: 12px;
+    }
 }
