@@ -34,6 +34,11 @@ nav ul li a {
     letter-spacing: -0.02em;
 }
 
+nav ul li a:hover {
+    color: var(--main-color);
+    border-bottom: 5px solid var(--main-color);
+}
+
 .Fixed {
     position: fixed;
     top: 0;
@@ -56,17 +61,17 @@ nav ul li a {
     border-bottom: 5px solid var(--main-color);
 }
 
-.logo-w h1 {
+.logo-w a {
     color: #fff;
     font-size: 26px;
-    font-weight: unset;
+    font-weight: normal;
     font-family: 'BMEULJIRO';
 }
 
-.logo h1 {
+.logo a {
     color: var(--main-color);
     font-size: 26px;
-    font-weight: unset;
+    font-weight: normal;
     font-family: 'BMEULJIRO';
 }
 

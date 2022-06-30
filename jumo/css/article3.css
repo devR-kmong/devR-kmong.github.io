@@ -173,6 +173,7 @@
 @media (max-width: 500px) {
     .article3 {
         padding: 40px 0;
+        padding-top: 80px;
         overflow: hidden;
     }
     

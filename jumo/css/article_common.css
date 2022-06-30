@@ -49,6 +49,7 @@
 @media (max-width: 768px) {
     .article {
         padding: 40px 0;
+        padding-top: 80px;
     }
 
     .article-title {
