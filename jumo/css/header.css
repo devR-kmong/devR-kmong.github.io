@@ -34,7 +34,7 @@ nav ul li a {
     letter-spacing: -0.02em;
 }
 
-nav ul li a:hover {
+header.Fixed > nav ul li a:hover {
     color: var(--main-color);
     border-bottom: 5px solid var(--main-color);
 }
