@@ -1,0 +1,238 @@
+.form-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s;
+}
+
+.form-wrapper .inputbox {
+    width: 100%;
+    height: 55px;
+    padding: 10px 3px;
+    margin: .5rem 0;
+    font-size: 15px;
+    font-family: 'Pretendard';
+    border: none;
+    outline: none;
+    border-bottom: 1px dashed #888;
+    background-color: transparent;
+}
+
+.form-wrapper .selectbox {
+    width: 100%;
+    height: 55px;  
+    margin: .5rem 0;
+    font-size: 15px;
+    font-family: 'Pretendard';
+    border: none;
+    outline: none;
+    border-bottom: 1px dashed #888;
+    background-color: transparent;
+}
+
+.form-wrapper .textbox {
+    width: 100%;
+    height: 150px;
+    padding: 10px 3px;
+    margin: .5rem 0 1rem 0;
+    font-size: 15px;
+    font-family: 'Pretendard';
+    line-height: 1.5;
+    border: none;
+    outline: none;
+    border-bottom: 1px dashed #888;
+    background-color: transparent;
+}
+
+.form-wrapper .inputbox:focus {
+    border-bottom: 1px dashed #111;
+}
+
+.form-wrapper .selectbox:focus {
+    border-bottom: 1px dashed #111;
+}
+
+.form-wrapper .textbox:focus {
+    border-bottom: 1px dashed #111;
+}
+
+.button-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+textarea::placeholder {
+    color: #888;
+}
+
+/*==========================================================*/
+.check {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+
+.personal-label {
+    display: block !important;
+}
+
+.personal-label p {
+    color:#555;
+    font-size: 15px;
+    padding-left: 4px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.personal-label p span {
+    color:red;
+}
+
+.check-notice {
+    position: absolute;
+    bottom: -50px; left: 0;
+    width: 300px;
+    height: 40px;
+    background-color: #ffee90;
+    border-radius: 10px;
+    transition: all .3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    z-index: 999;
+}
+
+.check-notice::after {
+    position: absolute;
+    top: -5px; left: 30px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-color: #ffee90;
+    transform: rotate(45deg);
+}
+
+.check-notice p {
+    color: #444;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.check-notice p a {
+    color: royalblue;
+    font-weight: 700;
+}
+
+#cb:checked ~ .check-notice {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/*==========================================================*/
+select {
+    color: #888;
+    width: 100%;
+    height: 55px;
+    margin: .5rem 0;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+select:valid {
+    color: #222;
+}
+
+select option {
+    color: #444;
+    font-size: 15px;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+
+/*==========================================================*/
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.submitBtn {
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Pretendard';
+    background-color: #111;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.submitBtn:disabled {
+    cursor: not-allowed;
+    background-color: #aaa;
+}
+
+
+
+/*=============================================================*/
+@media (max-width: 600px) {
+    .button-wrapper {
+        display: block;
+    }
+
+    .submitBtn {
+        width: 200px;
+        margin-top: 1rem;
+    }
+}
+
+
+
+@media (max-width: 450px) {
+    .form-wrapper .inputbox {
+        height: 45px;
+        margin: .3rem 0;
+        font-size: 13px;
+    }
+
+    .form-wrapper .selectbox {
+        height: 45px;
+        margin: .3rem 0;
+        font-size: 13px;
+    }
+
+    .form-wrapper .textbox {
+        height: 100px;
+        margin: .3rem 0 .7rem 0;
+        font-size: 13px;
+    }
+
+    .personal-label p {
+        font-size: 13px;
+    }
+
+    .submitBtn {
+        width: 170px;
+        height: 43px;
+        font-size: 14px;
+    }
+}

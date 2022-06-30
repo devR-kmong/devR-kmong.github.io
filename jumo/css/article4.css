@@ -1,0 +1,153 @@
+.article4 {
+    padding: 120px 0;
+    background: rgb(34,34,34);
+    background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(66,12,12,1) 100%);
+}
+
+.a4-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.a4-wrapper h2 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: unset;
+    font-family: 'EF_MACHO';
+    margin-bottom: 3rem;
+}
+
+.a4-wrapper h1 {
+    color: red;
+    font-size: 220px;
+    line-height: 1.3;
+    font-weight: bolder;
+    font-family: 'EF_MACHO';
+    text-shadow: 3px 3px 0 #fff;
+    margin-bottom: 3rem;
+}
+
+.a4-wrapper h1 span {
+    font-family: 'EF_MACHO';
+}
+
+.a4-wrapper h3 {
+    color: #fff;
+    font-size: 110px;
+    font-weight: unset;
+    font-family: 'EF_MACHO';
+    margin-bottom: 7rem;
+}
+
+.a4-wrapper p {
+    color: #aaa;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+.scrollDown {
+    -webkit-animation: upDown 1s ease-in-out infinite;
+    animation: upDown 1s ease-in-out infinite;
+}
+
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-7px);
+	}
+	50% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform:  translateY(-7px);
+	}
+}
+
+
+@font-face {
+    font-family: 'EF_MACHO';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_MACHO.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*==================================================*/
+@media (max-width: 1070px) {
+    .article4 {
+        padding-bottom: 40px;
+    }
+    
+    .a4-wrapper h2 {
+        font-size: 45px;
+        margin-bottom: 2rem;
+    }
+    
+    .a4-wrapper h1 {
+        font-size: 170px;
+        margin-bottom: 1rem;
+    }
+
+    .a4-wrapper h3 {
+        font-size: 80px;
+        margin-bottom: 5rem;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .a4-wrapper h1 {
+        font-size: 100px;
+    }
+
+    .a4-wrapper h3 {
+        font-size: 50px;
+        margin-bottom: 3rem;
+    }
+
+    .a4-wrapper p {
+        font-size: 15px;
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .a4-wrapper h2 {
+        font-size: 35px;
+        margin-bottom: 1rem;
+    }
+    
+    .a4-wrapper h1 {
+        font-size: 85px;
+    }
+
+    .a4-wrapper h3 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .article4 {
+        padding: 40px;
+    }
+    
+    .a4-wrapper h2 {
+        font-size: 28px;
+        margin-bottom: .7rem;
+    }
+    
+    .a4-wrapper h1 {
+        font-size: 65px;
+    }
+
+    .a4-wrapper h3 {
+        font-size: 30px;
+    }
+}
