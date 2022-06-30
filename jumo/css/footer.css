@@ -4,7 +4,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #111;
+    background-color: #181818;
     padding: 60px 20px;
 }
 
@@ -37,7 +37,7 @@ footer {
 }
 
 .fBtn {
-    color: #555;
+    color: #777;
     display: flex;
     gap: 1rem;
 }
@@ -48,20 +48,20 @@ footer {
 }
 
 .footer-box-title h2 {
-    color: #555;
+    color: #777;
     font-size: 18px;
     font-weight: 700;
 }
 
 .footer-box-info h1 {
-    color: #555;
+    color: #777;
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .footer-box-info p {
-    color: #555;
+    color: #777;
     font-size: 15px;
     line-height: 1.5;
 }
@@ -81,7 +81,7 @@ footer {
 }
 
 .f-list li {
-    color: #555;
+    color: #777;
     font-size: 15px;
 }
 
