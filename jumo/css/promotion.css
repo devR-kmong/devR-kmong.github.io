@@ -1,0 +1,182 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    overflow-y: hidden;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.s-slide1 {
+    background: url(../images/b1.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.s-slide2 {
+    background: url(../images/b2.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.s-slide3 {
+    background: url(../images/b3.jpg);
+    background-position: right;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    width: 1320px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 6;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.02em; 
+    margin-bottom: .5rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.content h1 br {
+    display: none;
+}
+
+.content p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.progressbar {
+    position: absolute;
+    bottom: 43px; left: -91px;
+    transform: rotate(-90deg);
+}
+
+.progress-circle {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 156;
+    stroke-dashoffset: 156;
+}
+
+
+.swiper-slide-active .content h1 {
+    animation: slideAnimation 1.5s .3s both;
+}
+
+.swiper-slide-active .content p {
+    animation: slideAnimation 1.5s .5s both;
+}
+
+.swiper-slide-active .progress-circle {
+    animation: progressCircle 10s both;
+}
+
+
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes progressCircle {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/*==================================================*/
+@media (max-width: 1370px) {
+    .swiper-slide {
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 1070px) {
+    .swiper-slide::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 750px;
+        display: flex;
+        background-color: rgba(0, 0, 0, .4);
+        z-index: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .carousel {
+        position: relative;
+        height: 500px;
+    }
+
+    .swiper-slide {
+        padding-top: 0;
+    }
+
+    .swiper-slide::after {
+        height: 500px;
+    }
+
+    .content {
+        height: 500px;
+        z-index: 2;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .content h1 {
+        font-size: 33px;
+    }
+
+    .content h1 br {
+        display: block;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content p br {
+        display: none;
+    }
+}
