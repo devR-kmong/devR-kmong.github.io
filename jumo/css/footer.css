@@ -32,6 +32,10 @@ footer {
     gap: 1rem;
 }
 
+.footer-box-image img {
+    width: 170px;
+}
+
 .fBtn {
     color: #555;
     display: flex;
