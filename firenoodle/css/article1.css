@@ -128,6 +128,10 @@
     visibility: visible;
 }
 
+.a1-check {
+    width: 93px;
+}
+
 
 
 /*==================================================*/
@@ -163,6 +167,14 @@
 
 
 @media (max-width: 550px) {
+    .a1-title {
+        font-size: 28px;
+    }
+    
+    .day70 {
+        width: 283px;
+    }
+    
     .a1-box-wrapper {
         gap: 1.5rem;
     }
@@ -181,10 +193,6 @@
         display: block;
     }
 
-    .a1-check {
-        height: 48px;
-    }
-
     .a1-notice p {
         font-size: 16px;
         margin-top: 3rem;
@@ -192,5 +200,9 @@
 
     .a1-notice p span {
         font-size: 20px;
+    }
+
+    .a1-check {
+        width: 69px;
     }
 }

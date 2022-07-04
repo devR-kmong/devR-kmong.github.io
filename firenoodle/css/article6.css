@@ -15,6 +15,13 @@
 }
 
 
+@media (max-width: 768px) {
+    .a6-title {
+        width: 247px;
+    }
+}
+
+
 @media (max-width: 550px) {
     .a6-wrapper {
         margin-top: 1.5rem;

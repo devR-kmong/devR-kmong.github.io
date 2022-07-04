@@ -76,7 +76,11 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+    .a2-title {
+        width: 255px;
+    }
+    
     .a2-circle-wrapper {
         justify-content: center;
         margin-top: 3rem;

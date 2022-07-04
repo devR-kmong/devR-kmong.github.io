@@ -96,6 +96,13 @@
 }
 
 
+@media (max-width: 850px) {
+    .a4-title {
+        width: 418px;
+    }
+}
+
+
 
 @media (max-width: 600px) {
     .a4-circle-wrapper {
