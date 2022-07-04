@@ -1,0 +1,17 @@
+.article5 {
+    padding: 200px 0;
+    background: url(../images/a5-bg.jpg);
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1050px) {
+    .article5 {
+        padding: 120px 0;
+    }
+
+    .a5-1 {
+        width: 504px;
+    }
+}

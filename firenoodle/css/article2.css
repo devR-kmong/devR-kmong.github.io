@@ -1,0 +1,122 @@
+.article2 {
+    background: url(../images/a2-bg.jpg);
+    /* background-color: #2a8bfa; */
+}
+
+.a2-circle-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.a2-circle-wrapper i {
+    color: #fff;
+    font-size: 50px;
+}
+
+.a2-circle {
+    min-width: 300px;
+    width: 300px;
+    min-height: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .04);
+    transition: all .3s ease;
+}
+
+.a2-circle:hover {
+    transform: translateY(-8px);
+}
+
+.a2-circle p {
+    color: #2a8bfa;
+    font-size: 60px;
+    font-family: 'GongGothicBold';
+    padding-top: 5px;
+    letter-spacing: -0.0625em;
+}
+
+@font-face {
+    font-family: 'GongGothicBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .a2-circle-wrapper {
+        gap: .5rem;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .a2-circle {
+        min-width: 200px;
+        width: 200px;
+        min-height: 200px;
+        height: 200px;
+    }
+
+    .a2-circle p {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .a2-circle-wrapper {
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    
+    .a2-circle-wrapper i {
+        font-size: 35px;
+    }
+
+    .a2-circle {
+        min-width: 130px;
+        width: 130px;
+        min-height: 130px;
+        height: 130px;
+    }
+
+    .a2-circle p {
+        font-size: 26px;
+        padding-top: 0;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article2 {
+        overflow: hidden;
+    }
+    
+    .a2-circle-wrapper i {
+        font-size: 25px;
+    }
+
+    .a2-circle {
+        min-width: 85px;
+        width: 85px;
+        min-height: 85px;
+        height: 85px;
+    }
+
+    .a2-circle p {
+        font-size: 20px;
+    }
+}

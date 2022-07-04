@@ -1,0 +1,166 @@
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    padding: 60px 20px;
+}
+
+.footer-wrapper {
+    width: 1200px;
+}
+
+.footer-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer-box-group {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-box-image img {
+    width: 170px;
+}
+
+.fBtn {
+    color: #777;
+    display: flex;
+    gap: 1rem;
+}
+
+.fBtn p {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.footer-box-title h2 {
+    color: #777;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-box-info h1 {
+    color: #777;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-box-info p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.knp-info {
+    width: 650px;
+}
+
+.knp-info br {
+    display: none;
+}
+
+.f-list {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.f-list li {
+    color: #777;
+    font-size: 15px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .footer-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1170px) {
+    .footer-box-group {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .footer-box-wrapper {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    .footer-box-group {
+        width: 100%;
+    }
+
+    .footer-box-group > .footer-box {
+        width: 100%;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .f-brandbox {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .knp-info {
+        width: 100%;
+    }
+
+    .knp-info br {
+        display: block;
+    }
+
+    .knp-info span {
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+    footer {
+        padding: 40px 20px;
+    }
+    
+    .footer-box-wrapper {
+        gap: 2rem;
+    }
+    
+    .fBtn p {
+        font-size: 14px;
+    }
+
+    .footer-box-title h2 {
+        font-size: 16px;
+    }
+    
+    .footer-box-info h1 {
+        font-size: 22px;
+    }
+
+    .footer-box-info p {
+        font-size: 13px;
+    }
+}
