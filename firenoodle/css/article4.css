@@ -1,6 +1,7 @@
 .article4 {
     position: relative;
     background-color: #222;
+    overflow: hidden;
 }
 
 .article4::after {
