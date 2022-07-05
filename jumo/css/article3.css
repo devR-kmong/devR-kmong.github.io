@@ -1,6 +1,7 @@
 .article3 {
     padding: 150px 0;
     background: url(../images/a3-bg.jpg);
+    overflow: hidden;
 }
 
 .a3-wrapper {

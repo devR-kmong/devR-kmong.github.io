@@ -1,3 +1,7 @@
+.article1 {
+    overflow: hidden;
+}
+
 .a1-wrapper {
     width: 100%;
     display: flex;
