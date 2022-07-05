@@ -46,6 +46,14 @@ nav ul li a {
     display: none;
 }
 
+.logo {
+    width: 130px;
+}
+
+.logo-m {
+    width: 90px;
+}
+
 
 /*==================================================*/
 @media (max-width: 1250px) {
