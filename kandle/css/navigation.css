@@ -1,0 +1,57 @@
+.navigation {
+    position: absolute;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.remote {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.remoteBtn a {
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: 20px 0;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+
+.remoteBtn a.actives {
+    border-radius: 50%;
+    background-color: var(--main-color);
+    -webkit-animation: pulseAnim 1.3s infinite;
+    animation: pulseAnim 1.3s infinite;
+}
+
+@keyframes pulseAnim {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 0, 191, 0.5);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgb(151 213 229 / 0%);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgb(151 213 229 / 0%);
+	}
+}
+
+
+/*=========================================================*/
+@media (max-width: 768px) {
+    .remote {
+        right: 15px;
+    }
+
+    .remoteBtn a {
+        margin: 13px 0;
+    }
+}
