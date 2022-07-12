@@ -167,15 +167,23 @@
 
 @media (max-width: 500px) {
     .promotion {
-        height: 650px !important;
+        height: 500px !important;
+    }
+
+    .promotion-wrapper {
+        padding-top: 40px;
+    }
+
+    .symbol {
+        left: 0;
     }
     
     .p-text h5 {
-        font-size: 45px;
+        font-size: 40px;
     }
     
     .p-text h1 {
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .pBtn-wrapper {
