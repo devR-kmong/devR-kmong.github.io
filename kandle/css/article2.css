@@ -36,14 +36,19 @@
     
     .a2-1 {
         position: unset;
-    }
-
-    
+    }    
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {    
     .a2-2 {
         display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a2-1 {
+        width: 186px;
     }
 }

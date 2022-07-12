@@ -54,3 +54,10 @@
     }
 }
 
+
+
+@media (max-width: 550px) {
+    .ai-4 video {
+        max-width: 250px;
+    }
+}
