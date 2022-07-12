@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/promotion.css">
     <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/floating.css">
     <link rel="stylesheet" href="css/article_common.css">
     <link rel="stylesheet" href="css/article1.css">
     <link rel="stylesheet" href="css/article2.css">
@@ -31,6 +32,11 @@
     <title>캔들 - 새로운 설렘을 찾을 때</title>
 </head>
 <body>
+    <div class="floating">
+        <a href="/"><div class="topBtn">
+            <i class="ri-arrow-up-s-line"></i>
+        </div></a>
+    </div>
     <div class="navigation">
         <div class="remote">
             <div class="remote-item">
@@ -233,10 +239,28 @@
     })
 </script>
 
+<script>
+    $(document).ready(function () {
+
+        $(".floating").hide();
+        $(function () {
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.floating').fadeIn();
+                } else {
+                    $('.floating').fadeOut();
+                }
+            });
+        });
+
+    });
+</script>
+
 <script src="js/jquery.scrollTo.min.js"></script>
 <script>
     $(function () {
-        $('.remoteBtn a, .logo-f a').click(function (e) {
+        $('.floating a, .remoteBtn a, .logo-f a').click(function (e) {
             $.scrollTo(this.hash || 0, 500);
             e.preventDefault();
         });
