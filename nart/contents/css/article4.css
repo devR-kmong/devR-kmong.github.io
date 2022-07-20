@@ -1,0 +1,41 @@
+.a4-box-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.a4-box {
+    flex: 1;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, .05);
+    border: 1px solid #eee;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .05);
+}
+
+.a4-box-text h1 {
+    color: #222;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.a4-box-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.a4-box-text ul li {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+/*==================================================*/

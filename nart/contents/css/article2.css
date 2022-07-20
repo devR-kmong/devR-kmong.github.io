@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.article2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.a2-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.a2-text {
+    width: 850px;
+}
+
+.a2-text p {
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.a2-askBtn {
+    color: #222;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 2rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.a2-askBtn:hover {
+    gap: 15px;
+}
+
+.a2-image {
+    position: absolute;
+    top: -175px; right: -500px;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.a2-image img {
+    animation: expansion 15s infinite;
+    animation-play-state: paused;
+}
+
+.article2:hover .a2-image img {
+    animation-play-state: running;
+}
+
+@keyframes expansion {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/*==================================================*/
+.a2-process-line {
+    position: absolute;
+    top: 868px; left: 0;
+    width: 100%;
+    border: 1px dashed #eee;
+    z-index: 1;
+}
+
+.a2-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.a2-process {
+    position: relative;
+    width: 100%;
+}
+
+.a2-ing-line {
+    position: absolute;
+    top: 25px; left: 0;
+    width: .5%;
+    border: 1px dashed var(--main-color);
+    transition: all .7s;
+    z-index: 2;
+}
+
+.a2-ing-line-2 {
+    width: 12.5%;
+}
+
+.a2-ing-line-3 {
+    width: 25%;
+}
+
+.a2-ing-line-4 {
+    width: 37.5%;
+}
+
+.a2-ing-line-5 {
+    width: 50%;
+}
+
+.a2-ing-line-6 {
+    width: 62.5%;
+}
+
+.a2-ing-line-7 {
+    width: 75%;
+}
+
+.a2-ing-line-8 {
+    width: 87.5%;
+}
+
+.a2-ing-line-9 {
+    width: 100%;
+}
+
+/*==================================================*/
+.a2-process input {
+    display: none;
+}
+
+.a2-label-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.a2-label {
+    color: rgb(196, 196, 196);
+    width: 50px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #eee;
+    transition: background-color 1s;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.a2-label:hover {
+    background-color: #ededed;
+}
+
+#a2-1:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(1) {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+#a2-2:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(1),
+#a2-2:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(2) {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+#a2-3:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(1),
+#a2-3:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(2),
+#a2-3:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(3) {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+#a2-4:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(1),
+#a2-4:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(2),
+#a2-4:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(3),
+#a2-4:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(4) {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+#a2-5:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(1),
+#a2-5:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(2),
+#a2-5:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(3),
+#a2-5:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(4),
+#a2-5:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(5) {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+#a2-6:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(1),
+#a2-6:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(2),
+#a2-6:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(3),
+#a2-6:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(4),
+#a2-6:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(5),
+#a2-6:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(6) {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+#a2-7:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(1),
+#a2-7:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(2),
+#a2-7:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(3),
+#a2-7:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(4),
+#a2-7:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(5),
+#a2-7:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(6),
+#a2-7:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(7) {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+#a2-8:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(1),
+#a2-8:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(2),
+#a2-8:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(3),
+#a2-8:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(4),
+#a2-8:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(5),
+#a2-8:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(6),
+#a2-8:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(7),
+#a2-8:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(8) {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+#a2-9:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(1),
+#a2-9:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(2),
+#a2-9:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(3),
+#a2-9:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(4),
+#a2-9:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(5),
+#a2-9:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(6),
+#a2-9:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(7),
+#a2-9:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(8),
+#a2-9:checked ~ .a2-label-wrapper > .a2-label:nth-of-type(9) {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+
+/*==================================================*/
+.a2-label-item {
+    transition: all .3s;
+    display: none;
+}
+
+#a2-1:checked ~ .a2-label-item-1 {
+    display: flex;
+}
+
+#a2-2:checked ~ .a2-label-item-2 {
+    display: flex;
+}
+
+#a2-3:checked ~ .a2-label-item-3 {
+    display: flex;
+}
+
+#a2-4:checked ~ .a2-label-item-4 {
+    display: flex;
+}
+
+#a2-5:checked ~ .a2-label-item-5 {
+    display: flex;
+}
+
+#a2-6:checked ~ .a2-label-item-6 {
+    display: flex;
+}
+
+#a2-7:checked ~ .a2-label-item-7 {
+    display: flex;
+}
+
+#a2-8:checked ~ .a2-label-item-8 {
+    display: flex;
+}
+
+#a2-9:checked ~ .a2-label-item-9 {
+    display: flex;
+}
+
+
+.a2-label-item {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    background-color: #f8f8f8;
+}
+
+.a2-label-item-text h1 {
+    color: #777;
+    font-size: 15px;
+    font-family: 'Lato';
+    margin-bottom: .5rem;
+}
+
+.a2-label-item-text p {
+    color: #444;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.a2-label-item-4 p {
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+
+/*==================================================*/
+.a2-patent-wrapper {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.a2-patent-text p {
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.a2-patent-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.a2-patent-box {
+    width: 520px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .05);
+}
+
+.a2-patent-box:hover {
+    background-color: var(--main-color);
+}
+
+.a2-patent-box:hover h2,
+.a2-patent-box:hover p {
+    color: #fff;
+}
+
+.a2-patent-box:hover .a2-p {
+    -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(260deg) brightness(106%) contrast(105%);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(260deg) brightness(106%) contrast(105%);
+}
+
+.a2-p {
+    width: 130px;
+    -webkit-filter: invert(13%) sepia(81%) saturate(7096%) hue-rotate(267deg) brightness(106%) contrast(137%);
+    filter: invert(13%) sepia(81%) saturate(7096%) hue-rotate(267deg) brightness(106%) contrast(137%);
+    margin-bottom: .5rem;
+}
+
+.a2-patent-box h2 {
+    color: #222;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.a2-patent-box p {
+    color: #444;
+    font-size: 17px;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: .7rem;
+}
+
+.a2-patent-box p br {
+    display: none;
+}
+
+
+/*==================================================*/
