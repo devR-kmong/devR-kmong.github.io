@@ -1,0 +1,26 @@
+.article1 {
+    height: 600px;
+}
+
+.a1-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.a1-wrapper p {
+    color: #aaa;
+    font-size: 38px;
+    line-height: 1.6;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.a1-wrapper h1 {
+    color: #222;
+    font-size: 50px;
+    line-height: 1.6;
+    font-weight: 800;
+}
+
+
+/*==================================================*/

@@ -1,0 +1,43 @@
+.article3 {
+    padding-bottom: 0;
+}
+
+.a3-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.a3-text {
+    width: 800px;
+    padding-bottom: 150px;
+}
+
+.a3-text h1 {
+    color: #222;
+    font-size: 45px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.a3-text p {
+    color: #444;
+    font-size: 22px;
+    line-height: 1.7;
+    margin-top: 2rem;
+}
+
+.a3-1 {
+    margin-bottom: -4px;
+}
+
+.a3-2 {
+    position: absolute;
+    bottom: -95px; left: 0;
+}
+
+
+/*==================================================*/
