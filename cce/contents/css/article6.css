@@ -103,6 +103,17 @@
     font-weight: 700;
 }
 
+.a6-table tbody td {
+    text-align: center;
+}
+
+.a6-table tbody td em {
+    color: #ddd;
+    font-size: 15px;
+    line-height: 2;
+    font-style: normal;
+}
+
 .a6-t-date {
     width: 120px;
     text-align: center;
