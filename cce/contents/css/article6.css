@@ -1,3 +1,7 @@
+.article6 {
+    background: url(../images/a6-bg.jpg);
+}
+
 .a6-wrapper {
     width: 100%;
 }
@@ -136,22 +140,26 @@
 }
 
 .a6-t-1 {
-    background-color: rgba(0, 255, 136, 0.07);
+    background-color: rgba(255, 255, 255, .05);
+    /* background-color: rgba(0, 255, 136, 0.07); */
 }
 
 .a6-t-2 {
     text-align: center;
-    background-color: rgba(251, 255, 0, 0.07);
+    background-color: rgba(255, 255, 255, .05);
+    /* background-color: rgba(251, 255, 0, 0.07); */
 }
 
 .a6-t-3 {
     text-align: center;
-    background-color: rgba(255, 0, 221, 0.07);
+    background-color: rgba(255, 255, 255, .05);
+    /* background-color: rgba(255, 0, 221, 0.07); */
 }
 
 .a6-t-4 {
     text-align: center;
-    background-color: rgba(0, 140, 255, 0.07);
+    background-color: rgba(255, 255, 255, .05);
+    /* background-color: rgba(0, 140, 255, 0.07); */
 }
 
 
