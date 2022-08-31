@@ -1,0 +1,89 @@
+.article4 {
+    padding-bottom: 0;
+}
+
+.article4,
+.article5,
+.article6 {
+    background: url(../images/a4-bg.jpg);
+    background-attachment: fixed;
+}
+
+.a4-title {
+    width: 100%;
+}
+
+.a4-title p {
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.a4-title h1 {
+    color: #fff;
+    font-size: 55px;
+    line-height: 1.25;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .07);
+}
+
+.a4-title h1 span {
+    color: var(--main-color);
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+.mySwiper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.mySwiper .swiper-slide {
+    width: 350px !important;
+    transform: scale(.75);
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+    opacity: .6;
+    transition: all .5s ease;
+}
+
+.mySwiper .swiper-slide img {
+    width: 350px !important;
+    height: 678px;
+    padding-top: 6rem;
+}
+
+.mySwiper .swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.phone {
+    position: absolute;
+    bottom: -200px; left: 50%;
+    transform: translate(-50%, 0);
+    width: 370px;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .mySwiper .swiper-slide {
+        width: 450px !important;
+    }
+
+    .mySwiper .swiper-slide img {
+        width: 450px !important;
+        height: 778px;
+    }
+
+    .phone {
+        width: 475px;
+        bottom: -350px;
+    }
+}
