@@ -103,6 +103,10 @@
     text-align: center;
 }
 
+.a3-table thead {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .a3-table thead td {
     padding: 1em;
     font-size: 18px;
@@ -117,19 +121,19 @@
 }
 
 .a3-t-1 {
-    background-color: rgba(1, 25, 145, 0.9);
+    background-color: rgba(255, 209, 43, 0.4);
 }
 
 .a3-t-2 {
-    background-color: rgba(1, 25, 145, 0.6);
+    background-color: rgba(255, 9, 9, 0.4);
 }
 
 .a3-t-3 {
-    background-color: rgba(1, 25, 145, 0.3);
+    background-color: rgba(0, 191, 255, 0.4);
 }
 
 .a3-t-4 {
-    background-color: rgba(1, 25, 145, 0);
+    background-color: rgba(60, 67, 104, 0.4);
 }
 
 

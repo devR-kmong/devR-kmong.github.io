@@ -37,14 +37,14 @@
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    background-color: #0b1d64;
+    background-color: #084837;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .07);
     transition: transform .3s ease;
     overflow: hidden;
 }
 
 .a5-box:last-child {
-    background-color: #001e95;
+    background-color: #026f52;
 }
 
 .a5-box img {
