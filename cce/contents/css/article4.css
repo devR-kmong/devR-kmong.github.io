@@ -65,9 +65,16 @@
     line-height: 1.6;
 }
 
-.a4-box h3 {
-    padding-left: 10px;
-    margin: .5rem 0;
+.a4-box-list {
+    margin: .3rem 0 1.2rem 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.a4-box-list li {
+    list-style: disc;
     font-size: 13px;
     font-weight: 300;
     line-height: 1.6;
