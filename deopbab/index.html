@@ -25,13 +25,17 @@
     <link rel="stylesheet" href="contents/css/article9.css">
     <link rel="stylesheet" href="contents/css/article10.css">
     <link rel="stylesheet" href="contents/css/article11.css">
+    <link rel="stylesheet" href="contents/css/form.css">
+    <link rel="stylesheet" href="contents/css/footer.css">
     <link rel="stylesheet" href="contents/css/floating.css">
+    <link rel="stylesheet" href="contents/css/navigation.css">
     <link rel="stylesheet" href="contents/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="shortcut icon" href="contents/images/favicon.png"  type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script data-cfasync="false" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
     <title>구름계란덮밥</title>
 </head>
 <body>
@@ -40,6 +44,30 @@
             <i class="ri-arrow-up-s-line"></i>
         </div></a>
     </div> -->
+    <div class="navigation">
+        <div class="remote">
+            <div class="remote-item">
+                <li class="remoteBtn"><a href="#1" class="actives3">
+                    <i class="ri-checkbox-blank-circle-fill"></i>
+                </a></li>
+                <li class="remoteBtn"><a href="#2">
+                    <i class="ri-checkbox-blank-circle-fill"></i>
+                </a></li>
+                <li class="remoteBtn"><a href="#3">
+                    <i class="ri-checkbox-blank-circle-fill"></i>
+                </a></li>
+                <li class="remoteBtn"><a href="#4">
+                    <i class="ri-checkbox-blank-circle-fill"></i>
+                </a></li>
+                <li class="remoteBtn"><a href="#5">
+                    <i class="ri-checkbox-blank-circle-fill"></i>
+                </a></li>
+                <li class="remoteBtn"><a href="#6">
+                    <i class="ri-checkbox-blank-circle-fill"></i>
+                </a></li>
+            </div>
+        </div>
+    </div>
     <div class="header">
         <div class="gnb">
             <a href="#1" class="logo-w"><img src="contents/images/logo-w.png"></a>
@@ -73,6 +101,7 @@
         <section class="article promotion" id="1">
             <div class="promotion-wrapper">
                 <div class="p-text">
+                    <img src="contents/images/speech.png" class="speech">
                     <h1 data-aos="fade-up" data-aos-duration="1500">
                         몽
                     </h1>
@@ -142,8 +171,14 @@
                         남
                     </h1>                  
                 </div>
-                <div class="p-image" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="2200">
-                    <img src="contents/images/main.png"></a>"></a>
+                <div class="p-image">
+                    <img src="contents/images/main.png" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="2200">
+                    <div class="star star-1"></div>
+                    <div class="star star-2"></div>
+                    <div class="star star-3"></div>
+                    <div class="star star-4"></div>
+                    <div class="star star-5"></div>
+                    <div class="star star-6"></div>
                 </div>
             </div>
             <img src="contents/images/scrolldown.png" class="scrollDown">
@@ -199,13 +234,17 @@
                         </h1>
                     </div>
                     <div class="a3-box-wrapper">
-                        <div class="a3-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
+                        <div class="a3-box">
                             <p>월매출</p>
-                            <h2>1억</h2>
+                            <div class="a3-box-text">
+                                <h2 class="counter">10000</h2><span>만원</span>
+                            </div>
                         </div>
-                        <div class="a3-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
+                        <div class="a3-box">
                             <p>하루최고매출</p>
-                            <h2>560만원</h2>
+                            <div class="a3-box-text">
+                                <h2 class="counter">560</h2><span>만원</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -291,34 +330,40 @@
                 <div class="a6-box-wrapper">
                     <div class="a6-box-group">
                         <div class="a6-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-                            <h1>퀄리티</h1>
-                            <p>
-                                부드러운 식감과 고소한 맛의 시그니처 계란과<br/>
-                                마약덮밥의 환상적인 조화
+                            <h1 class="a6-box-title">퀄리티</h1>
+                            <p class="a6-box-info">
+                                간편하고 빠르게 먹을 수 있는 스피디 시스템의 장점을 살려
+                                <b>든든하고 높은 퀄리티의 한 끼를 제공</b>해드립니다.
                             </p>
+                            <h2 class="a6-box-number">0<span>1</span></h2>
                         </div>
                         <div class="a6-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-                            <h1>양</h1>
-                            <p>
-                                밥도 푸짐! 토핑도 푸짐!<br/>
-                                모자람 없는 '푸짐한 한끼'
+                            <h1 class="a6-box-title">업종변경 창업</h1>
+                            <p class="a6-box-info">
+                                - 인테리어 점주가 <b>직접 시공가능</b><br/>
+                                - 인테리어, 주방기기 <b>기존 그대로 가능</b><br/>
+                                - <b>소자본 창업</b> 가능
                             </p>
+                            <h2 class="a6-box-number">0<span>2</span></h2>
                         </div>
                     </div>
                     <div class="a6-box-group">
                         <div class="a6-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-                            <h1>아이템</h1>
-                            <p>
-                                '덮밥' 남녀노소 누구나 좋아하는<br/>
-                                대중적인 아이템
+                            <h1 class="a6-box-title">아이템</h1>
+                            <p class="a6-box-info">
+                                레드오션에서 가장 큰 경쟁력은 '아이템'입니다.
+                                <b>유행을 타지 않는 아이템이 매출의 핵심</b>이고, 차별화된 컨셉을
+                                자랑하는 구름계란덮밥과 함께라면 안정적인 매출이 가능합니다.
                             </p>
+                            <h2 class="a6-box-number">0<span>3</span></h2>
                         </div>
                         <div class="a6-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-                            <h1>브랜딩</h1>
-                            <p>
-                                부드럽고 친근한 이미지 브랜딩으로<br/>
-                                타겟 고객에게 어필
+                            <h1 class="a6-box-title">주6일 배송</h1>
+                            <p class="a6-box-info">
+                                익일 배송시스템으로 <b>주6일 배송이 가능</b>하며, <b>체계적인
+                                발주 관리 시스템</b>으로 매장 운영에 차질이 없도록 합니다.
                             </p>
+                            <h2 class="a6-box-number">0<span>4</span></h2>
                         </div>
                     </div>
                 </div>
@@ -435,10 +480,10 @@
                             <h1>02</h1>
                             <div class="a7-box-text">
                                 <h2>
-                                    주문 즉시조리
+                                    계란이 특별한 덮밥
                                 </h2>
                                 <p>
-                                    음식의 <span>맛과 퀄리티 상승</span>
+                                    계란을 활용한 <span>계란덮밥의 원조</span>
                                 </p>
                             </div>
                         </div>
@@ -449,7 +494,7 @@
                                     타사 대비 낮은 원가율
                                 </h2>
                                 <p>
-                                    타사 원가율 40% / <span>구름계란덮밥 원가율 34%</span>
+                                    타사 원가율 40% | <span>구름계란덮밥 원가율 34%</span>
                                 </p>
                             </div>
                         </div>
@@ -570,6 +615,11 @@
         </section>
         <section class="article article10" id="5">
             <div class="article-wrapper">
+                <div class="a7-title" data-aos="fade-down" data-aos-duration="1500">
+                    <h1 style="color: var(--main-color);">
+                        구름계란덮밥 오픈절차
+                    </h1>
+                </div>
                 <div class="a10-box-wrapper">
                     <div class="a10-box-group" data-aos="fade-up" data-aos-duration="1500">
                         <div class="a10-box">
@@ -702,12 +752,108 @@
         </section>
         <section class="article article11" id="6">
             <div class="article-wrapper">
-                <p style="color: #fff;">
-                    가맹문의: 대표번호 전달받으면 작업 예정
-                </p>
+                <div class="a11-wrapper">
+                    <div class="a11-left">
+                        <h1 data-aos="fade-right" data-aos-duration="1500">
+                            구름계란덮밥,<br/>
+                            아직도 고민하세요?
+                        </h1>
+                        <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                            <a href="tel: 010-2509-0394" id="typing"></a>
+                        </h2>
+                        <div class="a11-line" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"></div>
+                        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                            유선상담문의주시면 친절히 상담 도와드리겠습니다. 별도로 연락을 받고 싶으신 분들은
+                            <b>우측 양식을 작성하여 제출해주시면</b> 빠른 시일내로 연락드리겠습니다.
+                        </p>
+                    </div>
+                    <div class="form-wrapper" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800">
+                        <img src="contents/images/bowl.png" class="form_bowl">
+                        <form action="" class="gform" method="POST" onSubmit="alert('문의가 성공적으로 접수되었습니다!');">
+                            <div class="input-group">
+                                <div class="input-title">
+                                    <h2>
+                                        간편창업문의
+                                    </h2>
+                                </div>
+                                <div class="input-wrapper">
+                                    <h1>성함</h1>
+                                    <input type="text" name="name" placeholder="성함을 입력하세요" class="inputbox" autocomplete="off" required />
+                                </div>
+                                <div class="input-wrapper">
+                                    <h1>연락처</h1>
+                                    <input type="tel" name="phone" placeholder="-를 제외한 숫자만 입력하세요" pattern="010-[0-9]{4}-[0-9]{4}"
+                                    class="inputbox phoneNumber" autocomplete="off" required />
+                                </div>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" id="cb" checked="checked" required />
+                                <label for="cb" class="personal-label"><p>개인정보 수집·이용 및 제공 동의</p></label>
+                                <span id="personalPopup">[약관보기]</span>  
+                            </div>
+                            <div class="submit">
+                                <button type="submit" class="submitBtn">전송하기</button>
+                            </div>
+                        </form>
+                        <div class="form-bottom">
+                            <p>
+                                <b>1. 개인정보의 수집 및 이용 목적</b><br/>
+                                - 가맹상담 및 서비스 설명, 회사 소식 등의 다양한 정보 및 컨텐츠 제공<br/>
+                                - 개인정보 수집방법 : 홈페이지(문의 및 가맹신청)<br/><br/>
+                                <b>2. 수집하는 개인정보 항목</b><br/>
+                                - 이름, 연락처<br/><br/>
+                                <b>3. 개인정보의 보유 및 이용 기간</b><br/>
+                                - 보존기간은 5년이며, 정보 제공자가 삭제를 요청할 경우 즉시 파기합니다.<br/>
+                                - 고객님의 정보는 개인정보 보호법에 따라 보호됩니다.
+                            </p>
+                            <div class="fb-closeBtn">
+                                <i class="ri-arrow-up-s-line"></i>
+                            </div>
+                        </div>
+                        <div class="personal-notice">
+                            <div class="personal-popup">
+                                <h1>
+                                    안내 ✓
+                                </h1>
+                                <p>
+                                    <b>개인정보 수집·이용 및 제공</b>에 동의하셔야<br/>
+                                    문의를 전송하실 수 있습니다.
+                                </p>
+                                <div class="pp-closeBtn">
+                                    <img src="contents/images/close.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-
+        <section class="footer">
+            <div class="footer-wrapper">
+                <div class="footer-top">
+                    <a href="#1">
+                        <img src="contents/images/logo-f.png" class="f-image">
+                    </a>
+                    <ul class="footer-menu">
+                        <li id="f-personal"><a href="#6">개인정보처리방침</a></li>
+                        <li><a href="#2">구름계란덮밥</a></li>
+                        <li><a href="#3">브랜드소개</a></li>
+                        <li><a href="#4">메뉴소개</a></li>
+                        <li><a href="#5">가맹지원</a></li>
+                        <li><a href="#6">가맹문의</a></li>
+                    </ul>
+                </div>
+                <div class="footer-line"></div>
+                <div class="footer-bottom">
+                    <p class="f-text">
+                        ⓒ 2022 GACHIFOOD Co. ALL RIGHTS RESERVED.
+                    </p>
+                    <p class="f-text">
+                        대표. 주수준, 박철오 | 사업자등록번호. 857-88-01795 | TEL. 02-2039-0900 | E-MAIL. gachifood@naver.com
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
@@ -717,6 +863,75 @@
     AOS.init({
         once: true
     })
+</script>
+
+<script>
+    $('.form-bottom').hide();
+
+    $('#personalPopup').click(function () {
+        $('.form-bottom').slideToggle();
+        
+        let text = $('#personalPopup').text();
+        if (text == '[약관보기]') {
+            $('#personalPopup').text('[약관접기]');
+        } else {
+            $('#personalPopup').text('[약관보기]');
+        }
+    });
+
+    $('.fb-closeBtn').click(function () {
+        $('.form-bottom').slideUp();
+        $('#personalPopup').text('[약관보기]');
+    });
+
+    $('#f-personal').click(function () {
+        $('.form-bottom').slideDown();
+        
+        let text2 = $('#personalPopup').text();
+        if (text2 == '[약관보기]') {
+            $('#personalPopup').text('[약관접기]');
+        }
+    })
+</script>
+
+<script>
+    $(document).ready(function () {        
+        $("#cb").change(function () {
+            if ($("#cb").is(":checked")) {
+            } else {
+                $('.personal-notice').fadeIn().css('display','flex');
+            }
+        });
+
+        $('.personal-notice, .pp-closeBtn').click(function(){
+            $('.personal-notice').fadeOut();
+        })
+    });
+</script>
+
+<script>
+    setTimeout(function () {
+        $('.speech').fadeIn(800);
+        $(function () {
+            setInterval(function () {
+                $('.star-1').fadeOut(150).delay(2000).fadeIn(300).fadeOut(150).delay(1254);
+                $('.star-2').fadeOut(300).fadeIn(120).fadeOut(120).delay(1920);
+                $('.star-3').fadeOut(150).delay(1200).fadeIn(300).fadeOut(150).delay(800);
+                $('.star-4').fadeOut(700).fadeIn(300).fadeOut(160).delay(1350);
+                $('.star-5').fadeOut(150).delay(2000).fadeIn(300).fadeOut(150).delay(1254);
+                $('.star-6').fadeOut(300).fadeIn(120).fadeOut(120).delay(1920);
+            }, 1);
+        });
+    }, 3000);
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="contents/js/jquery.counterup.min.js"></script>
+<script>
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1500
+    });
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -735,6 +950,7 @@
     var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 1,
         spaceBetween: 0,
+        grabCursor: true,
         loop: true,
         pagination: {
             el: ".swiper-pagination",
@@ -743,6 +959,10 @@
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
         },
     });
 </script>
@@ -754,7 +974,7 @@
         $(function () {
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 200) {
+                if ($(this).scrollTop() > 500) {
                     $('.floating').fadeIn();
                 } else {
                     $('.floating').fadeOut();
@@ -775,12 +995,22 @@
             }
         });
     });
+
+    $(window).on('scroll', function () {
+        $('.article').each(function () {
+            if ($(window).scrollTop() >= $(this).offset().top - 500) {
+                var id = $(this).attr('id');
+                $('.remoteBtn a').removeClass('actives3');
+                $('.remoteBtn a[href=#' + id + ']').addClass('actives3');
+            }
+        });
+    });
 </script>
 
 <script src="contents/js/jquery.scrollTo.min.js"></script>
 <script>
     $(function () {
-        $('.logo, .logo-w, .gnb ul li a').click(function (e) {
+        $('.remoteBtn a, .logo, .logo-w, .gnb ul li a, .f-image, .footer-menu a').click(function (e) {
             $.scrollTo(this.hash || 0, 500);
             e.preventDefault();
         });
@@ -838,6 +1068,29 @@
             '<script src="contents/js/box_scroll.js"><\/script>'
         )
     }
+</script>
+
+<script>
+    $(document).on("keyup", ".phoneNumber", function () {
+        $(this).val($(this).val().replace(/[^0-9]/g, "").replace(/(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)?([0-9]{4})$/, "$1-$2-$3").replace("--", "-"));
+    });
+</script>
+
+<script src="contents/js/index.umd.js"></script>
+<script>
+    new TypeIt("#typing", {
+        speed: 100,
+        waitUntilVisible: true,
+})
+        .type("010-2509-0394")
+        .exec(async () => {
+            await new Promise((resolve, reject) => {
+            setTimeout(() => {
+                return resolve();
+            }, 500);
+            });
+        })
+    .go();
 </script>
 
 <script>

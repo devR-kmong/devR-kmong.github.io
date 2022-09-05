@@ -174,3 +174,19 @@ $(document).ready(function () {
         }
     })
 });
+
+
+////////////////////////////////////////////////////////////////////
+$(document).ready(function () {
+    $(window).scroll(function () {
+
+        var here = $(".article11").offset().top;
+        var height = $(document).scrollTop();
+
+        if (here == height) {
+            $('.header').addClass('Fixed7');
+        } else {
+            $('.header').removeClass('Fixed7');
+        }
+    })
+});

@@ -20,7 +20,16 @@
 }
 
 .p-text {
+    position: relative;
     display: flex;
+}
+
+.speech {
+    position: absolute;
+    top: -90px; left: 0;
+    width: 400px;
+    display: none;
+    animation: bounce 2s infinite ease-in-out;
 }
 
 .p-text h1 {
@@ -39,15 +48,9 @@
     bottom: -10px; right: -30px;
 }
 
-.p-image img {
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-    z-index: 1;
-}
-
 .p-image:hover img {
-    transform: scale(1.05) !important;
-    filter: brightness(110%);
+    -webkit-filter: brightness(105%);
+    filter: brightness(105%);
 }
 
 .scrollDown {
@@ -70,6 +73,68 @@
 	}
 }
 
+
+@keyframes bounce {
+    0% {transform:translateY(0);}
+    5% {transform:translateY(-5px);}
+    10% {transform:translateY(0);}
+    15% {transform:translateY(-5px);}
+    20% {transform:translateY(0);}
+    100% {transform:translateY(0);}
+}
+
+
+.star {
+    position: absolute;
+    background: url(../images/sparkle.png) no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    -webkit-filter: drop-shadow(5px 5px 5px #fff);
+    filter: drop-shadow(5px 5px 5px #fff);
+    display: none;
+}
+
+.star-1 {
+    width: 50px;
+    height: 34px;
+    top: 240px;
+    left: 257px;
+}
+
+.star-2 {
+    width: 83px;
+    height: 77px;
+    top: 250px;
+    left: 374px;
+}
+
+.star-3 {
+    width: 74px;
+    height: 70px;
+    top: 225px;
+    left: 292px;
+}
+
+.star-4 {
+    width: 68px;
+    height: 70px;
+    top: 326px;
+    left: 262px;
+}
+
+.star-5 {
+    width: 83px;
+    height: 77px;
+    top: 300px;
+    left: 357px;
+}
+
+.star-6 {
+    width: 50px;
+    height: 34px;
+    top: 290px;
+    left: 307px;
+}
 
 
 /*==================================================*/

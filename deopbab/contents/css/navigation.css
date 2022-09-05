@@ -1,0 +1,36 @@
+.navigation {
+    position: absolute;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.remote {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.remoteBtn {
+    color: rgba(255, 255, 255, .4);
+    margin: 15px 0;
+    font-size: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    z-index: 9999;
+}
+
+.remoteBtn a.actives3 {
+    color: #fff;
+}
+
+
+/*=========================================================*/
+@media (max-width: 1300px) {
+    .navigation {
+        display: none;
+    }
+}

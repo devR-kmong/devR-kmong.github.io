@@ -37,8 +37,8 @@
 
 .a8-image img {
     width: 70px;
-    -webkit-filter: invert(96%) sepia(79%) saturate(7491%) hue-rotate(327deg) brightness(98%) contrast(94%);
-    filter: invert(96%) sepia(79%) saturate(7491%) hue-rotate(327deg) brightness(98%) contrast(94%);
+    -webkit-filter: invert(89%) sepia(21%) saturate(4281%) hue-rotate(338deg) brightness(95%) contrast(94%);
+    filter: invert(89%) sepia(21%) saturate(4281%) hue-rotate(338deg) brightness(95%) contrast(94%);
     -webkit-user-select: none;
     user-select: none;
 }

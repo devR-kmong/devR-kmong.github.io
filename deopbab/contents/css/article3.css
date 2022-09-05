@@ -44,6 +44,13 @@
     border-radius: 20px;
     background-color: rgba(255, 255, 255, .1);
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .05);
+    transition: transform .3s ease;
+    cursor: pointer;
+}
+
+.a3-box:hover {
+    background-color: rgba(255, 255, 255, .15);
+    transform: scale(1.05);
 }
 
 .a3-box p {
@@ -54,9 +61,22 @@
     margin-top: 1rem;
 }
 
+.a3-box-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .a3-box h2 {
     color: #fff;
     font-size: 100px;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    text-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+.a3-box span {
+    color: #fff;
+    font-size: 50px;
     font-family: 'GangwonEduPowerExtraBoldA';
     text-shadow: 0 0 15px rgba(0, 0, 0, .2);
 }
