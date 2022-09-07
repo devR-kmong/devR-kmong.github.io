@@ -1,0 +1,43 @@
+.article4 {
+    background: url(../images/a4-bg.jpg);
+    background-attachment: fixed;
+}
+
+.a4-title h1 {
+    color: #333;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Titillium Web';
+}
+
+.a4-title h1 span {
+    color: var(--main-color);
+    font-weight: 700;
+    font-family: 'Titillium Web';
+}
+
+.a4-title p {
+    color: #555;
+    font-size: 18px;
+    text-align: center;
+}
+
+.a4-image {
+    margin: 3rem 0;
+}
+
+
+/*==================================================*/
+@media (max-width: 550px) {
+    .a4-title h1 {
+        font-size: 28px;
+    }
+
+    .a4-title p {
+        font-size: 15px;
+    }
+
+    .a4-image {
+        margin: 1rem 0;
+    }
+}

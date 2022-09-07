@@ -1,0 +1,65 @@
+.a3-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a3-text p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-top: 1rem;
+}
+
+.a3-moreBtn {
+    width: 200px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    background-color: var(--main-color);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .1);
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.a3-moreBtn p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 0;
+}
+
+
+/*==================================================*/
+@media (max-width: 1350px) {
+    .a3-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .a3-image {
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a3-text p {
+        font-size: 16px;
+    }
+
+    .a3-moreBtn {
+        height: 45px;
+        margin-top: 1.5rem;
+    }
+
+    .a3-moreBtn p {
+        font-size: 13px;
+    }
+}
