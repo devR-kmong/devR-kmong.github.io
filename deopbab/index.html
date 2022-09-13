@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="contents/css/footer.css">
     <link rel="stylesheet" href="contents/css/floating.css">
     <link rel="stylesheet" href="contents/css/navigation.css">
+    <link rel="stylesheet" href="contents/css/popup.css">
     <link rel="stylesheet" href="contents/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="shortcut icon" href="contents/images/favicon.png"  type="image/x-icon">
@@ -39,11 +40,27 @@
     <title>구름계란덮밥</title>
 </head>
 <body>
-    <!-- <div class="floating">
-        <a href="/"><div class="topBtn">
-            <i class="ri-arrow-up-s-line"></i>
-        </div></a>
-    </div> -->
+    <div class="popup-wrapper">
+        <div id="agreePopup0" class="popup popup-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2200">
+            <div class="image-wrapper">
+                <a href="#6">
+                    <img src="contents/images/popup.gif">
+                </a>
+            </div>
+            <div class="button-area">
+                <button class="closeBtn notodayBtn">
+                    <a href="javascript:todayClose('agreePopup0', 1);">
+                        <p>
+                            오늘 하루 이창을 열지 않음
+                        </p>
+                    </a>
+                </button>
+                <button class="closeBtn closeBtn-0">
+                    <p>닫기</p>
+                </button>
+            </div>
+        </div>
+    </div>
     <div class="navigation">
         <div class="remote">
             <div class="remote-item">
@@ -360,8 +377,9 @@
                         <div class="a6-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h1 class="a6-box-title">주6일 배송</h1>
                             <p class="a6-box-info">
-                                익일 배송시스템으로 <b>주6일 배송이 가능</b>하며, <b>체계적인
-                                발주 관리 시스템</b>으로 매장 운영에 차질이 없도록 합니다.
+                                익일 배송시스템으로 <b>주6일 배송이 가능</b>하며,<br/>
+                                <b>체계적인 발주 관리 시스템</b>으로 매장 운영에<br/>
+                                차질이 없도록 합니다.
                             </p>
                             <h2 class="a6-box-number">0<span>4</span></h2>
                         </div>
@@ -758,16 +776,19 @@
                             구름계란덮밥,<br/>
                             아직도 고민하세요?
                         </h1>
-                        <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
-                            <a href="tel: 010-2509-0394" id="typing"></a>
+                        <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">
+                            <a href="tel: 010-3356-5011" id="typing"></a>
                         </h2>
-                        <div class="a11-line" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"></div>
-                        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                        <div class="a11-line" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"></div>
+                        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                             유선상담문의주시면 친절히 상담 도와드리겠습니다. 별도로 연락을 받고 싶으신 분들은
                             <b>우측 양식을 작성하여 제출해주시면</b> 빠른 시일내로 연락드리겠습니다.
                         </p>
+                        <a href="https://www.instagram.com/gooruem_official" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                            <i class="ri-instagram-line"></i>
+                        </a>
                     </div>
-                    <div class="form-wrapper" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800">
+                    <div class="form-wrapper" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">
                         <img src="contents/images/bowl.png" class="form_bowl">
                         <form action="" class="gform" method="POST" onSubmit="alert('문의가 성공적으로 접수되었습니다!');">
                             <div class="input-group">
@@ -863,6 +884,21 @@
     AOS.init({
         once: true
     })
+</script>
+
+<script src="contents/js/cookie.js"></script>
+<script>
+    $('.closeBtn-0').click(function () {
+        $('.popup-0').hide()
+    });
+    
+    $('.closeBtn-1').click(function () {
+        $('.popup-1').hide()
+    });
+
+    $('.closeBtn-2').click(function () {
+        $('.popup-2').hide()
+    });
 </script>
 
 <script>
@@ -1082,7 +1118,7 @@
         speed: 100,
         waitUntilVisible: true,
 })
-        .type("010-2509-0394")
+        .type("010-3356-5011")
         .exec(async () => {
             await new Promise((resolve, reject) => {
             setTimeout(() => {

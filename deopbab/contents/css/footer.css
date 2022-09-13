@@ -24,6 +24,10 @@
     gap: 10rem;
 }
 
+.footer-top a {
+    width: fit-content;
+}
+
 .f-image {
     width: 240px;
     opacity: .7;

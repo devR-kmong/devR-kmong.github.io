@@ -1,7 +1,3 @@
-/* .article6 {
-    background: url(../images/a6-bg.jpg);
-} */
-
 .a6-title h1 {
     color: #fff;
     font-size: 55px;
@@ -26,13 +22,13 @@
 
 .a6-box-group {
     display: flex;
+    justify-content: center;
     gap: 1.5rem;
 }
 
 .a6-box {
     position: relative;
-    flex: 1;
-    width: 49%;
+    width: 40%;
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .3);
@@ -49,6 +45,8 @@
     font-style: italic;
     letter-spacing: -0.04em;
     opacity: .2;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .a6-box-number span {

@@ -69,7 +69,7 @@
     font-family: 'JSongMyung-Regular-KO';
     text-align: right;
     border-radius: 5px;
-    background-color: var(--main-color);
+    background-color: #ecad2595;
     text-shadow: 0 0 5px rgba(0, 0, 0, .05);
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1);
     opacity: 0;
@@ -108,7 +108,7 @@
 .a7-box {
     padding: 30px 20px;
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     border-bottom: 1px dashed rgba(255, 255, 255, .5);
 }
 
@@ -123,23 +123,23 @@
 .a7-box h1 {
     color: #222;
     width: 35px;
-    font-size: 22px;
-    font-family: 'SBAggroB';
+    font-size: 24px;
+    font-family: 'GangwonEduPowerExtraBoldA';
     font-weight: unset;
-    padding-top: 4px;
+    margin-bottom: 2rem;
 }
 
 .a7-box-text h2 {
     color: #222;
     font-size: 24px;
-    font-family: '777Balsamtint';
+    font-family: 'GangwonEduPowerExtraBoldA';
+    letter-spacing: -0.02em;
 }
 
 .a7-box-text p {
     color: #222;
-    font-size: 20px;
+    font-size: 24px;
     font-family: '777Balsamtint';
-    margin-top: .7rem;
 }
 
 .a7-box-text p span {
@@ -148,13 +148,6 @@
     font-family: '777Balsamtint';
 }
 
-
-@font-face {
-    font-family: 'SBAggroB';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: '777Balsamtint';

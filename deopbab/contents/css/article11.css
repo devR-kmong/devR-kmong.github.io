@@ -46,6 +46,16 @@
     margin-top: 2rem;
 }
 
+.a11-left a {
+    width: fit-content;
+    margin-top: 2rem;
+}
+
+.a11-left i {
+    color: #fff;
+    font-size: 30px;
+}
+
 .form-bottom {
     position: relative;
     margin-top: 2rem;
