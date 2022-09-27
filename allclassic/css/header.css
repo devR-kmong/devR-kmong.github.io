@@ -1,0 +1,129 @@
+header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    z-index: 999;
+}
+
+nav {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Fixed {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background-color: var(--main-color);
+}
+
+.logo-w {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    z-index: 9;
+}
+
+#check {
+    display: none;
+}
+
+.menuBtns {
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav label {
+    display: flex;
+    z-index: 8;
+}
+
+nav ul {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    touch-action: none;
+    z-index: 7;
+    gap: 3rem;
+}
+
+nav ul li a {
+    color: #aaa;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    transition: all .3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+
+.bar1,
+.bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px 0;
+    transition: .3s ease;
+}
+
+.bar2 {
+    opacity: 0;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 2px);
+    transform: rotate(-45deg) translate(-5px, 2px);
+    background-color: #fff;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -2px);
+    transform: rotate(45deg) translate(-5px, -2px);
+    background-color: #fff;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    nav {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    header {
+        height: 70px;
+    }
+
+    .Fixed {
+        height: 70px;
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+    }
+}
