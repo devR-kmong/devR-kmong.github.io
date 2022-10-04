@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/article3.css">
     <link rel="stylesheet" href="css/article4.css">
     <link rel="stylesheet" href="css/article5.css">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/floating.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -24,6 +24,11 @@
     <title>올클래식 ALLCLASSIC</title>
 </head>
 <body>
+    <div class="floating">
+        <a href="/"><div class="topBtn">
+            <i class="ri-arrow-up-s-line"></i>
+        </div></a>
+    </div>
     <header>
         <nav>
             <a href="/" class="logo-w">
@@ -31,13 +36,13 @@
             </a>
             <input type="checkbox" id="check">
             <label for="check">
-                <div class="menuBtns" onclick="myFunction(this)">
+                <div class="menuBtns">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
             </label>
-            <ul>
+            <ul class="gnb">
                 <li><a href="https://www.allclassic.co.kr/about" target="_blank">About</a></li>
                 <li><a href="https://www.allclassic.co.kr/men" target="_blank">Men</a></li>
                 <li><a href="https://www.allclassic.co.kr/golf" target="_blank">Golf</a></li>
@@ -111,10 +116,10 @@
             <div class="article-wrapper">
                 <div class="a1-wrapper">
                     <div class="a1-text">
-                        <h1>
+                        <h1 data-aos="fade-up" data-aos-duration="1500">
                             왜 올클래식인가?
                         </h1>
-                        <p>
+                        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
                             올클래식은 All과 Classic이 더해져 모든 것이<br>
                             클래식한 공간이라는 의미를 지닌 브랜드입니다.
                             <br><br>
@@ -129,13 +134,13 @@
                             되기 위해서 끊임없이 노력하겠습니다.
                         </p>
                     </div>
-                    <img src="images/a1-2.jpg" class="a1-image">
+                    <img src="images/a1-2.jpg" class="a1-image" data-aos="fade-left" data-aos-duration="1500">
                 </div>
             </div>
         </section>
         <section class="article article2">
-            <img src="images/a2-1.jpg" class="a2-image">
-            <div class="a2-text">
+            <img src="images/a2-1.jpg" class="a2-image" data-aos="fade-right" data-aos-duration="1500">
+            <div class="a2-text" data-aos="fade-left" data-aos-duration="1500">
                 <h1>
                     ALLCLASSIC
                 </h1>
@@ -161,30 +166,30 @@
             <div class="article-wrapper">
                 <div class="a3-wrapper">
                     <div class="a3-text">
-                        <h1>
+                        <h1 data-aos="fade-up" data-aos-duration="1500">
                             올클래식은 약속합니다
                         </h1>
-                        <p>
+                        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
                             변함없이 좋은 제품을 생산하고 제공하는 브랜드가<br>
                             되기 위해서 끊임없이 노력하겠습니다.
                         </p>
-                        <a href="https://www.allclassic.co.kr/" class="cBtn" target="_blank">
+                        <a href="https://www.allclassic.co.kr/" class="cBtn" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
                             더 살펴보기
                         </a>
                     </div>
-                    <img src="images/a3-1.jpg" class="a3-image">
+                    <img src="images/a3-1.jpg" class="a3-image" data-aos="fade-left" data-aos-duration="1500">
                 </div>
                 <div class="a3-wrapper a3-wrapper2">
-                    <img src="images/a3-2.jpg" class="a3-image">
+                    <img src="images/a3-2.jpg" class="a3-image" data-aos="fade-right" data-aos-duration="1500">
                     <div class="a3-text">
-                        <h1>
+                        <h1 data-aos="fade-up" data-aos-duration="1500">
                             올클래식은 나아갑니다
                         </h1>
-                        <p>
+                        <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
                             변함없이 좋은 제품을 생산하고 제공하는 브랜드가<br>
                             되기 위해서 끊임없이 노력하겠습니다.
                         </p>
-                        <a href="https://www.allclassic.co.kr/" class="cBtn" target="_blank">
+                        <a href="https://www.allclassic.co.kr/" class="cBtn" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
                             더 살펴보기
                         </a>
                     </div>
@@ -200,7 +205,7 @@
                 </div>
                 <div class="a4-box-wrapper">
                     <div class="a4-box-group">
-                        <div class="a4-box">
+                        <div class="a4-box" data-aos="fade-up" data-aos-duration="1500">
                             <img src="images/a4-1.svg" class="a4-icon">
                             <h1>
                                 사이즈 걱정 끝 
@@ -210,7 +215,7 @@
                                 색상까지 체크할 수 있어요.
                             </p>
                         </div>
-                        <div class="a4-box">
+                        <div class="a4-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
                             <img src="images/a4-2.svg" class="a4-icon">
                             <h1>
                                 한땀한땀 정성스럽게
@@ -222,7 +227,7 @@
                         </div>
                     </div>
                     <div class="a4-box-group">
-                        <div class="a4-box">
+                        <div class="a4-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
                             <img src="images/a4-3.svg" class="a4-icon">
                             <h1>
                                 가입 시 적립금 지급
@@ -232,7 +237,7 @@
                                 10,000원 적립금을 드려요.
                             </p>
                         </div>
-                        <div class="a4-box">
+                        <div class="a4-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                             <img src="images/a4-4.svg" class="a4-icon">
                             <h1>
                                 24시간 고객서비스 
@@ -252,7 +257,7 @@
                     ALLCLASSIC STORE
                 </h1>
             </div>
-            <a href="https://www.allclassic.co.kr/" target="_blank" class="slider-wrap">
+            <a href="https://www.allclassic.co.kr/" target="_blank" class="slider-wrap" data-aos="fade-up" data-aos-duration="1500">
                 <div class="swiper mySwiper2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -336,6 +341,24 @@
     })
 </script>
 
+<script>
+    $(document).ready(function () {
+
+        $(".floating").hide();
+        $(function () {
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.floating').fadeIn();
+                } else {
+                    $('.floating').fadeOut();
+                }
+            });
+        });
+
+    });
+</script>
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -380,7 +403,7 @@
 <script src="js/jquery.scrollTo.min.js"></script>
 <script>
     $(function () {
-        $('.logo-w').click(function (e) {
+        $('.logo-w, .floating').click(function (e) {
             $.scrollTo(this.hash || 0, 500);
             e.preventDefault();
         });
@@ -389,19 +412,12 @@
 
 <script src="js/header.fixed.js"></script>
 
-<script>
-    function myFunction(x) {
-        x.classList.toggle("change");
-    }
-</script>
-
 <script>    
     $('.menuBtns').click(function () {
-        $('nav ul').fadeToggle().css('display','flex');
+        $(this).toggleClass('change')
     });
 
     $('nav ul').click(function () {
-        $(this).fadeOut();
         $('#check').prop('checked', false)
         $('.menuBtns').removeClass('change')
     });

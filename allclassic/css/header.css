@@ -46,31 +46,90 @@ nav label {
     z-index: 8;
 }
 
-nav ul {
+.gnb {
     position: absolute;
     top: 0; left: 0;
     width: 100%;
     height: 100vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #000;
     touch-action: none;
+    transition: all .8s;
+    opacity: 0;
+    visibility: hidden;
     z-index: 7;
     gap: 3rem;
 }
 
-nav ul li a {
+.gnb li a {
     color: #aaa;
     font-size: 40px;
     font-weight: bold;
     font-family: 'Times New Roman';
-    transition: all .3s;
+    transition: all 1.5s;
+    opacity: 0;
+    visibility: hidden;
 }
 
-nav ul li a:hover {
-    color: #fff;
+#check:checked ~ .gnb {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gnb li:nth-of-type(1) a {
+    transition-delay: .1s;
+}
+
+.gnb li:nth-of-type(2) a {
+    transition-delay: .3s;
+}
+
+.gnb li:nth-of-type(3) a {
+    transition-delay: .5s;
+}
+
+.gnb li:nth-of-type(4) a {
+    transition-delay: .7s;
+}
+
+.gnb li:nth-of-type(5) a {
+    transition-delay: .9s;
+}
+
+#check:checked ~ .gnb li a {
+    opacity: 1;
+    visibility: visible;
+}
+
+#check:not(:checked) ~ .gnb {
+    transition-delay: 1s;
+}
+
+#check:not(:checked) ~ .gnb li a {
+    transition: 1.2s;
+}
+
+#check:not(:checked) ~ .gnb li:nth-of-type(1) a {
+    transition-delay: .4s;
+}
+
+#check:not(:checked) ~ .gnb li:nth-of-type(2) a {
+    transition-delay: .3s;
+}
+
+#check:not(:checked) ~ .gnb li:nth-of-type(3) a {
+    transition-delay: .2s;
+}
+
+#check:not(:checked) ~ .gnb li:nth-of-type(4) a {
+    transition-delay: .1s;
+}
+
+#check:not(:checked) ~ .gnb li:nth-of-type(5) a {
+    transition-delay: 0s;
 }
 
 
@@ -119,11 +178,11 @@ nav ul li a:hover {
         height: 70px;
     }
 
-    nav ul {
+    .gnb {
         gap: 2rem;
     }
 
-    nav ul li a {
+    .gnb li a {
         font-size: 30px;
     }
 }
