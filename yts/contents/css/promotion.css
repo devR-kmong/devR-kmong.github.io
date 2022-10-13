@@ -137,4 +137,17 @@
     .p-text p {
         font-size: 13px;
     }
+
+    .scroll {
+        gap: .3rem;
+    }
+
+    .scroll p {
+        font-size: 9px;
+        font-weight: 400;
+    }
+
+    .scrollDown {
+        width: 15px;
+    }
 }

@@ -138,6 +138,10 @@
 
 
 @media (max-width: 450px) {
+    .footer {
+        padding: 0 0 20px 0;
+    }
+    
     #map {
         height: 250px;
     }
