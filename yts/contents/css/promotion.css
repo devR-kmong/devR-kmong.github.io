@@ -89,6 +89,10 @@
     .p-text:first-child {
         height: 55px;
     }
+
+    .p-text:nth-child(2) {
+        height: 35px;
+    }
     
     .p-text h1 {
         font-size: 45px;
