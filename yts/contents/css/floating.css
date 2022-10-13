@@ -1,0 +1,87 @@
+.floating {
+    position: fixed;
+    bottom: 20px; right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    z-index: 999;
+}
+
+.floatBtn {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.telBtn {
+    background-color: #00ce70;
+    -webkit-animation: pulseAnim 1.3s infinite;
+    animation: pulseAnim 1.3s infinite;
+}
+
+.telBtn i {
+    font-size: 32px;
+}
+
+.kakaoBtn {
+    background-color: #ffe100;
+}
+
+.kakaoBtn i {
+    color: #411515;
+    font-size: 40px;
+}
+
+.topBtn {
+    background-color: var(--main-color);
+}
+
+.topBtn i {
+    color: #fff;
+    font-size: 27px;
+}
+
+
+@keyframes pulseAnim {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 206, 112, 0.5);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgb(151 213 229 / 0%);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgb(151 213 229 / 0%);
+	}
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .floatBtn {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        animation: none;
+    }
+
+    .telBtn i {
+        font-size: 22px;
+    }
+
+    .smsBtn i {
+        font-size: 20px;
+    }
+
+    .kakaoBtn i {
+        font-size: 30px;
+    }
+
+    .topBtn i {
+        font-size: 22px;
+    }
+}
