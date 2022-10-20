@@ -1,0 +1,82 @@
+.article2 {
+    background-color: #f1f1f1;
+}
+
+.article2 .article-wrapper {
+    width: 100%;
+}
+
+.a2-wrapper {
+    width: 1550px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.mySwiper2 {
+    width: 100%;
+    float: right;
+}
+
+.mySwiper2 .swiper-slide {
+    width: 400px;
+    height: 400px;
+    background-color: #aaa;
+}
+
+.mySwiper2 .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-contents {
+    width: 60%;
+}
+
+.swiper-contents h2 {
+    color: #82776e;
+    font-size: 18px;
+    font-weight: unset;
+    font-family: 'Alkalami';
+    margin-bottom: .7rem;
+}
+
+.swiper-contents h1 {
+    color: #222;
+    font-size: 40px;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.swiper-contents p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.c-moreBtn {
+    margin-top: 3rem;
+}
+
+.c-moreBtn a {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+.c-moreBtn a:hover {
+    gap: 8px;
+}
+
+.c-moreBtn a span ion-icon {
+    font-size: 16px;
+}
+
+
+/*==================================================*/

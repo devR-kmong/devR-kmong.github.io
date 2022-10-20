@@ -1,0 +1,258 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow-y: hidden;
+    margin-top: 150px;
+    transition: all .3s;
+}
+
+.mySwiper .swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper .s-slide1 {
+    background: url(../images/b1.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.mySwiper .s-slide2 {
+    background: url(../images/b2.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.mySwiper .s-slide3 {
+    background: url(../images/b3.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.mySwiper .content {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 6;
+}
+
+.mySwiper .s-slide1 .content h3 {
+    color: #692109;
+    font-size: 55px;
+    font-weight: unset;
+    font-family: 'Lobster';
+    margin-bottom: -0.8rem;
+}
+
+.mySwiper .s-slide1 .content h2 {
+    color: #e8251e;
+    font-size: 75px;
+    font-family: 'Montserrat';
+    letter-spacing: -0.03em;
+}
+
+.mySwiper .s-slide1 .content h4 {
+    color: #2f1a1a;
+    font-size: 22px;
+    font-weight: unset;
+    font-family: 'GmarketSansBold';
+    letter-spacing: -0.03em;
+}
+
+.mySwiper .s-slide1 .content a {
+    color: #fff;
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #692109;
+    margin-top: 2rem;
+}
+
+.mySwiper .content h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'GmarketSansBold';
+    line-height: 1.2;
+    margin-bottom: .5rem;
+}
+
+.mySwiper .content p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.mySwiper .s-slide2 .content a {
+    color: #610bc6;
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+.mySwiper .s-slide3 .content a {
+    color: #01a161;
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+.mySwiper .swiperBtn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 3rem;
+    display: none;
+}
+
+.mySwiper .swiper-button-next {
+    position: relative;
+    color: rgba(255, 255, 255, .5);
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .3);
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.mySwiper .swiper-button-prev {
+    color: rgba(255, 255, 255, .5);
+    height: 48px;
+    font-size: 22px;
+    line-height: 50px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.mySwiper .swiper-button-next:hover {
+    color: #fff;
+}
+
+.mySwiper .swiper-button-prev:hover {
+    color: #fff;
+}
+
+.mySwiper .progressbar {
+    position: absolute;
+    bottom: 43px; left: -91px;
+    transform: rotate(-90deg);
+}
+
+.mySwiper .progress-circle {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 3;
+    stroke-dasharray: 156;
+    stroke-dashoffset: 156;
+}
+
+
+.mySwiper .s-slide1.swiper-slide-active .content h3 {
+    animation: slideAnimation 1.5s .3s both;
+}
+
+.mySwiper .s-slide1.swiper-slide-active .content h2 {
+    animation: slideAnimation 1.5s .5s both;
+}
+
+.mySwiper .s-slide1.swiper-slide-active .content h4 {
+    animation: slideAnimation 1.5s .7s both;
+}
+
+.mySwiper .s-slide1.swiper-slide-active .content a {
+    animation: slideAnimation 1.5s .9s both;
+}
+
+
+.mySwiper .swiper-slide-active .content h1 {
+    animation: slideAnimation 1.5s .3s both;
+}
+
+.mySwiper .swiper-slide-active .content p {
+    animation: slideAnimation 1.5s .5s both;
+}
+
+.mySwiper .swiper-slide-active .content a {
+    animation: slideAnimation 1.5s .7s both;
+}
+
+
+
+
+.mySwiper .swiper-slide-active .progress-circle {
+    animation: progressCircle 10s both;
+}
+
+
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes progressCircle {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .mySwiper .swiper-slide {
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .carousel {
+        margin-top: 65px;
+    }
+    
+    .mySwiper .content h1 {
+        font-size: 40px;
+    }
+
+    .mySwiper .content p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
