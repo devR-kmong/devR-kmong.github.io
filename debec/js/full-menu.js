@@ -1,9 +1,8 @@
-$('.full-menu').hide();
 $('.c-icon').hide();
 
 $('.pc-m-icon').click(function () {
     $('.header').css('z-index','998');
-    $('.full-menu').show();
+    $('.full-menu').show().css('display','flex');
     $(window).scrollTop(0);
     $('main, .footer').hide();
     $(this).hide();
@@ -34,14 +33,18 @@ $('.c-icon').click(function () {
     $('.m-icon').show();
     $('.full-menu').hide();
     $('main, .footer').show();
+    $('.m-fm-middle .fm-list-wrapper .fm-list').hide();
 })
 
 
+let fmTit = $('.m-fm-middle .fm-list-wrapper .fm-list-title')
+let fmList = $('.m-fm-middle .fm-list-wrapper .fm-list')
 
-for (let i=0; i < 99; i++) {
-    $('.fm-l-' + i).hide();
-    $('.fm-t-' + i).click(function () {
-        $('.fm-l-' + i).slideToggle(100);
-        $('.fm-list').not('.fm-l-' + i).slideUp(100);
+fmList.hide();
+
+for (let i = 0; i < fmList.length; i++) {
+    fmTit.eq(i).click(function () {
+        fmList.eq(i).slideToggle(100);
+        fmList.not(fmList.eq(i)).slideUp(100);
     })
 }
