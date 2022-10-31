@@ -1,0 +1,45 @@
+.article4 {
+    background: url(../images/a4-bg.jpg);
+}
+
+.article4 .launchBtn {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.a4-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a4-text {
+    width: 600px;
+}
+
+.a4-text h2 {
+    color: #222;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    margin-bottom: .8rem;
+}
+
+.a4-text h1 {
+    color: var(--main-color);
+    font-size: 75px;
+    font-weight: unset;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.a4-text p {
+    color: #222;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 1rem;
+}

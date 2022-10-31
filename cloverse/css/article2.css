@@ -1,0 +1,41 @@
+.article2 {
+    padding-bottom: 0;
+    background: url(../images/a2-bg2.jpg);
+    overflow: hidden;
+}
+
+.article2 .launchBtn {
+    color: #633edd;
+}
+
+.a2-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a2-wrapper h1 {
+    color: #fff;
+    font-size: 75px;
+    line-height: 1.1;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    text-shadow: 0 0 20px rgba(0, 0, 0, .3);
+}
+
+.a2-wrapper h2 {
+    color: #fff;
+    font-size: 28px;
+    line-height: 1.5;
+    margin-top: 2rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.a2-wrapper p {
+    color: #eee;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 1rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}

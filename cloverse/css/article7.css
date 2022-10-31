@@ -1,0 +1,95 @@
+.article7 {
+    background: url(../images/a7-bg.jpg);
+}
+
+.a7-title h1 {
+    color: #fff;
+    font-size: 45px;
+    font-family: 'Montserrat';
+    letter-spacing: -0.04em;
+    margin-bottom: 2rem;
+}
+
+.a7-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a7-box {
+    color: #fff;
+    width: 100%;
+    padding: 70px 15px;
+    border-bottom: 1px dashed #fff;
+}
+
+.a7-box:hover {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.a7-box-title h2 {
+    color: #1a1fdb;
+    width: fit-content;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    padding: 10px 20px;
+    border-radius: 50px 50px 50px 0;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+.a7-b-t-first {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.a7-box h1 {
+    font-size: 55px;
+    font-family: 'Montserrat';
+}
+
+.a7-box p {
+    font-size: 22px;
+    margin-top: 1rem;
+}
+
+.a7-bottom {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a7-bottom .a7-arrow {
+    position: absolute;
+    top: 40px; left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+.a7-bottom .a7-arrow i {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 100px;
+}
+
+.a7-bottom .a7-arrow i:nth-child(2) {
+    top: 40px;
+}
+
+.a7-bottom .a7-arrow i:nth-child(3) {
+    top: 80px;
+}
+
+.a7-bottom h1 {
+    color: #fff;
+    font-size: 85px;
+    font-family: 'Montserrat';
+    letter-spacing: -0.02em;
+    margin-top: 14rem;
+}
