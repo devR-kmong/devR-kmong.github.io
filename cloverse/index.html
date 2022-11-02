@@ -52,15 +52,15 @@
                 </div>
             </label>
             <ul class="nav-center">
-                <li><a href="#2">CLOVERSE</a></li>
-                <li><a href="#3">Service</a></li>
-                <li><a href="#4">Roadmap</a></li>
-                <li><a href="#5">Partners</a></li>
-                <li><a href="#6">Community</a></li>
+                <li class="nav-c-item"><a href="#2">CLOVERSE</a></li>
+                <li class="nav-c-item"><a href="#3">Service</a></li>
+                <li class="nav-c-item"><a href="#4">Roadmap</a></li>
+                <li class="nav-c-item"><a href="#5">Partners</a></li>
+                <li><a href="https://medium.com/cloverse" target="_blank">Community</a></li>
             </ul>
             <ul class="nav-right">
                 <a href="" class="myBtn">My Page</a>
-                <a href="/en.html" class="langBtn"><i class="ri-global-line"></i>EN</a>
+                <a href="/" class="langBtn"><i class="ri-global-line"></i>EN</a>
             </ul>
             <div class="overlay"></div>
         </nav>
@@ -117,9 +117,9 @@
                     <h2>
                         Experience CLOVERSE World!
                     </h2>
-                    <a href="" target="_blank" class="wpBtn">
+                    <a href="whitepaper/Cloverse_White_paper_v1.0_(KO)-20221014.pdf" target="_blank" class="wpBtn">
                         <span>
-                            Go to Whitepaper
+                            Go to Whitepaper (KR)
                         </span>
                         <i class="ri-arrow-right-s-line"></i>
                     </a>
@@ -631,7 +631,7 @@
     <script src="js/jquery.scrollTo.min.js"></script>
     <script>
         $(function () {
-            $('.floating a, .logo-w, .nav-center li a, .logo-f').click(function (e) {
+            $('.floating a, .logo-w, .nav-c-item a, .logo-f').click(function (e) {
                 $.scrollTo(this.hash || 0, 500);
                 e.preventDefault();
             });
