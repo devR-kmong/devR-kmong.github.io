@@ -29,7 +29,7 @@
 }
 
 .a1-wrapper p {
-    width: 850px;
+    width: 670px;
     font-size: 18px;
     line-height: 1.5;
     margin-top: 1rem;
@@ -63,7 +63,8 @@
 
 .a1-2 {
     position: absolute;
-    bottom: 21px; left: 90px;
+    bottom: 21px; left: 49%;
+    transform: translate(-50%, 0);
 }
 
 .a1-3 {
@@ -73,7 +74,7 @@
 
 .a1-wrapper3 h3 {
     width: fit-content;
-    font-size: 140px;
+    font-size: 100px;
     line-height: 1.4;
     font-weight: 500;
     font-family: 'DungGeunMo';

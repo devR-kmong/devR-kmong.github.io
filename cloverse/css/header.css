@@ -44,7 +44,7 @@ nav label {
 .nav-right .myBtn {
     width: 85px;
     height: 32px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     display: flex;
     justify-content: center;
@@ -77,9 +77,14 @@ nav label {
     color: var(--sub-color-2) !important;
 }
 
-.logo, .logo-w {
-    width: 150px;
+.logo-w {
+    width: 35px;
     cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.logo-w:hover {
+    transform: rotate(360deg);
 }
 
 #check {

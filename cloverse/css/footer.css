@@ -8,11 +8,48 @@ footer {
 }
 
 .footer-wrapper {
+    width: 1200px;
     display: flex;
+    justify-content: space-between;
 }
 
-.footer-wrapper p {
-    color: #eee;
-    font-size: 14px;
+.f-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.logo-f {
+    width: 140px;
+    filter: grayscale(1);
+    opacity: .5;
+    margin-bottom: 1rem;
+}
+
+.f-link-wrapper {
+    color: #888;
+    font-size: 15px;
     font-family: 'Montserrat';
+}
+
+.f-link-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.f-left p {
+    color: #888;
+    font-size: 13px;
+}
+
+.wBtn {
+    color: #fff;
+    padding: 0 15px 0 20px;
+    width: 200px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
 }

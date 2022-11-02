@@ -1,0 +1,15 @@
+h1 {
+    padding: 30px;
+    padding-bottom: 0;
+    font-size: 26px;
+}
+
+pre {
+    width: 100%;
+    padding: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: 'Montserrat';
+    white-space: pre-wrap;
+    overflow: auto;
+}
