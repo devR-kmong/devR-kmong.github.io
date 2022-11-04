@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/full-menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/promotion.css">
+    <link rel="stylesheet" href="css/article_common.css">
+    <link rel="stylesheet" href="css/article1.css">
+    <link rel="stylesheet" href="css/article2.css">
+    <link rel="stylesheet" href="css/article3.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="shortcut icon" href="images/favicon.png"  type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/jquery-3.6.1.js"></script>
+    <title>대구백화점</title>
+</head>
+<body>
+
+    <div class="full-menu">
+        <div class="full-menu-wrapper">
+            <div class="fm-top">
+                <a href="/">
+                    <img src="images/logo.png">
+                </a>
+                <img src="images/close.svg" class="fm-closeBtn">
+            </div>
+            <div class="fm-middle-group">
+                <div class="fm-middle">
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">이용안내</h1>
+                        <ul class="fm-list">
+                            <li>지점안내</li>
+                            <li>층별안내</li>
+                            <li>편의시설</li>
+                            <li>오시는길</li>
+                        </ul>
+                    </div>
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">공지사항</h1>
+                        <ul class="fm-list">
+                            <li>공지사항</li>
+                        </ul>
+                    </div>
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">이벤트</h1>
+                        <ul class="fm-list">
+                            <li>이벤트</li>
+                            <li>당첨자발표</li>
+                        </ul>
+                    </div>
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">쇼핑뉴스</h1>
+                        <ul class="fm-list">
+                            <li>쇼핑정보</li>
+                            <li>DM</li>
+                            <li>Tax Free Info</li>
+                        </ul>
+                    </div>
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">D-Style</h1>
+                        <ul class="fm-list">
+                            <li>Only-D</li>
+                            <li>해외직수입브랜드</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fm-middle">
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">문화센터</h1>
+                        <ul class="fm-list">
+                            <li>문화센터소개</li>
+                            <li>수강신청·검색</li>
+                            <li>수강관리</li>
+                            <li>추천·신설강좌</li>
+                        </ul>
+                    </div>
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">갤러리</h1>
+                        <ul class="fm-list">
+                            <li>갤러리소개</li>
+                            <li>전시안내</li>
+                            <li>전시검색</li>
+                            <li>대관안내</li>
+                        </ul>
+                    </div>
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">프라임홀</h1>
+                        <ul class="fm-list">
+                            <li>행사일정</li>
+                            <li>프라임홀소개</li>
+                            <li>대관안내</li>
+                        </ul>
+                    </div>
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">레오문화홀</h1>
+                        <ul class="fm-list">
+                            <li>문화홀소개</li>
+                            <li>공연일정</li>
+                        </ul>
+                    </div>
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">아트&컬쳐 소식</h1>
+                        <ul class="fm-list">
+                            <li>아트&컬쳐 소식</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fm-middle">
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">대백상품권</h1>
+                        <ul class="fm-list">
+                            <li>상품권소개</li>
+                            <li>구입안내</li>
+                            <li>발권안내</li>
+                            <li>사용장소</li>
+                            <li>제휴상품권</li>
+                            <li>제휴점문의</li>
+                        </ul>
+                    </div>
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">법인영업</h1>
+                        <ul class="fm-list">
+                            <li>법인영업소개</li>
+                            <li>대백특판안내</li>
+                        </ul>
+                    </div>
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">카드&멤버십</h1>
+                        <ul class="fm-list">
+                            <li>멤버십안내</li>
+                            <li>포인트안내</li>
+                            <li>카드소개</li>
+                            <li>전자쿠폰안내</li>
+                            <li>주차권안내</li>
+                            <li>VIP CLUB</li>
+                        </ul>
+                    </div>
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title">바로가기</h1>
+                        <ul class="fm-list">
+                            <li>대백몰</li>
+                            <li>대백특판</li>
+                        </ul>
+                    </div>
+                    <div class="fm-list-wrapper">
+                        <h1 class="fm-list-title"></h1>
+                        <ul class="fm-list">
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-full-menu">
+            <div class="m-fm-top">
+                <h1>
+                    반갑습니다 고객님!
+                </h1>
+                <p>
+                    대구백화점에 로그인하시면 다양한 혜택과 서비스를 받으실 수 있습니다.
+                </p>
+                <div class="m-fm-login">
+                    <a href="sub/login.html" class="m-fm-loginbox">
+                        <i class="ri-login-box-line"></i>
+                        <p>
+                            로그인
+                        </p>
+                    </a>
+                    <a href="" class="m-fm-loginbox">
+                        <i class="ri-information-line"></i>
+                        <p>
+                            이용안내
+                        </p>
+                    </a>
+                    <a href="" class="m-fm-loginbox">
+                        <i class="ri-customer-service-2-line"></i>
+                        <p>
+                            고객센터
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="m-fm-middle">
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">이용안내</h1>
+                    <ul class="fm-list">
+                        <li>지점안내</li>
+                        <li>층별안내</li>
+                        <li>편의시설</li>
+                        <li>오시는길</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">공지사항</h1>
+                    <ul class="fm-list">
+                        <li>공지사항</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">이벤트</h1>
+                    <ul class="fm-list">
+                        <li>이벤트</li>
+                        <li>당첨자발표</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">쇼핑뉴스</h1>
+                    <ul class="fm-list">
+                        <li>쇼핑정보</li>
+                        <li>DM</li>
+                        <li>Tax Free Info</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">D-Style</h1>
+                    <ul class="fm-list">
+                        <li>Only-D</li>
+                        <li>해외직수입브랜드</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">문화센터</h1>
+                    <ul class="fm-list">
+                        <li>문화센터소개</li>
+                        <li>수강신청·검색</li>
+                        <li>수강관리</li>
+                        <li>추천·신설강좌</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">갤러리</h1>
+                    <ul class="fm-list">
+                        <li>갤러리소개</li>
+                        <li>전시안내</li>
+                        <li>전시검색</li>
+                        <li>대관안내</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">프라임홀</h1>
+                    <ul class="fm-list">
+                        <li>행사일정</li>
+                        <li>프라임홀소개</li>
+                        <li>대관안내</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">레오문화홀</h1>
+                    <ul class="fm-list">
+                        <li>문화홀소개</li>
+                        <li>공연일정</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">아트&컬쳐 소식</h1>
+                    <ul class="fm-list">
+                        <li>아트&컬쳐 소식</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">대백상품권</h1>
+                    <ul class="fm-list">
+                        <li>상품권소개</li>
+                        <li>구입안내</li>
+                        <li>발권안내</li>
+                        <li>사용장소</li>
+                        <li>제휴상품권</li>
+                        <li>제휴점문의</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">법인영업</h1>
+                    <ul class="fm-list">
+                        <li>법인영업소개</li>
+                        <li>대백특판안내</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">카드&멤버십</h1>
+                    <ul class="fm-list">
+                        <li>멤버십안내</li>
+                        <li>포인트안내</li>
+                        <li>카드소개</li>
+                        <li>전자쿠폰안내</li>
+                        <li>주차권안내</li>
+                        <li>VIP CLUB</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title">바로가기</h1>
+                    <ul class="fm-list">
+                        <li>대백몰</li>
+                        <li>대백특판</li>
+                    </ul>
+                </div>
+                <div class="fm-list-wrapper">
+                    <h1 class="fm-list-title"></h1>
+                    <ul class="fm-list">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="nav">
+            <div class="gnb-top">
+                <a href="/">
+                    <img src="images/logo.png" class="logo">
+                </a>
+                <div class="gnb-t-right">
+                    <form action="" class="search-wrapper">
+                        <input type="text" name="" class="searchBar" placeholder="검색어를 입력하세요">
+                        <button type="submit" class="submitBtn">
+                            <i class="ri-search-line"></i>
+                        </button>
+                    </form>
+                    <ul class="gnb-right-menu">
+                        <li><a href="sub/register.html">회원가입</a></li>
+                        <li class="loginBtn">로그인</li>
+                        <li><a href="">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gnb-bottom">
+                <ul class="gnb">
+                    <li><a href="">이용안내</a></li>
+                    <li><a href="">문화ZONE</a></li>
+                    <li><a href="">상품권</a></li>
+                    <li><a href="sub/membership.html">카드멤버십</a></li>
+                </ul>
+                <div class="news" id="notice5">
+                    <div class="open-event fl">
+                        <ul class="notice-list">
+                            <li>
+                                <a href="">
+                                    APP 회원 특별혜택, 커피 한잔 할래요?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    깐부맺고 포인트받자!
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    11.01(화)부터 영업시간이 변경됩니다.
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    2022 겨울학기 대백문화센터 강사님을 모십니다.
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="toggle">
+                    <i class="ri-menu-3-line pc-m-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav">
+            <a href="/">
+                <img src="images/logo-w.png" class="logo-w">
+                <img src="images/logo.png" class="logo active">
+            </a>
+            <div class="toggle">
+                <i class="ri-menu-3-line m-icon"></i>
+                <img src="images/close.svg" class="c-icon">
+            </div>
+        </div>
+        <div class="login-wrapper">
+            <div class="login-popup">
+                <div class="login-closeBtn">
+                    <img src="images/close.svg">
+                </div>
+                <h1 class="login-title">
+                    LOGIN
+                </h1>
+                <form action="" class="login-form">
+                    <div class="input-wrapper">
+                        <input type="id" class="login-input" placeholder="아이디" required>
+                        <img src="images/id.svg" class="input-icon">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="password" class="login-input" placeholder="비밀번호" required>
+                        <img src="images/pw.svg" class="input-icon">
+                    </div>
+                    <button type="submit" class="loginBtn">
+                        <p>
+                            로그인
+                        </p>
+                    </button>
+                    <div class="form-bottom">
+                        <div class="remember-wrapper">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">
+                                <p>
+                                    아이디 기억하기
+                                </p>
+                            </label>
+                        </div>
+                        <div class="find-wrapper">
+                            <a href="">
+                                아이디/비밀번호 찾기
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sns-login">
+                        <div id="naverIdLogin" style="display: none;"></div>
+                        <a href="#" id="naverLogin"><img src="images/naver.png"></a>
+                        <a href="javascript:kakaoLogin();"><img src="images/kakao.png"></a>
+                        <img src="images/google.png">
+                        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                    </div>
+                    <div class="register">
+                        <p>
+                            아직 회원이 아니시라면?
+                            <span>
+                                <a href="sub/register.html">
+                                    회원가입
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="carousel promotion" id="1">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide s-slide1">
+                        <div class="content">
+                            <h3>
+                                Hello
+                            </h3>
+                            <h2>
+                                AUTUMN
+                            </h2>
+                            <h4>
+                                가을 나들이 패션 WEEK<br>
+                                10.18 ~ 10.27
+                            </h4>
+                            <a href="">
+                                더 살펴보기
+                            </a>
+                            <div class="swiperBtn-wrapper">
+                                <div class="swiper-button-prev">
+                                    <ion-icon name="chevron-back-sharp"></ion-icon>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <ion-icon name="chevron-forward-sharp"></ion-icon>
+                                    <div class="progressbar">
+                                        <svg class="progress-circle">
+                                            <circle cx="47" cy="47" r="22"></circle>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide s-slide2">
+                        <div class="content">
+                            <h1>
+                                깐부 맺고<br>
+                                <b>포인트 받자!</b>
+                            </h1>
+                            <p>
+                                고객님의 소중한 포인트와 쿠폰을 보호하며<br>
+                                놓쳐서는 안 될 쇼핑 혜택과 정보를 제공합니다.
+                            </p>
+                            <a href="">
+                                깐부 맺기
+                            </a>
+                            <div class="swiperBtn-wrapper">
+                                <div class="swiper-button-prev">
+                                    <ion-icon name="chevron-back-sharp"></ion-icon>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <ion-icon name="chevron-forward-sharp"></ion-icon>
+                                    <div class="progressbar">
+                                        <svg class="progress-circle">
+                                            <circle cx="47" cy="47" r="22"></circle>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide s-slide3">
+                        <div class="content">
+                            <h1>
+                                대백프라자<br>
+                                식품관 장보기
+                            </h1>
+                            <p>
+                                대구형 배달앱 대구로를 통해<br>
+                                집으로 바로 배송해드립니다.
+                            </p>
+                            <a href="">
+                                장보러가기
+                            </a>
+                            <div class="swiperBtn-wrapper">
+                                <div class="swiper-button-prev">
+                                    <ion-icon name="chevron-back-sharp"></ion-icon>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <ion-icon name="chevron-forward-sharp"></ion-icon>
+                                    <div class="progressbar">
+                                        <svg class="progress-circle">
+                                            <circle cx="47" cy="47" r="22"></circle>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="article article1">
+            <div class="article-wrapper">
+                <div class="article-title">
+                    <p>
+                        대백의 소식을 빠르게 만나보세요
+                    </p>
+                    <h1>
+                        Shopping News
+                    </h1>
+                </div>
+                <div class="a1-box-wrapper">
+                    <div class="a1-box-group">
+                        <a href="" class="a1-box">
+                            <div class="a1-image">
+                                <img src="images/a1-1.png">
+                            </div>
+                            <div class="a1-text">
+                                <h1>
+                                    신용카드 무이자 할부 혜택 안내
+                                </h1>
+                                <p>
+                                    2022-10-01 ~ 2022-10-31
+                                </p>
+                            </div>
+                        </a>
+                        <a href="" class="a1-box">
+                            <div class="a1-image">
+                                <img src="images/a1-2.png">
+                            </div>
+                            <div class="a1-text">
+                                <h1>
+                                    탑텐 X 탑텐키즈 텐텐데이
+                                </h1>
+                                <p>
+                                    2022-10-06 ~ 2022-10-23
+                                </p>
+                            </div>
+                        </a>
+                        <a href="" class="a1-box">
+                            <div class="a1-image">
+                                <img src="images/a1-3.png">
+                            </div>
+                            <div class="a1-text">
+                                <h1>
+                                    구매고객께 드리는 사은혜택
+                                </h1>
+                                <p>
+                                    2022-09-30 ~ 2022-10-16
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="a1-box-group">
+                        <a href="" class="a1-box">
+                            <div class="a1-image">
+                                <img src="images/a1-4.png">
+                            </div>
+                            <div class="a1-text">
+                                <h1>
+                                    2022 와인 창고 대개방전
+                                </h1>
+                                <p>
+                                    2022-09-30 ~ 2022-10-16
+                                </p>
+                            </div>
+                        </a>
+                        <a href="" class="a1-box">
+                            <div class="a1-image">
+                                <img src="images/a1-5.png">
+                            </div>
+                            <div class="a1-text">
+                                <h1>
+                                    홈패션 창립 & 런칭 릴레이 대전
+                                </h1>
+                                <p>
+                                    2022-09-30 ~ 2022-10-16
+                                </p>
+                            </div>
+                        </a>
+                        <a href="" class="a1-box">
+                            <div class="a1-image">
+                                <img src="images/a1-6.png">
+                            </div>
+                            <div class="a1-text">
+                                <h1>
+                                    전자관 가을 세일 스페셜 혜택
+                                </h1>
+                                <p>
+                                    2022-09-30 ~ 2022-10-16
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article article2">
+            <div class="article-wrapper">
+                <div class="article-title">
+                    <p>
+                        회원님의 미적감각을 생활에 가득히
+                    </p>
+                    <h1>
+                        Art & Culture
+                    </h1>
+                </div>
+                <div class="swiper-contents">
+                    <div class="contents">
+                        <h2>
+                            DEBEC PLAZA GALLERY
+                        </h2>
+                        <h1>
+                            회원님의 미적감각을<br>
+                            생활에 가득히..
+                        </h1>
+                        <p>
+                            관람으로 그치는 수동적인 전시에서 벗어나서 보고, 느끼고, 체험할 수 있는 움직이는 화랑으로서의 기능과 일반대중을 위한 편안하고 유익한 프로그램을 제시합니다.
+                        </p>
+                        <div class="c-moreBtn">
+                            <a href="" target="_blank">
+                                전시회 바로가기
+                                <span>
+                                    <ion-icon name="chevron-forward-sharp"></ion-icon>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="a2-wrapper">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/a2-1.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/a2-2.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/a2-3.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/a2-4.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/a2-5.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article article3">
+            <div class="article-wrapper">
+                <div class="article-title">
+                    <p>
+                        대백 인스타그램으로 소통해요
+                    </p>
+                    <h1>
+                        D-Instagram
+                    </h1>
+                </div>
+                <div class="a3-box-wrapper">
+                    <div id="instafeed" class="a3-box-group"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-group">
+                <a href="/">
+                    <img src="images/logo-w.png" class="logo-f">
+                </a>
+                <p>
+                    (주)대구백화점 | 대표: 구정모<br>
+                    대백프라자: 대구광역시 중구 명덕로 333<br>
+                    ⓒ DAEGU DEPARTMENT STORE. ALL RIGHT RESERVED.
+                </p>
+            </div>
+            <div class="footer-group2">
+                <ul>
+                    <li>개인정보처리방침</li>
+                    <li>이메일무단수집거부</li>
+                    <li>고객센터</li>
+                </ul>
+                <ul>
+                    <li>회사소개</li>
+                    <li>윤리경영</li>
+                    <li>임대매장</li>
+                    <li>체인점관리</li>
+                </ul>
+            </div>
+            <div class="footer-group">
+                <select class="footer-select" onchange="if(this.value) window.open(this.value);">
+                    <option value="">Family Site</option>
+                    <option value="http://www.isjcom.co.kr">ISJ Communication</option>
+                    <option value="https://www.debecbank.co.kr/main.act">대백저축은행</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        })
+    </script>
+
+    <script>
+        if (window.innerWidth > 768) {
+            document.clear(
+                '<script src="js/header.fixed.js"><\/script>'
+            )
+        }
+        else {
+            document.write(
+                '<script src="js/header.fixed.js"><\/script>'
+            )
+        }
+    </script>
+
+    <script src="js/login.js"></script>
+    <script src="js/full-menu.js"></script>
+    <script src="js/text.notice.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "fade",
+            speed: 500,
+            loop: true,
+            loopedSlides: 1,
+            autoplay: {
+                delay: 5500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                clickable: true,
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+            0: {
+                spaceBetween: 10,
+                centeredSlides: true,
+            },
+            550: {
+                spaceBetween: 20,
+            },
+        },
+        });
+    </script>
+
+    <script>
+        $(window).resize(function () {
+            var width_size = window.innerWidth;
+
+            if (width_size > 768) {
+                $('.pc-m-icon').show();
+                $('.fm-list').show();
+                $('.header').css('z-index','998');
+            } else {
+                $('.login-wrapper').hide();
+                $('.fm-list').hide();
+            }
+        })
+    </script>
+
+    <script>
+        $(window).resize(function () {
+            var width_size = window.innerWidth;
+
+            if (width_size == 1920) {
+                document.location.reload();
+            }
+        })
+    </script>
+
+    <script src="js/instafeed.min.js"></script>
+    <script>
+        var feed = new Instafeed({
+        accessToken: "IGQVJYTUhmRGo2MU5XdU1DRThPWE1PeGNST3RuNTg3MmFFUzFBVHZAMN0VjWmZAVY1NTZADVGNko0N1JhekhINktDWXRVM3R3SkZAXb3F0V3lrVVhnRjdhZAWM4cUxHa083eTFjNmhsN2RyckJCRnRBN2lyVgZDZD",
+        limit:4,
+        });
+        feed.run();
+    </script>
+
+    <!--달력 레이어 팝업 시작 -->
+    <div class="layerPop">
+        <div class="popup-header">
+            <p class="p">대구백화점 영업시간&휴점일 안내</p>
+        </div>
+        <section class="inform-layer">
+            <div class="calendar-header">
+                <h2 class="h2">10</h2>
+                <span class="span">2022<br>October</span>
+            </div>
+            <div class="calendar-body"></div>
+            <div class="calendar-footer">
+                <div class="notice">
+                    <div class="box"></div>
+                    <p class="notice-p">연장영업</p>
+                </div>
+                <div class="notice2">
+                    <div class="box"></div>
+                    <p class="notice-p">휴점일</p>
+                </div>
+            </div>
+        </section>
+        <div class="last-notice">
+            <div class="not_show" name="다시보지않기" id="btn-inform-close" title="오늘하루 보지않기">
+                다시보지않기
+            </div>
+            <div class="btn">닫기</div>
+        </div>
+    </div>
+    <script>
+        let calendar_days = document.querySelector('.calendar-body');
+        const WEEKDAY = ['일', '월', '화', '수', '목', '금', '토'];
+        for(let i= 1; i <= 42 ; i++){
+        let day = document.createElement('div');
+        let actual_day = i -6
+        let date = '2022-10-'+actual_day
+        let week = WEEKDAY[new Date(date).getDay()]
+
+        if (i <= 6 || i >= 38){
+            day.innerHTML = '';
+        } 
+        else {
+            day.innerHTML = actual_day;
+        }
+
+
+        if ( actual_day == 17 ) {
+            day.classList.add('off-day');
+            day.innerHTML = actual_day;
+        } else if (actual_day == 10 || actual_day == 24 || actual_day == 31){
+            day.classList.add('extend')
+        } else if ( week == '토') {
+            day.classList.add('sat')
+        } else if ( week == '일') {
+            day.classList.add('sun')
+        } else if ( actual_day == 3) {
+            day.classList.add('holiday')
+        }
+        calendar_days.appendChild(day);
+        }
+    </script>
+    <script>
+    $(document).ready(function(){
+        var layer = $('.layerPop');
+        var notShow = $('.not_show');
+        // var edate= new Date("2023/11/30 08:00:00"); 
+        //Date.now() <= edate && 
+
+
+    
+        //닫기버튼 누를시 하루동안 열지않기
+        cookiedata = document.cookie;
+    
+        if (cookiedata.indexOf("layerCookie=done") < 0 ){     
+            layer.show();
+        }
+        else {
+            layer.hide();
+        }
+    
+        function setCookie( name, value, expiredays ) {
+            var todayDate = new Date();
+            todayDate.setDate( todayDate.getDate() + expiredays ); 
+            document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toUTCString() + ";"
+        }
+    
+        notShow.on("click", function(){
+            //expiredays의 1은 하루를 의미한다, 일주일은 7, 1년은 365로 입력
+            setCookie( "layerCookie", "done" , 1);
+            layer.fadeOut('fast');
+        })
+
+    });
+
+    $(document).on('click', '.btn', function(){ 
+    $(".layerPop").hide();
+
+    });
+    </script>
+    <!-- 달력 레이버 팝업 끝 -->
+    <!-- 카카오 로그인 -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
+    <script>
+        window.Kakao.init("d75cdfef1a140f85e91273c593d78b74")
+
+        function kakaoLogin() {
+            window.Kakao.Auth.login( {
+                scope:"profile, account_email, gender",
+                success: function(authObj) {
+                    console.log(authObj);
+                    window.Kakao.API.request({
+                        url:"/v2/user/me", 
+                        success: res => {
+                            const kakao_account = res.kakao_account;
+                            console.log(kakao_account);
+                        }
+                    })
+                }
+            });
+        }
+    </script>
+
+    <!-- 네이버 로그인 -->
+    <script src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js" charset="utf-8"></script>
+    <script type="text/javascript">
+
+        var naverLogin = new naver.LoginWithNaverId({
+            clientId: "CF_rGnqVhI57WO2zYPBS",
+            callbackUrl: "http://127.0.0.1:5500/index.html",
+            isPopup: true,/* 팝업을 통한 연동처리 여부 */
+            loginButton: {color: "green", type: 3, height: 50}
+            
+        });
+        
+        naverLogin.init(); //initialize Naver Login Button
+        
+        $(document).on("click", "#naverLogin", function(){ 
+            var btnNaverLogin = document.getElementById("naverIdLogin").firstChild;
+            btnNaverLogin.click();
+        });
+
+  </script>
+
+
+
+</body>
+</html>

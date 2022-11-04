@@ -1,0 +1,161 @@
+.login-wrapper {
+    position: absolute;
+    top: 90px; left: 0;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .05);
+    display: none;
+}
+
+.sub-login {
+    position: unset;
+    height: 600px;
+    display: flex !important;
+    border-top: none;
+    margin-top: 150px;
+}
+
+.login-popup {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-closeBtn {
+    position: absolute;
+    top: 20px; right: 0;
+}
+
+.login-closeBtn img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.login-title {
+    color: #303030;
+    font-size: 18px;
+    font-weight: unset;
+    font-family: 'Alkalami';
+    margin-bottom: 2rem;
+}
+
+.login-form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.login-form .login-input {
+    width: 100%;
+    height: 52px;
+    padding: 0 45px;
+    font-size: 15px;
+    font-family: 'Pretendard';
+    border: none;
+    background-color: #f1f1f1;
+}
+
+.login-form .input-icon {
+    position: absolute;
+    top: 50%; left: 10px;
+    transform: translate(0, -50%);
+    width: 25px;
+    opacity: .7;
+}
+
+.login-form .loginBtn {
+    width: 100%;
+    height: 52px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #303030;
+    cursor: pointer;
+}
+
+.form-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remember-wrapper p {
+    color: #303030;
+    font-size: 13px;
+}
+
+.find-wrapper a {
+    color: #303030;
+    font-size: 13px;
+}
+
+.sns-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.sns-login img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.register {
+    color: #303030;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.register span a {
+    text-decoration: underline;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .sub-header-bg {
+        width: 100%;
+        height: 65px;
+        display: flex;
+        background: url(../images/footer-bg.gif) repeat;
+    }
+    
+    .sub-login {
+        height: auto;
+        padding: 60px 20px;
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .login-form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,173 @@
+.membership {
+    margin-top: 150px;
+}
+
+/* m-common */
+.m-common {
+    width: 100%;
+    margin-top:7rem;
+}
+
+.m-c-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.m-c-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+
+.m-c-box {
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    border: 1px solid #eee;
+}
+
+.m-c-box img {
+    width: 100px;
+}
+
+.m-c-b-text {
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-c-b-text h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #b0a9a3;
+}
+
+.m-c-b-text p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*m-card*/
+
+.m-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.m-cd-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.m-cd-box img {
+    width: 350px;
+}
+
+
+.m-cd-box h3 {
+    width: fit-content;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+/* m-p-box */
+
+.m-c-pointcard {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.m-p-box {
+    border: 0;
+}
+
+
+
+/*==========================================*/
+@media (max-width: 1250px) {
+    .membership {
+        padding: 80px 0 50px 0;
+    }
+    
+    .m-card {
+        padding: 60px 0;
+    }
+    
+    .m-cd-box {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .membership {
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .m-card,
+    .m-c-pointcard {
+        justify-content: center;
+    }
+    .m-card {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .m-c-pointcard {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .m-c-box img {
+        width: 80px;
+    }
+
+    .m-cd-box img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .m-c-box img {
+        width: 50px;
+    }
+
+    .m-c-b-text h3 {
+        font-size: 15px;
+        font-weight: 700;
+        color: #b0a9a3;
+    }
+    
+    .m-c-b-text p {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .m-cd-box h3 {
+        font-size: 15px;
+    }
+}

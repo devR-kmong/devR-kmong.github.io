@@ -1,0 +1,185 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family:'pretendard','Noto Sans KR';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.h2 {
+    font-weight: 600;
+    text-align: left;
+    font-family: 'Noto Sans KR';
+    display: inline;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.layerPop {
+    /* border-left: 1px solid #F1F1F1;
+    border-right: 1px solid #F1F1F1; */
+    background: white;
+    position: absolute;
+    top:194px;
+    left:24px;
+    width: 360px;
+    z-index: 2;
+    box-shadow: 0, 0,;
+}
+
+.inform-layer {
+    border-right: 1px solid #f1f1f1;
+    border-left: 1px solid #f1f1f1;
+}
+
+.popup-header {
+    height: 60px;
+    background-color: #505050;
+    display: grid;
+    place-items: center;
+}
+
+.popup-header .p {
+    color: white;
+    font-size: 18px;
+}
+
+
+.calendar-header {
+    position: relative;
+    height: 53px;
+    padding-inline:20px;
+}
+
+.calendar-header .span {
+    position: absolute;
+    top: 12px;
+}
+
+.calendar-body {
+    height: 215px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(7,40px);
+    gap: 11px;
+    margin-left: 4px
+}
+
+
+.calendar-body div {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.calendar-body div.off-day { 
+    position: relative;
+    background-color: #FF7474;
+    width: 19px;
+    border-radius: 50%;
+}
+
+.calendar-body div.sat {
+    position: relative;
+    color: #0055FF;
+    background-color: #f1f1f1;
+    width: 19px;
+    border-radius: 50%;
+}
+
+
+.calendar-body div.sun {
+    position: relative;
+    color: #FF0000;
+    text-align: left;
+    background: #f1f1f1;
+    border-radius: 50%;
+    width: 18px;
+}
+
+.calendar-body div.sun::before {
+    position: absolute;
+    top:9px;
+    left:8px;
+    z-index: -1;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+}
+
+.calendar-body div.holiday {
+    position: relative;
+    color: #FF0000;
+    background-color: #f1f1f1;
+    width: 19px;
+    border-radius: 50%;
+}
+
+.calendar-body div.extend { 
+    position: relative;
+    background-color: #f1f1f1;
+    width: 19px;
+    border-radius: 50%;
+}
+
+.calendar-footer {
+    display: flex;
+    height: 70px;
+    padding-inline: 14px;
+}
+
+.notice, .notice2 {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.notice-p {
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.box {
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background: #F1F1F1;
+}
+
+.notice2 .box{
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background: #FF7474;
+}
+
+.last-notice {
+    display: flex;
+    border: 1px solid #f1f1f1;
+    height: 40px;
+}
+
+.not_show {
+    border-right: 1px solid #f1f1f1;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}

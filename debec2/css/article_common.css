@@ -1,0 +1,58 @@
+.article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.article-wrapper {
+    width: 1200px;
+}
+
+.article-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.article-title h1 {
+    color: #303030;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Cormorant Garamond';
+}
+
+.article-title p {
+    color: #555;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .article-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article {
+        padding: 50px 0;
+    }
+    
+    .article-title {
+        margin-bottom: 2rem;
+    }
+
+    .article-title h1 {
+        font-size: 35px;
+    }
+
+    .article-title p {
+        font-size: 13px;
+        margin-top: .7rem;
+    }
+}

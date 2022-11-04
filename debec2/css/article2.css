@@ -1,0 +1,154 @@
+.article2 {
+    position: relative;
+    padding: 3rem 0 10rem 0;
+    background-color: #f1f1f1;
+}
+
+.a2-wrapper {
+    position: absolute;
+    top: 55%; right: 0;
+    transform: translate(0, -45%);
+    width: 55%;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.mySwiper2 {
+    width: 100%;
+}
+
+.mySwiper2 .swiper-slide {
+    width: 400px;
+    height: 400px;
+    background-color: #aaa;
+}
+
+.mySwiper2 .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-contents {
+    width: 35%;
+}
+
+.swiper-contents h2 {
+    color: #82776e;
+    font-size: 18px;
+    font-weight: unset;
+    font-family: 'Alkalami';
+    margin-bottom: .7rem;
+}
+
+.swiper-contents h1 {
+    color: #222;
+    font-size: 40px;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.swiper-contents p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.c-moreBtn {
+    margin-top: 3rem;
+}
+
+.c-moreBtn a {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .3s;
+}
+
+.c-moreBtn a:hover {
+    gap: 8px;
+}
+
+.c-moreBtn a span ion-icon {
+    font-size: 16px;
+}
+
+
+/*==================================================*/
+@media (max-width: 850px) {
+    .article2 {
+        padding: 60px 0;
+    }
+    
+    .article2 .article-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .a2-wrapper {
+        position: unset;
+        transform: unset;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .swiper-contents {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .swiper-contents h2 {
+        font-size: 15px;
+        margin-bottom: .4rem;
+    }
+    
+    .swiper-contents h1 {
+        font-size: 30px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .swiper-contents p {
+        font-size: 14px;
+    }
+
+    .c-moreBtn {
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .mySwiper2 .swiper-slide {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .swiper-contents h2 {
+        font-size: 13px;
+    }
+    
+    .swiper-contents h1 {
+        font-size: 26px;
+        margin-bottom: 1rem;
+    }
+
+    .c-moreBtn a {
+        font-size: 12px;
+    }
+    
+    .c-moreBtn a span ion-icon {
+        font-size: 10px;
+    }
+    
+}
