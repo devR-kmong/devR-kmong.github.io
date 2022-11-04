@@ -58,6 +58,8 @@
 .a8-box-text h1 {
     color: #363e4e;
     font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
 }
 
 .a8-box-image {
