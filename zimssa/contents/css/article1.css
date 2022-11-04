@@ -1,0 +1,162 @@
+.article1 {
+    padding-top: 110px;
+    border-radius: 50px 50px 0 0;
+    background-color: #041071;
+}
+
+.a1-title p {
+    color: #ff762f;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mySwiper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper .swiper-slide {
+    width: 100% !important;
+    transition: all .3s;
+}
+
+.swiperBtn-wrapper {
+    position: absolute;
+    width: 100% !important;
+    top: 45%;
+}
+
+.swiperBtn-wrapper .swiper-button-next {
+    right: 0;
+}
+
+.swiperBtn-wrapper .swiper-button-prev {
+    left: 0;
+}
+
+.swiperBtn-wrapper .swiper-button-next i, 
+.swiperBtn-wrapper .swiper-button-prev i {
+    color: #fff;
+    font-size: 65px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.a1-plan {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.a1-plan li {
+    width: 540px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.a1-plan li span {
+    width: 100px;
+    min-width: 100px;
+    color: #fff;
+    padding: 5px 0;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #ff762f;
+}
+
+.a1-plan li p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .a1-title p {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .swiperBtn-wrapper {
+        top: 42%;
+    }
+    
+    .swiperBtn-wrapper .swiper-button-next i, 
+    .swiperBtn-wrapper .swiper-button-prev i {
+        font-size: 40px;
+    }
+    
+    .a1-plan {
+        gap: .7rem;
+    }
+    
+    .a1-plan li {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .a1-plan li span {
+        font-size: 20px;
+    }
+
+    .a1-plan li p {
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a1-title p {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+
+    .a1-plan {
+        margin-top: 3rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .a1-plan {
+        gap: .5rem;
+    }
+
+    .a1-plan li {
+        gap: .7rem;
+    }
+    
+    .a1-plan li span {
+        width: 50px;
+        min-width: 50px;
+        font-size: 13px;
+    }
+
+    .a1-plan li p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-widtH: 450px) {
+    .a1-title p {
+        font-size: 15px;
+    }
+
+    .a1-title p br {
+        display: none;
+    }
+}

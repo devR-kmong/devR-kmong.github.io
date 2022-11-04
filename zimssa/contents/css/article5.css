@@ -1,0 +1,52 @@
+.article5 {
+    padding-top: 110px;
+    border-radius: 0 0 50px 50px;
+    background-color: #242c3c;
+}
+
+.a5-notice {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.a5-notice-text h1 {
+    font-size: 16px;
+    margin-bottom: .5rem;
+}
+
+.a5-notice-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    padding-left: 15px;
+}
+
+.a5-notice-text ul li {
+    font-size: 14px;
+    line-height: 1.7;
+    list-style: disc;
+}
+
+
+/*==================================================*/
+@media (max-width: 900px) {
+    .article5 {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        border-radius: 0;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a5-notice h1 {
+        font-size: 14px;
+    }
+    
+    .a5-notice-text ul li {
+        font-size: 12px;
+    }
+}
