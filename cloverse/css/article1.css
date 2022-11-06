@@ -5,7 +5,6 @@
     padding: 150px 0;
     background: url(../images/a1-bg.jpg) no-repeat;
     background-attachment: fixed;
-    overflow: hidden;
 }
 
 .article1 .article-wrapper {
@@ -28,13 +27,18 @@
 
 .a1-wrapper h1 {
     font-size: 35px;
+    line-height: 1.4;
     text-align: center;
+}
+
+.a1-wrapper h1 br {
+    display: none;
 }
 
 .a1-wrapper p {
     width: 670px;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.7;
     margin-top: 1rem;
     text-align: center;
 }
@@ -42,8 +46,10 @@
 .a1-wrapper2 h2 {
     color: var(--sub-color-1);
     font-size: 45px;
+    line-height: 1.4;
     font-weight: 700;
     font-family: 'Montserrat';
+    text-align: center;
     background: linear-gradient(-20deg, #0ba360 0%, #3cba92 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -120,4 +126,98 @@
 
 .a1-wrapper2 .wpBtn i {
     font-size: 22px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .article1 .article-wrapper {
+        padding: 0;
+    }
+    
+    .a1-2 {
+        width: 400px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .a1-wrapper h1 {
+        margin-bottom: 1rem;
+    }
+    
+    .a1-wrapper h1 br {
+        display: block;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .article1 {
+        overflow: hidden;
+    }
+    
+    .a1-1 {
+        min-width: 793px;
+    }
+
+    .a1-2 {
+        bottom: 15px;
+    }
+
+    .a1-wrapper h1 {
+        padding: 0 20px;
+        font-size: 22px;
+    }
+
+    .a1-wrapper p {
+        width: 100%;
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .a1-wrapper p br {
+        display: none;
+    }
+
+    .a1-wrapper2 h2 {
+        font-size: 30px;
+    }
+
+    .a1-wrapper2 .a1-sd {
+        font-size: 65px;
+        margin-bottom: 0;
+    }
+
+    .a1-wrapper3 p {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a1-wrapper p {
+        font-size: 14px;
+    }
+
+    .a1-2 {
+        width: 300px;
+    }
+    
+    .a1-wrapper2 h2 {
+        font-size: 22px;
+    }
+
+    .a1-wrapper2 .wpBtn {
+        width: 240px;
+        height: 50px;
+    }
+
+    .a1-wrapper2 .wpBtn span {
+        font-size: 15px;
+    }
+
+    .a1-wrapper3 {
+        margin-top: 0;
+    }
 }

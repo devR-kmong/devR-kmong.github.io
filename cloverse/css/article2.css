@@ -1,7 +1,6 @@
 .article2 {
     padding-bottom: 0;
     background: url(../images/a2-bg2.jpg);
-    overflow: hidden;
 }
 
 .article2 .launchBtn {
@@ -39,4 +38,54 @@
     line-height: 1.6;
     margin-top: 1rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .article2 {
+        padding-bottom: 80px;
+    }
+    
+    .a2-wrapper {
+        flex-direction: column;
+    }
+
+    .a2-wrapper picture {
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a2-wrapper h1 {
+        font-size: 45px;
+    }
+
+    .a2-wrapper h2 {
+        font-size: 22px;
+    }
+
+    .a2-wrapper p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a2-wrapper {
+        gap: 3rem;
+    }
+    
+    .a2-wrapper h1 {
+        font-size: 35px;
+    }
+
+    .a2-wrapper h2 {
+        font-size: 20px;
+    }
+
+    .a2-wrapper p {
+        font-size: 15px;
+    }
 }

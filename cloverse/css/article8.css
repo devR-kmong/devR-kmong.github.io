@@ -19,10 +19,14 @@
     margin-top: .5rem;
 }
 
+.a8-first .a8-box-text h1 br {
+    display: none;
+}
+
 .a8-box-wrapper {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
 
@@ -64,4 +68,93 @@
 
 .a8-box-image {
     min-width: 250px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1150px) {
+    .a8-box-wrapper {
+        gap: 1rem;
+    }
+
+    .a8-box-image {
+        min-width: unset;
+        height: 80px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .a8-title h1 {
+        font-size: 30px;
+    }
+    
+    .a8-first {
+        margin-bottom: 4rem;
+    }
+    
+    .a8-box {
+        height: unset;
+        padding: 30px 15px;
+        gap: 10px;
+        border-radius: 20px;
+    }
+    
+    .a8-box-text h1 {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a8-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .a8-first .a8-box-text h1 {
+        font-size: 18px;
+    }
+
+    .a8-first .a8-box-text h1 br {
+        display: block;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a8-box {
+        border-radius: 12px;
+    }
+    
+    .a8-box-image {
+        height: 60px;
+    }
+
+    .a8-box-text h1 {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .a8-first .a8-box-text h1 {
+        font-size: 14px;
+    }
+    
+    .a8-box-wrapper {
+        gap: .7rem;
+    }
+    
+    .a8-box {
+        padding: 20px 10px;
+        border-radius: 8px;
+    }
+    
+    .a8-box-image {
+        height: 45px;
+    }
+
+    .a8-box-text h1 {
+        font-size: 10px;
+    }
 }

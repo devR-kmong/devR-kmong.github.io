@@ -30,7 +30,7 @@
 
 .a4-text h1 {
     color: var(--main-color);
-    font-size: 75px;
+    font-size: 70px;
     font-weight: unset;
     font-family: 'GangwonEduPowerExtraBoldA';
     line-height: 1.1;
@@ -42,4 +42,39 @@
     font-size: 18px;
     line-height: 1.5;
     margin-top: 1rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .a4-wrapper {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a4-text {
+        width: 100%;
+    }
+
+    .a4-text h2 {
+        font-size: 18px;
+    }
+
+    .a4-text h1 {
+        font-size: 45px;
+    }
+
+    .a4-text p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-wrapper {
+        gap: 1.5rem;
+    }
 }

@@ -93,3 +93,104 @@
     letter-spacing: -0.02em;
     margin-top: 14rem;
 }
+
+
+/*==================================================*/
+@media (max-width: 1050px) {
+    .a7-title h1 {
+        font-size: 30px;
+    }
+
+    .a7-bottom h1 {
+        font-size: 65px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a7-box {
+        padding: 50px 15px;
+    }
+
+    .a7-box-title h2 {
+        font-size: 16px;
+        padding: 7px 15px;
+    }
+    
+    .a7-box h1 {
+        font-size: 35px;
+    }
+
+    .a7-box p {
+        font-size: 18px;
+    }
+
+    .a7-bottom .a7-arrow {
+        top: 30px;
+    }
+    
+    .a7-bottom .a7-arrow i {
+        font-size: 60px;
+    }
+    
+    .a7-bottom .a7-arrow i:nth-child(2) {
+        top: 30px;
+    }
+    
+    .a7-bottom .a7-arrow i:nth-child(3) {
+        top: 60px;
+    }
+
+    .a7-bottom h1 {
+        font-size: 35px;
+        margin-top: 10rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a7-title h1 {
+        margin-bottom: 0;
+    }
+    
+    .a7-box {
+        padding: 35px 10px;
+    }
+
+    .a7-box-title h2 {
+        font-size: 14px;
+        padding: 4px 12px;
+    }
+
+    .a7-box h1 {
+        font-size: 28px;
+    }
+
+    .a7-box p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a7-bottom .a7-arrow {
+        top: 20px;
+    }
+    
+    .a7-bottom .a7-arrow i {
+        font-size: 40px;
+    }
+    
+    .a7-bottom .a7-arrow i:nth-child(2) {
+        top: 20px;
+    }
+    
+    .a7-bottom .a7-arrow i:nth-child(3) {
+        top: 40px;
+    }
+    
+    .a7-bottom h1 {
+        font-size: 28px;
+        margin-top: 7rem;
+    }
+}

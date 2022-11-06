@@ -17,7 +17,7 @@ nav {
     align-items: center;
 }
 
-nav label {
+.nav-m label {
     display: none;
 }
 
@@ -34,14 +34,16 @@ nav label {
     letter-spacing: -0.02em;
 }
 
-.nav-right {
+.nav-right,
+.nav-right-m {
     color: #fff;
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
-.nav-right .myBtn {
+.nav-right .myBtn,
+.nav-right-m .myBtn {
     width: 85px;
     height: 32px;
     font-size: 15px;
@@ -52,7 +54,8 @@ nav label {
     background-color: var(--sub-color-2);
 }
 
-.nav-right .langBtn {
+.nav-right .langBtn,
+.nav-right-m .langBtn {
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -77,13 +80,13 @@ nav label {
     color: var(--sub-color-2) !important;
 }
 
-.logo-w {
+.logo {
     width: 35px;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
 
-.logo-w:hover {
+.logo:hover {
     transform: rotate(360deg);
 }
 
@@ -99,6 +102,10 @@ nav label {
     display: none;
 }
 
+.nav-m {
+    display: none;
+}
+
 
 /*==================================================*/
 @media (max-width: 1250px) {
@@ -109,9 +116,14 @@ nav label {
 }
 
 
-@media (max-width: 850px) {
+@media (max-width: 1050px) {
     header {
-        height: 75px;
+        height: 65px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 30px;
     }
 
     .Fixed2 {
@@ -122,22 +134,33 @@ nav label {
         color: var(--main-color);
     }
 
-    nav label {
+    .nav-center,
+    .nav-right {
+        display: none;
+    }
+
+    .nav-m {
+        display: flex;
+        gap: 1.7rem;
+    }
+
+    .nav-m label {
         display: flex;
         z-index: 8;
     }
 
-    .menuBtns {
+    .nav-m  .menuBtns {
         display: inline-block;
         cursor: pointer;
     }
 
-    nav ul {
+    .nav-center-m {
         position: absolute;
         top: 0; left: -100%;
         width: 80%;
         height: 100vh;
         padding-left: 50px;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         background-color: #111;
@@ -147,14 +170,29 @@ nav label {
         gap: 2.2rem;
     }
 
-    nav ul li a {
+    .nav-center-m li a {
         color: #fff;
         font-size: 26px;
     }
 
-    nav ul a li {
+    .nav-center-m a li {
         color: #fff;
         font-size: 26px;
+    }
+
+    .nav-right-m {
+        gap: 1rem;
+    }
+
+    .nav-right-m .myBtn {
+        width: 75px;
+        height: 28px;
+        font-size: 13px;
+        border-radius: 30px;
+    }
+
+    .nav-right-m .langBtn {
+        font-size: 13px;
     }
 
     .overlay {
@@ -195,12 +233,8 @@ nav label {
         transform: rotate(45deg) translate(-9px, -6px);
         background-color: #fff;
     }
-
-    .bar-color {
-        background-color: #222;
-    }
     
-    #check:checked ~ ul {left: 0;}
+    #check:checked ~ .nav-center-m {left: 0;}
     #check:checked ~ .overlay {
         opacity: 1;
         visibility: visible;

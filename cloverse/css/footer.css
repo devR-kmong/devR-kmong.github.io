@@ -53,3 +53,20 @@ footer {
     align-items: center;
     background-color: var(--main-color);
 }
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .footer-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .wBtn {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
