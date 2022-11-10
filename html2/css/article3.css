@@ -1,0 +1,50 @@
+.article3 {
+    background-color: #ff414d;
+}
+
+.a3-wrapper {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a3-text p {
+    font-size: 35px;
+}
+
+.a3Btn {
+    width: 670px;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 5px solid #000;
+    margin: 1.3rem 0;
+}
+
+.a3Btn h1 {
+    color: #000;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.a3Btn i {
+    color: #aaa;
+    font-size: 50px;
+}
+
+.a3-text h2 {
+    font-size: 45px;
+}
+
+.a3-image {
+    width: 400px;
+}
+
+
+/*==================================================*/

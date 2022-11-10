@@ -1,0 +1,112 @@
+.article4 {
+    padding-top: 0;
+    background-color: #fff;
+}
+
+.a4-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.a4-box {
+    position: absolute;
+    top: -50px; left: 0;
+    width: 670px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #e8e8e8;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+}
+
+.a4-box h1 {
+    color: #c1c1c1;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.a4-box p {
+    color: #111;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.a4Btn {
+    width: fit-content;
+    padding: 0 12px 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 2px solid #111;
+}
+
+.a4Btn p {
+    color: #111;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.a4Btn i {
+    color: #aaa;
+    font-size: 35px;
+}
+
+.a4-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: .5rem;
+}
+
+.a4-text p {
+    font-weight: 700;
+}
+
+
+.a4Btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 14rem;
+}
+
+.a4Btn-wrapper .a4Btn {
+    color: #ddd;
+    padding: 5px 20px 5px 30px;
+    border: 2px solid #ddd;
+}
+
+.a4Btn-wrapper .a4Btn p {
+    color: #ddd;
+    font-weight: 700;
+}
+
+.a4Btn-wrapper .a4Btn i {
+    color: #ddd;
+}
+
+.a4Btn-wrapper .a4Btn-active {
+    position: relative;
+    border: 2px solid #111;
+}
+
+.a4Btn-wrapper .a4Btn-active img {
+    position: absolute;
+    top: -40px; left: -20px;
+    width: 70px;
+}
+
+.a4Btn-wrapper .a4Btn-active p {
+    color: #111;
+}
+
+.a4Btn-wrapper .a4Btn-active i {
+    color: #777;
+}
+
+
+/*==================================================*/

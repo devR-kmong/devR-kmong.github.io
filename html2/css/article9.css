@@ -1,0 +1,33 @@
+.article9 {
+    background-color: #fff;
+}
+
+.a9-1 {
+    width: 300px;
+}
+
+.a9-2 {
+    width: 1000px;
+    margin: 5rem 0;
+}
+
+.article9 p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.article9 p span {
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: #ff2c2c;
+    margin-bottom: 3rem;
+}
+
+.a9-3 {
+    width: 1000px;
+    margin-top: 5rem;
+}
+
+
+/*==================================================*/
