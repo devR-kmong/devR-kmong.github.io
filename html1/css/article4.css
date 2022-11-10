@@ -1,0 +1,57 @@
+.article4 {
+    position: relative;
+    height: 1000px;
+    background-color: #313131;
+    overflow: hidden;
+}
+
+.a4-image {
+    position: absolute;
+    top: -300px; right: 0;
+}
+
+.a4-wrapper {
+    width: 100%;
+}
+
+.a4-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.a4-title h1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+.a4-title h1 span {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.a4-info {
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.6;
+    margin-top: 3rem;
+}
+
+.a4-info span {
+    font-weight: 700;
+    background: linear-gradient(to top, #1d1717 60%, transparent 50%);
+}
+
+.a4-bottom {
+    color: #84684f;
+    font-size: 20px;
+    margin-top: 20rem;
+}
+
+.a4-bottom p a {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+/*==================================================*/

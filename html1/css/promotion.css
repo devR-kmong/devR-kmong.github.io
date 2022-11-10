@@ -1,0 +1,152 @@
+.promotion {
+    width: 100%;
+    height: 100vh !important;
+    background: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.promotion-wrapper {
+    width: 1200px;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    background-color: #212121;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+.p-top {
+    color: #fff;
+    width: 650px;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+}
+
+.p-top img {
+    width: 120px;
+}
+
+.p-top span {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.p-2nd {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1rem;
+}
+
+.p-2nd-circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    -webkit-animation: blink-effect 1s step-end infinite;
+    animation: blink-effect 1s step-end infinite;
+    margin-right: 5px;
+}
+
+.p-2nd p {
+    font-size: 24px;
+}
+
+.p-2nd p span {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.p-title {
+    position: relative;
+    margin-top: 2rem;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #ff3d3d50;
+}
+
+.p-title .live {
+    position: absolute;
+    top: -18px; left: 426px;
+    width: 37px;
+}
+
+.p-title h1 {
+    color: #fff;
+    font-size: 105px;
+    font-weight: 800;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.p-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.3rem;
+}
+
+.p-bottom span {
+    color: #fff;
+    padding: 5px;
+    font-size: 22px;
+    font-family: 'Poppins';
+    border-radius: 5px;
+    background-color: #1c1b1b;
+}
+
+.p-bottom span em {
+    color: #84684f;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.p-bottom p {
+    color: #84684f;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.scrollDown {
+    position: absolute;
+    bottom: 40px;
+    width: 20px;
+    transform: translate(-50%, -50%);
+    -webkit-animation: upDown 1.5s ease-in-out infinite;
+    animation: upDown 1.5s ease-in-out infinite;
+}
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-7px);
+	}
+	50% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform:  translateY(-7px);
+	}
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
