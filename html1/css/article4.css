@@ -1,0 +1,126 @@
+.article4 {
+    position: relative;
+    height: 1000px;
+    background-color: #313131;
+    overflow: hidden;
+}
+
+.a4-image {
+    position: absolute;
+    top: -300px; right: 0;
+}
+
+.a4-wrapper {
+    width: 100%;
+}
+
+.a4-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.a4-title h1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+.a4-title h1 span {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.a4-info {
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.6;
+    margin-top: 3rem;
+}
+
+.a4-info span {
+    font-weight: 700;
+    background: linear-gradient(to top, #1d1717 60%, transparent 50%);
+}
+
+.a4-bottom {
+    color: #84684f;
+    font-size: 20px;
+    margin-top: 20rem;
+}
+
+.a4-bottom p a {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+/*==================================================*/
+@media (max-width: 1650px) {
+    .article4 {
+        height: auto;
+    }
+
+    .a4-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .a4-image {
+        position: static;
+    }
+
+    .a4-bottom {
+        margin-top: 3rem;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a4-title h1 {
+        font-size: 35px;
+    }
+    
+    .a4-title h1 span {
+        font-size: 30px;
+    }
+    
+    .a4-info {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .a4-info br {
+        display: none;
+    }
+
+    .a4-bottom {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .a4-wrapper {
+        gap: 2rem;
+    }
+    
+    .a4-title h1 {
+        font-size: 28px;
+    }
+
+    .a4-title h1 span {
+        font-size: 22px;
+    }
+
+    .a4-info {
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+    .a4-bottom {
+        font-size: 16px;
+        margin-top: 2rem;
+    }
+}
