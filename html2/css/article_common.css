@@ -9,6 +9,7 @@
     background-position: center !important;
     background-size: cover !important;
     padding: 120px 0;
+    overflow: hidden;
 }
 
 .article-wrapper {
