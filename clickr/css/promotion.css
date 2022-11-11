@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+
+.promotion {
+    width: 100%;
+    height: 100vh !important;
+    background: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.promotion-wrapper {
+    padding: 0 20px;
+    text-align: center;    
+}
+
+.p-text {
+    width: 410px;
+    display: flex;
+}
+
+.p-text h1 {
+    color: #fff;
+    font-size: 150px;
+    font-weight: unset;
+    font-style: italic;
+    font-family: 'Anton';
+    user-select: none;
+}
+
+.promotion-wrapper p {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Play';
+    line-height: 1.7;
+    text-align: center;
+    user-select: none;
+}
+
+
+.scrollDown {
+    position: absolute;
+    bottom: 40px;
+    width: 22px;
+    transform: translate(-50%, -50%);
+    -webkit-animation: upDown 1.5s ease-in-out infinite;
+    animation: upDown 1.5s ease-in-out infinite;
+}
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-7px);
+	}
+	50% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform:  translateY(-7px);
+	}
+}
+
+
+
+/*==================================================*/
+@media (max-width: 500px) {
+    .p-text {
+        width: unset;
+    }
+    
+    .p-text h1 {
+        font-size: 85px;
+    }
+
+    .promotion-wrapper p {
+        font-size: 16px;
+    }
+}
