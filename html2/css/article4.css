@@ -1,6 +1,7 @@
 .article4 {
     padding-top: 0;
     background-color: #fff;
+    overflow: unset;
 }
 
 .a4-wrapper {
@@ -171,5 +172,13 @@
     .a4Btn-wrapper .a4Btn-active img {
         top: -20px; left: -10px;
         width: 40px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-box p,
+    .a4-text p {
+        font-size: 20px;
     }
 }
