@@ -16,20 +16,28 @@
     text-align: center;    
 }
 
-.p-text,
-.p-text-m {
-    width: 410px;
+.p-text {
     display: flex;
 }
 
-.p-text h1,
-.p-text-m h1 {
-    color: #fff;
-    font-size: 150px;
-    font-weight: unset;
-    font-style: italic;
-    font-family: 'Anton';
-    user-select: none;
+.p-text img {
+    height: 140px;
+}
+
+.p-text img:nth-child(2) {
+    margin-left: -18px;
+}
+
+.p-text img:nth-child(4) {
+    margin-left: -18px;
+}
+
+.p-text img:nth-child(5) {
+    margin-left: -18px;
+}
+
+.p-text img:nth-child(6) {
+    margin-left: -23px;
 }
 
 .promotion-wrapper p {
@@ -38,6 +46,7 @@
     font-family: 'Play';
     line-height: 1.7;
     text-align: center;
+    margin-top: 4rem;
     user-select: none;
 }
 
@@ -67,17 +76,28 @@
 
 /*==================================================*/
 @media (max-width: 500px) {
-    .p-text,
-    .p-text-m {
-        width: 230px;
+    .p-text img {
+        height: 100px;
+    }
+
+    .p-text img:nth-child(2) {
+        margin-left: -14px;
     }
     
-    .p-text h1,
-    .p-text-m h1 {
-        font-size: 85px;
+    .p-text img:nth-child(4) {
+        margin-left: -14px;
+    }
+    
+    .p-text img:nth-child(5) {
+        margin-left: -14px;
+    }
+    
+    .p-text img:nth-child(6) {
+        margin-left: -16px;
     }
 
     .promotion-wrapper p {
         font-size: 16px;
+        margin-top: 3rem;
     }
 }
