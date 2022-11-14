@@ -21,7 +21,8 @@
     display: flex;
 }
 
-.p-text h1 {
+.p-text h1,
+.p-text-m h1 {
     color: #fff;
     font-size: 150px;
     font-weight: unset;
@@ -69,7 +70,8 @@
         width: 230px;
     }
     
-    .p-text h1 {
+    .p-text h1,
+    .p-text-m h1 {
         font-size: 85px;
     }
 
