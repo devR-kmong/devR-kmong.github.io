@@ -16,7 +16,8 @@
     text-align: center;    
 }
 
-.p-text {
+.p-text,
+.p-text-m {
     width: 410px;
     display: flex;
 }
@@ -66,7 +67,8 @@
 
 /*==================================================*/
 @media (max-width: 500px) {
-    .p-text {
+    .p-text,
+    .p-text-m {
         width: 230px;
     }
     
