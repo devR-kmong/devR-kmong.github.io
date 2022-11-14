@@ -62,32 +62,15 @@
     <main>
         <section class="article promotion" id="1">
             <div class="promotion-wrapper">
-                <div class="p-text-m">
-                    <h1 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
-                        CLICKR
-                    </h1>
-                </div>
                 <div class="p-text">
-                    <h1 data-aos="zoom-in" data-aos-duration="1500">
-                        C
-                    </h1>
-                    <h1 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
-                        L
-                    </h1>
-                    <h1 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
-                        I
-                    </h1>
-                    <h1 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
-                        C
-                    </h1>
-                    <h1 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="800">
-                        K
-                    </h1>
-                    <h1 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
-                        R
-                    </h1>
+                    <img src="images/c.svg" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="images/l.svg" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="images/i.svg" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                    <img src="images/c.svg" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
+                    <img src="images/k.svg" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="800">
+                    <img src="images/r.svg" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
                 </div>
-                <p data-aos="zoom-in" data-aos-duration="1500" data-aos-duration="600" data-aos-delay="1200">
+                <p data-aos="zoom-in" data-aos-duration="1500" data-aos-duration="600" data-aos-delay="1400">
                     Time to Earn<br/>
                     Web3 Lifestyle App
                 </p>
@@ -374,7 +357,7 @@
     <script>
         $(function () {
             $(window).scroll(function () {
-                var scrT = $(window).scrollTop();
+                var scrT = $(document).scrollTop();
                 if (scrT == $(document).height() - $(window).height()) {
                     $('nav ul li a').removeClass('actives');
                     $('nav ul li a').eq(3).addClass('actives');
@@ -395,7 +378,7 @@
         }
     </script>
 
-    <script>
+    <!-- <script>
         var filter = "win16|win32|win64|mac|macintel";
 
         if (navigator.platform) {
@@ -407,6 +390,6 @@
                 $('.p-text-m').hide();
             }
         }
-    </script>
+    </script> -->
 </body>
 </html>
