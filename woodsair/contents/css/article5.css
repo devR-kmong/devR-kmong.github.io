@@ -1,0 +1,119 @@
+.article5 {
+    background: url(../images/a5-bg.jpg);
+}
+
+.a5-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.a5-left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.a5-text p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.a5-number {
+    margin-bottom: 1rem;
+}
+
+.a5-number h1 {
+    color: #222;
+    font-size: 63px;
+    letter-spacing: -0.04em;
+}
+
+.a5-number h1 span {
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.a5-number p {
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.a5-Btn-wrapper {
+    display: flex;
+    gap: 1.7rem;
+}
+
+.ctBtn {
+    color: #3d3d3d;
+    width: 170px;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: all .3s ease;
+}
+
+.ctBtn:hover {
+    gap: 12px;
+}
+
+.ctBtn i {
+    font-size: 20px;
+}
+
+.a5-line {
+    width: 50px;
+    height: 1px;
+    margin-top: 1rem;
+    background-color: #bbb;
+}
+
+.a5-right {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.a5-r-box {
+    padding: 60px 40px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.a5-r-box:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+}
+
+.a5-r-box:nth-child(1) {
+    background: url(../images/a5-1.png) no-repeat;
+    background-size: cover;
+}
+
+.a5-r-box:nth-child(2) {
+    background: url(../images/a5-2.png) no-repeat;
+    background-size: cover;
+}
+
+.a5-r-box h1 {
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.a5-r-box p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: .5rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}

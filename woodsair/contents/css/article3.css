@@ -1,0 +1,286 @@
+.article3 {
+    position: relative;
+    background: url(../images/a3-bg.jpg);
+}
+
+.a3-square {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 55%;
+    height: 45%;
+    border-radius: 0 100px 0 0;
+    background-color: var(--main-color);
+    z-index: 1;
+}
+
+.a3-title {
+    margin-bottom: 5rem;
+}
+
+.a3-title h1 {
+    color: #222;
+    font-size: 85px;
+    font-family: 'Cairo';
+}
+
+.a3-title p {
+    color: #555;
+    font-size: 24px;
+}
+
+.a3-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    z-index: 2;
+}
+
+.a3-pin {
+    position: absolute;
+    top: 180px; left: 490px;
+    width: 270px;
+}
+
+.a3-search {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    border: 4px solid #fff;
+    background-color: #fff;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .1);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.a3-search p {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.a3-search i {
+    color: #bbb;
+    font-size: 38px;
+}
+
+.a3-search:hover i {
+    color: #aaa;
+}
+
+.korea-map {
+    position: relative;
+    width: 500px;
+}
+
+.korea-map .kr {
+    padding-top: 4rem;
+}
+
+.kr-pin-wrapper {
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.kr-pin {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    transition: all .3s ease;
+}
+
+.kr-pin p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.kr-pin:hover {
+    transform: translateY(-5px);
+    background-color: var(--main-color);
+}
+
+.seoul {
+    top: 187px; left: 125px;
+}
+
+.incheon {
+    top: 210px; left: 65px;
+}
+
+.gyeonggi {
+    top: 225px; left: 180px;
+}
+
+.kangwon {
+    top: 170px; left: 285px;
+}
+
+.chungbuk {
+    top: 310px; left: 215px;
+}
+
+.chungnam {
+    top: 340px; left: 85px;
+}
+
+.sejong {
+    top: 330px; left: 148px;
+}
+
+.daejeon {
+    top: 385px; left: 168px;
+}
+
+.daegu {
+    top: 440px; left: 320px;
+}
+
+.gyeongbuk {
+    top: 350px; left: 330px;
+}
+
+.gyeongnam {
+    top: 530px; left: 275px;
+}
+
+.ulsan {
+    top: 500px; left: 390px;
+}
+
+.busan {
+    top: 555px; left: 365px;
+}
+
+.gwangju {
+    top: 545px; left: 120px;
+}
+
+.jeonbuk {
+    top: 470px; left: 160px;
+}
+
+.jeonnam {
+    top: 610px; left: 120px;
+}
+
+.jeju {
+    top: 665px; left: 420px;
+}
+
+
+
+/*=========================================================*/
+@media (min-width: 2450px) {
+    .a3-square {
+        height: 620px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .a3-wrapper {
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .korea-map {
+        width: 300px;
+    }
+
+    .korea-map .kr {
+        padding-top: 0;
+    }
+
+    .kr-pin-wrapper {
+        position: absolute;
+        top: -120px; left: -50px;
+    }
+
+    .kr-pin {
+        width: 30px;
+        height: 30px;
+    }
+
+    .kr-pin p {
+        font-size: 12px;
+    }
+
+    .seoul {
+        top: 200px; left: 125px;
+    }
+    
+    .incheon {
+        top: 210px; left: 95px;
+    }
+    
+    .gyeonggi {
+        top: 220px; left: 155px;
+    }
+    
+    .kangwon {
+        top: 190px; left: 225px;
+    }
+    
+    .chungbuk {
+        top: 270px; left: 175px;
+    }
+    
+    .chungnam {
+        top: 300px; left: 105px;
+    }
+    
+    .sejong {
+        top: 285px; left: 140px;
+    }
+    
+    .daejeon {
+        top: 315px; left: 155px;
+    }
+    
+    .daegu {
+        top: 350px; left: 250px;
+    }
+    
+    .gyeongbuk {
+        top: 310px; left: 260px;
+    }
+    
+    .gyeongnam {
+        top: 400px; left: 215px;
+    }
+    
+    .ulsan {
+        top: 385px; left: 290px;
+    }
+    
+    .busan {
+        top: 415px; left: 275px;
+    }
+    
+    .gwangju {
+        top: 415px; left: 120px;
+    }
+    
+    .jeonbuk {
+        top: 364px; left: 140px;
+    }
+    
+    .jeonnam {
+        top: 450px; left: 120px;
+    }
+    
+    .jeju {
+        top: 475px; left: 303px;
+    }
+}
