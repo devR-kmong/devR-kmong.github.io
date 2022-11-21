@@ -22,7 +22,8 @@
 .sub-navBtn {
     flex: 1;
     color: rgba(255, 255, 255, .7);
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 400;
     height: 55px;
     display: flex;
     justify-content: center;
@@ -42,10 +43,13 @@
 
 .sub-navBtn-active {
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     background-color: var(--main-color);
 }
 
 .sub-navBtn-active:hover {
     background-color: var(--main-color);
 }
+
+
+/*=========================================================*/

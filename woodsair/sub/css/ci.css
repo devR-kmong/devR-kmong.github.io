@@ -20,6 +20,7 @@
     color: #222;
     font-size: 45px;
     line-height: 1.4;
+    letter-spacing: -0.04em;
 }
 
 
@@ -97,3 +98,6 @@
 .ci-box:nth-child(3) .ci-color p {
     color: #222;
 }
+
+
+/*=========================================================*/
