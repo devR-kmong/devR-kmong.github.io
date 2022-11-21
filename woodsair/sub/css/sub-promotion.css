@@ -1,0 +1,55 @@
+.article {
+    height: auto;
+    padding: 80px 0;
+}
+
+.sub-promotion {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.s-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    animation: reduction 3s ease-out;
+    z-index: 2;
+}
+
+.sub-promotion-wrapper {
+    width: 1400px;
+    z-index: 3;
+}
+
+.sub-p-text {
+    color: #fff;
+    font-size: 32px;
+}
+
+
+@keyframes reduction {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/*==================================================*/
+@media (max-width: 1450px) {
+    .sub-promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

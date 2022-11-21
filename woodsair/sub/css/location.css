@@ -1,0 +1,55 @@
+.location-bg {
+    background: url(../images/location-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.l-wrapper {
+    width: 100%;
+    padding-bottom: 55px;
+}
+
+.l-title h2 {
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Cairo';
+    margin-bottom: .5rem;
+}
+
+.l-title h1 {
+    color: #222;
+    font-size: 45px;
+    line-height: 1.4;
+}
+
+.l-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.l-box-address {
+    padding-top: 2rem;
+}
+
+.l-box-address h1 {
+    color: #222;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.l-box-address p {
+    color: #555;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.l-box-map {
+    width: 750px;
+    height: 350px;
+    background-color: #eee;
+}
