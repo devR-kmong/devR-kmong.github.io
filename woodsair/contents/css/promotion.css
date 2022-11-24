@@ -35,7 +35,8 @@
     z-index: 4;
 }
 
-.swiper-slide .s-background img {
+.swiper-slide .s-background img,
+.swiper-slide .s-background picture {
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -67,6 +68,10 @@
     font-size: 65px;
     font-family: 'OTWelcomeBA';
     text-shadow: 0 0 10px rgba(0, 0, 0, .07);
+}
+
+.content h1 br {
+    display: none;
 }
 
 .content p {
@@ -177,6 +182,13 @@
 
 
 /*=========================================================*/
+@media (max-width: 1650px) {
+    .content {
+        padding-left: 5rem;
+    }
+}
+
+
 @media (max-width: 1450px) {
     .swiper-slide {
         padding: 0 20px;
@@ -185,8 +197,17 @@
 
 
 @media (max-width: 768px) {
+    .content {
+        padding-left: 0;
+    }
+    
     .content h1 {
         font-size: 40px;
+        line-height: 1.3;
+    }
+
+    .content h1 br {
+        display: block;
     }
 
     .content p {
@@ -196,7 +217,13 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+    .s-background-1 img,
+    .s-background-2 img,
+    .s-background-3 img {
+        object-position: center;
+    }
+    
     .scrollDown {
         bottom: 80px; left: 47.5%;
     }

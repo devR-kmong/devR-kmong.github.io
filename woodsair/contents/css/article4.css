@@ -15,3 +15,15 @@
     font-weight: 400;
     text-align: center;
 }
+
+
+/*=========================================================*/
+@media (max-width: 768px) {
+    .a4-wrapper {
+        height: 200px;
+    }
+
+    .a4-wrapper p {
+        font-size: 16px;
+    }
+}

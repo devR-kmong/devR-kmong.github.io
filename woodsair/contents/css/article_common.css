@@ -28,6 +28,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 4rem;
+    z-index: 5;
 }
 
 .article-title img {
@@ -57,7 +58,7 @@
 @media (max-width: 1600px) {
     .article {
         height: auto;
-        padding: 60px 0;
+        padding: 140px 0;
     }
 }
 
@@ -66,5 +67,36 @@
     .article-wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .article {
+        padding: 60px 0;
+    }
+
+    .a1-bg-3 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article-title {
+        margin-bottom: 2rem;
+    }
+
+    .article-title img {
+        width: 40px;
+    }
+    
+    .article-title h1 {
+        font-size: 30px;
+        margin-top: -.5rem;
+    }
+
+    .article-title p {
+        font-size: 14px;
     }
 }

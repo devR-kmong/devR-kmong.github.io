@@ -3,9 +3,11 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(document).scrollTop() > Offset.top) {
             $('.header').addClass('Fixed');
+            $('.gnb-r-left a, .gnb-r-left span').addClass('gnb-d');
         }
         else {
             $('.header').removeClass('Fixed');
+            $('.gnb-r-left a, .gnb-r-left span').removeClass('gnb-d');
         }
     });
 });

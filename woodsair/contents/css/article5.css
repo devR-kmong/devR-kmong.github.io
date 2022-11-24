@@ -117,3 +117,94 @@
     margin-top: .5rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
+
+
+/*=========================================================*/
+@media (max-width: 1450px) {
+    .a5-wrapper {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .a5-text p br {
+        display: none;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .article5 {
+        padding-top: 20px;
+    }
+    
+    .a5-wrapper {
+        flex-direction: column;
+    }
+
+    .a5-left {
+        gap: 2rem;
+    }
+
+    .a5-text p {
+        font-size: 15px;
+    }
+
+    .a5-text p br {
+        display: block;
+    }
+    
+    .a5-number h1 {
+        font-size: 45px;
+    }
+
+    .a5-number h1 span {
+        font-size: 18px;
+    }
+
+    .a5-Btn-wrapper {
+        gap: 1rem;
+    }
+    
+    .ctBtn {
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .ctBtn i {
+        font-size: 16px;
+    }
+    
+    .a5-line {
+        display: none;
+    }
+
+    .a5-right {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a5-wrapper {
+        gap: 2rem;
+    }
+    
+    .a5-r-box {
+        padding: 35px 25px;
+    }
+
+    .a5-r-box h1 {
+        font-size: 20px;
+    }
+
+    .a5-r-box p {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .a5-text p br {
+        display: none;
+    }
+}

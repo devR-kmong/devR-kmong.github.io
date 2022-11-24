@@ -47,14 +47,11 @@
 
 
 /*=========================================================*/
-@media (max-width: 1550px) {
+@media (max-width: 1650px) {
     .remote {
         left: 20px;
     }
-}
-
-
-@media (max-width: 1300px) {
+    
     .remote-item {
         gap: 20px;
     }
@@ -76,7 +73,7 @@
 }
 
 
-@media (max-width: 650px) {
+@media (max-width: 1450px) {
     .navigation {
         display: none;
     }

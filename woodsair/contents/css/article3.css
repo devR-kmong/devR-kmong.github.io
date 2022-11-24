@@ -77,10 +77,6 @@
     width: 500px;
 }
 
-.korea-map .kr {
-    padding-top: 4rem;
-}
-
 .kr-pin-wrapper {
     position: absolute;
     top: 0; left: 0;
@@ -109,71 +105,71 @@
 }
 
 .seoul {
-    top: 187px; left: 125px;
+    top: 137px; left: 125px;
 }
 
 .incheon {
-    top: 210px; left: 65px;
+    top: 160px; left: 65px;
 }
 
 .gyeonggi {
-    top: 225px; left: 180px;
+    top: 175px; left: 180px;
 }
 
 .kangwon {
-    top: 170px; left: 285px;
+    top: 120px; left: 285px;
 }
 
 .chungbuk {
-    top: 310px; left: 215px;
+    top: 245px; left: 215px;
 }
 
 .chungnam {
-    top: 340px; left: 85px;
+    top: 290px; left: 85px;
 }
 
 .sejong {
-    top: 330px; left: 148px;
+    top: 280px; left: 148px;
 }
 
 .daejeon {
-    top: 385px; left: 168px;
+    top: 335px; left: 168px;
 }
 
 .daegu {
-    top: 440px; left: 320px;
+    top: 390px; left: 320px;
 }
 
 .gyeongbuk {
-    top: 350px; left: 330px;
+    top: 300px; left: 330px;
 }
 
 .gyeongnam {
-    top: 530px; left: 275px;
+    top: 470px; left: 275px;
 }
 
 .ulsan {
-    top: 500px; left: 390px;
+    top: 450px; left: 390px;
 }
 
 .busan {
-    top: 555px; left: 365px;
+    top: 505px; left: 365px;
 }
 
 .gwangju {
-    top: 545px; left: 120px;
+    top: 495px; left: 120px;
 }
 
 .jeonbuk {
-    top: 470px; left: 160px;
+    top: 420px; left: 160px;
 }
 
 .jeonnam {
-    top: 610px; left: 120px;
+    top: 560px; left: 120px;
 }
 
 .jeju {
-    top: 665px; left: 420px;
+    top: 605px; left: 420px;
 }
 
 
@@ -187,13 +183,80 @@
 
 
 @media (max-width: 1250px) {
+    .article3 {
+        padding: 40px 0 20px 0;
+    }
+    
+    .a3-square {
+        width: 100%;
+        height: 370px;
+        border-radius: 0 50px 0 0;
+    }
+    
     .a3-wrapper {
         flex-direction: column-reverse;
+        gap: 5rem;
+    }
+
+    .a3-pin {
+        display: none;
+    }
+
+    .a3-title {
+        margin-bottom: 1rem;
+    }
+
+    .a3-title h1 {
+        color: #fff;
+        font-size: 55px;
+    }
+
+    .a3-title p {
+        color: #fff;
+        font-size: 20px;
     }
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 550px) {    
+    .article3 {
+        padding-bottom: 0;
+        background: #fff;
+    }
+    
+    .a3-square {
+        height: 270px;
+    }
+
+    .a3-wrapper {
+        gap: 3rem;
+    }
+    
+    .a3-left {
+        width: 100%;
+    }
+    
+    .a3-title h1 {
+        font-size: 34px;
+    }
+
+    .a3-title p {
+        font-size: 16px;
+    }
+
+    .a3-search {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .a3-search p {
+        font-size: 20px;
+    }
+
+    .a3-search i {
+        font-size: 22px;
+    }
+    
     .korea-map {
         width: 300px;
     }
@@ -213,7 +276,7 @@
     }
 
     .kr-pin p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .seoul {
