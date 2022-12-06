@@ -1,0 +1,30 @@
+.floating {
+    position: fixed;
+    bottom: 20px; right: 20px;
+    z-index: 999;
+}
+
+.call-ico {
+    position: relative;
+}
+
+.floatingBtn {
+    position: absolute;
+    bottom: 3px; right: 65px;
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.floating:hover .floatingBtn {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*=========================================================*/
+@media (max-width: 600px) {
+    .floatingBtn {
+        display: none;
+    }
+}

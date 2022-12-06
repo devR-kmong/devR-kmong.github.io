@@ -1,0 +1,149 @@
+.article7 {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/smart-bg.png) no-repeat;
+    background-size: cover;
+}
+
+.a7-title {
+    width: 1500px;
+    margin-top: 100px;
+    margin-bottom: 3rem;
+}
+
+.a7-title p {
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.a7-title h1 {
+    color: #eee;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+}
+
+.a7-title span {
+    color: cyan;
+    font-weight: 700;
+}
+
+.a7-wrapper {
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.a7-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.a7-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.a7-item {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'NanumSquare';
+    padding: 15px 30px;
+    border-radius: 60px;
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.a7-item:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+
+.a7-notice {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.a7-notice p {
+    color: #777;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5rem;
+    font-family: 'Malgun Gothic';
+    transform: rotate(0);
+}
+
+
+/*=========================================================*/
+@media (max-width: 1500px) {
+    .article7 {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .a7-title {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .a7-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a7-title {
+        margin-bottom: 2rem;
+    }
+
+    .a7-item-wrapper {
+        gap: 1rem;
+    }
+
+    .a7-item {
+        font-size: 15px;
+        font-weight: 300;
+        padding: 10px 20px;
+    }
+
+    .a7-notice {
+        margin-top: 1rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .article7 {
+        padding: 40px 20px;
+    }
+
+    .a7-title h1 {
+        font-size: 30px;
+    }
+
+    .a7-title p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a7-title h1 {
+        font-size: 24px;
+    }
+    
+    .a7-item {
+        font-size: 13px;
+    }
+}

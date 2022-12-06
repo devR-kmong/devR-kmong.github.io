@@ -1,0 +1,149 @@
+.pbb1 {
+    background: url(../images/location-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.location-title {
+    width: 1200px;
+    margin-bottom: 2rem;
+}
+
+.location-title h1 {
+    color: var(--blue-color);
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.location-title h2 {
+    color: var(--main-color);
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.location-title p {
+    color: #555;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+}
+
+
+/*=========================================================*/
+.lbox {
+    width: 100%;
+    height: auto;
+    padding: 60px 20px;
+    background-color: #f9f4f0;
+}
+
+.location-map {
+    max-width: 100%;
+}
+
+.location-map-m {
+    display: none;
+}
+
+.location-box {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.location-item {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.location-item h3 {
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: -0.04em;
+}
+
+.location-item p {
+    color: #666;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 2rem;
+    transform: rotate(0);
+}
+
+
+.location-notice {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.location-notice p {
+    color: #777;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5rem;
+    font-family: 'Malgun Gothic';
+    transform: rotate(0);
+}
+
+
+/*=========================================================*/
+@media (max-width: 1210px) {
+    .location-title {
+        width: 100%;
+    }
+
+    .location-box {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 810px) {
+    .location-title {
+        margin-bottom: 1rem;
+    }
+
+    .location-title h1, .location-title h2 {
+        font-size: 45px;
+        line-height: 3.5rem;
+    }
+
+    .location-title p {
+        font-size: 22px;
+        margin-top: 10px;
+        font-weight: 300;
+    }
+
+    .location-map {
+        display: none;
+    }
+
+    .location-map-m {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .lbox {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .location-title p {
+        font-size: 20px;
+    }
+}

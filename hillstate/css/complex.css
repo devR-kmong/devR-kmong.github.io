@@ -1,0 +1,126 @@
+.pbb1 {
+    background: url(../images/complex-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.complex-title h1 {
+    color: #333;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.04em;
+    margin-bottom: 2rem;
+    transition: all .3s;
+}
+
+#complex-tab input {
+    display: none;
+}
+
+.tabBtn-wrapper {
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.tabBtn-wrapper label {
+    display: block;
+}
+
+.tabBtn {
+    flex: 1;
+    color: #aaa;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'NanumSquare';
+    text-align: center;
+    line-height: 55px;
+    border: 1px solid #fff;
+    background-color: #eee;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.tabBtn:hover {
+    color: #fff;
+    background-color: var(--sub-color);
+}
+
+.tab-item {
+    display: none;
+}
+
+#first:checked ~ .ti1 {display: flex; justify-content: center; align-items: center;}
+#second:checked ~ .ti2 {display: flex; justify-content: center; align-items: center;}
+#third:checked ~ .ti3 {display: flex; justify-content: center; align-items: center;}
+
+#first:checked ~ .tabBtn-wrapper > .tabBtn:nth-child(1) {color: #fff; background-color: var(--main-color);}
+#second:checked ~ .tabBtn-wrapper > .tabBtn:nth-child(2) {color: #fff; background-color: var(--main-color);}
+#third:checked ~ .tabBtn-wrapper > .tabBtn:nth-child(3) {color: #fff; background-color: var(--main-color);}
+
+
+.complex1, .complex2, .complex-d {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.complex1-m, .complex2-m {
+    display: none;
+}
+
+.complex-notice {
+    width: 1000px;
+}
+
+.complex-notice p {
+    color: #777;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5rem;
+    font-family: 'Malgun Gothic';
+    transform: rotate(0);
+}
+
+
+/*=========================================================*/
+@media (max-width: 1400px) {
+    .tabBtn-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .complex-notice {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 539px) {
+    .complex-title h1 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+
+    .tabBtn-wrapper {
+        margin-bottom: 1rem;
+        flex-direction: column;
+    }
+
+    .tabBtn {
+        font-weight: 500;
+    }
+
+    .complex1, .complex2 {
+        display: none;
+    }
+
+    .complex1-m, .complex2-m, .complex-d {
+        display: flex;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,151 @@
+.article3 {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/whyus-bg.png) no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.a3-title {
+    width: 1600px;
+    margin-bottom: 3rem;
+}
+
+.a3-title p {
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.a3-title h1 {
+    color: #eee;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+}
+
+.a3-title span {
+    color: red;
+    font-weight: 700;
+}
+
+.a3-wrapper {
+    width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.a3-item {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .05);
+    transition: all .3s;
+}
+
+.a3-item:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.a3-item .num {
+    color: rgba(255, 255, 255, .3);;
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: .1rem;
+    transition: .3s;
+}
+
+.a3-item .num-line {
+    width: 100%;
+    height: 1px;
+    display: flex;
+    background-color: rgba(255, 255, 255, .1);
+    margin-bottom: 1rem;
+    transition: .3s;
+}
+
+.a3-item h1 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    margin-bottom: .5rem;
+    font-family: 'Spoqa Han Sans Neo';
+}
+
+.a3-item p {
+    color: #ccc;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+
+/*=========================================================*/
+@media (max-width: 1600px) {
+    .article3 {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .a3-title {
+        width: 100%;
+    }
+
+    .a3-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 875px) {
+    .a3-title {
+        margin-bottom: 1rem;
+    }
+
+    .a3-wrapper {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article3 {
+        padding: 40px 20px;
+    }
+
+    .a3-item {
+        height: 260px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .a3-title h1 {
+        font-size: 30px;
+    }
+
+    .a3-title p {
+        font-size: 15px;
+    }
+
+    .a3-item h1 {
+        font-size: 22px;
+    }
+
+    .a3-item p {
+        font-size: 15px;
+        font-weight: 200;
+        margin-bottom: 1.3rem;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .a3-title h1 {
+        font-size: 24px;
+    }
+
+}
+
+

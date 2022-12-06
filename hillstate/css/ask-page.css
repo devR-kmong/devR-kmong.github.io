@@ -1,0 +1,17 @@
+.pbb1 {
+    background: url(../images/ask-page-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ask-wrap {
+    padding: 100px 20px;
+}
+
+
+/*=========================================================*/
+@media (max-width: 1300px) {
+    .pbb1 {
+        background: url(../images/ask-page-bg-m.png) no-repeat;
+    }
+}

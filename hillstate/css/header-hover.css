@@ -1,0 +1,84 @@
+header:hover {
+    background-color: #fff;
+}
+
+header:hover .logo-w {
+    display: none;
+}
+
+header:hover .logo {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+header:hover nav ul li {
+    color: #444;
+    font-weight: 700;
+}
+
+header:hover nav ul li:hover {
+    color: #bb0000;
+}
+
+header:hover ~ .header-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-hover {
+    position: absolute;
+    top: 100px; left: 0;
+    width: 100%;
+    height: 220px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-hover {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-right: 32px; 
+}
+
+.hover-box {
+    width: 164px;
+    color: #666;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hover-item {
+    margin: 25px 0;
+}
+
+
+
+/*=========================================================*/
+@media (max-width: 1300px) {
+    header:hover {
+        background-color: transparent;
+    }
+
+    header:hover .logo-w {
+        display: flex;
+    }
+    
+    header:hover .logo {
+        display: none;
+    }
+
+    .header-hover {
+        display: none;
+    }
+}

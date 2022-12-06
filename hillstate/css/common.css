@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    word-break: keep-all;
+}
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, h7, p {
+    transform:rotate(-0.03deg);
+}
+
+
+:root {
+    --main-color: #951e1e;
+    --sub-color: #94060a;
+    --blue-color: #09203f;
+}
+
+.main-background {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/hero.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: reduction 2000ms ease-out;
+    -moz-animation: reduction 2000ms ease-out;
+    -webkit-animation: reduction 2000ms ease-out;
+    -o-animation: reduction 2000ms ease-out;
+}
+
+.article {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.article-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes reduction {
+    from {transform: scale(1.1);}
+    to {transform: scale(1);}
+}
+@-moz-keyframes reduction {
+    from {transform: scale(1.1);}
+    to {transform: scale(1);}
+}
+@-webkit-keyframes reduction {
+    from {transform: scale(1.1);}
+    to {transform: scale(1);}
+}
+@-o-keyframes reduction {
+    from {transform: scale(1.1);}
+    to {transform: scale(1);}
+}
+
+
+/*=========================================================*/
+@media (max-width: 1600px) {
+    .article {
+        height: auto;
+    }
+}
+

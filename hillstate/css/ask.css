@@ -1,0 +1,27 @@
+.article5 {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/ask-bg.png) no-repeat;
+    background-size: cover;
+}
+
+.ask-title h1 {
+    color: #333;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.0625em;
+}
+
+.ask-title span {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+
+/*=========================================================*/
+@media (max-width: 1600px) {
+    .article5 {
+        height: auto;
+        padding: 40px 20px;
+    }
+}

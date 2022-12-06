@@ -1,0 +1,208 @@
+.pbb1 {
+    background: url(../images/about-us-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.big-symbol {
+    position: absolute;
+    top: 500px; left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bi-bg.png) no-repeat;
+    background-position: center;
+    z-index: -2;
+}
+
+.about-us {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-text {
+    width: 1100px;
+    text-align: center;
+}
+
+.about-us-text h1 {
+    color: var(--main-color);
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+    letter-spacing: -0.03em;
+}
+
+.about-us-text p {
+    color: #333;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 2.2rem;
+    letter-spacing: -0.03em;
+}
+
+.circle-wrapper {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 80px 0 150px 0;
+}
+
+.circle-box {
+    width: 320px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-item {
+    width: 250px;
+    height: 250px;
+    border: 8px solid var(--main-color);
+    border-radius: 300px;
+    padding-top: 85px;
+    margin-bottom: 1rem;
+    transition: all .3s;
+    z-index: 3;
+}
+
+.circle-item h3 {
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.circle-item h4 {
+    color: #777;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.circle-text p {
+    color: #555;
+    font-size: 19px;
+    font-weight: 300;
+    letter-spacing: -0.0625em;
+}
+
+
+.certification-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.cert {
+    max-width: 100%;
+}
+
+
+
+/*=========================================================*/
+@media (max-width: 1200px) {
+    .about-us-text {
+        width: 100%;
+    }
+
+    .circle-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1070px) {
+    .about-us-text p {
+        text-align: left;
+        word-break: break-all;
+    }
+
+    .circle-box {
+        width: 240px;
+    }
+
+    .circle-item {
+        width: 170px;
+        height: 170px;
+        border: 6px solid var(--main-color);
+        padding-top: 50px;
+    }
+
+    .circle-item h3 {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about-us-text h1 {
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+
+    .circle-wrapper {
+        margin: 40px 0 80px 0;
+    }
+
+    .circle-box {
+        margin: 0 10px;
+    }
+}
+
+
+@media (max-width: 570px) {
+    .about-us-text p {
+        font-size: 18px;
+        line-height: 2rem;
+    }
+
+    .circle-wrapper {
+        margin: 20px 0 60px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle-box {
+        width: 100%;
+        height: 180px;
+        margin: 10px 0;
+        padding: 0 20px;
+        background-color: rgba(255, 255, 255, .3);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle-item {
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+        border-radius: 5px 5px 0 0;
+        border: none;
+    }
+
+    .circle-item h4 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .certification-wrapper {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,141 @@
+.article4 {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/point-bg.png) no-repeat;
+    background-size: cover;
+}
+
+.wrapper2 {
+    width: 1400px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.point-title h1 {
+    color: #333;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: -0.0625em;
+}
+
+.point-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+}
+
+.pbox {
+    display: flex;
+    gap: .7rem;
+}
+
+.pbox2 {
+    flex-direction: row-reverse;
+}
+
+.point-item {
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    padding-top: 64px;
+    background-color: rgba(0, 0, 0, .15);
+    transition: all .3s;
+}
+
+.point-item:nth-child(1) {
+    background-color: #3d4b58;
+}
+
+.point-item:nth-child(2) {
+    background-color: #5c7283;
+}
+
+.point-item:hover {
+    filter: brightness(120%);
+    -webkit-filter: brightness(120%);
+}
+
+.point-item ion-icon {
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: .5rem;
+}
+
+.point-item p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.point-notice {
+    margin-top: .5rem;
+}
+
+.point-notice p {
+    color: #777;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5rem;
+    font-family: 'Malgun Gothic';
+    transform: rotate(0);
+}
+
+
+/*=========================================================*/
+@media (max-width: 1500px) {
+    .article4 {
+        height: auto;
+        padding: 100px 20px;
+        background: url(../images/point-bg-m.png) no-repeat;
+        background-position: center;
+    }
+
+    .wrapper2 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .article4 {
+        padding: 40px 20px;
+    }
+
+    .point-item:nth-child(1) {
+        background-color: #3d4b58b4;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+    
+    .point-item:nth-child(2) {
+        background-color: #5c7283b4;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+
+    .point-item {
+        width: 180px;
+        height: 180px;
+        padding-top: 48px;
+    }
+
+    .point-item p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .point-item {
+        width: 160px;
+        height: 160px;
+        padding-top: 38px;
+    }
+}

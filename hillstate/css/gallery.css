@@ -1,0 +1,25 @@
+.pbb1 {
+    background: url(../images/gallery-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery-slide {
+    width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gallery-img {
+    max-width: 100%;
+}
+
+/*=========================================================*/
+@media (max-width: 1600px) {
+    .gallery-slide {
+        width: 100%;
+    }
+}
