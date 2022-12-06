@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--
+                        88       88  88888888888
+                        88       88           88
+                        88       88           88
+                        88888888888           88
+                        88""""""'88           88
+                        88       88           88
+                        88       88	 Y8a.   .a8P
+                        88       88   "Y8888Y"
+
+		 Copyright © 2022 developer RyuN 형진 . All rights reserved.
+--> <!-- 홈페이지 제작 문의 010-6865-2651 + yeagrin2005@naver.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub-common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/header-hover.css">
+    <link rel="stylesheet" href="css/complex.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/floating.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png"  type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>단지정보 :: 힐스테이트 대구역 퍼스트</title>
+</head>
+<body>
+    <div class="floating">
+        <div class="floatingBtn">
+            <img src="images/number.png">
+        </div>
+        <a href="tel:053-760-4764"><img src="images/call.png" class="call-ico"></a>
+    </div>
+    <header>
+        <nav>
+            <div>
+                <a href="/"><img src="images/logo-w.png" class="logo-w"></a>
+                <a href="/"><img src="images/logo.png" class="logo active"></a>
+            </div>
+            <ul>
+                <li><a href="about-us">브랜드소개</a></li>
+                <li><a href="location">입지환경</a></li>
+                <li><a href="space">공간안내</a></li>
+                <li><a href="complex">단지정보</a></li>
+                <li><a href="gallery">갤러리</a></li>
+            </ul>
+            <div class="nb">
+                <a href="ask"><button class="navBtn">분양문의</button></a>
+            </div>
+        </nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <div class="menuBtns" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </label>
+        <ul class="mobile-menu">
+            <li><a href="about-us">브랜드소개</a></li>
+            <li><a href="location">입지환경</a></li>
+            <li><a href="space">공간안내</a></li>
+            <li><a href="complex">단지정보</a></li>
+            <li><a href="gallery">갤러리</a></li>
+            <li><a href="ask">분양문의</a></li>
+        </ul>
+        <div class="overlay"></div>
+    </header>
+    <section class="promotion">
+        <div class="p-bg">
+            <div class="p-bg-background pbb1"></div>
+        </div>
+        <div class="promotion-wrapper">
+            <div class="sub-title">
+                <h1><span>COMPLEX</span> INFO.</h1>
+                <p>단지정보</p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="container-wrapper">
+            <div class="complex-title">
+                <h1>
+                    단지정보
+                </h1>
+            </div>
+            <div id="complex-tab">
+                <input id="first" type="radio" name="tab" checked="checked" />
+                <input id="second" type="radio" name="tab" />
+                <input id="third" type="radio" name="tab" />
+                <div class="tabBtn-wrapper">
+                    <label for="first" class="tabBtn">1차 단지배치도</label>
+                    <label for="second" class="tabBtn">2차 단지배치도</label>
+                    <label for="third" class="tabBtn">동호수배치도</label>
+                </div>
+                <div class="tab-item ti1">
+                    <img src="images/complex1.png" class="complex1">
+                    <img src="images/complex1-m.png" class="complex1-m">
+                </div>
+                <div class="tab-item ti2">
+                    <img src="images/complex2.png" class="complex2">
+                    <img src="images/complex2-m.png" class="complex2-m">
+                </div>
+                <div class="tab-item ti3">
+                    <img src="images/complex.jpg" class="complex-d">
+                </div>
+            </div> 
+            <div class="complex-notice">
+                <p>
+                    ※ 상기 홍보물은 오류가 있을 수 있으므로 견본주택에서 반드시 확인바랍니다.
+                </p>
+            </div>
+            <!-- <img src="images/complex1.png" class="complex1">
+            <img src="images/complex1-m.png" class="complex1-m">
+            <div class="complex-title">
+                <h1>
+                    단지배치도 - 2차
+                </h1>
+            </div>
+            <img src="images/complex2.png" class="complex2">
+            <img src="images/complex2-m.png" class="complex2-m">
+            <div class="complex-title">
+                <h1>
+                    동호수배치도
+                </h1>
+            </div>
+            <img src="images/complex.jpg" class="complex-d"> -->
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="f-item">
+                <a href="privacy-policy"><button class="footerBtn">개인정보처리방침</button></a>
+                <p>
+                    힐스테이트 대구역 퍼스트<br/>
+                    관리자 : 윤형진 | 대표번호: <a href="tel:053-760-4764">053-760-4764</a> | 대구광역시 중구 태평로2가 11-1 <br/>
+                    본 페이지에 사용된 CG, 일러스트, 이미지컷 등은 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.
+                </p>
+                <p>
+                    COPYRIGHT ⓒ 2022 HILLSTATE ALL RIGHTS RESERVED.<br/>
+                    분양홈페이지 제작문의 : yeagrin2005@naver.com
+                </p>
+            </div>
+            <!-- <div class="f-item">
+                <a href="https://www.hdec.kr/kr/main.aspx" target="blank"><img src="images/hyundai.png"></a>
+            </div> -->
+        </div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="js/gsap.min.js"></script>
+<script>
+    gsap.from('.sub-title h1, .sub-title p',{opacity: 0, duration: 1, stagger:.4, y:60})
+</script>
+
+<script>
+    function myFunction(x) {
+    x.classList.toggle("change");
+  }
+</script>
+
+<script>
+    if (window.innerWidth > 1600) {
+        document.write(
+            '<script src="js/header.js"><\/script>'
+        )
+    }
+    else {
+        document.clear(
+            '<script src="js/header.js"><\/script>'
+        )
+    }
+</script>
+
+<script src="js/scrollreveal.min.js"></script>
+<script>
+            const sr = ScrollReveal({
+            distance: '30px',
+            delay: 100,
+            duration: 1500,
+            // reset: true,
+        })
+
+        sr.reveal('',{
+            distance: '200px',
+            origin: 'left',
+            interval: 100,
+        })
+</script>
+
+</html>
