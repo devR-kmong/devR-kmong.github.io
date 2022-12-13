@@ -99,10 +99,6 @@
 
 
 @media (max-width: 950px) {
-    .promotion {
-        height: 700px !important;
-    }
-
     .p-text {
         padding-bottom: 260px;
     }
@@ -147,10 +143,6 @@
         bottom: 40px;
         width: 550px;
         min-width: 550px;
-    }
-
-    .p-text {
-        padding-bottom: 180px;
     }
 }
 
