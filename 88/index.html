@@ -333,84 +333,16 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="article article5" id="6">
-            <div class="article-wrapper">
-                <div class="article-title">
-                    <p>
-                        가맹비 · 로열티 없어요!
-                    </p>
-                    <h1>
-                        <span>88제육</span> 가맹조건
-                    </h1>
-                </div>
-                <table class="a5-table">
-                    <tr>
-                        <td>가맹비</td>
-                        <td><span>無</span></td>
-                        <td>없음</td>
-                    </tr>
-                    <tr>
-                        <td>로열티</td>
-                        <td><span>無</span></td>
-                        <td>없음</td>
-                    </tr>
-                    <tr>
-                        <td>교육비</td>
-                        <td>조리 및 운영관리 교육</td>
-                        <td>20만원<em> (VAT별도)</em></td>
-                    </tr>
-                    <tr>
-                        <td>인테리어</td>
-                        <td>매장 업종변경 OK</td>
-                        <td>업종변경 자유</td>
-                    </tr>
-                    <tr>
-                        <td>간판</td>
-                        <td>매장 메인간판</td>
-                        <td>직접 시공가능</td>
-                    </tr>
-                </table>
-            </div>
-        </section> -->
-        <!-- <section class="article article6" id="7">
-            <div class="article-wrapper">
-                <div class="form-wrapper">
-                    <form class="gform"
-                        action=""
-                        method="POST" onSubmit="alert('문의가 성공적으로 접수되었습니다!');">
-                        <input type="text" name="name" placeholder="이름" class="inputbox" autocomplete="off" required />
-                        <input type="email" name="email" placeholder="이메일" class="inputbox" autocomplete="off" required />
-                        <input type="tel" name="phone" placeholder="연락처" pattern="010-[0-9]{4}-[0-9]{4}"
-                            class="inputbox phoneNumber" autocomplete="off" required />
-                        <select name="category" class="selectbox" required>
-                            <option value="">선택</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
-                        <textarea name="message" placeholder="문의사항" class="textbox" autocomplete="off"></textarea>
-                        <div class="button-wrapper">
-                            <div class="check">
-                                <input type="checkbox" id="cb" checked="checked" required />
-                                <label for="cb" class="personal-label"><p>개인정보 수집·이용 및 제공 동의 <span>[필수]</span></p></label>  
-                                <div class="check-notice">
-                                    <p>
-                                        <a href="#p">개인정보 수집·이용 및 제공</a>에 동의하셔야 문의가 전송됩니다.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="submit">
-                                <button type="submit" class="submitBtn">전송하기</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section> -->
     </main>
     <div class="floating">
         <div class="floating-wrapper">
+            <div class="f-closeBtn">
+                <img src="images/close.png">
+            </div>
             <div class="floating-title">
-                <img src="images/tel.svg" class="f-tel">
+                <div class="f-tel">
+                    <img src="images/tel.svg">
+                </div>
                 <div class="ft-text">
                     <p>
                         88제육 간편가맹문의
@@ -445,9 +377,7 @@
                         <option value="전남">전남</option>
                         <option value="제주">제주</option>
                     </select>
-                    <div class="submit">
-                        <button type="submit" class="f-submit"><p>상담신청하기</p></button>
-                    </div>
+                    <button type="submit" class="f-submit"><p>상담신청하기</p></button>
                 </div>
                 <div class="f-personal">
                     <input type="checkbox" id="cb" required />
@@ -552,6 +482,42 @@
             if ($('#cb').is(':checked')) {
             } else {
                 alert('개인정보 수집 및 이용에 동의해주세요.')
+            }
+        })
+    </script>
+
+    <script>
+        if (window.innerWidth <= 600) {
+            $('.f-closeBtn').click(function () {
+                $(this).hide();
+                $('.ft-text').hide();
+                $('.f-tel img').css('display', 'flex');
+                $('.floating-wrapper form').hide();
+                $('.f-personal').hide();
+                $('.floating').addClass('floating-close');
+            })
+
+            $('.f-tel').click(function () {
+                $('.floating').removeClass('floating-close');
+                $('.f-closeBtn').show();
+                $('.ft-text').show();
+                $('.f-tel img').css('display', 'none');
+                $('.floating-wrapper form').show();
+                $('.f-personal').show();
+            })
+        }
+    </script>
+
+    <script>
+        $(window).resize(function () {
+            var width_size = window.innerWidth;
+
+            if (width_size == 1920) {
+                document.location.reload();
+            } else if (width_size == 2560) {
+                document.location.reload();
+            } else if (width_size == 600) {
+                document.location.reload();
             }
         })
     </script>
