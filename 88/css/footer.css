@@ -1,0 +1,37 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 15px 15px, linear-gradient(#272727 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px, linear-gradient(90deg, #272727 1.2000000000000002px, #000000 1.2000000000000002px) -0.6000000000000001px 0;
+    background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
+    padding: 40px 20px;
+}
+
+.footer-wrapper {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-wrapper p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: .02em;
+}
+
+.footer-wrapper p br {
+    display: none;
+}
+
+.footer-wrapper p em br {
+    display: block;
+}
+
+.logo-f {
+    width: 100px;
+    margin-bottom: 1.2rem;
+}

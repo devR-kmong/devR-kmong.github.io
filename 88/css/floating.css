@@ -1,0 +1,144 @@
+.floating {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #be1a21;
+    z-index: 999;
+}
+
+.floating-wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.floating-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.f-tel {
+    height: 55px;
+    animation: updown 1s infinite ease-in-out;
+}
+
+@keyframes updown {
+    0% {transform:translateY(0);}
+    10% {transform:translateY(-3px);}
+    20% {transform:translateY(0);}
+    30% {transform:translateY(-3px);}
+    40% {transform:translateY(0);}
+    100% {transform:translateY(0);}
+}
+
+.floating-title p {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'RIDIBatang';
+    letter-spacing: -0.04em;
+    margin-bottom: 5px;
+}
+
+.floating-title a {
+    color: #fff;
+    font-size: 32px;
+    font-weight: unset;
+    font-family: 'PuradakGentleGothicR';
+}
+
+.f-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.f-form .inputbox {
+    color: #222;
+    width: 185px;
+    height: 47px;
+    padding: 0 19px;
+    font-size: 15px;
+    font-family: 'Pretendard';
+    border: none;
+    outline: none;
+    transition: all .3s;
+}
+
+.f-form .selectbox {
+    color: #bbb;
+    width: 185px;
+    height: 47px;
+    padding: 0 16px;
+    font-size: 15px;
+    font-family: 'Pretendard';
+    border: none;
+    outline: none;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.f-form .selectbox:valid {
+    color: #222;
+}
+
+.f-form .selectbox option {
+    color: #444;
+}
+
+.f-submit {
+    color: #fff;
+    width: 185px;
+    height: 47px;
+    font-size: 15px;
+    padding: 0 19px;
+    border: none;
+    outline: none;
+    background-color: #222;
+    cursor: pointer;
+}
+
+.f-personal {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: .7rem;
+}
+
+.f-personal input {
+    display: none;
+}
+
+.f-personal em {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+}
+
+.f-personal em::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7px;
+    height: 7px;
+    background-color: #be1a21;
+    display: none;
+}
+
+.f-personal label p {
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#cb:checked ~ em::after {
+    display: block;
+}
