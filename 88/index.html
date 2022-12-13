@@ -390,6 +390,29 @@
                 </div>
             </form>
         </div>
+        <div class="f-popup-wrapper">
+            <div class="f-popup">
+                <img src="images/close2.png" class="f-popup-closeBtn">
+                <p>
+                    <b>1. 개인정보의 수집 및 이용 목적</b><br/>
+                    - 가맹상담 및 서비스 설명, 회사 소식 등의 다양한 정보 및 컨텐츠 제공<br/>
+                    - 개인정보 수집방법 : 홈페이지(문의 및 가맹신청)<br/><br/>
+                    <b>2. 수집하는 개인정보 항목</b><br/>
+                    - 이름, 연락처, 가맹 희망지역<br/><br/>
+                    <b>3. 개인정보의 보유 및 이용 기간</b><br/>
+                    - 보존기간은 5년이며, 정보 제공자가 삭제를 요청할 경우 즉시 파기합니다.<br/>
+                    - 고객님의 정보는 개인정보 보호법에 따라 보호됩니다.
+                </p>
+            </div>
+        </div>
+        <div class="f-alert-wrapper">
+            <div class="f-alert">
+                <i class="ri-close-circle-line"></i>
+                <p>
+                    개인정보 수집 및 이용에 동의해주세요.
+                </p>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="footer-wrapper">
@@ -481,8 +504,12 @@
         $('.f-submit').click(function () {
             if ($('#cb').is(':checked')) {
             } else {
-                alert('개인정보 수집 및 이용에 동의해주세요.')
+                $('.f-alert-wrapper').fadeIn().css('display','flex');
             }
+        })
+
+        $('.f-alert-wrapper').click(function () {
+            $(this).fadeOut();
         })
     </script>
 
@@ -506,6 +533,16 @@
                 $('.f-personal').show();
             })
         }
+    </script>
+
+    <script>
+        $('.f-personal p span').click(function () {
+            $('.f-popup-wrapper').fadeIn().css('display','flex');
+        })
+
+        $('.f-popup-wrapper').click(function () {
+            $(this).fadeOut();
+        })
     </script>
 
     <script>
