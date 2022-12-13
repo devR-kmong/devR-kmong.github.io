@@ -25,7 +25,7 @@
 }
 
 .article-title h1 {
-    color: #be1a21;
+    color: var(--main-color);
     font-size: 75px;
     font-weight: unset;
     font-family: 'PuradakGentleGothicR';

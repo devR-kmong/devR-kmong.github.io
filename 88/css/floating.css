@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    background-color: #be1a21;
+    background-color: var(--main-color);
     z-index: 999;
 }
 
@@ -93,15 +93,19 @@
 }
 
 .f-submit {
-    color: #fff;
+    color: #222;
     width: 185px;
     height: 47px;
     font-size: 15px;
     padding: 0 19px;
     border: none;
     outline: none;
-    background-color: #222;
+    background-color: var(--sub-color);
     cursor: pointer;
+}
+
+.f-submit p {
+    font-family: 'PuradakGentleGothicR';
 }
 
 .f-personal {

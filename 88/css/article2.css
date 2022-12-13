@@ -1,5 +1,5 @@
 .article2 {
-    background: url(../images/a2-bg.jpg);
+    background-color: #fff;
 }
 
 .a2-wrapper {
@@ -18,17 +18,13 @@
 }
 
 .a2-box-title {
-    width: 420px;
-    height: 118px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/menulabel.png);
-    background-size: contain;
 }
 
 .a2-box-title h1 {
-    color: #fff;
+    color: var(--main-color);
     font-size: 35px;
     font-weight: unset;
     font-family: 'PuradakGentleGothicR';
@@ -47,23 +43,14 @@
     overflow: hidden;
 }
 
-.a2-box-image img {
-    transition: all .6s ease;
-}
-
-.a2-box-image:hover img {
-    transform: scale(1.1);
-}
-
 .a2-box p {
     width: 100%;
     padding: 20px 0;
-    color: #fff;
+    color: #222;
     font-size: 22px;
     font-weight: unset;
     font-family: 'PuradakGentleGothicR';
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #be1a21;
 }

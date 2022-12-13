@@ -1,17 +1,6 @@
 .article1 {
-    position: relative;
     padding-top: 250px;
-    background: url(../images/a1-bg.jpg);
-}
-
-.cloud1 {
-    position: absolute;
-    top: 400px; left: 300px;
-}
-
-.cloud2 {
-    position: absolute;
-    top: 200px; right: 300px;
+    background-color: #f4ede7;
 }
 
 .a1-wrapper {
@@ -19,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 
 .a1-image {
@@ -48,7 +37,7 @@
 .a1-right {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .a1-r-box {
@@ -58,16 +47,14 @@
 }
 
 .a1-r-box span {
-    color: #fff;
-    font-size: 20px;
+    color: var(--main-color);
+    font-size: 40px;
     font-family: 'PuradakGentleGothicR';
     width: 60px;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px 0 20px 0;
-    background-color: #be1a21;
 }
 
 .a1-r-box p {
