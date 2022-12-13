@@ -34,7 +34,7 @@
     color: #fff;
     font-size: 90px;
     font-weight: unset;
-    line-height: 1.2;
+    line-height: 1.3;
     font-family: 'PuradakGentleGothicR';
     letter-spacing: -0.02em; 
 }
@@ -42,6 +42,10 @@
 .p-text h1 span {
     color: var(--sub-color);
     font-family: 'PuradakGentleGothicR';
+}
+
+.p-text h1 br {
+    display: none;
 }
 
 .p-text h5 {
@@ -53,6 +57,9 @@
     margin-top: 1rem;
 }
 
+.p-text h5 br {
+    display: none;
+}
 
 .scrollDown {
     position: absolute;
@@ -102,33 +109,36 @@
     .p-text {
         padding-bottom: 260px;
     }
-    
-    .p-text h1 {
-        font-size: 55px;
+
+    .p-text h1 br {
+        display: block;
     }
 
     .p-text h5 {
-        font-size: 18px;
         font-weight: 300;
+    }
+
+    .p-text h5 br {
+        display: block;
     }
 }
 
 
 @media (max-width: 650px) {
+    .promotion {
+        height: 700px !important;
+    }
+    
     .p-image {
         bottom: -100px;
     }
 
-    .p-text {
-        padding-bottom: 100px;
-    }
-
     .p-text h1 {
-        font-size: 40px;
+        font-size: 65px;
     }
 
     .p-text h5 {
-        font-size: 17px;
+        font-size: 22px;
         margin-top: .7rem;
     }
 }
@@ -140,19 +150,19 @@
     }
     
     .p-image {
-        bottom: 40px;
+        bottom: 20px;
         width: 550px;
         min-width: 550px;
     }
 }
 
 
-@media (max-width: 450px) {   
+@media (max-width: 450px) {
     .p-text h1 {
-        font-size: 32px;
+        font-size: 50px;
     }
 
     .p-text h5 {
-        font-size: 14px;
+        font-size: 18px;
     }
 }
