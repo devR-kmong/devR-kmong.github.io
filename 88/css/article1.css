@@ -64,3 +64,75 @@
     font-family: 'PuradakGentleGothicR';
     letter-spacing: -0.04em;
 }
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .a1-wrapper {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .a1-image {
+        width: 500px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .article1 {
+        padding-top: 150px;
+    }
+
+    .a1-subtitle {
+        font-size: 18px;
+    }
+
+    .a1-subtitle br {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a1-wrapper {
+        margin-top: 3rem;
+    }
+    
+    .a1-subtitle {
+        font-size: 15px;
+    }
+
+    .a1-r-box {
+        gap: 10px;
+    }
+    
+    .a1-r-box span {
+        font-size: 22px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .a1-r-box p {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .article1 {
+        padding-top: 80px;
+    }
+    
+    .a1-wrapper {
+        gap: 2rem;
+    }
+    
+    .a1-right {
+        gap: 1rem;
+    }
+    
+    .a1-r-box p {
+        font-size: 15px;
+    }
+}

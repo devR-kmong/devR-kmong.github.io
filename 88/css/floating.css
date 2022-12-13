@@ -18,13 +18,17 @@
     gap: 3rem;
 }
 
+.f-closeBtn {
+    display: none;
+}
+
 .floating-title {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.f-tel {
+.f-tel img {
     height: 55px;
     animation: updown 1s infinite ease-in-out;
 }
@@ -38,7 +42,7 @@
     100% {transform:translateY(0);}
 }
 
-.floating-title p {
+.ft-text p {
     color: #fff;
     font-size: 20px;
     font-family: 'RIDIBatang';
@@ -46,7 +50,7 @@
     margin-bottom: 5px;
 }
 
-.floating-title a {
+.ft-text a {
     color: #fff;
     font-size: 32px;
     font-weight: unset;
@@ -68,7 +72,6 @@
     font-family: 'Pretendard';
     border: none;
     outline: none;
-    transition: all .3s;
 }
 
 .f-form .selectbox {
@@ -80,7 +83,6 @@
     font-family: 'Pretendard';
     border: none;
     outline: none;
-    transition: all .3s;
     cursor: pointer;
 }
 
@@ -122,7 +124,9 @@
 .f-personal em {
     position: relative;
     width: 14px;
+    min-width: 14px;
     height: 14px;
+    min-height: 14px;
     background-color: #fff;
 }
 
@@ -131,8 +135,8 @@
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 7px;
-    height: 7px;
+    width: 8px;
+    height: 8px;
     background-color: #be1a21;
     display: none;
 }
@@ -145,4 +149,132 @@
 
 #cb:checked ~ em::after {
     display: block;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .floating-wrapper {
+        width: 100%;
+        padding: 0 20px;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .floating-title {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .ft-text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .ft-text p {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    
+    .ft-text a {
+        font-size: 32px;
+    }
+
+    .f-tel img {
+        height: 35px;
+    }
+
+    .floating-wrapper form {
+        width: 100%;
+    }
+    
+    .f-form {
+        width: 100%;
+    }
+    
+    .f-form .inputbox,
+    .f-form .selectbox,
+    .f-submit {
+        width: 25%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .floating {
+        position: relative;
+        position: fixed;
+        bottom: 10px; right: 10px;
+        width: 200px;
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+    .floating-wrapper {
+        padding: 0;
+    }
+
+    .f-closeBtn {
+        position: absolute;
+        top: 8px; right: 8px;
+        width: 13px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .floating-close {
+        width: fit-content;
+        padding: 15px;
+        border-radius: 50%;
+    }
+    
+    .ft-text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .ft-text p {
+        font-size: 18px;
+    }
+
+    .ft-text a {
+        font-size: 18px;
+    }
+
+    .f-tel img {
+        height: 25px;
+        animation: none;
+        display: none;
+    }
+    
+    .f-form {
+        flex-direction: column;
+    }
+
+    .f-form .inputbox,
+    .f-form .selectbox,
+    .f-submit {
+        width: 100%;
+        height: 30px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+    
+    .f-personal em {
+        width: 10px;
+        min-width: 10px;
+        height: 10px;
+        min-height: 10px;
+    }
+
+    .f-personal em::after {
+        width: 5px;
+        height: 5px;
+    }
+
+    .f-personal label p {
+        font-size: 10px;
+    }
 }

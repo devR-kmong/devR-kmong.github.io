@@ -69,6 +69,30 @@
 
 @media (max-width: 850px) {
     .article {
-        padding: 40px 0;
+        padding: 60px 0;
+    }
+
+    .article-title {
+        margin-bottom: 2.5rem;
+    }
+
+    .article-title h1 {
+        font-size: 45px;
+    }
+    
+    .article-title p {
+        font-size: 18px;
+        margin-bottom: .7rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .article-title h1 {
+        font-size: 32px;
+    }
+
+    .article-title p {
+        font-size: 14px;
     }
 }

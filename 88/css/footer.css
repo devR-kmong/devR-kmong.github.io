@@ -32,3 +32,38 @@ footer {
     width: 100px;
     margin-bottom: 1.2rem;
 }
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .footer-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .footer-wrapper p span {
+        display: none;
+    }
+    
+    .footer-wrapper p br {
+        display: block;
+    }
+}
+
+
+@media (max-width: 450px) {
+    footer {
+        padding: 30px 20px;
+    }
+    
+    .footer-wrapper p {
+        font-size: 12px;
+    }
+
+    .logo-f {
+        width: 70px;
+        margin-bottom: .7rem;
+    }
+}
