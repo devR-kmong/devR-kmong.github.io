@@ -1,0 +1,129 @@
+.promotion {
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/hero.jpg);
+    transition: all .3s;
+}
+
+.promotion-wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 180px;
+}
+
+.p-text {
+    padding-top: 70px;
+}
+
+.p-text h1 {
+    color: #fff;
+    font-size: 75px;
+    font-weight: unset;
+    font-family: 'PuradakGentleGothicR';
+    line-height: 1.5;
+    letter-spacing: -0.04em; 
+    text-align: center;
+}
+
+.p-text h1 span {
+    font-weight: unset;
+    font-family: 'PuradakGentleGothicR';
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+@font-face {
+    font-family: 'PuradakGentleGothicR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.p-text h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.04em; 
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.p-text h3 {
+    color: #e42525;
+    font-size: 100px;
+    font-weight: 800;
+    font-family: 'PuradakGentleGothicR';
+    text-align: center;
+}
+
+.p-textBox {
+    width: 990px;
+    padding: 50px;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, .1);
+    margin-top: 2rem;
+}
+
+.p-textBox p {
+    color: #fff;
+    font-size: 28px;
+    line-height: 1.5;
+    font-family: 'KBIZHanmaumMyungjo';
+    letter-spacing: -0.04em; 
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+@font-face {
+    font-family: 'KBIZHanmaumMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumMyungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.p-textBox h2 {
+    font-size: 55px;
+    font-weight: unset;
+    font-family: 'PuradakGentleGothicR';
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    
+}
+
+.p-textBox h2 span {
+    font-family: 'PuradakGentleGothicR';
+    writing-mode: vertical-rl;
+}
+
+.p-arrow {
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.p-arrow i {
+    margin-top: -10px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 100%;
+    }
+}

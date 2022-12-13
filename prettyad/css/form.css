@@ -1,0 +1,210 @@
+.form-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s;
+}
+
+.form-wrapper .inputbox {
+    width: 100%;
+    height: 75px;
+    padding: 10px 15px;
+    margin: .5rem 0;
+    font-size: 24px;
+    font-family: 'PuradakGentleGothicR';
+    border: none;
+    outline: none;
+    border-bottom: 3px dashed #aaa;
+    transition: all .3s;
+}
+
+.form-wrapper .selectbox {
+    width: 100%;
+    height: 75px;
+    padding: 10px 12px;
+    margin: .5rem 0;
+    font-size: 24px;
+    font-family: 'PuradakGentleGothicR';
+    border: none;
+    outline: none;
+    border-bottom: 3px dashed #aaa;
+    transition: all .3s;
+}
+
+.form-wrapper .inputbox:focus,
+.form-wrapper .selectbox:focus {
+    border-bottom: 3px dashed #222;
+}
+
+.button-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+textarea::placeholder {
+    color: #ccc;
+}
+
+/*==========================================================*/
+.f-personal {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: .7rem;
+}
+
+.f-personal input {
+    display: none;
+}
+
+.f-personal em {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+}
+
+.f-personal em::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #222;
+    display: none;
+}
+
+.f-personal label p {
+    color: #222;
+    font-size: 18px;
+    font-family: 'PuradakGentleGothicR';
+    letter-spacing: -0.04em;
+    cursor: pointer;
+}
+
+.f-personal label p span {
+    color: red;
+    font-family: 'PuradakGentleGothicR';
+}
+
+#cb:checked ~ em::after {
+    display: block;
+}
+
+
+/*==========================================================*/
+.form-wrapper select {
+    color: #ccc;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+    background-color: #fff;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.form-wrapper select:valid {
+    color: #222;
+}
+
+.form-wrapper select option {
+    color: #444;
+    font-size: 15px;
+    font-family: 'Pretendard';
+    background-color: #fff;
+    box-shadow: none;
+}
+
+
+/*==========================================================*/
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.f-submit {
+    color: #fff;
+    width: 100%;
+    height: 65px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'PuradakGentleGothicR';
+    background: rgb(48,43,99);
+    background: linear-gradient(90deg, rgba(48,43,99,1) 0%, rgba(222,50,100,1) 35%, rgba(231,104,38,1) 65%, rgb(255, 170, 0) 100%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.f-submit:disabled {
+    cursor: not-allowed;
+    background-color: #aaa;
+}
+
+
+
+/*=============================================================*/
+@media (max-width: 900px) {
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .form-wrapper .inputbox {
+        border: 1px solid #bbb;
+        border-radius: 8px;
+    }
+
+    .form-wrapper .selectbox {
+        border: 1px solid #bbb;
+        border-radius: 8px;
+    }
+
+    .form-wrapper .textbox {
+        border: 1px solid #bbb;
+        border-radius: 8px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    input::placeholder {
+        color: #888;
+    }
+    
+    textarea::placeholder {
+        color: #888;
+    }
+
+    select {
+        color: #888;
+    }
+
+    .button-wrapper {
+        display: block;
+    }
+
+    .submitBtn {
+        width: 200px;
+        margin-top: 1rem;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .check-notice {
+        display: none;
+    }
+}

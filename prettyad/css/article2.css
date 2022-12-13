@@ -1,0 +1,117 @@
+.article2 {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: url(../images/a2-bg.jpg);
+    overflow: hidden;
+}
+
+.article2 .article-wrapper {
+    position: relative;
+}
+
+.a2-square {
+    position: absolute;
+    top: 3px; right: -800px;
+    width: 1200px;
+    height: 450px;
+    background: linear-gradient(90deg, rgba(48,43,99,1) 0%, rgba(222,50,100,1) 35%, rgba(231,104,38,1) 65%, rgb(255, 170, 0) 100%);
+}
+
+.a2-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.a2-left {
+    position: absolute;
+    top: 60px; right: -130px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.a2-left li {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.4;
+    font-family: 'RIDIBatang';
+    list-style: square;
+}
+
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.a2-right {
+    position: relative;
+    z-index: 1;
+}
+
+.a2-phone {
+    min-width: 1200px;
+    margin-bottom: -500px;
+    margin-right: -350px;
+    user-select: none;
+}
+
+.form-wrapper {
+    position: absolute;
+    top: 100px; left: 49%;
+    transform: translate(-50%, 0);
+    width: 520px !important;
+    z-index: 2;
+}
+
+.form-title {
+    margin-bottom: 1.5rem;
+}
+
+.form-title div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-logo {
+    width: 220px;
+    margin-bottom: 2rem;
+}
+
+.form-title h1 {
+    color: #222;
+    font-size: 35px;
+    line-height: 1.35;
+    font-weight: unset;
+    font-family: 'PuradakGentleGothicR';
+    text-align: center;
+}
+
+.form-title h1 span {
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'PuradakGentleGothicR';
+    letter-spacing: -0.04em;
+}
+
+.form-title p {
+    color: #222;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+/*==================================================*/
