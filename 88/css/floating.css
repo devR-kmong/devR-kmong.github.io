@@ -70,17 +70,23 @@
     padding: 0 19px;
     font-size: 15px;
     font-family: 'Pretendard';
+    background-color: #fff;
     border: none;
     outline: none;
 }
 
+.f-form .inputbox::placeholder {
+    color: #aaa;
+}
+
 .f-form .selectbox {
-    color: #bbb;
+    color: #aaa;
     width: 185px;
     height: 47px;
     padding: 0 16px;
     font-size: 15px;
     font-family: 'Pretendard';
+    background-color: #fff;
     border: none;
     outline: none;
     cursor: pointer;
