@@ -320,6 +320,10 @@
         padding: 0 10px;
         font-size: 12px;
     }
+
+    .f-form .selectbox {
+        padding: 0 6px;
+    }
     
     .f-personal em {
         width: 10px;
