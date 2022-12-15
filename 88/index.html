@@ -438,8 +438,10 @@
     <script>
         AOS.init({
             once: true,
+            offset: 120,
             delay: 200,
-            duration: 1300
+            duration: 1300,
+            easing: 'ease'
         })
     </script>
     
@@ -501,6 +503,13 @@
             $('#check').prop('checked', false)
             $('.menuBtns').removeClass('change')
         })
+    </script>
+
+    <script>
+        if (window.innerWidth <= 1250) {
+            $('.a1-image').attr('data-aos','fade-up')
+            $('.a1-r-box').attr('data-aos','fade-up')
+        }
     </script>
     
     <script>
