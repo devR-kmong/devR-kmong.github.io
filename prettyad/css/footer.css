@@ -101,33 +101,35 @@ footer {
 }
 
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
     .footer-box-wrapper {
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 3rem;
     }
 
-    .footer-box-group {
-        width: 100%;
-    }
-
-    .footer-box-group > .footer-box {
-        width: 100%;
-        padding-bottom: 30px;
-        border-bottom: 1px solid rgba(255, 255, 255, .1);
-    }
-
-    .f-brandbox {
+    .footer-box-group .footer-box:nth-child(1) {
         display: none;
     }
 }
 
 
 @media (max-width: 768px) {
-    .knp-info {
-        width: 100%;
+    footer {
+        padding: 30px 20px;
+    }
+    
+    .footer-box {
+        gap: .5rem;
     }
 
+    .footer-box-wrapper {
+        gap: 2rem;
+    }
+    
+    .footer-box-button {
+        display: none;
+    }
+    
     .knp-info br {
         display: block;
     }
@@ -138,20 +140,12 @@ footer {
 }
 
 
-@media (max-width: 500px) {
-    footer {
-        padding: 40px 20px;
-        padding-bottom: 60px;
+@media (max-width: 450px) {
+    .logo-f {
+        width: 100px;
+        margin-bottom: .5rem;
     }
     
-    .footer-box-wrapper {
-        gap: 2rem;
-    }
-    
-    .fBtn p {
-        font-size: 14px;
-    }
-
     .footer-box-title h2 {
         font-size: 16px;
     }
@@ -159,8 +153,8 @@ footer {
     .footer-box-info h1 {
         font-size: 22px;
     }
-
+    
     .footer-box-info p {
-        font-size: 13px;
+        font-size: 12px;
     }
 }

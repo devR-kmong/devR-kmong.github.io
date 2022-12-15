@@ -60,3 +60,27 @@ nav ul li a {
 
 
 /*==================================================*/
+@media (max-width: 550px) {
+    header {
+        padding-top: 20px;
+        gap: 20px;
+    }
+    
+    .logo {
+        width: 150px;
+    }
+    
+    nav {
+        top: 140px;
+        padding: 12px 0;
+    }
+    
+    nav ul {
+        gap: 2rem;
+        padding-top: 2px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}

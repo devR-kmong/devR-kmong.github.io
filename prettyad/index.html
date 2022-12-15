@@ -57,11 +57,12 @@
         <section class="article promotion">
             <div class="promotion-wrapper">
                 <div class="p-text" id="1">
-                    <h1 id="typing">
+                    <h1 id="typing" data-aos="zoom-out" data-aos-duration="500">
                         <span>이쁜 광고</span>가 뭐라고 생각하세요?
                     </h1>
                     <h2>
-                        사장님은 아무것도 모르고 무료컨설팅에만 치중하는?
+                        사장님은 아무것도 모르고<br/>
+                        무료컨설팅에만 치중하는?
                     </h2>
                     <h3>
                         NO!
@@ -98,7 +99,8 @@
                             문의
                         </h1>
                         <p>
-                            전화상담, 카톡상담, 홈페이지 문의를 남긴다.
+                            전화상담, 카톡상담,<br/>
+                            홈페이지 문의를 남긴다.
                         </p>
                     </div>
                     <div class="a1-box" data-aos="fade-right">
@@ -109,7 +111,8 @@
                             1:1 상담&견적
                         </h1>
                         <p>
-                            편한 시간대에 전화상담 & 견적안내를 받는다.
+                            편한 시간대에 전화상담<br/>
+                            & 견적안내를 받는다.
                         </p>
                     </div>
                     <div class="a1-box" data-aos="fade-right">
@@ -120,7 +123,8 @@
                             마케팅 진행
                         </h1>
                         <p>
-                            큰 투자가 아닌 적절한 투자로 단기 효과를 맛본다.
+                            큰 투자가 아닌 적절한 투자로<br/>
+                            단기 효과를 맛본다.
                         </p>
                     </div>
                     <div class="a1-box" data-aos="fade-right">
@@ -131,7 +135,8 @@
                             꾸준한 소통
                         </h1>
                         <p>
-                            꾸준한 소통으로 긍정적인 매출 상승을 가져간다.
+                            꾸준한 소통으로 긍정적인<br/>
+                            매출 상승을 가져간다.
                         </p>
                     </div>
                 </div>
@@ -178,7 +183,10 @@
                         </li>
                     </ul>
                     <div class="a2-right">
-                        <img src="images/phone.png" class="a2-phone" data-aos="fade-up" data-aos-duration="500">
+                        <picture>
+                            <source srcset="images/phone-m.png" media="(max-width: 650px)" data-aos="fade-up" data-aos-delay="0" data-aos-duration="500">
+                            <img src="images/phone.png" class="a2-phone" data-aos="fade-up" data-aos-delay="0" data-aos-duration="500">
+                        </picture>
                         <div class="form-wrapper">
                             <div class="form-title" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
                                 <div>
@@ -192,7 +200,7 @@
                                     단순 견적 안내만 드리지 않습니다.
                                 </p>
                             </div>
-                            <form action="" method="POST" onSubmit="alert('문의가 성공적으로 접수되었습니다!');" data-aos="fade-up" data-aos-duration="400">
+                            <form action="" method="POST" onSubmit="alert('문의가 성공적으로 접수되었습니다!');" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
                                 <input type="text" name="name" placeholder="이름" class="inputbox" autocomplete="off" required />
                                 <input type="tel" name="phone" placeholder="연락처" pattern="010-[0-9]{4}-[0-9]{4}" class="inputbox phoneNumber" autocomplete="off" required />
                                 <select name="location" class="selectbox" required>
@@ -427,18 +435,20 @@ TEL : 010-5904-8941
 
     <script src="js/index.umd.js"></script>
     <script>
-        new TypeIt("#typing", {
-            speed: 100,
-            waitUntilVisible: true,
-        })
-            .exec(async () => {
-                await new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    return resolve();
-                }, 500);
-                });
+        if (window.innerWidth > 1100) {
+            new TypeIt("#typing", {
+                speed: 100,
+                waitUntilVisible: true,
             })
-        .go();
+                .exec(async () => {
+                    await new Promise((resolve, reject) => {
+                        setTimeout(() => {
+                            return resolve();
+                        }, 500);
+                    });
+                })
+                .go();
+        }
     </script>
     
     <script>

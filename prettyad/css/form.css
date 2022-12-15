@@ -3,7 +3,6 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    transition: all .3s;
 }
 
 .form-wrapper .inputbox {
@@ -16,6 +15,7 @@
     border: none;
     outline: none;
     border-bottom: 3px dashed #aaa;
+    background-color: #fff;
     transition: all .3s;
 }
 
@@ -29,6 +29,7 @@
     border: none;
     outline: none;
     border-bottom: 3px dashed #aaa;
+    background-color: #fff;
     transition: all .3s;
 }
 
@@ -238,73 +239,75 @@ textarea::placeholder {
 
 
 /*=============================================================*/
-@media (max-width: 900px) {
-    .form-wrapper {
-        width: 100%;
-    }
-
-    .form-wrapper .inputbox {
-        border: 1px solid #bbb;
-        border-radius: 8px;
-    }
-
+@media (max-width: 650px) {
+    .form-wrapper .inputbox,
     .form-wrapper .selectbox {
-        border: 1px solid #bbb;
-        border-radius: 8px;
+        height: 55px;
+        font-size: 20px;
+        border-bottom: 2px dashed #aaa;
     }
 
-    .form-wrapper .textbox {
-        border: 1px solid #bbb;
-        border-radius: 8px;
+    .form-wrapper .inputbox:focus,
+    .form-wrapper .selectbox:focus {
+        border-bottom: 2px dashed #222;
     }
-}
 
+    .f-personal em {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .f-personal em::after {
+        width: 8px;
+        height: 8px;
+    }
 
-@media (max-width: 600px) {
+    .f-personal label p {
+        font-size: 14px;
+    }
+
+    .f-submit {
+        height: 55px;
+        font-size: 18px;
+    }
+    
     .f-popup,
+    .f-alert,
     .f-email {
         width: 90%;
-        padding: 25px;
-    }
-
-    .f-popup p,
-    .f-email p {
-        font-size: 12px;
-    }
-    
-    .f-popup-closeBtn {
-        top: 12px; right: 12px;
-        width: 15px;
     }
 }
 
 
-@media (max-width: 500px) {
-    input::placeholder {
-        color: #888;
+@media (max-width: 450px) {
+    .form-wrapper .inputbox,
+    .form-wrapper .selectbox {
+        height: 40px;
+        font-size: 14px;
+        border-bottom: 1px dashed #aaa;
+    }
+
+    .form-wrapper .inputbox:focus,
+    .form-wrapper .selectbox:focus {
+        border-bottom: 1px dashed #222;
+    }
+
+    .f-personal em {
+        width: 12px;
+        height: 12px;
     }
     
-    textarea::placeholder {
-        color: #888;
+    .f-personal em::after {
+        width: 6px;
+        height: 6px;
     }
 
-    select {
-        color: #888;
+    .f-personal label p {
+        font-size: 10px;
     }
 
-    .button-wrapper {
-        display: block;
-    }
-
-    .submitBtn {
-        width: 200px;
-        margin-top: 1rem;
-    }
-}
-
-
-@media (max-width: 400px) {
-    .check-notice {
-        display: none;
+    .f-submit {
+        height: 45px;
+        font-size: 16px;
     }
 }
