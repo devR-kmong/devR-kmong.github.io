@@ -184,6 +184,10 @@
 
 
 @media (max-width: 550px) {
+    .a1-box-wrapper {
+        padding-top: 40px;
+    }
+    
     .a1-box p {
         line-height: 1.4;
     }
