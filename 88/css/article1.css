@@ -1,6 +1,7 @@
 .article1 {
     padding-top: 250px;
     background-color: #f4ede7;
+    overflow: hidden;
 }
 
 .a1-wrapper {
