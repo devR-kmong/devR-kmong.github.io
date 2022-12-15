@@ -283,6 +283,7 @@ textarea::placeholder {
     .form-wrapper .inputbox,
     .form-wrapper .selectbox {
         height: 40px;
+        padding: 10px;
         font-size: 14px;
         border-bottom: 1px dashed #aaa;
     }
@@ -290,6 +291,11 @@ textarea::placeholder {
     .form-wrapper .inputbox:focus,
     .form-wrapper .selectbox:focus {
         border-bottom: 1px dashed #222;
+    }
+
+    .button-wrapper {
+        gap: 1rem;
+        margin-top: 0;
     }
 
     .f-personal em {
