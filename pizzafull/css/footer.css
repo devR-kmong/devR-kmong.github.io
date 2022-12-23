@@ -3,15 +3,25 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: #111;
     padding: 30px 20px;
 }
 
 .footer-wrapper {
-    display: flex;
+    width: 100%;
 }
 
 .footer-wrapper p {
-    color: #fff;
-    font-size: 13px;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.footer-wrapper p br {
+    display: none;
+}
+
+.footer-wrapper p em br {
+    display: block;
 }
