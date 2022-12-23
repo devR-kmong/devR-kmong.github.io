@@ -1,0 +1,41 @@
+.promotion {
+    width: 100%;
+	padding: 0 !important;
+}
+
+.promotion-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.p-text {
+	position: absolute;
+	top: 250px; left: 0;
+}
+
+.p-image {
+	position: absolute;
+	bottom: 80px; right: -10px;
+	/* -webkit-animation: upDown 1.6s ease-in-out infinite; */
+    /* animation: upDown 1.6s ease-in-out infinite; */
+}
+
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-5px);
+	}
+	50% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform:  translateY(-5px);
+	}
+}
+
+
+
+/*==================================================*/
+@media (max-width: 900px) {
+	
+}

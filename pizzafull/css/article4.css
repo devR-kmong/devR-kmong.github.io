@@ -1,0 +1,51 @@
+.article4 {
+    padding-bottom: 0;
+    background: url(../images/a4-bg.jpg);
+    background-position: top center !important;
+}
+
+.a4-1 {
+    margin-top: 2rem;
+}
+
+.mySwiper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.mySwiper .swiper-slide {
+    width: 350px !important;
+    transform: scale(.75);
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+    opacity: .6;
+    transition: all .5s ease;
+}
+
+.mySwiper .swiper-slide img {
+    width: 350px !important;
+    height: 611px;
+    margin-top: 83px;
+    border-radius: 8px;
+}
+
+.mySwiper .swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.phone {
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translate(-50%, 0);
+    width: 365px;
+}
+
+.a4-camera {
+    position: absolute;
+    top: 95px; left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 5;
+}

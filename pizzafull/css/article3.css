@@ -1,0 +1,42 @@
+.article3 {
+    background: url(../images/a3-bg.jpg);
+}
+
+.a3-2 {
+    margin: 2rem 0 5rem 0;
+}
+
+.a3-3 {
+    margin-top: 4rem;
+}
+
+.a3-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.a3-box-image {
+    width: 244px;
+    height: 244px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.a3-box-image img {
+    transition: all .3s ease;
+}
+
+.a3-box:hover .a3-box-image img {
+    transform: scale(1.07);
+}
+
+.a3-box-text {
+    color: #fafafa;
+    font-size: 19px;
+    font-family: 'GmarketSansMedium';
+    text-align: center;
+    margin-top: 1rem;
+}
