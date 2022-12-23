@@ -37,10 +37,10 @@
     <title>피자풀 창업안내</title>
 </head>
 <body>
-    
     <div class="container">
         <div class="main-bg"></div>
         <div class="main">
+
             <header>
                 <img src="images/logo-w.svg" class="logo">
             </header>
@@ -216,29 +216,114 @@
                 </section>
                 <section class="article article9">
                     <div class="article-wrapper">
-                        <img src="images/a9-1.png" class="a9-1 wow animate wobble animated">
-                        <img src="images/a9-2.png" class="a9-2 wow animate slideInDown faster animated">
+                        <img src="images/a9-1.png" class="a9-1 wow animate wobble fast animated">
+                        <img src="images/a9-2.png" class="a9-2 wow animate bounceInUp animated">
                     </div>
                 </section>
                 <section class="article article10">
                     <div class="article-wrapper">
                         <div class="a10-wrapper">
-                            <img src="images/a10-1.png" class="a10-1">
-                            <img src="images/a10-2.png" class="a10-2">
-                            <img src="images/a10-3.png" class="a10-3">
+                            <img src="images/a10-1.png" class="a10-1 wow animate rubberBand animated">
+                            <img src="images/a10-2.png" class="a10-2 wow animate rubberBand animated">
+                            <img src="images/a10-3.png" class="a10-3 wow animate rubberBand animated">
                         </div>
                     </div>
                 </section>
                 <section class="article article11">
                     <div class="article-wrapper">
-                        11
+                        <img src="images/a11-title.png" class="a11-title wow animate heartBeat animated">
+                        <div class="form-wrapper">
+                            <div class="f-personal">
+                                <div class="f-personal-text">
+                                    <input type="checkbox" id="cb" checked required />
+                                    <em></em>
+                                    <label for="cb">
+                                        <p>
+                                            개인정보취급방침을 읽었으며, 이에 동의합니다.
+                                        </p>
+                                    </label>
+                                </div>
+                                <div class="f-personalBtn">
+                                    <p>전문보기</p>
+                                </div>
+                            </div>
+                            <form class="gform f-form" action="https://script.google.com/macros/s/AKfycby1fhvqQfPavKohwmqpB9gPAGIXNAuczXRaoMSdmj0GVh6bLXQ/exec" method="POST" onSubmit="alert('문의가 성공적으로 접수되었습니다!');">
+                                <input type="hidden" name="brand" value="랜딩페이지" />
+                                <div class="input-group">
+                                    <div class="input-wrapper">
+                                        <div class="input-title">
+                                            <h1>성함</h1>
+                                        </div>
+                                        <input type="text" name="name" placeholder="홍길동" class="inputbox" autocomplete="off" required />
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <div class="input-title">
+                                            <h1>연락처</h1>
+                                        </div>
+                                        <input type="tel" name="phone" placeholder="010-1234-5678" class="inputbox phoneNumber" autocomplete="off" required />
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-wrapper">
+                                        <div class="input-title">
+                                            <h1>이메일</h1>
+                                        </div>
+                                        <input type="email" name="email" placeholder="sample@email.com" class="inputbox" autocomplete="off" required />
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <div class="input-title">
+                                            <h1>창업희망지역</h1>
+                                        </div>
+                                        <input type="text" name="location" placeholder="서울시 강남구 청담동" class="inputbox" autocomplete="off" required />
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-wrapper" style="width: 100%;">
+                                        <div class="input-title">
+                                            <h1>문의사항</h1>
+                                        </div>
+                                        <textarea name="message" placeholder="문의사항을 남겨주세요." class="textbox" autocomplete="off"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="f-submit"><p>상담신청하기</p></button>
+                            </form>
+                            <div class="f-popup-wrapper">
+                                <div class="f-popup">
+                                    <img src="images/close.png" class="f-popup-closeBtn">
+                                    <p>
+                                        <b>1. 개인정보의 수집 및 이용 목적</b><br/>
+                                        - 가맹상담 및 서비스 설명, 회사 소식 등의 다양한 정보 및 컨텐츠 제공<br/>
+                                        - 개인정보 수집방법 : 홈페이지(문의 및 가맹신청)<br/><br/>
+                                        <b>2. 수집하는 개인정보 항목</b><br/>
+                                        - 이름, 연락처, 이메일, 창업희망지역<br/><br/>
+                                        <b>3. 개인정보의 보유 및 이용 기간</b><br/>
+                                        - 보존기간은 5년이며, 정보 제공자가 삭제를 요청할 경우 즉시 파기합니다.<br/>
+                                        - 고객님의 정보는 개인정보 보호법에 따라 보호됩니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="f-alert-wrapper">
+                                <div class="f-alert">
+                                    <i class="ri-close-circle-line"></i>
+                                    <p>
+                                        개인정보 수집 및 이용에 동의해주세요.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
             <footer>
                 <div class="footer-wrapper">
                     <p>
-                        ⓒ 피자풀 All Rights Reserved.
+                        피자풀<span> | </span><br/>가맹문의: <a href="tel: 1533-0902">1533-0902</a><span> | </span><br/>
+                        사업자등록번호: 724-30-01285<span> | </span><br/>주류판매신고번호: 419-5-08262<em><br/></em>
+                        광주광역시 광산구 임방울대로825번길 22-88, 107(쌍암동, 첨단대라수3차)<br/>
+                    </p>
+                    <br/>
+                    <p>
+                        ⓒ <a href="https://pizzafull.co.kr" target="_blank">피자풀</a> all rights reserved.
                     </p>
                 </div>
             </footer>
@@ -251,7 +336,7 @@
         new WOW({
             boxClass:     'wow',
             animateClass: 'animated',
-            offset:       400,
+            offset:       300,
             mobile:       true,
             live:         true
         }).init();
@@ -287,22 +372,38 @@
             },
         });
     </script>
-    
+
     <script>
-        $(function () {
-            $(".floating").hide();
-            $(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 200) {
-                        $('.floating').fadeIn();
-                        $('.scrollDown').fadeOut();
-                    } else {
-                        $('.floating').fadeOut();
-                        $('.scrollDown').fadeIn();
-                    }
-                });
-            });
-        });
+        $('.f-submit').click(function () {
+            if ($('#cb').is(':checked')) {
+            } else {
+                $('.f-alert-wrapper').fadeIn().css('display','flex');
+            }
+        })
+
+        $('.f-alert-wrapper').click(function () {
+            $(this).fadeOut();
+        })
+    </script>
+
+    <script>
+        $('.f-personal-text').click(function () {
+            if ($('#cb').is(':checked')) {
+                $('.f-personal').removeClass('f-personal-no')
+                $('.f-personal-text label p').html('개인정보취급방침을 읽었으며, 이에 동의합니다.')
+            } else {
+                $('.f-personal').addClass('f-personal-no')
+                $('.f-personal-text label p').html('개인정보취급방침에 동의하셔야 문의하실 수 있습니다.')
+            }
+        })
+        
+        $('.f-personalBtn').click(function () {
+            $('.f-popup-wrapper').fadeIn().css('display','flex');
+        })
+
+        $('.f-popup-wrapper').click(function () {
+            $(this).fadeOut();
+        })
     </script>
     
     <script>
