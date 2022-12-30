@@ -1,0 +1,108 @@
+.article2 {
+    position: relative;
+    background-color: #f2f2f2;
+}
+
+.a2-square {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 350px;
+    background-color: var(--main-color);
+    z-index: 1;
+}
+
+.a2-title {
+    width: fit-content;
+    padding: 40px;
+    padding-top: 60px;
+    margin-top: 11rem;
+    margin-right: 720px;
+    background-color: #f2f2f2;
+    z-index: 2;
+}
+
+.a2-truck {
+    position: absolute;
+    top: 140px; left: 55%;
+    height: 260px;
+}
+
+.a2-t-text p {
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.a2-t-text h1 {
+    color: #222;
+    font-size: 65px;
+    line-height: 1.25;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.a2-t-text h1 b {
+    font-weight: 800;
+    background: linear-gradient(to top, var(--sub-color) 15%, transparent 15%);
+}
+
+.a2-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.a2-box {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 3%)
+}
+
+.a2-box-icon img {
+    float: right;
+    height: 160px;
+}
+
+.a2-box:nth-child(4) .a2-box-icon img {
+    height: 180px;
+}
+.a2-box:nth-child(5) .a2-box-icon img {
+    height: 150px;
+}
+.a2-box:nth-child(6) .a2-box-icon img {
+    width: 200px;
+}
+
+.a2-box-text {
+    width: 100%;
+    height: 150px;
+}
+
+.a2-box-text h1 {
+    color: #1a1f27;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.a2-box-text p {
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.35;
+    margin-top: 1rem;
+}
+
+.a2-box-text p span {
+    color: #bbb;
+    font-size: 14px;
+}
+
+
+/*==================================================*/
