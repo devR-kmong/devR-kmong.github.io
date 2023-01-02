@@ -872,7 +872,7 @@
     <script src="js/jquery.scrollTo.min.js"></script>
     <script>
         $(function () {
-            $('.logo, nav ul li a, .askBtn, .fBtn a, .logo-f').click(function (e) {
+            $('.logo, nav ul li a, .mobile-nav ul li a, .askBtn, .fBtn a, .logo-f').click(function (e) {
                 $.scrollTo(this.hash || 0, 500);
                 e.preventDefault();
             });
@@ -886,7 +886,7 @@
             $(this).toggleClass('change')
         })
     
-        $('nav ul li a').click(function () {
+        $('.mobile-nav ul li a').click(function () {
             $('#check').prop('checked', false)
             $('.menuBtns').removeClass('change')
         })
