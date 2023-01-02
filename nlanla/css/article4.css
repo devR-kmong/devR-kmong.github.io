@@ -1,0 +1,253 @@
+.article4 {
+    background-color: #f2f2f2;
+}
+
+.a4-title {
+    width: 100%;
+}
+
+.a4-title p {
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.a4-title h1 {
+    color: #222;
+    font-size: 65px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.a4-title h1 br {
+    display: none;
+}
+
+.a4-title h1 b {
+    background: linear-gradient(to top, var(--sub-color) 15%, transparent 15%);
+}
+
+.a4-title h2 {
+    color: rgba(0, 0, 0, .3);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-top: 2.5rem;
+}
+
+.a4-box-wrapper {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.a4-box-image {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.a4-box-image img {
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+.a4-box:hover .a4-box-image img {
+    transform: scale(1.07);
+}
+
+.a4-box-1 {
+    float: right;
+}
+
+.a4-box-1 .a4-box-image {
+    width: 650px;
+    height: 450px;
+}
+
+.a4-box-2 {
+    float: left;
+    margin-top: 12rem;
+}
+
+.a4-box-2 .a4-box-image {
+    width: 450px;
+    height: 570px;
+}
+
+.a4-box-3 {
+    float: right;
+    margin-top: 8rem;
+}
+
+.a4-box-3 .a4-box-image {
+    width: 500px;
+    height: 500px;
+}
+
+.a4-box-4 {
+    float: left;
+    margin-top: 8rem;
+}
+
+.a4-box-4 .a4-box-image {
+    width: 580px;
+    height: 470px;
+}
+
+.a4-box-6 {
+    float: right;
+    margin-top: 8rem;
+}
+
+.a4-box-6 .a4-box-image {
+    width: 550px;
+    height: 550px;
+}
+
+.a4-box-7 {
+    float: left;
+    margin-top: 7rem;
+}
+
+.a4-box-7 .a4-box-image {
+    width: 570px;
+    height: 450px;
+}
+
+.a4-box-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.a4-box-text {
+    margin-top: 1.2rem;
+}
+
+.a4-box-text h1 {
+    color: #3d3d3d;
+    font-size: 38px;
+}
+
+.a4-box-text p {
+    color: #aaa;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    margin-top: 5px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .a4-box {
+        float: unset;
+    }
+
+    .a4-box:hover .a4-box-image img {
+        transform: scale(1);
+    }
+
+    .a4-box:nth-child(2n) {
+        float: right;
+        text-align: right;
+    }
+    
+    .a4-box .a4-box-image img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .a4-box-2,
+    .a4-box-4,
+    .a4-box-7 {
+        margin: 4rem 0;
+    }
+
+    .a4-box-text h1 {
+        font-size: 32px;
+    }
+
+    .a4-box-text p {
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .a4-title p {
+        font-size: 24px;
+    }
+
+    .a4-title h1 {
+        font-size: 45px;
+    }
+
+    .a4-title h2 {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a4-title h2 br {
+        display: none;
+    }
+
+    .a4-box {
+        width: 70%;
+    }
+
+    .a4-box .a4-box-image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a4-title p {
+        font-size: 20px;
+    }
+
+    .a4-title h1 {
+        font-size: 35px;
+    }
+
+    .a4-title h1 br {
+        display: block;
+    }
+
+    .a4-title h2 {
+        font-size: 15px;
+        margin-top: 1.5rem;
+    }
+
+    .a4-box-text {
+        margin-top: .7rem;
+    }
+
+    .a4-box-text h1 {
+        font-size: 24px;
+    }
+
+    .a4-box-text p {
+        font-size: 14px;
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-box-wrapper {
+        margin-top: 3rem;
+    }
+    
+    .a4-box {
+        width: 80%;
+    }
+
+    .a4-box-4 {
+        margin-bottom: 0;
+    }
+}
