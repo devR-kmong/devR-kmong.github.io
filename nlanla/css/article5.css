@@ -127,6 +127,10 @@
 
 
 @media (max-width: 850px) {
+    .article5 {
+        padding-top: 80px;
+    }
+    
     .a5-box-wrapper {
         margin-top: 1rem;
     }
