@@ -164,6 +164,11 @@
         margin: 4rem 0;
     }
 
+    .a4-box-3,
+    .a4-box-6 {
+        clear: both;
+    }
+
     .a4-box-text h1 {
         font-size: 32px;
     }
