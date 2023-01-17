@@ -1,0 +1,46 @@
+.article6 {
+    position: relative;
+    background: url(../images/a6-bg.jpg);
+    background-position: top !important;
+}
+
+.a6-2 {
+    position: absolute;
+    top: 430px;
+    animation-delay: .4s !important;
+    animation-duration: .15s !important;
+    animation-iteration-count: 6;
+}
+
+.a6-2-1 {
+    left: -340px;
+}
+
+.a6-2-2 {
+    right: -340px;
+}
+
+.a6-title {
+    margin-bottom: 3rem;
+}
+
+.a6-wrapper {
+    position: relative;
+    margin-top: 20rem;
+}
+
+.a6-notice {
+    position: absolute;
+    top: 30px; left: 50%;
+    transform: translate(-50%, 0);
+    animation: blink .7s step-end infinite;
+    z-index: 2;
+}
+
+.a6-notice p {
+    color: rgba(255, 255, 255, .5);
+    font-size: 13px;
+}
+
+
+/*==================================================*/

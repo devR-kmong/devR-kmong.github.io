@@ -1,0 +1,49 @@
+.article7 {
+    position: relative;
+    padding-bottom: 0;
+    background-color: #000;
+}
+
+.a7-sb {
+    position: absolute;
+    top: 60px;
+    width: 700px;
+    opacity: .07;
+    z-index: 3;
+}
+
+.a7-nmr {
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+}
+
+.a7-1 {
+    user-select: none;
+    z-index: 1;
+}
+
+.a7-title {
+    margin-top: 7rem;
+}
+
+.a7-text {
+    margin-bottom: 20rem;
+}
+
+.a7-text p {
+    color: #fafafa;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.7;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.a7-text p span {
+    font-weight: bold;
+    font-family: 'Times New Roman';
+}
+
+
+/*==================================================*/

@@ -1,0 +1,57 @@
+.article8 {
+    background: url(../images/a8-bg.jpg);
+    background-position: top !important;
+}
+
+.a8-title {
+    margin-bottom: 4rem;
+}
+
+.a8-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.a8-box h1 {
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.a8-box:nth-child(2) h1 {
+    text-align: right;
+}
+
+.a8-speech {
+    clear: both;
+    width: 88%;
+    padding: 20px;
+    border-radius: 0 15px 15px 15px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    background-color: #302d2990;
+}
+
+.a8-speech-right {
+    float: right;
+    border-radius: 15px 0 15px 15px;
+}
+
+.a8-speech p {
+    color: #fafafa;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.mySwiper2 {
+    width: 90%;
+    height: auto;
+    margin-top: 5rem;
+}
+
+
+
+/*==================================================*/
