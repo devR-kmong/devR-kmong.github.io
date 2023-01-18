@@ -1,0 +1,36 @@
+.article3 {
+    background: url(../images/a3-bg.jpg);
+}
+
+.a3-title {
+    margin-bottom: 2rem;
+}
+
+.mySwiper {
+    width: 85%;
+    height: auto;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 650px) {
+    .a3-title {
+        margin-bottom: 1rem;
+    }
+    
+    .a3-title img {
+        width: 250px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .article3 {
+        padding: 50px 0;
+    }
+    
+    .mySwiper {
+        width: 100%;
+    }
+}
