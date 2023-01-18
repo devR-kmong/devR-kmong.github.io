@@ -29,14 +29,14 @@
     clear: both;
     width: 88%;
     padding: 20px;
-    border-radius: 0 15px 15px 15px;
+    border-radius: 0 18px 18px 18px;
     border: 1px solid rgba(255, 255, 255, .1);
     background-color: #302d2990;
 }
 
 .a8-speech-right {
     float: right;
-    border-radius: 15px 0 15px 15px;
+    border-radius: 18px 0 18px 18px;
 }
 
 .a8-speech p {
@@ -52,6 +52,20 @@
     margin-top: 5rem;
 }
 
+.mySwiper2 .swiper-slide {
+    transform: scale(.8);
+    transition: all .3s ease;
+    opacity: .2;
+}
+
+.mySwiper2 .swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.mySwiper2 .swiper-slide img {
+    border-radius: 10px;
+}
 
 
 /*==================================================*/

@@ -12,10 +12,6 @@ var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     grabCursor: true,
     loop: false,
-    // autoplay: {
-    //     delay: 1000,
-    //     disableOnInteraction: true,
-    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -25,19 +21,31 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 2,
-    spaceBetween: 30,
+    spaceBetween: 10,
     centeredSlides: true,
     grabCursor: true,
     loop: true,
     autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
+        delay: 1000,
+        disableOnInteraction: true,
+    },
+});
+
+
+var swiper = new Swiper(".mySwiper3", {
+    slidesPerView: 1,
+    centeredSlides: true,
+    grabCursor: true,
+    loop: false,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
 });
 
 
 $(function () {
-    $('.fl-top').click(function (e) {
+    $('.logo-f').click(function (e) {
         $.scrollTo(this.hash || 0, 300);
         e.preventDefault();
     });
@@ -74,16 +82,16 @@ $('.f-personal-text').click(function () {
         $('.f-personal').removeClass('f-personal-no');
         $('.f-personalBtn').removeClass('f-personalBtn-no');
         $('.f-personal-text label p').html('개인정보취급방침을 읽었으며, 이에 동의합니다.');
-        $('.f-form .inputbox').attr('disabled', false);
-        $('.f-form textarea').attr('disabled', false);
         $('.f-form .f-submit').attr('disabled', false);
+        // $('.f-form .inputbox').attr('disabled', false);
+        // $('.f-form textarea').attr('disabled', false);
     } else {
         $('.f-personal').addClass('f-personal-no');
         $('.f-personalBtn').addClass('f-personalBtn-no');
         $('.f-personal-text label p').html('개인정보취급방침에 동의하셔야 문의하실 수 있습니다.');
-        $('.f-form .inputbox').attr('disabled', true);
-        $('.f-form textarea').attr('disabled', true);
         $('.f-form .f-submit').attr('disabled', true);
+        // $('.f-form .inputbox').attr('disabled', true);
+        // $('.f-form textarea').attr('disabled', true);
     }
 })
 
@@ -95,6 +103,13 @@ $('.f-popup-wrapper').click(function () {
     $(this).fadeOut();
 })
 
+
+
+$('.a5-graph, .f-popup-wrapper').on('scroll touchmove mousewheel', function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    return false;
+})
 
 
 $(document).on("keyup", ".phoneNumber", function () {

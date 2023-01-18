@@ -29,13 +29,16 @@
 }
 
 .a4-notice p {
-    color: rgba(255, 255, 255, .5);
+    color: #fff;
     font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
 }
 
 .a4-2-1 {
     position: absolute;
-    top: 390px;
+    top: 385px;
     width: 400px;
     animation: expand 3s infinite;
 }

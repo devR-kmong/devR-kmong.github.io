@@ -6,18 +6,18 @@
 
 .a6-2 {
     position: absolute;
-    top: 430px;
+    top: 395px;
     animation-delay: .4s !important;
     animation-duration: .15s !important;
     animation-iteration-count: 6;
 }
 
 .a6-2-1 {
-    left: -340px;
+    left: -320px;
 }
 
 .a6-2-2 {
-    right: -340px;
+    right: -320px;
 }
 
 .a6-title {
@@ -31,15 +31,18 @@
 
 .a6-notice {
     position: absolute;
-    top: 30px; left: 50%;
+    top: 15px; left: 50%;
     transform: translate(-50%, 0);
     animation: blink .7s step-end infinite;
     z-index: 2;
 }
 
 .a6-notice p {
-    color: rgba(255, 255, 255, .5);
+    color: #fff;
     font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
 }
 
 

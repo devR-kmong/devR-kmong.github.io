@@ -1,0 +1,30 @@
+.article9 {
+    background: url(../images/a3-bg.jpg);
+}
+
+.a9-title {
+    margin-bottom: 3rem;
+}
+
+.mySwiper3 {
+    width: 85%;
+    height: auto;
+}
+
+.a9-notice {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 4rem;
+}
+
+.a9-notice li {
+    color: #aaa;
+    font-size: 15px;
+    font-weight: 400;
+    list-style: disc;
+}
+
+
+/*==================================================*/
