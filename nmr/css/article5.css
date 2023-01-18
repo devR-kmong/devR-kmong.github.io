@@ -12,7 +12,6 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, .7);
-    cursor: pointer;
     display: none;
     z-index: 99;
 }
@@ -21,6 +20,7 @@
     position: absolute;
     top: 30px; right: 30px;
     width: 30px;
+    cursor: pointer;
 }
 
 .a5-title {
@@ -122,6 +122,10 @@
 
 
 @media (max-width: 550px) {
+    .a5-close {
+        width: 15px;
+    }
+    
     .a5-title img {
         width: 240px;
     }
