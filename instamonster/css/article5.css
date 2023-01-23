@@ -1,0 +1,140 @@
+.article5 {
+    padding: 100px 0 !important;
+    background-color: var(--main-color);
+}
+
+.wrapper2 {
+    position: relative;
+    width: 1200px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.at2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.a5-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.a5-box {
+    width: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px 40px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.a5Btn {
+    width: 185px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.a5Btn h5 {
+    color: var(--main-color);
+    font-size: 17px;
+    font-family: 'SBAggroM';
+    font-weight: unset;
+}
+
+.a5-text p {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'SBAggroL';
+    letter-spacing: 0 !important;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.carousel {
+    width: 390px;
+    position: absolute;
+    bottom: -101px; right: 0;
+}
+
+.owl-item {
+    width: 100%;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .article5 {
+        padding-bottom: 0 !important;
+    }
+
+    .a5-box-wrapper {
+        margin-bottom: 2rem;
+    }
+
+    .wrapper2 {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .a5-box {
+        width: 100%;
+    }
+
+    .carousel {
+        position: unset;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .at2 {
+        text-align: center;
+    }
+
+    .a5-box-wrapper {
+        width: 100%;
+    }
+
+    .a5-box {
+        justify-content: center;
+    }
+
+    .a5Btn {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article5 {
+        padding-top: 60px !important;
+    }
+
+    .a5-box {
+        padding: 15px;
+    }
+
+    .a5-text p {
+        font-size: 17px;
+        line-height: 27px;
+    }
+}
+
+
+@media (max-width: 406px) {
+    .carousel {
+        width: 100%;
+    }
+}

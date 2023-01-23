@@ -1,0 +1,24 @@
+.a10-info {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.a10-info p {
+    color: #888;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+
+/*==================================================*/
+@media (max-width: 550px) {
+    .a10-info p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .a10-info p br {
+        display: none;
+    }
+}

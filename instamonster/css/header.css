@@ -1,0 +1,168 @@
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .1s;
+    background-color: var(--main-color);
+    z-index: 999;
+}
+
+.Fixed {
+    position: fixed;
+    top: 0;
+    height: 75px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+}
+
+.Fixed2 {
+    color: #3d3d3d;
+    font-weight: 700;
+}
+
+.active {
+    display: none;
+}
+
+.logo, .logo-w {
+    padding-top: 4px;
+}
+
+.mobile-margin {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.logo-m {
+    display: none;
+}
+
+nav {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.02em !important;
+}
+
+.kakaotalk {
+    width: 155px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, .5);
+    background-color: var(--main-color);
+    border-radius: 50px;
+    cursor: pointer;
+    gap: .6rem;
+}
+
+.kakaotalk p {
+    font-size: 14px;
+    padding-bottom: 3px;
+}
+
+.kakao-m {
+    display: none;
+}
+
+.kBtn {
+    border: 1px solid var(--main-color);
+}
+
+#check {
+    display: none;
+}
+
+.menuBtns {
+    display: none;
+}
+
+
+/*==================================================*/
+@media (max-width: 1450px) {
+    nav {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    nav {
+        padding: 0 30px;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    .logo, .logo-w {
+        display: none;
+    }
+
+    .mobile-margin, .logo-m {
+        display: flex;
+    }
+
+    .kakaotalk {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+    }
+
+    .kakaotalk p {
+        display: none;
+    }
+
+    .kakao {
+        display: none;
+    }
+
+    .kakao-m {
+        display: block;
+    }
+}
+
+
+@media (max-width: 450px) {
+    header {
+        height: 80px;
+    }
+
+    .logo-m {
+        width: 140px;
+    }
+
+    .kakaotalk {
+        width: 40px;
+        height: 40px;
+    }
+
+    .kakao-m {
+        width: 20px;
+    }
+
+    .mobile-margin {
+        width: 40px;
+    }
+}

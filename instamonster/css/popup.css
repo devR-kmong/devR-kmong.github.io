@@ -1,0 +1,165 @@
+.popup {
+    position: fixed;
+    border: 2px solid #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+
+.popup-0 {
+    top: 150px; left: 265px;
+}
+
+.popup-1 {
+    top: 300px; left: 265px;
+}
+
+.image-wrapper {
+    width: 575px;
+    height: auto;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.image-wrapper h1 {
+    color: #222;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: 'SBAggroM';
+}
+
+.image-wrapper h1 br {
+    display: none;
+}
+
+.image-wrapper h1 a {
+    color: #fff;
+    padding: 5px 5px 0px 5px;
+    font-family: 'SBAggroM';
+    border-radius: 5px;
+    background-color: var(--main-color);
+    animation: blink 1s step-end infinite;
+}
+
+.image-wrapper p {
+    color: #444;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;
+    font-family: 'Pretendard';
+    margin-top: .7rem;
+}
+
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes blink {
+    50% {opacity: 0;}
+}
+
+
+.button-area {
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    background-color: #111;
+}
+
+.button-area p {
+    font-size: 13px;
+}
+
+.closeBtn {
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 2px 4px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+/*========================================================*/
+@media (max-width: 1919px) {
+    .popup-0 {
+        top: 100px; left: 20px;
+    }
+    
+    .popup-1 {
+        top: 265px; left: 20px;
+    }
+}
+
+
+@media (max-width: 636px) {
+    .popup-wrapper {
+        width: 100%;
+    }
+    
+    .popup {
+        width: 100%;
+    }
+
+    .popup-0 {
+        top: 100px; left: 0;
+    }
+    
+    .popup-1 {
+        top: 295px; left: 0;
+    }
+    
+    .image-wrapper {
+        width: 100%;
+        height: 220px;
+    }
+
+    .popup-1 .image-wrapper {
+        height: auto;
+    }
+
+    .image-wrapper h1 {
+        font-size: 20px;
+    }
+
+    .image-wrapper h1 br {
+        display: block;
+    }
+
+    .image-wrapper p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 524px) {
+    .popup-1 {
+        top: 320px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .image-wrapper p {
+        font-size: 13px;
+        margin-top: .5rem;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .image-wrapper h1 {
+        font-size: 17px;
+    }
+}
