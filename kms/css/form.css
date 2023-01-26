@@ -261,7 +261,8 @@
     }
 
     .f-popup-closeBtn {
-        top: 13px; right: 13px;
+        width: 12px;
+        top: 6px; right: 8px;
     }
 }
 
