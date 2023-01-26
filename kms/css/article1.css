@@ -50,6 +50,29 @@
     margin-top: 1.7rem;
 }
 
+.a1Btn {
+    color: #222;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 3rem;
+    transition: all .3s ease;
+}
+
+.a1Btn:hover {
+    gap: 10px;
+}
+
+.a1Btn h2 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.a1Btn i {
+    font-size: 20px;
+}
+
 
 /*==================================================*/
 @media (max-width: 1250px) {
@@ -103,4 +126,16 @@
         font-size: 13px;
         margin-top: .5rem;
     }
+
+    .a1Btn {
+        margin-top: 1.5rem;
+    }
+
+    .a1Btn h2 {
+    font-size: 12px;
+}
+
+.a1Btn i {
+    font-size: 16px;
+}
 }
