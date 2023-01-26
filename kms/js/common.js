@@ -41,7 +41,7 @@ $(window).on('scroll', function () {
 
 
 $(function () {
-    $('.floating a, .logo, nav ul li a, .logo-f, .fBtn a').click(function (e) {
+    $('.floating a, .logo, nav ul li a, .a1Btn, .logo-f, .fBtn a').click(function (e) {
         $.scrollTo(this.hash || 0, 500);
         e.preventDefault();
     });
