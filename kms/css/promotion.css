@@ -1,0 +1,97 @@
+.promotion {
+    width: 100%;
+    height: 600px !important;
+    background: url(../images/hero.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.promotion-wrapper {
+    width: 1200px;
+}
+
+.p-text {
+    text-align: center;
+}
+
+.p-text h1 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    font-family: 'Montserrat' !important;
+    line-height: 1.4;
+}
+
+.p-text h1 br {
+    display: none;
+}
+
+.p-text p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    margin-top: 2rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .p-text h1 {
+        font-size: 32px;
+    }
+
+    .p-text p {
+        font-size: 18px;
+        margin-top: 1.5rem;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .p-text h1 br {
+        display: block;
+    }
+
+    .p-text h1 span {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .promotion {
+        margin-top: 60px;
+    }
+
+    .p-text {
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .promotion {
+        height: 500px !important;
+    }
+    
+    .p-text h1 {
+        font-size: 28px;
+    }
+    
+    .p-text p {
+        font-size: 15px;
+        margin-top: 1rem;
+    }
+    
+    .p-text p br {
+        display: none;
+    }
+}
