@@ -77,7 +77,7 @@
     background-color: #fff;
     box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
     transition: all .3s;
-    z-index: 997;
+    z-index: 996;
 }
 
 .gnb {
@@ -186,6 +186,10 @@
 
 /*==================================================*/
 @media (max-width: 1250px) {
+    .top-banner {
+        padding: 0 20px;
+    }
+    
     .gnb {
         padding: 0 20px;
     }
@@ -193,7 +197,76 @@
 
 
 @media (max-width: 950px) {
+    .header {
+        height: 70px;
+    }
+    
     .menu {
         display: none;
+    }
+
+    .logo {
+        width: 125px;
+        max-width: 125px;
+    }
+
+    .gnb-right {
+        gap: 1.5rem;
+    }
+
+    .gnbBtn {
+        font-size: 12px;
+        width: 100px;
+        height: 28px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .top-banner {
+        height: 30px;
+    }
+
+    .tb-text {
+        gap: 4px;
+    }
+
+    .tb-text .tb-1 {
+        width: 17px;
+        max-width: 17px;
+        height: 17px;
+    }
+
+    .tb-text p {
+        font-size: 12px;
+    }
+
+    .tb-closeBtn {
+        width: 14px;
+        height: 14px;
+    }
+
+    .tb-closeBtn div {
+        width: 14px;
+    }
+    
+    .header {
+        top: 30px;
+        height: 60px;
+    }
+
+    .logo {
+        width: 100px;
+        max-width: 100px;
+    }
+
+    .gnb-right {
+        gap: 1.2rem;
+    }
+
+    .gnbBtn {
+        font-size: 11px;
+        width: 90px;
+        height: 26px;
     }
 }

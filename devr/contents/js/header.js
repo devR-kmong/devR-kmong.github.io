@@ -55,3 +55,20 @@ $('.toggle-menu').on('scroll touchmove mousewheel', function (event) {
     event.stopPropagation();
     return false;
 })
+
+
+if (window.innerWidth <= 950) {
+    var tmh = $('.tm-l-head');
+    $('.tm-left-sub').hide();
+
+    for (let i = 0; i < tmh.length; i++) {
+        tmh.eq(i).click(function (e) {
+            e.preventDefault();
+    
+            $('.tm-left-sub').eq(i).slideToggle(80);
+            $('.tm-l-head i').eq(i).toggleClass('i-rotate');
+            $('.tm-left-sub').not($('.tm-left-sub').eq(i)).slideUp(80);
+            $('.tm-l-head i').not($('.tm-l-head i').eq(i)).removeClass('i-rotate');
+        })
+    }
+}

@@ -63,12 +63,79 @@
 .a1-text::after {
     content: '';
     position: absolute;
-    top: -2px; left: 50%;
+    top: -8px; left: 50%;
     width: 16px;
     height: 16px;
-    transform: rotate(45deg) translate(-50%, 0);
+    transform: translate(-50%, 0) rotate(45deg);
     background-color: #fff;
 }
 
 
 /*==================================================*/
+@media (max-width: 768px) {
+    .article1 {
+        padding: 120px 0 60px 0;
+    }
+    
+    .a1-1 {
+        width: 350px;
+    }
+
+    .a1-wrapper p {
+        font-size: 24px;
+    }
+
+    .a1-wrapper h1 {
+        font-size: 40px;
+    }
+
+    .a1-2 {
+        width: 30px;
+        max-width: 30px;
+        margin: 3rem 0;
+    }
+
+    .a1-text {
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .a1-text p br {
+        display: none;
+    }
+
+    .a1-text::after {
+        top: -4px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article1 {
+        padding: 80px 0 40px 0;
+    }
+    
+    .a1-1 {
+        top: 30%;
+        width: 280px;
+    }
+
+    .a1-wrapper p {
+        font-size: 18px;
+    }
+
+    .a1-wrapper h1 {
+        font-size: 28px;
+    }
+
+    .a1-2 {
+        width: 25px;
+        max-width: 25px;
+        margin: 2rem 0;
+    }
+    
+    .a1-text {
+        padding: 14px;
+        font-size: 12px;
+    }
+}

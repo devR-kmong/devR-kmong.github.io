@@ -19,3 +19,21 @@
 
 
 /*==================================================*/
+@media (max-width: 1050px) {
+    .article8 {
+        padding-top: 60px;
+    }
+    
+    .a8-wrapper {
+        padding: 80px 40px;
+    }
+
+    .a8-wrapper p {
+        font-size: 18px;
+        margin-bottom: .5rem;
+    }
+
+    .a8-wrapper h1 {
+        font-size: 40px;
+    }
+}

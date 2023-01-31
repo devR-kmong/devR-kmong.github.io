@@ -3,8 +3,6 @@
     width: 100%;
     height: 100vh !important;
     display: flex;
-    justify-content: center;
-    align-items: center;
     transition: all .3s;
     overflow: hidden;
 }
@@ -12,8 +10,6 @@
 .promotion-wrapper {
     width: 1200px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .p-image {
@@ -21,10 +17,12 @@
     top: 300px; right: -850px;
     transform: rotate(-35deg);
     width: 2400px;
+    z-index: 2;
 }
 
 .p-text {
     width: 100%;
+    z-index: 3;
 }
 
 .p-text h1 {
@@ -170,5 +168,95 @@
     .promotion-wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+
+    .p-image {
+        width: 1800px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .promotion {
+        justify-content: flex-start !important;
+    }
+    
+    .p-image {
+        width: 1500px;
+    }
+    
+    .p-text {
+        margin-top: 5rem;
+    }
+    
+    .p-text h1 {
+        font-size: 50px;
+    }
+
+    .p-text h1 em {
+        font-size: 60px;
+    }
+
+    .p-text h1 em::after {
+        bottom: 3px;
+    }
+
+    .p-text p {
+        font-size: 16px;
+    }
+
+    .pBtn {
+        width: 170px;
+        height: 42px;
+        margin-top: 2rem;
+    }
+
+    .pBtn h2 {
+        font-size: 14px;
+    }
+
+    .pBtn i {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .p-image {
+        top: 400px; right: -500px;
+        width: 1200px;
+    }
+    
+    .p-text h1 {
+        font-size: 35px;
+    }
+
+    .p-text h1 em {
+        font-size: 40px;
+    }
+
+    .p-text h1 em::after {
+        height: 2px;
+    }
+    
+    .p-text p {
+        font-size: 14px;
+        margin-top: 1rem;
+    }
+
+    .pBtn {
+        width: 120px;
+        height: 35px;
+        border-radius: 5px;
+        background-color: var(--main-color);
+        box-shadow: none;
+        border: none;
+        margin-top: 1.5rem;
+    }
+
+    .pBtn h2,
+    .pBtn i {
+        color: #fff;
+        font-size: 13px;
     }
 }

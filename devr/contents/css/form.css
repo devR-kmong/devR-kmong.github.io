@@ -258,6 +258,13 @@
 
 
 /*==================================================*/
+@media (max-width: 1050px) {
+    .form-wrapper {
+        margin-top: 2rem;
+    }
+}
+
+
 @media (max-width: 650px) {
     .form-wrapper {
         width: 100%;
@@ -296,7 +303,7 @@
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
     .form-wrapper {
         padding: 0 10px;
     }
@@ -313,6 +320,12 @@
 
     .gform textarea {
         font-size: 13px;
+    }
+
+    .radio-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7px;
     }
 
     .radio-wrapper label {

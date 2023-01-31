@@ -110,12 +110,12 @@ footer {
     opacity: .7;
 }
 
-.logo-f img:first-child {
+.logo-f a:first-child {
     width: 140px;
     max-width: 140px;
 }
 
-.logo-f img:last-child {
+.logo-f a:last-child {
     width: 115px;
     max-width: 115px;
     padding-top: 5px;

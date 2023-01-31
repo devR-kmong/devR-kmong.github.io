@@ -63,3 +63,101 @@
 
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .a5-title {
+        margin-bottom: 3rem;
+    }
+    
+    .a5-title p {
+        font-size: 18px;
+    }
+    
+    .a5-title h1 {
+        font-size: 58px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .a5-box {
+        padding: 25px;
+    }
+    
+    .a5-box-image img {
+        height: 80px;
+    }
+
+    .a5-box-text h1 {
+        font-size: 20px;
+    }
+
+    .a5-box-text p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .a5-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a5-title {
+        margin-bottom: 2rem;
+    }
+    
+    .a5-title p {
+        font-size: 15px;
+        margin-bottom: .3rem;
+    }
+    
+    .a5-title h1 {
+        font-size: 45px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a5-box {
+        padding: 20px;
+        gap: .3rem;
+    }
+    
+    .a5-box-image img {
+        height: 65px;
+    }
+
+    .a5-box-text h1 {
+        font-size: 18px;
+    }
+
+    .a5-box-text p {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a5-title {
+        margin-bottom: 1.5rem;
+    }
+    
+    .a5-title p {
+        font-size: 13px;
+    }
+    
+    .a5-title h1 {
+        font-size: 30px;
+    }
+
+    .a5-box-image img {
+        height: 55px;
+    }
+
+    .a5-box-text h1 {
+        font-size: 16px;
+    }
+}

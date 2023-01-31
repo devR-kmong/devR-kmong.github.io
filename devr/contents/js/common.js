@@ -54,6 +54,21 @@ $('.family-site').click(function () {
 })
 
 
+$(window).resize(function () {
+    var width_size = window.innerWidth;
+
+    if (width_size == 950) {
+        document.location.reload();
+    } else if (width_size == 951) {
+        document.location.reload();
+    } else if (width_size == 1920) {
+        document.location.reload();
+    } else if (width_size == 2560) {
+        document.location.reload();
+    }
+})
+
+
 
 if (navigator.userAgent.indexOf("Trident") > 0) {
     alert("이 사이트에 대한 Internet Explorer 지원이 종료되었습니다. " +
