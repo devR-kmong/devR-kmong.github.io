@@ -8,7 +8,6 @@ $(function () {
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 'auto',
-    spaceBetween: 20,
     centeredSlides: true,
     grabCursor: true,
     loop: true,
@@ -16,11 +15,6 @@ var swiper = new Swiper(".mySwiper", {
         delay: 3000,
         disableOnInteraction: true,
     },
-    breakpoints: {
-        550: {
-            spaceBetween: 0,
-        },
-    }
 });
 
 
