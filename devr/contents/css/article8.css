@@ -4,6 +4,7 @@
     text-align: center;
     border-radius: 10px;
     background: url(../images/a8-bg.jpg);
+    background-position: center;
 }
 
 .a8-wrapper p {

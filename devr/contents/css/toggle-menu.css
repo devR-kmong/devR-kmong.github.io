@@ -394,16 +394,20 @@
 
 
 @media (max-width: 450px) {
+    .tm-contents {
+        margin-top: 120px;
+    }
+    
     .tm-m-box {
         padding: 15px;
     }
     
     .tm-left li a {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .tm-left li a i {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .tm-left-sub {
