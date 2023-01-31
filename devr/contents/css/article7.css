@@ -145,13 +145,12 @@
 
 @media (max-width: 550px) {
     .a7-1 {
-        width: 45px;
-        max-width: 45px;
+        width: 40px;
+        max-width: 40px;
     }
     
     .a7-title p {
         font-size: 13px;
-        text-align: right;
         margin-bottom: .5rem;
     }
 
@@ -176,7 +175,6 @@
     
     .mySwiper .swiper-slide {
         width: 290px !important;
-        opacity: 0;
     }
 
     .mySwiper .swiper-slide-active {
@@ -184,13 +182,13 @@
     }
     
     .mySwiper .swiper-slide img {
-        width: 290px !important;
-        height: 506px;
+        width: 300px !important;
+        height: 524px;
         margin-top: 83px;
     }
 
     .phone {
-        bottom: -110px;
+        bottom: -95px;
         width: 303px;
     }
 }

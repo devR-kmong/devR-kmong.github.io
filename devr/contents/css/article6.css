@@ -163,6 +163,11 @@
     .a6-box-text ul li {
         font-size: 13px;
         line-height: 1.6;
+        letter-spacing: 0.02em;
+    }
+    
+    .a6-box-text ul li b {
+        letter-spacing: 0.04em;
     }
     
     .a6Btn-wrapper {

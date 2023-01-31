@@ -37,3 +37,18 @@
         font-size: 40px;
     }
 }
+
+
+@media (max-width: 450px) {
+    .a8-wrapper {
+        padding: 50px 20px;
+    }
+
+    .a8-wrapper p {
+        font-size: 14px;
+    }
+
+    .a8-wrapper h1 {
+        font-size: 30px;
+    }
+}

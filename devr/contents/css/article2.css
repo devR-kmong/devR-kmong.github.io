@@ -2,6 +2,7 @@
     position: relative;
     padding: 0;
     background-color: var(--main-color);
+    overflow: hidden;
 }
 
 .a2-sb {
@@ -155,8 +156,10 @@
 
 @media (max-width: 550px) {
     .a2-sb {
-        width: 400px;
-        max-width: 400px;
+        right: -50px;
+        width: 300px;
+        max-width: 300px;
+        opacity: .13;
     }
     
     .a2-left h1 {

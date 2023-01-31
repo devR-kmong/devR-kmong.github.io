@@ -79,6 +79,7 @@
     
     .a1-1 {
         width: 350px;
+        max-width: 350px;
     }
 
     .a1-wrapper p {
@@ -118,6 +119,7 @@
     .a1-1 {
         top: 30%;
         width: 280px;
+        max-width: 280px;
     }
 
     .a1-wrapper p {

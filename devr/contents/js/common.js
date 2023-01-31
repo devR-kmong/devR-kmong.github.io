@@ -15,6 +15,11 @@ var swiper = new Swiper(".mySwiper", {
         delay: 3000,
         disableOnInteraction: true,
     },
+    breakpoints: {
+        450: {
+            spaceBetween: 20,
+        },
+    }
 });
 
 
@@ -51,6 +56,20 @@ $(function () {
 $('.family-site').click(function () {
     $('.family-list').slideToggle(80).css('display', 'flex');
     $('.family-site i').toggleClass('i-rotate');
+})
+
+$('body').click(function (e) {
+    if (!$(e.target).hasClass('family-site')) {
+        $('.family-list').hide();
+        $('.family-site i').removeClass('i-rotate');
+    }
+});
+
+$(document).scroll(function (e) {
+    if (!$(e.target).hasClass('family-site')) {
+        $('.family-list').hide();
+        $('.family-site i').removeClass('i-rotate');
+    }
 })
 
 
