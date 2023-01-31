@@ -141,6 +141,7 @@
     transform: translate(-50%, -50%);
     -webkit-animation: upDown 1.5s ease-in-out infinite;
     animation: upDown 1.5s ease-in-out infinite;
+    z-index: 10;
 }
 
 @keyframes upDown {
