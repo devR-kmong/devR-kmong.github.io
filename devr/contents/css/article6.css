@@ -1,0 +1,131 @@
+.a6-title {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.a6-title p {
+    color: #888;
+    font-size: 20px;
+    margin-bottom: .5rem;
+}
+
+.a6-title h1 {
+    color: #222;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.a6-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.a6-box {
+    padding: 3rem 0;
+    display: flex;
+    border-bottom: 1px dashed rgba(0, 0, 0, .1);
+}
+
+.a6-box:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.a6-box-image {
+    width: 550px;
+    min-width: 550px;
+    height: 350px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.a6-box-image img {
+    transition: all .6s ease;
+}
+
+.a6-box:hover .a6-box-image img {
+    transform: scale(1.05);
+}
+
+.a6-box-text {
+    width: 100%;
+    padding: 40px 0 40px 40px;
+}
+
+.a6-box-text h1 {
+    color: #222;
+    font-size: 24px;
+}
+
+.a6-box-text p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+.a6-box-text ul {
+    width: 100%;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin: 1rem 0;
+}
+
+.a6-box-text ul li {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.a6Btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    transition: all .3s ease;
+}
+
+.a6Btn {
+    padding: 7px 7px 7px 12px;
+    color: #222;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border-radius: 7px;
+    transition: all .3s ease;
+}
+
+.a6Btn:hover {
+    background-color: #f2f2f2;
+}
+
+.a6-vertical {
+    width: 1px;
+    height: 70px;
+    background-color: #ccc;
+    margin: 3rem 0;
+}
+
+.a6-more a {
+    color: #aaa;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 7px;
+    transition: all .3s ease;
+}
+
+.a6-more a:hover {
+    background-color: #f2f2f2;
+}
+
+
+/*==================================================*/

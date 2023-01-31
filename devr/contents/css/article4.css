@@ -1,0 +1,39 @@
+.a4-wrapper {
+    width: 100%;
+}
+
+.a4-wrapper p {
+    color: #888;
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+.a4-wrapper h1 {
+    color: #222;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.a4-c-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 7rem 0;
+}
+
+.a4-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.a4-bottom {
+    text-align: right;
+}
+
+
+
+/*==================================================*/

@@ -1,0 +1,205 @@
+.article3 {
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.a3-big {
+    position: absolute;
+    color: rgba(255, 255, 255, .07);
+    font-size: 300px;
+    font-weight: 500;
+    font-family: 'Montserrat' !important;
+    letter-spacing: 0;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.a3-big1 {
+    top: 190px;
+    -webkit-animation: slide-left 300s linear infinite;
+    animation: slide-left 300s linear infinite;
+}
+.a3-big2 {
+    top: 470px;
+    -webkit-animation: slide-right 300s linear infinite;
+    animation: slide-right 300s linear infinite;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(50%, 0, 0);
+    }
+}
+
+.a3-square {
+    position: absolute;
+    top: -15px;
+    transform: rotate(45deg);
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-color);
+}
+
+.a3-vertical {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.a3-card {
+    position: relative;
+    width: 600px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-radius: 7px;
+    background: rgba(255, 255, 255, .07);
+    border: 1px solid rgba(255, 255, 255, .15);
+    text-align: center;
+    overflow: hidden;
+}
+
+.a3-c-tag {
+    position: absolute;
+    top: 0; right: -40px;
+    transform: rotate(45deg);
+    width: 135px;
+    height: 20px;
+    background: rgb(205,142,31);
+    background: linear-gradient(90deg, rgb(255, 187, 70) 40%, rgb(131, 88, 15) 100%);
+}
+
+.a3-sb {
+    width: 50px;
+    max-width: 50px;
+    margin-bottom: 2rem;
+}
+
+.a3-c-title h1 {
+    color: #fff;
+    font-size: 55px;
+    line-height: 1.2;
+    font-weight: normal;
+    font-family: 'Aboreto' !important;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+.a3-c-title p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    margin-top: 2rem;
+}
+
+.a3-c-text {
+    margin-top: 4rem;
+}
+
+.a3-c-text p {
+    color: #fafafa;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding: 30px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.a3-c-text p b {
+    font-size: 27px;
+}
+
+.a3-c-vertical {
+    width: 1px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, .2);
+    margin: 2rem 0;
+}
+
+.a3-bottom {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.a3-bottom p {
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 1rem;
+}
+
+.a3-sign {
+    width: 140px;
+}
+
+.a3-notice-wrapper {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.a3-notice h1 {
+    width: 100%;
+    color: #aaa;
+    padding: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, .07);
+    border: 1px solid rgba(255, 255, 255, .15);
+    cursor: pointer;
+}
+
+.a3-notice h1:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.a3-notice h1 i {
+    transition: all .2s ease;
+}
+
+.a3-notice p {
+    color: #bbb;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin: 15px 0;
+    display: none;
+}
+
+.a3-glow {
+    position: absolute;
+    bottom: -500px;
+    opacity: .7;
+}
+
+
+/*==================================================*/
