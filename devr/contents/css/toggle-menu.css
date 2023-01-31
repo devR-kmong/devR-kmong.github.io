@@ -209,6 +209,7 @@
     justify-content: center;
     align-items: flex-end;
     gap: 5px;
+    margin-bottom: 4px;
     cursor: pointer;
 }
 
@@ -262,6 +263,15 @@
     
     .tm-header {
         height: 70px;
+    }
+
+    .tm-closeBtn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tm-closeBar {
+        width: 20px;
     }
 
     .tm-contents {
@@ -382,13 +392,22 @@
         height: 60px;
     }
 
+    .tm-logo {
+        width: 100px;
+        max-width: 100px;
+    }
+
     .tm-h-right {
         gap: 1.2rem;
     }
 
-    .tm-logo {
-        width: 100px;
-        max-width: 100px;
+    .tm-closeBtn {
+        width: 16px;
+        height: 16px;
+    }
+
+    .tm-closeBar {
+        width: 16px;
     }
 }
 

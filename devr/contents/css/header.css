@@ -158,29 +158,10 @@
 }
 
 .toggleBtn {
-    position: relative;
     width: 22px;
-    height: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 5px;
+    font-size: 24px;
+    padding-top: 2px;
     cursor: pointer;
-}
-
-.toggleBtn.change {
-    margin-bottom: 4px;
-}
-
-.toggleBar {
-    width: 21px;
-    height: 2px;
-    background-color: #3d3d3d;
-}
-
-.Bar2 {
-    width: 15px;
 }
 
 
@@ -218,6 +199,11 @@
         font-size: 12px;
         width: 100px;
         height: 28px;
+    }
+
+    .toggleBtn {
+        width: 20px;
+        padding-top: 3px;
     }
 }
 
@@ -268,6 +254,12 @@
         font-size: 11px;
         width: 90px;
         height: 26px;
+    }
+
+    .toggleBtn {
+        width: 16px;
+        font-size: 20px;
+        padding-top: 4px;
     }
 }
 
