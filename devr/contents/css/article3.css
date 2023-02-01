@@ -317,6 +317,11 @@
         width: 90%;
     }
 
+    .a3-c-tag {
+        right: -47px;
+        height: 12px;
+    }
+
     .a3-c-title h1 {
         font-size: 30px;
     }
