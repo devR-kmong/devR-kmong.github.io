@@ -99,6 +99,10 @@
     font-weight: 500;
 }
 
+.menu a:hover {
+    color: var(--main-color);
+}
+
 .menu-item {
     position: relative;
 }
@@ -118,10 +122,6 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, .07);
     background-color: #fff;
     display: none;
-}
-
-.menu-hover li a:hover {
-    color: var(--main-color);
 }
 
 .mh-0,
