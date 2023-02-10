@@ -1,0 +1,138 @@
+.a4-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a4-left {
+    position: sticky;
+    top: 90px;
+    height: fit-content;
+}
+
+.a4-left h1 {
+    color: #222;
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.a4-left p {
+    color: #888;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-top: 2rem;
+}
+
+.a4-left a {
+    color: #555;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 4rem;
+    transition: all .3s ease;
+    animation: mobmob 1.2s infinite;
+}
+
+@keyframes mobmob {
+    0% {
+        gap: 5px;
+    }
+    10% {
+        gap: 8px;
+    }
+    20% {
+        gap: 5px;
+    }
+    30% {
+        gap: 8px;
+    }
+    40% {
+        gap: 5px;
+    }
+    100% {
+        gap: 5px;
+    }
+}
+
+.a4-box-wrapper {
+    position: relative;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.a4-vertical {
+    position: absolute;
+    top: 0; left: -80px;
+    width: 1px;
+    height: 100%;
+    border-left: 1px dashed var(--main-color);
+    opacity: .3;
+}
+
+.a4-box {
+    position: relative;
+}
+
+.a4-box-num {
+    position: absolute;
+    top: 40%; left: -102px;
+    transform: translate(0, -50%);
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: var(--main-color);
+    -webkit-animation: pulseAnim 1.3s infinite;
+    animation: pulseAnim 1.3s infinite;
+    /* box-shadow: 0 0 0 10px #0f9be720; */
+}
+
+@keyframes pulseAnim {
+	0% {
+		box-shadow: 0 0 0 0 rgba(15, 155, 231, 30%);
+	}
+	70% {
+		box-shadow: 0 0 0 15px rgb(151 213 229 / 0%);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgb(151 213 229 / 0%);
+	}
+}
+
+.a4-box-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.a4-box-text {
+    padding-top: 15px;
+}
+
+.a4-box-text h1 {
+    color: #222;
+    font-size: 24px;
+}
+
+.a4-box-text p {
+    color: #888;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    margin-top: 7px;
+}
+
+
+/*==================================================*/
