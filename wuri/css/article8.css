@@ -270,11 +270,20 @@
 
 @media (max-width: 650px) {
     .a8-image {
-        display: none;
+        bottom: unset;
+        top: 20px; right: -120px;
+        width: 80%;
+        opacity: .7;
+        z-index: 1;
     }
 
     .a8-wrapper {
         margin-bottom: 0;
+    }
+
+    .a8-title {
+        margin-top: 4rem;
+        z-index: 2;
     }
 
     .a8-title p {
@@ -321,14 +330,10 @@
 
 
 @media (max-width: 450px) {
-    .article8 {
-        padding-top: 80px;
-    }
-
     .a8-title {
-        margin-bottom: 2rem;
+        margin-bottom: 3.5rem;
     }
-
+    
     .a8-title p {
         font-size: 13px;
         margin-bottom: .7rem;

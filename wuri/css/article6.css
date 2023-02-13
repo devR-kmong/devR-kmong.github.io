@@ -223,3 +223,19 @@
         font-size: 15px;
     }
 }
+
+
+@media (max-width: 450px) {
+    .a6-qna h1 {
+        font-size: 16px;
+    }
+
+    .a6-qna h2 {
+        font-size: 20px;
+    }
+
+    .a6-qna h2 span::after {
+        bottom: -2px;
+        height: 2px;
+    }
+}

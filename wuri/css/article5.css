@@ -130,10 +130,6 @@
     .article5 {
         background: linear-gradient(to bottom, #f2f2f2 0%, #fff 100%);
     }
-
-    .a5-image img {
-        mix-blend-mode: unset;
-    }
 }
 
 

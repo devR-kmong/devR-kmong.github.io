@@ -136,15 +136,16 @@
 
 
 @media (max-width: 450px) {
-    .promotion {
-        height: 650px !important;
-    }
-
     .p-image {
         bottom: 10%;
     }
 
-    .p-text h1 br {
-        display: none;
+    .p-text h1 {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+
+    .p-text p {
+        font-size: 15px;
     }
 }
