@@ -144,6 +144,10 @@ header.Fixed nav ul li a {
         display: none;
     }
 
+    header.Fixed nav ul li a {
+        padding: 0;
+    }
+
     .overlay {
         position: absolute;
         top: 0; left: 0;
