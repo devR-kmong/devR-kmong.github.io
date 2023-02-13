@@ -1,0 +1,164 @@
+.article5 {
+    background-color: #f2f2f2;
+}
+
+.article5 .article-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.a5-wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.a5-image img {
+    position: absolute;
+    top: 0; left: -220px;
+    mix-blend-mode: multiply;
+    user-select: none;
+}
+
+.a5-title {
+    margin-bottom: 4rem;
+}
+
+.a5-title p {
+    color: #888;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.a5-title h1 {
+    color: #222;
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.a5-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.a5-box h1 {
+    color: #222;
+    font-size: 24px;
+}
+
+.a5-box p {
+    color: #888;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-top: 12px;
+}
+
+
+/*==================================================*/
+@media (min-width: 2050px) {
+    .a5-image img {
+        left: 100px;
+    }
+}
+
+
+@media (max-width: 1650px) {
+    .article5 {
+        padding-bottom: 0;
+    }
+    
+    .a5-image img {
+        top: unset;
+        bottom: -60px; left: -60px;
+    }
+    
+    .a5-text {
+        margin-bottom: 65%;
+        margin-right: 5rem;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .a5-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article5 {
+        overflow: hidden;
+    }
+    
+    .a5-image img {
+        left: unset;
+        bottom: 0; right: -60px;
+        transform: scaleX(-1);
+    }
+    
+    .a5-text {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .a5-title {
+        margin-bottom: 2.5rem;
+    }
+    
+    .a5-title p {
+        font-size: 18px;
+        margin-bottom: .5rem;
+    }
+
+    .a5-title h1 {
+        font-size: 35px;
+    }
+    
+    .a5-box h1 {
+        font-size: 20px;
+    }
+
+    .a5-box p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article5 {
+        background: linear-gradient(to bottom, #f2f2f2 0%, #fff 100%);
+    }
+
+    .a5-image img {
+        mix-blend-mode: unset;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a5-title {
+        margin-bottom: 2rem;
+    }
+
+    .a5-title p {
+        font-size: 14px;
+    }
+
+    .a5-title h1 {
+        font-size: 28px;
+    }
+    
+    .a5-box-wrapper {
+        gap: 1rem;
+    }
+    
+    .a5-box h1 {
+        font-size: 17px;
+    }
+
+    .a5-box p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,150 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    height: 95vh !important;
+    background: url(../images/hero.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.p-image {
+    position: absolute;
+    bottom: 0; right: -200px;
+    user-select: none;
+    min-width: max-content;
+}
+
+.promotion-wrapper {
+    width: 1200px;
+}
+
+.p-text {
+    margin-bottom: 8rem;
+}
+
+.p-text h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.p-text p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-top: 2rem;
+}
+
+.p-text p br {
+    display: none;
+}
+
+
+/*==================================================*/
+@media (min-width: 1921px) {
+    .p-image {
+        bottom: 20px; right: 0;
+        width: 1400px;
+    }
+
+    .p-text {
+        margin-bottom: 12rem;
+    }
+
+    .p-text h1 {
+        font-size: 65px;
+    }
+
+    .p-text p {
+        font-size: 26px;
+        font-weight: 500;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .p-image {
+        bottom: 8%; right: -20%;
+        width: 80%;
+        min-width: 130%;
+    }
+
+    .p-text h1 {
+        font-size: 50px;
+    }
+
+    .p-text p {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .promotion {
+        height: 900px !important;
+    }
+
+    .p-text {
+        margin-bottom: 18rem;
+    }
+    
+    .p-text h1 {
+        font-size: 40px;
+    }
+
+    .p-text p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .promotion {
+        height: 750px !important;
+    }
+
+    .p-text {
+        margin-bottom: 12rem;
+    }
+
+    .p-text h1 {
+        font-size: 36px;
+    }
+
+    .p-text p {
+        margin-top: 1.3rem;
+    }
+
+    .p-text p br {
+        display: block;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .promotion {
+        height: 650px !important;
+    }
+
+    .p-image {
+        bottom: 10%;
+    }
+
+    .p-text h1 br {
+        display: none;
+    }
+}

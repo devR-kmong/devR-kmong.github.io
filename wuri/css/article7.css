@@ -1,0 +1,145 @@
+.article7 {
+    background-color: #171e26;
+    background: url(../images/a7-bg.jpg);
+    background-attachment: fixed;
+}
+
+.a7-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a7-title {
+    margin-bottom: 4rem;
+}
+
+.a7-title p {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+}
+
+.a7-title h1 {
+    color: #fff;
+    font-size: 55px;
+    line-height: 1.4;
+}
+
+.a7-title h1 span {
+    font-size: 65px;
+    font-weight: 800;
+    user-select: none;
+    background: linear-gradient(90deg, rgba(15,155,231,1), rgba(54,215,157,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.a7-box-wrapper {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem
+}
+
+.a7-box {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 7px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, .07);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.a7-image {
+    width: 35px;
+    user-select: none;
+    -webkit-filter: invert(72%) sepia(10%) saturate(3109%) hue-rotate(96deg) brightness(90%) contrast(84%);
+    filter: invert(72%) sepia(10%) saturate(3109%) hue-rotate(96deg) brightness(90%) contrast(84%);
+}
+
+.a7-box h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1050px) {
+    .a7-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .a7-title {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a7-title {
+        margin-bottom: 3rem;
+    }
+    
+    .a7-title p {
+        font-size: 18px;
+        margin-bottom: 1.2rem;
+    }
+
+    .a7-title h1 {
+        font-size: 45px;
+    }
+
+    .a7-title h1 span {
+        font-size: 58px;
+    }
+
+    .a7-box-wrapper {
+        width: 65%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a7-title p {
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+
+    .a7-title h1 {
+        font-size: 32px;
+    }
+
+    .a7-title h1 span {
+        font-size: 38px;
+    }
+
+    .a7-box-wrapper {
+        gap: 1rem;
+    }
+    
+    .a7-box {
+        padding: 18px
+    }
+
+    .a7-image {
+        width: 28px;
+    }
+
+    .a7-box h1 {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a7-box-wrapper {
+        width: 85%;
+    }
+}
