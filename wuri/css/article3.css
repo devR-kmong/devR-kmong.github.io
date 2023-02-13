@@ -61,7 +61,7 @@
 
 .a3-notch {
     position: absolute;
-    top: 0;
+    top: -2px;
     width: 170px;
     height: 33px;
     border-radius: 0 0 20px 20px;
