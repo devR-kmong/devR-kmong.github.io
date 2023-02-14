@@ -327,8 +327,7 @@
     }
 
     .a3-box:nth-child(3) .a3-popup {
-        bottom: -60px; left: 50%;
-        transform: translate(-50%, 0);
+        bottom: -60px;
         right: unset;
     }
 
