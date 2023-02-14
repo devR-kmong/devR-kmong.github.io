@@ -1,6 +1,7 @@
 .article3 {
     padding: 15rem 0 120px 0;
     background-color: #f2f2f2;
+    overflow: hidden;
 }
 
 .a3-wrapper {
