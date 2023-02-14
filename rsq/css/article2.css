@@ -205,6 +205,14 @@
     .a2-title {
         margin-bottom: 2rem;
     }
+
+    .a2-title h1 {
+        font-size: 30px;
+    }
+
+    .a2-title p {
+        font-size: 14px;
+    }
     
     .a2-box {
         padding: 30px;
