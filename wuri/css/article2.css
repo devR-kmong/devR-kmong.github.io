@@ -166,6 +166,10 @@
     .a2-bottom p br {
         display: none;
     }
+
+    .a2-bottom p b::after {
+        height: 2px;
+    }
     
     .a2-icon {
         top: -15px; right: -15px;
@@ -189,5 +193,22 @@
 
     .a2-box {
         font-size: 20px;
+    }
+}
+
+
+@media (max-width: 415px) {
+    .a2-bottom {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 20px 0 20px 20px;
+    }
+    
+    .a2-bottom p {
+        font-size: 12px;
+    }
+
+    .a2-bottom p b::after {
+        height: 1px;
     }
 }
