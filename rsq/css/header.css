@@ -67,7 +67,7 @@ nav ul li a {
 
 @media (max-width: 550px) {
     header {
-        height: 65px;
+        height: 55px;
     }
     
     .logo {

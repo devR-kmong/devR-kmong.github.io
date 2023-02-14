@@ -755,6 +755,10 @@ button.swiper-pagination-bullet {
 
 /*==================================================*/
 @media (max-width: 550px) {
+    .swiperBtn-wrapper {
+        margin-top: 2rem;
+    }
+    
     .swiper-button-next {
         color: #fff;
     }

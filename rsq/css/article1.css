@@ -178,7 +178,6 @@
         flex-direction: row;
         justify-content: flex-start;
         gap: unset;
-        border-radius: 40px 0 40px 40px;
     }
     
     .a1-popup {
@@ -261,6 +260,18 @@
 @media (max-width: 550px) {
     .a1-box {
         padding: 35px 20px;
+    }
+
+    .a1-square {
+        top: 0; right: 0;
+        width: 15px;
+        height: 15px;
+        background-color: var(--main-color);
+    }
+
+    .a1-s-square {
+        width: 10px;
+        height: 10px;
     }
 
     .a1-popup {
