@@ -202,6 +202,10 @@
 
 
 @media (max-width: 450px) {
+    .a2-title {
+        margin-bottom: 2rem;
+    }
+    
     .a2-box {
         padding: 30px;
     }
