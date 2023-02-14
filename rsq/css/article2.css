@@ -1,0 +1,216 @@
+.a2-title {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.a2-title h1 {
+    color: #222;
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.a2-title p {
+    color: #888;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.a2-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.a2-box {
+    position: relative;
+    width: 100%;
+    padding: 80px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.a2-box:nth-child(1) {
+    background: url(../images/a2-b-bg-1.jpg) no-repeat;
+    background-size: cover;
+}
+.a2-box:nth-child(2) {
+    background: url(../images/a2-b-bg-2.jpg) no-repeat;
+    background-size: cover;
+}
+.a2-box:nth-child(3) {
+    background: url(../images/a2-b-bg-3.jpg) no-repeat;
+    background-size: cover;
+}
+
+.a2-box-text {
+    z-index: 2;
+}
+
+.a2-box-text h1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+.a2-box-text p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.65;
+    margin-top: 1rem;
+}
+
+.a2-box-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    margin-top: 3rem;
+}
+
+.a2-box-text ul li {
+    color: #fff;
+    font-size: 18px;
+    list-style: disc;
+}
+
+.a2Btn {
+    color: #fff;
+    width: 220px;
+    height: 50px;
+    padding: 15px 35px;
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    border-radius: 100px;
+    background-color: var(--main-color);
+    z-index: 2;
+}
+
+
+/*==================================================*/
+@media (max-width: 850px) {
+    .a2-title {
+        margin-bottom: 3rem;
+    }
+
+    .a2-title h1 {
+        font-size: 45px;
+    }
+
+    .a2-title p {
+        font-size: 20px;
+    }
+    
+    .a2-box {
+        position: relative;
+        padding: 50px;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .a2-box::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .a2-box:nth-child(2) {
+        background-position: center;
+    }
+    .a2-box:nth-child(3) {
+        background-position: center;
+    }
+
+    .a2-box:nth-child(2)::after {
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    .a2-box-text {
+        width: 100%;
+    }
+
+    .a2-box-text h1 {
+        font-size: 35px;
+    }
+
+    .a2-box-text p {
+        font-size: 18px;
+    }
+
+    .a2-box-text ul li {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a2-title h1 {
+        font-size: 35px;
+    }
+
+    .a2-title p {
+        font-size: 16px;
+        margin-top: .7rem;
+    }
+    
+    .a2-box-wrapper {
+        gap: 1rem;
+    }
+
+    .a2-box {
+        padding: 40px 30px;
+        gap: 3rem;
+    }
+
+    .a2-box-text h1 {
+        font-size: 28px;
+    }
+
+    .a2-box-text p {
+        font-size: 15px;
+        margin-top: .7rem;
+    }
+
+    .a2-box-text ul {
+        padding-left: 15px;
+        margin-top: 2rem;
+    }
+    
+    .a2-box-text ul li {
+        font-size: 13px;
+    }
+
+    .a2Btn {
+        width: 170px;
+        height: 40px;
+        padding: 15px 20px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a2-box {
+        padding: 30px;
+    }
+
+    .a2Btn {
+        width: 140px;
+        height: 35px;
+        justify-content: center;
+        padding: 12px 15px;
+        font-size: 12px;
+    }
+}
