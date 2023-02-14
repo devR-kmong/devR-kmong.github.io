@@ -147,6 +147,13 @@
 
 .a3-box:nth-child(2) .a3-popup:nth-child(3) h1 {
     color: #25c979;
+    animation: blink .8s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
 
 .a3-box:nth-child(2) .a3-popup img {
