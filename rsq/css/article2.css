@@ -111,9 +111,10 @@
     
     .a2-box {
         position: relative;
-        padding: 50px;
+        padding: 50px 0 0 50px;
         flex-direction: column;
         gap: 4rem;
+        border-radius: 30px 30px 0 30px;
     }
 
     .a2-box::after {
@@ -151,6 +152,12 @@
     .a2-box-text ul li {
         font-size: 16px;
     }
+
+    .a2Btn {
+        width: 250px;
+        height: 55px;
+        border-radius: 0;
+    }
 }
 
 
@@ -169,8 +176,8 @@
     }
 
     .a2-box {
-        padding: 40px 30px;
-        gap: 3rem;
+        padding: 40px 0 0 40px;
+        gap: 2rem;
     }
 
     .a2-box-text h1 {
@@ -193,9 +200,10 @@
 
     .a2Btn {
         width: 170px;
-        height: 40px;
-        padding: 15px 20px;
-        font-size: 14px;
+        height: 48px;
+        padding: 15px;
+        font-size: 15px;
+        justify-content: center;
         white-space: nowrap;
     }
 }
@@ -213,16 +221,17 @@
     .a2-title p {
         font-size: 14px;
     }
-    
+
     .a2-box {
-        padding: 30px;
+        padding: 35px 0 0 35px;
+        gap: 2.5rem;
     }
 
-    .a2Btn {
-        width: 140px;
-        height: 35px;
-        justify-content: center;
-        padding: 12px 15px;
-        font-size: 12px;
+    .a2-box-text h1 {
+        font-size: 24px;
+    }
+
+    .a2-box-text p {
+        font-size: 14px;
     }
 }

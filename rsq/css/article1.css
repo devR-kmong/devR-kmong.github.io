@@ -5,7 +5,7 @@
 .a1-box-wrapper {
     width: 100%;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .a1-box {
@@ -182,6 +182,13 @@
     
     .a1-popup {
         display: block;
+        animation: upDown 1s ease infinite;
+    }
+
+    @keyframes upDown {
+        50% {
+            transform: translateY(5px) translate(-50%, 0);
+        }
     }
 
     .a1-vertical {
@@ -258,6 +265,10 @@
 
 
 @media (max-width: 550px) {
+    .a1-box-wrapper {
+        gap: 1rem;
+    }
+    
     .a1-box {
         padding: 35px 20px;
     }
@@ -311,5 +322,21 @@
     
     .a1-box:hover .a1-box-text h2 i {
         font-size: 13px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a1-box-image h1 {
+        font-size: 13px;
+    }
+
+    .a1-box-text h1 {
+        font-size: 18px;
+    }
+
+    .a1-box-text h2 {
+        font-size: 12px;
+        margin-top: 1rem;
     }
 }
