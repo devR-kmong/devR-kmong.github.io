@@ -316,10 +316,7 @@
         margin-top: 1.5rem;
     }
 
-    .a1-box:hover .a1-box-text h2 {
-        font-size: 13px;
-    }
-    
+    .a1-box:hover .a1-box-text h2,
     .a1-box:hover .a1-box-text h2 i {
         font-size: 13px;
     }
@@ -338,5 +335,10 @@
     .a1-box-text h2 {
         font-size: 12px;
         margin-top: 1rem;
+    }
+
+    .a1-box:hover .a1-box-text h2,
+    .a1-box:hover .a1-box-text h2 i {
+        font-size: 12px;
     }
 }
