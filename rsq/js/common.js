@@ -20,9 +20,9 @@ $(function () {
     $(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 200) {
-                $('.floating').fadeIn();
+                $('.floating').fadeIn(80);
             } else {
-                $('.floating').fadeOut();
+                $('.floating').fadeOut(80);
             }
         });
     });
