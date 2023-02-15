@@ -54,13 +54,15 @@
 
 .a2-box-text h1 {
     color: #fff;
-    font-size: 45px;
+    font-size: 42px;
 }
 
 .a2-box-text p {
     color: #fff;
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 700;
     line-height: 1.65;
+    border-radius: 5px;
     margin-top: 1rem;
 }
 
@@ -78,6 +80,11 @@
     list-style: disc;
 }
 
+.a2-box:nth-child(3) ul li:nth-child(3) {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .a2Btn {
     color: #fff;
     width: 220px;
@@ -92,6 +99,40 @@
     border-radius: 100px;
     background-color: var(--main-color);
     z-index: 2;
+}
+
+.a2-box:nth-child(3) .a2Btn {
+    position: relative;
+}
+
+.a2Btn-popup {
+    position: relative;
+    position: absolute;
+    top: -50px;
+    padding: 12px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #222;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .1);
+    display: none;
+}
+
+.a2Btn-popup::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; left: 50%;
+    transform: rotate(45deg) translate(-50%, 0);
+    width: 12px;
+    height: 12px;
+    background-color: #222;
+}
+
+.a2-box:nth-child(3) .a2Btn:hover .a2Btn-popup {
+    display: block;
 }
 
 
@@ -153,10 +194,19 @@
         font-size: 16px;
     }
 
+    .a2-box:nth-child(3) ul li:nth-child(3) {
+        opacity: 1;
+        visibility: visible;
+    }
+    
     .a2Btn {
         width: 250px;
         height: 55px;
         border-radius: 0;
+    }
+
+    .a2-box:nth-child(3) .a2Btn:hover .a2Btn-popup {
+        display: none;
     }
 }
 
@@ -180,6 +230,10 @@
         gap: 2rem;
     }
 
+    .a2-box-text {
+        padding-right: 30px;
+    }
+    
     .a2-box-text h1 {
         font-size: 28px;
     }
