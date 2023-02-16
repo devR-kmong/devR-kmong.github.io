@@ -1,0 +1,36 @@
+.a3-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.a3-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.a3-box:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.a3-box-text {
+    width: 450px;
+}
+
+.a3-box-text h1 {
+    color: #222;
+    font-size: 42px;
+}
+
+.a3-box-text p {
+    color: #888;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.65;
+    margin-top: 1.5rem;
+}
+
+
+
+/*==================================================*/
