@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 15rem;
 }
 
 .a3-box {
@@ -25,12 +25,16 @@
 
 .a3-box-text p {
     color: #888;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
-    line-height: 1.65;
-    margin-top: 1.5rem;
+    line-height: 1.7;
+    margin-top: 2rem;
 }
 
+
+.a3-box-image img {
+    border-radius: 10px;
+}
 
 
 /*==================================================*/

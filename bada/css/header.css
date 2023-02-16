@@ -65,12 +65,13 @@ nav ul li a {
     gap: 5px;
     font-size: 18px;
     font-family: 'PuradakGentleGothicR';
-    padding-top: 3px;
+    /* padding-top: 3px; */
+    padding-bottom: 3px;
 }
 
 .logo img {
-    width: 20px;
-    max-width: 20px;
+    width: 70px;
+    /* max-width: 20px; */
 }
 
 #check {

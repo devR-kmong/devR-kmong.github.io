@@ -1,5 +1,5 @@
 .form-wrapper {
-    width: 600px;
+    width: 525px;
     z-index: 2;
 }
 
@@ -74,7 +74,8 @@
 
 .radio-wrapper {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 5px;
 }
 
