@@ -27,3 +27,27 @@ $('.pp-closeBtn').click(function () {
     $('.pp-wrapper').fadeOut();
 })
 
+
+
+$('.i-department, .i-textarea').hide();
+    
+$('input[name="category"]').on('change', function() {
+    var sval = this.value;
+
+    if (sval == '정규유학') {
+        $('.i-department').show();
+        $('.i-department input').attr('required','required');
+        $('.i-textarea').hide();
+        $('.i-textarea textarea').removeAttr('required');
+    } else if (sval == '기타') {
+        $('.i-textarea').show();
+        $('.i-textarea textarea').attr('required','required');
+        $('.i-department').hide();
+        $('.i-department input').removeAttr('required');
+    } else {
+        $('.i-department').hide();
+        $('.i-department input').removeAttr('required');
+        $('.i-textarea').hide();
+        $('.i-textarea textarea').removeAttr('required');
+    }
+});

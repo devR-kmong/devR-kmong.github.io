@@ -45,7 +45,7 @@ $(window).on('scroll', function () {
 
 
 $(function () {
-    $('.floating a, .logo, .logo-w, nav ul li a, .p-text a, .check-notice p a').click(function (e) {
+    $('.floating a, .logo, nav ul li a, .p-text a, .a1-right a').click(function (e) {
         $.scrollTo(this.hash || 0, 500);
         e.preventDefault();
     });
@@ -95,6 +95,12 @@ $(function () {
     $('.a2-closeBtn').click(function () {
         $('.a2-popup-wrapper').fadeOut();
     })
+
+    $('.a2-popup-wrapper').on('scroll touchmove mousewheel', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    })
 });
 
 
@@ -104,6 +110,7 @@ $(document).on(
     function (event) {
         if (event.key == "Escape") {
             $('.a2-popup-wrapper').fadeOut();
+            $('.pp-wrapper').fadeOut();
         }
     }
 );
