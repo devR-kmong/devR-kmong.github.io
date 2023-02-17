@@ -21,12 +21,6 @@ footer {
     gap: 5rem;
 }
 
-.footer-vertical {
-    width: 0;
-    height: 100px;
-    background-color: rgba(255, 255, 255, .2);
-}
-
 .footer-box {
     display: flex;
     flex-direction: column;
@@ -125,11 +119,6 @@ footer {
     .footer-box-group {
         flex-direction: column;
         gap: 2rem;
-    }
-
-    .footer-vertical {
-        width: auto;
-        height: 1px;
     }
 
     .footer-box-info:first-child br {
