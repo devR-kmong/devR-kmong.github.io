@@ -1,0 +1,22 @@
+.article7 {
+    padding-bottom: 0;
+    background-color: var(--main-color);
+}
+
+.a7-title {
+    margin-bottom: 3rem;
+}
+
+.a7-title h1 {
+    color: #fff;
+    font-size: 65px;
+}
+
+.a7-square {
+    width: 650px;
+    height: 60px;
+    background-color: #fff;
+}
+
+
+/*==================================================*/

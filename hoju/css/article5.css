@@ -1,0 +1,18 @@
+.a5-title {
+    margin-bottom: 5rem;
+}
+
+.a5-title h1 {
+    color: #222;
+    font-size: 45px;
+}
+
+.a5-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem 8rem;
+}
+
+
+/*==================================================*/

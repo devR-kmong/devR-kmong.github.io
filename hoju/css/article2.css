@@ -1,0 +1,161 @@
+.article2 {
+    background-color: #f2f2f2;
+}
+
+.article2 .article-wrapper {
+    width: 100%;
+}
+
+.article2 .article-title {
+    width: 1200px;
+}
+
+.a2-title {
+    width: 1200px;
+    margin-bottom: 4rem;
+}
+
+.a2-title p {
+    color: var(--main-color);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.a2-title h1 {
+    color: #222;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.a2-wrapper {
+    width: 1200px;
+}
+
+.a2-video {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.a2-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.a2-video {
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.y-thumbnail {
+    position: relative;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: url(../images/yt.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.y-thumbnail::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 0%, transparent 20%);
+    z-index: 1;
+}
+
+.y-thumbnail img {
+    width: 160px;
+    transition: all .2s ease;
+    z-index: 2;
+}
+
+.y-thumbnail:hover img {
+    transform: scale(1.15);
+}
+
+.y-thumbnail p {
+    position: absolute;
+    top: 20px; left: 20px;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 0;
+    z-index: 2;
+}
+
+
+.mySwiper {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.swiper-slide {
+    user-select: none;
+    cursor: pointer;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.a2-popup-wrapper {
+    position: relative;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 99;
+    display: none;
+}
+
+.a2-popup img {
+    border-radius: 10px;
+}
+
+.a2-closeBtn {
+    position: absolute;
+    top: 26px; right: 30px;
+    width: 30px;
+    max-width: 30px;
+    cursor: pointer;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .article2 .article-title {
+        width: 100%;
+    }
+
+    .a2-wrapper {
+        width: 100%;
+    }
+}
