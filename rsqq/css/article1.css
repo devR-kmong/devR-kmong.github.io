@@ -1,5 +1,5 @@
 .article1 {
-    padding-top: 30px;
+    padding-top: 60px;
     background-color: #f2f2f2;
 }
 
@@ -12,7 +12,7 @@
 .a1-box {
     position: relative;
     flex: 1;
-    height: 600px;
+    height: 550px;
     padding: 0 40px;
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@
 
 .a1-vertical {
     width: 1px;
-    height: 40px;
+    height: 30px;
     background-color: #ccc;
 }
 
