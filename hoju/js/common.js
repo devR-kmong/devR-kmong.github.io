@@ -99,17 +99,6 @@ $(function () {
 
 
 
-$(document).on(
-    'keydown',
-    function (event) {
-        if (event.key == "Escape") {
-            $('.a2-popup-wrapper').fadeOut();
-            $('.pp-wrapper').fadeOut();
-        }
-    }
-);
-
-
 $(function () {
     for (let i = 1; i < 99; i++) {
         $('.bhBtn-' + i).click(function () {
@@ -132,6 +121,20 @@ $(function () {
         $('.a4-bh').fadeOut();
     })
 });
+
+
+
+$(document).on(
+    'keydown',
+    function (event) {
+        if (event.key == "Escape") {
+            $('.a2-popup-wrapper').fadeOut();
+            $('.a4-popup-wrapper').fadeOut();
+            $('.a4-bh').fadeOut();
+            $('.pp-wrapper').fadeOut();
+        }
+    }
+);
 
 
 
