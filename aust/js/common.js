@@ -85,7 +85,7 @@ $(function () {
     });
 
     $('.a3-popup-wrapper').click(function (e) {
-        if (e.target.className != 'a2-popup-wrapper') {
+        if (e.target.className != 'a3-popup-wrapper') {
             return false;
         } else {
             $('.a3-popup-wrapper').fadeOut();
@@ -138,7 +138,7 @@ $(document).on(
 
 
 
-$('.a2-popup-wrapper, .a4-popup-wrapper').on('scroll touchmove mousewheel', function (event) {
+$('.a3-popup-wrapper, .a4-popup-wrapper').on('scroll touchmove mousewheel', function (event) {
     event.preventDefault();
     event.stopPropagation();
     return false;
