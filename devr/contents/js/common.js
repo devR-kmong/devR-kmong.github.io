@@ -1,3 +1,8 @@
+$('.tb-closeBtn').click(function () {
+    $('.top-banner').hide();
+})
+
+
 $(function () {
     $('.pBtn').click(function (e) {
         $.scrollTo(this.hash || 0, 500);
@@ -53,7 +58,7 @@ $('.family-site').click(function () {
     $('.family-site i').toggleClass('i-rotate');
 })
 
-$('body').click(function (e) {
+$(document).click(function (e) {
     if (!$(e.target).hasClass('family-site')) {
         $('.family-list').hide();
         $('.family-site i').removeClass('i-rotate');

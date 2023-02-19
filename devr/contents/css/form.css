@@ -217,44 +217,6 @@
     cursor: pointer;
 }
 
-.f-popup-wrapper {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 999;
-    display: none;
-}
-
-.f-popup {
-    position: relative;
-    width: 550px;
-    padding: 30px;
-    border-radius: 7px;
-    background-color: #fff;
-}
-
-.f-popup p {
-    color: #222;
-    font-size: 15px;
-    line-height: 1.4;
-}
-
-.f-popup p b {
-    line-height: 2;
-}
-
-.f-popup-closeBtn {
-    position: absolute;
-    top: 18px; right: 18px;
-    width: 15px;
-    cursor: pointer;
-}
-
 
 
 /*==================================================*/
@@ -285,20 +247,6 @@
 
     .gform .input-wrapper .input-title h1 {
         font-size: 13px;
-    }
-
-    .f-popup{
-        width: 80%;
-        padding: 25px;
-    }
-
-    .f-popup p {
-        font-size: 12px;
-        line-height: 1.3;
-    }
-
-    .f-popup-closeBtn {
-        top: 13px; right: 13px;
     }
 }
 

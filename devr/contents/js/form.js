@@ -19,32 +19,19 @@ $('.ccradio input').click(function() {
 });
 
 
+
 $('.f-personal-text').click(function () {
     if ($('#cb').is(':checked')) {
         $('.f-personal').removeClass('f-personal-no');
-        $('.f-personal-text label p').html('개인정보취급방침을 읽었으며, 이에 동의합니다.');
+        $('.f-personal-text label p').html('개인정보수집 및 이용에 동의합니다.');
         $('.gform .f-submit').attr('disabled', false);
     } else {
         $('.f-personal').addClass('f-personal-no');
-        $('.f-personal-text label p').html('개인정보취급방침에 동의하셔야 문의하실 수 있습니다.');
+        $('.f-personal-text label p').html('개인정보수집 및 이용에 동의해주세요.');
         $('.gform .f-submit').attr('disabled', true);
     }
 })
 
-$('.f-personalBtn').click(function () {
-    $('.f-popup-wrapper').fadeIn().css('display','flex');
-})
-
-$('.f-popup-wrapper').click(function () {
-    $(this).fadeOut();
-})
-
-
-$('.f-popup-wrapper').on('scroll touchmove mousewheel', function (event) {
-    event.preventDefault();
-    event.stopPropagation();
-    return false;
-})
 
 
 $(document).on("keyup", ".phoneNumber", function () {

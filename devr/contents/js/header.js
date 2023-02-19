@@ -11,12 +11,12 @@ $('.toggleBtn').click(function () {
 
 $('.tm-closeBtn').click(function () {
     $('.toggle-menu').hide();
-    $('.tm-left li').css('padding-left','100px').css('opacity','0');
+    $('.tm-left li').css('padding-left','80px').css('opacity','0');
 })
 
 $('.menu-item').click(function () {
     $('.menu-hover').hide();
-    $('.tm-left li').css('padding-left','100px').css('opacity','0');
+    $('.tm-left li').css('padding-left','80px').css('opacity','0');
 })
 
 $(document).on(
