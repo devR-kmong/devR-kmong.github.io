@@ -1,0 +1,151 @@
+.article2 {
+    background-color: #f2f2f2;
+}
+
+.a2-title {
+    width: 1200px;
+    margin-bottom: 6rem;
+}
+
+.a2-title p {
+    color: var(--main-color);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.a2-title h1 {
+    color: #222;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.a2-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+}
+
+.a2-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.a2-box:nth-child(2n-1) {
+    flex-direction: row-reverse;
+}
+
+.a2-box-text {
+    width: 500px;
+}
+
+.a2-box-text h1 {
+    color: #333;
+    font-size: 42px;
+    line-height: 1.35;
+}
+
+.a2-box-text p {
+    color: #888;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-top: 2rem;
+}
+
+
+.a2-box-image img {
+    border-radius: 10px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .a2-title {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .a2-box {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .a2-box:nth-child(2n-1) {
+        flex-direction: column;
+    }
+
+    .a2-box img {
+        float: right;
+        width: 450px;
+        height: 450px;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a2-box-wrapper {
+        gap: 10rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article2 {
+        overflow: hidden;
+    }
+    
+    .a2-title {
+        margin-bottom: 3rem;
+    }
+    
+    .a2-title p {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+    
+    .a2-title h1 {
+        font-size: 45px;
+    }
+    
+    .a2-box-wrapper {
+        gap: 7rem;
+    }
+
+    .a2-box {
+        gap: 1.5rem;
+    }
+    
+    .a2-box-text h1 {
+        font-size: 32px;
+    }
+
+    .a2-box-text p {
+        font-size: 16px;
+        margin-top: 1rem;
+    }
+    
+    .a2-box img {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a2-title h1 {
+        font-size: 40px;
+    }
+    
+    .a2-box-wrapper {
+        gap: 5rem;
+    }
+    
+    .a2-box img {
+        height: 300px;
+    }
+}
