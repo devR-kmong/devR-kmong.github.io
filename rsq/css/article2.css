@@ -57,10 +57,39 @@
     font-size: 42px;
 }
 
+.a2-box:nth-child(3) .a2-box-text h1 {
+    position: relative;
+}
+.a2Map {
+    position: relative;
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translate(0, -50%);
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: #03d25e;
+}
+
+.a2Map::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: -5px;
+    transform: translate(0, -50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: #03d25e;
+}
+
+
 .a2-box-text p {
     color: #fff;
     font-size: 26px;
-    font-weight: 700;
     line-height: 1.65;
     border-radius: 5px;
     margin-top: 1rem;
@@ -87,7 +116,7 @@
 
 .a2Btn {
     color: #fff;
-    width: 220px;
+    width: 280px;
     height: 50px;
     padding: 15px 35px;
     font-size: 17px;
@@ -120,6 +149,13 @@
 
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .a2Tel {
+        font-size: 24px;
+    }
+}
+
+
 @media (max-width: 850px) {
     .a2-title {
         margin-bottom: 3rem;
@@ -169,6 +205,10 @@
         font-size: 35px;
     }
 
+    .a2-box:nth-child(3) .a2-box-text h1 {
+        width: 330px;
+    }
+
     .a2-box-text p {
         font-size: 18px;
     }
@@ -183,7 +223,7 @@
     }
     
     .a2Btn {
-        width: 250px;
+        width: 300px;
         height: 55px;
         border-radius: 0;
     }
@@ -240,10 +280,10 @@
     }
 
     .a2Btn {
-        width: 170px;
-        height: 48px;
+        width: 210px;
+        height: 45px;
         padding: 15px;
-        font-size: 15px;
+        font-size: 14px;
         justify-content: center;
         white-space: nowrap;
     }
@@ -272,7 +312,23 @@
         font-size: 24px;
     }
 
+    .a2-box:nth-child(3) .a2-box-text h1 {
+        width: 240px;
+    }
+
     .a2-box-text p {
         font-size: 14px;
+    }
+
+    .a2Map {
+        padding: 5px 10px;
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .a2Map::after {
+        left: -3px;
+        width: 5px;
+        height: 5px;
     }
 }

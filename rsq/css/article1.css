@@ -1,9 +1,14 @@
 .article1 {
+    position: relative;
+    height: 500px;
     background-color: #f2f2f2;
+    z-index: 10;
 }
 
 .a1-box-wrapper {
-    width: 100%;
+    position: absolute;
+    top: -200px;
+    width: 1200px;
     display: flex;
     gap: 2rem;
 }
@@ -151,6 +156,18 @@
 
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .article1 {
+        height: unset;
+    }
+    
+    .a1-box-wrapper {
+        position: static;
+        width: 100%;
+    }
+}
+
+
 @media (max-width: 1150px) {
     .a1-box-text p {
         height: 100px;
@@ -168,6 +185,7 @@
     }
     
     .a1-box-wrapper {
+        position: static;
         flex-direction: column;
     }
 

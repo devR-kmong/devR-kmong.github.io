@@ -1,7 +1,7 @@
 .carousel {
     position: relative;
     width: 100%;
-    height: 650px;
+    height: 750px;
     overflow-y: hidden;
 }
 
@@ -10,20 +10,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
 }
 
 .swiper-slide .s-background {
     position: absolute;
     top: 0; left: 0;
     width: 100%;
-    height: 650px;
+    height: 750px;
     z-index: 4;
 }
 
 .swiper-slide .s-background img {
     width: 100%;
-    height: 650px;
+    height: 750px;
     object-fit: cover;
 }
 
@@ -41,34 +40,35 @@
 
 .content {
     width: 1200px;
-    height: 650px;
+    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     z-index: 6;
+    padding-bottom: 7rem;
 }
 
 .content p {
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .content h1 {
     color: #fff;
-    font-size: 55px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 1.4;
 }
 
 .content h2 {
     color: #fff;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 500;
     line-height: 1.4;
-    margin-top: 2rem;
+    margin-top: 1.3rem;
 }
 
 .progressbar {
@@ -172,19 +172,6 @@
     
     .s-background-2 img {
         object-position: right;
-    }
-    
-    .content P {
-        font-size: 16px;
-    }
-    
-    .content h1 {
-        font-size: 42px;
-    }
-
-    .content h2 {
-        font-size: 18px;
-        margin-top: 1.5rem;
     }
 }
 
