@@ -200,6 +200,7 @@
     .a1-right h1 {
         font-size: 22px;
         font-weight: 700;
+        text-align: center;
     }
 
     .a1-right h1 img {
@@ -221,7 +222,12 @@
     }
 
     .a1-right a {
+        float: right;
         font-size: 15px;
         margin-top: 2rem;
+    }
+
+    .a1-right a:hover {
+        gap: 5px;
     }
 }

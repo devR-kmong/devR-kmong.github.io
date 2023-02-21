@@ -225,7 +225,7 @@
 
     .p-image {
         width: 100%;
-        height: calc(520px - 10vh);
+        height: 520px;
         display: flex;
         justify-content: flex-end;
         z-index: 1;
@@ -248,6 +248,10 @@
     .promotion-wrapper {
         gap: 7rem;
     }
+
+    .p-text {
+        margin-top: 5rem;
+    }
     
     .p-text h1 {
         font-size: 45px;
@@ -262,5 +266,12 @@
         width: 220px;
         height: 55px;
         font-size: 18px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .p-image {
+        height: 250px;
     }
 }

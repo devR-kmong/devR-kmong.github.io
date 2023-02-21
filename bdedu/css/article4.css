@@ -198,3 +198,27 @@
         margin-top: 2rem;
     }
 }
+
+
+@media (max-width: 450px) {
+    .a4-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .a4-box {
+        padding: 25px;
+    }
+
+    .a4-box h1 {
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+
+    .a4-box h2 {
+        font-size: 20px;
+    }
+
+    .a4-box p {
+        margin-top: 1rem;
+    }
+}

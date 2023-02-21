@@ -114,7 +114,6 @@
     .a6-box {
         padding: 20px;
         font-size: 17px;
-        font-weight: 600;
         gap: 8px;
     }
 
@@ -124,5 +123,19 @@
 
     .a6-bottom {
         font-size: 15px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a6-box-wrapper {
+        gap: 10px;
+    }
+    
+    .a6-box {
+        padding: 10px;
+        font-size: 14px;
+        line-height: 1.2;
+        gap: 5px;
     }
 }
