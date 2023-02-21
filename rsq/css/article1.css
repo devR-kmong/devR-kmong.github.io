@@ -16,7 +16,7 @@
 .a1-box {
     position: relative;
     flex: 1;
-    height: 600px;
+    height: 550px;
     padding: 0 40px;
     display: flex;
     flex-direction: column;
