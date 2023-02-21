@@ -221,4 +221,16 @@
     .a4-box p {
         margin-top: 1rem;
     }
+    
+    .a4-bh {
+        padding: 30px 40px 30px 30px;
+    }
+    
+    .a4-bh h1 {
+        font-size: 17px;
+    }
+
+    .a4-bh ul li {
+        font-size: 13px;
+    }
 }
