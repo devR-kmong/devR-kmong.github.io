@@ -87,7 +87,7 @@ footer {
     letter-spacing: 0;
 }
 
-.footer-box-info:nth-child(3) .f-copyright {
+.footer-box-info:nth-child(2) .f-copyright {
     display: none;
 }
 
@@ -133,7 +133,7 @@ footer {
         display: none;
     }
     
-    .footer-box-info:nth-child(3) .f-copyright {
+    .footer-box-info:nth-child(2) .f-copyright {
         display: block;
     }
 }
