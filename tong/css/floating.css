@@ -1,0 +1,204 @@
+.floating {
+    position: relative;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #1e3d3b;
+    z-index: 98;
+}
+
+.topBtn {
+    position: absolute;
+    top: 50%; right: 200px;
+    transform: translate(0, -50%);
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+}
+
+.topBtn img {
+    height: 30px;
+}
+
+.floating-wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.floating-title {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.f-tel img {
+    height: 55px;
+    animation: updown 1s infinite ease-in-out;
+}
+
+@keyframes updown {
+    0% {transform:translateY(0);}
+    10% {transform:translateY(-3px);}
+    20% {transform:translateY(0);}
+    30% {transform:translateY(-3px);}
+    40% {transform:translateY(0);}
+    100% {transform:translateY(0);}
+}
+
+.ft-text p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 5px;
+}
+
+.ft-text a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'GMarketSans';
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+
+.f-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.f-form .inputbox2 {
+    color: #222;
+    width: 26%;
+    height: 40px;
+    padding: 0 19px;
+    font-size: 14px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+.f-form .inputbox2::placeholder {
+    color: #aaa;
+}
+
+.f-form .selectbox2 {
+    color: #aaa;
+    width: 26%;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.f-form .selectbox2:valid {
+    color: #222;
+}
+
+.f-form .selectbox2 option {
+    color: #444;
+}
+
+.f-form .f-submit2 {
+    color: #fff;
+    width: 22%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 19px;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.f-form .f-submit2:disabled {
+    color: #aaa;
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+
+.floatingForm .f-personal2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: .5rem;
+}
+
+.floatingForm .f-personal-text2 input {
+    display: none;
+}
+
+.floatingForm .f-personal-text2 label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.floatingForm .f-personal-text2 label em {
+    position: relative;
+    width: 14px;
+    min-width: 14px;
+    height: 14px;
+    min-height: 14px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.floatingForm .f-personal-text2 label em::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    display: none;
+}
+
+.floatingForm .f-personal-text2 label p {
+    color: #fff;
+    font-size: 12px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#cb2:checked ~ label em::after {
+    display: block;
+}
+
+.floatingForm .f-personalBtn2 {
+    color: #fff;
+    font-size: 12px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.floatingForm .f-personalBtn2:hover {
+    background-color: transparent;
+}
+
+
+/*==================================================*/
