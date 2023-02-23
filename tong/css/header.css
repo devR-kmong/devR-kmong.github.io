@@ -58,7 +58,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, .2);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
     z-index: 98;
 }
 
