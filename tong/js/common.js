@@ -16,7 +16,7 @@ $(function () {
     $(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 200) {
-                $('.floating').fadeIn(120);
+                $('.floating').fadeIn(120).css('display', 'flex');
             } else {
                 $('.floating').fadeOut(120);
             }
