@@ -255,6 +255,17 @@
 }
 
 
+@media (max-width: 1250px) {
+    .promotion {
+        background-position: right !important;
+    }
+    
+    .promotion-wrapper .form-wrapper {
+        display: none;
+    }
+}
+
+
 @media (max-width: 650px) {
     .form-wrapper {
         width: 100%;

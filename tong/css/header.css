@@ -109,10 +109,6 @@ nav ul li a.actives::after {
     box-shadow: none;
 }
 
-.Fixed2 {
-    color: #fff;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -146,6 +142,11 @@ nav ul li a.actives::after {
 
 /*==================================================*/
 @media (max-width: 1250px) {
+    .tb-contents {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
     nav {
         width: 100%;
         padding: 0 20px;
@@ -154,16 +155,37 @@ nav ul li a.actives::after {
 
 
 @media (max-width: 850px) {
-    header {
-        height: 75px;
+    .top-banner {
+        height: 40px;
+    }
+    
+    .tb-contents p {
+        font-size: 15px;
+    }
+    
+    .tb-closeBtn {
+        width: 15px;
+        min-width: 15px;
+        height: 15px;
+        min-height: 15px;
     }
 
-    .Fixed2 {
-        color: #fff;
+    .tb-closeBtn div {
+        width: 15px;
+    }
+    
+    header {
+        top: 40px;
+        height: 75px;
+        box-shadow: none;
     }
 
     .actives {
-        color: var(--main-color);
+        color: #fff;
+    }
+
+    nav ul li a.actives::after {
+        width: 0;
     }
 
     nav label {
@@ -184,11 +206,11 @@ nav ul li a.actives::after {
         padding-left: 50px;
         flex-direction: column;
         justify-content: center;
-        background-color: #111;
+        background-color: #1e3d3b;
         touch-action: none;
         transition: all .2s;
         z-index: 7;
-        gap: 2.2rem;
+        gap: 2.5rem;
     }
 
     nav ul li a {
@@ -255,17 +277,45 @@ nav ul li a.actives::after {
 
 
 @media (max-width: 550px) {
-    header {
-        height: 60px;
-    }
-
-    .Fixed {
-        height: 60px;
+    .top-banner {
+        height: 33px;
     }
     
-    .logo, .logo-w {
-        width: 50px;
-        padding-top: 4px;
+    .tb-contents p {
+        font-size: 13px;
+    }
+    
+    .tb-closeBtn {
+        width: 13px;
+        min-width: 13px;
+        height: 13px;
+        min-height: 13px;
+    }
+
+    .tb-closeBtn div {
+        width: 13px;
+    }
+    
+    header {
+        top: 33px;
+        height: 55px;
+    }
+    
+    .Fixed {
+        height: 55px;
+    }
+    
+    .logo {
+        gap: 4px;
+    }
+    
+    .logo img {
+        height: 20px;
+    }
+
+    .logo p {
+        font-size: 20px;
+        padding-top: 8px;
     }
     
     .bar1,
@@ -290,5 +340,24 @@ nav ul li a.actives::after {
     .change .bar3 {
         -webkit-transform: rotate(45deg) translate(-9px, -6px);
         transform: rotate(45deg) translate(-4px, -4px);
+    }
+}
+
+
+@media (max-width: 450px) {
+    .tb-contents p {
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .tb-contents {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tb-closeBtn {
+        display: none;
     }
 }

@@ -90,3 +90,24 @@ footer {
         display: none;
     }
 }
+
+
+@media (max-width: 550px) {
+    .fBtn {
+        font-size: 15px;
+    }
+    
+    .footer-notice p,
+    .footer-text p {
+        font-size: 12px;
+    }
+
+    .logo-f {
+        margin-bottom: .5rem;
+    }
+
+    .logo-f p {
+        font-size: 18px;
+        padding-top: 8px;
+    }
+}

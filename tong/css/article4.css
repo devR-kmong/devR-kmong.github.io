@@ -107,3 +107,108 @@
 
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .a4-title {
+        margin-bottom: 5rem;
+    }
+    
+    .a4-box-wrapper {
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .a4-box {
+        padding: 45px 10px;
+        gap: 2rem;
+    }
+
+    .a4-box:nth-child(1)::before,
+    .a4-box:nth-child(2)::before {
+        top: 7px;
+        height: 18px;
+        font-size: 11px;
+    }
+
+    .a4-box-title p {
+        font-size: 16px;
+        margin-bottom: .5rem;
+    }
+
+    .a4-box-title h1 {
+        font-size: 24px;
+    }
+
+    .a4-box-qual li {
+        font-size: 13px;
+    }
+    
+    .a4-box-image img {
+        height: 80px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a4-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a4-title {
+        margin-bottom: 3rem;
+    }
+    
+    .a4-title p {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .a4-title h1 {
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-title p {
+        font-size: 16px;
+        margin-bottom: .5rem;
+    }
+
+    .a4-title h1 {
+        font-size: 26px;
+    }
+
+    .a4-box {
+        padding: 35px 10px;
+        gap: 1.5rem;
+    }
+
+    .a4-box:nth-child(1)::before,
+    .a4-box:nth-child(2)::before {
+        top: 6px; right: -35px;
+        height: 16px;
+        font-size: 10px;
+    }
+
+    .a4-box-title p {
+        font-size: 13px;
+        margin-bottom: .3rem;
+    }
+
+    .a4-box-title h1 {
+        font-size: 20px;
+    }
+
+    .a4-box-qual li {
+        font-size: 11px;
+    }
+
+    .a4-box-image img {
+        height: 65px;
+    }
+}
