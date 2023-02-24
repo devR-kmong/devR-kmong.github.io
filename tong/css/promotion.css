@@ -72,15 +72,25 @@
         background: #36414d !important;
     }
 
+    .promotion::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #eee;
+    }
+
     .p-image {
         position: absolute;
-        bottom: -20px; right: -20px;
-        width: 450px;
+        bottom: -20px; right: 10px;
+        width: 60%;
         display: block;
+        z-index: 18;
     }
 
     .p-text {
-        z-index: 2;
+        z-index: 22;
     }
 
     .p-text h1 {
@@ -95,8 +105,8 @@
 
 @media (max-width: 550px) {
     .p-image {
-        bottom: 5px; right: -40px;
-        width: 330px;
+        bottom: 0;
+        width: 300px;
     }
     
     .p-text {
@@ -120,8 +130,12 @@
         height: 550px !important;
     }
 
+    .promotion::after {
+        height: 60px;
+    }
+
     .p-image {
-        width: 260px;
+        width: 240px;
     }
 
     .p-text p {
