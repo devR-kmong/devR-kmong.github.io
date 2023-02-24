@@ -61,8 +61,6 @@
 @media (max-width: 850px) {
     .promotion {
         position: relative;
-        background-color: var(--sub-color);
-        background-image: linear-gradient(to right, var(--main-color) 0%, var(--sub-color) 100%);
     }
 
     .promotion::after {
@@ -73,8 +71,6 @@
         height: 100vh;
         background: url(../images/hero-m.jpg);
         background-position: center;
-        mix-blend-mode: soft-light;
-        opacity: .8;
         z-index: 1;
     }
 
