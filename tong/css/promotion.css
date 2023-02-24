@@ -45,6 +45,9 @@
     letter-spacing: -0.02em;
 }
 
+.p-image {
+    display: none;
+}
 
 
 /*==================================================*/
@@ -66,23 +69,22 @@
 @media (max-width: 850px) {
     .promotion {
         position: relative;
+        background: #36414d !important;
     }
 
-    .promotion::after {
-        content: '';
+    .p-image {
         position: absolute;
-        top: 0; left: 0;
-        width: 100%;
-        height: 100%;
-        background: url(../images/hero-m.jpg) no-repeat;
-        background-size: cover;
-        background-position: center;
-        z-index: 1;
+        bottom: -20px; right: -20px;
+        width: 450px;
+        display: block;
     }
 
     .p-text {
-        margin-top: 4rem;
         z-index: 2;
+    }
+
+    .p-text h1 {
+        font-size: 62px;
     }
 
     .p-text p span {
@@ -92,6 +94,11 @@
 
 
 @media (max-width: 550px) {
+    .p-image {
+        bottom: 5px; right: -40px;
+        width: 330px;
+    }
+    
     .p-text {
         margin-bottom: 7rem;
     }
@@ -113,8 +120,8 @@
         height: 550px !important;
     }
 
-    .p-text {
-        margin-top: 2.5rem;
+    .p-image {
+        width: 260px;
     }
 
     .p-text p {
