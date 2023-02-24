@@ -9,6 +9,7 @@
     padding: 20px 0;
     background-color: #1e3d3b;
     z-index: 98;
+    display: none;
 }
 
 .topBtn {
