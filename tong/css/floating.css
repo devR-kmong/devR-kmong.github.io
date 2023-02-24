@@ -9,7 +9,6 @@
     padding: 20px 0;
     background-color: #1e3d3b;
     z-index: 98;
-    display: none !important;
 }
 
 .topBtn {
@@ -206,5 +205,20 @@
 @media (max-width: 1919px) {
     .topBtn {
         display: none;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .floating-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .floating {
+        display: none !important;
     }
 }
