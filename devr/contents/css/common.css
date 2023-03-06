@@ -42,7 +42,7 @@ li {
 
 ::selection {
     color: #fff;
-    background-color: var(--main-color);
+    background-color: var(--sub-color);
 }
 
 
