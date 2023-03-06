@@ -1,0 +1,40 @@
+.a4-wrapper {
+    width: 100%;
+}
+
+.a4-bottom {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .03);
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.a4-bottom i {
+    color: #222;
+    font-size: 30px;
+    transition: all .3s;
+}
+
+.a4-bottom:hover i {
+    transform: rotate(180deg);
+}
+
+
+/*==================================================*/
+@media (max-width: 450px) {
+    .a4-bottom {
+        width: 55px;
+        height: 55px;
+        margin-top: .7rem;
+    }
+
+    .a4-bottom i {
+        font-size: 26px;
+    }
+}
