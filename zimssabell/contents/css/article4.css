@@ -1,0 +1,27 @@
+.a4-title {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.a4-text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/*==================================================*/
+@media (max-width: 450px) {
+    .article4 {
+        padding: 40px 0;
+    }
+    
+    .a4-title {
+        width: 85px;
+    }
+
+    .a4-text {
+        font-size: 16px;
+    }
+}

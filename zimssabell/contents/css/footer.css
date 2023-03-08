@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 20px;
+}
+
+.footer-wrapper {
+    width: 100%;
+}
+
+.logo-f {
+    width: 58px;
+    margin-bottom: 1rem;
+}
+
+.f-text p {
+    color: #242c3c;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+}
+
+.f-copyright {
+    color: #242c3c;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 450px) {
+    .logo-f {
+        width: 45px;
+    }
+    
+    .f-text p,
+    .f-copyright {
+        font-size: 12px;
+    }
+}

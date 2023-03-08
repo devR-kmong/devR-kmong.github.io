@@ -1,0 +1,57 @@
+.article5 {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.a5-title {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.a5-siru {
+    width: 110%;
+    max-width: 110%;
+}
+
+.a5-info {
+    width: 70%;
+    margin-top: 4rem;
+}
+
+.a5-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5rem;
+    padding-left: 15px;
+}
+
+.a5-text li {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    list-style: disc;
+}
+
+.a5-text li span {
+    font-size: 15px;
+}
+
+
+/*==================================================*/
+@media (max-width: 450px) {
+    .a5-text {
+        margin-top: 3rem;
+    }
+    
+    .a5-text li {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .a5-text {
+        width: 85%;
+    }
+}

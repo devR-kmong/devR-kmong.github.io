@@ -1,0 +1,41 @@
+.article7 {
+    padding: 30px;
+    background-color: #242c3c;
+}
+
+.a7-notice {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 20px;
+}
+
+.a7-notice li {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    list-style: square;
+}
+
+.a7-notice li span {
+    color: #a6ff00;
+    font-weight: 700;
+}
+
+
+/*==================================================*/
+@media (max-width: 450px) {
+    .article7 {
+        padding: 30px 20px;
+    }
+
+    .a7-notice {
+        padding-left: 15px;
+    }
+
+    .a7-notice li {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,171 @@
+.url-popup-wrapper {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+    z-index: 9999;
+}
+
+.url-popup {
+    position: relative;
+    padding: 30px 130px;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.url-closeBtn {
+    position: absolute;
+    top: 15px; right: 15px;
+    width: 15px;
+    max-width: 15px;
+    cursor: pointer;
+}
+
+.url-popup i {
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.url-popup p {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: .5rem;
+}
+
+
+
+.floating {
+    position: fixed;
+    bottom: 40px; right: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    transition: bottom .3s;
+    display: none;
+    z-index: 999;
+}
+
+.floatBtn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.goBtn {
+    background-color: var(--main-color);
+}
+
+.goBtn img {
+    width: 40px;
+    max-width: 40px;
+}
+
+.urlBtn {
+    background-color: #a6ff00;
+}
+
+.urlBtn i {
+    color: #344612;
+    font-size: 30px;
+}
+
+.kakaoBtn {
+    background-color: #ffe100;
+}
+
+.kakaoBtn i {
+    color: #411515;
+    font-size: 36px;
+}
+
+.topBtn {
+    background-color: #ff75ff;
+}
+
+.topBtn i {
+    color: #fff;
+    font-size: 27px;
+}
+
+
+
+/*==================================================*/
+@media (min-width: 2560px) {
+    .floating {
+        right: 850px;
+    }
+}
+
+
+@media (max-width: 1919px) {
+    .floating {
+        right: 20px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .floating {
+        position: fixed;
+        bottom: 20px; right: 20px; left: unset;
+        flex-direction: column;
+        transform: none;
+        gap: .5rem;
+    }
+    
+    .floatBtn {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .goBtn img {
+        width: 30px;
+        max-width: 30px;
+    }
+
+    .urlBtn i {
+        font-size: 20px;
+    }
+
+    .kakaoBtn i {
+        font-size: 30px;
+    }
+
+    .topBtn i {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .url-popup {
+        padding: 18px 80px;
+    }
+
+    .url-closeBtn {
+        top: 8px; right: 8px;
+        width: 13px;
+    }
+
+    .url-popup i {
+        font-size: 30px;
+    }
+
+    .url-popup p {
+        font-size: 14px;
+        margin-top: .3rem;
+    }
+}

@@ -1,0 +1,23 @@
+.article1 {
+    background-color: #041071
+}
+
+.a1-text {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.45;
+    text-align: center;
+}
+
+
+/*==================================================*/
+@media (max-width: 450px) {
+    .article1 {
+        padding: 40px 0;
+    }
+    
+    .a1-text {
+        font-size: 22px;
+    }
+}
