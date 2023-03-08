@@ -1,6 +1,14 @@
 .article5 {
+    position: relative;
     padding: 60px 0;
     background-color: #f4f4f4;
+}
+
+.confetti {
+    position: absolute;
+    width: fit-content;
+    height: 50%;
+    top: 120px;
 }
 
 .a5-title {
