@@ -84,11 +84,11 @@
             <section class="article promotion">
                 <div class="promotion-wrapper">
                     <img src="contents/images/p-twinkle.svg" class="p-twinkle">
-                    <img src="contents/images/p-beam1.svg" class="p-beam1">
-                    <img src="contents/images/p-beam2.svg" class="p-beam2">
-                    <img src="contents/images/p-subtitle.svg" class="p-subtitle">
-                    <img src="contents/images/p-title.svg" class="p-title">
-                    <img src="contents/images/p-siru.svg" class="p-siru">
+                    <img src="contents/images/p-beam1.svg" class="p-beam1 animate flash animated">
+                    <img src="contents/images/p-beam2.svg" class="p-beam2 animate flash fast animated">
+                    <img src="contents/images/p-subtitle.svg" class="p-subtitle animate fadeInDown animated">
+                    <img src="contents/images/p-title.svg" class="p-title animate zoomInUp fast animated">
+                    <img src="contents/images/p-siru.svg" class="p-siru animate fadeInLeft faster animated">
                 </div>
             </section>
             <section class="article article1">
@@ -102,7 +102,7 @@
             <section class="article article2" id="schedule">
                 <div class="article-wrapper">
                     <div class="a2-title">
-                        <h1>
+                        <h1 class="wow animate bounceIn fast animated">
                             짐싸 파트너님!<br/>
                             가족의 목소리를 들려주세요
                         </h1>
@@ -136,7 +136,7 @@
                             <div class="a3-box-num">
                                 1
                             </div>
-                            <h1>
+                            <h1 class="wow animate bounceInLeft fast animated">
                                 녹음하기
                             </h1>
                             <p>
@@ -154,7 +154,7 @@
                             <div class="a3-box-num">
                                 2
                             </div>
-                            <h1>
+                            <h1 class="wow animate bounceInLeft fast animated">
                                 파일 첨부
                             </h1>
                             <p>
@@ -166,7 +166,7 @@
                             <div class="a3-box-num">
                                 3
                             </div>
-                            <h1>
+                            <h1 class="wow animate bounceInLeft fast animated">
                                 정보 입력
                             </h1>
                             <p>
@@ -179,7 +179,7 @@
             </section>
             <section class="article article4">
                 <div class="article-wrapper">
-                    <img src="contents/images/a4-title.svg" class="a4-title">
+                    <img src="contents/images/a4-title.svg" class="a4-title wow animate bounceIn fast animated">
                     <p class="a4-text">
                         톡톡 튀는 개성있는 목소리가 좋아요.<br/>
                         목소리가 잘 들리도록 조용한 곳에서 녹음해주세요.
@@ -188,9 +188,10 @@
             </section>
             <section class="article article5" id="award">
                 <div class="article-wrapper">
-                    <img src="contents/images/a5-title.svg" class="a5-title">
+                    <img src="contents/images/a5-title.svg" class="a5-title wow animate rubberBand fast animated">
                     <img src="contents/images/a5-siru.svg" class="a5-siru">
-                    <img src="contents/images/a5-info.svg" class="a5-info">
+                    <img src="contents/images/a5-info.svg" class="a5-info wow animate bounceIn fast animated">
+                    <canvas class="confetti" id="canvas"></canvas>
                     <ul class="a5-text">
                         <li>
                             우승작들은 짐싸 사내 투표를 통해 선정됩니다.
@@ -249,5 +250,6 @@
     </div>
 
     <script src="contents/js/common.js"></script>
+    <script src="contents/js/confetti.js"></script>
 </body>
 </html>
