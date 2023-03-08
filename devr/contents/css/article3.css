@@ -197,12 +197,19 @@
 
 .a3-glow {
     position: absolute;
-    bottom: -500px;
+    bottom: -450px;
     opacity: .7;
 }
 
 
 /*==================================================*/
+@media (max-width: 1700px) {
+    .a3-glow {
+        min-width: 1665px;
+    }
+}
+
+
 @media (max-width: 1250px) {
     .a3-big {
         font-size: 240px;
@@ -373,5 +380,10 @@
     
     .a3-notice p {
         font-size: 13px;
+    }
+
+    .a3-glow {
+        bottom: -220px;
+        min-width: 1000px;
     }
 }
