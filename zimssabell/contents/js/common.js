@@ -1,7 +1,7 @@
 new WOW({
     boxClass:     'wow',
     animateClass: 'animated',
-    offset:       300,
+    offset:       200,
     mobile:       true,
     live:         true
 }).init();
@@ -31,9 +31,9 @@ $(function () {
     $(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() >= 100) {
-                $('.floating').fadeIn().css('display', 'flex');
+                $('.floating').fadeIn(100).css('display', 'flex');
             } else {
-                $('.floating').fadeOut();
+                $('.floating').fadeOut(100);
             }
         });
     });
