@@ -1,0 +1,109 @@
+.header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s ease;
+    z-index: 97;
+}
+
+.Fixed {
+    position: fixed;
+    top: 0; left: 0;
+    height: 80px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.logo {
+    width: 96px;
+    padding-top: 4px;
+    z-index: 98;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.menuBtns {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    cursor: pointer;
+    z-index: 98;
+}
+
+.menuBtns .bar {
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    transition: all .3s ease;
+}
+
+.menuBtns .bar1 {
+    position: absolute;
+}
+
+.menuBtns .bar2 {
+    position: absolute;
+    top: 4px;
+    width: 0;
+    transition: width .3s ease;
+}
+.menuBtns .bar3 {
+    position: absolute;
+    width: 20px;
+    transition-delay: .1s;
+}
+.menuBtns .bar4 {
+    position: absolute;
+    bottom: 4px;
+    width: 0;
+    transition: width .3s ease;
+    transition-delay: .2s;
+}
+
+.lang {
+    display: flex;
+    gap: 2rem;
+    z-index: 98;
+}
+
+.lang a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header:hover .bar2 {
+    width: 26px;
+}
+.header:hover .bar4 {
+    width: 28px;
+}
+
+.menuBtns .bar1.change {
+    transform: rotate(45deg);
+}
+.menuBtns .bar2.change,
+.menuBtns .bar4.change {
+    opacity: 0;
+    visibility: hidden;
+}
+.menuBtns .bar3.change {
+    transform: rotate(-45deg);
+    width: 32px;
+}
+
+
+/*==================================================*/
