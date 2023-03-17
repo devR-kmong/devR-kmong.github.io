@@ -1,0 +1,89 @@
+.promotion {
+    background: url(../images/location-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+#map {
+    width: 100%;
+    height: 500px;
+    background: url(../images/map.png) no-repeat;
+    background-size: cover;
+}
+
+.l-wrapper {
+    width: 100%;
+    padding: 32px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.l-left,
+.l-right {
+    color: #222;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.l-right i {
+    font-size: 26px;
+}
+
+.l-trans {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.l-transbox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.transIco {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #f2f2f2;
+}
+
+.transIco i {
+    color: #222;
+    font-size: 35px;
+}
+
+.transText h1 {
+    color: #222;
+    font-size: 20px;
+}
+
+.transText p {
+    color: #222;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.transText p span {
+    color: #fff;
+    padding: 3px 6px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #3495df;
+}
+
+
+/*==================================================*/
