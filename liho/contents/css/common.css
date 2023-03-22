@@ -34,13 +34,7 @@ li {
 }
 
 :root {
-    --main-color: #f5821f;
-    --sub-color: #53c5d0;
-}
-
-::selection {
-    color: #fff;
-    background-color: var(--main-color);
+    --main-color: #1f4477;
 }
 
 

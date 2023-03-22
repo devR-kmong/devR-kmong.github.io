@@ -24,6 +24,20 @@
     z-index: 98;
 }
 
+
+.gnb {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.gnb li a {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
 .menu {
     display: flex;
     align-items: center;

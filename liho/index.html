@@ -15,20 +15,29 @@
     <link rel="stylesheet" href="contents/css/main.css">
     <link rel="stylesheet" href="contents/css/header.css">
     <link rel="stylesheet" href="contents/css/toggleMenu.css">
+    <link rel="stylesheet" href="contents/css/footer.css">
     <link rel="stylesheet" href="contents/css/aos.css">
     <link rel="shortcut icon" href="contents/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="contents/js/header.fixed.js"></script>
     <script src="contents/js/aos.js"></script>
-    <title>리호 인터내셔널</title>
+    <title>리호인터내셔날</title>
 </head>
 <body>
     <div class="header">
-        <a href="/" class="logo">
+        <a href="<?php echo G5_URL?>" class="logo">
             <img src="contents/images/logo-w.svg">
         </a>
+        <ul class="gnb">
+            <li><a href="">회사소개</a></li>
+            <li><a href="">해외수출</a></li>
+            <li><a href="">국내수입</a></li>
+            <li><a href="">호텔관광</a></li>
+            <li><a href="">고객센터</a></li>
+        </ul>
         <div class="menu">
             <div class="lang">
                 <a href="">KR</a>
@@ -49,22 +58,21 @@
                             <ul class="tm-left-sub">
                                 <li><a href="">회사개요</a></li>
                                 <li><a href="">회사연혁</a></li>
-                                <li><a href="">글로벌 네트워크</a></li>
+                                <li><a href="">글로벌네트워크</a></li>
                             </ul>
                         </li>
                         <li class="tm-left-item">
                             <div class="tm-l-head">사업분야<i class="ri-arrow-down-s-line"></i></div>
                             <ul class="tm-left-sub">
-                                <li><a href="">국내 마케팅</a></li>
-                                <li><a href="">해외 마케팅</a></li>
-                                <li><a href="">크로스보더</a></li>
-                                <li><a href="">호텔 · 관광</a></li>
+                                <li><a href="">해외수출</a></li>
+                                <li><a href="">국내수입</a></li>
+                                <li><a href="">호텔관광</a></li>
                             </ul>
                         </li>
                         <li class="tm-left-item">
                             <div class="tm-l-head">고객센터<i class="ri-arrow-down-s-line"></i></div>
                             <ul class="tm-left-sub">
-                                <li><a href="">오시는 길</a></li>
+                                <li><a href="">오시는길</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -96,71 +104,65 @@
             </div>
         </div>
     </div>
+    <div class="background">
+        <img src="contents/images/hero.jpg">
+    </div>
     <div class="main">
         <div class="main-wrapper">
-            <a href="" class="main-box">
-                <div class="mb-line">
-                    <div class="mb-plus"></div>
-                </div>
-                <h2>
-                    Domestic Marketing
-                </h2>
+            <div class="m-text">
                 <h1>
-                    국내 마케팅
+                    We Never Stop
                 </h1>
                 <p>
-                    해외 시장의 전문화된 인력이<br/>
-                    경쟁력 있는 해외 제품을 소싱합니다.
+                    국내 본사를 기점으로 대만, 일본 등 각 지역 지사의 전문가들을 통해<br/>
+                    무역 전문 기업으로 자리잡고 있으며, 전통적인 무역 방식에서 벗어나<br/>
+                    호텔과 관광사업, 크로스보더 사업 등 끊임없이 도전하고 있습니다.
                 </p>
-            </a>
-            <div class="mb-vertical"></div>
-            <a href="" class="main-box">
-                <div class="mb-line">
-                    <div class="mb-plus"></div>
+            </div>
+            <div class="m-box-wrapper">
+                <a href="" class="m-box">
+                    <img src="contents/images/m-1.svg">
+                    <p>
+                        해외수출
+                    </p>
+                </a>
+                <a href="" class="m-box">
+                    <img src="contents/images/m-2.svg">
+                    <p>
+                        국내수입
+                    </p>
+                </a>
+                <a href="" class="m-box">
+                    <img src="contents/images/m-3.svg">
+                    <p>
+                        관광사업
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="f-left">
+                <a href="<?php echo G5_URL?>">
+                    <img src="contents/images/logo.svg" class="logo-f">
+                </a>
+                <div class="f-text">
+                    <ul class="fBtn-wrapper">
+                        <li class="fBtn">개인정보처리방침</li>
+                        <li class="fBtn">이용약관</li>
+                    </ul>
+                    <p>
+                        리호인터내셔날㈜<span> | </span>인천광역시 연수구 송도미래로30, A동 306호 (송도 스마트밸리)<br/>
+                        대표이사: 이형석<span> | </span>대표번호: 032-818-1688<span> | </span>사업자등록번호: 632-88-01503
+                    </p>
                 </div>
-                <h2>
-                    Overseas Marketing
-                </h2>
-                <h1>
-                    해외 마케팅
-                </h1>
-                <p>
-                    글로벌 시장에서 파트너사의 브랜드가 온·오프라인 마켓에서<br/>
-                    안착할 수 있도록 최고의 솔루션을 제공합니다.
-                </p>
-            </a>
-            <div class="mb-vertical"></div>
-            <a href="" class="main-box">
-                <div class="mb-line">
-                    <div class="mb-plus"></div>
-                </div>
-                <h2>
-                    Crossboarder
-                </h2>
-                <h1>
-                    크로스보더
-                </h1>
-                <p>
-                    온라인 플랫폼과 글로벌 물류 체인으로<br/>
-                    비관세장벽을 회피하여 해외로 진출합니다.
-                </p>
-            </a>
-            <div class="mb-vertical"></div>
-            <a href="" class="main-box">
-                <div class="mb-line">
-                    <div class="mb-plus"></div>
-                </div>
-                <h2>
-                    Hotel & Tour
-                </h2>
-                <h1>
-                    호텔 · 관광
-                </h1>
-                <p>
-                    유형 상품 소싱 뿐만 아니라 관광 상품 개발까지<br/>
-                    혁신적이고 도전적으로 사업을 확장하고 있습니다.
-                </p>
-            </a>
+            </div>
+            <div class="f-right">
+                <img src="contents/images/f-1.png">
+                <img src="contents/images/f-2.png">
+                <img src="contents/images/f-3.png">
+            </div>
         </div>
     </div>
 

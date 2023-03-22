@@ -1,168 +1,97 @@
+.background {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    animation: reduction 20s both;
+}
+
+
+@keyframes reduction {
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 .main {
     width: 100%;
-    height: 100vh !important;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #fff;
     transition: all .3s;
 }
 
 .main-wrapper {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    background-color: #111;
+    width: 1400px;
 }
 
-.main-box {
-    position: relative;
-    flex: 1;
-    padding: 0 40px;
+.m-text {
+    color: #fff;
+    padding-left: 24px;
+    margin-top: 3rem;
+}
+
+.m-text h1 {
+    font-size: 65px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+}
+
+.m-text p {
+    font-size: 20px;
+    line-height: 1.65;
+    margin-top: .5rem;
+}
+
+
+.m-box-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.m-box {
+    padding: 10px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: flex .6s ease;
-    -webkit-filter: grayscale(.5);
-    filter: grayscale(.5);
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    transition: background-color .3s ease;
 }
 
-.main-box::after {
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    transition: all 1s ease;
+.m-box:hover {
+    background-color: rgba(255, 255, 255, .1);
 }
 
-.main-box:hover {
-    flex: 2;
-    cursor: url('../images/cursor.png'), auto;
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
+.m-box img {
+    width: 60px;
+    -webkit-filter: invert(99%) sepia(0%) saturate(4%) hue-rotate(130deg) brightness(101%) contrast(101%);
+    filter: invert(99%) sepia(0%) saturate(4%) hue-rotate(130deg) brightness(101%) contrast(101%);
 }
 
-.main-box:active {
-    cursor: url('../images/cursor.png'), auto;
-}
-
-.main-box:hover::after {
-    background-color: rgba(0, 0, 0, .2);
-}
-
-.main-box:nth-child(1) {
-    background: url(../images/p1.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.main-box:nth-child(3) {
-    background: url(../images/p2.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.main-box:nth-child(5) {
-    background: url(../images/p3.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.main-box:nth-child(7) {
-    background: url(../images/p4.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-.mb-vertical {
-    width: 1px;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, .15);
-}
-
-.mb-line {
-    position: relative;
-    width: 50px;
-    height: 1px;
-    background-color: #fff;
-    transition: all .3s ease;
-}
-
-.mb-plus {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1px;
-    height: 20px;
-    background-color: #fff;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .3s ease;
-}
-
-.main-box h2 {
+.m-box p {
     color: #fff;
     font-size: 17px;
     font-weight: 500;
-    font-family: 'Play';
-    margin-bottom: 1rem;
-    letter-spacing: 0;
-    padding-top: 60px;
-    transition: all .3s ease;
-    z-index: 10;
 }
-
-.main-box h1 {
-    color: #fff;
-    font-size: 58px;
-    transition: all .3s ease;
-    z-index: 10;
-}
-
-.main-box p {
-    color: #fff;
-    height: 100px;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 1.7;
-    margin-top: 1.5rem;
-    padding-top: 30px;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 10;
-}
-
-.main-box:hover p {
-    padding-top: 0;
-    opacity: 1;
-    visibility: visible;
-    transition: all 1s ease;
-    transition-delay: .2s;
-}
-
-.main-box:hover h1 {
-    font-size: 50px;
-    transition: all .6s ease;
-}
-
-.main-box:hover h2 {
-    color: var(--main-color);
-    padding-top: 0;
-    transition: all 1s ease;
-}
-
-.main-box:hover .mb-line {
-    width: 20px;
-    margin-bottom: 60px;
-    transition: all 1s ease;
-}
-
-.main-box:hover .mb-line .mb-plus {
-    opacity: 1;
-    visibility: visible;
-    transition: all 1s ease;
-}
-
 
 
 /*==================================================*/
