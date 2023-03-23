@@ -4,6 +4,13 @@
 }
 
 
+.history {
+    background-color: #fff;
+    background: url(../images/his-bg.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .h-wrapper {
     position: relative;
     width: 100%;
