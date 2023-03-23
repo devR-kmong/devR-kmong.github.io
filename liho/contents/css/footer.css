@@ -129,4 +129,16 @@
     .footer {
         overflow: hidden;
     }
+
+    .fBtn-wrapper .fBtn {
+        font-size: 14px;
+    }
+
+    .f-text p {
+        font-size: 13px;
+    }
+
+    .f-right {
+        gap: 1rem;
+    }
 }

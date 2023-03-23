@@ -142,6 +142,10 @@
 
 
 @media (max-width: 550px) {
+    .main-wrapper {
+        margin-bottom: 7rem;
+    }
+    
     .m-text p br {
         display: none;
     }
@@ -176,5 +180,13 @@
 
     .m-text p {
         font-size: 15px;
+    }
+
+    .m-box img {
+        width: 35px;
+    }
+
+    .m-box p {
+        font-size: 14px;
     }
 }
