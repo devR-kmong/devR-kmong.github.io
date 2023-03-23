@@ -39,7 +39,7 @@ $('.toggle-menu').on('scroll touchmove mousewheel', function (event) {
 })
 
 
-if (window.innerWidth <= 950) {
+if (window.innerWidth <= 1050) {
     var tmh = $('.tm-l-head');
     $('.tm-left-sub').hide();
 

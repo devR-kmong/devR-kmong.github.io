@@ -34,7 +34,7 @@
 
 .tm-info {
     position: absolute;
-    bottom: -60px; right: 40px;
+    bottom: 60px; right: 40px;
     transition: all .6s ease;
     transition-delay: 1s;
     opacity: 0;
@@ -171,43 +171,18 @@
 }
 
 
-@media (max-width: 950px) {
-    .toggle-menu {
-        justify-content: unset;
-        align-items: unset;
-    }
-    
-    .tm-header {
-        height: 70px;
-    }
 
-    .tm-closeBtn {
-        width: 20px;
-        height: 20px;
-    }
-
-    .tm-closeBar {
-        width: 20px;
-    }
-
+@media (max-width: 1050px) {
     .tm-contents {
         flex-direction: column-reverse;
         gap: 3rem;
-        margin-top: 150px;
-    }
-
-    .tm-h-right {
-        gap: 1.5rem;
-    }
-
-    .tm-logo {
-        width: 125px;
-        max-width: 125px;
+        padding-left: 40px;
+        margin-bottom: 6rem;
     }
 
     .tm-left {
         width: 100%;
-        gap: 2rem;
+        gap: 3rem;
     }
     
     .tm-left li {
@@ -216,140 +191,44 @@
         gap: 1.5rem;
     }
 
-    .tm-left li a {
-        font-size: 22px;
-    }
-
-    .tm-left li a i {
-        display: flex;
-        font-size: 20px;
-        transition: all .2s ease;
-    }
-
     .tm-left li a:hover::after {
         width: 0;
     }
 
-    .tm-left-sub {
-        padding-left: 12px;
-        flex-direction: column;
-        align-items: unset;
-        gap: 1rem;
+    .tm-left .tm-l-head {
+        width: fit-content;
+        font-size: 32px;
+        cursor: pointer;
     }
 
-    .tm-left-sub li a {
-        font-size: 16px;
+    .tm-left .tm-l-head i {
+        display: flex;
     }
-    
-    .tm-right {
-        width: 100%;
+
+    .tm-left-sub {
+        padding-left: 6px;
+        flex-direction: column;
+        align-items: unset;
+        gap: 1.3rem;
     }
-    
-    .tm-r-top,
-    .tm-c-right {
+
+
+    .tm-vertical {
         display: none;
     }
 
-    .tm-mobile {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+    .tm-info {
+        display: none;
     }
 
-    .tm-m-title h1 {
-        font-size: 22px;
-        font-weight: 600;
-    }
-
-    .tm-m-title p {
-        font-size: 16px;
-        line-height: 1.5;
-        font-weight: 400;
-        margin-top: .5rem;
-    }
-
-    .tm-m-box-wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 12px;
-        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .1);
-        overflow: hidden;
-    }
-
-    .tm-m-box {
-        flex: 1;
-        padding: 20px;
-        font-size: 14px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 7px;
-        background-color: rgba(255, 255, 255, .1);
-    }
-
-    .tm-m-box:hover {
-        background-color: rgba(255, 255, 255, .15);
-    }
-
-    .tm-m-vertical {
-        width: 1px;
-        height: fit-content;
-    }
-}
-
-
-@media (max-width: 550px) {
-    .tm-header {
-        top: 30px;
-        height: 60px;
-    }
-
-    .tm-logo {
-        width: 100px;
-        max-width: 100px;
-    }
-
-    .tm-h-right {
-        gap: 1.2rem;
-    }
-
-    .tm-closeBtn {
-        width: 16px;
-        height: 16px;
-    }
-
-    .tm-closeBar {
-        width: 16px;
+    .i-rotate {
+        transform: rotate(180deg);
     }
 }
 
 
 @media (max-width: 450px) {
-    .tm-contents {
-        margin-top: 120px;
-    }
-    
-    .tm-m-box {
-        padding: 15px;
-    }
-    
-    .tm-left li a {
-        font-size: 18px;
-    }
-
-    .tm-left li a i {
-        font-size: 16px;
-    }
-
-    .tm-left-sub {
-        padding-left: 8px;
-    }
-    
-    .tm-left-sub li a {
-        font-size: 14px;
+    .tm-left .tm-l-head {
+        font-size: 26px;
     }
 }
