@@ -85,7 +85,7 @@
     padding: 0 19px;
     border: none;
     outline: none;
-    background-color: var(--main-color);
+    background-color: var(--sub-color);
     cursor: pointer;
 }
 
