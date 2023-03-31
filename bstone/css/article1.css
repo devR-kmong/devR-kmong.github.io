@@ -129,6 +129,10 @@
         margin-top: 4rem;
     }
 
+    .a1-box:hover .a1-box-image {
+        filter: grayscale(1);
+    }
+
     .a1-box-text {
         padding: 20px;
     }
