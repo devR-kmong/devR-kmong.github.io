@@ -1,0 +1,58 @@
+.article5 {
+    height: 100vh;
+    background-color: #151515;
+    background: url(../images/a5-bg.jpg) no-repeat;
+    background-attachment: fixed;
+}
+
+.article5 .article-title p {
+    width: 400px;
+}
+
+.a5-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*==================================================*/
+@media (max-height: 1079px) {
+    .article5 {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .article5 {
+        height: auto;
+        background-attachment: unset;
+    }
+    
+    .a5-wrapper {
+        flex-direction: column;
+        justify-content: unset;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article5 {
+        padding-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article5 .article-title {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .article5 .article-title p {
+        width: 100%;
+    }
+}

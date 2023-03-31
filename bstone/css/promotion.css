@@ -1,0 +1,130 @@
+.promotion {
+    width: 100%;
+    height: 100vh !important;
+    background: url(../images/hero.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.promotion-wrapper {
+    width: 1200px;
+}
+
+.p-text h1 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.p-text h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-top: 1.2rem;
+}
+
+.pBtn {
+    outline: none;
+    border: none;
+    padding: 18px 75px;
+    background-color: rgba(255, 255, 255, .03);
+    border: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .1);
+    transition: all .3s ease;
+    margin-top: 3.5rem;
+    cursor: pointer;
+}
+
+.pBtn p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.pBtn:hover {
+    background-color: rgba(255, 255, 255, .15);
+}
+
+.scrollDown {
+    position: absolute;
+    bottom: 40px;
+    width: 20px;
+    transform: translate(-50%, -50%);
+    -webkit-animation: upDown 1.5s ease-in-out infinite;
+    animation: upDown 1.5s ease-in-out infinite;
+}
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-7px);
+	}
+	50% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform:  translateY(-7px);
+	}
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .promotion {
+        background-attachment: unset;
+    }
+    
+    .p-text h1 {
+        font-size: 38px;
+    }
+
+    .p-text h5 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .pBtn {
+        padding: 16px 72px;
+    }
+
+    .pBtn p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .p-text h1 {
+        font-size: 32px;
+    }
+    
+    .p-text h5 {
+        font-size: 15px;
+    }
+    
+    .p-text h5 br {
+        display: none;
+    }
+
+    .pBtn {
+        padding: 15px 66px;
+        margin-top: 3rem;
+    }
+
+    .pBtn p {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,129 @@
+.article {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    padding: 120px 0;
+}
+
+.article-wrapper {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-title {
+    margin-bottom: 3rem;
+}
+
+.article-title h2 {
+    color: #222;
+    font-size: 20px;
+    font-family: 'Play';
+    margin-bottom: 1.5rem;
+}
+
+.article-title h1 {
+    color: #222;
+    font-size: 45px;
+    line-height: 1.3;
+}
+
+.article-title p {
+    color: #222;
+    font-size: 18px;
+    line-height: 1.75;
+    margin-top: 1.5rem;
+}
+
+.at-vertical {
+    width: 1px;
+    height: 50px;
+    background-color: #222;
+    margin: 3rem 0;
+}
+
+.article-title a {
+    width: fit-content;
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all .3s ease;
+}
+
+.article-title a:hover {
+    gap: 12px;
+}
+
+.article-title.dark h2,
+.article-title.dark h1,
+.article-title.dark p,
+.article-title.dark a {
+    color: #fff;
+}
+
+.article-title.dark .at-vertical {
+    background-color: #fff;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .article-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article {
+        padding: 60px 0;
+    }
+
+    .article-title h2 {
+        font-size: 18px;
+    }
+
+    .article-title h1 {
+        font-size: 35px;
+    }
+
+    .article-title p {
+        font-size: 15px;
+    }
+
+    .at-vertical {
+        height: 35px;
+        margin: 2rem 0;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .article-title h2 {
+        font-size: 15px;
+    }
+
+    .article-title h1 {
+        font-size: 32px;
+    }
+
+    .article-title p {
+        font-size: 13px;
+    }
+
+    .article-title a {
+        font-size: 15px;
+    }
+}
