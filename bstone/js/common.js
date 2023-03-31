@@ -1,5 +1,9 @@
 AOS.init({
-    once: true
+    once: true,
+    offset: 120,
+    delay: 200,
+    duration: 1500,
+    easing: 'ease'
 });
 
 
@@ -30,7 +34,7 @@ $(window).on('scroll', function () {
 
 
 $(function () {
-    $('.logo, nav ul li a, .p-text a, .article-title a, .fBtn a').click(function (e) {
+    $('.logo, nav ul li a, .p-text a, .article-title a, .logo-f, .fBtn a').click(function (e) {
         $.scrollTo(this.hash || 0, 500);
         e.preventDefault();
     });
