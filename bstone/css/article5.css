@@ -10,9 +10,16 @@
 }
 
 .a5-wrapper {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.thankyou_message {
+    position: absolute;
+    bottom: 0; right: 0;
+    opacity: 0;
 }
 
 
