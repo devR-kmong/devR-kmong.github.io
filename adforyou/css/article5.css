@@ -1,0 +1,120 @@
+.article5 {
+    background: url(../images/a5-bg.jpg) no-repeat;
+}
+
+.a5-title {
+    width: 100%;
+    color: #222;
+    font-size: 36px;
+    line-height: 1.5;
+    margin-bottom: 5rem;
+}
+
+.a5-title span {
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+.a5-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a5-left {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.a5-left li {
+    width: 100%;
+    padding: 25px 20px;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.a5-left li:hover {
+    background-color: #f2f2f2;
+}
+
+.a5-left li.on {
+    color: #fff;
+    font-weight: 700;
+    background-color: var(--main-color);
+}
+
+
+.a5-right {
+    width: 100%;
+}
+
+.a5-box {
+    display: none;
+}
+
+.a5-box.on {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.a5-box-num {
+    position: absolute;
+    top: 30%; right: 40px;
+    transform: translate(0, -50%);
+    color: #fff;
+    font-size: 180px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    text-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    letter-spacing: -0.02em;
+    opacity: .1;
+    z-index: 1;
+}
+
+.a5-box-image {
+    height: 425px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    transition: transform .3s ease;
+    z-index: 2;
+}
+
+.a5-box-image:hover {
+    transform: scale(1.05);
+}
+
+.a5-box-text {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+}
+
+.a5-box-text h5 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.a5-box-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+    margin-top: 12px;
+}
+
+.a5-box-text ul li {
+    color: #fff;
+    font-size: 20px;
+    list-style: disc;
+    margin-top: 12px;
+}
+
+
+/*==================================================*/

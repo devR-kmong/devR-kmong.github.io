@@ -1,0 +1,71 @@
+.navigation {
+    position: fixed;
+    top: 50%;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.remote-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.remoteBtn {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #01308844;
+    visibility: hidden;
+}
+
+.remoteBtn::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    visibility: visible;
+}
+
+.remoteBtn::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: var(--main-color);
+}
+
+.remoteBtn.actives {
+    opacity: 1;
+    visibility: visible;
+}
+
+.remoteBtn:last-child {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.remoteBtn:last-child::after {
+    background-color: #fff;
+}
+
+
+/*=========================================================*/
+@media (max-width: 1300px) {
+    .navigation {
+        display: none;
+    }
+}
