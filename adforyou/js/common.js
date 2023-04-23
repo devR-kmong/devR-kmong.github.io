@@ -6,25 +6,8 @@ AOS.init({
 
 $('.counter').counterUp({
     delay: 10,
-    time: 1500
+    time: 1000
 });
-
-
-
-
-$(function () {
-    $(".floating").hide();
-    $(function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 200) {
-                $('.floating').fadeIn(80);
-            } else {
-                $('.floating').fadeOut(80);
-            }
-        });
-    });
-});
-
 
 
 
@@ -45,32 +28,21 @@ var swiper = new Swiper(".mySwiper", {
 
 
 var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 1.5,
+    slidesPerView: 3,
     spaceBetween: 20,
     grabCursor: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    breakpoints: {
-        1051: {
-            slidesPerView: 3,
-        },
-        1251: {
-            slidesPerView: 2.3,
-        },
-        1900: {
-            slidesPerView: 3.3,
-        },
-        2000: {
-            slidesPerView: 4.3,
-        },
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: true,
     },
 });
 
 
 var swiper = new Swiper(".mySwiper3", {
-    effect: "fade",
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -79,7 +51,7 @@ var swiper = new Swiper(".mySwiper3", {
         prevEl: ".swiper-button-prev",
     },
     autoplay: {
-        delay: 2000,
+        delay: 6000,
         disableOnInteraction: true,
     },
 });

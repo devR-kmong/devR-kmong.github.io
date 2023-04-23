@@ -13,23 +13,23 @@
 
 .floating .ff-open {
     position: absolute;
-    top: 0; left: -100px;
-    width: 100px;
-    height: 140px;
+    top: 0; left: -110px;
+    width: 110px;
+    height: 130px;
     color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     line-height: 1.5;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--sub-color);
+    background-color: #000;
     cursor: pointer;
 }
 
 .floating .ff-open i {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 300;
 }
 
@@ -89,6 +89,18 @@
 .floating .form-wrapper .f-personal {
     padding: 8px;
     border-radius: 0;
+}
+
+.floating .f-personal-text label em {
+    width: 10px;
+    min-width: 10px;
+    height: 10px;
+    min-height: 10px;
+}
+
+.floating .f-personal-text label em::after {
+    width: 5px;
+    height: 5px;
 }
 
 .floating .form-wrapper .f-personal label p {

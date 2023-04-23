@@ -7,23 +7,24 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    margin-top: 2rem;
 }
 
 .a2-box {
-    padding: 50px 20px;
+    padding: 60px 20px;
+    width: 338px;
+    height: 338px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     background-color: #fff;
     box-shadow: 0 4px 16px rgb(0 0 0 / 3%);
 }
 
 .a2-box p {
     color: #3d3d3d;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
 }
 

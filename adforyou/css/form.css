@@ -12,13 +12,13 @@
 
 .form-title h5 {
     color: #222;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 500;
 }
 
 .form-title p {
     color: #aaa;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
     margin-top: 10px;
@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: .7rem;
 }
 
 .gform .input-wrapper {
@@ -38,6 +38,10 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.gform .input-wrapper .input-title {
+    display: none;
 }
 
 .gform .input-wrapper .input-title p {
@@ -52,13 +56,12 @@
 
 .gform .inputbox {
     color: #222;
-    height: 45px;
+    height: 47px;
     padding: 0 12px;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 500;
     border: none;
     outline: none;
-    border-radius: 7px;
     background-color: #fff;
     border: 1px solid #ddd;
     letter-spacing: 0;
@@ -70,13 +73,12 @@
     width: 100%;
     height: 100px;
     padding: 12px;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 500;
     -webkit-border-radius: 0;
     border-radius: 0;
     border: none;
     outline: none;
-    border-radius: 7px;
     background-color: #fff;
     border: 1px solid #ddd;
     letter-spacing: 0;
@@ -113,7 +115,6 @@
     font-size: 16px;
     font-weight: 400;
     font-family: 'Pretendard';
-    border-radius: 7px;
     border: 1px solid #ddd;
     background-color: #fff;
     text-align: center;
@@ -135,14 +136,13 @@
 .f-submit {
     color: #fff;
     width: 100%;
-    height: 45px;
-    font-size: 14px;
+    height: 47px;
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: -0.02em;
     padding: 0 19px;
     border: none;
     outline: none;
-    border-radius: 7px;
     background-color: var(--main-color);
     letter-spacing: -0.01em;
     cursor: pointer;
@@ -161,7 +161,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 7px;
     background-color: #fff;
     border: 1px solid #ddd;
 }
@@ -183,10 +182,10 @@
 
 .f-personal-text label em {
     position: relative;
-    width: 12px;
-    min-width: 12px;
-    height: 12px;
-    min-height: 12px;
+    width: 14px;
+    min-width: 14px;
+    height: 14px;
+    min-height: 14px;
     background-color: #fff;
     border: 1px solid #ddd;
     cursor: pointer;
@@ -197,15 +196,15 @@
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     background-color: var(--main-color);
     display: none;
 }
 
 .f-personal-text label p {
     color: #444;
-    font-size: 13px;
+    font-size: 14px;
     user-select: none;
     cursor: pointer;
 }
@@ -223,7 +222,6 @@
     font-size: 12px;
     font-weight: 500;
     padding: 4px 8px;
-    border-radius: 3px;
     background-color: #bbb;
     cursor: pointer;
 }
