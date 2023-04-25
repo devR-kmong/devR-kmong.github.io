@@ -156,7 +156,7 @@
     transform: translate(-50%, -50%);
     width: 8px;
     height: 8px;
-    background-color: var(--main-color);
+    background-color: #111;
     display: none;
 }
 
