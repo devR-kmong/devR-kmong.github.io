@@ -76,19 +76,6 @@ $(function () {
 });
 
 
-$('.menuBtns').click(function () {
-    $(this).toggleClass('change')
-});
-
-$('nav ul li a').click(function () {
-    $('#check').prop('checked', false)
-    $('.menuBtns').removeClass('change')
-});
-
-$('.overlay').click(function () {
-    $('#check').prop('checked', false)
-    $('.menuBtns').removeClass('change')
-});
 
 
 if (navigator.userAgent.indexOf("Trident") > 0) {
