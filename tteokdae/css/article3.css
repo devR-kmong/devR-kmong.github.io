@@ -1,0 +1,81 @@
+.article3 {
+    position: relative;
+    padding-top: 200px;
+    background: url(../images/a3-bg.jpg);
+    overflow: hidden;
+}
+
+.a3-overtext {
+    position: absolute;
+    top: 0; right: -2600px;
+    font-size: 350px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    white-space: nowrap;
+    opacity: .05;
+}
+
+.a3-2 {
+    position: absolute;
+    bottom: 80px; left: -580px;
+    z-index: 1;
+}
+
+.a3-3 {
+    position: absolute;
+    bottom: 80px; right: -580px;
+    transform: scaleX(-1);
+    z-index: 1;
+}
+
+.a3-title {
+    position: relative;
+    width: 750px;
+    height: 750px;
+    z-index: 3;
+}
+
+.a3-spin {
+    position: absolute;
+    top: 0; left: 0;
+    animation: spin 3s infinite linear;
+}
+
+
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+
+
+.a3-text {
+    color: #222;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.65;
+    text-align: center;
+    margin-top: 4rem;
+    letter-spacing: -0.0625em;
+    z-index: 2;
+}
+
+.a3-text b {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -0.0625em;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .a3-2 {
+        left: -400px;
+    }
+
+    .a3-3 {
+        right: -400px;
+    }
+}

@@ -1,0 +1,20 @@
+.article6 {
+    background: url(../images/a6-bg.jpg);
+    overflow: hidden;
+}
+
+.article6 .article-wrapper {
+    width: 100%;
+}
+
+.a6-title {
+    margin-bottom: 3rem;
+}
+
+.mySwiper2 {
+    width: 100%;
+}
+
+
+
+/*==================================================*/

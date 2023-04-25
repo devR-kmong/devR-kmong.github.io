@@ -1,0 +1,106 @@
+.article7 {
+    padding-bottom: 180px;
+    background: url(../images/a7-bg.jpg);
+    background-position: bottom !important;
+    margin-bottom: -1px;
+}
+
+.a7-title {
+    margin-bottom: 2rem;
+}
+
+.a7-table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+.a7-top {
+    width: 100%;
+    color: #aaa;
+    font-size: 15px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.a7-table thead {
+    border-top: 2px solid #333;
+}
+
+.a7-table thead td {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-right: 1px solid #555;
+    background-color: #111;
+}
+
+.a7-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.a7-table td {
+    padding: 15px 0;
+    font-size: 17px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    word-break: break-all !important;
+}
+
+.a7-table tr:last-child td {
+    font-size: 20px;
+}
+
+.a7-table tr td:first-child {
+    width: 250px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.a7-circle-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    margin: 4rem 0;
+}
+
+.a7-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.a7-bottom {
+    text-align: center;
+}
+
+.a7-bottom h4 {
+    color: #222;
+    font-size: 45px;
+    font-weight: unset;
+    font-family: 'twaysky';
+    letter-spacing: -0.0625em;
+    line-height: 1.5;
+}
+
+.a7-bottom p {
+    color: #888;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.65;
+    margin-top: 2rem;
+}
+
+
+/*==================================================*/

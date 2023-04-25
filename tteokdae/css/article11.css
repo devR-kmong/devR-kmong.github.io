@@ -1,0 +1,28 @@
+.article11 {
+    padding-top: 80px;
+    background-color: #000;
+}
+
+.a11-text {
+    text-align: center;
+}
+
+.a11-text h4 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: unset;
+    font-family: 'twaysky';
+    letter-spacing: -0.0625em;
+    line-height: 1.5;
+}
+
+.a11-text p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-top: 2rem;
+}
+
+
+/*==================================================*/
