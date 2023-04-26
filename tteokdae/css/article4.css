@@ -9,17 +9,20 @@
 
 .a4-flow-wrapper {
     width: 100%;
-    background-color: var(--main-color);
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    background-color: #fff;
     overflow: hidden;
 }
 
 .a4-flow {
-    color: #fff;
+    color: var(--main-color);
     padding: 30px 0;
     padding-top: 35px;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 500;
     font-family: 'twaysky';
+    letter-spacing: 0;
     display: flex;
     white-space: nowrap;
     letter-spacing: 0;
