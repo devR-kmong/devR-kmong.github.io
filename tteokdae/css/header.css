@@ -54,11 +54,6 @@ nav {
     font-weight: 600;
 }
 
-.gnb ul li a:hover {
-    color: var(--main-color);
-    font-weight: 800;
-}
-
 .gnb ul li a.actives::after {
     content: '';
     position: absolute;
