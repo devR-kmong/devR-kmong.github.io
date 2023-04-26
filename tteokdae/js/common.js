@@ -11,6 +11,18 @@ $('.counter').counterUp({
 
 
 
+$(window).on('scroll', function () {
+    $('section').each(function () {
+        if ($(window).scrollTop() >= $(this).offset().top - 500) {
+            var id = $(this).attr('id');
+            $('.gnb ul li a').removeClass('actives');
+            $('.gnb ul li a[href=#' + id + ']').addClass('actives');
+        }
+    });
+});
+
+
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 'auto',
     centeredSlides: true,
