@@ -19,8 +19,7 @@
 
 .a1-1 {
     position: absolute;
-    top: 50%; left: -150px;
-    transform: translate(0, -50%);
+    top: 100px; left: -150px;
     z-index: 2;
 }
 
