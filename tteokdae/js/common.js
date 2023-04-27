@@ -1,12 +1,16 @@
-AOS.init({
-    once: true
-});
+new WOW({
+    boxClass:     'wow',
+    animateClass: 'animated',
+    offset:       300,
+    mobile:       true,
+    live:         true
+}).init();
 
 
 
 $('.counter').counterUp({
     delay: 10,
-    time: 2000
+    time: 1200
 });
 
 
