@@ -11,16 +11,15 @@
 
 .a1-text h5 {
     width: 600px;
-    color: #ccc;
+    color: #222;
     font-size: 52px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.5;
     font-family: 'Montserrat';
-    letter-spacing: -0.01em;
 }
 
 .a1-text h5 span {
-    color: #fff;
+    color: var(--main-color);
     font-size: 85px;
     font-weight: 800;
     font-family: 'Montserrat';
@@ -28,16 +27,16 @@
 
 .a1-text p {
     width: 750px;
-    color: #ccc;
+    color: #333;
     font-size: 32px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 2.2;
     padding-top: 2rem;
 }
 
 .a1-text p b {
-    color: #fff;
-    font-weight: 600;
+    color: #333;
+    font-weight: 700;
 }
 
 

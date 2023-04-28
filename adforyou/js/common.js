@@ -109,7 +109,7 @@ $(window).on('scroll', function () {
 
 
 $(function () {
-    $('.toptop, .remoteBtn, .logo, .logo-w, nav ul li a, .mobile-menu li a').click(function (e) {
+    $('.toptop, .remoteBtn, .logo, .logo-w, nav ul li a, .mobile-menu li a, .logo-f').click(function (e) {
         $.scrollTo(this.hash || 0, 500);
         e.preventDefault();
     });
