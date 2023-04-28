@@ -37,16 +37,13 @@
 .a2-box-text h5 {
     color: var(--main-color);
     font-size: 85px;
-    font-weight: 700;
-    font-family: 'Montserrat';
-    letter-spacing: 0;
+    font-weight: 800;
 }
 
 .a2-box-text span {
     color: var(--main-color);
     font-size: 65px;
-    font-weight: 700;
-    font-family: 'Montserrat';
+    font-weight: 800;
     padding-bottom: 5px;
 }
 

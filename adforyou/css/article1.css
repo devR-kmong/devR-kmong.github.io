@@ -15,14 +15,12 @@
     font-size: 52px;
     font-weight: 700;
     line-height: 1.5;
-    font-family: 'Montserrat';
 }
 
 .a1-text h5 span {
     color: var(--main-color);
     font-size: 85px;
     font-weight: 800;
-    font-family: 'Montserrat';
 }
 
 .a1-text p {
