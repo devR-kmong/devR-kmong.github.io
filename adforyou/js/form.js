@@ -49,3 +49,24 @@ $(document).on(
         }
     }
 );
+
+
+
+
+$('.ff-open').click(function () {
+    $('.floating').toggleClass('show');
+    $('.floating .ff-open i').toggleClass('moving');
+    $('.floating .ff-open i').toggleClass('i-rotate');
+})
+
+$(window).scroll(function () {
+    $('.floating').removeClass('show');
+    $('.floating .ff-open i').addClass('moving');
+    $('.floating .ff-open i').removeClass('i-rotate');
+})
+
+
+$('.ff-open2').click(function () {
+    $('.floating').toggleClass('up');
+    $('.floating .ff-closeBtn').toggleClass('i-rotate2');
+})

@@ -26,14 +26,12 @@
     background-size: cover;
     object-fit: cover;
 }
-
 .s-slide2 {
     background: url(../images/b2.jpg);
     background-position: center;
     background-size: cover;
     object-fit: cover;
 }
-
 .s-slide3 {
     background: url(../images/b3.jpg);
     background-position: center;
@@ -138,7 +136,6 @@
 @media (max-width: 1250px) {
     .content {
         width: 100%;
-        padding: 0 20px;
     }
     
     .mySwiper .swiper-slide {
@@ -147,13 +144,72 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {    
+    .content em {
+        font-size: 22px;
+    }
+    
+    .content h5 {
+        font-size: 65px;
+    }
+    
     .content h4 {
-        font-size: 40px;
+        font-size: 55px;
     }
 
     .content p {
         font-size: 18px;
         font-weight: 300;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .s-slide1 {
+        background: url(../images/b1-m.jpg) no-repeat;
+        background-position: right;
+        background-size: cover;
+    }
+    .s-slide2 {
+        background: url(../images/b2-m.jpg) no-repeat;
+        background-position: right;
+        background-size: cover;
+    }
+    .s-slide3 {
+        background: url(../images/b3-m.jpg) no-repeat;
+        background-position: right;
+        background-size: cover;
+    }
+
+    .content {
+        height: 350px;
+        margin-bottom: 8rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .content {
+        height: 300px;
+    }
+    
+    .content em {
+        font-size: 18px;
+    }
+    
+    .content h5 {
+        font-size: 45px;
+    }
+    
+    .content h4 {
+        font-size: 35px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+    .mySwiper .swiper-pagination-progressbar {
+        width: 200px !important;
     }
 }

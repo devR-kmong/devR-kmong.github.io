@@ -87,10 +87,12 @@
 
 .gform .inputbox::placeholder {
     color: #ccc;
+    font-weight: 400;
 }
 
 .gform textarea::placeholder {
     color: #ccc;
+    font-weight: 400;
 }
 
 .gform .inputbox:focus,
@@ -301,11 +303,15 @@
 
 
 /*==================================================*/
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .form-wrapper {
         width: 100%;
+        padding: 50px;
     }
+}
 
+
+@media (max-width: 650px) {
     .policy-popup {
         width: 90%;
         display: flex;
@@ -328,10 +334,6 @@
 
 
 @media (max-width: 550px) {
-    .form-wrapper {
-        padding: 0 10px;
-    }
-
     .gform .input-wrapper .input-title p {
         font-size: 13px;
     }
@@ -378,7 +380,7 @@
     }
 
     .policy-popup textarea {
-        height: 220px;
+        height: 280px;
         padding: 20px;
         padding-top: 65px;
         font-size: 13px;
@@ -387,5 +389,45 @@
     .f-submit {
         height: 45px;
         font-size: 14px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .form-wrapper {
+        padding: 35px;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .08);
+    }
+
+    .form-title {
+        margin-bottom: 1rem;
+    }
+    
+    .form-title h5 {
+        font-size: 22px;
+    }
+
+    .form-title p {
+        font-size: 14px;
+    }
+
+    .gform .inputbox {
+        height: 35px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .gform textarea {
+        height: 80px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .f-personal {
+        padding: 8px;
+    }
+
+    .f-personal-text label p {
+        font-size: 11px;
     }
 }

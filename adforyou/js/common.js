@@ -28,8 +28,8 @@ var swiper = new Swiper(".mySwiper", {
 
 
 var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 3,
-    spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 10,
     grabCursor: true,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -38,6 +38,15 @@ var swiper = new Swiper(".mySwiper2", {
     autoplay: {
         delay: 4000,
         disableOnInteraction: true,
+    },
+    breakpoints: {
+        769: {
+            slidesPerView: 2,
+        },
+        951: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
     },
 });
 
@@ -138,11 +147,6 @@ $('.mobile-menu li a').click(function () {
     $('.menuBtns').removeClass('change')
 })
 
-$('.overlay').click(function () {
-    $('#check').prop('checked', false)
-    $('.menuBtns').removeClass('change')
-})
-
 
 
 
@@ -196,20 +200,6 @@ function checkVisible(elm, eval) {
     if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
     if (eval == "above") return ((y < (viewportHeight + scrolltop)));
 }
-
-
-
-$('.ff-open').click(function () {
-    $('.floating').toggleClass('show');
-    $('.floating .ff-open i').toggleClass('moving');
-    $('.floating .ff-open i').toggleClass('i-rotate');
-})
-
-$(window).scroll(function () {
-    $('.floating').removeClass('show');
-    $('.floating .ff-open i').addClass('moving');
-    $('.floating .ff-open i').removeClass('i-rotate');
-})
 
 
 

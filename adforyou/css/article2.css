@@ -10,8 +10,6 @@
 }
 
 .a2-box {
-    padding: 60px 20px;
-    width: 338px;
     height: 338px;
     display: flex;
     flex-direction: column;
@@ -49,3 +47,52 @@
 
 
 /*==================================================*/
+@media (max-width: 1150px) {
+    .a2-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a2-box {
+        height: 200px;
+        gap: 1rem;
+    }
+    
+    .a2-box p {
+        font-size: 20px;
+    }
+
+    .a2-box-text h5 {
+        font-size: 55px;
+    }
+
+    .a2-box-text span {
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a2-box-wrapper {
+        gap: 10px;
+    }
+    
+    .a2-box {
+        height: 130px;
+    }
+    
+    .a2-box p {
+        font-size: 14px;
+    }
+
+    .a2-box-text h5 {
+        font-size: 36px;
+    }
+
+    .a2-box-text span {
+        font-size: 28px;
+        padding-bottom: 0;
+    }
+}
