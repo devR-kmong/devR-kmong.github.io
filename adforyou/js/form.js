@@ -70,3 +70,11 @@ $('.ff-open2').click(function () {
     $('.floating').toggleClass('up');
     $('.floating .ff-closeBtn').toggleClass('i-rotate2');
 })
+
+
+
+$('.pp-wrapper').on('scroll touchmove mousewheel', function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    return false;
+})

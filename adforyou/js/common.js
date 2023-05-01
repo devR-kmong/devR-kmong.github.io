@@ -95,7 +95,7 @@ $(window).on('scroll', function () {
 
 
 $(function () {
-    $('.toptop, .remoteBtn, .logo, .logo-w, nav ul li a, .mobile-menu li a, .logo-f').click(function (e) {
+    $('.remoteBtn, .logo, .logo-w, nav ul li a, .mobile-menu li a, .logo-f').click(function (e) {
         $.scrollTo(this.hash || 0, 500);
         e.preventDefault();
     });
@@ -177,6 +177,18 @@ function checkVisible(elm, eval) {
     if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
     if (eval == "above") return ((y < (viewportHeight + scrolltop)));
 }
+
+
+
+$(window).resize(function () {
+    var width_size = window.innerWidth;
+
+    if (width_size == 1920) {
+        document.location.reload();
+    } else if (width_size == 2560) {
+        document.location.reload();
+    }
+})
 
 
 
