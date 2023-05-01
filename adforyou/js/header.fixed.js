@@ -11,32 +11,6 @@ $(document).ready(function () {
 });
 
 
-$(window).resize(function () {
-    if ($(window).width() > 1600) {
-        $(document).ready(function () {
-            var Offset = $('header').offset();
-            $(window).scroll(function () {
-                if ($(document).scrollTop() > Offset.top) {
-                    $('header').addClass('Fixed');
-                }
-                else {
-                    $('header').removeClass('Fixed');
-                }
-            });
-        });
-    }
-    else {
-        $(document).ready(function () {
-            var Offset = $('header').offset();
-            $(window).scroll(function () {
-                if ($(document).scrollTop() > Offset.top) {
-                    $('header').removeClass('Fixed');
-                }
-            });
-        });
-    }
-});
-
 
 ////////////////////////////////////////////////////////////////////
 $(document).ready(function () {

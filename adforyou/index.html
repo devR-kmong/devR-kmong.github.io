@@ -1360,6 +1360,28 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/form.js"></script>
+
+    <script>
+        if (window.innerWidth > 1600) {
+        document.write(
+            '<script src="js/box_scroll.js"><\/script>'
+        )
+        document.write(
+            '<script src="js/header.fixed.js"><\/script>'
+        )
+    }
+    else {
+        document.clear(
+            '<script src="js/box_scroll.js"><\/script>'
+        )
+        document.clear(
+            '<script src="js/header.fixed.js"><\/script>'
+        )
+        document.write(
+            '<script src="js/header.fixed.m.js"><\/script>'
+        )
+    }
+    </script>
     
 </body>
 </html>

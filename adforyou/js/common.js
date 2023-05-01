@@ -68,29 +68,6 @@ var swiper = new Swiper(".mySwiper3", {
 
 
 
-if (window.innerWidth > 1600) {
-    document.write(
-        '<script src="js/box_scroll.js"><\/script>'
-    )
-    document.write(
-        '<script src="js/header.fixed.js"><\/script>'
-    )
-}
-else {
-    document.clear(
-        '<script src="js/box_scroll.js"><\/script>'
-    )
-    document.clear(
-        '<script src="js/header.fixed.js"><\/script>'
-    )
-    document.write(
-        '<script src="js/header.fixed.m.js"><\/script>'
-    )
-}
-
-
-
-
 $(window).on('scroll', function () {
     $('section').each(function () {
         if ($(window).scrollTop() >= $(this).offset().top - 500) {
