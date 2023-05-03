@@ -1,0 +1,16 @@
+.article7 {
+    padding-bottom: 0;
+}
+
+.a7-title {
+    margin-bottom: 3rem;
+}
+
+.a7-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/*==================================================*/
