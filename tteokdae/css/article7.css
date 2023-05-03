@@ -65,6 +65,23 @@
     text-align: right;
 }
 
+.a7-table .tr-total {
+    font-weight: 700;
+    border: 2px solid #222;
+    background-color: #f2f2f2 !important;
+}
+
+.a7-table .tr-income {
+    color: #640e14;
+    font-weight: 700;
+    background-color: #fff2f3 !important;
+    border: 5px solid var(--main-color);
+}
+
+.a7-table .tr-income td {
+    font-size: 28px !important;
+}
+
 .a7-circle-wrapper {
     display: flex;
     flex-direction: column;

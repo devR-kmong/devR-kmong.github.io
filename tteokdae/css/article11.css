@@ -1,26 +1,30 @@
 .article11 {
-    padding-top: 80px;
+    padding: 80px 0;
     background-color: #000;
 }
 
-.a11-text {
-    text-align: center;
+.a11-wrapper {
+    width: 940px;
 }
 
-.a11-text h4 {
-    color: #fff;
-    font-size: 65px;
-    font-weight: unset;
-    font-family: 'twaysky';
-    letter-spacing: -0.0625em;
-    line-height: 1.5;
+.a11-title {
+    margin-bottom: 3rem;
 }
 
 .a11-text p {
-    color: #fff;
-    font-size: 24px;
+    color: #ddd;
+    font-size: 22px;
     font-weight: 300;
-    line-height: 1.7;
+    line-height: 1.65;
+}
+
+.a11-bottom {
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 2rem;
     margin-top: 2rem;
 }
 

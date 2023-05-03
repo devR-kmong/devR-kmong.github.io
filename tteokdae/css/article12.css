@@ -1,0 +1,37 @@
+.article12 {
+}
+
+.a12-title {
+    margin-bottom: 4rem;
+}
+
+.a12-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.a12-box {
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5rem;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    cursor: default;
+}
+
+.a12-box:hover {
+    border: 2px solid var(--main-color);
+}
+
+.a12-box p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+
+/*==================================================*/

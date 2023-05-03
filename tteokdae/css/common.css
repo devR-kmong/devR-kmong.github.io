@@ -52,7 +52,6 @@ li {
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'establishRetrosansOTF';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
@@ -60,14 +59,12 @@ li {
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'LOTTERIADDAG';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIADDAG.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
-
 
 @font-face {
     font-family: 'twaysky';
