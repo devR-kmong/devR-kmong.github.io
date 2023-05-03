@@ -150,6 +150,10 @@
         font-size: 15px;
     }
     
+    .a4-subtitle br {
+        display: none;
+    }
+    
     .mySwiper2 .swiper-slide {
         padding: 20px;
     }
