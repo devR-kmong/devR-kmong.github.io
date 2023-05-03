@@ -4,7 +4,7 @@
 }
 
 .a11-wrapper {
-    width: 940px;
+    width: 100%;
 }
 
 .a11-title {
@@ -12,6 +12,7 @@
 }
 
 .a11-text p {
+    width: 940px;
     color: #ddd;
     font-size: 22px;
     font-weight: 300;
