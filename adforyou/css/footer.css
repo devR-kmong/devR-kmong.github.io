@@ -70,10 +70,11 @@
     
     .footer-wrapper .m-info {
         display: flex;
+        font-size: 14px;
     }
 
     .logo-f {
-        width: 140px;
-        max-width: 140px;
+        width: 130px;
+        max-width: 130px;
     }
 }
