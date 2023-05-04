@@ -156,6 +156,7 @@
     
     .mySwiper2 .swiper-slide {
         padding: 20px;
+        gap: 0;
     }
 
     .mySwiper2 .swiper-button-wrapper {
@@ -168,15 +169,7 @@
     }
     
     .ss-image img {
-        height: 75px;
-        max-height: 75px;
-    }
-
-    .ss-text h5 {
-        font-size: 18px;
-    }
-
-    .ss-text p {
-        font-size: 13px;
+        height: 120px;
+        max-height: 120px;
     }
 }

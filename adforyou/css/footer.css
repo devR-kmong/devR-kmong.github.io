@@ -25,12 +25,8 @@
     letter-spacing: -0.01em;
 }
 
-.footer-wrapper p br {
+.footer-wrapper .m-info {
     display: none;
-}
-
-.footer-wrapper em br {
-    display: block;
 }
 
 .logo-f {
@@ -68,27 +64,16 @@
         gap: 1rem;
     }
     
-    .footer-wrapper p {
-        font-size: 12px;
+    .footer-wrapper .pc-info {
+        display: none;
+    }
+    
+    .footer-wrapper .m-info {
+        display: flex;
     }
 
     .logo-f {
-        width: 120px;
-        max-width: 120px;
-    }
-}
-
-
-@media (max-width: 450px) {
-    .footer-wrapper p {
-        font-weight: 500;
-    }
-    
-    .footer-wrapper p span {
-        display: none;
-    }
-
-    .footer-wrapper p br {
-        display: block;
+        width: 140px;
+        max-width: 140px;
     }
 }
