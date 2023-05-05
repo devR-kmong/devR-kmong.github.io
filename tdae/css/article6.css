@@ -1,0 +1,40 @@
+.article6 {
+    background: url(../images/a6-bg.jpg);
+    overflow: hidden;
+}
+
+.article6 .article-wrapper {
+    width: 100%;
+}
+
+.a6-title {
+    margin-bottom: 3rem;
+}
+
+.mySwiper2 {
+    width: 100%;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 850px) {
+    .article6 {
+        padding-bottom: 120px;
+    }
+
+    .a6-title {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article6 {
+        padding-bottom: 80px;
+    }
+
+    .a6-title {
+        margin-bottom: 1rem;
+    }
+}
