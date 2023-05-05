@@ -85,6 +85,15 @@
     .a5-title {
         margin-bottom: -2rem;
     }
+
+    .mySwiper .swiper-slide {
+        opacity: 0;
+    }
+
+    .mySwiper .swiper-slide-active {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 

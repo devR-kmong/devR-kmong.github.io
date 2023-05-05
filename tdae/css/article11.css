@@ -33,7 +33,7 @@
 /*==================================================*/
 @media (max-width: 1050px) {
     .a11-text p {
-        width: 100%;
+        width: 90%;
     }
 
     .a11-text p br {
@@ -67,17 +67,20 @@
 }
 
 
+@media (max-width: 550px) {
+    .a11-text p {
+        font-size: 14px;
+    }
+}
+
+
 @media (max-width: 450px) {
     .article11 {
         padding: 40px 0;
     }
-    
+
     .a11-title {
         width: 183px;
-    }
-    
-    .a11-text p {
-        font-size: 14px;
     }
 
     .a11-bottom {
