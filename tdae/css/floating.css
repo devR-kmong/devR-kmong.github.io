@@ -373,6 +373,11 @@
     .f-personal span {
         font-size: 12px;
     }
+
+
+    .f-popup {
+        width: 90%;
+    }
 }
 
 
@@ -383,5 +388,20 @@
 
     .ff-omBtn {
         font-size: 14px;
+    }
+
+    .f-popup {
+        padding: 25px;
+    }
+    
+    .f-popup p {
+        font-size: 12px;
+    }
+
+    .f-popup-closeBtn {
+        top: 12px;
+        right: 12px;
+        width: 14px;
+        height: 14px;
     }
 }
