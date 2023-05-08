@@ -721,7 +721,12 @@ button.swiper-pagination-bullet {
 /*==================================================*/
 @media (max-width: 550px) {
     .swiper-pagination-bullet {
-        width: 6px;
-        height: 6px;
+        width: 5px;
+        height: 5px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 3px);
     }
 }
