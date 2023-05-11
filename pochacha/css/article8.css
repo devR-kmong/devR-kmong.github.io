@@ -1,5 +1,63 @@
 .article8 {
-    background-color: #fff;
+    background: url(../images/a8-bg.jpg);
+    background-position: bottom !important;
+    margin-bottom: -3px;
+}
+
+.a8-title {
+    margin-bottom: 4rem;
+}
+
+.a8-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.a8-box-title {
+    color: #aaa;
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #222;
+}
+
+.a8-box p {
+    color: #222;
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+
+.a8-receipt-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+.a8-receipt-box {
+    position: relative;
+}
+
+.a8-stamp {
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 350px;
+}
+
+.a8-bottom {
+    color: #888;
+    font-size: 18px;
+    text-align: center;
+}
+
+.a8-bottom span {
+    font-size: 16px;
+    line-height: 3;
 }
 
 

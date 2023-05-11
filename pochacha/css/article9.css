@@ -1,6 +1,28 @@
 .article9 {
-    background-color: #eee;
+    background: url(../images/a9-bg.jpg);
+    background-position: bottom !important;
 }
+
+.a9-title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.a9-title p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.65;
+    margin-top: 2rem;
+}
+
+.a9-coupon-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 
 
 /*==================================================*/

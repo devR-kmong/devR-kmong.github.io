@@ -1,0 +1,31 @@
+.article12 {
+    padding-top: 200px;
+    background: url(../images/a12-bg.jpg);
+    background-position: top !important;
+}
+
+.article12 .article-wrapper {
+    position: relative;
+    width: 1000px;
+}
+
+.a12-sb {
+    position: absolute;
+    top: -30px; right: 100px;
+    transform: rotate(-10deg);
+    width: 180px;
+    mix-blend-mode: multiply;
+}
+
+.a12-title {
+    margin-bottom: 4rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 1050px) {
+    .article12 .article-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

@@ -7,6 +7,13 @@
     margin-bottom: 1rem;
 }
 
+.a2-title h5 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: unset;
+    font-family: 'PuradakGentleGothicR';
+}
+
 .a2-title p {
     color: #fff;
     font-size: 26px;

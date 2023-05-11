@@ -10,7 +10,7 @@
     background-color: #434f99;
 }
 .a5-bg-2 {
-    background-color: #3a291c;
+    background-color: #50341e;
 }
 .a5-bg-3 {
     background-color: #c5255a;
@@ -19,6 +19,13 @@
 .a5-title {
     text-align: center;
     margin-bottom: 4rem;
+}
+
+.a5-title h5 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: unset;
+    font-family: 'PuradakGentleGothicR';
 }
 
 .a5-title p {
@@ -64,7 +71,8 @@
 
 .a5-top p {
     color: #fff;
-    font-size: 35px;
+    font-size: 28px;
+    font-family: 'GmarketSansMedium';
     margin-top: 3rem;
     z-index: 10;
 }
@@ -74,7 +82,7 @@
     font-size: 65px;
     font-weight: unset;
     font-family: 'PuradakGentleGothicR';
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     z-index: 10;
 }
 
@@ -102,7 +110,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 7rem 0;
+    margin-top: 7rem;
 }
 
 .a5-reason {
@@ -129,11 +137,11 @@
 
 .a5-reason:nth-child(2n-1) .a5-image {
     position: absolute;
-    top: -50px; right: 20px;
+    top: -150px; right: 20px;
 }
 .a5-reason:nth-child(2n) .a5-image {
     position: absolute;
-    top: -50px; left: 20px;
+    top: -150px; left: 20px;
 }
 
 .a5-r-title {

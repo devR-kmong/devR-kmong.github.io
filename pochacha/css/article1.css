@@ -80,7 +80,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: var(--main-color);
     overflow: hidden;
 }
