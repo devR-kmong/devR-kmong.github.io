@@ -1,0 +1,93 @@
+header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    z-index: 98;
+}
+
+nav {
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 220px;
+    margin-right: 147px;
+}
+
+.gnb {
+    display: flex;
+    gap: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+.gnb li a {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.gnb li a.actives::after {
+    content: '';
+    position: absolute;
+    bottom: -18px; left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--main-color);
+}
+
+.askBtn {
+    color: #fff;
+    font-size: 36px;
+    font-family: 'PuradakGentleGothicR';
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+
+.Fixed {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.actives {
+    color: var(--main-color) !important;
+    font-weight: 800 !important;
+}
+
+header.Fixed .logo,
+header.Fixed .askBtn {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+header.Fixed .gnb {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    nav {
+        padding: 0 20px;
+    }
+}

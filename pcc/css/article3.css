@@ -1,0 +1,244 @@
+.article3 {
+    padding: 0;
+    background-color: #000;
+}
+
+.a3-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.a3-arrow {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
+.a3-arrow span {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+    transform: rotate(45deg);
+    animation: animate 1s infinite;
+    margin: -10px 0;
+}
+
+.a3-arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.a3-arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+
+.a3-top {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/a3-1.jpg) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.a3-top::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.a3-top p {
+    color: #ccc;
+    font-size: 42px;
+    margin-top: 10rem;
+    z-index: 10;
+}
+
+.a3-top h5 {
+    color: #ccc;
+    font-size: 85px;
+    font-weight: unset;
+    font-family: 'PuradakGentleGothicR';
+    margin-top: 2rem;
+    z-index: 10;
+}
+
+.a3-bottom {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(120%);
+    background: url(../images/a3-2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.a3-bottom::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to bottom, transparent 0%, #000 100%);
+    z-index: 5;
+}
+
+.a3-bottom::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    animation: pulse .5s infinite;
+    z-index: 1;
+}
+
+@keyframes pulse {
+    50% {
+        background-color: #ff29542c;
+    }
+
+    100% {
+        background-color: #e62f5400;
+    }
+}
+
+.a3-bottom p {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    margin-top: 20rem;
+    z-index: 10;
+}
+
+.a3-bottom img {
+    z-index: 10;
+}
+
+
+.a3-flow-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -25rem;
+    user-select: none;
+    z-index: 1;
+}
+
+.a3-flow {
+    color: rgba(255, 255, 255, .05);
+    padding: 20px 0;
+    padding-top: 35px;
+    font-size: 200px;
+    font-weight: unset;
+    font-family: 'PuradakGentleGothicR';
+    letter-spacing: 0;
+    display: flex;
+    white-space: nowrap;
+    letter-spacing: 0;
+    animation: slide 20s linear infinite;
+}
+
+.a3-flow2 {
+    justify-content: flex-end;
+    animation: slide2 20s linear infinite;
+    margin-top: 20rem;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-95%, 0, 0);
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(95%, 0, 0);
+    }
+}
+
+
+.a3-circle-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.a3-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .a3-arrow {
+        top: 42%;
+    }
+    
+    .a3-bottom {
+        background-position: center;
+    }
+    
+    .a3-top {
+        height: 750px;
+        background-position: center;
+    }
+
+    .a3-top p {
+        margin-top: 15rem;
+    }
+    
+    .a3-bottom {
+        height: 900px;
+    }
+
+    .a3-bottom p {
+        margin-top: 25rem;
+    }
+}
