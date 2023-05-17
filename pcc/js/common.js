@@ -7,8 +7,9 @@ AOS.init({
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     grabCursor: true,
-    slidesPerView: 2.5,
-    spaceBetween: 20,
+    centeredSlides: true,
+    slidesPerView: 1.5,
+    spaceBetween: 10,
     pagination: {
         el: ".swiper-pagination",
         type: "progressbar",
@@ -17,6 +18,28 @@ var swiper = new Swiper(".mySwiper", {
     autoplay: {
         delay: 1500,
         disableOnInteraction: true,
+    },
+    breakpoints: {
+        551: {
+            centeredSlides: false,
+            slidesPerView: 2.5,
+            spaceBetween: 10,
+        },
+        769: {
+            centeredSlides: false,
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1000: {
+            centeredSlides: false,
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1651: {
+            centeredSlides: false,
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+        },
     },
 });
 
@@ -55,19 +78,50 @@ $(function () {
 
 
 
-$(function () {
-    var a5R = $('.a5-reason');
-
-    for (let i = 0; i < a5R.length; i++) {
-        a5R.eq(i).hover(function () {
-            a5R.eq(i).children('.a5-image').toggleClass('imageShow');
-            a5R.eq(i).children('.a5-r-text').toggleClass('textShow');
-            a5R.eq(i).children('.a5-r-title').toggleClass('titleNot');
-            $('.a5-r-title').toggleClass('titleOpacity');
-            $('.article5').toggleClass('a5-bg-'+ i);
-        })
-    }
+$('.menuBtns').click(function () {
+    $(this).toggleClass('change')
 });
+
+$('nav ul li a').click(function () {
+    $('#check').prop('checked', false)
+    $('.menuBtns').removeClass('change')
+});
+
+$('.overlay').click(function () {
+    $('#check').prop('checked', false)
+    $('.menuBtns').removeClass('change')
+});
+
+
+
+
+if (window.innerWidth > 1919) {
+    $(function () {
+        var a5R = $('.a5-reason');
+    
+        for (let i = 0; i < a5R.length; i++) {
+            a5R.eq(i).hover(function () {
+                a5R.eq(i).children('.a5-image').toggleClass('imageShow');
+                a5R.eq(i).children('.a5-r-text').toggleClass('textShow');
+                a5R.eq(i).children('.a5-r-title').toggleClass('titleNot');
+                $('.a5-r-title').toggleClass('titleOpacity');
+                $('.article5').toggleClass('a5-bg-'+ i);
+            })
+        }
+    });
+}
+
+
+
+$(window).resize(function () {
+    var width_size = window.innerWidth;
+
+    if (width_size == 1920) {
+        document.location.reload();
+    } else if (width_size == 2560) {
+        document.location.reload();
+    }
+})
 
 
 
