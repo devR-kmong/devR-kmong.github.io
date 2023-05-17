@@ -44,6 +44,19 @@
     padding-bottom: 80px;
 }
 
+.a9-b-title {
+    color: #ff9018;
+    padding: 8px 80px;
+    padding-top: 15px;
+    font-size: 55px;
+    font-weight: 700;
+    font-family: 'GmarketSansB';
+    border-radius: 100px;
+    border: 10px solid #ff9018;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .05);
+    background-color: #fff;
+}
+
 .a9-swiper {
     width: 1200px;
 }

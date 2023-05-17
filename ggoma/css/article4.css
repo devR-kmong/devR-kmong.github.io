@@ -47,6 +47,7 @@
 }
 
 .mySwiper3 .swiper-slide {
+    max-width: 413px;
     display: flex;
     flex-direction: column;
     justify-content: center;
