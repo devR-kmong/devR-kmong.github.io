@@ -58,7 +58,7 @@
 
 .r2-1 {
     position: absolute;
-    bottom: 210px; left: 50%;
+    bottom: 35%; left: 50%;
     transform: translate(-50%, 0);
     animation: blink .7s step-end infinite;
 }
@@ -191,5 +191,180 @@
     }
     .a5-reason:nth-child(2n) .a5-image {
         left: 120px;
+    }
+}
+
+
+@media (max-width: 1919px) {
+    .r2-1 {
+        width: 75%;
+    }
+
+    .a5-reason-wrapper {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+    
+    .a5-reason {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .a5-image {
+        position: static !important;
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+        margin-bottom: 2rem;
+    }
+
+    .a5-r-text {
+        margin-top: 10px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+@media (max-width: 1450px) {
+    .a5-title,
+    .a5-receipt-wrapper {
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .a5-reason-wrapper {
+        gap: 5rem 2rem;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .a5-r-title {
+        font-size: 28px;
+    }
+
+    .a5-r-text {
+        height: 60px;
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a5-title {
+        margin-bottom: 2rem;
+    }
+    
+    .a5-title h5 {
+        font-size: 36px;
+    }
+
+    .a5-title p {
+        font-size: 17px;
+        margin-top: 1.2rem;
+    }
+    
+    .a5-receipt-wrapper {
+        gap: 10px;
+    }
+
+    .r1, .r3 {
+        transform: scale(1);
+    }
+
+    .a5-flow-wrapper {
+        top: 0;
+    }
+    
+    .a5-flow {
+        font-size: 200px;
+    }
+
+    .a5-reason-wrapper {
+        margin-top: 3rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a5-title h5 {
+        font-size: 28px;
+    }
+
+    .a5-title p {
+        font-size: 15px;
+        margin-top: 1rem;
+    }
+    
+    .a5-title p br {
+        display: none;
+    }
+
+    .a5-receipt-wrapper {
+        margin-bottom: 2rem;
+    }
+
+    .a5-top p {
+        font-size: 18px;
+    }
+
+    .a5-top h5 {
+        font-size: 36px;
+        margin-top: 10px;
+    }
+
+    .a5-reason-wrapper {
+        gap: 3rem 1rem;
+        margin-top: 1rem;
+    }
+
+    .a5-image {
+        margin-bottom: 1rem;
+    }
+
+    .a5-r-title {
+        font-size: 22px;
+    }
+
+    .a5-r-text {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a5-flow-wrapper {
+        top: 30px;
+    }
+    
+    .a5-flow {
+        font-size: 120px;
+    }
+
+    .a5-top {
+        margin-bottom: 2rem;
+    }
+    
+    .a5-reason-wrapper {
+        gap: 1rem 10px;
+    }
+    
+    .a5-r-title {
+        font-size: 18px;
+    }
+
+    .a5-r-text {
+        font-size: 12px;
     }
 }

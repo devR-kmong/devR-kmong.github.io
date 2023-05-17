@@ -29,3 +29,27 @@
         padding: 0 20px;
     }
 }
+
+
+@media (max-width: 768px) {
+    .article12 {
+        padding-top: 120px;
+    }
+    
+    .a12-sb {
+        right: 5%;
+        width: 20%;
+    }
+    
+    .a12-title {
+        width: 75%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a12-title {
+        margin-bottom: 2rem;
+    }
+}

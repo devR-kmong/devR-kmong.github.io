@@ -93,7 +93,7 @@
     }
 
     100% {
-        transform: translate3d(-95%, 0, 0);
+        transform: translate3d(-200%, 0, 0);
     }
 }
 
@@ -102,5 +102,90 @@
 @media (min-width: 2250px) {
     .a4-coin {
         top: 120px;
+    }
+}
+
+
+@media (max-width: 1350px) {
+    .led {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .article4 .article-wrapper:nth-child(2) {
+        overflow: hidden;
+    }
+    
+    .a4-sb {
+        top: 0;
+        width: 60%;
+    }
+    
+    .a4-coin {
+        top: 15%;
+    }
+    
+    .a4-receipt {
+        width: 75%;
+    }
+
+    .a4-1200 {
+        bottom: 28%;
+        width: 62%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a4-text {
+        margin-bottom: 2rem;
+    }
+    
+    .a4-text h5 {
+        font-size: 45px;
+    }
+
+    .a4-text p {
+        font-size: 18px;
+        margin-top: 1.5rem;
+    }
+
+    .a4-flow {
+        padding: 25px 0;
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a4-text h5 {
+        font-size: 32px;
+    }
+
+    .a4-text p {
+        margin-top: 1rem;
+    }
+
+    .a4-flow-wrapper {
+        border-top: 5px dotted #fed85c;
+        border-bottom: 5px dotted #fed85c;
+    }
+    
+    .a4-flow {
+        padding: 20px 0;
+        font-size: 36px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .article4 {
+        padding-top: 30px;
+    }
+    
+    .a4-receipt {
+        width: 90%;
     }
 }

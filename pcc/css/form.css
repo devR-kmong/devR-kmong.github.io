@@ -274,11 +274,11 @@
 
     .f-form .input-wrapper {
         width: 100%;
-        gap: 3rem;
+        gap: 0;
     }
 
-    .f-form .input-wrapper .input-title h5 {
-        width: 85px !important;
+    .f-form .input-wrapper .input-title {
+        width: 85px;
     }
 
     .f-form .inputbox {
@@ -288,14 +288,6 @@
 
 
 @media (max-width: 650px) {
-    .a11-title {
-        width: 300px;
-    }
-
-    .form-wrapper {
-        margin-top: 2rem;
-    }
-
     .f-popup,
     .f-alert {
         width: 80%;
@@ -319,11 +311,7 @@
 }
 
 
-@media (max-width: 550px) {
-    .article11 {
-        padding: 50px 0;
-    }
-    
+/* @media (max-width: 550px) {
     .f-personal {
         padding: 12px;
     }
@@ -337,24 +325,19 @@
         font-size: 10px;
     }
     
-    .f-form .input-wrapper {
-        gap: 1rem;
+    .f-form .input-wrapper .input-title {
+        width: 55px;
     }
 
     .f-form .input-wrapper .input-title h5 {
-        width: 75px;
         font-size: 13px;
     }
-}
+} */
 
 
-@media (max-width: 450px) {
-    .a11-title {
-        width: 200px;
-    }
-    
+@media (max-width: 550px) {
     .form-wrapper {
-        padding: 0 20px;
+        padding: 0 10px;
     }
     
     .f-form .input-group {
@@ -367,26 +350,18 @@
         font-size: 13px;
     }
 
+    .radio-wrapper label {
+        padding: 10px 0;
+        font-size: 13px;
+    }
+    
     .f-form textarea {
         font-size: 13px;
     }
 
     .f-submit {
-        width: 220px;
         height: 45px;
         font-size: 14px;
         margin-top: 1.5rem;
-    }
-}
-
-
-@media (max-width: 350px) {
-    .f-form .input-wrapper {
-        gap: 10px;
-    }
-
-    .f-form .input-wrapper .input-title h5 {
-        width: 70px !important;
-        font-size: 12px;
     }
 }

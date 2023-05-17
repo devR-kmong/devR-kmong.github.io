@@ -180,3 +180,17 @@
 
 
 /*==================================================*/
+@media (max-width: 1450px) {
+    .article6 .article-wrapper {
+        padding: 0;
+    }
+
+    .article6 .a4-flow-wrapper:first-child {
+        display: none;
+    }
+    
+    .a6-title,
+    .a6-wrapper {
+        display: none;
+    }
+}

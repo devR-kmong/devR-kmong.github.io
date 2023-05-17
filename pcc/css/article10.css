@@ -64,11 +64,13 @@
 .a10-table tr:last-child td {
     font-size: 32px;
     font-weight: 800;
+    white-space: nowrap;
 }
 
 .a10-bottom {
     color: #aaa;
     width: 100%;
+    line-height: 1.3;
     margin-top: 1rem;
 }
 
@@ -91,3 +93,115 @@
 
 
 /*==================================================*/
+@media (max-width: 1450px) {
+    .article10 .article-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .a10-table tr:last-child {
+        border: 3px solid var(--main-color);
+    }
+    
+    .a10-table tr:last-child td {
+        font-size: 22px;
+        font-weight: 800;
+    }
+
+    .a10-blink {
+        font-size: 22px !important;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .a10-table tr td {
+        padding: 20px 22px;
+        font-size: 16px;
+    }
+
+    .a10-table tr td:nth-child(1) {
+        width: 120px;
+        padding: 20px 0;
+        white-space: nowrap;
+    }
+
+    .a10-table tr td:nth-child(2) {
+        width: 80px;
+        padding: 20px 0;
+        font-size: 16px;
+    }
+
+    .a10-table tr:last-child td {
+        font-size: 16px;
+    }
+
+    .a10-40 {
+        padding: 20px 10px !important;
+    }
+
+    .a10-stamp {
+        font-size: 20px;
+        border-radius: 5px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a10-title {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a10-top {
+        font-size: 13px;
+    }
+
+    .a10-table tr td {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
+
+    .a10-table tr td:nth-child(1) {
+        width: 80px;
+    }
+
+    .a10-table tr td:nth-child(2) {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .a10-table tr:last-child td {
+        font-size: 12px;
+    }
+
+    .a10-40 {
+        padding: 12px 15px !important;
+    }
+
+    .a10-stamp {
+        padding: 3px 6px;
+        font-size: 13px;
+        border-radius: 5px;
+    }
+
+    .a10-blink {
+        font-size: 13px !important;
+    }
+
+    .a10-bottom {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a10-title {
+        margin-bottom: 2rem;
+    }
+}

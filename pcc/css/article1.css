@@ -141,3 +141,137 @@
         font-size: 65px;
     }
 }
+
+
+@media (max-width: 1650px) {
+    .article1 .article-wrapper {
+        width: 1400px;
+        align-items: center;
+    }
+
+    .a1-sb {
+        left: unset;
+        top: -70px;
+        right: -50px;
+        width: 500px;
+    }
+
+    .a1-wrapper {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .mySwiper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1450px) {
+    .article1 .article-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .a1-wrapper {
+        gap: 3rem;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .mySwiper .swiper-slide {
+        height: 280px;
+    }
+    
+    .mySwiper .swiper-slide h5 {
+        font-size: 28px;
+    }
+
+    .mySwiper .swiper-slide h4 {
+        font-size: 42px;
+        margin-top: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article1 .article-wrapper {
+        padding-right: 0;
+    }
+
+    .a1-sb {
+        width: 350px;
+    }
+
+    .a1-title {
+        width: 100%;
+    }
+
+    .a1-title h5 {
+        font-size: 36px;
+    }
+
+    .a1-title p {
+        font-size: 17px;
+        margin-top: 1.2rem;
+    }
+    
+    .mySwiper .swiper-slide {
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    .mySwiper .swiper-slide img {
+        width: 160px;
+    }
+    
+    .mySwiper .swiper-slide span {
+        font-size: 20px;
+    }
+
+    .mySwiper .swiper-slide h5 {
+        font-size: 22px;
+        margin-top: 1.5rem;
+    }
+
+    .mySwiper .swiper-slide h4 {
+        font-size: 28px;
+        margin-top: 1rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article1 {
+        padding: 40px 0;
+    }
+    
+    .article1 .article-wrapper {
+        padding: 0;
+    }
+    
+    .a1-sb {
+        display: none;
+    }
+    
+    .a1-title {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a1-wrapper {
+        gap: 2rem;
+    }
+    
+    .a1-title h5 {
+        font-size: 28px;
+    }
+
+    .a1-title p {
+        font-size: 15px;
+        margin-top: 1rem;
+    }
+}

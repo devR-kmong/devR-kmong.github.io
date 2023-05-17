@@ -24,3 +24,41 @@
 
 
 /*==================================================*/
+@media (max-width: 1450px) {
+    .article9 .article-wrapper {
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a9-title {
+        width: 75%;
+        margin-bottom: 3rem;
+    }
+
+    .a9-title p {
+        font-size: 18px;
+        margin-top: 1.5rem;
+    }
+    
+    .a9-title p br {
+        display: none;
+    }
+
+    .a9-coupon-wrapper {
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a9-title p {
+        font-size: 14px;
+    }
+    
+    .a9-coupon-wrapper {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
