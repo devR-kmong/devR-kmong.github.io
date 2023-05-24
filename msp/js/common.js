@@ -12,7 +12,6 @@ VanillaTilt.init(document.querySelectorAll('.box-0, .box-1, .box-2, .a5-box'), {
 
 
 var swiper0 = new Swiper(".mySwiper", {
-    loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -23,7 +22,6 @@ var swiper0 = new Swiper(".mySwiper", {
     },
 });
 var swiper1 = new Swiper(".mySwiper2", {
-    loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -34,7 +32,6 @@ var swiper1 = new Swiper(".mySwiper2", {
     },
 });
 var swiper2 = new Swiper(".mySwiper3", {
-    loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
