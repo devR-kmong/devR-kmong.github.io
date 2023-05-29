@@ -52,7 +52,7 @@
 
 .box-image {
     width: 60%;
-    filter: grayscale(1);
+    filter: grayscale(.5);
     opacity: .6;
     z-index: 10;
 }

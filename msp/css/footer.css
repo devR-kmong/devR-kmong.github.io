@@ -4,7 +4,8 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #111;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .footer-top {
@@ -61,7 +62,6 @@ footer {
 
 .footer-line {
     width: 100%;
-    display: flex;
     border: 1px solid rgba(255, 255, 255, .03);
 }
 
