@@ -1,0 +1,17 @@
+.article5 {
+    background-color: #1c1c25;
+}
+
+.a5-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a5-wrapper img {
+    width: 650px;
+}
+
+
+/*==================================================*/

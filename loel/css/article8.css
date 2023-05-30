@@ -1,0 +1,33 @@
+.article8 {
+    background: url(../images/a8-bg.jpg) no-repeat;
+    background-attachment: fixed;
+}
+
+.a8-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a8-title {
+    color: #fff;
+    margin-top: 3rem;
+}
+
+.a8-title p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.a8-title h5 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+
+/*==================================================*/
