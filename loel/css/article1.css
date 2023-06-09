@@ -1,0 +1,45 @@
+.article1 {
+    color: #fff;
+    background: url(../images/a1-bg.jpg) no-repeat;
+    background-attachment: fixed;
+}
+
+.a1-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a1-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.a1-box {
+    position: relative;
+    width: 450px;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.a1-box-text {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.a1-tag {
+    position: absolute;
+    top: 0; right: 0;
+    width: 120px;
+    height: 45px;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+
+/*==================================================*/
