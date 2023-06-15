@@ -1,6 +1,5 @@
 .article {
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +9,7 @@
     background-position: center !important;
     background-size: cover !important;
     padding: 120px 0;
+    overflow: hidden;
 }
 
 .article-wrapper {
@@ -37,8 +37,25 @@
 }
 
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
     .article {
-        padding: 40px 0;
+        padding: 60px 0;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article .p-text p {
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+    
+    .article .p-text h4 {
+        font-size: 32px;
+    }
+
+    .article .p-text h5 {
+        font-size: 14px;
+        margin-top: 1.5rem;
     }
 }

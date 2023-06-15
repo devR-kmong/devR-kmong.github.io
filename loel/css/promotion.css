@@ -3,6 +3,7 @@
     height: 100vh !important;
     background: url(../images/hero.jpg);
     background-attachment: fixed;
+    background-position: right;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -117,12 +118,45 @@
 
 
 @media (max-width: 768px) {
+    .promotion-wrapper {
+        gap: 3rem;
+    }
+    
+    .p-text h4 {
+        font-size: 45px;
+    }
+
     .p-text h5 {
-        font-size: 40px;
+        font-size: 18px;
+    }
+
+    .moreBtn {
+        padding: 12px 46px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .promotion-wrapper {
+        gap: 2rem;
     }
 
     .p-text p {
-        font-size: 18px;
-        font-weight: 300;
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+    
+    .p-text h4 {
+        font-size: 32px;
+    }
+
+    .p-text h5 {
+        font-size: 14px;
+        margin-top: 1.5rem;
+    }
+
+    .moreBtn {
+        padding: 12px 36px;
     }
 }

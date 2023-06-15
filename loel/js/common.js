@@ -3,15 +3,6 @@ AOS.init({
 });
 
 
-new WOW({
-    boxClass:     'wow',
-    animateClass: 'animated',
-    offset:       200,
-    mobile:       true,
-    live:         true
-}).init();
-
-
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -40,38 +31,13 @@ $(function () {
 
 
 
-$(window).on('scroll', function () {
-    $('section').each(function () {
-        if ($(window).scrollTop() >= $(this).offset().top - 500) {
-            var id = $(this).attr('id');
-            $('nav ul li a').removeClass('actives');
-            $('nav ul li a[href=#' + id + ']').addClass('actives');
-        }
-    });
-});
-
-
 $(function () {
-    $('.logo, .logo-w, .askBtn, .moreBtn').click(function (e) {
+    $('.logo, .askBtn, .moreBtn').click(function (e) {
         $.scrollTo(this.hash || 0, 500);
         e.preventDefault();
     });
 });
 
-
-$('.menuBtns').click(function () {
-    $(this).toggleClass('change')
-});
-
-$('nav ul li a').click(function () {
-    $('#check').prop('checked', false)
-    $('.menuBtns').removeClass('change')
-});
-
-$('.overlay').click(function () {
-    $('#check').prop('checked', false)
-    $('.menuBtns').removeClass('change')
-});
 
 
 if (navigator.userAgent.indexOf("Trident") > 0) {
@@ -79,3 +45,9 @@ if (navigator.userAgent.indexOf("Trident") > 0) {
         "확인 버튼을 누르면 Edge 브라우저로 이동합니다.")
     window.location = 'microsoft-edge:' + window.location.href;
 };
+
+
+
+$(document).on("keyup", ".phoneNumber", function () {
+    $(this).val($(this).val().replace(/[^0-9]/g, "").replace(/(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)?([0-9]{4})$/, "$1-$2-$3").replace("--", "-"));
+});

@@ -12,6 +12,12 @@ footer {
     width: 1200px;
 }
 
+.f-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .logo-f img {
     width: 150px;
 }
@@ -29,5 +35,21 @@ footer {
     .footer-wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    footer {
+        padding: 40px 0;
+    }
+    
+    .logo-f img {
+        width: 100px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+        margin-top: 1rem;
     }
 }
