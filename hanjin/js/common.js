@@ -2,11 +2,11 @@ $(function(){
     $('#main').fullpage({
 		menu: '#gnb',
 		lockAnchors: false,
-		anchors: ['main', 'about', 'experience', 'skills', 'publications', 'education', 'career', 'awards', 'contact'],
+		anchors: ['main', 'about', 'education', 'publications', 'experience', 'awards', 'career', 'skills', 'contact'],
 		navigation: true,
 		navigationPosition: 'left',
 		showActiveTooltip: true,
-        sectionsColor: ['#000', '#eee', '#222', '#fff', '#151515', '#fff', '#111', '#222', '#333'],
+        sectionsColor: ['#36d9ec', '#eee', '#f2f2f2', '#0f141a', '#081623', '#0b0f15', '#0c1117', '#fff', '#0053a3'],
 		responsiveWidth: 851,
 		afterResponsive: function(isResponsive){
 			
