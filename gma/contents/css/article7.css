@@ -1,0 +1,29 @@
+.article7 {
+    padding-top: 200px;
+    background: url(../images/a7-bg.jpg);
+    background-position: top !important;
+}
+
+.a7-title {
+    margin-bottom: 4rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .article7 {
+        padding-top: 120px;
+    }
+
+    .a7-title {
+        width: 75%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a7-title {
+        margin-bottom: 2rem;
+    }
+}

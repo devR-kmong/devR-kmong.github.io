@@ -1,0 +1,134 @@
+.article3 {
+    position: relative;
+    padding-bottom: 180px;
+    background: url(../images/a3-bg.jpg);
+    background-position: bottom !important;
+    margin-bottom: -3px;
+}
+
+.a3-line {
+    position: absolute;
+    bottom: 300px;
+    width: 100%;
+    height: 3px;
+    background-color: #ddd;
+}
+
+.a3-title {
+    margin-bottom: 5rem;
+}
+
+.a3-arrow span {
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-bottom: 3px solid #555;
+    border-right: 3px solid #555;
+    transform: rotate(45deg);
+    animation: animate 1s infinite;
+    margin: -6px 0;
+}
+
+.a3-arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.a3-arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+.a3-top {
+    color: #222;
+    font-size: 28px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.a3-top b {
+    font-weight: 700;
+}
+
+.a3-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.a3-box {
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 4px solid #ddd;
+    background-color: #fff;
+    transition: all .3s ease;
+}
+
+.a3-box-num {
+    position: absolute;
+    top: -20px; left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 16px;
+    background-color: var(--main-color);
+}
+
+.a3-box p {
+    color: #222;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.a3-box img {
+    height: 85px;
+    user-select: none;
+    transition: all .15s ease;
+}
+
+.a3-box:hover img {
+    transform: scale(1.15);
+}
+
+.a3-box.on {
+    border: 4px solid #111;
+    background-color: var(--main-color);
+}
+
+.a3-box.on .a3-box-num {
+    background-color: #111;
+}
+
+.a3-box.on p {
+    color: #fff;
+}
+
+.a3-box.on img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(37deg) brightness(106%) contrast(105%);
+}
+
+
+/*==================================================*/
