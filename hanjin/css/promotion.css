@@ -9,9 +9,15 @@
 
 .profile {
     position: absolute;
-    bottom: -40%; right: 40px;
+    bottom: -40%; right: -100%;
+    transition: all .5s ease;
+    transition-delay: .7s;
     user-select: none;
     opacity: .95;
+}
+
+.fp-viewing-main .profile {
+    right: 5%;
 }
 
 .p-text {
@@ -63,7 +69,11 @@
 /*==================================================*/
 @media (min-width: 2250px) {
     .profile {
-        bottom: -15%; right: 120px;
+        bottom: -15%;
+    }
+
+    .fp-viewing-main .profile {
+        right: 8%;
     }
 
     .p-text,
