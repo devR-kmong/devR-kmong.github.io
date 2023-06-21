@@ -1,0 +1,100 @@
+.article2 {
+    background: url(../images/a2-bg.jpg);
+}
+
+.a2-title {
+    color: rgba(255, 255, 255, .7);
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.mySwiper {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-wrapper {
+    margin-top: 2rem;
+}
+
+.swiper-control-wrapper {
+    position: absolute;
+    top: 0; right: 0;
+    width: 200px;
+    height: 50px;
+    display: flex;
+}
+
+.swiper-control-wrapper .swiper-pagination {
+    color: rgba(255, 255, 255, .3);
+    font-size: 16px;
+    margin-bottom: 7px;
+    z-index: 1;
+}
+
+
+.swiper-control-wrapper .swiper-button-prev,
+.swiper-control-wrapper .swiper-button-next {
+    
+    z-index: 2;
+}
+
+.swiper-control-wrapper i {
+    color: rgba(255, 255, 255, .3);
+    font-size: 22px;
+}
+
+.swiper-slide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ss-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.ss-box {
+    padding: 50px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 7rem;
+}
+
+.ss-box h5 {
+    color: rgba(255, 255, 255, .3);
+    width: 140px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ss-box-text p {
+    color: rgba(255, 255, 255, .5);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.65;
+}
+
+.ss-box-text a {
+    color: rgba(255, 255, 255, .6);
+    display: block;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 7px 14px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, .1);
+    margin-top: 10px;
+}
+
+.ss-box-text a:hover {
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .15);
+}
+
+
+/*==================================================*/

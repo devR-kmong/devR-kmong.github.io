@@ -1,0 +1,47 @@
+.article8 {
+    background: url(../images/a8-bg.jpg);
+}
+
+.a8-wrapper {
+    width: 100%;
+}
+
+.a8-title {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.contact-list {
+    color: #eee;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.contact-list li {
+    letter-spacing: 0;
+}
+
+.c-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.c-logo-wrapper a {
+    transition: all .3s ease;
+}
+
+.c-logo-wrapper a i {
+    font-size: 32px;
+}
+
+.c-logo-wrapper a:hover {
+    transform: translateY(-3px);
+}
+
+
+/*==================================================*/

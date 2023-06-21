@@ -1,0 +1,41 @@
+.article4 {
+    background: url(../images/a4-bg.jpg);
+}
+
+.a4-title {
+    width: 100%;
+    color: rgba(255, 255, 255, .7);
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.a4-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.a4-box h5 {
+    color: rgba(255, 255, 255, .5);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.a4-box p {
+    color: rgba(255, 255, 255, .3);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.65;
+    letter-spacing: 0;
+    margin-top: 1rem;
+}
+
+.a4-box p b {
+    color: rgba(103, 212, 255, 0.3);
+    font-weight: 700;
+}
+
+
+/*==================================================*/

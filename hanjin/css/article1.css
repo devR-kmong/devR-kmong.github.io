@@ -1,0 +1,124 @@
+.article1 {
+    background: url(../images/a1-bg.jpg);
+}
+
+.a1-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a1-left {
+    flex: 1;
+}
+
+.a1-left h5 {
+    color: var(--main-color);
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 140px;
+    font-weight: 800;
+    font-family: 'Montserrat';
+}
+
+.a1-left h5 span {
+    padding-top: 10px;
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.a1-left p {
+    color: rgba(0, 0, 0, .3);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.a1-right {
+    position: relative;
+    flex: 4;
+    padding-top: 25px;
+}
+
+.a1-speech {
+    position: relative;
+    position: absolute;
+    top: 3px; left: 300px;
+    padding: 20px;
+    border-radius: 7px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    animation: updown 1s infinite ease-in-out;
+    z-index: 10;
+}
+
+.a1-speech::after {
+    content: '';
+    position: absolute;
+    bottom: 20px; left: -7px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f5f5f5;
+    z-index: -1;
+}
+
+.a1-speech h5 {
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+.a1-speech ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.a1-speech ul li {
+    color: #777;
+    font-size: 12px;
+    list-style: circle;
+}
+
+@keyframes updown {
+    0% {transform:translateY(0);}
+    10% {transform:translateY(-3px);}
+    20% {transform:translateY(0);}
+    30% {transform:translateY(-3px);}
+    40% {transform:translateY(0);}
+    100% {transform:translateY(0);}
+}
+
+.a1-title {
+    color: #555;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+}
+
+.a1-right p {
+    color: rgba(0, 0, 0, .3);
+    font-size: 18px;
+    line-height: 1.65;
+    margin-top: 2rem;
+}
+
+.a1-right p a {
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.a1-right p a:hover {
+    text-decoration: underline;
+}
+
+
+/*==================================================*/

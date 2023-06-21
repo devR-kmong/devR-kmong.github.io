@@ -1,0 +1,28 @@
+.article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    overflow: hidden;
+}
+
+.article-wrapper {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*==================================================*/
+@media (max-width: 1050px) {
+    .article-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

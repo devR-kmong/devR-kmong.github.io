@@ -1,0 +1,82 @@
+.a3-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.a3-box h5 {
+    color: #aaa;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    margin-bottom: 1rem;
+}
+
+.a3-image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.a3-imageBox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #eee;
+    background-color: #fdfdfd;
+}
+
+.a3-image {
+    width: 100%;
+    height: 100%;
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a3-image img {
+    width: 50%;
+    opacity: .5;
+    filter: grayscale(1);
+    transition: all .3s ease;
+}
+
+.a3-image .a3-1,
+.a3-image .a3-2,
+.a3-image .a3-3 {
+    width: 60px;
+}
+
+.a3-imageBox p {
+    color: #aaa;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.a3-imageBox:hover {
+    border: 1px solid #35d9eb48;
+    background-color: #fff;
+}
+
+.a3-imageBox:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+.a3-imageBox:hover p {
+    color: var(--main-color);
+    background-color: #35d9eb18;
+}
+
+
+/*==================================================*/
