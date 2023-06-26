@@ -39,3 +39,21 @@
 
 
 /*==================================================*/
+@media (max-width: 550px) {
+    .a4-title {
+        font-size: 32px;
+        margin-bottom: 2rem;
+    }
+
+    .a4-box-wrapper {
+        gap: 1.5rem;
+    }
+    
+    .a4-box h5 {
+        font-size: 16px;
+    }
+
+    .a4-box p {
+        font-size: 12px;
+    }
+}

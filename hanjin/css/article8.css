@@ -45,3 +45,28 @@
 
 
 /*==================================================*/
+@media (max-width: 550px) {
+    .a8-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .a8-title {
+        font-size: 32px;
+        margin-bottom: 1rem;
+    }
+
+    .contact-list {
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-logo-wrapper a i {
+        font-size: 22px;
+    }
+}

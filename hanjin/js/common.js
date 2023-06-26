@@ -7,7 +7,7 @@ $(function(){
 		navigationPosition: 'left',
 		showActiveTooltip: true,
         sectionsColor: ['#36d9ec', '#eee', '#f2f2f2', '#0f141a', '#081623', '#0b0f15', '#0c1117', '#fff', '#0053a3'],
-		responsiveWidth: 851,
+		responsiveWidth: 1051,
 		afterResponsive: function(isResponsive){
 			
 		},
@@ -30,7 +30,7 @@ $(function () {
 
 
 
-if (window.innerWidth > 768) {
+if (window.innerWidth > 1050) {
     VanillaTilt.init(document.querySelectorAll('.a7-box'), {
         max: 10,
         speed: 1000,
@@ -81,7 +81,7 @@ $('#gnb li a, .overlay').click(function () {
 
 if (window.innerWidth < 851) {
 	$('#gnb').click(function () {
-		$(this).fadeOut();
+		$(this).removeClass('show');
 		$('.tm-closeBtn').fadeOut(0);
 		$('.overlay').removeClass('on');
 	})

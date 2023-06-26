@@ -291,3 +291,12 @@ html.fp-enabled {
 .fp-noscroll .fp-overflow {
     overflow: hidden
 }
+
+
+
+/*==================================================*/
+@media (max-width: 1050px) {
+    .fp-scrollable .fp-section:not(.fp-auto-height):not([data-percentage]), .fp-scrollable .fp-slide:not(.fp-auto-height):not([data-percentage]), .fp-scrollable.fp-responsive .fp-is-overflow.fp-section:not(.fp-auto-height):not([data-percentage]) {
+        min-height: unset;
+    }
+}

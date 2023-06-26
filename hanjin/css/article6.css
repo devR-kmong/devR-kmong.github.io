@@ -42,3 +42,29 @@
 
 
 /*==================================================*/
+@media (max-width: 1050px) {
+    .article.article6 {
+        justify-content: unset;
+        align-items: unset;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a6-title {
+        font-size: 32px;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a6-box h5 {
+        font-size: 16px;
+    }
+    
+    .a6-box p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}

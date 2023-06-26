@@ -14,6 +14,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 3rem;
 }
 
 .a5-box-wrapper {
@@ -46,3 +47,40 @@
 
 
 /*==================================================*/
+@media (max-width: 1050px) {
+    .a5-wrapper {
+        flex-direction: column;
+    }
+
+    .a5-box p br {
+        display: none;
+    }
+
+    .a5-image {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a5-title {
+        font-size: 32px;
+        margin-bottom: 1.5rem;
+    }
+
+    .a5-wrapper {
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a5-box h5 {
+        font-size: 16px;
+    }
+    
+    .a5-box p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}

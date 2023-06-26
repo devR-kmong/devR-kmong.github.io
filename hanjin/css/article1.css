@@ -122,3 +122,62 @@
 
 
 /*==================================================*/
+@media (max-width: 1150px) {
+    .a1-wrapper {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a1-left,
+    .a1-right {
+        flex: unset;
+    }
+    
+    .a1-left h5 {
+        font-size: 100px;
+    }
+
+    .a1-left h5 span {
+        padding-top: 0;
+        font-size: 45px;
+    }
+
+    .a1-left p {
+        font-size: 18px;
+        margin-top: -10px;
+    }
+
+    .a1-speech {
+        left: 220px;
+        padding: 12px;
+    }
+    
+    .a1-speech h5 {
+        font-size: 12px;
+    }
+
+    .a1-speech ul li {
+        font-size: 11px;
+    }
+
+    .a1-title {
+        font-size: 24px;
+    }
+
+    .a1-right p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a1-speech {
+        top: -120px; left: 120px;
+    }
+
+    .a1-right p {
+        margin-top: 1rem;
+    }
+}

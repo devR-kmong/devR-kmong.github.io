@@ -80,3 +80,54 @@
 
 
 /*==================================================*/
+@media (max-width: 1050px) {
+    .a3-image-wrapper {
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a3-imageBox p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a3-box h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .a3-image img {
+        opacity: 1;
+        filter: grayscale(0);
+    }
+    
+    .a3-image .a3-1,
+    .a3-image .a3-2,
+    .a3-image .a3-3 {
+        width: 40px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a3-box-wrapper {
+        gap: 2rem;
+    }
+    
+    .a3-image-wrapper {
+        gap: 5px;
+    }
+    
+    .a3-image {
+        padding: 22px 0;
+    }
+
+    .a3-imageBox p {
+        padding: 8px 0;
+        font-size: 12px;
+    }
+}

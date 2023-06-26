@@ -2,6 +2,11 @@
     background: url(../images/a2-bg.jpg);
 }
 
+.a2m-title,
+.a2-box-wrapper {
+    display: none;
+}
+
 .a2-title {
     color: rgba(255, 255, 255, .7);
     font-size: 45px;
@@ -98,3 +103,75 @@
 
 
 /*==================================================*/
+@media (max-width: 1050px) {
+    .mySwiper {
+        display: none !important;
+    }
+
+    .a2m-title {
+        display: flex;
+        color: rgba(255, 255, 255, .7);
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    .a2-box-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .a2-box {
+        height: 160px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 1rem;
+        background-color: rgba(255, 255, 255, .05);
+    }
+    
+    .a2-box h5 {
+        color: rgba(255, 255, 255, .3);
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .a2-box-text p {
+        color: rgba(255, 255, 255, .5);
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.65;
+    }
+    
+    .a2-box-text p br {
+        display: none;
+    }
+    
+    .a2-box-text a {
+        color: rgba(255, 255, 255, .6);
+        display: block;
+        width: fit-content;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 6px 10px;
+        border-radius: 3px;
+        background-color: rgba(255, 255, 255, .1);
+        margin-top: 10px;
+    }
+    
+    .a2-box-text a:hover {
+        color: rgba(255, 255, 255, .8);
+        background-color: rgba(255, 255, 255, .15);
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a2-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
