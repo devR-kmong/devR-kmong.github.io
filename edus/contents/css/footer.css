@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    background-color: #eee;
+    padding: 50px 0;
+}
+
+.footer-wrapper {
+    width: 1320px;
+    display: flex;
+    gap: 5rem;
+}
+
+.logo-f {
+    width: 250px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-right ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.fBtn {
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.footer-right p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: -0.01em;
+}
+
+
+
+/*==================================================*/
