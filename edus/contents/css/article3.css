@@ -2,11 +2,11 @@
     padding-top: 0;
 }
 
-.mySwiper {
+.mySwiper2 {
     width: 100%;
 }
 
-.swiper-slide {
+.mySwiper2 .swiper-slide {
     width: 100%;
     display: flex !important;
     justify-content: center;

@@ -25,15 +25,21 @@ for (let i = 0; i < $('.p-tabBtn').length; i++) {
 
 
 var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+});
+
+var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 4,
     spaceBetween: 10,
     loop: true,
     autoplay: {
         delay: 1200,
         disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
     },
 });
