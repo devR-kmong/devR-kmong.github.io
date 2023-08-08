@@ -1,0 +1,142 @@
+.promotion {
+    width: 100%;
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.promotion-group {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: url(../images/hero.jpg);
+    background-position: center;
+    animation: zoom-bg 10s both;
+    overflow: hidden;
+}
+
+@keyframes zoom-bg {
+    0% {
+        background-size: 130% auto;
+    }
+
+    100% {
+        background-size: 105% auto;
+    }
+}
+
+.polygon {
+    position: absolute;
+    top: -250px; left: 0;
+    width: 900px;
+    transform: scaleX(-1);
+    opacity: .1;
+}
+
+.polygon2 {
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 700px;
+    transform: scaleY(-1);
+    opacity: .2;
+}
+
+.promotion-wrapper {
+    width: 1200px;
+}
+
+.p-text {
+    margin-bottom: 3rem;
+}
+
+.p-text h5 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.p-text h5 span {
+    font-weight: 300;
+}
+
+.p-text p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.65;
+    font-weight: 300;
+    margin-top: 1.5rem;
+}
+
+.p-bottom {
+    position: relative;
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 60px;
+    border-radius: 0 0 30px 30px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.p-bottom div {
+    width: 1200px;
+}
+
+.p-notice {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    letter-spacing: -0.01em;
+}
+
+.pBtn {
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 350px;
+    height: 100%;
+    padding-left: 80px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0 0 25px 0;
+    background-color: var(--main-color);
+    transition: all .3s ease;
+}
+
+.pBtn:hover {
+    gap: 20px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .p-text h5 {
+        font-size: 40px;
+    }
+
+    .p-text p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
