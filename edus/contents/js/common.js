@@ -25,9 +25,20 @@ for (let i = 0; i < $('.p-tabBtn').length; i++) {
 
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
+    breakpoints: {
+        451: {
+            slidesPerView: 1.5,
+        },
+        769: {
+            slidesPerView: 2,
+        },
+        1251: {
+            slidesPerView: 3,
+        },
+    },
     autoplay: {
         delay: 2000,
         disableOnInteraction: false,
@@ -35,9 +46,17 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 4,
+    slidesPerView: 2,
     spaceBetween: 10,
     loop: true,
+    breakpoints: {
+        769: {
+            slidesPerView: 3,
+        },
+        1251: {
+            slidesPerView: 4,
+        },
+    },
     autoplay: {
         delay: 1200,
         disableOnInteraction: false,

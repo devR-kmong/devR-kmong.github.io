@@ -22,6 +22,7 @@
 }
 
 .a2-box-image img {
+    width: 100%;
     margin-bottom: -5px;
     transition: all .2s ease;
 }
@@ -57,3 +58,12 @@
 
 
 /*==================================================*/
+@media (max-width: 550px) {
+    .a2-box-text h5 {
+        font-size: 14px;
+    }
+
+    .a2-box-text p {
+        font-size: 12px;
+    }
+}

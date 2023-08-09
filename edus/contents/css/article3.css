@@ -17,3 +17,8 @@
 
 
 /*==================================================*/
+@media (max-width: 550px) {
+    .mySwiper2 .swiper-slide img {
+        width: 70%;
+    }
+}

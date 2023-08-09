@@ -46,3 +46,23 @@
         padding: 0 20px;
     }
 }
+
+
+@media (max-width: 768px) {
+    .article {
+        padding: 40px 0;
+    }
+
+    .article-title {
+        margin-bottom: 1rem;
+    }
+
+    .article-title p {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .article-title h5 {
+        font-size: 24px;
+    }
+}

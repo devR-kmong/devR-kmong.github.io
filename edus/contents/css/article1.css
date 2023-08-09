@@ -57,3 +57,69 @@
 
 
 /*==================================================*/
+@media (max-width: 1370px) {
+    .a1-icon {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .a1-box-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem 1rem;
+    }
+
+    .a1-box {
+        width: 100%;
+    }
+
+    .a1-icon {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a1-box-wrapper {
+        gap: 1rem 10px;
+    }
+    
+    .a1-box {
+        gap: 8px;
+    }
+
+    .a1-box p {
+        font-size: 14px;
+    }
+    
+    .a1-icon {
+        border-radius: 10px;
+    }
+    
+    .a1-icon img {
+        height: 40%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a1-box-wrapper {
+        margin-top: 10px;
+    }
+    
+    .a1-box p {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .a1-icon {
+        height: 80px;
+    }
+    
+    .a1-icon img {
+        height: 35%;
+    }
+}

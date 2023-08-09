@@ -46,6 +46,10 @@
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .1);
 }
 
+.student {
+    display: none;
+}
+
 .p-tab-wrapper {
     width: 100%;
     display: flex;
@@ -133,7 +137,7 @@
 
 .p-ask-wrapper {
     color: #fff;
-    padding: 30px 50px;
+    padding: 30px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,5 +184,161 @@
 @media (min-width: 2250px) {
     .promotion {
         background: url(../images/hero-2k.jpg);
+    }
+}
+
+
+@media (max-width: 1370px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .p-float {
+        right: 20px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .promotion {
+        height: auto !important;
+        padding: 40px 0 !important;
+        background: url(../images/hero-m.jpg);
+        margin-top: 0;
+    }
+    
+    .promotion-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    
+    .p-text {
+        margin-top: 5rem;
+    }
+    
+    .p-float {
+        position: relative;
+        position: static;
+        width: 100%;
+    }
+
+    .student {
+        position: absolute;
+        bottom: 57.5%; right: 40px;
+        width: 45%;
+        display: block;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .p-text p {
+        font-size: 18px;
+    }
+    
+    .p-text h5 {
+        font-size: 42px;
+    }
+
+    .p-text em {
+        font-size: 13px;
+        margin-top: 1rem;
+    }
+
+    .p-tabBtn {
+        padding: 18px 0;
+    }
+
+    .student {
+        bottom: 61.5%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .promotion {
+        padding: 20px 0 !important;
+    }
+
+    .promotion-wrapper {
+        gap: 3rem;
+    }
+    
+    .p-text {
+        margin-top: 3rem;
+    }
+    
+    .p-text p {
+        font-size: 15px;
+    }
+
+    .p-text h5 {
+        font-size: 32px;
+    }
+
+    .p-text em {
+        font-size: 10px;
+    }
+
+    .student {
+        bottom: 60.4%; right: 13px;
+    }
+
+    .p-tabBtn {
+        padding: 15px 0;
+        font-size: 14px;
+    }
+    
+    .p-box-wrapper {
+        padding: 20px 30px;
+    }
+
+    .p-list {
+        gap: 7px;
+    }
+    
+    .p-list a p,
+    .p-list a span {
+        font-size: 14px;
+    }
+
+    .p-moreBtn {
+        padding: 14px 0;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .p-ask-wrapper {
+        padding: 20px 0;
+    }
+
+    .p-ask-wrapper p {
+        font-size: 15px;
+    }
+
+    .p-ask-wrapper a {
+        font-size: 32px;
+    }
+
+    .p-ask-wrapper ul {
+        gap: 5px;
+    }
+
+    .p-ask-wrapper ul li {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .student {
+        bottom: 59.8%;
+    }
+    
+    .p-list a p,
+    .p-list a span {
+        font-size: 12px;
     }
 }
