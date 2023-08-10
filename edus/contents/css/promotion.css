@@ -334,12 +334,24 @@
 
 @media (max-width: 450px) {
     .student {
-        bottom: 65%;
+        bottom: 63.5%;
+    }
+
+    .p-box-wrapper {
+        padding: 20px;
     }
     
     .p-list a p,
     .p-list a span {
         font-size: 12px;
+    }
+
+    .p-ask-wrapper {
+        gap: 10px;
+    }
+
+    .p-ask-wrapper a {
+        font-size: 24px;
     }
 }
 
