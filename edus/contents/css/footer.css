@@ -88,6 +88,11 @@
 
 @media (max-width: 450px) {
     .logo-f {
-        width: 100px;
+        width: 90px;
+    }
+
+    .footer-right p {
+        font-size: 10px;
+        line-height: 1.65;
     }
 }

@@ -322,4 +322,8 @@
     .toggle i {
         font-size: 23px;
     }
+
+    .tgm-more li {
+        font-size: 12px;
+    }
 }

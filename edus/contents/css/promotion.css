@@ -279,11 +279,11 @@
     }
 
     .p-text em {
-        font-size: 10px;
+        display: none;
     }
 
     .student {
-        bottom: 60.4%; right: 13px;
+        bottom: 65%; right: 13px;
     }
 
     .p-tabBtn {
@@ -296,7 +296,7 @@
     }
 
     .p-list {
-        gap: 7px;
+        gap: 10px;
     }
     
     .p-list a p,
@@ -334,11 +334,28 @@
 
 @media (max-width: 450px) {
     .student {
-        bottom: 59%;
+        bottom: 65%;
     }
     
     .p-list a p,
     .p-list a span {
         font-size: 12px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .student {
+        bottom: 64.7%;
+    }
+    
+    .p-tabBtn {
+        font-size: 12px;
+    }
+    
+    .p-list a p,
+    .p-list a span {
+        font-size: 10px;
+        white-space: nowrap;
     }
 }
