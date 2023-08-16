@@ -6,11 +6,11 @@ $(document).on("keyup", ".phoneNumber", function () {
 
 $('.a5-personal-text').click(function () {
     if ($('#cb').is(':checked')) {
-        $('.a5-personal').removeClass('a7-personal-no');
+        $('.a5-personal').removeClass('a5-personal-no');
         $('.a5-personal-text label p').html('개인정보 수집 및 이용에 동의합니다.');
         $('.a5-form .a5-submit').attr('disabled', false);
     } else {
-        $('.a5-personal').addClass('a7-personal-no');
+        $('.a5-personal').addClass('a5-personal-no');
         $('.a5-personal-text label p').html('개인정보처리방침에 동의해주세요.');
         $('.a5-form .a5-submit').attr('disabled', true);
     }
