@@ -64,7 +64,6 @@
 .menu-hover li a {
     color: #222 !important;
     font-size: 16px;
-    font-weight: 400;
 }
 
 .mh-0,
@@ -74,7 +73,6 @@
     display: none !important;
 }
 
-.logo-w,
 .logo {
     width: 85px;
     max-width: 85px;

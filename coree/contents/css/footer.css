@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1b2c43;
+    background-color: #222;
     padding: 50px 0;
 }
 
@@ -32,7 +32,8 @@
 }
 
 .footer-left p span {
-    color: #00ffc0;
+    color: var(--main-color);
+    font-weight: bolder;
 }
 
 .footer-left p em {
@@ -97,14 +98,14 @@
     font-weight: 400;
     display: flex;
     flex-direction: column;
-    border: 1px solid #2c3f58;
-    background-color: #1b2c43;
+    border: 1px solid #333;
+    background-color: #222;
     display: none;
 }
 
 .f-select-item a {
     padding: 15px 13px;
-    border-bottom: 1px solid #2c3f58;
+    border-bottom: 1px solid #333;
     user-select: none;
 }
 
