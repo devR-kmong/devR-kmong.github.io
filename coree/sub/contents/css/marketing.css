@@ -2,36 +2,145 @@
     background: url(../images/marketing-bg.jpg) no-repeat;
 }
 
+
+.m0 {
+    padding-top: 200px;
+}
+
+.m0-title {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.m0-1 {
+    position: absolute;
+    top: -120px;
+    width: 70%;
+    opacity: .15;
+}
+
+.m0-title h5 {
+    color: #222;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.m0-title p {
+    color: #222;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.65;
+    margin-top: 2rem;
+}
+
+.m0-logo-wrapper {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.m0-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.m0-logo:hover {
+    transform: scale(1.1);
+}
+
+.m0-arrow {
+    margin-top: 5rem;
+}
+
+.m0-arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid #aaa;
+    border-right: 2px solid #aaa;
+    transform: rotate(45deg);
+    animation: animate 1s infinite;
+    margin: -10px 0;
+}
+
+.m0-arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.m0-arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+
 .m-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 8rem;
+    gap: 10rem;
 }
 
 .m-text {
     padding-top: 50px;
 }
 
+.m-text h4 {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Play';
+    margin-bottom: 1rem;
+}
+
 .m-text h5 {
     color: #222;
+    font-size: 45px;
+    font-weight: 800;
     display: flex;
     align-items: flex-end;
     gap: 1rem;
-    font-size: 36px;
-    font-weight: 800;
 }
 
 .m-text h5 span {
-    color: #888;
+    color: #555;
     font-size: 16px;
     font-weight: 400;
 }
 
 .m-text p {
-    color: #aaa;
+    color: #888;
     font-size: 18px;
     line-height: 1.65;
     margin-top: 2rem;
+}
+
+.m-image img {
+    width: 500px;
 }
 
 
