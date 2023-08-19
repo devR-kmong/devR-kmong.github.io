@@ -10,6 +10,15 @@ $('.counter').counterUp({
 
 
 
+$(function () {
+    $('.sub-navBtn').click(function (e) {
+        $.scrollTo(this.hash || 0, 500);
+        e.preventDefault();
+    });
+});
+
+
+
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     slidesPerView: 1.5,
@@ -52,23 +61,37 @@ $(document).ready(function () {
 
 
 
-$(function () {    
-    for (let i=0; i<$('.menu-item').length; i++) {
-        $('.menu-item').eq(i).mouseenter(function () {
-            $('.mh-' + i).fadeIn(120).css('display','flex');
-        })
+if (window.innerWidth > 950) {
+    $(function () {    
+        for (let i=0; i<$('.menu-item').length; i++) {
+            $('.menu-item').eq(i).mouseenter(function () {
+                $('.mh-' + i).fadeIn(120).css('display','flex');
+            })
+    
+            $('.menu-item').eq(i).mouseleave(function () {
+                $('.mh-' + i).hide();
+            })
+        }
+    })
+    
+    $(window).scroll(function(){
+        $('.menu-hover').hide();
+    });
+    $(document).bind("mouseleave", function(){
+        $('.menu-hover').hide();
+    });
+}
 
-        $('.menu-item').eq(i).mouseleave(function () {
-            $('.mh-' + i).hide();
-        })
-    }
-})
 
-$(window).scroll(function(){
-    $('.menu-hover').hide();
+
+
+$('.menuBtns').click(function () {
+    $(this).toggleClass('change');
 });
-$(document).bind("mouseleave", function(){
-    $('.menu-hover').hide();
+
+$('.menu li a').click(function () {
+    $('#check').prop('checked', false);
+    $('.menuBtns').removeClass('change');
 });
 
 

@@ -290,13 +290,13 @@
 
 
 @media (max-width: 550px) {
-    .form-wrapper {
-        padding: 0 10px;
-    }
-    
     .a5-form .input-group {
         padding: 10px 0;
         gap: 10px;
+    }
+
+    .a5-form .input-wrapper .input-title h5 {
+        font-size: 13px;
     }
     
     .a5-form .inputbox {

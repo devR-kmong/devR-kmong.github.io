@@ -28,3 +28,23 @@
 
 
 /*==================================================*/
+@media (max-width: 768px) {
+    .a5-title h5 {
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a5-title {
+        margin-bottom: 1.5rem;
+    }
+    
+    .a5-title p {
+        font-size: 13px;
+    }
+    
+    .a5-title h5 {
+        font-size: 24px;
+    }
+}
