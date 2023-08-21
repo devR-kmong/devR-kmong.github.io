@@ -35,50 +35,84 @@
     <script src="contents/js/swiper-bundle.min.js"></script>
     <script src="contents/js/waypoints.min.js"></script>
     <script src="contents/js/aos.js"></script>
-    <title>코리디지털 | 중국마케팅 | 왕홍마케팅 | 30년이상 노하우</title>
+    <title>중국 유통·마케팅 30년 전문법인 | 코리디지털</title>
 </head>
 <body>
     <div class="header">
         <div class="gnb">
-            <a href="<?php echo G5_URL ?>" class="logo"><img src="contents/images/logo.svg"></a>
+            <a href="<?php echo G5_URL ?>" class="logo">
+                <picture>
+                    <source srcset="contents/images/logo-w.svg" media="(max-width: 768px)">
+                    <img src="contents/images/logo.svg">
+                </picture>
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <div class="menuBtns">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </label>
             <ul class="menu">
                 <li class="menu-item">
-                    <a href="<?php echo G5_URL ?>/sub/company/about">회사소개</a>
+                    <a href="<?php echo G5_URL ?>/sub/about" class="menu-head">
+                        회사소개
+                    </a>
                     <ul class="menu-hover mh-0">
                         <li><a href=""></a></li>
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <a href="<?php echo G5_URL ?>/sub/service/marketing">유통·마케팅</a>
+                    <a href="<?php echo G5_URL ?>/sub/marketing" class="menu-head">
+                        유통·마케팅
+                        <div class="menu-plus">
+                            <i class="ri-add-line"></i>
+                        </div>
+                    </a>
                     <ul class="menu-hover mh-1">
-                        <li><a href="<?php echo G5_URL ?>/sub/service/marketing#digital">디지털 마케팅</a></li>
-                        <li><a href="<?php echo G5_URL ?>/sub/service/marketing#e-commerce">전자상거래</a></li>
-                        <li><a href="<?php echo G5_URL ?>/sub/service/marketing#expert">전문가 마케팅</a></li>
-                        <li><a href="<?php echo G5_URL ?>/sub/service/marketing#experience">체험단 마케팅</a></li>
-                        <li><a href="<?php echo G5_URL ?>/sub/service/marketing#design">디자인</a></li>
+                        <li><a href="<?php echo G5_URL ?>/sub/marketing#digital">디지털 마케팅</a></li>
+                        <li><a href="<?php echo G5_URL ?>/sub/marketing#experience">체험단 마케팅</a></li>
+                        <li><a href="<?php echo G5_URL ?>/sub/marketing#e-commerce">전자상거래</a></li>
+                        <li><a href="<?php echo G5_URL ?>/sub/marketing#expert">전문가 마케팅</a></li>
+                        <li><a href="<?php echo G5_URL ?>/sub/marketing#design">영상·디자인</a></li>
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <a href="<?php echo G5_URL ?>/reference">레퍼런스</a>
+                    <a href="<?php echo G5_URL ?>/reference" class="menu-head">
+                        레퍼런스
+                        <div class="menu-plus">
+                            <i class="ri-add-line"></i>
+                        </div>
+                    </a>
                     <ul class="menu-hover mh-2">
                         <li><a href="<?php echo G5_URL ?>/reference">마케팅 파트너</a></li>
                         <li><a href="<?php echo G5_URL ?>/reference">디자인 수상</a></li>
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <a href="<?php echo G5_URL ?>/news">중국이야기</a>
+                    <a href="<?php echo G5_URL ?>/news" class="menu-head">
+                        중국이야기
+                    </a>
                     <ul class="menu-hover mh-3">
                         <li><a href=""></a></li>
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <a href="<?php echo G5_URL ?>/contact">컨설팅 문의</a>
+                    <a href="<?php echo G5_URL ?>/contact" class="menu-head">
+                        컨설팅 문의
+                    </a>
                     <ul class="menu-hover mh-4">
                         <li><a href=""></a></li>
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <a href="https://blog.naver.com/coree-" target="_blank">블로그</a>
+                    <a href="https://blog.naver.com/coree-" target="_blank" class="menu-head">
+                        블로그
+                        <div class="menu-plus">
+                            <i class="ri-external-link-line"></i>
+                        </div>
+                    </a>
                     <ul class="menu-hover mh-5">
                         <li><a href=""></a></li>
                     </ul>
@@ -89,8 +123,11 @@
     <main>
         <section class="article promotion">
             <div class="promotion-group">
-                <img src="contents/images/polygon.png" class="polygon">
-                <img src="contents/images/polygon.png" class="polygon2">
+                <div class="video">
+                    <video autoplay muted loop playsinline id="myVideo">
+                        <source src="contents/videos/main.mp4" type="video/mp4">
+                    </video>
+                </div>
                 <div class="promotion-wrapper">
                     <div class="p-text">
                         <h4>
@@ -109,7 +146,7 @@
                 <div class="p-bottom">
                     <div>
                         <div class="p-notice">
-                            Tel: +82 070-4128-6580　|　Mail : hmgad@naver.com
+                            Tel: +82 070-4128-6580<span>　|　</span><br/>Mail : hmgad@naver.com
                         </div>
                         <a href="<?php echo G5_URL ?>/contact" class="pBtn">
                             <p>
@@ -127,7 +164,7 @@
                 <div class="a1-wrapper">
                     <div class="a1-top">
                         <div class="a1-box-wrapper">
-                            <a href="<?php echo G5_URL ?>/sub/service/marketing" class="a1-box">
+                            <a href="<?php echo G5_URL ?>/sub/marketing#digital" class="a1-box">
                                 <div class="a1-b-top">
                                     <p>
                                         01
@@ -147,7 +184,7 @@
                                     <img src="contents/images/a1-1.jpg">
                                 </div>
                             </a>
-                            <a href="<?php echo G5_URL ?>/sub/service/marketing" class="a1-box">
+                            <a href="<?php echo G5_URL ?>/sub/marketing#experience" class="a1-box">
                                 <div class="a1-b-top">
                                     <p>
                                         02
@@ -181,7 +218,7 @@
                     </div>
                     <div class="a1-bottom">
                         <div class="a1-box-wrapper">
-                            <a href="<?php echo G5_URL ?>/sub/service/marketing" class="a1-box">
+                            <a href="<?php echo G5_URL ?>/sub/marketing#e-commerce" class="a1-box">
                                 <div class="a1-b-top">
                                     <p>
                                         03
@@ -201,7 +238,7 @@
                                     <img src="contents/images/a1-4.jpg">
                                 </div>
                             </a>
-                            <a href="<?php echo G5_URL ?>/sub/service/marketing" class="a1-box">
+                            <a href="<?php echo G5_URL ?>/sub/marketing#expert" class="a1-box">
                                 <div class="a1-b-top">
                                     <p>
                                         04
@@ -221,7 +258,7 @@
                                     <img src="contents/images/a1-2.jpg">
                                 </div>
                             </a>
-                            <a href="<?php echo G5_URL ?>/sub/service/marketing" class="a1-box">
+                            <a href="<?php echo G5_URL ?>/sub/marketing#design" class="a1-box">
                                 <div class="a1-b-top">
                                     <p>
                                         05
@@ -288,7 +325,7 @@
                                 </p>
                             </li>
                         </ul>
-                        <a href="" class="a2-moreBtn">
+                        <a href="<?php echo G5_URL ?>/sub/about" class="a2-moreBtn">
                             <p>
                                 더 알아보기
                             </p>
