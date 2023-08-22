@@ -1,0 +1,149 @@
+.promotion {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #111;
+    background-position: center !important;
+}
+
+.promotion-wrapper {
+    width: 1200px;
+    margin-bottom: 7rem;
+}
+
+.p-text p {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.p-text p a {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    gap: 6px;
+    letter-spacing: 0;
+}
+
+.p-text p a i {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.p-text h5 {
+    color: #fff;
+    font-size: 65px;
+}
+
+
+.navigator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.navi-wrapper {
+    width: 1200px;
+    display: flex;
+}
+
+.navi-wrapper a {
+    flex: 1;
+    color: #666;
+    padding: 20px 0;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.navi-wrapper a:hover {
+    color: #222;
+    font-weight: 600;
+}
+
+.navi-wrapper a.active {
+    color: #222;
+    font-weight: 700;
+    border-bottom: 2px solid #222;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .navi-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .promotion {
+        height: 50vh;
+    }
+    
+    .p-text p {
+        font-size: 18px;
+    }
+
+    .p-text h5 {
+        font-size: 65px;
+    }
+
+    .navi-wrapper a {
+        padding: 18px 0;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .promotion {
+        height: 40vh;
+    }
+
+    .promotion-wrapper {
+        margin-bottom: 4rem;
+    }
+    
+    .p-text p {
+        font-size: 16px;
+        margin-bottom: .5rem;
+    }
+
+    .p-text h5 {
+        font-size: 50px;
+    }
+    
+    .navi-wrapper a {
+        padding: 16px 0;
+        font-size: 14px;
+    }
+    
+    .navi-wrapper a:nth-child(4) {
+        display: none;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .p-text p {
+        font-size: 14px;
+    }
+    
+    .p-text h5 {
+        font-size: 40px;
+    }
+}
