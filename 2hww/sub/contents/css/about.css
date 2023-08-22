@@ -44,9 +44,9 @@
 
 .ab-title h5 {
     color: #222;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 200;
-    line-height: 1.4;
+    line-height: 1.45;
 }
 
 .ab-title h5 span {
@@ -59,7 +59,7 @@
 
 .ab-text {
     width: 100%;
-    margin-top: 7rem;
+    margin-top: 6rem;
 }
 
 .ab-text h5 {
@@ -97,6 +97,7 @@
 
 .ab-box img {
     height: 66px;
+    filter: grayscale(.7);
     margin-bottom: 2rem;
 }
 
