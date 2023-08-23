@@ -1,0 +1,46 @@
+.ao-wrapper {
+    width: 70%;
+    padding: 70px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: #fff;
+    margin-top: -5rem;
+}
+
+.ao-title {
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: .7rem;
+}
+
+.ao-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ao-text ul li {
+    padding: 30px;
+    border: 1px solid #eee;
+    background-color: #f8f8f8;
+}
+
+.ao-text ul li h5 {
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ao-text ul li p {
+    color: #888;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+
+/*==================================================*/
