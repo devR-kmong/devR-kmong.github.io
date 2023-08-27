@@ -4,7 +4,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #202630;
+    background-color: #fff;
     padding: 60px 20px;
 }
 
@@ -26,49 +26,58 @@ footer {
 }
 
 .logo-f {
-    width: 150px;
-    margin-bottom: 1rem;
+    width: 170px;
+    margin-bottom: 1.2rem;
     cursor: pointer;
 }
 
 .fBtn {
-    color: #fff;
+    color: #555;
     display: flex;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .7rem;
 }
 
+.fBtn h5,
 .fBtn a {
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .fBtn span {
-    font-weight: 300;
+    font-weight: 400;
 }
 
-.footer-box h4 {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.footer-box h5 {
-    color: #fff;
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.footer-box p {
-    color: #fff;
+.f-info p {
+    color: #555;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1.6;
 }
 
-.footer-box-info .f-info {
-    letter-spacing: 0.02em;
+.footer-right {
+    text-align: right;
+}
+
+.footer-right h4 {
+    color: #555;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-right h5 {
+    color: #555;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.footer-right p {
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.7;
 }
 
 
@@ -82,7 +91,7 @@ footer {
 
 @media (max-width: 1000px) {
     footer {
-        padding: 40px 20px;
+        padding: 50px 20px;
     }
     
     .footer-right {
@@ -92,23 +101,15 @@ footer {
 
 
 @media (max-width: 768px) {
-    .footer-box {
-        gap: .5rem;
-    }
-
     .footer-box-wrapper {
         gap: 2rem;
     }
+
+    .footer-box {
+        gap: .5rem;
+    }
     
     .fBtn-wrapper {
-        display: none;
-    }
-    
-    .f-info br {
-        display: block;
-    }
-
-    .f-info span {
         display: none;
     }
 }
@@ -116,18 +117,11 @@ footer {
 
 @media (max-width: 450px) {
     .logo-f {
-        width: 100px;
+        width: 120px;
+        margin-bottom: 1rem;
     }
     
-    .footer-box h4 {
-        font-size: 16px;
-    }
-    
-    .footer-box h5 {
-        font-size: 22px;
-    }
-    
-    .footer-box p {
+    .f-info p {
         font-size: 12px;
     }
 }

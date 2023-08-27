@@ -25,13 +25,12 @@
     <link rel="stylesheet" href="css/floating.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script data-cfasync="false" src="js/form-submission-handler.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/header.fixed.js"></script>
     <script src="js/aos.js"></script>
     <title>천일패스파인더</title>
 </head>
@@ -57,9 +56,8 @@
                 <li><a href="#cost">서비스요금</a></li>
                 <li><a href="#process">가입절차</a></li>
                 <li><a href="#service">고객센터</a></li>
-                <li><a href="#register">가입신청</a></li>
             </ul>
-            <a href="#register" class="askBtn">가입신청하기</a>
+            <a href="#service" class="askBtn">가입신청하기</a>
             <div class="overlay"></div>
         </nav>
     </header>
@@ -74,7 +72,7 @@
                     <p>
                         현장정보의 선도주자로서 함께 나아갑니다.
                     </p>
-                    <a href="#about"><button class="pBtn">더 알아보기</button></a>
+                    <a href="#news"><button class="pBtn">더 알아보기</button></a>
                 </div>
                 <div class="p-image">
                     <img src="images/p-image.svg" class="p-image">
@@ -82,7 +80,7 @@
                 </div>
             </div>
         </section>
-        <section class="article article1">
+        <section class="article article1" id="news">
             <div class="article-wrapper">
                 <div class="a1-title">
                     <img src="images/warning.svg" class="warning">
@@ -215,22 +213,64 @@
         </section>
         <section class="article article3" id="cost">
             <div class="article-wrapper">
-                2
+                <div class="a3-square"></div>
+                <div class="a3-title">
+                    <p>
+                        폐기물처리 현장정보 시스템 <b>업계 최저가 통신비</b>
+                    </p>
+                    <h5>
+                        월 8,470원<br/>
+                        <span>VAT 포함</span>
+                    </h5>
+                </div>
+                <table class="a3-table">
+                    <tr>
+                        <td></td>
+                        <td>A사</td>
+                        <td class="a3-td-chunil">천일패스파인더</td>
+                        <td>B사</td>
+                    </tr>
+                    <tr>
+                        <td>월요금</td>
+                        <td>15,500원</td>
+                        <td class="a3-td-price">8,470원</td>
+                        <td>13,300원</td>
+                    </tr>
+                    <tr>
+                        <td>기기값</td>
+                        <td>30,000원</td>
+                        <td class="a3-td-zero">면제</td>
+                        <td>30,000원</td>
+                    </tr>
+                    <tr>
+                        <td>추가요금</td>
+                        <td>발생</td>
+                        <td class="a3-td-zero">없음</td>
+                        <td>발생</td>
+                    </tr>
+                    <tr>
+                        <td>유심비용</td>
+                        <td>별도</td>
+                        <td class="a3-td-zero">무료</td>
+                        <td>별도</td>
+                    </tr>
+                    <tr>
+                        <td>설치비용</td>
+                        <td>별도</td>
+                        <td class="a3-td-zero">면제</td>
+                        <td>별도</td>
+                    </tr>
+                </table>
             </div>
         </section>
         <section class="article article4" id="process">
             <div class="article-wrapper">
-                3
+                가입절차
             </div>
         </section>
         <section class="article article5" id="service">
             <div class="article-wrapper">
-                4
-            </div>
-        </section>
-        <section class="article article6" id="register">
-            <div class="article-wrapper">
-                5
+                가입신청
             </div>
         </section>
     </main>
@@ -238,9 +278,13 @@
         <div class="footer-wrapper">
             <div class="footer-box-wrapper">
                 <div class="footer-box footer-left">
-                    <a href="/" class="logo-f"><img src="images/logo-f.svg"></a>
+                    <a href="http://chunilenergy.com" class="logo-f" target="_blank"><img src="images/logo-f.svg"></a>
                     <div class="fBtn-wrapper">
                         <div class="fBtn">
+                            <h5>
+                                개인정보처리방침
+                            </h5>
+                            <span> | </span>
                             <a href="#about">
                                 상품안내
                             </a>
@@ -252,18 +296,10 @@
                             <a href="#process">
                                 가입절차
                             </a>
-                            <span> | </span>
-                            <a href="#service">
-                                고객센터
-                            </a>
-                            <span> | </span>
-                            <a href="#register">
-                                가입신청
-                            </a>
                         </div>
                     </div>
-                    <div class="footer-box-info">
-                        <p class="f-info">
+                    <div class="f-info">
+                        <p>
                             천일에너지 대표: 박상원 | 사업자등록번호: 127-86-25218<br/>
                             FAX: 02-469-1013 | 사업장소재지: 경기도 포천시 영중면 양문공단로3길 20<br/>
                             가입문의(전국): <a href="tel: 02-6907-1015">02-6907-1015</a> | 가입신청서 제출: <a href="mailto: chunilpf@ichunil.com">chunilpf@ichunil.com</a>
