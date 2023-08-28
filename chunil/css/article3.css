@@ -4,11 +4,11 @@
 
 .a3-square {
     position: absolute;
-    bottom: -20px; left: 550px;
-    width: 365px;
+    bottom: -20px; left: 45%;
+    width: 32%;
     height: 560px;
     border-radius: 20px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, .08);
     z-index: 1;
 }
 

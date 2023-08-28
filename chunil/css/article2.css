@@ -33,7 +33,6 @@
     flex-direction: column;
     gap: 1rem;
     border-radius: 20px;
-    border: 1px solid #eee;
     background-color: #fff;
 }
 
@@ -42,6 +41,7 @@
     font-size: 20px;
     font-weight: 500;
     font-family: 'Montserrat';
+    text-align: right;
     letter-spacing: 0;
     margin-bottom: 2rem;
 }
@@ -68,6 +68,21 @@
     font-size: 14px;
 }
 
+.a2Btn {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    width: 220px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #2d3133;
+    margin-top: 6rem;
+}
 
 
 /*==================================================*/

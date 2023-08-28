@@ -1,5 +1,106 @@
 .article5 {
-    background-color: var(--main-color);
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.article5::after {
+    content: '';
+    position: absolute;
+    bottom: -15px; left: 50%;
+    transform: translate(-50%, 0) rotate(45deg);
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+}
+
+.article5 .article-wrapper {
+    position: relative;
+}
+
+.a5-square {
+    position: absolute;
+    bottom: -20px; left: 25.5%;
+    width: 32%;
+    height: 615px;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .08);
+    z-index: 1;
+}
+
+.a5-square2 {
+    left: 65%;
+}
+
+.a5-title {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.a5-title h5 {
+    color: #222;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.a5-title p {
+    color: #777;
+    font-size: 19px;
+    line-height: 1.65;
+    margin-top: 1rem;
+}
+
+.a5-table tr td {
+    color: #888;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.a5-table tr:first-child td {
+    color: #222;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.a5-table tr td:first-child {
+    color: #222;
+    font-size: 18px;
+}
+
+.a5-table tr:first-child td {
+    background-color: transparent;
+}
+
+.a5-table tr .a5-td-price b {
+    font-size: 32px;
+    font-weight: 800;
+    background-image: linear-gradient(-225deg, #007adf 0%, #00ecbc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+
+.a5-table tr td span {
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.a5-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 7rem;
+}
+
+.a5-bottom li {
+    color: #aaa;
+    font-size: 15px;
+    letter-spacing: 0;
+    text-align: center;
+    list-style-type: '- ';
 }
 
 
