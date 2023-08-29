@@ -10,6 +10,11 @@
 
 .a6-title h5 {
     font-size: 55px;
+    line-height: 1.35;
+}
+
+.a6-title h5 br {
+    display: none;
 }
 
 .a6-title p {
@@ -50,6 +55,13 @@
 
 
 /*==================================================*/
+@media (max-width: 850px) {
+    .a6-title h5 br {
+        display: block;
+    }
+}
+
+
 @media (max-width: 768px) {
     .a6-title {
         margin-bottom: 4rem;

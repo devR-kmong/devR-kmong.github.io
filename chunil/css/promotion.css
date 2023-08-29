@@ -133,10 +133,7 @@
             opacity: 0;
         }
     }
-}
 
-
-@media (max-width: 450px) {
     .p-text h5 {
         font-size: 32px;
     }
@@ -149,5 +146,17 @@
         width: 160px;
         height: 38px;
         font-size: 12px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .p-text h5 {
+        font-size: 26px;
+    }
+
+    .p-text p {
+        font-size: 13px;
+        font-weight: 600;
     }
 }
