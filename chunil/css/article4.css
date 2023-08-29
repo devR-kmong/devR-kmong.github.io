@@ -1,5 +1,5 @@
 .article4 {
-    background-color: #f5f5f5;
+    background-color: #f4f5f6;
 }
 
 .article4 .article-wrapper {
@@ -50,7 +50,7 @@
 }
 
 .mySwiper .s-image img {
-    height: 100px;
+    height: 80px;
 }
 
 .mySwiper .s-text h5 {
@@ -62,12 +62,17 @@
 .mySwiper .s-text p {
     color: #777;
     font-size: 18px;
+    line-height: 1.65;
     margin-top: 1rem;
 }
 
 .mySwiper .s-text p b {
     font-weight: 600;
     text-decoration: underline;
+}
+
+.mySwiper .s-text p br {
+    display: none;
 }
 
 .mySwiper .swiper-button-wrapper {
@@ -99,5 +104,119 @@
 @media (min-width: 2250px) {
     .mySwiper .swiper-button-wrapper {
         left: 35%;
+    }
+}
+
+
+@media (max-width: 1919px) {
+    .mySwiper .swiper-button-wrapper {
+        left: 20%;
+    }
+}
+
+
+@media (max-width: 1350px) {
+    .mySwiper .s-text p br {
+        display: block;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .article4 .article-wrapper {
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .mySwiper .s-num {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    
+    .mySwiper .s-image {
+        margin-bottom: 1rem;
+    }
+    
+    .mySwiper .s-image img {
+        height: 60px;
+    }
+    
+    .mySwiper .s-text h5 {
+        font-size: 20px;
+    }
+    
+    .mySwiper .s-text p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a4-title {
+        margin-bottom: 3rem;
+    }
+    
+    .a4-title h5 {
+        font-size: 36px;
+    }
+
+    .a4-title p {
+        font-size: 16px;
+    }
+
+    .mySwiper .swiper-slide {
+        padding: 30px;
+    }
+
+    .mySwiper .s-num {
+        font-size: 13px;
+    }
+    
+    .mySwiper .s-image img {
+        height: 40px;
+    }
+    
+    .mySwiper .s-text h5 {
+        font-size: 18px;
+    }
+    
+    .mySwiper .s-text p {
+        font-size: 12px;
+    }
+
+    .mySwiper .swiper-button-wrapper {
+        left: 7%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-title {
+        margin-bottom: 2rem;
+    }
+    
+    .a4-title h5 {
+        font-size: 32px;
+    }
+
+    .a4-title p {
+        font-size: 14px;
+    }
+
+    .mySwiper .swiper-button-wrapper {
+        left: 10%;
+    }
+
+    .mySwiper .swiper-button-next {
+        width: 36px;
+        height: 36px;
+        border-radius: 14px;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .1);
+    }
+    
+    .mySwiper .swiper-button-next i {
+        font-size: 18px;
     }
 }

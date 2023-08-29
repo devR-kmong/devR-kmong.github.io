@@ -50,3 +50,64 @@
 
 
 /*==================================================*/
+@media (max-width: 768px) {
+    .a6-title {
+        margin-bottom: 4rem;
+    }
+    
+    .a6-title h5 {
+        font-size: 45px;
+    }
+
+    .a6-title p {
+        font-size: 18px;
+        margin-top: 1.5rem;
+    }
+
+    .a6Btn-wrapper {
+        gap: 1rem;
+    }
+
+    .a6Btn {
+        font-size: 16px;
+        width: 220px;
+        height: 47px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article6 {
+        background: url(../images/a6-bg-m.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .a6-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .a6-title h5 {
+        font-size: 32px;
+    }
+
+    .a6-title p {
+        width: 70%;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 1.2rem;
+    }
+
+    .a6Btn-wrapper {
+        flex-direction: column;
+    }
+
+    .a6Btn {
+        font-size: 14px;
+        width: 180px;
+        height: 43px;
+    }
+}

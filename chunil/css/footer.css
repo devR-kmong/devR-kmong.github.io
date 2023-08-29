@@ -101,6 +101,10 @@ footer {
 
 
 @media (max-width: 768px) {
+    footer {
+        padding: 40px 20px;
+    }
+    
     .footer-box-wrapper {
         gap: 2rem;
     }
@@ -112,13 +116,10 @@ footer {
     .fBtn-wrapper {
         display: none;
     }
-}
 
-
-@media (max-width: 450px) {
     .logo-f {
         width: 120px;
-        margin-bottom: 1rem;
+        margin-bottom: .7rem;
     }
     
     .f-info p {

@@ -8,15 +8,24 @@ var swiper = new Swiper(".mySwiper", {
     initialSlide: 0,
     centeredSlides: true,
     grabCursor: true,
-    slidesPerView: 3.5,
+    slidesPerView: 1.5,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    spaceBetween: 30,
+    spaceBetween: 10,
     breakpoints: {
+        769: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+        },
+        1919: {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+        },
         2250: {
             slidesPerView: 4.5,
+            spaceBetween: 30,
         },
     },
 });
@@ -68,7 +77,7 @@ $(window).on('scroll', function () {
 
 
 $(function () {
-    $('.topBtn, .logo, .logo-w, nav ul li a, .askBtn, .p-text a, .a2Btn, .fBtn a').click(function (e) {
+    $('.topBtn, .logo, .logo-f, nav ul li a, .askBtn, .p-text a, .a2Btn, .fBtn a').click(function (e) {
         $.scrollTo(this.hash || 0, 500);
         e.preventDefault();
     });

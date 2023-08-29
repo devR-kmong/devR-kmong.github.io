@@ -77,3 +77,72 @@
 
 
 /*==================================================*/
+@media (max-width: 768px) {
+    .a1-title .warning {
+        width: 65px;
+    }
+
+    .a1-title h5 {
+        font-size: 42px;
+    }
+
+    .a1-title p {
+        font-size: 16px;
+    }
+
+    .a1-bottom {
+        line-height: 1.7;
+    }
+    
+    .a1-bottom br {
+        display: block;
+    }
+
+    .a1-bottom span {
+        display: none;
+    }
+
+    .a1Btn {
+        width: 200px;
+        height: 45px;
+        font-size: 15px;
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a1-title {
+        margin-bottom: 1rem;
+    }
+    
+    .a1-title p br {
+        display: none;
+    }
+
+    .a1-bottom {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #eee;
+        background-color: #f5f5f5;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a1-title h5 {
+        font-size: 32px;
+    }
+
+    .a1-title p {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .a1Btn {
+        width: 160px;
+        height: 38px;
+        font-size: 12px;
+    }
+}

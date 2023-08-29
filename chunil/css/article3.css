@@ -5,7 +5,7 @@
 .a3-square {
     position: absolute;
     bottom: -20px; left: 45%;
-    width: 32%;
+    width: 31%;
     height: 560px;
     border-radius: 20px;
     box-shadow: 0 0 50px rgba(0, 0, 0, .08);
@@ -124,3 +124,103 @@
 
 
 /*==================================================*/
+@media (max-width: 768px) {
+    .a3-square {
+        width: 29%;
+        height: 420px;
+    }
+    
+    .a3-title p {
+        font-size: 18px;
+    }
+
+    .a3-title h5 {
+        font-size: 75px;
+    }
+
+    .a3-table tr:first-child td {
+        font-size: 16px;
+    }
+
+    .a3-table tr td {
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .a3-table tr td.a3-td-zero {
+        font-size: 18px;
+    }
+    .a3-table tr td.a3-td-chunil {
+        font-size: 18px;
+    }
+    .a3-table tr td.a3-td-price {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a3-square {
+        left: 42%;
+        width: 30%;
+        height: 320px;
+        border-radius: 15px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    }
+    
+    .a3-title p {
+        font-size: 14px;
+    }
+
+    .a3-title h5 {
+        font-size: 55px;
+    }
+
+    .a3-table tr:first-child td {
+        font-size: 13px;
+    }
+
+    .a3-table tr td {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .a3-table tr td.a3-td-zero {
+        font-size: 13px;
+    }
+    .a3-table tr td.a3-td-chunil {
+        font-size: 13px;
+    }
+    .a3-table tr td.a3-td-price {
+        font-size: 16px;
+    }
+
+    .a3-table tr td:first-child {
+        width: 50px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a3-square {
+        bottom: -12px; left: 44.5%;
+        width: 28%;
+        height: 300px;
+    }
+
+    .a3-title {
+        margin-bottom: 4rem;
+    }
+    
+    .a3-title p {
+        font-size: 12px;
+    }
+
+    .a3-title h5 {
+        font-size: 48px;
+    }
+
+    .a3-title h5 span {
+        font-size: 14px;
+    }
+}
