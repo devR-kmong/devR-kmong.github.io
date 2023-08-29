@@ -110,12 +110,21 @@ $('.pp-closeBtn').click(function () {
 })
 
 
+$('.a6-popup').click(function () {
+    $('.a6-modal-wrapper').fadeIn().css('display','flex');
+})
+
+$('.a6-md-closeBtn').click(function () {
+    $('.a6-modal-wrapper').fadeOut();
+})
+
+
 
 $(document).on(
     'keydown',
     function (event) {
         if (event.key == "Escape") {
-            $('.pp-wrapper').fadeOut();
+            $('.pp-wrapper, .a6-modal-wrapper').fadeOut();
         }
     }
 );
