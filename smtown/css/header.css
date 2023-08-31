@@ -165,6 +165,10 @@ nav {
         cursor: pointer;
     }
 
+    .menuBtns.change {
+        margin-top: 4px;
+    }
+
     .m-menu {
         position: fixed;
         top: 0; left: 0;
@@ -177,6 +181,7 @@ nav {
         gap: 1rem;
         background-color: #f1f3f6;
         transition: all .3s ease;
+        touch-action: none;
         opacity: 0;
         visibility: hidden;
     }
@@ -241,7 +246,6 @@ nav {
     }
 
     .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-5px, 2px);
         transform: rotate(-45deg) translate(-5px, 2px);
     }
 
@@ -250,7 +254,6 @@ nav {
     }
 
     .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-9px, -6px);
         transform: rotate(45deg) translate(-9px, -6px);
     }
     
@@ -287,5 +290,28 @@ nav {
 
     .m-menu {
         padding-top: 70px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    header,
+    .Fixed {
+        height: 62px;
+    }
+
+    .m-menu {
+        padding-top: 64px;
+    }
+    
+    .m-menulist {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .m-menuBtn {
+        padding: 8px 10px;
+        font-size: 13px;
+        border-radius: 7px;
     }
 }
