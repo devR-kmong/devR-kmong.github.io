@@ -1,0 +1,45 @@
+.article4 {
+    background: url(../images/a4-bg.png);
+}
+
+.article4 .article-wrapper {
+    position: relative;
+}
+
+.a4-mockup {
+    position: absolute;
+    top: 0; right: -5px;
+    width: 400px;
+    height: 783px;
+    z-index: 10;
+}
+
+
+/*==================================================*/
+@media (max-width: 1050px) {
+    .a4-mockup {
+        position: absolute;
+        top: unset;
+        bottom: -8px; left: 50%;
+        transform: translate(-50%, 0) !important;
+        width: 400px;
+        height: 783px;
+        z-index: 10;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a4-mockup {
+        top: 234px;
+        width: 80%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-mockup {
+        top: 216px;
+    }
+}
