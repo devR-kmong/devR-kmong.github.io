@@ -125,6 +125,13 @@
 
 
 /*==================================================*/
+@media (max-height: 850px) {
+    .promotion {
+        height: auto !important;
+    }
+}
+
+
 @media (max-width: 1650px) {
     .promotion {
         height: auto !important;
