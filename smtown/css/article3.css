@@ -84,11 +84,19 @@
 
 @media (max-width: 450px) {
     .a3-mockup {
-        top: 216px;
+        top: 202px;
     }
     
     .mySwiper {
         width: 78%;
         border-radius: 20px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .a3-mockup {
+        top: 207px;
+        width: 78%;
     }
 }
