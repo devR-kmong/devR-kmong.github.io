@@ -162,7 +162,6 @@ nav {
 
     .menuBtns {
         display: inline-block;
-        cursor: pointer;
     }
 
     .menuBtns.change {
