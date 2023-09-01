@@ -125,9 +125,16 @@
 
 
 /*==================================================*/
-@media (max-width: 1050px) {
+@media (max-width: 1650px) {
     .promotion {
         height: auto !important;
+        padding: 180px 0 80px 0 !important;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .promotion {
         padding: 160px 0 80px 0 !important;
     }
     
