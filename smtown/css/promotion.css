@@ -242,3 +242,18 @@
         height: 54px;
     }
 }
+
+
+@media (max-width: 450px) {
+    .p-text p {
+        font-size: 20px;
+    }
+    
+    .p-text h5  {
+        font-size: 32px;
+    }
+    
+    .p-storeBtn img {
+        width: 120px;
+    }
+}

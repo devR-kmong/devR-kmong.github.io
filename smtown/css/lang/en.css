@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+* {
+    font-family: 'Ubuntu', 'sans-serif';
+}
+
+
+.a1-text p {
+    font-size: 45px;
+}
+
+.a6-text h5,
+.a6-text p {
+    font-size: 60px;
+}
+
+
+/*==================================================*/
+@media (max-width: 650px) {
+    .a1-text p {
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a6-text h5,
+    .a6-text p {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a1-text p {
+        font-size: 24px;
+    }
+
+    .a6-text h5,
+    .a6-text p {
+        font-size: 32px;
+    }
+}

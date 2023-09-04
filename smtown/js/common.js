@@ -1,6 +1,7 @@
 AOS.init({
     once: true,
     delay: 100,
+    offset: 400,
     duration: 1200,
 })
 
