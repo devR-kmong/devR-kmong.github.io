@@ -210,6 +210,10 @@ nav {
         font-size: 22px;
     }
 
+    .m-menuBtn:active {
+        background-color: #f6f8fb;
+    }
+
     .m-langBtn {
         position: relative;
         color: #aaa;
