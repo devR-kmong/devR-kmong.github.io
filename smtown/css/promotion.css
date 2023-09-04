@@ -150,15 +150,11 @@
     }
 
     .p-text h5 {
-        font-size: 45px;
+        font-size: 55px;
     }
 
     .p-text h5 i {
         display: block;
-    }
-
-    .p-store-wrapper {
-        display: none;
     }
 
     .p-store-m {
@@ -186,11 +182,20 @@
     }
 
     .p-text p {
-        font-size: 26px;
+        font-size: 24px;
     }
     
     .p-text h5  {
-        font-size: 32px;
+        font-size: 38px;
+    }
+
+    .p-store-wrapper {
+        gap: 10px;
+        margin-top: 1.5rem;
+    }
+
+    .p-storeBtn img {
+        width: 140px;
     }
 
     .p-store-m {

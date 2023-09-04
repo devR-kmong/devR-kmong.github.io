@@ -14,7 +14,7 @@ header {
 .Fixed {
     position: fixed;
     top: 0;
-    height: 85px;
+    height: 72px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     box-shadow: 0 0 15px rgba(0, 0, 0, .1);
@@ -266,7 +266,7 @@ nav {
 @media (max-width: 550px) {
     header,
     .Fixed {
-        height: 70px;
+        height: 72px;
     }
     
     .logo img {
@@ -288,7 +288,7 @@ nav {
     }
 
     .m-menu {
-        padding-top: 70px;
+        padding-top: 72px;
     }
 }
 

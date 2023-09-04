@@ -14,6 +14,18 @@ new WOW({
 
 
 
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 1,
+    grabCursor: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: true,
+    },
+});
+
+
+
 $(function () {
     $('.morelang').hide();
     $('.m-langlist').hide();
