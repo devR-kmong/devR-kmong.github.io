@@ -135,14 +135,14 @@
 @media (max-width: 1650px) {
     .promotion {
         height: auto !important;
-        padding: 180px 0 80px 0 !important;
+        padding: 180px 0 120px 0 !important;
     }
 }
 
 
 @media (max-width: 1050px) {
     .promotion {
-        padding: 160px 0 80px 0 !important;
+        padding: 160px 0 120px 0 !important;
     }
     
     .p-text p {
@@ -178,7 +178,7 @@
 
 @media (max-width: 550px) {
     .promotion {
-        padding: 140px 0 60px 0 !important;
+        padding: 140px 0 80px 0 !important;
     }
 
     .p-text p {
