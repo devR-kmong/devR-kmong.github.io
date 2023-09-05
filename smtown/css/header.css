@@ -215,7 +215,7 @@ nav {
         background-color: #f6f8fb;
     }
 
-    .m-langBtn {
+    .m-lang-right {
         position: relative;
         color: #aaa;
         font-size: 14px;
@@ -321,7 +321,7 @@ nav {
         border-radius: 7px;
     }
 
-    .m-langBtn {
+    .m-lang-right {
         font-size: 12px;
     }
 }
