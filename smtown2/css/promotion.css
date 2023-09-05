@@ -1,0 +1,259 @@
+.promotion {
+    width: 100%;
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.promotion-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.p-text P {
+    color: #222;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.p-text h5 {
+    color: #222;
+    font-size: 85px;
+    line-height: 1.4;
+}
+
+.p-text h5 span {
+    font-family: 'Montserrat';
+    letter-spacing: 0.02em;
+}
+
+.p-text h5 b {
+    color: var(--main-color);
+}
+
+.p-text h5 em {
+    font-style: normal;
+}
+
+.p-text h5 i {
+    display: none;
+}
+
+.p-store-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.p-storeBtn img {
+    width: 200px;
+}
+
+.p-box-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    margin-top: 8rem;
+    animation: slide 40s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-200%, 0, 0);
+    }
+}
+
+.p-box {
+    padding: 35px;
+    border-radius: 13px;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+}
+
+.p-box-text {
+    width: 300px;
+    height: 100px;
+}
+
+.p-box-text h5 {
+    color: #222;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    letter-spacing: -0.04em;
+}
+
+.p-box-text p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.p-box-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.p-box-image img {
+    height: 72px;
+}
+
+.p-store-m {
+    display: none;
+}
+
+
+/*==================================================*/
+@media (max-height: 850px) {
+    .promotion {
+        height: auto !important;
+    }
+}
+
+
+@media (max-width: 1650px) {
+    .promotion {
+        height: auto !important;
+        padding: 180px 0 120px 0 !important;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .promotion {
+        padding: 160px 0 120px 0 !important;
+    }
+    
+    .p-text p {
+        font-size: 36px;
+    }
+
+    .p-text h5 {
+        font-size: 55px;
+    }
+
+    .p-text h5 i {
+        display: block;
+    }
+
+    .p-store-m {
+        padding: 20px;
+        width: 350px;
+        color: #fff;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: calc();
+        border-radius: 12px;
+        background-color: var(--main-color);
+        margin-top: 3rem;
+    }
+
+    .p-box-wrapper {
+        animation: slide 25s linear infinite;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .promotion {
+        padding: 140px 0 80px 0 !important;
+    }
+
+    .p-text p {
+        font-size: 24px;
+    }
+    
+    .p-text h5  {
+        font-size: 38px;
+    }
+
+    .p-store-wrapper {
+        gap: 10px;
+        margin-top: 1.5rem;
+    }
+
+    .p-storeBtn img {
+        width: 140px;
+    }
+
+    .p-store-m {
+        width: 200px;
+        padding: 15px;
+        font-size: 14px;
+        margin-top: 2rem;
+    }
+
+    .p-box-wrapper {
+        gap: 1rem;
+        margin-top: 6rem;
+        animation: slide 20s linear infinite;
+    }
+
+    .p-box {
+        padding: 28px;
+    }
+
+    .p-box-text {
+        width: 180px;
+        height: 80px;
+    }
+
+    .p-box-text h5 {
+        font-size: 22px;
+    }
+
+    .p-box-text p {
+        font-size: 13px;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+    
+        100% {
+            transform: translate3d(-500%, 0, 0);
+        }
+    }
+
+    .p-box-image img {
+        height: 54px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .p-text p {
+        font-size: 20px;
+    }
+    
+    .p-text h5  {
+        font-size: 32px;
+    }
+    
+    .p-storeBtn img {
+        width: 120px;
+    }
+}
