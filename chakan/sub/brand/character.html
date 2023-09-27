@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://chakantokki.co.kr">
+    <link rel="stylesheet" href="../../contents/css/common.css">
+    <link rel="stylesheet" href="../../contents/css/header.css">
+    <link rel="stylesheet" href="../../contents/css/promotion.css">
+    <link rel="stylesheet" href="../../contents/css/footer.css">
+    <link rel="stylesheet" href="../../contents/css/aos.css">
+    <link rel="stylesheet" href="../../contents/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../contents/css/sub-promotion.css">
+    <link rel="stylesheet" href="../contents/css/character.css">
+    <link rel="shortcut icon" href="../../contents/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="../../contents/js/swiper-bundle.min.js"></script>
+    <script src="../../contents/js/aos.js"></script>
+    <title>캐릭터소개</title>
+</head>
+<body>
+    <div class="header">
+        <div class="gnb">
+            <a href="<?php echo G5_URL?>" class="logo"><img src="../../contents/images/logo.svg"></a>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <div class="menuBtns">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </label>
+            <div class="menu">
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/about/greeting" class="menu-head">
+                        회사소개
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/about/greeting">
+                                인사말
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/brand/story" class="menu-head">
+                        브랜드소개
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/brand/story">
+                                브랜드스토리
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/brand/character">
+                                캐릭터소개
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/brand/guide">
+                                운영안내
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/franchise/why" class="menu-head">
+                        가맹안내
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/franchise/why">
+                                WHY?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/franchise/process">
+                                창업절차
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/franchise/cost">
+                                창업비용
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/store" class="menu-head">
+                        매장위치
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/store">
+                                전국매장현황
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/notice" class="menu-head">
+                        고객센터
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/contact">
+                                창업상담
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/notice">
+                                공지사항
+                            </a>
+                        </li>  
+                    </div>
+                </ul>
+            </div>
+            <a href="<?php echo G5_URL?>/contact" class="askBtn">
+                <h5>
+                    가맹문의
+                </h5>
+                <i class="ri-edit-2-line"></i>
+            </a>
+        </div>
+    </div>
+    <main>
+        <section class="sub-promotion">
+            <div class="sub-pro-wrapper">
+                <div class="sp-text">
+                    <h5>
+                        캐릭터소개
+                    </h5>
+                    <div class="sp-route">
+                        <p>홈</p>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p>브랜드소개</p>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p>캐릭터소개</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-navigation">
+                <div class="sub-nav-wrapper">
+                    <a href="<?php echo G5_URL?>/sub/about/greeting" class="sub-navBtn">
+                        인사말
+                    </a>
+                    <a href="<?php echo G5_URL?>/brand/story" class="sub-navBtn">
+                        브랜드스토리
+                    </a>
+                    <a href="<?php echo G5_URL?>/brand/character" class="sub-navBtn show">
+                        캐릭터소개
+                    </a>
+                    <a href="<?php echo G5_URL?>/brand/guide" class="sub-navBtn">
+                        운영안내
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="article sub-article">
+            <div class="article-wrapper">
+                <div class="chr-box-wrapper">
+                    <div class="chr-box">
+                        <div class="chr-moreBtn">
+                            <p>
+                                캐릭터스토리 보기
+                            </p>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                        <img src="../contents/images/chr-1.png">
+                        <div class="chr-b-text">
+                            <span>
+                                마음씨 착한 똑똑박사 토끼
+                            </span>
+                            <div class="chr-name">
+                                <h5>
+                                    루나
+                                </h5>
+                                <p>
+                                    LOONA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chr-box">
+                        <div class="chr-moreBtn">
+                            <p>
+                                캐릭터스토리 보기
+                            </p>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                        <img src="../contents/images/chr-2.png">
+                        <div class="chr-b-text">
+                            <span>
+                                그림그리기를 좋아하는 겁 많은 곰
+                            </span>
+                            <div class="chr-name">
+                                <h5>
+                                    바비
+                                </h5>
+                                <p>
+                                    BOBBY
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chr-box">
+                        <div class="chr-moreBtn">
+                            <p>
+                                캐릭터스토리 보기
+                            </p>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                        <img src="../contents/images/chr-3.png">
+                        <div class="chr-b-text">
+                            <span>
+                                꽃을 좋아하는 감성 사자
+                            </span>
+                            <div class="chr-name">
+                                <h5>
+                                    라온
+                                </h5>
+                                <p>
+                                    LAON
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chr-box">
+                        <div class="chr-moreBtn">
+                            <p>
+                                캐릭터스토리 보기
+                            </p>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                        <img src="../contents/images/chr-4.png">
+                        <div class="chr-b-text">
+                            <span>
+                                든든하고 믿음직한 코끼리
+                            </span>
+                            <div class="chr-name">
+                                <h5>
+                                    엘리
+                                </h5>
+                                <p>
+                                    ELI
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chr-box">
+                        <div class="chr-moreBtn">
+                            <p>
+                                캐릭터스토리 보기
+                            </p>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                        <img src="../contents/images/chr-5.png">
+                        <div class="chr-b-text">
+                            <span>
+                                동네 어린이 발명왕 펭귄
+                            </span>
+                            <div class="chr-name">
+                                <h5>
+                                    코비
+                                </h5>
+                                <p>
+                                    KOBI
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chr-box">
+                        <div class="chr-moreBtn">
+                            <p>
+                                캐릭터스토리 보기
+                            </p>
+                            <i class="ri-arrow-right-up-line"></i>
+                        </div>
+                        <img src="../contents/images/chr-6.png">
+                        <div class="chr-b-text">
+                            <span>
+                                우주여행을 꿈꾸는 탐험가 코알라
+                            </span>
+                            <div class="chr-name">
+                                <h5>
+                                    아라
+                                </h5>
+                                <p>
+                                    ALA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chr-story-wrapper">
+                    <div class="chr-story">
+                        <div class="chr-closeBtn">
+                            <img src="../../contents/images/close.svg">
+                        </div>
+                        <p>
+                            안녕! 내 이름은 루나야.<br/>
+                            클로버 유치원에 다니고 있는 여섯 살 귀요미 토끼야.<br/>
+                            나는 어른이 되면 아파도 병원에 갈 수 없는 사람들을 치료해주는 의사가 되고 싶어.
+                            지금도 주변에 어려운 친구가 있으면 내가 제일 먼저 달려가서 도움을 주려고 노력해.
+                            그래서 친구들이 지어준 별명이 '착한토끼'야. 내 별명 너무 멋지지?
+                            난 세상에서 공부하는 게 제일 재밌어. 새로운 사실을 알게 되면 너무너무 신이 나고 설레.
+                            엄마는 나를 보고 '루나는 나를 닮아서 똑똑해'라고 자주 말씀하셔.
+                            난 아빠를 더 많이 닮은 것 같은데 말이지 ㅋㅋㅋ
+                            <br/><br/>
+                            오늘은 한 달에 한번 친구들이 우리집으로 놀러오는 날이야.
+                            그래서 친구들은 오늘을 '착한토끼 LOONA Day' 라고 해.<br/>
+                            아빠가 만들어 주신 재미있고 멋진 놀이기구가 우리집에는 가득 가득 하거든.
+                            <br/><br/>
+                            '딩동딩동'<br/>
+                            어? 친구들이 왔나 보다!<br/>
+                            너희들도 언제든지 우리집에 놀러와.<br/>
+                            내가 멋진 우리집을 소개해 줄게.<br/>
+                            그럼 우리 곧 만나자~ 안녕~!
+                        </p>
+                    </div>
+                    <div class="chr-story">
+                        <div class="chr-closeBtn">
+                            <img src="../../contents/images/close.svg">
+                        </div>
+                        <p>
+                            난 바비야.<br/>
+                            겁이 조금 많아서 학교를 오갈때면 꼭 루나 손을 잡고 가야 해.<br/>
+                            루나가 없었으면 난 너무 힘들었을 것 같아.
+                            <br/><br/>
+                            '고마워 루나~'
+                            <br/><br/>
+                            난 달콤 향긋한 꿀을 먹을 때가 가장 행복해. <br/>
+                            엄마는 살이 찐다고 조금씩 먹으라고 하시지만 매일 매일 꿀단지를 들고 엄마 몰래 냠냠 꿀을 먹어.<br/>
+                            라온이네 꽃밭에 그림을 그리러 자주 놀러가. 장미랑 튤립 그림을 그려서 친구들 생일에 선물하기도 해.
+                        </p>
+                    </div>
+                    <div class="chr-story">
+                        <div class="chr-closeBtn">
+                            <img src="../../contents/images/close.svg">
+                        </div>
+                        <p>
+                            안녕 안녕 난 꽃을 좋아하는 감성 사자야. <br/>
+                            내가 사자라고해서 막 무서울 꺼라 생각했다면 오해야.
+                            <br/><br/>
+                            난 부~~드~~러~~운 사자라구~.
+                            <br/><br/>
+                            취미는 노래를 부르며 꽃밭을 가꾸는 거야.<br/>
+                            룰루랄라 꽃밭에서 날려오는 꽃 향기를 맡으면 내 마음이 너무 행복해져.<br/>
+                            우리 꽃밭 구경하러 언제든 놀러와~
+                            <br/><br/>
+                            오늘은 루나네 집에 놀러가기로 했어.<br/>
+                            그래서 아침부터 나의 멋진 목 갈퀴를 드라이하며 한껏 멋을 냈어.<br/>
+                            어때 멋지지? 아침마다 거울을 보며 갈퀴를 드라이하는 멋쟁이기도 해.<br/>
+                            루나 집에 갖고 갈 꽃바구니를 만들어야겠다.<br/>
+                            우리 꽃 밭에 구경하러 와 친구들아~
+                        </p>
+                    </div>
+                    <div class="chr-story">
+                        <div class="chr-closeBtn">
+                            <img src="../../contents/images/close.svg">
+                        </div>
+                        <p>
+                            안녕~ 난 코끼리 ‘엘리’라고해~<br/>
+                            친구들과 어디론가 여행을 갈때면 늘 내가 제일 앞에 앞장서서가.
+                            <br/><br/>
+                            멀리 여행을 갈 때면 루나, 코비, 아라가 내 등에 올라와.<br/>
+                            내가 걸어가는 동안 힘들지 않게 종알종알 내 귀에 재밌는 이야기를 들려줘<br/>
+                            한참을 걸어가다 뒤를 보면 친구들이 꾸벅꾸벅 졸고 있어.<br/>
+                            그럴 때면 내 긴 코로 얼굴에 바람을 '쏵~' 하고 불어주면 깜짝 놀라 일어나.<br/>
+                            그 얼굴이 너무 재밌어.
+                        </p>
+                    </div>
+                    <div class="chr-story">
+                        <div class="chr-closeBtn">
+                            <img src="../../contents/images/close.svg">
+                        </div>
+                        <p>
+                            난 남극에서 이사 온 펭귄 ‘코비’야.<br/>
+                            더운 우리 나라에서 어떻게 지내는지 궁금하다고?
+                            <br/><br/>
+                            처음엔 나도 너~~무 더워서 힘들었는데 내가 발명한 덥지 않게 해주는 양말 덕분에 이곳에서도 잘 지내고 있어.
+                            하나만 먹어도 배부른 알약, 정답만 써주는 연필, 힘이 엘리 만큼 힘이 쎄지는 장갑을 만들려고 열심히 연구하고 있어.
+                            <br/><br/>
+                            만들고 싶은 것이 있으면 언제든 이야기해.<br/>
+                            내가 뚝딱뚝딱 만들어 선물 해 줄게~
+                        </p>
+                    </div>
+                    <div class="chr-story">
+                        <div class="chr-closeBtn">
+                            <img src="../../contents/images/close.svg">
+                        </div>
+                        <p>
+                            안녕~ 난 모험 대장 코알라 ‘아라’야~<br/>
+                            우주 여행이 너무 가고 싶어서 내방은 온통 우주선과 우주에 관련한 책들로 가득해.
+                            <br/><br/>
+                            얼마전 외할아버지가 계시는 시골로 여행을 갔는데 밤 하늘에 별이 너무 많은 거야. <br/>
+                            아빠가 설명해준 오리온 별자리, 북두칠성, 전갈자리, 별자리에 담긴 이야기가 너무 재밌었어.
+                            그래서 난 꼭 우주 탐험가가 되어서 아빠가 말해준 그 별자리를 찾아갈 꺼야.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-box-wrapper">
+                <div class="footer-box footer-left">
+                    <div class="fBtn-wrapper">
+                        <div class="fBtn">
+                            <div class="f-personalBtn">
+                                개인정보처리방침
+                            </div>
+                            <span> | </span>
+                            <a href="<?php echo G5_URL?>/sub/brand/story">
+                                브랜드소개
+                            </a>
+                            <span> | </span>
+                            <a href="<?php echo G5_URL?>/sub/franchise/why">
+                                가맹안내
+                            </a>
+                            <span> | </span>
+                            <a href="<?php echo G5_URL?>/store">
+                                매장위치
+                            </a>
+                        </div>
+                    </div>
+                    <div class="f-info">
+                        <p>
+                            대표: 이정은<br/>
+                            문의: 1544-9454<br/>
+                            사업자등록번호: 550-87-02289<br/>
+                            통신판매신고번호: 제 2022-서울강남-02720호<br/>
+                            경기도 성남시 수정구 위례동로 153, 에이플타워 704호<br/>
+                        </p>
+                        <p>
+                            ㈜어나더플래닛 ⓒ 2023 CHAKANTOKKI. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-box footer-right">
+                    <h4>
+                        착한토끼 창업상담
+                    </h4>
+                    <h5>
+                        <a href="tel: 1544-9454">1544-9454</a>
+                    </h5>
+                    <p>
+                        평일 09:00 - 18:00 | 점심 12:00 - 13:00<br/>
+                        토 · 일 · 공휴일은 휴무입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pp-wrapper">
+        <div class="policy-popup">
+            <div class="pp-closeBtn">
+                <img src="../../contents/images/close.svg">
+            </div>
+            <div class="pp-title">
+                <p>개인정보의 수집·이용 및 제공 동의서</p>
+            </div>
+            <textarea readonly>- 콘텐츠 제공 , 구매 및 요금 결제 , 물품배송 또는 청구지 등 발송 시 정확한 배송지 정보확보
+- 고지사항 전달, 불만처리 의사소통 경로 확보
+- 회원제 서비스 이용에 따른 본인확인, 개인식별, 불량회원의 부정 이용 방지와 비인가 사용 방지 가입 의사확인 , 연령확인 , 불만처리 등
+민원처리 , 고지사항 전달
+- 신규 서비스(제품) 개발 및 특화 , 이벤트 등 광고성 정보 전달
+- 인구통계학적 특성에 따른 서비스 제공 및 광고 게재 , 접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계
+
+수집하는 개인정보의 항목
+- 이름, 전화번호, 오픈 희망 지역, 오픈 희망 시기
+
+개인정보의 보유 및 이용기간
+- 원칙적으로, 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.
+단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 아래와 같이
+관 계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다.
+
+보존 항목 : 이름, 지역명, 입점 제안 내용, 휴대전화번호
+보존 근거 : 신용정보의 이용 및 보호에 관한 법률
+보존 기간 : 5년
+
+계약 또는 청약철회 등에 관한 기록 : 5년
+(전자상거래등에서의 소비자보호에 관한 법률)
+대금결제 및 재화 등의 공급에 관한 기록 : 5년
+(전자상거래등에서의 소비자보호에 관한 법률)
+소비자의 불만 또는 분쟁처리에 관한 기록 : 3년
+(전자상거래등에서의 소비자보호에 관한 법률)</textarea>
+        </div>
+    </div>
+
+    <script src="../../contents/js/common.js"></script>
+    <script>
+        let chrBox = $('.chr-box');
+        let chrStr = $('.chr-story');
+
+        for (let i = 0; i < chrBox.length; i++) {
+            chrBox.eq(i).click(function () {
+                $('.chr-story-wrapper').show().css('display','flex');
+                chrStr.not(chrStr.eq(i)).hide();
+                chrStr.eq(i).show();
+            })
+        }
+
+
+        $('.chr-story-wrapper').click(function () {
+            chrStr.scrollTop(0);
+            $(this).hide();
+        })
+
+
+        $(document).on(
+            'keydown',
+            function (event) {
+                if (event.key == "Escape") {
+                    chrStr.scrollTop(0);
+                    $('.chr-story-wrapper').hide();
+                }
+            }
+        );
+    </script>
+
+</body>
+</html>

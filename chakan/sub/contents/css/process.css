@@ -1,0 +1,41 @@
+.prc-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.prc-box {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+}
+
+.prc-box-icon {
+    height: 65px;
+    margin-bottom: 5px;
+}
+
+.prc-box-text h5 {
+    color: #444;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'BMHANNAAir';
+}
+
+.prc-box-text p {
+    color: #888;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.65;
+    margin-top: 10px;
+}
+
+
+/*==================================================*/

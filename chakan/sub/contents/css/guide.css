@@ -1,0 +1,31 @@
+.gd-wrapper {
+    width: 100%;
+}
+
+.gd-image-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.gd-image {
+    height: 300px;
+    border-radius: 20px;
+    background-color: #eee;
+}
+
+.gd-text {
+    margin-top: 2rem;
+}
+
+.gd-text p {
+    color: #222;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.7;
+    font-family: 'BMHANNAAir';
+}
+
+
+/*==================================================*/
