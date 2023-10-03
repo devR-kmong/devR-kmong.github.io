@@ -1,3 +1,8 @@
+.customs {
+    background: url(../images/customs-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
 .ct-wrapper {
     width: 70%;
     padding: 70px;
@@ -13,7 +18,7 @@
 .ct-box-wrapper {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
@@ -22,25 +27,43 @@
 }
 
 .ct-box {
-    padding: 20px;
+    position: relative;
+    padding: 80px 40px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     border: 1px solid #eee;
     background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.ct-box-num {
+    position: absolute;
+    top: -50px; right: -10px;
+    color: rgba(0, 0, 0, .03);
+    font-size: 220px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Montserrat';
 }
 
 .ct-box h5 {
     color: #222;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .ct-box p {
-    color: #888;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.6;
+    color: #aaa;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+    text-align: center;
 }
 
 

@@ -20,7 +20,7 @@
     width: 0;
     height: 100vh;
     backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, .05);
+    background-color: rgba(255, 255, 255, .02);
     transition: all .6s ease;
     transition-delay: .6s;
     z-index: 1;

@@ -4,6 +4,15 @@ AOS.init({
 
 
 
+$(function () {
+    $('.pBtn').click(function (e) {
+        $.scrollTo(this.hash || 0, 500);
+        e.preventDefault();
+    });
+});
+
+
+
 var swiper = new Swiper(".mySwiper", {
     effect: "fade",
     speed: 1200,

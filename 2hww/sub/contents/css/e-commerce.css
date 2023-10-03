@@ -1,3 +1,8 @@
+.e-commerce {
+    background: url(../images/e-commerce-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
 .ec-image {
     position: relative;
     width: 100%;

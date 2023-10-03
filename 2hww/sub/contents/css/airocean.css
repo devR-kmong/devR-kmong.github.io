@@ -1,3 +1,8 @@
+.airocean {
+    background: url(../images/airocean-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
 .ao-wrapper {
     width: 70%;
     padding: 70px;

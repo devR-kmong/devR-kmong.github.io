@@ -37,11 +37,6 @@ li {
     --main-color: #005e61;
 }
 
-::selection {
-    color: #fff;
-    background-color: var(--main-color);
-}
-
 
 /*==================================================*/
 

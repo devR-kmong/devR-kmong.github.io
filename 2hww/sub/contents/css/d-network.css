@@ -1,3 +1,8 @@
+.d-network {
+    background: url(../images/d-network-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
 .nd-image {
     position: relative;
     width: 100%;

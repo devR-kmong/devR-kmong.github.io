@@ -122,7 +122,7 @@
 
 .scrollDown {
     position: absolute;
-    bottom: 40px; left: 49.5%;
+    bottom: 40px; left: 49.6%;
     width: 20px;
     animation: upDown 1.5s ease-in-out infinite;
     z-index: 50;
