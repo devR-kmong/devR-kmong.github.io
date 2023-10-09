@@ -1,0 +1,42 @@
+.us-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.us-logo {
+    position: absolute;
+    top: 70%; left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(1);
+    opacity: .15;
+    margin-bottom: 7rem;
+    z-index: 20;
+}
+
+.us-image {
+    z-index: 1;
+}
+
+.us-text {
+    width: 80%;
+    padding: 60px 80px;
+    padding-bottom: 0;
+    background-color: #fff;
+    margin-top: -5rem;
+    z-index: 10;
+}
+
+.us-text p {
+    color: #222;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.9;
+    letter-spacing: 0;
+}
+
+
+
+/*==================================================*/

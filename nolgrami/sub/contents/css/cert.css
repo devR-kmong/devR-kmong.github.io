@@ -1,0 +1,23 @@
+.ct-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.ct-box {
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.ct-box img {
+    transform: scale(1.02);
+    transition: all .2s;
+}
+
+.ct-box:hover img {
+    transform: scale(1);
+}
+
+
+/*==================================================*/
