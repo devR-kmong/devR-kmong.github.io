@@ -1,0 +1,138 @@
+.promotion {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/hero.jpg);
+    overflow: hidden;
+}
+
+.promotion-wrapper {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.p-text h4 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    letter-spacing: -0.02em;
+}
+
+.p-text h5 {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 800;
+    font-family: 'Poppins';
+    letter-spacing: -0.02em;
+}
+
+.p-text h5 span {
+    display: block;
+    font-size: 46px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    margin-top: -1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.p-text p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+}
+
+
+.scrollDown {
+    position: absolute;
+    bottom: -80px; right: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.scrollDown p {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 300;
+    font-family: 'Poppins';
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: .5;
+}
+
+.p-arrow {
+    width: auto;
+    height: 25px;
+}
+
+.scrollDown_Bar {
+    position: relative;
+    width: 1px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, .3);
+    overflow: hidden;
+}
+
+.scrollDown_Bar::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #fff;
+    animation: sDown 1s infinite;
+}
+
+@keyframes sDown {
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 150%;
+    }
+}
+
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .p-text {
+        margin-bottom: 3rem;
+    }
+    
+    .p-text h4 {
+        font-size: 36px;
+    }
+    
+    .p-text h5 {
+        color: #fff;
+        font-size: 140px;
+        font-weight: 800;
+        font-family: 'Poppins';
+        letter-spacing: -0.02em;
+    }
+    
+    .p-text h5 span {
+        font-size: 65px;
+        margin-top: -2.5rem;
+    }
+    
+    .p-text p {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

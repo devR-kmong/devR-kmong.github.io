@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contents/css/common.css">
+    <link rel="stylesheet" href="contents/css/header.css">
+    <link rel="stylesheet" href="contents/css/promotion.css">
+    <link rel="stylesheet" href="contents/css/article_common.css">
+    <link rel="stylesheet" href="contents/css/article1.css">
+    <link rel="stylesheet" href="contents/css/article2.css">
+    <link rel="stylesheet" href="contents/css/footer.css">
+    <link rel="stylesheet" href="contents/css/aos.css">
+    <link rel="shortcut icon" href="contents/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="contents/js/aos.js"></script>
+    <title>HOYEON</title>
+</head>
+<body>
+    <div class="header">
+        <div class="gnb">
+            <a href="" class="logo"><img src="contents/images/logo-w.svg"></a>  
+            <input type="checkbox" id="check">
+            <label for="check">
+                <div class="menuBtns">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </label>
+            <ul class="menu">
+                <li class="menu-item"><a href="">HOME</a></li>
+                <li class="menu-item"><a href="<?php echo G5_URL?>/sub/about">ABOUT US</a></li>
+                <li class="menu-item"><a href="<?php echo G5_URL?>/sub/services">OUR SERVICES</a></li>
+                <li class="menu-item"><a href="<?php echo G5_URL?>/contact/write">CONTACT US</a></li>
+            </ul>
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <main>
+        <section class="article promotion">
+            <div class="promotion-wrapper">
+                <div class="p-text">
+                    <h4>
+                        WELCOME TO　─
+                    </h4>
+                    <h5>
+                        HOYEON<br/>
+                        <span>
+                            ACCOUNTING FIRM
+                        </span>
+                    </h5>
+                    <p>
+                        We are deeply committed to the principles of excellence in all our undertakings.
+                    </p>
+                </div>
+                <div class="scrollDown">
+                    <div class="scrollDown_Bar"></div>
+                    <p>
+                        SCROLL DOWN
+                        <img src="contents/images/arrow.png" class="p-arrow">
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="article article1">
+            <div class="a1-flow" id="a1-ft">
+                Hoyeon Accounting Firm Hoyeon Accounting Firm
+            </div>
+            <div class="article-wrapper">
+                <div class="a1-title">
+                    <div class="a1-line"></div>
+                    <h5>
+                        ABOUT US
+                    </h5>
+                    <p>
+                        We offer comprehensive tax preparation, bookkeeping, and financial advising services designed to facilitate the attainment of financial success for both individuals and businesses alike. We are deeply committed to the principles of excellence in all our undertakings, and our reputation as trusted partners for all your accounting needs is unparalleled.
+                    </p>
+                </div>
+                <div class="a1-box-wrapper">
+                    <div class="a1-box">
+                        <img src="contents/images/a1-1.svg" class="a1-box-icon">
+                        <div class="a1-box-text">
+                            <h5>
+                                Accounting & Tax
+                            </h5>
+                            <p>
+                                Our tax professionals manage tax liabilities and achieve financial goals reliably and effectively.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="a1-box">
+                        <img src="contents/images/a1-2.svg" class="a1-box-icon">
+                        <div class="a1-box-text">
+                            <h5>
+                                Payroll & HR
+                            </h5>
+                            <p>
+                                By utilizing our payroll / HR outsourcing service, many Foreign-Invested Companies are focusing on their main operations such as sales activities. Payroll outsourcing service can eliminate the possible risk of exposure of confidential information to unauthorized personnel.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="a1-box">
+                        <img src="contents/images/a1-3.svg" class="a1-box-icon">
+                        <div class="a1-box-text">
+                            <h5>
+                                Audit & Advisory
+                            </h5>
+                            <p>
+                                Our team anticipates and meets the needs of our clients, delivering exceptional services to help them achieve their goals and grow. We provide the resources needed for success.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article article2">
+            <div class="article-wrapper">
+                <div class="a2-title">
+                    <div class="a2-line"></div>
+                    <h5>
+                        Our Team
+                    </h5>
+                </div>
+                <?php echo latest("basic","member",4,80); ?>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-box-wrapper">
+                <div class="footer-box footer-left">
+                    <a href="/" class="logo-f"><img src="contents/images/logo.svg"></a>
+                    <div class="fBtn-wrapper">
+                        <div class="fBtn">
+                            <a href="">
+                                HOME
+                            </a>
+                            <span> | </span>
+                            <a href="<?php echo G5_URL?>/sub/about">
+                                ABOUT US
+                            </a>
+                            <span> | </span>
+                            <a href="<?php echo G5_URL?>/sub/services">
+                                OUR SERVICES
+                            </a>
+                            <span> | </span>
+                            <a href="<?php echo G5_URL?>/contact/write">
+                                CONTACT US
+                            </a>
+                        </div>
+                    </div>
+                    <div class="f-info">
+                        <p>
+                            <b>HOYEON ACCOUNTING FIRM</b><em><br/></em>
+                            Tel. 02-3445-9700  <span>│</span> <br/>Fax. 02-3445-9771 <span>│</span> <br/>EIN. 528-81-00356<em><br/></em>
+                            A8th Floor, 14, Teheran-ro 81-gil, Gangnam-gu, Seoul, Republic of Korea
+                        </p>
+                        <br/>
+                        <p>
+                            (C) HOYEON ACCOUNTING FIRM 2017 All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="contents/js/common.js"></script>
+
+    <script>
+        let a3ot = document.getElementById('a1-ft');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+
+            if (value >= 1) {
+                a3ot.style.right = value - (value * .01) - 1600 + 'px';
+            }
+
+            if (window.innerWidth <= 650) {
+
+            }
+        })
+    </script>
+
+</body>
+</html>
