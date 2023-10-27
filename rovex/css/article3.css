@@ -1,0 +1,68 @@
+.a3-box-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a3-mockup {
+    width: 550px;
+    z-index: 20;
+}
+
+.a3-glow {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: lighten;
+    z-index: 10;
+}
+
+.a3-box {
+    position: relative;
+    position: absolute;
+    padding: 20px;
+    color: rgba(255, 255, 255, .5);
+    font-size: 20px;
+    font-weight: 300;
+    transition: all .2s;
+    z-index: 30;
+}
+
+.a3-line {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.a3-box:nth-child(3) {
+    top: 6%; left: 80px;
+}
+.a3-box:nth-child(4) {
+    top: 18%; right: 120px;
+}
+.a3-box:nth-child(5) {
+    top: 45%; left: 80px;
+}
+.a3-box:nth-child(6) {
+    top: 63%; right: 180px;
+}
+.a3-box:nth-child(7) {
+    top: 75%; left: 80px;
+}
+
+.a3-box:nth-child(2n-1) .a3-line {
+    position: absolute;
+    right: -50%;
+}
+.a3-box:nth-child(2n) .a3-line {
+    position: absolute;
+    left: -50%;
+}
+
+
+
+/*==================================================*/

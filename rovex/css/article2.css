@@ -1,0 +1,61 @@
+.article2 .article-title {
+    box-shadow: 0 450px 500px #00ffbf31;
+}
+
+.a2-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.a2-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.a2-box:nth-child(2) {
+    margin: 0 -3rem;
+}
+
+.a2-box:nth-child(1) .a2-circle {
+    background-color: rgba(255, 255, 255, .01);
+}
+.a2-box:nth-child(2) .a2-circle {
+    background-color: rgba(255, 255, 255, .03);
+}
+.a2-box:nth-child(3) .a2-circle {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.a2-circle {
+    width: 400px;
+    height: 400px;
+    color: rgba(255, 255, 255, .5);
+    font-size: 40px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 2px dashed rgba(255, 255, 255, .2);
+}
+
+.a2-box-text {
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+}
+
+.a2-box-text h5 {
+    font-size: 24px;
+}
+
+.a2-box-text p {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+
+/*==================================================*/

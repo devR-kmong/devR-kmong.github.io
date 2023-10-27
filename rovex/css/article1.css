@@ -1,0 +1,132 @@
+.article1 {
+    padding-top: 15rem;
+}
+
+.a1-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.a1Btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30%;
+}
+
+.a1Btn {
+    width: 100%;
+    display: block;
+    color: rgba(255, 255, 255, .5);
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, .03);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 24px 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.a1Btn.on {
+    color: #fff;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .1);
+}
+
+.a1-box {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 7px;
+    display: none;
+}
+
+.a1-box.on {
+    display: flex;
+}
+
+.a1-box img {
+    border-radius: 7px;
+}
+
+.a1-1 {
+    box-shadow: 200px -80px 400px #ff00003f;
+}
+
+.a1-2 {
+    box-shadow: 200px -80px 400px #678a8b62;
+}
+
+.a1-3 {
+    box-shadow: 200px -80px 400px #f0af5950;
+}
+
+.a1-box p {
+    color: #aaa;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .a1-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .tab {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .a1Btn {
+        font-size: 15px;
+        border-radius: 15px;
+        padding: 0;
+    }
+
+    .a1-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .a1-box p {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a1Btn {
+        font-size: 13px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .a1-box p {
+        font-size: 16px;
+    }
+
+    .a1-box .a1-1 {
+        box-shadow: 100px -200px 200px #ff73006e;
+    }
+
+    .a1-box .a1-2 {
+        box-shadow: 100px -200px 200px #1657876e;
+    }
+
+    .a1-box .a1-3 {
+        box-shadow: 100px -200px 200px #2a11916e;
+    }
+}
