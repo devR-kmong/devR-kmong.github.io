@@ -102,6 +102,28 @@
 }
 
 
+.scrollDown {
+    position: absolute;
+    bottom: 40px; left: 50%;
+    width: 20px;
+    transform: translate(-50%, -50%);
+    animation: upDown 1.5s ease-in-out infinite;
+    z-index: 98;
+}
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-7px);
+	}
+	50% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform:  translateY(-7px);
+	}
+}
+
+
 
 /*==================================================*/
 @media (max-width: 1250px) {
