@@ -22,12 +22,21 @@
 .a3-box {
     position: relative;
     position: absolute;
-    padding: 20px;
+    padding: 20px 40px;
     color: rgba(255, 255, 255, .5);
     font-size: 20px;
     font-weight: 300;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, .05);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .07);
     transition: all .2s;
     z-index: 30;
+}
+
+.a3-box.on {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    transform: scale(1.15);
 }
 
 .a3-line {
@@ -39,19 +48,19 @@
 }
 
 .a3-box:nth-child(3) {
-    top: 6%; left: 80px;
+    top: 6%; left: 40px;
 }
 .a3-box:nth-child(4) {
-    top: 18%; right: 120px;
+    top: 18%; right: 80px;
 }
 .a3-box:nth-child(5) {
-    top: 45%; left: 80px;
+    top: 45%; left: 40px;
 }
 .a3-box:nth-child(6) {
-    top: 63%; right: 180px;
+    top: 63%; right: 80px;
 }
 .a3-box:nth-child(7) {
-    top: 75%; left: 80px;
+    top: 75%; left: 40px;
 }
 
 .a3-box:nth-child(2n-1) .a3-line {
