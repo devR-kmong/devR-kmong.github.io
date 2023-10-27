@@ -125,3 +125,17 @@ $(function () {
         })
     }
 })
+
+
+
+$(function () {
+    var idx = 0;
+    setInterval(time, 1500);
+    function time() {
+        var box = $('.a3-box');
+        box.removeClass('on');
+        box.eq(idx).addClass('on');
+        idx++;
+        if (idx >= 5) idx = 0;
+    }
+});
