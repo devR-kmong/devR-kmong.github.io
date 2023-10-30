@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 120px 0;
+    padding: 150px 0;
 }
 
 .article-wrapper {
@@ -25,7 +25,7 @@
 }
 
 .article-title h5 {
-    color: #aaa;
+    color: #eee;
     font-size: 45px;
     font-weight: 600;
     font-family: 'Poppins';
@@ -39,7 +39,6 @@
 
 .article-title .t-sb {
     width: 50px;
-    opacity: .7;
 }
 
 

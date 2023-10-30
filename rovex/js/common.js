@@ -128,14 +128,41 @@ $(function () {
 
 
 
-$(function () {
-    var idx = 0;
-    setInterval(time, 1500);
-    function time() {
-        var box = $('.a3-box');
-        box.removeClass('on');
-        box.eq(idx).addClass('on');
-        idx++;
-        if (idx >= 5) idx = 0;
-    }
-});
+
+if (window.innerWidth > 768) {
+    VanillaTilt.init(document.querySelectorAll('.a4-box'), {
+        max: 10,
+        speed: 100,
+        glare: true,
+        "max-glare": 0.3,
+    });
+}
+
+
+if (window.innerWidth > 768) {
+    VanillaTilt.init(document.querySelectorAll('.a6-box'), {
+        max: 1,
+        speed: 100,
+        glare: true,
+        "max-glare": 0.3,
+    });
+}
+
+
+
+
+if (window.innerWidth > 1919) {
+    $(function () {
+        var a5R = $('.a5-reason');
+    
+        for (let i = 0; i < a5R.length; i++) {
+            a5R.eq(i).hover(function () {
+                a5R.eq(i).children('.a5-image').toggleClass('imageShow');
+                a5R.eq(i).children('.a5-r-text').toggleClass('textShow');
+                a5R.eq(i).children('.a5-r-title').toggleClass('titleNot');
+                $('.a5-r-title').toggleClass('titleOpacity');
+                $('.article5').toggleClass('a5-bg-'+ i);
+            })
+        }
+    });
+}
