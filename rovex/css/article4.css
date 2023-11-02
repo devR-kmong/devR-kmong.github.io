@@ -6,7 +6,7 @@
 }
 
 .a4-box {
-    padding: 40px;
+    padding: 40px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,15 +34,23 @@
 .a4-box-text h5 {
     color: rgba(255, 255, 255, .5);
     font-size: 20px;
+    line-height: 1.4;
     font-weight: 600;
 }
 
 .a4-box-text p {
     color: rgba(255, 255, 255, .4);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
-    line-height: 1.45;
+    line-height: 1.5;
     margin-top: 1rem;
+}
+
+.a4-box-text p span {
+    color: rgba(255, 255, 255, .2);
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 
