@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 418.7" style="enable-background:new 0 0 512 418.7;" xml:space="preserve">
+	 viewBox="0 0 512 466.7" style="enable-background:new 0 0 512 466.7;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#000000;stroke-width:15;stroke-miterlimit:10;}
 </style>
 <g>
-	<rect x="9.8" y="10.8" class="st0" width="492.3" height="398.4"/>
-	<line class="st0" x1="9.8" y1="102.7" x2="502.2" y2="102.7"/>
-	<line class="st0" x1="9.8" y1="164" x2="502.2" y2="164"/>
-	<line class="st0" x1="410.2" y1="10.8" x2="410.2" y2="102.7"/>
-	<path class="st0" d="M262.6,286.5h30.6c16.9,0,30.6,13.7,30.6,30.6c0,16.9-13.7,30.6-30.6,30.6h-30.6V225.3h30.6
-		c16.9,0,30.6,13.7,30.6,30.6s-13.7,30.6-30.6,30.6"/>
-	<line class="st0" x1="186" y1="286.5" x2="232" y2="286.5"/>
-	<polyline class="st0" points="232,347.8 186,347.8 186,225.3 232,225.3 	"/>
-	<polyline class="st0" points="71.1,209.9 71.1,347.8 75.7,347.8 105.6,299.8 135.5,347.8 140.1,347.8 140.1,209.9 	"/>
-	<path class="st0" d="M379.6,255.9c0-16.9,13.7-30.7,30.7-30.7c16.9,0,30.7,13.7,30.7,30.7c0,16.9-13.7,30.7-30.7,30.7
+	<rect x="9.8" y="34.8" class="st0" width="492.3" height="398.4"/>
+	<line class="st0" x1="9.8" y1="126.7" x2="502.2" y2="126.7"/>
+	<line class="st0" x1="9.8" y1="188" x2="502.2" y2="188"/>
+	<line class="st0" x1="410.2" y1="34.8" x2="410.2" y2="126.7"/>
+	<path class="st0" d="M262.6,310.5h30.6c16.9,0,30.6,13.7,30.6,30.6s-13.7,30.6-30.6,30.6h-30.6V249.3h30.6
+		c16.9,0,30.6,13.7,30.6,30.6c0,16.9-13.7,30.6-30.6,30.6"/>
+	<line class="st0" x1="186" y1="310.5" x2="232" y2="310.5"/>
+	<polyline class="st0" points="232,371.8 186,371.8 186,249.3 232,249.3 	"/>
+	<polyline class="st0" points="71.1,233.9 71.1,371.8 75.7,371.8 105.6,323.8 135.5,371.8 140.1,371.8 140.1,233.9 	"/>
+	<path class="st0" d="M379.6,279.9c0-16.9,13.7-30.7,30.7-30.7c16.9,0,30.7,13.7,30.7,30.7c0,16.9-13.7,30.7-30.7,30.7
 		c16.9,0,30.7,13.7,30.7,30.7c0,16.9-13.7,30.7-30.7,30.7c-16.9,0-30.7-13.7-30.7-30.7"/>
 </g>
 </svg>
