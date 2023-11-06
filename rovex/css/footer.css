@@ -52,8 +52,12 @@ footer {
 
 
 @media (max-width: 450px) {
+    footer {
+        padding-top: 0;
+    }
+    
     .logo-f {
-        width: 70px;
+        width: 100px;
         margin-bottom: 1rem;
     }
     

@@ -1,3 +1,8 @@
+.article4 .article-title {
+    width: 70%;
+    box-shadow: 0 400px 400px rgba(255, 0, 0, 0.3);
+}
+
 .a4-box-wrapper {
     width: 100%;
     display: grid;
@@ -55,3 +60,42 @@
 
 
 /*==================================================*/
+@media (max-width: 1150px) {
+    .a4-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+    .article4 .article-title {
+        width: 90%;
+        box-shadow: 0 360px 280px rgba(255, 0, 0, 0.474);
+    }
+    
+    .a4-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a4-box {
+        padding: 26px 10px;
+        gap: 1rem;
+    }
+    
+    .a4-box-icon img {
+        height: 36px;
+    }
+    
+    .a4-box-text h5 {
+        font-size: 18px;
+    }
+    
+    .a4-box-text p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}

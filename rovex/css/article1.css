@@ -80,38 +80,48 @@
 
 
 /*==================================================*/
-@media (max-width: 768px) {
+@media (max-width: 850px) {
+    .article1 {
+        padding-top: 100px;
+    }
+    
     .a1-wrapper {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        gap: 2rem;
     }
 
-    .tab {
+    .a1Btn-wrapper {
         width: 100%;
         flex-direction: row;
     }
 
     .a1Btn {
+        padding: 20px 5px;
         font-size: 15px;
-        border-radius: 15px;
-        padding: 0;
     }
 
     .a1-box {
         width: 100%;
-        height: auto;
     }
 
     .a1-box p {
-        text-align: center;
+        font-size: 18px;
     }
 }
 
 
 @media (max-width: 650px) {
+    .a1-wrapper {
+        gap: 1rem;
+    }
+    
+    .a1Btn-wrapper {
+        gap: 10px;
+    }
+    
     .a1Btn {
         font-size: 13px;
-        padding: 10px 20px;
-        border-radius: 10px;
+        padding: 15px 0;
     }
 
     .a1-box p {
@@ -119,14 +129,39 @@
     }
 
     .a1-box .a1-1 {
-        box-shadow: 100px -200px 200px #ff73006e;
+        box-shadow: 100px -100px 200px #ff00003f;
     }
 
     .a1-box .a1-2 {
-        box-shadow: 100px -200px 200px #1657876e;
+        box-shadow: 100px -100px 200px #678a8b62;
     }
 
     .a1-box .a1-3 {
-        box-shadow: 100px -200px 200px #2a11916e;
+        box-shadow: 100px -100px 200px #f0af5950;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a1Btn {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+    
+    .a1-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .a1-box p {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a1-box p {
+        font-size: 14px;
     }
 }

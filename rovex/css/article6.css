@@ -2,6 +2,11 @@
     position: relative;
 }
 
+.article6 .article-title {
+    width: 70%;
+    box-shadow: 0 400px 400px rgba(255, 0, 0, 0.3);
+}
+
 .a6-flow-wrapper {
     position: absolute;
     bottom: 150px;
@@ -133,6 +138,21 @@
 
 /*==================================================*/
 @media (max-width: 1050px) {
+    .a6-flow {
+        font-size: 350px;
+        font-weight: 700;
+    }
+
+    @keyframes flow {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+    
+        100% {
+            transform: translate3d(-700%, 0, 0);
+        }
+    }
+    
     .a6-wrapper {
         margin-top: 2rem;
     }
@@ -165,6 +185,26 @@
     .roadmap-line {
         top: 0; left: 10px;
         transform: unset;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .article6 .article-title {
+        width: 90%;
+        box-shadow: 0 360px 280px rgba(255, 0, 0, 0.474);
+    }
+    
+    .a6-flow-wrapper {
+        bottom: 300px;
+    }
+    
+    .a6-flow {
+        font-size: 220px;
+    }
+
+    .a6-box {
+        backdrop-filter: none;
     }
 }
 

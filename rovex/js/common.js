@@ -107,24 +107,45 @@ if (navigator.userAgent.indexOf("Trident") > 0) {
 
 
 
-$(function () {
-    $('.a1Btn').hover(function () {
-        id = $($(this).data('target')).selector;
-        $('.a1-box').hide();
-        $('#' + id).show().css('display','flex');
+if (window.innerWidth > 850) {
+    $(function () {
+        $('.a1Btn').hover(function () {
+            id = $($(this).data('target')).selector;
+            $('.a1-box').hide();
+            $('#' + id).show().css('display','flex');
+        });
     });
-});
-
-$(function () {
-    for (let i = 0; i < $('.a1Btn').length; i++) {
-        $('.a1Btn').eq(i).hover(function () {
-            $('.a1Btn').removeClass('on');
-            $(this).addClass('on');
-            $('.a1-box').removeClass('on');
-            $('.a1-box').addClass('on');
-        })
-    }
-})
+    
+    $(function () {
+        for (let i = 0; i < $('.a1Btn').length; i++) {
+            $('.a1Btn').eq(i).hover(function () {
+                $('.a1Btn').removeClass('on');
+                $(this).addClass('on');
+                $('.a1-box').removeClass('on');
+                $('.a1-box').addClass('on');
+            })
+        }
+    })
+} else {
+    $(function () {
+        $('.a1Btn').click(function () {
+            id = $($(this).data('target')).selector;
+            $('.a1-box').hide();
+            $('#' + id).show().css('display','flex');
+        });
+    });
+    
+    $(function () {
+        for (let i = 0; i < $('.a1Btn').length; i++) {
+            $('.a1Btn').eq(i).click(function () {
+                $('.a1Btn').removeClass('on');
+                $(this).addClass('on');
+                $('.a1-box').removeClass('on');
+                $('.a1-box').addClass('on');
+            })
+        }
+    })
+}
 
 
 

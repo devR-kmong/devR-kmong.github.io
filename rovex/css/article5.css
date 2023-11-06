@@ -67,11 +67,11 @@
 
 .a5-reason:nth-child(2n-1) .a5-image {
     position: absolute;
-    top: -120px; right: 20%;
+    top: -120px; right: 16%;
 }
 .a5-reason:nth-child(2n) .a5-image {
     position: absolute;
-    top: -120px; left: 20%;
+    top: -120px; left: 16%;
 }
 
 .a5-r-title {
@@ -124,5 +124,134 @@
     }
     .a5-reason:nth-child(2n) .a5-image {
         left: 25%;
+    }
+}
+
+
+@media (max-width: 1650px) {
+    .a5-image {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .a5-reason:nth-child(2n-1) .a5-image {
+        position: absolute;
+        top: -120px; right: 0;
+    }
+    .a5-reason:nth-child(2n) .a5-image {
+        position: absolute;
+        top: -120px; left: 0;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .article5 {
+        position: relative;
+        padding-bottom: 0;
+    }
+    
+    .a5-reason-wrapper {
+        margin-top: 350px;
+        gap: 25rem;
+    }
+    
+    .a5-reason:nth-child(2n),
+    .a5-reason:nth-child(2n-1) {
+        margin: 0;
+    }
+    
+    .a5-image {
+        right: unset !important;
+        top: -300px !important; left: 50% !important;
+        transform: translate(-50%, 0);
+        height: 250px;
+    }
+    
+    .a5-r-title {
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        cursor: default;
+    }
+
+    .a5-r-text {
+        position: relative;
+        line-height: 1.65;
+        opacity: 1;
+        visibility: visible;
+        margin-top: 5rem;
+    }
+
+    .a5-r-text::after {
+        content: '';
+        position: absolute;
+        top: -4rem; left: 50%;
+        transform: translate(-50%, 0);
+        width: 1px; height: 40px;
+        background-color: rgba(255, 255, 255, .4);
+    }
+
+    .a5-bg-m1 {
+        position: absolute;
+        top: 2%;
+        width: 100%;
+        height: 50%;
+        background: url(../images/a5-bg-0.png) no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+    .a5-bg-m2 {
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        height: 50%;
+        background: url(../images/a5-bg-1.png) no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+    .a5-bg-m3 {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        height: 50%;
+        background: url(../images/a5-bg-2.png) no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+    }
+    .a5-bg-m4 {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 50%;
+        background: url(../images/a5-bg-3.png) no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+    }
+}
+
+
+@media (max-width: 650px) {    
+    .a5-reason-wrapper {
+        gap: 12rem;
+        margin-top: 250px;
+    }
+    
+    .a5-image {
+        top: -200px !important;
+        height: 150px;
+    }
+
+    .a5-r-title {
+        font-size: 38px;
+    }
+
+    .a5-r-title span {
+        font-size: 16px;
+    }
+
+    .a5-r-text {
+        font-size: 18px;
     }
 }

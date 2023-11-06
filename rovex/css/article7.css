@@ -1,3 +1,8 @@
+.article7 .article-title {
+    width: 50%;
+    box-shadow: 0 370px 400px rgba(255, 0, 0, 0.3);
+}
+
 .form-wrapper {
     width: 550px;
     z-index: 2;
@@ -307,6 +312,11 @@
 
 
 @media (max-width: 550px) {
+    .article7 .article-title {
+        width: 100%;
+        box-shadow: 0 300px 200px rgba(255, 0, 0, 0.3);
+    }
+    
     .form-wrapper {
         padding: 0 10px;
     }

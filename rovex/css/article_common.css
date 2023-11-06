@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 150px 0;
+    overflow: hidden;
 }
 
 .article-wrapper {
@@ -47,5 +48,45 @@
     .article-wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .article {
+        padding: 70px 0;
+    }
+    
+    .article-title {
+        gap: 0;
+        margin-bottom: 3rem;
+    }
+    
+    .article-title h5 {
+        font-size: 36px;
+    }
+
+    .article-title p {
+        font-size: 15px;
+    }
+    
+    .article-title .t-sb {
+        width: 40px;
+        margin-bottom: 8px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .article-title h5 {
+        font-size: 28px;
+    }
+
+    .article-title p {
+        font-size: 13px;
+    }
+    
+    .article-title .t-sb {
+        width: 34px;
     }
 }
