@@ -1,5 +1,15 @@
-.article2 .article-title {
-    box-shadow: 0 450px 500px #00ffbf31;
+.article2 {
+    position: relative;
+}
+
+.a2-bg {
+    position: absolute;
+    top: 14%;
+    width: 80%;
+    height: 100%;
+    background: url(../images/a5-bg-1.png) no-repeat;
+    background-position: top center;
+    background-size: cover;
 }
 
 .a2-box-wrapper {
@@ -61,6 +71,12 @@
 
 /*==================================================*/
 @media (max-width: 1150px) {
+    .a2-bg {
+        top: 5%;
+        width: 100%;
+        opacity: .7;
+    }
+    
     .a2-box-wrapper {
         flex-direction: column;
         justify-content: center;
@@ -91,10 +107,6 @@
 
 
 @media (max-width: 850px) {
-    .article2 .article-title {
-        box-shadow: 0 250px 300px #00ffbf31;
-    }
-    
     .a2-circle {
         width: 270px;
         height: 270px;

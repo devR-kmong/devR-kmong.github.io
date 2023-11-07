@@ -1,6 +1,16 @@
-.article4 .article-title {
-    width: 70%;
-    box-shadow: 0 400px 400px rgba(255, 0, 0, 0.3);
+.article4 {
+    position: relative;
+}
+
+.a4-bg {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+    background: url(../images/a5-bg-0.png) no-repeat;
+    background-position: top center;
+    background-size: cover;
+    opacity: .7;
 }
 
 .a4-box-wrapper {
@@ -61,6 +71,10 @@
 
 /*==================================================*/
 @media (max-width: 1150px) {
+    .a4-bg {
+        top: 5%;
+    }
+    
     .a4-box-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -68,11 +82,6 @@
 
 
 @media (max-width: 650px) {
-    .article4 .article-title {
-        width: 90%;
-        box-shadow: 0 360px 280px rgba(255, 0, 0, 0.474);
-    }
-    
     .a4-box-wrapper {
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
@@ -81,6 +90,10 @@
 
 
 @media (max-width: 550px) {
+    .a4-bg {
+        top: 0;
+    }
+    
     .a4-box {
         padding: 26px 10px;
         gap: 1rem;
