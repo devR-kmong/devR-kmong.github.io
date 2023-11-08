@@ -149,6 +149,10 @@
 
 
 @media (max-width: 550px) {
+    .a2-bg {
+        top: 23%;
+    }
+    
     .a2-box-wrapper {
         margin-top: 0;
     }

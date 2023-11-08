@@ -191,6 +191,14 @@ nav ul li a {
     .logo {
         width: 80px;
     }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+    
+    nav ul li a {
+        font-size: 20px;
+    }
     
     .bar1,
     .bar2,

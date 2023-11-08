@@ -122,6 +122,10 @@
 
 
 @media (max-width: 450px) {
+    .a3-mockup {
+        opacity: .8;
+    }
+    
     .a3-box {
         left: -20px !important;
         padding: 10px 24px;

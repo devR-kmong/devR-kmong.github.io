@@ -129,15 +129,15 @@
     }
 
     .a1-box .a1-1 {
-        box-shadow: 100px -100px 200px #ff00003f;
+        box-shadow: 0 -100px 150px #ff000030;
     }
 
     .a1-box .a1-2 {
-        box-shadow: 100px -100px 200px #678a8b62;
+        box-shadow: 0 -100px 150px #678a8b30;
     }
 
     .a1-box .a1-3 {
-        box-shadow: 100px -100px 200px #f0af5950;
+        box-shadow: 0 -100px 150px #f0af5930;
     }
 }
 
@@ -161,6 +161,14 @@
 
 
 @media (max-width: 450px) {
+    .a1Btn-wrapper {
+        gap: 3px;
+    }
+    
+    .a1Btn {
+        border-radius: 2px;
+    }
+    
     .a1-box p {
         font-size: 14px;
     }

@@ -158,3 +158,22 @@
         display: none;
     }
 }
+
+
+@media (max-width: 450px) {
+    .content h4 {
+        font-size: 18px;
+    }
+
+    .content h3 {
+        font-size: 75px;
+    }
+    
+    .content h5 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}

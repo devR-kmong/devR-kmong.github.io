@@ -82,6 +82,11 @@
 
 
 @media (max-width: 650px) {
+    .a4-bg {
+        top: -5%;
+        opacity: .5;
+    }
+    
     .a4-box-wrapper {
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;

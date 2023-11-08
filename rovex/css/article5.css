@@ -255,3 +255,10 @@
         font-size: 18px;
     }
 }
+
+
+@media (max-width: 450px) {
+    .a5-r-text {
+        font-size: 15px;
+    }
+}
