@@ -1,0 +1,48 @@
+.a9-box {
+    height: 300px;
+    overflow: hidden;
+}
+
+.a9-image {
+    width: 100%;
+    height: 300px;
+    transition: all .3s;
+}
+
+.a9-box:hover .a9-image {
+    transform: scale(1.1);
+}
+
+.a9-sns-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin-top: 10rem;
+}
+
+.a9-sns {
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all .3s;
+}
+
+.a9-sns:hover {
+    background-color: rgba(255, 255, 255, .04);
+}
+
+.a9-sns i {
+    font-size: 45px;
+}
+
+.a9-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/*==================================================*/

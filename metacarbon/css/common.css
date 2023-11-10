@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', 'sans-serif';
+    letter-spacing: -0.02em;
+}
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    pointer-events : none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --main-color: #0df1fc;
+    --sub-color: #cd43ff;
+}
+
+::selection {
+    color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .1);
+}
+
+
+.background {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/hero.jpg) no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.background2 {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(30px);
+    background-color: rgba(0, 0, 0, 0);
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.swim-1 {
+    position: fixed;
+    bottom: 25%; left: 12%;
+    z-index: 1;
+}
+
+.swim-2 {
+    position: fixed;
+    top: 25%; right: 12%;
+    z-index: 1;
+}
+
+.swim-1 img {
+    width: 180px;
+    animation: upDown 2.2s ease-in-out infinite;
+    opacity: .8;
+}
+
+.swim-2 img {
+    width: 250px;
+    animation: upDown2 1.8s ease-in-out infinite;
+    opacity: .8;
+}
+
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-12px);
+	}
+	50% {
+		transform: translateY(12px);
+	}
+	100% {
+		transform:  translateY(-12px);
+	}
+}
+
+@keyframes upDown2 {
+	0% {
+		transform:  translateY(14px);
+	}
+	50% {
+		transform: translateY(-14px);
+	}
+	100% {
+		transform:  translateY(14px);
+	}
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .swim-1 img {
+        width: 280px;
+    }
+    
+    .swim-2 img {
+        width: 350px;
+    }
+}
