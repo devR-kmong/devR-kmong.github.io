@@ -1,0 +1,133 @@
+.article1 {
+    padding-top: 200px;
+}
+
+.article1 .article-wrapper {
+    position: relative;
+}
+
+.a1-1 {
+    position: absolute;
+    top: -100px; left: 50px;
+    width: 260px;
+    animation: upDown3 2s ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes upDown3 {
+	0% {
+		transform:  translateY(-5px);
+	}
+	50% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform:  translateY(-5px);
+	}
+}
+
+.a1-top {
+    padding: 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, .01);
+    border: 1px solid rgba(255, 255, 255, .1);
+    z-index: 10;
+}
+
+.a1-2 {
+    width: 170px;
+    transition: all .2s;
+}
+
+.a1-top:hover .a1-2 {
+    padding-bottom: 10px;
+    transform: scale(1.1) rotate(-8deg);
+}
+
+.a1-text h4 {
+    color: rgba(255, 255, 255, .4);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.a1-text h5 {
+    color: #fff;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.a1-text p {
+    color: rgba(255, 255, 255, .4);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-top: 1.5rem;
+}
+
+.a1-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 7rem;
+}
+
+.a1-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, .07);
+}
+
+.a1-box-text {
+    padding: 40px;
+}
+
+.a1-box-text h5 {
+    color: #fff;
+    font-size: 22px;
+}
+
+.a1-box-text p {
+    color: rgba(255, 255, 255, .4);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+.a1-box-image {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.a1-box-image img {
+    transition: all .2s;
+}
+
+.a1-box:nth-child(1) .a1-box-image {
+    background-color: #36ddc9;
+}
+.a1-box:nth-child(2) .a1-box-image {
+    background-color: #b389ff;
+}
+.a1-box:nth-child(3) .a1-box-image {
+    background-color: #4f3bcc;
+}
+
+.a1-box:hover .a1-box-image img {
+    transform: scale(1.1);
+}
+
+
+/*==================================================*/

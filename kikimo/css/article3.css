@@ -1,0 +1,58 @@
+.article3 {
+    position: relative;
+}
+
+.a3-bg {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    z-index: 3;
+}
+
+.article3 .article-wrapper {
+    width: 100%;
+}
+
+.mySwiper {
+    width: 100%;
+}
+
+.mySwiper .swiper-wrapper {
+    padding-bottom: 40px;
+}
+
+.mySwiper .swiper-slide {
+    height: 500px;
+    padding: 60px;
+    border-radius: 30px;
+}
+
+.mySwiper .ss-1 {
+    background: url(../images/a3-1.jpg) no-repeat;
+    background-size: cover;
+}
+.mySwiper .ss-2 {
+    background: url(../images/a3-2.jpg) no-repeat;
+    background-size: cover;
+}
+.mySwiper .ss-3 {
+    background: url(../images/a3-3.jpg) no-repeat;
+    background-size: cover;
+}
+
+.mySwiper .swiper-slide .ss-text {
+    color: #fff;
+}
+
+.mySwiper .swiper-slide .ss-text h5 {
+    font-size: 36px;
+}
+
+.mySwiper .swiper-slide .ss-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+}
+
+
+/*==================================================*/

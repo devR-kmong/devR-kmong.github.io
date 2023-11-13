@@ -1,0 +1,36 @@
+.article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.article-wrapper {
+    color: rgba(255, 255, 255, .8);
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.article-title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.35;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .article-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

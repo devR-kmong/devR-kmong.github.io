@@ -1,0 +1,385 @@
+.article8 {
+    position: relative;
+}
+
+.a8-bg {
+    position: absolute;
+    bottom: -600px;
+    width: 100%;
+    z-index: 1;
+}
+
+.form-wrapper {
+    width: 750px;
+    z-index: 2;
+}
+
+.gform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.gform .input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gform .input-wrapper .input-title p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.gform .inputbox {
+    color: #fff;
+    height: 45px;
+    padding: 0 14px;
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .1);
+    transition: all .2s;
+}
+
+.gform textarea {
+    color: #fff;
+    width: 100%;
+    height: 300px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 300;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .1);
+    transition: all .2s;
+}
+
+.gform .inputbox::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.gform textarea::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.gform .inputbox:hover,
+.gform textarea:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+.gform .inputbox:focus,
+.gform textarea:focus {
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.radio-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.radio-wrapper input[type="radio"] {
+    display: none;
+}
+
+.radio-wrapper label {
+    flex: 1;
+    color: rgba(255, 255, 255, .3);
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Pretendard';
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .1);
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.radio-wrapper label:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.radio-wrapper input[type="radio"]:checked+label {
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}
+
+.f-submit {
+    color: #fff;
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #1e6dff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.f-submit:disabled {
+    color: #aaa;
+    font-weight: 300;
+    cursor: not-allowed;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.f-personal {
+    width: 100%;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .1);
+    transition: all .3s ease;
+}
+
+.f-personal-no {
+    border: 1px solid var(--main-color);
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.f-personal-text input {
+    display: none;
+}
+
+.f-personal-text label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.f-personal-text label em {
+    position: relative;
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    min-height: 16px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .3);
+    cursor: pointer;
+}
+
+.f-personal-text label em::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 1px;
+    background-color: var(--main-color);
+    display: none;
+}
+
+.f-personal-text label p {
+    color: #aaa;
+    font-size: 13px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#cb:checked ~ label em::after {
+    display: block;
+}
+
+.f-personalBtn {
+    color: #bbb;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, .1);
+    cursor: pointer;
+}
+
+
+.pp-wrapper {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 99;
+    display: none;
+}
+
+.policy-popup {
+    position: relative;
+}
+
+.pp-title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* width: calc(100% - .3em); */
+    padding: 20px 30px;
+    border-radius: 3px 3px 0 0;
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    z-index: 1;
+}
+
+.pp-title p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.pp-closeBtn {
+    position: absolute;
+    top: 26px; right: 30px;
+    width: 20px;
+    max-width: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.policy-popup textarea {
+    color: #222;
+    width: 600px;
+    height: 340px;
+    padding: 30px;
+    padding-top: 95px;
+    font-size: 15px;
+    line-height: 1.4;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+.policy-popup textarea::-webkit-scrollbar {
+    width: .3em;
+}
+
+.policy-popup textarea::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .0);
+}
+
+.policy-popup textarea::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 30px;
+    outline: none;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 650px) {
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .policy-popup {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pp-title {
+        width: 100%;
+    }
+
+    .policy-popup textarea {
+        width: 100%;
+    }
+
+    .policy-popup textarea::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a7-bg {
+        top: 5%;
+    }
+    
+    .form-wrapper {
+        padding: 0 10px;
+    }
+
+    .gform .input-wrapper .input-title p {
+        font-size: 13px;
+    }
+    
+    .gform .inputbox {
+        height: 43px;
+        font-size: 13px;
+    }
+
+    .gform textarea {
+        font-size: 13px;
+    }
+
+    .radio-wrapper label {
+        padding: 11px 0;
+        font-size: 13px;
+    }
+
+    .f-personal {
+        padding: 10px;
+    }
+    
+    .f-personal-text label p {
+        font-size: 12px;
+        letter-spacing: -0.02em;
+    }
+
+    .f-personalBtn {
+        font-size: 10px;
+    }
+
+
+    .pp-title {
+        padding: 15px 20px;
+    }
+
+    .pp-title p {
+        font-size: 16px;
+    }
+
+    .pp-closeBtn {
+        top: 16px; right: 20px;
+        width: 12px;
+    }
+
+    .policy-popup textarea {
+        height: 220px;
+        padding: 20px;
+        padding-top: 65px;
+        font-size: 13px;
+    }
+
+    .f-submit {
+        height: 45px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,52 @@
+.a4-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 8rem;
+}
+
+.a4-box {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, .07);
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.a4-glow {
+    position: absolute;
+    top: -120px; left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.a4-box-image {
+    position: absolute;
+    top: -120px; left: 50%;
+    transform: translate(-50%, 0);
+    width: 50%;
+}
+
+.a4-box-text {
+    margin-top: 16rem;
+    z-index: 10;
+}
+
+.a4-box-text h5 {
+    color: #fff;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.a4-box-text p {
+    color: rgba(255, 255, 255, .4);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-top: 1.5rem;
+}
+
+
+/*==================================================*/
