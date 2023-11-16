@@ -7,7 +7,6 @@ AOS.init({
 
 
 var swiper = new Swiper(".mySwiper", {
-    initialSlide: 1,
     spaceBetween: 20,
     grabCursor: true,
     centeredSlides: true,
@@ -29,10 +28,10 @@ var swiper = new Swiper(".mySwiper", {
     //         spaceBetween: 50,
     //     },
     // },
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: true,
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+    },
 });
 
 

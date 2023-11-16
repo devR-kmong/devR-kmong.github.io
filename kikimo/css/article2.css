@@ -12,22 +12,11 @@
 }
 
 .a2-box {
-    position: relative;
     padding: 40px;
     display: flex;
     align-items: flex-end;
     border-radius: 30px;
     overflow: hidden;
-}
-
-.a2-box::after {
-    content: '';
-    position: absolute;
-    bottom: 0; left: 0;
-    width: 100%;
-    height: 350px;
-    background-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.3) 100%);
-    z-index: 1;
 }
 
 .a2-box-1 {
@@ -72,6 +61,17 @@
 .a2-box-text p {
     font-size: 13px;
     margin-top: 10px;
+}
+
+.a2-box-1 .a2-box-text h5,
+.a2-box-1 .a2-box-text p {
+    color: #000;
+}
+.a2-box-3 .a2-box-text h5,
+.a2-box-4 .a2-box-text h5,
+.a2-box-3 .a2-box-text p,
+.a2-box-4 .a2-box-text p {
+    color: #1e6dff;
 }
 
 

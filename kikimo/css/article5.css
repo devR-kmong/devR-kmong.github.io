@@ -1,7 +1,7 @@
 .a5-box-wrapper {
     display: flex;
     justify-content: center;
-    gap: 6rem;
+    gap: 5rem;
 }
 
 .a5-box-group {
@@ -17,7 +17,7 @@
 }
 
 .a5-box {
-    color: rgba(255, 255, 255, .6);
+    color: #a7accb;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.4;

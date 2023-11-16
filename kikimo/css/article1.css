@@ -50,7 +50,7 @@
 }
 
 .a1-text h4 {
-    color: rgba(255, 255, 255, .4);
+    color: #a7accb;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -63,7 +63,7 @@
 }
 
 .a1-text p {
-    color: rgba(255, 255, 255, .4);
+    color: #a7accb;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.7;
@@ -97,7 +97,7 @@
 }
 
 .a1-box-text p {
-    color: rgba(255, 255, 255, .4);
+    color: #aec3ff;
     font-size: 16px;
     line-height: 1.7;
     margin-top: 1rem;

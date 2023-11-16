@@ -21,12 +21,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 466px;
     z-index: 10;
 }
 
 .footer-wrapper p {
-    color: rgba(255, 255, 255, .5);
+    color: #b1a1ff;
     font-size: 15px;
 }
 

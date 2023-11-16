@@ -45,6 +45,10 @@
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .1);
 }
 
+.p-image {
+    margin-top: 10rem;
+}
+
 .p-mockup {
     animation: upDown2 3s ease-in-out infinite;
 }

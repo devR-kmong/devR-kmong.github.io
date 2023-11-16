@@ -36,6 +36,22 @@
     background-color: rgba(255, 255, 255, .05);
 }
 
+.a6-box:nth-child(1) {
+    border-bottom: 1px solid #ffffff50;
+}
+.a6-box:nth-child(2) {
+    border-bottom: 1px solid #f3ba2f50;
+}
+.a6-box:nth-child(3) {
+    border-bottom: 1px solid #28a0f050;
+}
+.a6-box:nth-child(4) {
+    border-bottom: 1px solid #8247e550;
+}
+.a6-box:nth-child(5) {
+    border-bottom: 1px solid #ff042050;
+}
+
 .a6-box::after {
     content: '';
     position: absolute;
