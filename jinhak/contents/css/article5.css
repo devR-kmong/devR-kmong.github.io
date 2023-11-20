@@ -1,0 +1,73 @@
+.article5 {
+    padding: 0;
+}
+
+.a5-title {
+    width: 100%;
+    color: #222;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.mySwiper1 {
+    width: 100%;
+    padding: 0 1px;
+}
+
+.a5-box {
+    width: 32%;
+    display: flex !important;
+    flex-direction: column;
+}
+
+.a5-box-image {
+    overflow: hidden;
+}
+
+.a5-box-image img {
+    width: 100%;
+    margin-bottom: -5px;
+    transition: all .2s ease;
+}
+
+.a5-box:hover .a5-box-image img {
+    transform: scale(1.07);
+}
+
+.a5-box-text {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.a5-box-text h5 {
+    color: #222;
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.a5-box-text p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.45;
+    margin-top: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+/*==================================================*/
+@media (max-width: 550px) {
+    .a5-box-text h5 {
+        font-size: 14px;
+    }
+
+    .a5-box-text p {
+        font-size: 12px;
+    }
+}
