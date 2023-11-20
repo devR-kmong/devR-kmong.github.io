@@ -33,17 +33,36 @@
 .fBtn {
     color: #222;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: -0.01em;
 }
 
-.footer-right p {
-    color: #777;
+
+.footer-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer-box h5 {
+    width: 100%;
+    color: #555;
+    font-size: 16px;
+}
+
+.footer-box h5 span {
+    color: #aaa;
     font-size: 15px;
-    line-height: 1.8;
-    letter-spacing: -0.01em;
+    font-weight: 400;
+    margin-left: 20px;
 }
 
+.footer-box p {
+    color: #444;
+    font-size: 15px;
+    margin-top: 12px;
+}
 
 
 /*==================================================*/
@@ -60,39 +79,11 @@
         flex-direction: column;
         gap: 1rem;
     }
-    
-    .logo-f {
-        width: 150px;
-    }
-    
-    .footer-right ul {
-        display: none;
-    }
 }
 
 
 @media (max-width: 550px) {
     .footer {
         padding: 30px 0;
-    }
-    
-    .logo-f {
-        width: 120px;
-    }
-
-    .footer-right p {
-        font-size: 12px;
-    }
-}
-
-
-@media (max-width: 450px) {
-    .logo-f {
-        width: 90px;
-    }
-
-    .footer-right p {
-        font-size: 10px;
-        line-height: 1.65;
     }
 }
