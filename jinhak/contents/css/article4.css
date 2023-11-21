@@ -50,7 +50,7 @@
 }
 
 .a4-table tr td {
-    color: #888;
+    color: #444;
     padding: 12px 24px;
     font-size: 15px;
     font-weight: 400;
@@ -82,7 +82,7 @@
 
 .a4-list li a h5 {
     color: #555;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -153,10 +153,10 @@
     }
     
     .a4-list li a h5 {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .a4-list li a p {
-        font-size: 11px;
+        font-size: 12px;
     }
 }

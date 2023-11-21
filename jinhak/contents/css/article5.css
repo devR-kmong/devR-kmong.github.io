@@ -1,3 +1,7 @@
+.article5 {
+    background-color: #f5f5f5;
+}
+
 .a5-title {
     width: 100%;
     color: #222;
@@ -34,6 +38,7 @@
 .a5-box-text {
     padding: 15px;
     border: 1px solid #ddd;
+    background-color: #fff;
     border-top: none;
 }
 
@@ -67,11 +72,11 @@
 
 @media (max-width: 550px) {
     .a5-box-text h5 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .a5-box-text p {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 

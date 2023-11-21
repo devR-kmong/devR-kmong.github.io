@@ -40,9 +40,6 @@
     margin-top: 10px;
 }
 
-.n-resv {
-    height: 20px;
-}
 
 
 /*==================================================*/
@@ -68,10 +65,6 @@
 
     .a2-box-text p {
         font-size: 12px;
-    }
-
-    .n-resv {
-        height: 16px;
     }
 }
 

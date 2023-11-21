@@ -78,16 +78,14 @@
 
 @media (max-width: 768px) {
     .a1-box p {
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 600;
+        white-space: nowrap;
     }
 }
 
 
 @media (max-width: 550px) {
-    .article1 {
-        padding-top: 80px;
-    }
-    
     .a1-box-wrapper {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem 10px;
@@ -100,10 +98,6 @@
     .a1-box:nth-child(3) {
         display: none;
     }
-    
-    .a1-box p {
-        font-size: 14px;
-    }
 
     .a1-box p span {
         display: none;
@@ -115,8 +109,8 @@
     }
     
     .a1-icon img {
-        height: 45%;
-        min-height: 45%;
+        height: 50%;
+        min-height: 50%;
     }
 }
 
@@ -124,18 +118,5 @@
 @media (max-width: 450px) {
     .a1-box-wrapper {
         margin-top: 10px;
-    }
-    
-    .a1-box p {
-        font-size: 11px;
-        white-space: nowrap;
-    }
-
-    .a1-icon {
-        height: 80px;
-    }
-    
-    .a1-icon img {
-        height: 35%;
     }
 }

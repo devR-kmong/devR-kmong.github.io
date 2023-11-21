@@ -106,8 +106,7 @@
         </div>
     </div>
     <div class="header-m">
-        <a href="" class="logo-w active"><img src="contents/images/logo-w.svg"></a>
-        <a href="" class="logo"><img src="contents/images/logo.svg"></a>
+        <a href="" class="logo active"><img src="contents/images/logo.svg"></a>
         <div class="toggle">
             <div class="tg-search">
                 <i class="ri-search-line"></i>
@@ -236,6 +235,12 @@
                         </div>
                     </div>
                 </div>
+                <div class="p-mobile">
+                    <p>
+                        맞춤형 진로교육 1번지
+                    </p>
+                    <img src="contents/images/logo-p.svg" class="logo-p">
+                </div>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide s-slide1"></div>
@@ -344,7 +349,6 @@
                             <div class="a2-box-text">
                                 <h5>
                                     천안진로진학상담센터
-                                    <img src="contents/images/n-resv.svg" class="n-resv">
                                 </h5>
                                 <p>
                                     - 대상: 천안·아산지역 학생 및 학부모
@@ -358,7 +362,6 @@
                             <div class="a2-box-text">
                                 <h5>
                                     천안진로진학상담센터
-                                    <img src="contents/images/n-resv.svg" class="n-resv">
                                 </h5>
                                 <p>
                                     - 대상: 천안·아산지역 학생 및 학부모
@@ -372,7 +375,6 @@
                             <div class="a2-box-text">
                                 <h5>
                                     천안진로진학상담센터
-                                    <img src="contents/images/n-resv.svg" class="n-resv">
                                 </h5>
                                 <p>
                                     - 대상: 천안·아산지역 학생 및 학부모
@@ -386,7 +388,6 @@
                             <div class="a2-box-text">
                                 <h5>
                                     천안진로진학상담센터
-                                    <img src="contents/images/n-resv.svg" class="n-resv">
                                 </h5>
                                 <p>
                                     - 대상: 천안·아산지역 학생 및 학부모
@@ -400,7 +401,6 @@
                             <div class="a2-box-text">
                                 <h5>
                                     천안진로진학상담센터
-                                    <img src="contents/images/n-resv.svg" class="n-resv">
                                 </h5>
                                 <p>
                                     - 대상: 천안·아산지역 학생 및 학부모
@@ -414,7 +414,6 @@
                             <div class="a2-box-text">
                                 <h5>
                                     천안진로진학상담센터
-                                    <img src="contents/images/n-resv.svg" class="n-resv">
                                 </h5>
                                 <p>
                                     - 대상: 천안·아산지역 학생 및 학부모
@@ -430,7 +429,10 @@
                 <div class="a3-wrapper">
                     <div class="a3-left">
                         <div class="a3-top">
-                            <div class="a3-title">
+                            <div class="article-title">
+                                <p>
+                                    NOTICE
+                                </p>
                                 <h5>
                                     공지사항
                                 </h5>
@@ -504,24 +506,30 @@
                     </div>
                     <div class="a3-right">
                         <div class="a3-top">
-                            <a href="" class="a3-title">
+                            <div class="article-title">
+                                <p>
+                                    PROGRAM
+                                </p>
                                 <h5>
-                                    프로그램 +
+                                    프로그램 신청
                                 </h5>
+                            </div>
+                            <a href="" class="a3-tabBtn">
+                                + 더보기
                             </a>
-                            <div class="a3-tabBtn-wrapper">
-                                <div class="a3-tabBtn on" data-target="data1">
-                                    전체
-                                </div>
-                                <div class="a3-tabBtn" data-target="data2">
-                                    학생·보호자
-                                </div>
-                                <div class="a3-tabBtn" data-target="data3">
-                                    교사연수
-                                </div>
-                                <div class="a3-tabBtn" data-target="data4">
-                                    진로진학박람회
-                                </div>
+                        </div>
+                        <div class="a3-tabBtn-wrapper">
+                            <div class="a3-tabBtn on" data-target="data1">
+                                전체
+                            </div>
+                            <div class="a3-tabBtn" data-target="data2">
+                                학생·보호자
+                            </div>
+                            <div class="a3-tabBtn" data-target="data3">
+                                교사연수
+                            </div>
+                            <div class="a3-tabBtn" data-target="data4">
+                                진로진학박람회
                             </div>
                         </div>
                         <div class="swiper mySwiper1 a3-all" id="data1">
@@ -1191,7 +1199,10 @@
         <div class="footer-wrapper">
             <div class="footer-left">
                 <a href="">
-                    <img src="contents/images/logo-f.svg" class="logo-f">
+                    <picture class="logo-f">
+                        <source srcset="contents/images/logo-f-m.svg" media="(max-width: 768px)">
+                        <img src="contents/images/logo-f.svg">
+                    </picture>
                 </a>
             </div>
             <div class="footer-right">
@@ -1331,15 +1342,15 @@
 
     <script>
         var swiper = new Swiper(".mySwiper2", {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 10,
             loop: true,
             breakpoints: {
                 769: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                 },
                 1251: {
-                    slidesPerView: 4,
+                    slidesPerView: 5,
                 },
             },
             autoplay: {

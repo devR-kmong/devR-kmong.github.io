@@ -212,6 +212,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-bottom: 1px solid #ddd;
         z-index: 99;
     }
 
@@ -233,13 +234,9 @@
     }
 
     .toggle i {
-        color: #fff;
+        color: #222;
         font-size: 32px;
         cursor: pointer;
-    }
-
-    .toggle i.Fixed {
-        color: #222;
     }
 
     .tgm-wrapper {

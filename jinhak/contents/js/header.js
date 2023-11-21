@@ -22,15 +22,9 @@ if (window.innerWidth > 1165) {
         $(window).scroll(function () {
             if ($(document).scrollTop() > Offset.top) {
                 $('.header-m').addClass('Fixed');
-                $('.logo-w').removeClass('active');
-                $('.logo').addClass('active');
-                $('.toggle i').addClass('Fixed');
             }
             else {
                 $('.header-m').removeClass('Fixed');
-                $('.logo-w').addClass('active');
-                $('.logo').removeClass('active');
-                $('.toggle i').removeClass('Fixed');
             }
         });
     });
