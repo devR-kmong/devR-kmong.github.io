@@ -197,7 +197,7 @@
     --swiper-navigation-size: 44px
 } */
 
-.swiperBtn-wrapper {
+/* .swiperBtn-wrapper {
     width: fit-content;
     display: flex;
     justify-content: space-between;
@@ -221,7 +221,7 @@
     border: 1px solid transparent;
     cursor: pointer;
     z-index: 10;
-}
+} */
 
 .swiper-button-next:hover {
     color: #fff;
@@ -287,7 +287,7 @@
     display: none
 }
 
-.swiper-pagination {
+/* .swiper-pagination {
     color: rgba(255, 255, 255, .8);
     font-size: 16px;
     font-weight: 600;
@@ -297,7 +297,7 @@
     gap: 8px;
     transform: translate3d(0, 0, 0);
     z-index: 10
-}
+} */
 
 .swiper-pagination.swiper-pagination-hidden {
     opacity: 0

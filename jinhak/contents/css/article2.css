@@ -46,3 +46,42 @@
 
 
 /*==================================================*/
+@media (max-width: 768px) {
+    .article2 .article-wrapper {
+        padding-right: 0;
+    }
+
+    .a2-top {
+        padding-right: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .a2Btn {
+        padding: 10px 32px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .a2-box-text h5 {
+        font-size: 18px;
+    }
+
+    .a2-box-text p {
+        font-size: 12px;
+    }
+
+    .n-resv {
+        height: 16px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .article2 .article-wrapper {
+        padding-right: 20px;
+    }
+
+    .a2-top {
+        padding-right: 0;
+    }
+}

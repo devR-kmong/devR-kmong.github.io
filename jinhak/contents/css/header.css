@@ -205,7 +205,7 @@
     }
 
     .header-m {
-        position: fixed;
+        position: absolute;
         top: 0;
         width: 100%;
         padding: 20px;
@@ -216,6 +216,7 @@
     }
 
     .header-m.Fixed {
+        position: fixed;
         background-color: #fff;
     }
 
@@ -345,6 +346,17 @@
         padding: 14px 20px;
     }
 
+    .logo,
+    .logo-w,
+    .logo-m {
+        width: 100px;
+    }
+
+    .tgm-top {
+        padding: 11px 0;
+        margin-bottom: 10px;
+    }
+    
     .toggle {
         gap: 12px;
     }

@@ -1,22 +1,40 @@
-$(document).ready(function () {
-    var Offset = $('.global').offset();
-    $(window).scroll(function () {
-        if ($(document).scrollTop() > Offset.top) {
-            $('.global, .header, .header-m').addClass('Fixed');
-            $('.logo-w').removeClass('active');
-            $('.logo').addClass('active');
-            $('.menu li a').addClass('Fixed');
-            $('.toggle i').addClass('Fixed');
-        }
-        else {
-            $('.global, .header, .header-m').removeClass('Fixed');
-            $('.logo-w').addClass('active');
-            $('.logo').removeClass('active');
-            $('.menu li a').removeClass('Fixed');
-            $('.toggle i').removeClass('Fixed');
-        }
+if (window.innerWidth > 1165) {
+    $(document).ready(function () {
+        var Offset = $('.global').offset();
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > Offset.top) {
+                $('.global, .header').addClass('Fixed');
+                $('.logo-w').removeClass('active');
+                $('.logo').addClass('active');
+                $('.menu li a').addClass('Fixed');
+            }
+            else {
+                $('.global, .header').removeClass('Fixed');
+                $('.logo-w').addClass('active');
+                $('.logo').removeClass('active');
+                $('.menu li a').removeClass('Fixed');
+            }
+        });
     });
-});
+} else {
+    $(document).ready(function () {
+        var Offset = $('.header-m').offset();
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > Offset.top) {
+                $('.header-m').addClass('Fixed');
+                $('.logo-w').removeClass('active');
+                $('.logo').addClass('active');
+                $('.toggle i').addClass('Fixed');
+            }
+            else {
+                $('.header-m').removeClass('Fixed');
+                $('.logo-w').addClass('active');
+                $('.logo').removeClass('active');
+                $('.toggle i').removeClass('Fixed');
+            }
+        });
+    });
+}
 
 
 $('.menu').bind('mouseenter', function () {
