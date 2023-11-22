@@ -1,4 +1,144 @@
+.about {
+    background: url(../images/about-bg.jpg) no-repeat;
+    background-size: cover;
+}
 
+.ab1-subtitle {
+    color: #222;
+    font-size: 52px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.ab1-subtitle span {
+    position: relative;
+    color: #222;
+    font-weight: 800;
+}
+
+.ab1-subtitle span::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #fc635740;
+}
+
+.ab1-text {
+    color: #333;
+    font-size: 19px;
+    line-height: 1.9;
+}
+
+.ab1-1 {
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+
+.ab2-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5rem;
+}
+
+.ab2-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.ab2-circle {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background-color: #fc635707;
+    box-shadow: 0 10px 15px 0 #fc635720;
+}
+
+.ab2-circle img {
+    height: 45%;
+    transition: all .2s;
+    filter: invert(68%) sepia(56%) saturate(6372%) hue-rotate(329deg) brightness(107%) contrast(99%);
+    user-select: none;
+}
+
+.ab2-box p {
+    color: #333;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.ab2-box:hover img {
+    transform: scale(1.1);
+}
+
+
+.ab3-table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+.ab3-table tr:first-child td {
+    color: #222;
+    font-weight: 600;
+    background-color: #fc635710;
+    text-align: center !important;
+}
+
+.ab3-table tr td {
+    color: #444;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0;
+    border: 1px solid #e5e5e5;
+    word-break: break-all !important;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.ab3-table tr td:nth-child(1) {
+    width: 15%;
+}
+.ab3-table tr td:nth-child(2) {
+    width: 10%;
+}
+.ab3-table tr td:nth-child(3) {
+    width: 25%;
+}
+.ab3-table tr td:nth-child(4) {
+    width: 50%;
+}
+
+.ab3-table tr td:last-child {
+    text-align: left;
+}
+
+.ab4-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ab4-list li {
+    color: #222;
+    font-size: 22px;
+}
 
 
 /*==================================================*/

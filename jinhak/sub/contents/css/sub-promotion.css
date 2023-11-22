@@ -1,7 +1,3 @@
-.sub-article {
-    padding: 120px 0 80px 0;
-}
-
 .sub-promotion {
     position: relative;
     width: 100%;
@@ -11,11 +7,12 @@
     background-color: #111;
     background-position: center !important;
     animation: zoom-bg 10s both;
+    margin-bottom: 2rem;
 }
 
 @keyframes zoom-bg {
     0% {
-        background-size: 130% auto;
+        background-size: 115% auto;
     }
 
     100% {
@@ -43,6 +40,7 @@
     color: #fff;
     font-size: 55px;
     font-weight: 700;
+    text-shadow: 0 0 30px rgba(0, 0, 0, .1);
 }
 
 .p-route {
@@ -51,6 +49,7 @@
     align-items: center;
     gap: 7px;
     margin-top: 1rem;
+    text-shadow: 0 0 25px rgba(0, 0, 0, .3);
 }
 
 .p-route p {
@@ -80,6 +79,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 12px;
     background-color: #fff;
     box-shadow: 0 6px 24px rgba(0, 0, 0, .1);
 }
@@ -113,6 +113,14 @@
 
 
 /*==================================================*/
+@media (min-width: 1921px) and (max-width: 2559px) {
+    .sub-promotion {
+        background-size: cover !important;
+        animation: none;
+    }
+}
+
+
 @media (max-width: 1919px) {
     .sub-promotion {
         background-size: cover !important;
