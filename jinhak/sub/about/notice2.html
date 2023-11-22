@@ -255,188 +255,172 @@
         <section class="article sub-article">
             <div class="article-wrapper">
 
-                <!-- 검색창 시작 -->
-                <div class="board-sch-wrapper">
-                    <form action="" class="board-sch" method="GET">
-                        <div class="sch-bar">
-                            <select name="" id="" class="sch-select">
-                                <option value="전체">전체</option>
-                                <option value="제목">제목</option>
-                                <option value="내용">내용</option>
-                                <option value="제목+내용">제목+내용</option>
-                            </select>
-                            <div class="sch-input-wrapper">
-                                <input type="text" name="" class="sch-input" id="" value="" placeholder="검색어를 입력하세요." required />
-                                <button type="submit" value="검색" class="sch-btn"><i class="ri-search-line"></i></button>
+                <div class="board-view">
+                    <a href="" class="backBtn">
+                        <i class="ri-arrow-left-line"></i>
+                        뒤로가기
+                    </a>
+                    <div class="board-v-info">
+                        <div class="board-title">
+                            게시글 제목이 들어갈 공간입니다.
+                        </div>
+                        <div class="board-bottom">
+                            <div class="board-date">
+                                작성 | 2023-11-22 11:30
+                            </div>
+                            <div class="board-adm">
+                                <a href="">
+                                    <i class="ri-edit-line"></i>
+                                    수정
+                                </a>
+                                <a href="">
+                                    <i class="ri-delete-bin-2-line"></i>
+                                    삭제
+                                </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="board-content">
+                        <p>
+                            국민의 모든 자유와 권리는 국가안전보장·질서유지 또는 공공복리를 위하여 필요한 경우에 한하여 법률로써 제한할 수 있으며, 제한하는 경우에도 자유와 권리의 본질적인 내용을 침해할 수 없다.
+
+                            국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다. 의원을 제명하려면 국회재적의원 3분의 2 이상의 찬성이 있어야 한다.
+
+                            국교는 인정되지 아니하며, 종교와 정치는 분리된다. 국정감사 및 조사에 관한 절차 기타 필요한 사항은 법률로 정한다. 대통령은 법률안의 일부에 대하여 또는 법률안을 수정하여 재의를 요구할 수 없다.
+
+                            대통령은 조약을 체결·비준하고, 외교사절을 신임·접수 또는 파견하며, 선전포고와 강화를 한다. 근로조건의 기준은 인간의 존엄성을 보장하도록 법률로 정한다.
+
+                            국가는 농·어민과 중소기업의 자조조직을 육성하여야 하며, 그 자율적 활동과 발전을 보장한다. 위원은 정당에 가입하거나 정치에 관여할 수 없다. 국회는 헌법개정안이 공고된 날로부터 60일 이내에 의결하여야 하며, 국회의 의결은 재적의원 3분의 2 이상의 찬성을 얻어야 한다.
+
+                            정당은 그 목적·조직과 활동이 민주적이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다. 재의의 요구가 있을 때에는 국회는 재의에 붙이고, 재적의원과반수의 출석과 출석의원 3분의 2 이상의 찬성으로 전과 같은 의결을 하면 그 법률안은 법률로서 확정된다.
+
+                            새로운 회계연도가 개시될 때까지 예산안이 의결되지 못한 때에는 정부는 국회에서 예산안이 의결될 때까지 다음의 목적을 위한 경비는 전년도 예산에 준하여 집행할 수 있다.
+
+                            대통령이 궐위되거나 사고로 인하여 직무를 수행할 수 없을 때에는 국무총리, 법률이 정한 국무위원의 순서로 그 권한을 대행한다. 법관이 중대한 심신상의 장해로 직무를 수행할 수 없을 때에는 법률이 정하는 바에 의하여 퇴직하게 할 수 있다.
+
+                            국가는 농지에 관하여 경자유전의 원칙이 달성될 수 있도록 노력하여야 하며, 농지의 소작제도는 금지된다. 정부는 회계연도마다 예산안을 편성하여 회계연도 개시 90일전까지 국회에 제출하고, 국회는 회계연도 개시 30일전까지 이를 의결하여야 한다.
+
+                            학교교육 및 평생교육을 포함한 교육제도와 그 운영, 교육재정 및 교원의 지위에 관한 기본적인 사항은 법률로 정한다. 형사피해자는 법률이 정하는 바에 의하여 당해 사건의 재판절차에서 진술할 수 있다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 댓글 영역 시작 -->
+                <div class="cmt-wrapper">
+                    <div class="cmt-title">
+                        <span>5</span>개의 댓글
+                    </div>
+                    <form class="cmt-write" action="" method="">
+                        <input type="text" class="cmt-input" id="" name="" placeholder="주제와 무관한 댓글, 타인의 권리를 침해하거나 명예를 훼손하는 댓글은 제재 대상입니다." />
+                        <button type="submit" class="cmt-btn" name="" value="등록">등록하기</button>
                     </form>
                 </div>
-                <!-- 검색창 끝 -->
 
-                <!-- 공지사항 게시판 목록 시작 -->
-                <div class="board-list-wrapper">
-
-                    <!-- 게시판 관리자 시작 -->
-                    <div class="board-adm">
-                        <a href="">
-                            <i class="ri-settings-2-line"></i>
-                            관리자
-                        </a>
-                        <a href="">
-                            <i class="ri-edit-line"></i>
-                            글쓰기
-                        </a>
-                        <a href="">
-                            <i class="ri-delete-bin-2-line"></i>
-                            삭제
-                        </a>
-                    </div>
-                    <!-- 게시판 관리자 끝 -->
-
-                    <div class="board-list">
-                        <div class="board-top">
-                            <div class="board-cate">
-                                번호
-                            </div>
-                            <div class="board-cate">
-                                제목
-                            </div>
-                            <div class="board-cate">
-                                조회수 <!-- 관리자에서만 보이도록 -->
-                            </div>
-                            <div class="board-cate">
-                                작성일 <!-- sort 기능 추가할 곳 -->
+                <div class="cmt-list">
+                    <!-- 반복문 들어갈 자리 -->
+                    <div class="cmt-content">
+                        <div class="board-adm">
+                            <a href="">
+                                <i class="ri-edit-line"></i>
+                            </a>
+                            <a href="">
+                                <i class="ri-delete-bin-2-line"></i>
+                            </a>
+                        </div>
+                        <div class="cmt-profile">
+                            <img src="../contents/images/profile.jpg">
+                            <div>
+                                <h5 class="cmt-id">
+                                    아이디
+                                </h5>
+                                <p class="cmt-date">
+                                    2023.11.22 15:30
+                                </p>
                             </div>
                         </div>
-
-                        <!-- 반복문 들어갈 자리 -->
-                        <a href="" class="board-cts-wrapper nt">  <!-- 공지스타일은 'nt' 추가 -->
-                            <div class="board-cts">
-                                <div class="nt-cate">
-                                    공지
-                                </div>
-                            </div>
-                            <div class="board-cts">
-                                공지사항 제목이 들어갈 공간입니다.
-                            </div>
-                            <div class="board-cts">
-                                2,124
-                            </div>
-                            <div class="board-cts">
-                                2023-11-22
-                            </div>
-                        </a>
-                        <!-- 반복문 자리 끝 -->
-
-                        <a href="" class="board-cts-wrapper">
-                            <div class="board-cts">
-                                20
-                            </div>
-                            <div class="board-cts">
-                                글 제목이 길면 이렇게 처리됩니다 글 제목이 길면 이렇게 처리됩니다 글 제목이 길면 이렇게 처리됩니다 글 제목이 길면 이렇게 처리됩니다 글 제목이 길면 이렇게 처리됩니다 
-                            </div>
-                            <div class="board-cts">
-                                347
-                            </div>
-                            <div class="board-cts">
-                                2023-11-22
-                            </div>
-                        </a>
-                        <a href="" class="board-cts-wrapper">
-                            <div class="board-cts">
-                                19
-                            </div>
-                            <div class="board-cts">
-                                글 제목이 들어갈 공간입니다.
-                            </div>
-                            <div class="board-cts">
-                                467
-                            </div>
-                            <div class="board-cts">
-                                2023-11-22
-                            </div>
-                        </a>
-                        <a href="" class="board-cts-wrapper">
-                            <div class="board-cts">
-                                18
-                            </div>
-                            <div class="board-cts">
-                                글 제목이 들어갈 공간입니다.
-                            </div>
-                            <div class="board-cts">
-                                554
-                            </div>
-                            <div class="board-cts">
-                                2023-11-22
-                            </div>
-                        </a>
-                        <a href="" class="board-cts-wrapper">
-                            <div class="board-cts">
-                                17
-                            </div>
-                            <div class="board-cts">
-                                글 제목이 들어갈 공간입니다.
-                            </div>
-                            <div class="board-cts">
-                                612
-                            </div>
-                            <div class="board-cts">
-                                2023-11-22
-                            </div>
-                        </a>
-                        <a href="" class="board-cts-wrapper">
-                            <div class="board-cts">
-                                16
-                            </div>
-                            <div class="board-cts">
-                                글 제목이 들어갈 공간입니다.
-                            </div>
-                            <div class="board-cts">
-                                1,087
-                            </div>
-                            <div class="board-cts">
-                                2023-11-22
-                            </div>
-                        </a>
-
+                        <div class="cmt-text">
+                            댓글 내용이 들어갑니다.
+                        </div>
                     </div>
+                    <!-- 반복문 자리 끝 -->
+
+                    <div class="cmt-content cmt-reply"> <!-- 답글 스타일 -->
+                        <div class="board-adm">
+                            <a href="">
+                                <i class="ri-edit-line"></i>
+                            </a>
+                            <a href="">
+                                <i class="ri-delete-bin-2-line"></i>
+                            </a>
+                        </div>
+                        <div class="cmt-profile">
+                            <img src="../contents/images/profile.jpg">
+                            <div>
+                                <h5 class="cmt-id">
+                                    아이디
+                                </h5>
+                                <p class="cmt-date">
+                                    2023.11.22 15:30
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cmt-text">
+                            답글 내용이 들어갑니다.
+                        </div>
+                    </div>
+                    
+
+                    <div class="cmt-content">
+                        <div class="board-adm">
+                            <a href="">
+                                <i class="ri-edit-line"></i>
+                            </a>
+                            <a href="">
+                                <i class="ri-delete-bin-2-line"></i>
+                            </a>
+                        </div>
+                        <div class="cmt-profile">
+                            <img src="../contents/images/profile.jpg">
+                            <div>
+                                <h5 class="cmt-id">
+                                    아이디
+                                </h5>
+                                <p class="cmt-date">
+                                    2023.11.22 15:30
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cmt-text">
+                            댓글 내용이 들어갑니다.
+                        </div>
+                    </div>
+                    <div class="cmt-content">
+                        <div class="board-adm">
+                            <a href="">
+                                <i class="ri-edit-line"></i>
+                            </a>
+                            <a href="">
+                                <i class="ri-delete-bin-2-line"></i>
+                            </a>
+                        </div>
+                        <div class="cmt-profile">
+                            <img src="../contents/images/profile.jpg">
+                            <div>
+                                <h5 class="cmt-id">
+                                    아이디
+                                </h5>
+                                <p class="cmt-date">
+                                    2023.11.22 15:30
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cmt-text">
+                            댓글 내용이 들어갑니다.
+                        </div>
+                    </div>
+
                 </div>
-                <!-- 공지사항 게시판 목록 끝 -->
-
-                <!-- 페이징 시작 -->
-                    <div class="board-pagination">
-                        <div class="paging">
-                            <a href="" class="pag-arrow">
-                                <i class="ri-arrow-left-double-line"></i>
-                            </a>
-                            <a href="" class="pag-arrow">
-                                <i class="ri-arrow-left-s-line"></i>
-                            </a>
-                            <a href="" class="pag-num on">
-                                1
-                            </a>
-                            <a href="" class="pag-num">
-                                2
-                            </a>
-                            <a href="" class="pag-num">
-                                3
-                            </a>
-                            <a href="" class="pag-num">
-                                4
-                            </a>
-                            <a href="" class="pag-num">
-                                5
-                            </a>
-                            <a href="" class="pag-arrow">
-                                <i class="ri-arrow-right-s-line"></i>
-                            </a>
-                            <a href="" class="pag-arrow">
-                                <i class="ri-arrow-right-double-fill"></i>
-                            </a>
-                        </div>
-                    </div>
-                <!-- 페이징 끝 -->
+                <!-- 댓글 영역 끝 -->
 
             </div>
         </section>

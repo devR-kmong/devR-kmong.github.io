@@ -1,0 +1,44 @@
+/* 갤러리 목록 */
+.gall-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gall-thumb {
+    width: 315px;
+    height: 315px;
+    overflow: hidden;
+}
+
+.gall-thumb img {
+    transition: all .2s;
+}
+
+.gall-box:hover .gall-thumb img {
+    transform: scale(1.1);
+}
+
+.gall-info {
+    margin-top: 10px;
+}
+
+.gall-title {
+    width: 310px;
+    color: #222;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.gall-date {
+    color: #aaa;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+/*==================================================*/

@@ -1,0 +1,142 @@
+/* 관리자 */
+.board-adm {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.board-adm a {
+    color: #aaa;
+    font-size: 16px;
+}
+
+
+/* 검색창 */
+.board-sch-wrapper {
+    width: 100%;
+    padding: 55px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+
+.sch-bar {
+    width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.sch-select {
+    width: 150px;
+    height: 58px;
+    padding: 0 7px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-right: none;
+    cursor: pointer;
+}
+
+.sch-input-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sch-input {
+    width: 100%;
+    height: 58px;
+    padding: 0 12px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+.sch-input:focus {
+    border: 1px solid var(--main-color);
+}
+
+.sch-input::placeholder {
+    color: #ccc;
+}
+
+.sch-btn {
+    position: absolute;
+    right: 10px;
+}
+
+.sch-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.sch-btn i {
+    color: #ccc;
+    font-size: 24px;
+}
+
+.sch-input:focus ~ .sch-btn i {
+    color: #222;
+}
+
+
+
+/* 페이징 */
+.board-pagination {
+    margin-top: 3rem;
+}
+
+.paging {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pag-arrow {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.pag-arrow i {
+    color: #bbb;
+    font-size: 16px;
+}
+
+.pag-arrow:hover {
+    background-color: #f5f5f5;
+}
+
+.pag-num {
+    width: 40px;
+    height: 40px;
+    color: #888;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pag-num.on {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.pag-num:hover {
+    background-color: #f5f5f5;
+}
+
+.pag-num.on:hover {
+    background-color: var(--main-color);
+}
