@@ -99,6 +99,9 @@
     width: 10%;
 }
 
+.board-cts.reply {
+    padding-left: 10px;
+}
 
 
 /* 게시글 뷰 */
