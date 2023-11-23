@@ -277,25 +277,38 @@
                 <!-- 공지사항 게시판 목록 시작 -->
                 <div class="board-list-wrapper">
 
-                    <!-- 게시판 관리자 시작 -->
-                    <div class="board-adm">
-                        <a href="">
-                            <i class="ri-settings-2-line"></i>
-                            관리자
-                        </a>
-                        <a href="">
-                            <i class="ri-edit-line"></i>
-                            글쓰기
-                        </a>
-                        <a href="">
-                            <i class="ri-delete-bin-2-line"></i>
-                            삭제
-                        </a>
+                    <div class="board-control">
+                        <div></div>
+                        <!-- 게시판 관리자 시작 -->
+                        <div class="board-adm">
+                            <a href="">
+                                <i class="ri-settings-2-line"></i>
+                                관리자
+                            </a>
+                            <a href="">
+                                <i class="ri-edit-line"></i>
+                                글쓰기
+                            </a>
+                            <a href="">
+                                <i class="ri-delete-bin-2-line"></i>
+                                삭제
+                            </a>
+                        </div>
+                        <!-- 게시판 관리자 끝 -->
                     </div>
-                    <!-- 게시판 관리자 끝 -->
 
                     <div class="board-list">
                         <div class="board-top">
+                            <div class="board-cate">
+                                <!-- 전체 체크박스 시작 -->
+                                <div class="chk-box">
+                                    <input type="checkbox" name="chk" class="chk-input" id="chkall" onclick="selectAll(this)">
+                                    <label for="chkall">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <!-- 전체 체크박스 끝 -->
+                            </div>
                             <div class="board-cate">
                                 번호
                             </div>
@@ -312,6 +325,16 @@
 
                         <!-- 반복문 들어갈 자리 -->
                         <a href="" class="board-cts-wrapper nt">  <!-- 공지스타일은 'nt' 추가 -->
+                            <div class="board-cts">
+                                <!-- 체크박스 시작 -->
+                                <div class="chk-box">
+                                    <input type="checkbox" name="chk" class="chk-input" id="">
+                                    <label for="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <!-- 체크박스 끝 -->
+                            </div>
                             <div class="board-cts">
                                 <div class="nt-cate">
                                     공지
@@ -331,6 +354,16 @@
 
                         <a href="" class="board-cts-wrapper">
                             <div class="board-cts">
+                                <!-- 체크박스 시작 -->
+                                <div class="chk-box">
+                                    <input type="checkbox" name="chk" class="chk-input" id="">
+                                    <label for="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <!-- 체크박스 끝 -->
+                            </div>
+                            <div class="board-cts">
                                 20
                             </div>
                             <div class="board-cts">
@@ -344,6 +377,16 @@
                             </div>
                         </a>
                         <a href="" class="board-cts-wrapper">
+                            <div class="board-cts">
+                                <!-- 체크박스 시작 -->
+                                <div class="chk-box">
+                                    <input type="checkbox" name="chk" class="chk-input" id="">
+                                    <label for="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <!-- 체크박스 끝 -->
+                            </div>
                             <div class="board-cts">
                                 19
                             </div>
@@ -359,6 +402,16 @@
                         </a>
                         <a href="" class="board-cts-wrapper">
                             <div class="board-cts">
+                                <!-- 체크박스 시작 -->
+                                <div class="chk-box">
+                                    <input type="checkbox" name="chk" class="chk-input" id="">
+                                    <label for="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <!-- 체크박스 끝 -->
+                            </div>
+                            <div class="board-cts">
                                 18
                             </div>
                             <div class="board-cts">
@@ -373,6 +426,16 @@
                         </a>
                         <a href="" class="board-cts-wrapper">
                             <div class="board-cts">
+                                <!-- 체크박스 시작 -->
+                                <div class="chk-box">
+                                    <input type="checkbox" name="chk" class="chk-input" id="">
+                                    <label for="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <!-- 체크박스 끝 -->
+                            </div>
+                            <div class="board-cts">
                                 17
                             </div>
                             <div class="board-cts">
@@ -386,6 +449,16 @@
                             </div>
                         </a>
                         <a href="" class="board-cts-wrapper">
+                            <div class="board-cts">
+                                <!-- 체크박스 시작 -->
+                                <div class="chk-box">
+                                    <input type="checkbox" name="chk" class="chk-input" id="">
+                                    <label for="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <!-- 체크박스 끝 -->
+                            </div>
                             <div class="board-cts">
                                 16
                             </div>
@@ -541,6 +614,17 @@
     </div>
 
     <script src="../../contents/js/header.js"></script>
+
+    <script>
+        function selectAll(selectAll) {
+            const checkboxes
+                = document.getElementsByName('chk');
+
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = selectAll.checked;
+            })
+        }
+    </script>
 
 </body>
 </html>
