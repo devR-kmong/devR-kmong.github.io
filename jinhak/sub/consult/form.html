@@ -18,13 +18,12 @@
     <link rel="stylesheet" href="../../contents/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../contents/css/sub-promotion.css">
     <link rel="stylesheet" href="../contents/css/common.css">
-    <link rel="stylesheet" href="../contents/css/board.css">
-    <link rel="stylesheet" href="../contents/css/gallery.css">
+    <link rel="stylesheet" href="../contents/css/form.css">
     <link rel="shortcut icon" href="../../contents/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="../../contents/js/swiper-bundle.min.js"></script>
-    <title>행사갤러리</title>
+    <title>기초자료입력</title>
 </head>
 <body>
     <div class="header-pc">
@@ -215,11 +214,11 @@
         </div>
     </div>
     <main>
-        <section class="sub-promotion about">
+        <section class="sub-promotion consult">
             <div class="sub-promotion-wrapper">
                 <div class="sub-p-text">
                     <h5>
-                        행사갤러리
+                        기초자료입력
                     </h5>
                     <div class="p-route">
                         <i class="ri-home-4-line"></i>
@@ -227,13 +226,13 @@
                             <i class="ri-arrow-right-s-line"></i>
                         </span>
                         <p>
-                            센터소개
+                            1:1맞춤상담
                         </p>
                         <span>
                             <i class="ri-arrow-right-s-line"></i>
                         </span>
                         <p>
-                            행사갤러리
+                            기초자료 입력
                         </p>
                     </div>
                 </div>
@@ -245,11 +244,11 @@
                     </a>
                     <div class="sm-vertical"></div>
                     <div class="sub-navBtn sn-1">
-                        센터소개
+                        1:1맞춤상담
                         <i class="ri-arrow-down-s-fill"></i>
                         <ul class="sub-dropdown dd-1">
                             <li>
-                                센터소개
+                                1:1맞춤상담
                                 <i class="ri-arrow-up-s-fill"></i>
                             </li>
                             <li><a href="">센터소개</a></li>
@@ -262,16 +261,17 @@
                     </div>
                     <div class="sm-vertical"></div>
                     <div class="sub-navBtn sn-2">
-                        행사갤러리
+                        기초자료입력
                         <i class="ri-arrow-down-s-fill"></i>
                         <ul class="sub-dropdown dd-2">
                             <li>
-                                행사갤러리
+                                기초자료입력
                                 <i class="ri-arrow-up-s-fill"></i>
                             </li>
-                            <li><a href="">센터안내</a></li>
-                            <li><a href="">공지사항</a></li>
-                            <li><a href="">행사갤러리</a></li>
+                            <li><a href="">상담예약</a></li>
+                            <li><a href="">기초자료입력</a></li>
+                            <li><a href="">심리검사</a></li>
+                            <li><a href="">이용안내</a></li>
                         </ul>
                     </div>
                     <div class="sm-vertical"></div>
@@ -280,285 +280,139 @@
         </section>
         <section class="article sub-article">
             <div class="article-wrapper">
-                
-                <!-- 검색창 시작 -->
-                <div class="board-sch-wrapper">
-                    <form action="" class="board-sch" method="GET">
-                        <div class="sch-bar">
-                            <select name="" id="" class="sch-select">
-                                <option value="전체">전체</option>
-                                <option value="제목">제목</option>
-                                <option value="내용">내용</option>
-                                <option value="제목+내용">제목+내용</option>
-                            </select>
-                            <div class="sch-input-wrapper">
-                                <input type="text" name="" class="sch-input" id="" value="" placeholder="검색어를 입력하세요." required />
-                                <button type="submit" value="검색" class="sch-btn"><i class="ri-search-line"></i></button>
+                <div class="sub-tabBtn-wrapper">
+                    <div class="sub-tabBtn on" data-target="data1">
+                        기초조사(학생)
+                    </div>
+                    <div class="sub-tabBtn" data-target="data2">
+                        기초조사(보호자)
+                    </div>
+                    <div class="sub-tabBtn" data-target="data3">
+                        학생부 파일
+                    </div>
+                    <div class="sub-tabBtn" data-target="data4">
+                        교과성적
+                    </div>
+                    <div class="sub-tabBtn" data-target="data5">
+                        모의고사(수능)
+                    </div>
+                    <div class="sub-tabBtn" data-target="data6">
+                        결과리포트
+                    </div>
+                </div>
+                <div class="tab-contents on" id="data1">
+                    <form action="" method="" class="base-form">
+                        <div class="b-form-box">
+                            <p class="b-fb-title">
+                                1. 어떤 상담을 희망하시나요?
+                                <span>
+                                    * 복수선택 가능
+                                </span>
+                            </p>
+                            <div class="b-chkbox-wrapper">
+                                <div class="b-chkbox">
+                                    <input type="checkbox" name="category" id="bc1" value="수시상담" class="b-chk" />
+                                    <label for="bc1">
+                                        <span></span>
+                                        수시상담
+                                    </label>
+                                </div>
+                                <div class="b-chkbox">
+                                    <input type="checkbox" name="category" id="bc2" value="정시상담" class="b-chk" />
+                                    <label for="bc2">
+                                        <span></span>
+                                        정시상담
+                                    </label>
+                                </div>
+                                <div class="b-chkbox">
+                                    <input type="checkbox" name="category" id="bc3" value="진로진학종합상담" class="b-chk" />
+                                    <label for="bc3">
+                                        <span></span>
+                                        진로진학 종합상담
+                                    </label>
+                                </div>
+                                <div class="b-chkbox">
+                                    <input type="checkbox" name="category" id="bc4" value="고등학교진학상담" class="b-chk" />
+                                    <label for="bc4">
+                                        <span></span>
+                                        고등학교 진학상담
+                                    </label>
+                                </div>
+                                <div class="b-chkbox">
+                                    <input type="checkbox" name="category" id="bc5" value="학습방법상담" class="b-chk" />
+                                    <label for="bc5">
+                                        <span></span>
+                                        학습방법 상담
+                                    </label>
+                                </div>
+                                <div class="b-chkbox">
+                                    <input type="checkbox" name="category" id="bc6" value="기타" class="b-chk" />
+                                    <label for="bc6">
+                                        <span></span>
+                                        기타
+                                    </label>
+                                    <input type="text" name="category" id="bc6" class="b-form-input" placeholder="기타 답변을 입력하세요." />
+                                </div>
                             </div>
                         </div>
+                        <div class="b-form-box">
+                            <p class="b-fb-title">
+                                2. 진학 시 특별전형에 해당되나요?
+                                <span>
+                                    * 다자녀, 다문화, 차상위, 기초수급자, 농어촌, 소녀소년가장, 유공자 등
+                                </span>
+                            </p>
+                            <input type="text" name="special" id="" class="b-form-input" placeholder="전형명을 입력하세요." />
+                        </div>
+                        <div class="b-form-box">
+                            <p class="b-fb-title">
+                                3. 진학을 희망하는 고등학교를 적어주세요.
+                                <span>
+                                    * 중학생만 답변하세요.
+                                </span>
+                            </p>
+                            <div class="b-fb-box-wrapper">
+                                <div class="b-fb-box">
+                                    <p>1지망</p>
+                                    <input type="text" name="1st" id="" class="b-form-input" placeholder="고등학교명" />
+                                </div>
+                                <div class="b-fb-box">
+                                    <p>2지망</p>
+                                    <input type="text" name="2nd" id="" class="b-form-input" placeholder="고등학교명" />
+                                </div>
+                                <div class="b-fb-box">
+                                    <p>3지망</p>
+                                    <input type="text" name="3rd" id="" class="b-form-input" placeholder="고등학교명" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-form-box">
+                            <p class="b-fb-title">
+                                4. 특목고 등 희망 학교 준비를 얼마나 했나요? (선행, 경시, 비교과 기타에 대해 과목별 또는 내용별로 가능하면 자세히)
+                                <span>
+                                    * 일반고 외 특목/자사/자율/비평준고 등에 지원희망이 있는 학생만 답변하세요.
+                                </span>
+                            </p>
+                            <input type="text" name="prepare" id="" class="b-form-input" placeholder="없을 경우 아니오로 답하세요." />
+                        </div>
+                        <button type="submit" class="b-submit-btn" value="제출하기">제출하기</button>
                     </form>
                 </div>
-                <!-- 검색창 끝 -->
-
-                <!-- 갤러리 목록 시작 -->
-                <div class="gall-list-wrapper">
-                    
-                    <div class="board-control">
-                        <!-- 전체 체크박스 시작 -->
-                        <div class="chk-box">
-                            <input type="checkbox" name="chk" class="chk-input" id="chkall" onclick="selectAll(this)">
-                            <label for="chkall">
-                                <span></span>
-                                전체선택
-                            </label>
-                        </div>
-                        <!-- 전체 체크박스 끝 -->
-
-                        <!-- 게시판 관리자 시작 -->
-                        <div class="board-adm">
-                            <a href="">
-                                <i class="ri-settings-2-line"></i>
-                                관리자
-                            </a>
-                            <a href="">
-                                <i class="ri-edit-line"></i>
-                                글쓰기
-                            </a>
-                            <a href="">
-                                <i class="ri-delete-bin-2-line"></i>
-                                삭제
-                            </a>
-                        </div>
-                        <!-- 게시판 관리자 끝 -->
-                    </div>
-                    
-                    <div class="gall-list">
-                        <!-- 반복문 들어갈 자리 시작 -->
-                        <a href="" class="gall-box">
-
-                            <!-- 체크박스 시작 -->
-                            <div class="chk-box">
-                                <input type="checkbox" name="chk" class="chk-input" id="">
-                                <label for="">
-                                    <span></span>
-                                </label>
-                            </div>
-                            <!-- 체크박스 끝 -->
-
-                            <div class="gall-thumb">
-                                <img src="https://via.placeholder.com/500/f2f2f2">
-                            </div>
-                            <div class="gall-info">
-                                <h5 class="gall-title">
-                                    갤러리 글 제목이 길면 이렇게 처리됩니다.
-                                </h5>
-                                <p class="gall-date">
-                                    2023-11-22
-                                </p>
-                            </div>
-                        </a>
-                        <!-- 반복문 들어갈 자리 끝 -->
-
-                        <a href="" class="gall-box">
-
-                            <!-- 체크박스 시작 -->
-                            <div class="chk-box">
-                                <input type="checkbox" name="chk" class="chk-input" id="">
-                                <label for="">
-                                    <span></span>
-                                </label>
-                            </div>
-                            <!-- 체크박스 끝 -->
-
-                            <div class="gall-thumb">
-                                <img src="https://via.placeholder.com/500/f2f2f2">
-                            </div>
-                            <div class="gall-info">
-                                <h5 class="gall-title">
-                                    갤러리 글 제목
-                                </h5>
-                                <p class="gall-date">
-                                    2023-11-22
-                                </p>
-                            </div>
-                        </a>
-                        <a href="" class="gall-box">
-
-                            <!-- 체크박스 시작 -->
-                            <div class="chk-box">
-                                <input type="checkbox" name="chk" class="chk-input" id="">
-                                <label for="">
-                                    <span></span>
-                                </label>
-                            </div>
-                            <!-- 체크박스 끝 -->
-
-                            <div class="gall-thumb">
-                                <img src="https://via.placeholder.com/500/f2f2f2">
-                            </div>
-                            <div class="gall-info">
-                                <h5 class="gall-title">
-                                    갤러리 글 제목
-                                </h5>
-                                <p class="gall-date">
-                                    2023-11-22
-                                </p>
-                            </div>
-                        </a>
-                        <a href="" class="gall-box">
-
-                            <!-- 체크박스 시작 -->
-                            <div class="chk-box">
-                                <input type="checkbox" name="chk" class="chk-input" id="">
-                                <label for="">
-                                    <span></span>
-                                </label>
-                            </div>
-                            <!-- 체크박스 끝 -->
-
-                            <div class="gall-thumb">
-                                <img src="https://via.placeholder.com/500/f2f2f2">
-                            </div>
-                            <div class="gall-info">
-                                <h5 class="gall-title">
-                                    갤러리 글 제목
-                                </h5>
-                                <p class="gall-date">
-                                    2023-11-22
-                                </p>
-                            </div>
-                        </a>
-                        <a href="" class="gall-box">
-
-                            <!-- 체크박스 시작 -->
-                            <div class="chk-box">
-                                <input type="checkbox" name="chk" class="chk-input" id="">
-                                <label for="">
-                                    <span></span>
-                                </label>
-                            </div>
-                            <!-- 체크박스 끝 -->
-
-                            <div class="gall-thumb">
-                                <img src="https://via.placeholder.com/500/f2f2f2">
-                            </div>
-                            <div class="gall-info">
-                                <h5 class="gall-title">
-                                    갤러리 글 제목
-                                </h5>
-                                <p class="gall-date">
-                                    2023-11-22
-                                </p>
-                            </div>
-                        </a>
-                        <a href="" class="gall-box">
-
-                            <!-- 체크박스 시작 -->
-                            <div class="chk-box">
-                                <input type="checkbox" name="chk" class="chk-input" id="">
-                                <label for="">
-                                    <span></span>
-                                </label>
-                            </div>
-                            <!-- 체크박스 끝 -->
-
-                            <div class="gall-thumb">
-                                <img src="https://via.placeholder.com/500/f2f2f2">
-                            </div>
-                            <div class="gall-info">
-                                <h5 class="gall-title">
-                                    갤러리 글 제목
-                                </h5>
-                                <p class="gall-date">
-                                    2023-11-22
-                                </p>
-                            </div>
-                        </a>
-                        <a href="" class="gall-box">
-
-                            <!-- 체크박스 시작 -->
-                            <div class="chk-box">
-                                <input type="checkbox" name="chk" class="chk-input" id="">
-                                <label for="">
-                                    <span></span>
-                                </label>
-                            </div>
-                            <!-- 체크박스 끝 -->
-
-                            <div class="gall-thumb">
-                                <img src="https://via.placeholder.com/500/f2f2f2">
-                            </div>
-                            <div class="gall-info">
-                                <h5 class="gall-title">
-                                    갤러리 글 제목
-                                </h5>
-                                <p class="gall-date">
-                                    2023-11-22
-                                </p>
-                            </div>
-                        </a>
-                        <a href="" class="gall-box">
-
-                            <!-- 체크박스 시작 -->
-                            <div class="chk-box">
-                                <input type="checkbox" name="chk" class="chk-input" id="">
-                                <label for="">
-                                    <span></span>
-                                </label>
-                            </div>
-                            <!-- 체크박스 끝 -->
-
-                            <div class="gall-thumb">
-                                <img src="https://via.placeholder.com/500/f2f2f2">
-                            </div>
-                            <div class="gall-info">
-                                <h5 class="gall-title">
-                                    갤러리 글 제목
-                                </h5>
-                                <p class="gall-date">
-                                    2023-11-22
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
+                <div class="tab-contents" id="data2">
+                    기초조사(보호자)
                 </div>
-                <!-- 갤러리 목록 끝 -->
-
-                <!-- 페이징 시작 -->
-                <div class="board-pagination">
-                    <div class="paging">
-                        <a href="" class="pag-arrow">
-                            <i class="ri-arrow-left-double-line"></i>
-                        </a>
-                        <a href="" class="pag-arrow">
-                            <i class="ri-arrow-left-s-line"></i>
-                        </a>
-                        <a href="" class="pag-num on">
-                            1
-                        </a>
-                        <a href="" class="pag-num">
-                            2
-                        </a>
-                        <a href="" class="pag-num">
-                            3
-                        </a>
-                        <a href="" class="pag-num">
-                            4
-                        </a>
-                        <a href="" class="pag-num">
-                            5
-                        </a>
-                        <a href="" class="pag-arrow">
-                            <i class="ri-arrow-right-s-line"></i>
-                        </a>
-                        <a href="" class="pag-arrow">
-                            <i class="ri-arrow-right-double-fill"></i>
-                        </a>
-                    </div>
+                <div class="tab-contents" id="data3">
+                    학생부 파일
                 </div>
-            <!-- 페이징 끝 -->
-
+                <div class="tab-contents" id="data4">
+                    교과성적
+                </div>
+                <div class="tab-contents" id="data5">
+                    모의고사(수능)
+                </div>
+                <div class="tab-contents" id="data6">
+                    결과리포트
+                </div>
             </div>
         </section>
     </main>
@@ -664,15 +518,25 @@
     <script src="../../contents/js/sub-header.js"></script>
 
     <script>
-        function selectAll(selectAll) {
-            const checkboxes
-                = document.getElementsByName('chk');
-
-            checkboxes.forEach((checkbox) => {
-                checkbox.checked = selectAll.checked;
-            })
-        }
+        $(function () {
+            $('.sub-tabBtn').click(function () {
+                id = $($(this).data('target')).selector;
+                $('.tab-contents').hide();
+                $('#' + id).show().css('display','flex');
+            });
+        });
     </script>
-    
+
+    <script>
+        $(function () {
+            for (let i = 0; i < $('.sub-tabBtn').length; i++) {
+                $('.sub-tabBtn').eq(i).click(function () {
+                    $('.sub-tabBtn').removeClass('on');
+                    $(this).addClass('on');
+                })
+            }
+        })
+    </script>
+
 </body>
 </html>
