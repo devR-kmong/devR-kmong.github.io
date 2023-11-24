@@ -1,5 +1,5 @@
 if (window.innerWidth > 1165) {
-    $(document).ready(function () {
+    $(function () {
         var Offset = $('.global').offset();
         $(window).scroll(function () {
             if ($(document).scrollTop() > Offset.top) {
@@ -17,7 +17,7 @@ if (window.innerWidth > 1165) {
         });
     });
 } else {
-    $(document).ready(function () {
+    $(function () {
         var Offset = $('.header-m').offset();
         $(window).scroll(function () {
             if ($(document).scrollTop() > Offset.top) {

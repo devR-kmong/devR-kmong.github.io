@@ -1,0 +1,149 @@
+/* 이용안내 */
+.gd-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.gd-box {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid #ddd;
+    transition: all .3s;
+}
+
+.gd-box.on {
+    border: 1px solid var(--main-color);
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, .1);
+}
+
+.gd-box-icon img {
+    height: 50px;
+    filter: invert(59%) sepia(44%) saturate(2931%) hue-rotate(321deg) brightness(94%) contrast(112%);
+    user-select: none;
+}
+
+.gd-box-text h4 {
+    color: var(--main-color);
+    font-size: 16px;
+}
+
+.gd-box-text h5 {
+    color: #222;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 10px;
+}
+
+.gd-box-text p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 1rem;
+}
+
+.gd-box-bottom {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+
+/* 상담종류 */
+.ct-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.ct-box {
+    border: 1px solid #ddd;
+    transition: all .3s;
+}
+
+.ct-box-image {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.ct-box-text {
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ct-target-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.ct-target {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 2px 4px;
+    border-radius: 3px;
+    background-color: #aaa;
+}
+
+.ct-e {
+    background-color: var(--sub-color-2);
+}
+.ct-m {
+    background-color: var(--sub-color-1);
+}
+.ct-h {
+    background-color: var(--main-color);
+}
+
+.ct-box-text h5 {
+    color: #222;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.ct-box-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.ct-box-text ul li {
+    color: #222;
+    font-size: 17px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.ct-box-text ul li p {
+    color: #666;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.ctBtn {
+    width: 100%;
+    padding: 11px 0;
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--main-color);
+    margin-top: 2rem;
+}
+
+
+/*==================================================*/

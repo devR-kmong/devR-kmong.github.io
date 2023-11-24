@@ -1,0 +1,13 @@
+/* 서브페이지 공통 스타일 */
+.about {
+    background: url(../images/about-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.consult {
+    background: url(../images/consult-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+/*==================================================*/
