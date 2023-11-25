@@ -1,0 +1,33 @@
+.article6 {
+    position: relative;
+}
+
+.a6-bg {
+    position: absolute;
+    top: 330px; right: 0;
+}
+
+.a6-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem 4rem;
+}
+
+.a6-box {
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1920px) {
+    .a6-bg {
+        height: 100%;
+    }
+}

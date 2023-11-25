@@ -1,0 +1,36 @@
+.article5 {
+    position: relative;
+}
+
+.a5-bg {
+    position: absolute;
+    top: -30px; left: 0;
+}
+
+.article5 .article-title {
+    font-family: 'Pretendard';
+}
+
+.a5-box-wrapper {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.a5-box {
+    padding: 30px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+}
+
+
+/*==================================================*/
+@media (max-width: 1920px) {
+    .a5-bg {
+        width: 75%;
+    }
+}

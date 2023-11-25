@@ -1,0 +1,47 @@
+.article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.article-wrapper {
+    color: rgba(255, 255, 255, .7);
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.article-title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    margin-bottom: 4rem;
+}
+
+.article h5 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.article p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.65;
+    margin-top: 10px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1350px) {
+    .article-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

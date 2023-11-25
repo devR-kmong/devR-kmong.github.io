@@ -1,0 +1,114 @@
+.article8 {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.a8-bg {
+    position: absolute;
+    bottom: 0; left: 0;
+    height: 100%;
+}
+
+.article8::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, #000 0%, transparent 100%);
+}
+
+.article8 .article-wrapper {
+    width: 100%;
+}
+
+.mySwiper1 {
+    width: 100%;
+}
+
+.mySwiper1 .swiper-wrapper {
+    padding-bottom: 40px;
+}
+
+.mySwiper1 .swiper-slide {
+    position: relative;
+    height: 500px;
+    padding: 50px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 30px;
+    transition: all .7s;
+    overflow: hidden;
+    filter: grayscale(1) brightness(80%);
+}
+
+.mySwiper1 .swiper-slide::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, #000000b6 0%, transparent 100%);
+}
+
+.mySwiper1 .ss-1 {
+    background: url(../images/a8-1.jpg) no-repeat;
+    background-size: cover;
+}
+.mySwiper1 .ss-2 {
+    background: url(../images/a8-2.jpg) no-repeat;
+    background-size: cover;
+}
+.mySwiper1 .ss-3 {
+    background: url(../images/a8-3.jpg) no-repeat;
+    background-size: cover;
+}
+.mySwiper1 .ss-4 {
+    background: url(../images/a8-4.jpg) no-repeat;
+    background-size: cover;
+}
+.mySwiper1 .ss-5 {
+    background: url(../images/a8-5.jpg) no-repeat;
+    background-size: cover;
+}
+.mySwiper1 .ss-6 {
+    background: url(../images/a8-6.jpg) no-repeat;
+    background-size: cover;
+}
+
+.mySwiper1 .ss-text {
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: all .7s;
+    z-index: 10;
+}
+
+.mySwiper1 .swiper-slide-active {
+    filter: grayscale(0) brightness(100%);
+}
+
+.mySwiper1 .swiper-slide-active .ss-text {
+    transition-delay: .5s;
+    margin-bottom: 0;
+    opacity: 1;
+}
+
+.a8-sns-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 6rem;
+}
+
+.a8-sns {
+    border-radius: 100%;
+    transition: all .3s;
+}
+
+.a8-sns:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+
+
+/*==================================================*/

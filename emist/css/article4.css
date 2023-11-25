@@ -1,0 +1,60 @@
+.a4-text {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: -3rem;
+}
+
+.a4-text h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.a4-text p {
+    color: rgba(255, 255, 255, .5);
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+
+.a4-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.a4-box {
+    padding: 40px;
+    height: 550px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    transition: all .6s;
+    overflow: hidden;
+}
+
+.a4-box:nth-child(1) {
+    background: url(../images/a4-1.png) no-repeat;
+    background-position: center;
+    background-size: 105%;
+}
+.a4-box:nth-child(2) {
+    background: url(../images/a4-2.png) no-repeat;
+    background-position: center;
+    background-size: 105%;
+}
+.a4-box:nth-child(3) {
+    background: url(../images/a4-3.png) no-repeat;
+    background-position: center;
+    background-size: 105%;
+}
+
+.a4-box:hover {
+    background-size: 112%;
+}
+
+
+
+/*==================================================*/
