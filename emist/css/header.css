@@ -91,7 +91,6 @@ header.Fixed nav ul li a {
     gap: 5px;
     border-radius: 10px;
     background-color: #101010;
-    border: 1px solid #fff;
 }
 
 .morelang a {
@@ -124,5 +123,53 @@ header.Fixed nav ul li a {
     nav {
         width: 100%;
         padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    nav ul {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    header {
+        height: 85px;
+        transition: all .3s;
+    }
+
+    .Fixed {
+        height: 65px;
+        background-color: rgba(0, 0, 0, .1);
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        box-shadow: none;
+    }
+    
+    .logo {
+        width: 100px;
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+    
+    .navBtn {
+        padding: 7px 13px;
+        font-size: 13px;
+        border-radius: 6px;
+    }
+
+    .morelang a {
+        font-size: 13px;
+    }
+
+    .globe {
+        width: 13px;
+    }
+
+    .shopBtn {
+        box-shadow: none;
     }
 }

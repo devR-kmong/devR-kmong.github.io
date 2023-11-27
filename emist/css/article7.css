@@ -7,17 +7,18 @@
 .a7-box {
     padding: 30px 80px;
     border-radius: 30px;
-    background-color: #171717;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, .07);
     text-align: center;
 }
 
 .a7-box h5 {
-    color: #717171;
+    color: rgba(255, 255, 255, .5);
     font-size: 22px;
 }
 
 .a7-box p {
-    color: #666;
+    color: rgba(255, 255, 255, .5);
 }
 
 .a7-box:first-child {
@@ -35,3 +36,32 @@
 
 
 /*==================================================*/
+@media (max-width: 950px) {
+    .a7-box-wrapper {
+        width: 100%;
+    }
+
+    .a7-box {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a7-box-wrapper {
+        gap: 1rem;
+    }
+
+    .a7-box {
+        padding: 20px 10px;
+        border-radius: 20px;
+    }
+    
+    .a7-box h5 {
+        font-size: 17px;
+    }
+}

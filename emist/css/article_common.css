@@ -31,9 +31,10 @@
 }
 
 .article p {
+    color: rgba(255, 255, 255, .7);
     font-size: 15px;
     font-weight: 200;
-    line-height: 1.65;
+    line-height: 1.5;
     margin-top: 10px;
 }
 
@@ -43,5 +44,24 @@
     .article-wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .article {
+        padding: 60px 0;
+    }
+    
+    .article h5 {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article-title {
+        font-size: 32px;
+        margin-bottom: 3rem;
     }
 }

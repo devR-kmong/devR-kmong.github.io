@@ -31,3 +31,24 @@
         height: 100%;
     }
 }
+
+
+@media (max-width: 950px) {
+    .a6-bg {
+        top: unset;
+        bottom: -100%;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a6-box-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .a6-box {
+        width: 100%;
+    }
+}

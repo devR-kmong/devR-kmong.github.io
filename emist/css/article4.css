@@ -55,6 +55,38 @@
     background-size: 112%;
 }
 
-
+.a4Swiper {
+    display: none;
+}
 
 /*==================================================*/
+@media (max-width: 1350px) {
+    .article4 .article-wrapper {
+        padding: 0;
+    }
+    
+    .a4-box-wrapper {
+        display: none;
+    }
+
+    .a4Swiper {
+        width: 100%;
+        display: block;
+    }
+
+    .a4-box {
+        height: 500px !important;
+        background-size: cover !important;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article4 .article-wrapper {
+        padding: 0 20px;
+    }
+
+    .a4-text {
+        margin-top: -2rem;
+    }
+}

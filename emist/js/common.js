@@ -80,28 +80,53 @@ $(function () {
 
 
 
-var swiper = new Swiper(".mySwiper1", {
-    loop: true,
-    speed: 1000,
-    spaceBetween: 20,
-    grabCursor: true,
+
+var swiper = new Swiper(".a3Swiper", {
+    spaceBetween: 30,
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
+
+var swiper = new Swiper(".a4Swiper", {
+    spaceBetween: 30,
+    slidesPerView: 1,
     centeredSlides: true,
-    slidesPerView: 2.5,
+    slidesPerView: 1,
     pagination: {
         el: ".swiper-pagination",
     },
     breakpoints: {
-        769: {
-            slidesPerView: 2.5,
-            spaceBetween: 20,
+        551: {
+            slidesPerView: 1.5,
         },
-        1251: {
-            slidesPerView: 3.2,
+        851: {
+            slidesPerView: 2.5,
+        },
+    },
+});
+
+var swiper = new Swiper(".a8Swiper", {
+    loop: true,
+    speed: 300,
+    spaceBetween: 20,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 1,
+    breakpoints: {
+        651: {
+            slidesPerView: 1.5,
+        },
+        1351: {
+            speed: 800,
+            slidesPerView: 2.5,
             spaceBetween: 30,
         },
         2000: {
+            speed: 1000,
             initialSlide: 2,
-            slidesPerView: 3.5,
+            slidesPerView: 4.5,
             spaceBetween: 40,
         },
     },
@@ -110,6 +135,7 @@ var swiper = new Swiper(".mySwiper1", {
         disableOnInteraction: true,
     },
 });
+
 
 
 

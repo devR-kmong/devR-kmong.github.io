@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     background: url(../images/hero.jpg) no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
@@ -58,5 +59,34 @@
     .promotion-wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .p-text {
+        margin-top: 0;
+    }
+    
+    .p-text p,
+    .p-text h5 {
+        font-size: 55px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .p-text p,
+    .p-text h5 {
+        font-size: 36px;
+    }
+
+    .p-store-wrapper {
+        gap: 1.2rem;
+        margin-top: 2rem;
+    }
+    
+    .p-storeBtn img {
+        height: 55px;
     }
 }

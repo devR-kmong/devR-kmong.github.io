@@ -1,5 +1,7 @@
 .footer {
+    position: relative;
     width: 100%;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,11 +10,17 @@
     margin-top: 18rem;
 }
 
+.a8-bg {
+    position: absolute;
+    bottom: 0;
+}
+
 .footer-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6rem;
+    z-index: 15;
 }
 
 .logo-f {
@@ -30,6 +38,7 @@
     color: #fff;
     padding: 14px 24px;
     font-size: 18px;
+    white-space: nowrap;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -39,3 +48,49 @@
 
 
 /*==================================================*/
+@media (max-width: 950px) {
+    .footer {
+        margin-top: 10rem;
+    }
+    
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .fBtn {
+        margin-top: 1rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .footer {
+        margin-top: 5rem;
+    }
+
+    .a8-bg {
+        height: 400px;
+        opacity: .5;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .footer-wrapper {
+        gap: 10px;
+    }
+    
+    .footer-wrapper p {
+        font-size: 15px;
+    }
+    
+    .fBtn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .fBtn img {
+        width: 16px;
+    }
+}
