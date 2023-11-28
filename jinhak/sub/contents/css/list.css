@@ -60,6 +60,26 @@
 }
 
 
+/* sort */
+.pg-sort-wrapper {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.pg-sort {
+    float: right;
+    color: #222;
+    font-size: 17px;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.pg-sort option {
+    font-size: 15px;
+}
+
+
 /* 프로그램 클릭 시 */
 .adm-wrapper {
     width: 100%;
@@ -290,20 +310,31 @@
     pointer-events: none;
 }
 
-.pg-timeBtn.end.waiting {
+.pg-timeBtn.waiting {
     color: var(--sub-color-2);
     border: 1px solid var(--sub-color-2);
     pointer-events: unset;
 }
 
-.pg-timeBtn.end .text2 {
+.pg-timeBtn .text1,
+.pg-timeBtn .text2 {
     display: none;
 }
 
-.pg-timeBtn.end.waiting .text1 {
+.pg-timeBtn.end .text {
     display: none;
 }
-.pg-timeBtn.end.waiting .text2 {
+
+.pg-timeBtn.end .text1 {
+    display: block;
+}
+
+.pg-timeBtn.waiting .text,
+.pg-timeBtn.waiting .text1 {
+    display: none;
+}
+
+.pg-timeBtn.waiting .text2 {
     display: block;
 }
 
