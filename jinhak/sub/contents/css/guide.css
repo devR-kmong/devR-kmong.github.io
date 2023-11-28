@@ -104,6 +104,9 @@
 .ct-h {
     background-color: var(--main-color);
 }
+.ct-p {
+    background-color: #0051ff;
+}
 
 .ct-box-text h5 {
     color: #222;

@@ -1,0 +1,61 @@
+.ct-box-text ul {
+    gap: 6px;
+}
+
+.ct-box-text ul li p {
+    margin-top: 0;
+}
+
+.ct-box {
+    position: relative;
+}
+
+.ct-box .chk-box {
+    position: absolute;
+    top: 15px; left: 15px;
+    z-index: 20;
+}
+
+.a3-box-text {
+    padding: 0;
+}
+
+.a3-box-text li {
+    display: flex;
+    align-items: center;
+}
+
+.pg-btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+.pgBtn {
+    width: 50%;
+    padding: 10px 0;
+    color: var(--main-color);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--main-color);
+}
+
+.pgBtn:last-child {
+    color: #aaa;
+    border: 1px solid #aaa;
+}
+
+.pg-end {
+    width: 100%;
+    border: 1px solid #ddd !important;
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+
+/*==================================================*/
