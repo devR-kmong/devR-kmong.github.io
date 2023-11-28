@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../contents/css/sub-promotion.css">
     <link rel="stylesheet" href="../contents/css/sub-common.css">
     <link rel="stylesheet" href="../contents/css/board.css">
+    <link rel="stylesheet" href="../contents/css/notice.css">
     <link rel="stylesheet" href="../contents/css/guide.css">
     <link rel="stylesheet" href="../contents/css/list.css">
     <link rel="shortcut icon" href="../../contents/images/favicon.png" type="image/x-icon">
@@ -282,204 +283,266 @@
         </section>
         <section class="article sub-article">
             <div class="article-wrapper">
-
-                <!-- 검색창 시작 -->
-                <div class="board-sch-wrapper">
-                    <form action="" class="board-sch" method="GET">
-                        <div class="sch-bar">
-                            <select name="" id="" class="sch-select">
-                                <option value="전체">전체</option>
-                                <option value="제목">제목</option>
-                                <option value="내용">내용</option>
-                                <option value="제목+내용">제목+내용</option>
-                            </select>
-                            <div class="sch-input-wrapper">
-                                <input type="text" name="" class="sch-input" id="" value="" placeholder="검색어를 입력하세요." required />
-                                <button type="submit" value="검색" class="sch-btn"><i class="ri-search-line"></i></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <!-- 검색창 끝 -->
                 
-
-                <div class="board-control">
-                    
-                    <!-- 전체 체크박스 시작 -->
-                    <div class="chk-box">
-                        <input type="checkbox" name="chk" class="chk-input" id="chkall" onclick="selectAll(this)">
-                        <label for="chkall">
-                            <span></span>
-                            전체선택
-                        </label>
-                    </div>
-                    <!-- 전체 체크박스 끝 -->
-                    
-                    <!-- 게시판 관리자 시작 -->
+                <div class="adm-wrapper">
+                    <a href="" class="backBtn">
+                        <i class="ri-arrow-left-line"></i>
+                        뒤로가기
+                    </a>
                     <div class="board-adm">
                         <a href="">
-                            <i class="ri-settings-2-line"></i>
-                            관리자
-                        </a>
-                        <a href="">
                             <i class="ri-edit-line"></i>
-                            글쓰기
+                            수정
                         </a>
                         <a href="">
                             <i class="ri-delete-bin-2-line"></i>
                             삭제
                         </a>
                     </div>
-                    <!-- 게시판 관리자 끝 -->
                 </div>
 
+                <div class="pg-title">
+                    <h5>
+                        프로그램명이 들어갈 공간입니다.
+                    </h5>
+                </div>
 
-                <div class="ct-box-wrapper">
-                    <div class="ct-box">
-                        <!-- 체크박스 시작 -->
-                        <div class="chk-box">
-                            <input type="checkbox" name="chk" class="chk-input" id="">
-                            <label for="">
-                                <span></span>
-                            </label>
+                <div class="pg-top-wrapper">
+                    <div class="pg-thumb">
+                        <img src="../../contents/images/a3-1.jpg">
+                    </div>
+                    <div class="pg-info">
+                        <div class="ct-target-wrapper">
+                            <div class="ct-target ct-e">
+                                초
+                            </div>
+                            <div class="ct-target ct-m">
+                                중
+                            </div>
+                            <div class="ct-target ct-h">
+                                고
+                            </div>
+                            <div class="ct-target ct-p">
+                                보호자
+                            </div>
+                            <div class="ct-target ct-t">
+                                교사
+                            </div>
                         </div>
-                        <!-- 체크박스 끝 -->
-                        <div class="ct-box-image">
-                            <img src="../../contents/images/a3-1.jpg">
+                        <ul>
+                            <li>
+                                일　　시
+                                <p>
+                                    2023-06-01 ~ 2023-06-07
+                                </p>
+                            </li>
+                            <li>
+                                장　　소
+                                <p>
+                                    충남진로융합원 2층 강당
+                                </p>
+                            </li>
+                            <li>
+                                주　　관
+                                <p>
+                                    충남진로융합원, 충남대학교
+                                </p>
+                            </li>
+                            <li>
+                                모집인원
+                                <p>
+                                    50명
+                                </p>
+                            </li>
+                            <li>
+                                신청기간
+                                <p>
+                                    2023-05-01 ~ 2023-05-31
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pg-tabBtn-wrapper">
+                    <div class="pg-tabBtn on" data-target="data1">
+                        상세정보
+                    </div>
+                    <div class="pg-tabBtn" data-target="data2">
+                        신청하기
+                    </div>
+                </div>
+                
+                <div class="pg-contents" id="data1">
+                    
+                    <div class="pg-booking">
+                        <div class="pg-left">
+                            <div class="calendar_container">
+                                <table class="calendar">
+                                    <div class="cd-top">
+                                        <div class="left_button">
+                                            <i class="ri-arrow-left-line"></i>
+                                        </div>
+                                        <div class="title">2월</div>
+                                        <div class="right_button">
+                                            <i class="ri-arrow-right-line"></i>
+                                        </div>
+                                    </div>
+                                    <tbody>
+                                        <tr class="week">
+                                            <td class="day">일</td>
+                                            <td class="day">월</td>
+                                            <td class="day">화</td>
+                                            <td class="day">수</td>
+                                            <td class="day">목</td>
+                                            <td class="day">금</td>
+                                            <td class="day">토</td>
+                                        </tr>
+                                        <tr> <!-- 달력 첫 번째 줄-->
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                        </tr>
+                                        <tr> <!-- 달력 두 번째 줄-->
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                        </tr>
+                                        <tr> <!-- 달력 세 번째 줄-->
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                        </tr>
+                                        <tr> <!-- 달력 네 번째 줄-->
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                        </tr>
+                                        <tr> <!-- 달력 다섯 번째 줄-->
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                        </tr>
+                                        <tr> <!-- 달력 여섯 번째 줄-->
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                            <td class="calendar_days" roll="button"> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        <div class="ct-box-text">
-                            <div class="ct-target-wrapper">
-                                <div class="ct-target ct-e">
-                                    초
+                        <div class="pg-right">
+                            <div class="pg-box-wrapper">
+                                <div class="pg-box">
+                                    <div class="pg-time">
+                                        <h5>
+                                            14:00 ~ 15:00
+                                        </h5>
+                                        <a href="" class="pg-timeBtn">
+                                            신청하기
+                                        </a>
+                                    </div>
+                                    <div class="pg-num">
+                                        0 / 1 명
+                                    </div>
                                 </div>
-                                <div class="ct-target ct-m">
-                                    중
+                                <div class="pg-box">
+                                    <div class="pg-time">
+                                        <h5>
+                                            15:00 ~ 16:00
+                                        </h5>
+                                        <a href="" class="pg-timeBtn">
+                                            신청하기
+                                        </a>
+                                    </div>
+                                    <div class="pg-num">
+                                        0 / 1 명
+                                    </div>
                                 </div>
-                                <div class="ct-target ct-h">
-                                    고
+                                <div class="pg-box">
+                                    <div class="pg-time">
+                                        <h5>
+                                            16:00 ~ 17:00
+                                        </h5>
+                                        <a href="" class="pg-timeBtn end">
+                                            <span class="text1">
+                                                마　감
+                                            </span>
+                                            <span class="text2">
+                                                대기신청
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="pg-num">
+                                        1 / 1 명
+                                    </div>
                                 </div>
-                                <div class="ct-target ct-p">
-                                    보호자
-                                </div>
-                                <div class="ct-target ct-t">
-                                    교사
+                                <div class="pg-box">
+                                    <div class="pg-time">
+                                        <h5>
+                                            17:00 ~ 18:00
+                                        </h5>
+                                        <a href="" class="pg-timeBtn end waiting">
+                                            <span class="text1">
+                                                마　감
+                                            </span>
+                                            <span class="text2">
+                                                대기신청
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="pg-num">
+                                        1 / 1 명
+                                    </div>
                                 </div>
                             </div>
-                            <h5>
-                                프로그램명
-                            </h5>
-                            <ul class="a3-box-text">
-                                <li>
-                                    일　　시
-                                    <p>
-                                        2023-06-01 ~ 2023-06-07
-                                    </p>
-                                </li>
-                                <li>
-                                    장　　소
-                                    <p>
-                                        충남진로융합원 2층 강당
-                                    </p>
-                                </li>
-                                <li>
-                                    주　　관
-                                    <p>
-                                        충남진로융합원, 충남대학교
-                                    </p>
-                                </li>
-                                <li>
-                                    모집인원
-                                    <p>
-                                        50명
-                                    </p>
-                                </li>
-                                <li>
-                                    신청기간
-                                    <p>
-                                        2023-05-01 ~ 2023-05-31
-                                    </p>
-                                </li>
-                            </ul>
-                            <div class="pg-btn-wrapper">
-                                <a href="" class="pgBtn">
-                                    신청하기
-                                </a>
-                                <a href="" class="pgBtn">
-                                    비회원신청
-                                </a>
+                            <div class="pg-waiting">
+                                <p>
+                                    대기신청 후 취소자 발생 시, 순번대로 연락드립니다.<br/>
+                                    (단, 대기순번 안내는 하지 않음)
+                                </p>
+                            </div>
+                            <div class="pg-notice">
+                                <h5>
+                                    알립니다!
+                                </h5>
+                                <p>
+                                    천안교육지원청 지하 1층으로 오시기 바랍니다.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="ct-box">
-                        <!-- 체크박스 시작 -->
-                        <div class="chk-box">
-                            <input type="checkbox" name="chk" class="chk-input" id="">
-                            <label for="">
-                                <span></span>
-                            </label>
-                        </div>
-                        <!-- 체크박스 끝 -->
-                        <div class="ct-box-image">
-                            <img src="../../contents/images/a3-1.jpg">
-                        </div>
-                        <div class="ct-box-text">
-                            <div class="ct-target-wrapper">
-                                <div class="ct-target ct-m">
-                                    중
-                                </div>
-                                <div class="ct-target ct-h">
-                                    고
-                                </div>
-                                <div class="ct-target ct-p">
-                                    보호자
-                                </div>
-                                <div class="ct-target ct-t">
-                                    교사
-                                </div>
-                            </div>
-                            <h5>
-                                프로그램명
-                            </h5>
-                            <ul class="a3-box-text">
-                                <li>
-                                    일　　시
-                                    <p>
-                                        2023-06-01 ~ 2023-06-07
-                                    </p>
-                                </li>
-                                <li>
-                                    장　　소
-                                    <p>
-                                        충남진로융합원 2층 강당
-                                    </p>
-                                </li>
-                                <li>
-                                    주　　관
-                                    <p>
-                                        충남진로융합원, 충남대학교
-                                    </p>
-                                </li>
-                                <li>
-                                    모집인원
-                                    <p>
-                                        50명
-                                    </p>
-                                </li>
-                                <li>
-                                    신청기간
-                                    <p>
-                                        2023-05-01 ~ 2023-05-31
-                                    </p>
-                                </li>
-                            </ul>
-                            <div class="pg-btn-wrapper">
-                                <a href="" class="pgBtn pg-end">
-                                    마감
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
+                <div class="pg-contents" id="data2">
+                    
+                </div>
+                
             </div>
         </section>
     </main>
@@ -583,16 +646,27 @@
     </div>
 
     <script src="../contents/js/sub-header.js"></script>
+    <script src="../contents/js/calendar.js"></script>
 
     <script>
-        function selectAll(selectAll) {
-            const checkboxes
-                = document.getElementsByName('chk');
+        $(function () {
+            $('.pg-tabBtn').click(function () {
+                id = $($(this).data('target')).selector;
+                $('.pg-contents').hide();
+                $('#' + id).show().css('display','flex');
+            });
+        });
+    </script>
 
-            checkboxes.forEach((checkbox) => {
-                checkbox.checked = selectAll.checked;
-            })
-        }
+    <script>
+        $(function () {
+            for (let i = 0; i < $('.pg-tabBtn').length; i++) {
+                $('.pg-tabBtn').eq(i).click(function () {
+                    $('.pg-tabBtn').removeClass('on');
+                    $(this).addClass('on');
+                })
+            }
+        })
     </script>
 
 </body>
