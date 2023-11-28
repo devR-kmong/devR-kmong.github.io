@@ -6,6 +6,7 @@
     position: absolute;
     top: -50px;
     width: 100%;
+    mix-blend-mode: exclusion;
     z-index: 3;
 }
 
@@ -13,42 +14,42 @@
     width: 100%;
 }
 
-.mySwiper {
+.a3Swiper {
     width: 100%;
 }
 
-.mySwiper .swiper-wrapper {
+.a3Swiper .swiper-wrapper {
     padding-bottom: 40px;
 }
 
-.mySwiper .swiper-slide {
+.a3Swiper .swiper-slide {
     height: 500px;
     padding: 60px;
     border-radius: 30px;
 }
 
-.mySwiper .ss-1 {
+.a3Swiper .ss-1 {
     background: url(../images/a3-1.jpg) no-repeat;
     background-size: cover;
 }
-.mySwiper .ss-2 {
+.a3Swiper .ss-2 {
     background: url(../images/a3-2.jpg) no-repeat;
     background-size: cover;
 }
-.mySwiper .ss-3 {
+.a3Swiper .ss-3 {
     background: url(../images/a3-3.jpg) no-repeat;
     background-size: cover;
 }
 
-.mySwiper .swiper-slide .ss-text {
+.a3Swiper .swiper-slide .ss-text {
     color: #fff;
 }
 
-.mySwiper .swiper-slide .ss-text h5 {
+.a3Swiper .swiper-slide .ss-text h5 {
     font-size: 36px;
 }
 
-.mySwiper .swiper-slide .ss-text p {
+.a3Swiper .swiper-slide .ss-text p {
     font-size: 20px;
     line-height: 1.5;
     margin-top: 1.5rem;
@@ -56,3 +57,56 @@
 
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .article3 .article-wrapper {
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .article3 .article-wrapper {
+        padding: 0 20px;
+    }
+
+    .a3Swiper .swiper-slide {
+        height: 250px;
+        padding: 40px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .a3Swiper .swiper-slide .ss-text h5 {
+        font-size: 32px;
+    }
+    
+    .a3Swiper .swiper-slide .ss-text p {
+        font-size: 18px;
+        margin-top: 1.2rem;
+    }
+
+    .a3Swiper .swiper-slide .ss-text p br {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a3-bg {
+        top: 0;
+    }
+    
+    .a3Swiper .swiper-slide {
+        height: 200px;
+        padding: 30px;
+    }
+    
+    .a3Swiper .swiper-slide .ss-text h5 {
+        font-size: 24px;
+    }
+    
+    .a3Swiper .swiper-slide .ss-text p {
+        font-size: 15px;
+        margin-top: 1rem;
+    }
+}

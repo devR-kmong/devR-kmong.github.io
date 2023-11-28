@@ -88,8 +88,96 @@
 
 
 @media (max-width: 1250px) {
+    .promotion {
+        height: auto;
+    }
+    
     .promotion-wrapper {
         width: 100%;
         padding: 0 20px;
+        flex-direction: column-reverse;
+    }
+
+    .p-image {
+        width: 581px;
+    }
+    
+    .favicon {
+        width: 120px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .promotion {
+        overflow: hidden;
+    }
+    
+    .p-cross {
+        top: -20px; right: -2%;
+        width: 40%;
+    }
+
+    .p-image {
+        width: 90%;
+    }
+
+    .p-text {
+        width: 100%;
+    }
+
+    .p-text h5 {
+        font-size: 45px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .favicon {
+        width: 90px;
+    }
+    
+    .p-image {
+        margin-top: 5rem;
+    }
+    
+    .p-text h5 {
+        font-size: 32px;
+    }
+
+    .p-store-wrapper {
+        gap: 1.2rem;
+        margin-top: 2rem;
+    }
+    
+    .p-storeBtn img {
+        height: 46px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .p-image {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .favicon {
+        width: 60px;
+    }
+    
+    .p-text h5 {
+        font-size: 24px;
+    }
+
+    .p-store-wrapper {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .p-storeBtn img {
+        height: 36px;
     }
 }

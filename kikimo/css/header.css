@@ -58,3 +58,25 @@ nav ul li a:hover {
         padding: 0 20px;
     }
 }
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    header {
+        height: 80px;
+    }
+    
+    .Fixed {
+        height: 65px;
+    }
+    
+    .logo {
+        width: 92px;
+    }
+}

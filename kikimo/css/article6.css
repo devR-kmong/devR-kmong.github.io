@@ -4,8 +4,9 @@
 
 .a6-bg {
     position: absolute;
-    top: -350px;
+    top: -10%;
     width: 100%;
+    mix-blend-mode: exclusion;
     z-index: 1;
 }
 
@@ -105,3 +106,44 @@
 
 
 /*==================================================*/
+@media (max-width: 1550px) {
+    .a6-bg {
+        height: 80%;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .a6-box-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .a6-box {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a6-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a6-box {
+        height: 150px;
+    }
+    
+    .a6-box-icon {
+        height: 60px;
+    }
+
+    .a6-box h5 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}

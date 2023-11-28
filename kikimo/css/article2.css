@@ -60,6 +60,7 @@
 
 .a2-box-text p {
     font-size: 13px;
+    line-height: 1.45;
     margin-top: 10px;
 }
 
@@ -74,5 +75,65 @@
     color: #1e6dff;
 }
 
+.a2Swiper {
+    display: none !important;
+}
+
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .a2-box {
+        background-size: cover !important;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .article2 .article-wrapper {
+        padding: 0;
+    }
+
+    .a2-box-wrapper {
+        display: none;
+    }
+
+    .a2Swiper {
+        width: 100%;
+        display: block !important;
+    }
+
+    .a2Swiper .swiper-wrapper {
+        padding-bottom: 40px;
+    }
+
+    .a2Swiper .swiper-slide {
+        height: 664px;
+    }
+
+    .a2Swiper .a2-box-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .a2Swiper .a2-box-group .a2-box {
+        flex: 1;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .article2 .article-wrapper {
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a2Swiper .swiper-slide {
+        height: 550px;
+    }
+
+    .a2-box {
+        padding: 30px;
+    }
+}

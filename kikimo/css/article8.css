@@ -291,7 +291,14 @@
 
 
 /*==================================================*/
-@media (max-width: 650px) {
+@media (max-width: 1550px) {
+    .a8-bg {
+        height: 200%;
+    }
+}
+
+
+@media (max-width: 850px) {
     .form-wrapper {
         width: 100%;
     }

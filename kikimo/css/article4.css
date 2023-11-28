@@ -30,7 +30,7 @@
 }
 
 .a4-box-text {
-    margin-top: 16rem;
+    margin-top: 50%;
     z-index: 10;
 }
 
@@ -50,3 +50,45 @@
 
 
 /*==================================================*/
+@media (max-width: 950px) {
+    .a4-box-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a4-box-wrapper {
+        gap: 10rem;
+    }
+    
+    .a4-glow {
+        top: -10%; left: 50%;
+    }
+
+    .a4-box-image {
+        top: -20%;
+        width: 65%;
+    }
+
+    .a4-box-text {
+        margin-top: 70%;
+    }
+
+    .a4-box-text h5 {
+        font-size: 24px;
+    }
+
+    .a4-box-text p {
+        margin-top: 1.2rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-box {
+        padding: 30px;
+    }
+}

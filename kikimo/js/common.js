@@ -6,28 +6,48 @@ AOS.init({
 
 
 
-var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 20,
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 1.5,
+
+var swiper = new Swiper(".a1Swiper", {
+    spaceBetween: 30,
+    slidesPerView: 1,
     pagination: {
         el: ".swiper-pagination",
     },
-    // breakpoints: {
-    //     769: {
-    //         slidesPerView: 2.5,
-    //         spaceBetween: 20,
-    //     },
-    //     1251: {
-    //         slidesPerView: 3.2,
-    //         spaceBetween: 30,
-    //     },
-    //     2000: {
-    //         slidesPerView: 3.5,
-    //         spaceBetween: 50,
-    //     },
-    // },
+    breakpoints: {
+        651: {
+            centeredSlides: true,
+            slidesPerView: 1.5,
+        },
+    },
+});
+
+var swiper = new Swiper(".a2Swiper", {
+    spaceBetween: 30,
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    breakpoints: {
+        651: {
+            centeredSlides: true,
+            slidesPerView: 1.5,
+        },
+    },
+});
+
+var swiper = new Swiper(".a3Swiper", {
+    spaceBetween: 20,
+    grabCursor: true,
+    slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    breakpoints: {
+        651: {
+            centeredSlides: true,
+            slidesPerView: 1.5,
+        },
+    },
     autoplay: {
         delay: 3000,
         disableOnInteraction: true,
