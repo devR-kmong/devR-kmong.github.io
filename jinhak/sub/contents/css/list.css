@@ -154,6 +154,10 @@
     width: 100%;
 }
 
+.pg-contents#data2 {
+    display: none;
+}
+
 
 /* 프로그램 신청 및 예약 */
 .pg-booking {
