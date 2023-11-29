@@ -47,12 +47,21 @@
     align-items: center;
     border-radius: 100%;
     background-color: #fc635712;
+    transition: all .3s;
 }
 
 .tp-box-icon img {
     height: 50%;
     filter: invert(58%) sepia(33%) saturate(7494%) hue-rotate(330deg) brightness(112%) contrast(98%);
     user-select: none;
+}
+
+.tp-box.on .tp-box-icon {
+    background-color: var(--main-color);
+}
+
+.tp-box.on .tp-box-icon img {
+    filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(60deg) brightness(103%) contrast(103%);
 }
 
 .tp-box-text h5 {
@@ -146,11 +155,6 @@
         width: 28px;
     }
     
-    .tp-box-icon {
-        width: 48px;
-        height: 48px;
-    }
-
     .tp-box-text h5 {
         font-size: 14px;
     }
@@ -194,11 +198,6 @@
     
     .tp-arrow {
         width: 20px;
-    }
-    
-    .tp-box-icon {
-        width: 40px;
-        height: 40px;
     }
     
     .tp-box-text h5 {

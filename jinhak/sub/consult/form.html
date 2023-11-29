@@ -448,7 +448,7 @@
                             </li>
                         </ul>
                         <div class="tp-box-wrapper">
-                            <div class="tp-box">
+                            <a href="" class="tp-box">
                                 <div class="tp-box-icon">
                                     <img src="../contents/images/tp-1.svg">
                                 </div>
@@ -460,9 +460,9 @@
                                         검사하기
                                     </p>
                                 </div>
-                            </div>
+                            </a>
                             <img src="../contents/images/tp-arrow.svg" class="tp-arrow">
-                            <div class="tp-box">
+                            <a href="" class="tp-box">
                                 <div class="tp-box-icon">
                                     <img src="../contents/images/tp-2.svg">
                                 </div>
@@ -474,9 +474,9 @@
                                         결과업로드
                                     </p>
                                 </div>
-                            </div>
+                            </a>
                             <img src="../contents/images/tp-arrow.svg" class="tp-arrow">
-                            <div class="tp-box">
+                            <a href="" class="tp-box">
                                 <div class="tp-box-icon">
                                     <img src="../contents/images/tp-3.svg">
                                 </div>
@@ -488,7 +488,7 @@
                                         진로로드맵
                                     </p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="ex-box-wrapper">
                             <div class="ex-box">
@@ -681,6 +681,20 @@
                 })
             }
         })
+    </script>
+
+    <script>
+        $(function () {
+            var idx = 0;
+            setInterval(time, 1800);
+            function time() {
+                var box = $('.tp-box');
+                box.removeClass('on');
+                box.eq(idx).addClass('on');
+                idx++;
+                if (idx >= 3) idx = 0;
+            }
+        });
     </script>
 
 </body>
