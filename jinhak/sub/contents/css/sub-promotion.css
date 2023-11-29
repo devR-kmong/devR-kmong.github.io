@@ -199,12 +199,12 @@
     }
     
     .sub-menu {
-        bottom: -38px;
+        bottom: -37px;
         box-shadow: none;
     }
     
     .sub-menu.Fixed {
-        top: 88px;
+        top: 87px;
     }
 
     .sub-navBtn {
@@ -265,7 +265,6 @@
 
     .sub-navBtn,
     .sub-dropdown li:first-child {
-        font-size: 16px;
         padding: 18px;
     }
 

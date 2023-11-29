@@ -71,7 +71,10 @@
     color: #222;
     font-size: 17px;
     padding: 5px 10px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
     border: 1px solid #aaa;
+    background-color: #fff;
     cursor: pointer;
 }
 
@@ -508,6 +511,15 @@
 
 
 @media (max-width: 450px) {
+    .pg-info {
+        padding: 20px;
+    }
+
+    .pg-info ul li {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    
     .calendar tbody {
         width: 90%;
     }
