@@ -76,9 +76,7 @@
     color: #555;
     font-size: 16px;
     text-align: center;
-    text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
 }
 
 .board-cts:nth-child(1) {
@@ -91,6 +89,8 @@
     width: 72%;
     text-align: left;
     margin-left: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .board-cts:nth-child(4) {
     width: 10%;
@@ -111,6 +111,7 @@
 
 .backBtn {
     color: #aaa;
+    font-size: 18px;
     display: block;
     width: fit-content;
     margin-bottom: 1rem;
@@ -182,9 +183,10 @@
 
 .cmt-input {
     width: 85%;
-    height: 60px;
+    height: 120px;
     padding: 15px;
     font-size: 16px;
+    line-height: 1.5;
     outline: none;
     border: 1px solid #ddd;
     border-right: none;
@@ -201,13 +203,14 @@
 
 .cmt-btn {
     width: 15%;
-    height: 60px;
+    height: 120px;
     border: none;
     outline: none;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     background-color: var(--main-color);
+    cursor: pointer;
 }
 
 .cmt-list {
@@ -270,3 +273,149 @@
 
 
 /*==================================================*/
+@media (max-width: 950px) {
+    .board-cate:nth-child(3) {
+        width: 50%;
+        margin-left: 30px;
+    }
+
+    .board-cts:nth-child(3) {
+        width: 50%;
+        margin-left: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {    
+    .board-cate,
+    .board-cts {
+        font-size: 14px;
+    }
+
+    .board-cate:nth-child(1),
+    .board-cate:nth-child(4),
+    .board-cts:nth-child(1),
+    .board-cts:nth-child(4) {
+        display: none
+    }
+
+    .board-cate:nth-child(1),
+    .board-cts:nth-child(1) {
+        width: 10%;
+    }
+
+    .board-cate:nth-child(3) {
+        width: 80%;
+        margin: 0 40px;
+    }
+
+    .board-cts:nth-child(3) {
+        width: 80%;
+        margin: 0 40px;
+    }
+
+    .board-cate:nth-child(5),
+    .board-cts:nth-child(5) {
+        width: 15%;
+        margin-right: 20px;
+    }
+
+    .backBtn {
+        font-size: 15px;
+    }
+
+    .board-title {
+        font-size: 32px;
+    }
+
+    .board-date {
+        font-size: 14px;
+    }
+
+    .cmt-title {
+        font-size: 18px;
+    }
+
+    .cmt-input {
+        height: 80px;
+        font-size: 13px;
+    }
+
+    .cmt-btn {
+        height: 80px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .board-cts-wrapper {
+        padding: 18px 6px;
+    }
+    
+    .board-cts-wrapper.nt .nt-cate {
+        padding: 3px 4px;
+        font-size: 12px;
+    }
+    
+    .board-v-info {
+        padding: 20px 0;
+    }
+
+    .board-title {
+        font-size: 24px;
+    }
+
+    .board-bottom {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: unset;
+        gap: 1rem;
+    }
+
+    .board-content {
+        padding: 20px 0;
+        font-size: 16px;
+    }
+
+    .cmt-input {
+        width: 75%;
+    }
+    
+    .cmt-btn {
+        width: 25%;
+    }
+
+    .cmt-content.cmt-reply {
+        padding-left: 25px;
+    }
+
+    .cmt-profile img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .cmt-id {
+        font-size: 14px;
+    }
+
+    .cmt-date {
+        font-size: 12px;
+    }
+    
+    .cmt-text {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .board-cate,
+    .board-cts {
+        font-size: 12px;
+    }
+
+    .cmt-content {
+        padding: 20px 0;
+    }
+}

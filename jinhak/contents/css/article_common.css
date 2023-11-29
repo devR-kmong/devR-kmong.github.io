@@ -76,7 +76,7 @@
     }
 
     .article-title h5 {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     .article-title h5 span {
@@ -92,6 +92,10 @@
     
     .article-title {
         margin-bottom: 1.5rem;
+    }
+    
+    .article-title h5 {
+        font-size: 24px;
     }
 
     .article-title p {

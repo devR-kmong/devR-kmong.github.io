@@ -184,3 +184,100 @@
 
 
 /*==================================================*/
+@media (max-width: 768px) {
+    .board-adm a {
+        font-size: 13px;
+    }
+
+    .chk-box input[type="checkbox"]+label {
+        font-size: 13px;
+    }
+
+    .board-sch-wrapper {
+        padding: 45px;
+    }
+
+    .board-sch {
+        width: 100%;
+    }
+    
+    .sch-bar {
+        width: 100%;
+    }
+
+    .sch-select {
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .board-sch-wrapper {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+    .sch-input {
+        height: 52px;
+        font-size: 14px;
+    }
+
+    .sch-select {
+        width: 90px;
+        height: 52px;
+        font-size: 14px;
+    }
+
+    .board-pagination {
+        margin-top: 3rem;
+    }
+
+    .pag-arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .pag-arrow i {
+        font-size: 13px;
+    }
+
+    .pag-num {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .sch-bar {
+        width: 100%;
+    }
+
+    .sch-input {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .sch-select {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .sch-btn i {
+        font-size: 20px;
+    }
+
+    .board-pagination {
+        margin-top: 2rem;
+    }
+
+    .paging {
+        gap: 3px;
+    }
+
+    .pag-num {
+        font-size: 11px;
+    }
+}

@@ -214,12 +214,12 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #ddd;
+        background-color: #fff;
         z-index: 99;
     }
 
     .header-m.Fixed {
         position: fixed;
-        background-color: #fff;
     }
 
     .logo,

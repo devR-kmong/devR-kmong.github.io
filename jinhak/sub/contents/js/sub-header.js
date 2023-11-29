@@ -1,4 +1,4 @@
-if (window.innerWidth > 769) {
+if (window.innerWidth > 1166) {
     $(function () {
         $(function () {
             var Offset = $('.sub-menu').offset();
@@ -30,7 +30,7 @@ if (window.innerWidth > 769) {
 
 
 
-if (window.innerWidth > 769) {
+if (window.innerWidth > 1166) {
     for (let i = 1; i < 3; i++) {
         $('.sn-'+i).hover(function () {
             $('.dd-'+i).slideToggle(60);

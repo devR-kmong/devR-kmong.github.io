@@ -54,6 +54,7 @@
 .b-fb-title span {
     color: var(--main-color);
     font-size: 15px;
+    line-height: 1.45;
     font-weight: 400;
 }
 
@@ -148,5 +149,92 @@
     cursor: pointer;
 }
 
+.sub-tabBtn-wrapper-m {
+    display: none;
+}
+
 
 /*==================================================*/
+@media (max-width: 1165px) {
+    .sub-tabBtn-wrapper {
+        display: none;
+    }
+
+    .sub-article {
+        position: relative;
+    }
+    
+    .sub-tabBtn-wrapper-m {
+        width: 100%;
+        color: var(--main-color);
+        padding: 12px;
+        font-size: 16px;
+        display: flex;
+        border: 1px solid var(--main-color);
+        outline: none;
+    }
+
+    .sub-tabBtn-m {
+        color: #222;
+        font-size: 16px;
+    }
+
+    .sub-tabBtn-m:selected {
+        color: var(--main-color);
+    }
+
+    .b-chkbox-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .b-chkbox-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .b-chkbox {
+        height: 50px;
+    }
+
+    .b-fb-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .b-submit-btn {
+        margin-top: -2rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .base-form {
+        gap: 3rem;
+    }
+    
+    .b-fb-title {
+        font-size: 18px;
+    }
+
+    .b-fb-title span {
+        width: 75%;
+        font-size: 14px;
+    }
+
+    .b-chkbox input[type="checkbox"]+label {
+        font-size: 16px;
+    }
+
+    .b-chkbox,
+    .b-form-input {
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .b-submit-btn {
+        height: 50px;
+        font-size: 16px;
+    }
+}

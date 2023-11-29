@@ -304,6 +304,29 @@
                         결과리포트
                     </div>
                 </div>
+                <select id="tab-select" class="sub-tabBtn-wrapper-m">
+                    <option value="data1" class="sub-tabBtn sub-tabBtn-m">
+                        기초조사(학생)
+                    </option>
+                    <option value="data2" class="sub-tabBtn sub-tabBtn-m">
+                        기초조사(보호자)
+                    </option>
+                    <option value="data3" class="sub-tabBtn sub-tabBtn-m">
+                        학생부 파일
+                    </option>
+                    <option value="data4" class="sub-tabBtn sub-tabBtn-m">
+                        교과성적
+                    </option>
+                    <option value="data5" class="sub-tabBtn sub-tabBtn-m">
+                        모의고사(수능)
+                    </option>
+                    <option value="data6" class="sub-tabBtn sub-tabBtn-m">
+                        심리검사
+                    </option>
+                    <option value="data7" class="sub-tabBtn sub-tabBtn-m">
+                        결과리포트
+                    </option>
+                </select>
                 <div class="tab-contents on" id="data1">
                     <form action="" method="" class="base-form">
                         <div class="b-form-box">
@@ -635,6 +658,16 @@
                 id = $($(this).data('target')).selector;
                 $('.tab-contents').hide();
                 $('#' + id).show().css('display','flex');
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('#tab-select').change(function () {
+                val = $(this).val();
+                $('.tab-contents').hide();
+                $('#' + val).show().css('display', 'flex');
             });
         });
     </script>
