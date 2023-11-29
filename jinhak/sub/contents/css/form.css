@@ -170,7 +170,10 @@
         padding: 12px;
         font-size: 16px;
         display: flex;
+        -webkit-border-radius: 0;
+        border-radius: 0;
         border: 1px solid var(--main-color);
+        background-color: #fff;
         outline: none;
     }
 
