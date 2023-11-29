@@ -1,4 +1,8 @@
 /* 서브페이지 프로모션 섹션 */
+.header-m {
+    border-bottom: none;
+}
+
 .sub-promotion {
     position: relative;
     width: 100%;
@@ -205,7 +209,7 @@
     }
     
     .sub-menu.Fixed {
-        top: 87px;
+        top: 85px;
     }
 
     .sub-navBtn {
@@ -261,7 +265,7 @@
     }
 
     .sub-menu.Fixed {
-        top: 64px;
+        top: 62px;
     }
 
     .sub-navBtn,
