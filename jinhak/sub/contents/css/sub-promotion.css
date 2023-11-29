@@ -205,7 +205,6 @@
     .sub-menu {
         bottom: -35px;
         box-shadow: none;
-        z-index: 100;
     }
     
     .sub-menu.Fixed {
