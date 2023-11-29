@@ -169,7 +169,7 @@
 }
 
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
     .tp-box-wrapper {
         padding: 30px;
         justify-content: space-around;
@@ -186,6 +186,10 @@
     
     .tp-box-text {
         text-align: center;
+    }
+
+    .tp-arrow {
+        margin-bottom: 3rem;
     }
 }
 
@@ -218,5 +222,17 @@
 
     .ex-box-text p {
         font-size: 13px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .tp-box-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .tp-arrow {
+        margin-bottom: 2.2rem;
     }
 }

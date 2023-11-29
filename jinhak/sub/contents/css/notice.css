@@ -238,7 +238,7 @@
 
 .cmt-content .board-adm {
     position: absolute;
-    top: 30px; right: 30px;
+    top: 30px; right: 0;
 }
 
 .cmt-profile {
@@ -292,9 +292,7 @@
         font-size: 14px;
     }
 
-    .board-cate:nth-child(1),
     .board-cate:nth-child(4),
-    .board-cts:nth-child(1),
     .board-cts:nth-child(4) {
         display: none
     }
@@ -365,6 +363,10 @@
         padding: 3px 4px;
         font-size: 12px;
     }
+
+    .board-cts:nth-child(1) {
+        padding-left: 9px;
+    }
     
     .board-cts:nth-child(5) {
         font-size: 12px;
@@ -402,10 +404,6 @@
         padding: 22px 0;
     }
 
-    .cmt-content.cmt-reply {
-        padding-left: 0;
-    }
-
     .cmt-profile img {
         width: 36px;
         height: 36px;
@@ -421,5 +419,13 @@
     
     .cmt-text {
         font-size: 15px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .board-cate:nth-child(1),
+    .board-cts:nth-child(1) {
+        width: 20%;
     }
 }

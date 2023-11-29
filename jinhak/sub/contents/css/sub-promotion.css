@@ -205,6 +205,7 @@
     .sub-menu {
         bottom: -35px;
         box-shadow: none;
+        z-index: 30;
     }
     
     .sub-menu.Fixed {
@@ -255,6 +256,10 @@
 
 
 @media (max-width: 450px) {
+    .sub-article {
+        padding: 20px 0 30px 0;
+    }
+    
     .sub-promotion {
         height: 100px;
     }
