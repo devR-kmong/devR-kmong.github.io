@@ -199,8 +199,9 @@
     }
     
     .sub-menu {
-        bottom: -37px;
+        bottom: -35px;
         box-shadow: none;
+        z-index: 100;
     }
     
     .sub-menu.Fixed {
@@ -256,7 +257,7 @@
     }
     
     .sub-menu {
-        bottom: -24px;
+        bottom: -22px;
     }
 
     .sub-menu.Fixed {
