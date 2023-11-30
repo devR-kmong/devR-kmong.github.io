@@ -11,6 +11,10 @@
     font-family: 'Pretendard';
 }
 
+.article5 .article-wrapper {
+    overflow: hidden;
+}
+
 .a5-box-wrapper {
     width: 75%;
     display: grid;

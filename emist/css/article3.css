@@ -10,6 +10,7 @@
 .a3-box-wrapper {
     display: flex;
     gap: 1.5rem;
+    overflow: hidden;
 }
 
 .a3-box-group {

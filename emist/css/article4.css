@@ -31,7 +31,6 @@
     align-items: flex-end;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, .2);
-    transition: all .6s;
     overflow: hidden;
 }
 
@@ -52,6 +51,7 @@
 }
 
 .a4-box:hover {
+    transition: background-size .6s !important;
     background-size: 112%;
 }
 
