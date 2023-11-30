@@ -22,29 +22,26 @@
 .a2-box-1 {
     background: url(../images/a2-1.jpg) no-repeat;
     background-position: center;
-    transition: background-size .2s ease-in;
     background-size: 110%;
 }
 .a2-box-2 {
     background: url(../images/a2-2.jpg) no-repeat;
     background-position: center;
-    transition: background-size .2s ease-in;
     background-size: 110%;
 }
 .a2-box-3 {
     background: url(../images/a2-3.jpg) no-repeat;
     background-position: center;
-    transition: background-size .2s ease-in;
     background-size: 110%;
 }
 .a2-box-4 {
     background: url(../images/a2-4.jpg) no-repeat;
     background-position: center;
-    transition: background-size .2s ease-in;
     background-size: 110%;
 }
 
 .a2-box:hover {
+    transition: background-size .6s !important;
     background-size: 115%;
 }
 
@@ -130,7 +127,7 @@
 
 @media (max-width: 550px) {
     .a2Swiper .swiper-slide {
-        height: 550px;
+        height: 664px;
     }
 
     .a2-box {

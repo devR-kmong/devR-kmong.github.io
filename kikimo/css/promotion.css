@@ -153,19 +153,48 @@
     .p-storeBtn img {
         height: 46px;
     }
-}
 
-
-@media (max-width: 450px) {
-    .p-image {
-        width: 100%;
+    @keyframes upDown {
+        0% {
+            transform:  translateY(-4px);
+        }
+        50% {
+            transform: translateY(4px);
+        }
+        100% {
+            transform:  translateY(-4px);
+        }
+    }
+    
+    @keyframes upDown2 {
+        0% {
+            transform:  translateY(-6px);
+        }
+        50% {
+            transform: translateY(6px);
+        }
+        100% {
+            transform:  translateY(-6px);
+        }
     }
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .favicon {
         width: 60px;
+    }
+
+    .p-cross {
+        width: 30%;
+    }
+
+    .p-image {
+        margin-top: 3rem;
+    }
+    
+    .p-text {
+        margin-top: -2rem;
     }
     
     .p-text h5 {
