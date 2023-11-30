@@ -1,0 +1,389 @@
+.floating-icon {
+    position: fixed;
+    bottom: 140px; right: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 39;
+}
+
+.floatingBtn {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    border-radius: 100%;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.floatingBtn.telBtn {
+    background-color: #2faa77;
+    display: none;
+}
+
+.floatingBtn.telBtn i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.floatingBtn.kakaoBtn {
+    background-color: #ffe100;
+}
+
+.floatingBtn.kakaoBtn i {
+    color: #411515;
+    font-size: 40px;
+}
+
+.floatingBtn.totopBtn {
+    background-color: var(--sub-color);
+}
+
+.floatingBtn.totopBtn i {
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.floating {
+    position: relative;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #1e3d3b;
+    z-index: 38;
+    display: none;
+}
+
+.topBtn {
+    position: absolute;
+    top: 50%; right: 200px;
+    transform: translate(0, -50%);
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+}
+
+.topBtn img {
+    height: 30px;
+}
+
+.floating-wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.floating-title {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.f-tel img {
+    width: 55px;
+    min-width: 55px;
+    animation: updown 1s infinite ease-in-out;
+}
+
+@keyframes updown {
+    0% {transform:translateY(0);}
+    10% {transform:translateY(-3px);}
+    20% {transform:translateY(0);}
+    30% {transform:translateY(-3px);}
+    40% {transform:translateY(0);}
+    100% {transform:translateY(0);}
+}
+
+.ft-text p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-bottom: 5px;
+}
+
+.ft-text a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'GMarketSans';
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+
+.floatingForm {
+    width: 100%;
+}
+
+.f-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.f-form .inputbox2 {
+    color: #222;
+    width: 26%;
+    height: 40px;
+    padding: 0 19px;
+    font-size: 14px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+.f-form .inputbox2::placeholder {
+    color: #aaa;
+}
+
+.f-form .selectbox2 {
+    color: #aaa;
+    width: 26%;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.f-form .selectbox2:valid {
+    color: #222;
+}
+
+.f-form .selectbox2 option {
+    color: #444;
+}
+
+.f-form .f-submit2 {
+    color: #fff;
+    width: 22%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.f-form .f-submit2:disabled {
+    color: #aaa;
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+
+.floatingForm .f-personal2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: .5rem;
+}
+
+.floatingForm .f-personal-text2 input {
+    display: none;
+}
+
+.floatingForm .f-personal-text2 label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.floatingForm .f-personal-text2 label em {
+    position: relative;
+    width: 14px;
+    min-width: 14px;
+    height: 14px;
+    min-height: 14px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.floatingForm .f-personal-text2 label em::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    display: none;
+}
+
+.floatingForm .f-personal-text2 label p {
+    color: #fff;
+    font-size: 12px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#cb2:checked ~ label em::after {
+    display: block;
+}
+
+.floatingForm .f-personalBtn2 {
+    color: #fff;
+    font-size: 12px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.floatingForm .f-personalBtn2:hover {
+    background-color: transparent;
+}
+
+
+/*==================================================*/
+@media (min-width: 2560px) {
+    .floating-icon {
+        right: 500px;
+    }
+}
+
+
+@media (max-width: 1919px) {
+    .floating-icon {
+        right: 30px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .floating-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .floating-icon {
+        bottom: 200px; right: 20px;
+        gap: 7px;
+    }
+
+    .floatingBtn.telBtn {
+        display: block;
+    }
+    
+
+    .floating {
+        display: flex !important;
+    }
+    
+    .floating-wrapper {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .floating-title {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .f-tel img {
+        width: 30px;
+        min-width: 30px;
+    }
+
+    .ft-text p {
+        font-size: 14px;
+    }
+
+    .ft-text a {
+        font-size: 20px;
+    }
+
+    .floatingForm {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .floating-icon {
+        bottom: 115px;
+        gap: 6px;
+    }
+    
+    .floatingBtn {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .floatingBtn.telBtn i {
+        font-size: 20px;
+    }
+
+    .floatingBtn.kakaoBtn i {
+        font-size: 28px;
+    }
+
+    .floatingBtn.totopBtn i {
+        font-size: 20px;
+    }
+    
+
+    .floating {
+        padding: 15px 0;
+    }
+    
+    .f-form {
+        gap: 5px;
+    }
+    
+    .f-form .inputbox2,
+    .f-form .selectbox2 {
+        height: 30px;
+        padding: 0 10px;
+        font-size: 11px;
+    }
+
+    .f-form .f-submit2 {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .floatingForm .f-personal-text2 label {
+        gap: 3px;
+    }
+
+    .floatingForm .f-personal-text2 label em {
+        width: 10px;
+        min-width: 10px;
+        height: 10px;
+        min-height: 10px;
+    }
+    
+    .floatingForm .f-personal-text2 label em::after {
+        width: 4px;
+        height: 4px;
+    }
+
+    .floatingForm .f-personal-text2 label p,
+    .floatingForm .f-personalBtn2 {
+        font-size: 10px;
+    }
+}

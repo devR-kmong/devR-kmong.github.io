@@ -1,0 +1,220 @@
+.article4 {
+    background-color: #f5f5f5;
+}
+
+.a4-title {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.a4-title p {
+    color: #888;
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+}
+
+.a4-title h1 {
+    color: #222;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.a4-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.a4-box {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 3%);
+    overflow: hidden;
+}
+
+.a4-box:nth-child(1),
+.a4-box:nth-child(2) {
+    position: relative;
+    border: 1px solid var(--sub-color);
+}
+
+.a4-box:nth-child(1)::before,
+.a4-box:nth-child(2)::before {
+    content: 'HOT';
+    position: absolute;
+    top: 4px; right: -33px;
+    transform: rotate(45deg);
+    width: 100px;
+    height: 23px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sub-color);
+    letter-spacing: 0;
+}
+
+.a4-box:nth-child(1)::after,
+.a4-box:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+    background-color: var(--sub-color);
+}
+
+.a4-box-title p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: .7rem;
+}
+
+.a4-box-title h1 {
+    color: #222;
+    font-size: 28px;
+}
+
+.a4-box-qual {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.a4-box-qual li {
+    color: #444;
+    font-size: 15px;
+}
+
+.a4-box-image img {
+    height: 100px;
+    -webkit-filter: invert(76%) sepia(62%) saturate(4390%) hue-rotate(338deg) brightness(102%) contrast(103%);
+    filter: invert(76%) sepia(62%) saturate(4390%) hue-rotate(338deg) brightness(102%) contrast(103%);
+    user-select: none;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .a4-title {
+        margin-bottom: 5rem;
+    }
+    
+    .a4-box-wrapper {
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .a4-box {
+        padding: 45px 10px;
+        gap: 2rem;
+    }
+
+    .a4-box:nth-child(1)::before,
+    .a4-box:nth-child(2)::before {
+        top: 7px;
+        height: 18px;
+        font-size: 11px;
+    }
+
+    .a4-box-title p {
+        font-size: 16px;
+        margin-bottom: .5rem;
+    }
+
+    .a4-box-title h1 {
+        font-size: 24px;
+    }
+
+    .a4-box-qual li {
+        font-size: 13px;
+    }
+    
+    .a4-box-image img {
+        height: 80px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a4-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a4-title {
+        margin-bottom: 3rem;
+    }
+    
+    .a4-title p {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .a4-title h1 {
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-title p {
+        font-size: 16px;
+        margin-bottom: .5rem;
+    }
+
+    .a4-title h1 {
+        font-size: 26px;
+    }
+
+    .a4-box {
+        padding: 35px 10px;
+        gap: 1.5rem;
+    }
+
+    .a4-box:nth-child(1)::before,
+    .a4-box:nth-child(2)::before {
+        top: 6px; right: -35px;
+        height: 16px;
+        font-size: 10px;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .a4-box:nth-child(1)::after,
+    .a4-box:nth-child(2)::after {
+        bottom: -1px;
+    }
+
+    .a4-box-title p {
+        font-size: 13px;
+        margin-bottom: .3rem;
+    }
+
+    .a4-box-title h1 {
+        font-size: 18px;
+    }
+
+    .a4-box-qual li {
+        font-size: 11px;
+    }
+
+    .a4-box-image img {
+        height: 60px;
+    }
+}
