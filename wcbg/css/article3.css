@@ -1,0 +1,21 @@
+.article3 {
+    background: url(../images/a3-bg.jpg) no-repeat;
+}
+
+.article3 .article-wrapper {
+    width: 1400px;
+}
+
+.a3-title {
+    margin-bottom: 4rem;
+}
+
+.a3-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+/*==================================================*/

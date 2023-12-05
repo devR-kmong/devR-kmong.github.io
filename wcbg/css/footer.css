@@ -1,0 +1,23 @@
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    padding: 60px 0;
+}
+
+.footer-wrapper {
+    width: 1200px;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .footer-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

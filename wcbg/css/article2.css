@@ -1,0 +1,92 @@
+.article2 {
+    position: relative;
+    padding-bottom: 180px;
+    background: url(../images/a2-bg.jpg) no-repeat;
+    background-attachment: fixed;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.article2 .article-wrapper {
+    width: 100%;
+}
+
+.a2-square {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%, 0);
+    width: 60%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .05);
+    border-left: 1px solid var(--main-color);
+    border-right: 1px solid var(--main-color);
+    z-index: 1;
+}
+
+.a2-flow-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    overflow: hidden;
+    border-top: 1px solid var(--main-color);
+    z-index: 1;
+}
+
+.a2-flow {
+    color: var(--main-color);
+    padding: 20px 0;
+    font-size: 50px;
+    font-weight: 100;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff0000, 0 0 0.5em #ff0000, 0 0 0.1em #ff0000, 0 10px 3px #000;
+    letter-spacing: 0;
+    display: flex;
+    white-space: nowrap;
+    animation: slide 30s linear infinite;
+}
+
+.a2-title {
+    z-index: 5;
+}
+
+.a2-top {
+    margin: 3rem 0 5rem 0;
+}
+
+.mySwiper {
+    width: 100%;
+    user-select: none;
+}
+
+.mySwiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transform: scale(.8) !important;
+    filter: blur(8px);
+    opacity: .8;
+}
+
+.mySwiper .swiper-slide-active {
+    transform: scale(1) !important;
+    filter: blur(0);
+    opacity: 1;
+}
+
+.mySwiper .swiper-slide .m-title {
+    padding-top: 30px;
+    opacity: 0;
+}
+
+.mySwiper .swiper-slide-active .m-title {
+    padding-top: 0;
+    opacity: 1;
+    transition: all 1s .2s;
+}
+
+
+/*==================================================*/

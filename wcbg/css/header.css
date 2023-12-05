@@ -1,0 +1,302 @@
+header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s;
+    z-index: 98;
+}
+
+nav {
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 180px;
+    max-width: 180px;
+    padding-top: 50px;
+    transition: all .4s;
+}
+
+nav ul {
+    display: flex;
+    gap: 4.5rem;
+    margin-right: 45px;
+    transition: all .4s;
+}
+
+nav ul li a {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+nav ul li a.actives::after {
+    content: '';
+    position: absolute;
+    bottom: -35px; left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-color);
+}
+
+.askBtn {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.askBtn span {
+    width: 100%;
+    font-size: 18px;
+    font-style: normal;
+    font-family: 'PuradakGentleGothicR';
+    animation: blink .7s step-end infinite;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff0000, 0 0 0.5em #ff0000, 0 0 0.1em #ff0000, 0 6px 3px #000;
+    text-align: center;
+}
+
+.askBtn p {
+    font-size: 24px;
+    font-family: 'PuradakGentleGothicR';
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff0000, 0 0 0.5em #ff0000, 0 0 0.1em #ff0000, 0 6px 3px #000;
+}
+
+.Fixed {
+    position: fixed;
+    top: 0;
+    height: 95px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.actives {
+    color: var(--main-color) !important;
+}
+
+header.Fixed .logo {
+    transform: scale(.8);
+}
+
+#check,
+.m-telBtn,
+.menuBtns,
+.overlay,
+.m-sb {
+    display: none;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    nav {
+        padding: 0 20px;
+    }
+}
+
+
+
+@media (max-width: 1150px) {
+    header {
+        height: 110px;
+        transition: all .4s;
+    }
+    
+    .logo {
+        display: flex;
+        width: 160px;
+        max-width: 160px;
+        padding-top: 5px;
+    }
+
+    .Fixed {
+        height: 110px;
+    }
+
+    header.Fixed nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header.Fixed .logo {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header.Fixed nav ul {
+        width: 80%;
+        justify-content: center;
+    }
+    
+    .askBtn {
+        display: none;
+    }
+
+    .m-telBtn {
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+    }
+
+    .menuBtns {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    nav label {
+        display: flex;
+        z-index: 8;
+    }
+
+    nav ul {
+        position: relative;
+        position: absolute;
+        top: 0; left: -100%;
+        width: 80%;
+        height: 100vh;
+        padding-left: 50px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        background-color: #111;
+        touch-action: none;
+        transition: all .3s ease !important;
+        opacity: 1;
+        visibility: visible;
+        z-index: 7;
+        overflow: hidden;
+    }
+
+    nav ul li a {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    nav ul li a.actives::after {
+        bottom: -7px;
+        height: 3px;
+        background-color: transparent;
+    }
+
+    .actives {
+        color: #fff !important;
+        font-weight: 700 !important;
+    }
+
+    .m-sb {
+        position: absolute;
+        bottom: -50px; right: -50px;
+        width: 400px;
+        display: flex;
+        animation: rotate_image 10s linear infinite;
+        opacity: .05;
+    }
+
+    .m-hide {
+        display: none;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-color: rgba(0, 0, 0, .6);
+        transition: all .3s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 6;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 24px;
+        height: 2px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: .3s ease;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-5px, 2px);
+        transform: rotate(-45deg) translate(-5px, 2px);
+        background-color: #fff;
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -6px);
+        transform: rotate(45deg) translate(-9px, -6px);
+        background-color: #fff;
+    }
+    
+    #check:checked ~ nav ul {left: 0;}
+    #check:checked ~ .overlay {
+        opacity: 1;
+        visibility: visible;
+        touch-action: none;
+    }
+}
+
+
+
+@media (max-width: 550px) {
+    header,
+    .Fixed {
+        height: 70px;
+    }
+
+    .logo {
+        width: 90px;
+        max-width: 90px;
+    }
+    
+    .m-telBtn {
+        font-size: 20px;
+    }
+    
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 24px;
+        height: 2px;
+        margin: 3px 0;
+        transition: .3s ease;
+    }
+
+    .bar2 {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-5px, 2px);
+        transform: rotate(-45deg) translate(-3px, 3px);
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -6px);
+        transform: rotate(45deg) translate(-4px, -4px);
+    }
+}
