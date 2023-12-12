@@ -310,6 +310,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .2);
     background-color: rgba(255, 255, 255, .15);
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .2);
 }
@@ -330,6 +331,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .2);
     background-color: rgba(255, 255, 255, .15);
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .2);
 }
@@ -341,7 +343,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 
 .swiper-button-prev i,
 .swiper-button-next i {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .swiper-button-lock {
