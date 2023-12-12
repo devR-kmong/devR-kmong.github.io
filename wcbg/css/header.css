@@ -12,7 +12,7 @@ header {
 
 nav {
     width: 100%;
-    padding: 0 80px;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,8 +27,7 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 4.5rem;
-    margin-right: 45px;
+    gap: 5rem;
     transition: all .4s;
 }
 
@@ -92,6 +91,7 @@ header.Fixed .logo {
 }
 
 #check,
+nav label,
 .m-telBtn,
 .menuBtns,
 .overlay,
@@ -101,6 +101,34 @@ header.Fixed .logo {
 
 
 /*==================================================*/
+@media (min-width: 2250px) {
+    .Fixed {
+        height: 110px;
+    }
+
+    header.Fixed .logo {
+        transform: scale(1);
+    }
+    
+    nav {
+        padding: 0 80px;
+    }
+    
+    nav ul {
+        gap: 8rem;
+    }
+
+    nav ul li a {
+        font-size: 24px;
+    }
+
+    nav ul li a.actives::after {
+        bottom: -40px;
+        height: 4px;
+    }
+}
+
+
 @media (max-width: 1250px) {
     nav {
         padding: 0 20px;

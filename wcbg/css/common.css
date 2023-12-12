@@ -70,3 +70,35 @@ li {
 @keyframes blink {
     50% {opacity: 0;}
 }
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-300%, 0, 0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg) scale(1.2);
+    }
+
+    100% {
+        transform: rotate(0) scale(1.2);
+    }
+}
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-7px);
+	}
+	50% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform:  translateY(-7px);
+	}
+}

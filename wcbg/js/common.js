@@ -8,13 +8,14 @@ AOS.init({
 
 $('.counter').counterUp({
     delay: 20,
-    time: 1300
+    time: 1000
 });
 
 
 
 var swiper = new Swiper(".mySwiper", {
     loop: true,
+    speed: 800,
     centeredSlides: true,
     slidesPerView: 1,
     grabCursor: true,
@@ -26,6 +27,29 @@ var swiper = new Swiper(".mySwiper", {
     autoplay: {
         delay: 1000,
         disableOnInteraction: true,
+    },
+});
+
+var swiper = new Swiper(".mySwiper3", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        651: {
+            spaceBetween: 30,
+        },
+    },
+});
+var swiper2 = new Swiper(".mySwiper2", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
     },
 });
 

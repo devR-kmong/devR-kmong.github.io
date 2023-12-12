@@ -1,4 +1,89 @@
+.article4 {
+    position: relative;
+    padding-bottom: 400px;
+    justify-content: flex-start;
+    background: url(../images/a4-bg.jpg);
+    background-position: top !important;
+    overflow: hidden;
+}
+
+.a4-s1 {
+    position: absolute;
+    top: 36%; right: 7%;
+    animation: upDown 2.8s ease-in-out infinite;
+    z-index: 10;
+}
+
+.a4-s2 {
+    position: absolute;
+    top: 50%; left: 5%;
+    animation: upDown 3s ease-in-out infinite;
+    z-index: 10;
+}
+
+.a4-s3 {
+    position: absolute;
+    top: 63%; right: 10%;
+    animation: upDown 3.2s ease-in-out infinite;
+    z-index: 10;
+}
+
+#snow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.snowflake {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(white, white);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+}
+
+.icecube {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.a4-title {
+    margin-bottom: 5rem;
+    z-index: 10;
+}
+
+.a4-circle {
+    position: relative;
+    z-index: 10;
+}
+
+.a4-ctext {
+    position: absolute;
+    top: 0; left: 0;
+    animation: rotate infinite 9s linear;
+}
 
 
 
 /*==================================================*/
+@media (min-width: 2250px) {
+    .article4 {
+        padding-bottom: 500px;
+    }
+    
+    .a4-s1 {
+        right: 17%;
+    }
+    
+    .a4-s2 {
+        left: 15%;
+    }
+
+    .a4-s3 {
+        right: 20%;
+    }
+}

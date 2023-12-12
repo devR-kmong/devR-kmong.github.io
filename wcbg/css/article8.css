@@ -1,4 +1,40 @@
+.article8 {
+    background: url(../images/a8-bg.jpg);
+    background-attachment: fixed;
+}
 
+.a8-title {
+    margin-bottom: 4rem;
+}
+
+.a8-swiper {
+    width: 100%;
+}
+
+.mySwiper2 {
+    overflow: hidden;
+}
+
+.mySwiper2 .swiper-slide {
+    overflow: hidden;
+}
+
+.mySwiper2 .swiper-slide img {
+    margin-bottom: -10px;
+}
+
+.mySwiper3 {
+    margin-top: 2rem;
+}
+
+.mySwiper3 .swiper-slide {
+    cursor: pointer;
+}
 
 
 /*==================================================*/
+@media (max-width: 1350px) {
+    .a8-swiper {
+        width: 90%;
+    }
+}

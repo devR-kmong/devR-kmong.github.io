@@ -1,4 +1,62 @@
+.article5 {
+    position: relative;
+    padding-bottom: 10px;
+    background-color: #f23c24;
+}
 
+.article5 .article-wrapper {
+    width: 85%;
+}
+
+.a5-wrapper {
+    width: 100%;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid #000;
+    background: url(../images/a5-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.a5-title {
+    margin-bottom: 5rem;
+    z-index: 2;
+}
+
+.a5-bowl {
+    margin-bottom: 17rem;
+    animation: upDown 3.2s ease-in-out infinite;
+    z-index: 2;
+}
+
+.a5-t1 {
+    position: absolute;
+    top: 550px; right: 15%;
+    z-index: 2;
+}
+
+.a5-t2 {
+    position: absolute;
+    top: 900px; left: 15%;
+    z-index: 2;
+}
+
+.a5-t3 {
+    position: absolute;
+    bottom: 100px; right: 240px;
+    z-index: 2;
+}
 
 
 /*==================================================*/
+@media (min-width: 2250px) {
+    .a5-t1 {
+        right: 23%;
+    }
+
+    .a5-t2 {
+        left: 24%;
+    }
+}

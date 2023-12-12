@@ -303,14 +303,15 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, 30px);
     right: auto;
-    color: var(--main-color);
-    width: 46px;
-    height: 46px;
-    border-radius: 100%;
+    color: #fff;
+    width: 52px;
+    height: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, .15);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .2);
 }
 
 .swiper-button-prev:after,
@@ -322,14 +323,15 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 .swiper-rtl .swiper-button-prev {
     right: var(--swiper-navigation-sides-offset, 30px);
     left: auto;
-    color: var(--main-color);
-    width: 46px;
-    height: 46px;
-    border-radius: 100%;
+    color: #fff;
+    width: 52px;
+    height: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, .15);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .2);
 }
 
 .swiper-button-next:after,
@@ -339,7 +341,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 
 .swiper-button-prev i,
 .swiper-button-next i {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .swiper-button-lock {
