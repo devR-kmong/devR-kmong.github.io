@@ -1,6 +1,30 @@
 .article8 {
+    position: relative;
+    padding-bottom: 180px;
     background: url(../images/a8-bg.jpg);
     background-attachment: fixed;
+}
+
+.a8-flow-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.a8-flow {
+    color: rgba(255, 255, 255, .3);
+    padding: 60px 0 40px 0;
+    font-size: 65px;
+    font-weight: 200;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f23c24, 0 0 0.5em #f23c24, 0 0 0.1em #f23c24, 0 10px 3px #000;
+    display: flex;
+    white-space: nowrap;
+    animation: slide 40s linear infinite;
 }
 
 .a8-title {
