@@ -53,6 +53,17 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
 });
 
+var swiper = new Swiper(".mySwiper4", {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    grabCursor: true,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+    },
+});
+
 
 
 $(function () {

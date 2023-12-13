@@ -304,15 +304,9 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     left: var(--swiper-navigation-sides-offset, 30px);
     right: auto;
     color: #fff;
-    width: 52px;
-    height: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, .2);
-    background-color: rgba(255, 255, 255, .15);
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .2);
 }
 
 .swiper-button-prev:after,
@@ -325,15 +319,9 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     right: var(--swiper-navigation-sides-offset, 30px);
     left: auto;
     color: #fff;
-    width: 52px;
-    height: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, .2);
-    background-color: rgba(255, 255, 255, .15);
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .2);
 }
 
 .swiper-button-next:after,
@@ -343,7 +331,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
 
 .swiper-button-prev i,
 .swiper-button-next i {
-    font-size: 30px;
+    font-size: 80px;
 }
 
 .swiper-button-lock {

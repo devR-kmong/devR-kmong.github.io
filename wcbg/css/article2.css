@@ -1,7 +1,7 @@
 .article2 {
     position: relative;
     padding-bottom: 180px;
-    background: url(../images/a2-bg.jpg) no-repeat;
+    background: url(../images/a2-bg.jpg);
     background-attachment: fixed;
     border-top: 1px solid var(--main-color);
     border-bottom: 1px solid var(--main-color);
@@ -33,20 +33,17 @@
     flex-direction: column;
     user-select: none;
     overflow: hidden;
-    border-top: 1px solid var(--main-color);
     z-index: 1;
 }
 
 .a2-flow {
-    color: var(--main-color);
-    padding: 35px 0;
+    color: #e79034;
+    padding: 30px 0;
     font-size: 60px;
     font-weight: 100;
-    font-family: 'PuradakGentleGothicR';
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff0000, 0 0 0.5em #ff0000, 0 0 0.1em #ff0000, 0 10px 3px #000;
     display: flex;
     white-space: nowrap;
-    animation: slide 30s linear infinite;
+    animation: slide 40s linear infinite;
 }
 
 .a2-title {
@@ -69,6 +66,7 @@
     align-items: center;
     gap: 2rem;
     transform: scale(.8) !important;
+    transition: all .3s;
     filter: blur(8px);
     opacity: .8;
 }

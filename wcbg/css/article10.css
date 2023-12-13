@@ -1,4 +1,25 @@
+.article10 {
+    background: url(../images/a10-bg.jpg);
+}
 
+.article10 .article-wrapper {
+    width: 1400px;
+}
+
+.a10-title {
+    margin-bottom: 4rem;
+}
+
+.a10-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.a10-bottom {
+    margin-top: 6rem;
+}
 
 
 /*==================================================*/

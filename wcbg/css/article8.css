@@ -3,6 +3,7 @@
     padding-bottom: 180px;
     background: url(../images/a8-bg.jpg);
     background-attachment: fixed;
+    border-bottom: 1px solid #f23c24;
 }
 
 .a8-flow-wrapper {
@@ -17,11 +18,10 @@
 }
 
 .a8-flow {
-    color: rgba(255, 255, 255, .3);
-    padding: 60px 0 40px 0;
-    font-size: 65px;
-    font-weight: 200;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f23c24, 0 0 0.5em #f23c24, 0 0 0.1em #f23c24, 0 10px 3px #000;
+    color: #f23c24;
+    padding: 50px 0 30px 0;
+    font-size: 60px;
+    font-weight: 100;
     display: flex;
     white-space: nowrap;
     animation: slide 40s linear infinite;
@@ -32,7 +32,7 @@
 }
 
 .a8-swiper {
-    width: 100%;
+    width: 90%;
 }
 
 .mySwiper2 {
