@@ -4,7 +4,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #121212;
+    background-color: #111;
     padding: 60px 0;
 }
 
@@ -17,9 +17,14 @@ footer {
 .f-text p {
     color: #aaa;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 1.6;
     letter-spacing: 0;
+}
+
+.f-text p b {
+    font-size: 18px;
+    line-height: 3;
 }
 
 .f-text p br {
@@ -31,7 +36,7 @@ footer {
 }
 
 .logo-f {
-    height: 100px;
+    height: 150px;
     filter: grayscale(1);
     opacity: .6;
 }
