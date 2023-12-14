@@ -88,5 +88,13 @@
     transition: all 1s .2s;
 }
 
+.mySwiper .swiper-button-wrapper {
+    position: absolute;
+    top: 40%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    z-index: 10;
+}
+
 
 /*==================================================*/

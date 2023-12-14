@@ -1,4 +1,49 @@
+.article11 {
+    position: relative;
+    background-color: #f23c24;
+}
 
+.article11 .article-wrapper {
+    width: 85%;
+}
+
+.a11-1 {
+    position: absolute;
+    bottom: -100px; left: -200px;
+    width: 700px;
+    z-index: 10;
+}
+
+.a11-wrapper {
+    width: 100%;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid #000;
+    background: url(../images/a5-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.a11-title {
+    margin-bottom: 2rem;
+    z-index: 2;
+}
+
+.a11-table-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+
+.a11-notice {
+    position: absolute;
+    top: 0;
+}
 
 
 /*==================================================*/

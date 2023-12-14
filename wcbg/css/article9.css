@@ -46,6 +46,14 @@
     border-radius: 35px 35px 0 0;
 }
 
+.mySwiper4 .swiper-button-wrapper {
+    position: absolute;
+    top: 52%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    z-index: 10;
+}
+
 .phone {
     position: absolute;
     bottom: -8px; left: 50%;
@@ -60,7 +68,7 @@
 
 .a9-camera {
     position: absolute;
-    top: 90px; left: 50%;
+    top: 95px; left: 50%;
     transform: translate(-50%, 0);
     width: 80px;
     z-index: 5;
