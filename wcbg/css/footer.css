@@ -4,14 +4,37 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #151515;
+    background-color: #121212;
     padding: 60px 0;
 }
 
 .footer-wrapper {
     width: 1200px;
+    display: flex;
+    justify-content: space-between;
 }
 
+.f-text p {
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.6;
+    letter-spacing: 0;
+}
+
+.f-text p br {
+    display: none;
+}
+
+.f-text em br {
+    display: block;
+}
+
+.logo-f {
+    height: 100px;
+    filter: grayscale(1);
+    opacity: .6;
+}
 
 
 /*==================================================*/
@@ -19,5 +42,23 @@ footer {
     .footer-wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .f-text br {
+        display: block;
+    }
+
+    .f-text span {
+        display: none;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .f-text p {
+        font-size: 12px;
     }
 }
