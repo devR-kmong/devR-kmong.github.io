@@ -118,7 +118,7 @@
 
 @media (max-width: 768px) {
     .article2 {
-        padding-bottom: 100px;
+        padding-bottom: 140px;
     }
     
     .a2-title {
@@ -129,15 +129,16 @@
         width: 30%;
     }
 
-    .mySwiper .swiper-slide .m-title {
-        width: 50%;
+    .mySwiper .swiper-slide-active .m-title {
+        height: 35px;
+        transition: all .6s 0s;
     }
 }
 
 
 @media (max-width: 550px) {
     .article2 {
-        padding-bottom: 70px;
+        padding-bottom: 100px;
     }
     
     .a2-flow {
@@ -154,7 +155,11 @@
     }
     
     .mySwiper .swiper-slide {
-        gap: 1rem;
+        gap: 1.5rem;
+    }
+
+    .mySwiper .swiper-slide-active .m-title {
+        height: 25px;
     }
 }
 
@@ -167,5 +172,9 @@
     .a2-flow {
         padding: 15px 0;
         font-size: 36px;
+    }
+
+    .mySwiper .swiper-slide-active .m-title {
+        height: 18px;
     }
 }
