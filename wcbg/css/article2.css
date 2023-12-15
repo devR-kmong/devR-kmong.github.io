@@ -98,6 +98,13 @@
 
 
 /*==================================================*/
+@media (min-width: 2250px) {
+    .mySwiper .swiper-button-wrapper {
+        width: 1100px;
+    }
+}
+
+
 @media (max-width: 1250px) {
     .article2 .article-wrapper {
         padding: 0;

@@ -58,9 +58,14 @@
 }
 
 
-
-
 /*==================================================*/
+@media (min-width: 2250px) {
+    .a5-t2 {
+        left: 15%;
+    }
+}
+
+
 @media (max-width: 1850px) {
     .article5 .article-wrapper {
         width: 95%;

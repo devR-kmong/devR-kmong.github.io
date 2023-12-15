@@ -47,6 +47,21 @@
 
 
 /*==================================================*/
+@media (min-width: 2250px) {
+    .a11-1 {
+        width: 900px;
+    }
+
+    .a11-table {
+        width: 90%;
+    }
+
+    .a11-notice {
+        top: 100px;
+    }
+}
+
+
 @media (max-width: 1850px) {
     .article11 .article-wrapper {
         width: 95%;

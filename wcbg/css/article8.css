@@ -57,6 +57,13 @@
 
 
 /*==================================================*/
+@media (min-width: 2250px) {
+    .a8-swiper {
+        width: 100%;
+    }
+}
+
+
 @media (max-width: 950px) {
     .a8-title {
         width: 75%;
