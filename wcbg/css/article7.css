@@ -24,11 +24,63 @@
     background-position: center;
 }
 
+.a7-table-wrapper {
+    position: relative;
+    width: 902px;
+}
+
 .a7-44 {
     position: absolute;
-    bottom: 100px; right: 300px;
+    bottom: 3%; right: -3%;
     animation: blink .7s step-end infinite;
 }
 
 
 /*==================================================*/
+@media (max-width: 1850px) {
+    .article7 .article-wrapper {
+        width: 99%;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .a7-wrapper {
+        padding: 0;
+        border: none;
+        background: none;
+    }
+    
+    .a7-title {
+        width: 75%;
+        margin-bottom: 3rem;
+    }
+    
+    .a7-table-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .a7-table {
+        width: 90%;
+    }
+    
+    .a7-44 {
+        right: 0;
+        width: 35%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a7-title {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    
+    .a7-table {
+        width: 100%;
+    }
+}

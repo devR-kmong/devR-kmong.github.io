@@ -21,6 +21,9 @@ img {
     max-width: 100%;
     height: auto;
     pointer-events : none;
+    backface-visibility: hidden;
+    image-rendering: -webkit-optimize-contrast;
+    transform: translateZ(0);
 }
 
 a {
@@ -101,4 +104,30 @@ li {
 	100% {
 		transform:  translateY(-7px);
 	}
+}
+
+
+@media (max-width: 1250px) {
+    @keyframes slide {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+    
+        100% {
+            transform: translate3d(-500%, 0, 0);
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    @keyframes slide {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+    
+        100% {
+            transform: translate3d(-800%, 0, 0);
+        }
+    }
 }

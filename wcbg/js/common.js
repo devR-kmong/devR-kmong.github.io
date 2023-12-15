@@ -15,13 +15,16 @@ $('.counter').counterUp({
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     centeredSlides: true,
-    slidesPerView: 1,
+    slidesPerView: 1.5,
     grabCursor: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
+        769: {
+            slidesPerView: 2,
+        },
         1251: {
             slidesPerView: 3,
         },
@@ -74,15 +77,21 @@ var swiper = new Swiper(".mySwiper5", {
     initialSlide: 0,
     centeredSlides: true,
     grabCursor: true,
-    slidesPerView: 2,
+    slidesPerView: 1.5,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     spaceBetween: 10,
     breakpoints: {
+        551: {
+            slidesPerView: 2,
+        },
         769: {
-            slidesPerView: 3,
+            slidesPerView: 2.5,
+        },
+        1251: {
+            slidesPerView: 3.5,
         },
         1919: {
             slidesPerView: 4,
@@ -148,7 +157,7 @@ $(window).on('scroll', function () {
 
 
 $(function () {
-    $('.floating a, .logo, .logo-w, nav ul li a, .p-text a, .logo-f, .fBtn a').click(function (e) {
+    $('.floating a, .logo, nav ul li a').click(function (e) {
         $.scrollTo(this.hash || 0, 500);
         e.preventDefault();
     });
@@ -158,17 +167,24 @@ $(function () {
 
 $('.menuBtns').click(function () {
     $(this).toggleClass('change');
+    $('nav ul').toggleClass('show');
 });
 
 $('nav ul li a').click(function () {
     $('#check').prop('checked', false);
     $('.menuBtns').removeClass('change');
+    $('nav ul').removeClass('show');
 });
 
-$('.overlay').click(function () {
-    $('#check').prop('checked', false);
-    $('.menuBtns').removeClass('change');
-});
+
+
+if (window.innerWidth < 1651) {
+    $('.logo').click(function () {
+        $('#check').prop('checked', false);
+        $('.menuBtns').removeClass('change');
+        $('nav ul').removeClass('show');
+    });
+}
 
 
 

@@ -761,22 +761,21 @@ swiper-container .swiper-notification {
 /*==================================================*/
 @media (max-width: 768px) {
     .swiper-button-prev {
-        left: 15px;
+        left: 10px;
     }
     
     .swiper-button-next {
-        right: 15px;
+        right: 10px;
     }
     
     .swiper-button-prev,
     .swiper-button-next {
-        width: 32px;
-        height: 32px;
+        width: 20px;
+        height: 20px;
     }
-    
-    .swiper-button-prev i,
-    .swiper-button-next i {
-        font-size: 28px;
+
+    .mySwiper5 .swiper-button-next {
+        right: 0 !important;
     }
 }
 
@@ -789,5 +788,12 @@ swiper-container .swiper-notification {
     .swiper-pagination-bullet {
         width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
         height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
+    }
+}
+
+
+@media (max-width: 450px) {
+    .mySwiper5 .swiper-button-next {
+        right: -10px !important;
     }
 }

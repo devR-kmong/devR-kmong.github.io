@@ -11,21 +11,21 @@
     position: absolute;
     top: 36%; right: 7%;
     animation: upDown 2.8s ease-in-out infinite;
-    z-index: 10;
+    z-index: 11;
 }
 
 .a4-s2 {
     position: absolute;
     top: 50%; left: 5%;
     animation: upDown 3s ease-in-out infinite;
-    z-index: 10;
+    z-index: 11;
 }
 
 .a4-s3 {
     position: absolute;
     top: 63%; right: 10%;
     animation: upDown 3.2s ease-in-out infinite;
-    z-index: 10;
+    z-index: 11;
 }
 
 #snow {
@@ -33,6 +33,7 @@
     top: 0;
     width: 100%;
     height: 100%;
+    display: none;
 }
 
 .snowflake {
@@ -85,5 +86,86 @@
 
     .a4-s3 {
         right: 20%;
+    }
+}
+
+
+@media (max-width: 1850px) {
+    .a4-s1 {
+        right: 20px;
+        width: 25%;
+    }
+    
+    .a4-s2 {
+        left: 20px;
+        width: 25%;
+    }
+    
+    .a4-s3 {
+        right: 20px;
+        width: 25%;
+    }
+    
+    .a4-circle {
+        width: 50%;
+    }
+
+    .a4-plate {
+        width: 100%;
+    }
+    
+    .a4-ctext {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1350px) {
+    .article4 {
+        padding-bottom: 30%;
+    }
+    
+    .a4-title {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a4-s1 {
+        right: 10px;
+        width: 30%;
+    }
+    
+    .a4-s2 {
+        left: 10px;
+        width: 30%;
+    }
+    
+    .a4-s3 {
+        right: 10px;
+        width: 30%;
+    }
+    
+    .a4-circle {
+        width: 75%;
+    }
+
+    .a4-title {
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a4-s1,
+    .a4-s2,
+    .a4-s3 {
+        width: 35%;
+    }
+    
+    .a4-title {
+        width: 90%;
+        margin-bottom: 4rem;
     }
 }

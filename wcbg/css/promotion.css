@@ -166,13 +166,6 @@
     letter-spacing: -0.06em;
 }
 
-.p-box:nth-child(1) p em {
-    width: 270px;
-}
-.p-box:nth-child(2) p em {
-    width: 120px;
-}
-
 .p-box p span {
     font-size: 36px;
     margin-left: 5px;
@@ -181,8 +174,103 @@
 
 /*==================================================*/
 @media (max-width: 1250px) {
+    .promotion {
+        height: auto;
+    }
+    
     .promotion-wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+
+    .p-flow-wrapper {
+        bottom: 0;
+    }
+    
+    .p-flow {
+        font-size: 200px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .p-box-wrapper {
+        width: 90%;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .p-box {
+        gap: 1rem;
+    }
+    
+    .p-box h5 {
+        font-size: 18px;
+    }
+    
+    .p-box p em {
+        font-size: 60px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .promotion {
+        padding-bottom: 80px !important;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .p-notice {
+        left: unset;
+        right: 50px;
+        transform: unset;
+    }
+    
+    .p-box-wrapper {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 3rem;
+    }
+
+    .p-box p span {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .p-flow {
+        font-size: 160px;
+    }
+    
+    .p-signboard {
+        margin-top: 3rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .promotion {
+        padding-bottom: 60px !important;
+    }
+
+    .p-notice {
+        bottom: -40px; right: 40px;
+        font-size: 13px;
+    }
+    
+    .p-box-wrapper {
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .p-box h5 {
+        font-size: 15px;
+    }
+    
+    .p-box p em {
+        font-size: 45px;
     }
 }

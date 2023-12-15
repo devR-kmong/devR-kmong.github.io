@@ -52,18 +52,48 @@ footer {
 
 
 @media (max-width: 768px) {
-    .f-text br {
-        display: block;
-    }
-
-    .f-text span {
-        display: none;
+    .footer-wrapper {
+        flex-direction: column-reverse;
+        gap: 2rem;
     }
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
+    footer {
+        padding: 30px 0;
+    }
+    
+    .footer-wrapper {
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .f-text {
+        text-align: center;
+    }
+    
     .f-text p {
         font-size: 12px;
+    }
+
+    .f-text p b {
+        font-size: 15px;
+    }
+    
+    .logo-f {
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .f-text span {
+        display: none;
+    }
+
+    .f-text p br {
+        display: block;
     }
 }

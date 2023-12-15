@@ -23,3 +23,58 @@
 
 
 /*==================================================*/
+@media (max-width: 1450px) {
+    .article10 .article-wrapper {
+        width: 100%;
+    }
+    
+    .a10-box-wrapper {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .a10-box {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .a10-title {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a10-title {
+        margin-bottom: 3rem;
+    }
+    
+    .a10-box-wrapper {
+        width: 98%;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a10-title {
+        width: 90%;
+    }
+    
+    .a10-box-wrapper {
+        width: 80%;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a10-bottom {
+        width: 75%;
+        margin-top: 3rem;
+    }
+}

@@ -25,6 +25,12 @@
     z-index: 10;
 }
 
+.a13-clip {
+    position: absolute;
+    top: -8%; right: 40px;
+    width: 15%;
+}
+
 .a13-pen {
     position: absolute;
     bottom: 20px; right: -300px;
@@ -290,11 +296,47 @@
 
 
 /*==================================================*/
-@media (max-width: 650px) {
+@media (max-width: 950px) {
+    .article13 {
+        padding-top: 100px;
+    }
+    
+    .a13-paper {
+        bottom: -100px;
+        width: 90%;
+        transform: translate(-50%, 0) rotate(3deg);
+    }
+    
     .form-wrapper {
-        width: 100%;
+        width: 90%;
     }
 
+    .a13-clip {
+        top: -7%;
+    }
+    
+    .a13-pen {
+        bottom: unset;
+        top: 5%; right: -25%;
+        transform: rotate(-10deg);
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a13-paper {
+        bottom: -210px;
+    }
+    
+    .form-wrapper {
+        padding: 50px;
+    }
+
+    .a13-title {
+        width: 75%;
+    }
+    
     .policy-popup {
         width: 90%;
         display: flex;
@@ -317,23 +359,36 @@
 
 
 @media (max-width: 550px) {
+    .a13-paper {
+        bottom: -20px; left: 51%;
+        width: 95%;
+        height: 900px;
+        transform: translate(-50%, 0) rotate(2deg);
+    }
+    
     .form-wrapper {
-        padding: 0 10px;
+        width: 98%;
+        padding: 40px;
+    }
+
+    .a13-clip {
+        top: -7%;
+        width: 20%;
     }
 
     .gform .input-wrapper .input-title p {
-        font-size: 13px;
+        font-size: 16px;
     }
     
     .gform .inputbox {
-        height: 43px;
-        font-size: 13px;
+        font-size: 17px;
     }
-
+    
     .gform textarea {
-        font-size: 13px;
+        height: 80px;
+        font-size: 17px;
     }
-
+    
     .radio-wrapper label {
         padding: 11px 0;
         font-size: 13px;
@@ -344,12 +399,11 @@
     }
     
     .f-personal-text label p {
-        font-size: 12px;
-        letter-spacing: -0.02em;
+        font-size: 13px;
     }
 
     .f-personalBtn {
-        font-size: 10px;
+        font-size: 11px;
     }
 
 

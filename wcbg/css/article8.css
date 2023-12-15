@@ -57,8 +57,39 @@
 
 
 /*==================================================*/
-@media (max-width: 1350px) {
+@media (max-width: 950px) {
+    .a8-title {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 768px) {
     .a8-swiper {
-        width: 90%;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article8 {
+        padding-bottom: 100px;
+    }
+    
+    .a8-flow {
+        padding: 20px 0;
+        font-size: 45px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .article8 {
+        padding-bottom: 80px;
+    }
+    
+    .a8-flow {
+        padding: 15px 0;
+        font-size: 36px;
     }
 }

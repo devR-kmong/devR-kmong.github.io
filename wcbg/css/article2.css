@@ -98,3 +98,74 @@
 
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .article2 .article-wrapper {
+        padding: 0;
+    }
+
+    .a2-square {
+        width: 85%;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .mySwiper .swiper-button-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article2 {
+        padding-bottom: 100px;
+    }
+    
+    .a2-title {
+        width: 50%;
+    }
+
+    .a2-top {
+        width: 30%;
+    }
+
+    .mySwiper .swiper-slide .m-title {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article2 {
+        padding-bottom: 70px;
+    }
+    
+    .a2-flow {
+        padding: 20px 0;
+        font-size: 45px;
+    }
+
+    .a2-square {
+        height: 55%;
+    }
+
+    .a2-top {
+        margin: 2rem 0;
+    }
+    
+    .mySwiper .swiper-slide {
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .article2 {
+        padding-bottom: 50px;
+    }
+    
+    .a2-flow {
+        padding: 15px 0;
+        font-size: 36px;
+    }
+}
