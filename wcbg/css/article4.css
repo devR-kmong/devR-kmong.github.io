@@ -158,6 +158,11 @@
 
 
 @media (max-width: 550px) {
+    .snowflake {
+        width: 8px;
+        height: 8px;
+    }
+    
     .a4-s1,
     .a4-s2,
     .a4-s3 {

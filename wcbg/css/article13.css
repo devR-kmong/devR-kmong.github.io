@@ -360,7 +360,7 @@
 
 @media (max-width: 550px) {
     .a13-paper {
-        bottom: -20px; left: 51%;
+        bottom: -120px; left: 51%;
         width: 95%;
         height: 900px;
         transform: translate(-50%, 0) rotate(2deg);
@@ -369,6 +369,10 @@
     .form-wrapper {
         width: 98%;
         padding: 40px;
+    }
+
+    .gform {
+        gap: 1rem;
     }
 
     .a13-clip {

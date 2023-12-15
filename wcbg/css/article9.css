@@ -99,6 +99,10 @@
     .a9-title {
         width: 90%;
     }
+
+    .mySwiper4 .swiper-slide {
+        opacity: 0;
+    }
     
     .mySwiper4 .swiper-slide-active {
         opacity: 1;
