@@ -97,7 +97,7 @@ var swiper = new Swiper(".mySwiper5", {
             slidesPerView: 4,
         },
         2250: {
-            slidesPerView: 5,
+            slidesPerView: 5.5,
         },
     },
 });
