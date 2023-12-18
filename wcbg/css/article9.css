@@ -2,6 +2,7 @@
     padding-bottom: 0;
     background: url(../images/a9-bg.jpg);
     border-bottom: 1px solid #f23c24;
+    overflow: hidden;
 }
 
 .article9 .article-wrapper {
