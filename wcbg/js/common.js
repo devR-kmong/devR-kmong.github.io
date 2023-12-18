@@ -1,8 +1,10 @@
-AOS.init({
-    once: true,
-    delay: 100,
-    duration: 1200,
-});
+new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 300,
+    mobile: true,
+    live: true
+}).init();
 
 
 

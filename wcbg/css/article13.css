@@ -42,7 +42,7 @@
     margin-bottom: 3rem;
 }
 
-.gform {
+.a13-form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -51,36 +51,38 @@
     gap: 2rem;
 }
 
-.gform .input-wrapper {
+.a13-form .input-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.gform .input-wrapper .input-title p {
+.a13-form .input-wrapper .input-title p {
     color: #111;
     font-size: 19px;
     font-weight: 500;
 }
 
-.gform .input-wrapper .input-title p span {
+.a13-form .input-wrapper .input-title p span {
     color: #f23c24;
 }
 
-.gform .inputbox {
+.a13-form .inputbox {
     color: #111;
     height: 45px;
     font-size: 19px;
     font-weight: 600;
     border: none;
     outline: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
     border-bottom: 2px solid #111;
     transition: all .3s ease;
 }
 
-.gform textarea {
-    color: #222;
+.a13-form textarea {
+    color: #111;
     width: 100%;
     height: 100px;
     padding: 12px;
@@ -88,31 +90,33 @@
     font-weight: 600;
     border: none;
     outline: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
     background-color: #fff;
     border: 2px solid #111;
 }
 
-.gform .inputbox::placeholder {
+.a13-form .inputbox::placeholder {
     color: #ccc;
     font-weight: 200;
 }
 
-.gform textarea::placeholder {
+.a13-form textarea::placeholder {
     color: #ccc;
     font-weight: 200;
 }
 
-.radio-wrapper {
+.a13-form .radio-wrapper {
     width: 100%;
     display: flex;
     gap: 5px;
 }
 
-.radio-wrapper input[type="radio"] {
+.a13-form .radio-wrapper input[type="radio"] {
     display: none;
 }
 
-.radio-wrapper label {
+.a13-form .radio-wrapper label {
     flex: 1;
     color: #111;
     padding: 14px 0;
@@ -126,18 +130,18 @@
     cursor: pointer;
 }
 
-.radio-wrapper label:hover {
+.a13-form .radio-wrapper label:hover {
     background-color: #f8f8f8;
 }
 
-.radio-wrapper input[type="radio"]:checked+label {
+.a13-form .radio-wrapper input[type="radio"]:checked+label {
     color: #fff;
     font-weight: 500;
     border: 1px solid #111;
     background-color: #111;
 }
 
-.f-submit {
+.a13-submit {
     color: #fff;
     width: 100%;
     height: 65px;
@@ -150,14 +154,14 @@
     cursor: pointer;
 }
 
-.f-submit:disabled {
+.a13-submit:disabled {
     color: #ccc;
     font-weight: 300;
     cursor: not-allowed;
     background-color: #f2f2f2;
 }
 
-.f-personal {
+.a13-personal {
     width: 100%;
     padding: 16px;
     display: flex;
@@ -167,21 +171,21 @@
     border: 2px solid #111;
 }
 
-.f-personal-no {
+.a13-personal-no {
     border: 2px solid red;
 }
 
-.f-personal-text input {
+.a13-personal-text input {
     display: none;
 }
 
-.f-personal-text label {
+.a13-personal-text label {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.f-personal-text label em {
+.a13-personal-text label em {
     position: relative;
     width: 16px;
     min-width: 16px;
@@ -192,7 +196,7 @@
     cursor: pointer;
 }
 
-.f-personal-text label em::after {
+.a13-personal-text label em::after {
     content: '';
     position: absolute;
     top: 50%; left: 50%;
@@ -203,7 +207,7 @@
     display: none;
 }
 
-.f-personal-text label p {
+.a13-personal-text label p {
     color: #111;
     font-size: 16px;
     user-select: none;
@@ -214,7 +218,7 @@
     display: block;
 }
 
-.f-personalBtn {
+.a13-personalBtn {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
@@ -245,7 +249,6 @@
     position: absolute;
     top: 0;
     width: 100%;
-    /* width: calc(100% - .3em); */
     padding: 20px 30px;
     background-color: #eee;
     border-bottom: 1px solid #ddd;
@@ -371,7 +374,7 @@
         padding: 40px;
     }
 
-    .gform {
+    .a13-form {
         gap: 1rem;
     }
 
@@ -380,33 +383,33 @@
         width: 20%;
     }
 
-    .gform .input-wrapper .input-title p {
+    .a13-form .input-wrapper .input-title p {
         font-size: 16px;
     }
     
-    .gform .inputbox {
+    .a13-form .inputbox {
         font-size: 17px;
     }
     
-    .gform textarea {
+    .a13-form textarea {
         height: 80px;
         font-size: 17px;
     }
     
-    .radio-wrapper label {
+    .a13-form .radio-wrapper label {
         padding: 11px 0;
         font-size: 13px;
     }
 
-    .f-personal {
+    .a13-personal {
         padding: 10px;
     }
     
-    .f-personal-text label p {
+    .a13-personal-text label p {
         font-size: 13px;
     }
 
-    .f-personalBtn {
+    .a13-personalBtn {
         font-size: 11px;
     }
 
@@ -431,7 +434,7 @@
         font-size: 13px;
     }
 
-    .f-submit {
+    .a13-submit {
         height: 45px;
         font-size: 14px;
     }
