@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contents/css/common.css">
+    <link rel="stylesheet" href="contents/css/header.css">
+    <link rel="stylesheet" href="contents/css/toggleMenu.css">
+    <link rel="stylesheet" href="contents/css/promotion.css">
+    <link rel="stylesheet" href="contents/css/article_common.css">
+    <link rel="stylesheet" href="contents/css/article1.css">
+    <link rel="stylesheet" href="contents/css/article2.css">
+    <link rel="stylesheet" href="contents/css/article3.css">
+    <link rel="stylesheet" href="contents/css/article4.css">
+    <link rel="stylesheet" href="contents/css/article5.css">
+    <link rel="stylesheet" href="contents/css/footer.css">
+    <link rel="stylesheet" href="contents/css/aos.css">
+    <link rel="stylesheet" href="contents/css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="contents/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="contents/js/swiper-bundle.min.js"></script>
+    <script src="contents/js/aos.js"></script>
+    <title>글로리피부과</title>
+</head>
+<body>
+    <div class="header">
+        <div class="gnb">
+            <a href="<?php echo G5_URL?>" class="logo"><img src="contents/images/logo-w.svg"></a>
+            <div class="menu">
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/about/us" class="menu-head">
+                        병원소개
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/about/us">
+                                글로리소개
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/about/info">
+                                진료안내
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/about/facility">
+                                둘러보기
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/about/location">
+                                오시는길
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/lifting/ulthera" class="menu-head">
+                        리프팅
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/lifting/ulthera">
+                                울쎄라
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/lifting/tuneface">
+                                튠페이스
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/lifting/titanium">
+                                티타늄리프팅
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/injection/botox" class="menu-head">
+                        주사시술
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/injection/botox">
+                                보톡스·필러
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/injection/booster">
+                                맞춤스킨부스터
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/filler/us" class="menu-head">
+                        스페셜필러
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/filler/neck">
+                                목주름필러
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/filler/hand">
+                                손등필러
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/filler/eyes">
+                                눈위·눈밑필러
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/filler/earlobe">
+                                귓볼필러
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="menuBtns">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="toggleMenu">
+                <img src="contents/images/a1-shadow.png" class="tm-shadow">
+                <div class="tgm-top">
+                    <a href="<?php echo G5_URL?>" class="logo"><img src="contents/images/logo.svg"></a>
+                    <div class="tgm-close">
+                        <img src="contents/images/close.svg">
+                    </div>
+                </div>
+                <div class="tgm-menu-wrapper">
+                    <div class="tgm-menu" data-target="data1">
+                        <a href="<?php echo G5_URL?>/sub/about/us" class="tgm-head">
+                            병원소개<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data1">
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/about/us">
+                                    글로리소개
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/about/info">
+                                    진료안내
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/about/facility">
+                                    둘러보기
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/about/location">
+                                    오시는길
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data2">
+                        <a href="<?php echo G5_URL?>/sub/lifting/ulthera" class="tgm-head">
+                            리프팅<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data2">
+                            <li>
+                                <a href="<?php echo G5_URL?>/lifting/ulthera">
+                                    울쎄라
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/lifting/tuneface">
+                                    튠페이스
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/lifting/titanium">
+                                    티타늄리프팅
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data3">
+                        <a href="<?php echo G5_URL?>/sub/injection/botox" class="tgm-head">
+                            주사시술<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data3">
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/injection/botox">
+                                    보톡스·필러
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/injection/booster">
+                                    맞춤스킨부스터
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data4">
+                        <a href="<?php echo G5_URL?>/sub/filler/neck" class="tgm-head">
+                            스페셜필러<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data4">
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/filler/neck">
+                                    목주름필러
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/filler/hand">
+                                    손등필러
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/filler/eyes">
+                                    눈위·눈밑필러
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/filler/earlobe">
+                                    귓볼필러
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="carousel promotion">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide s-slide1">
+                        <div class="content">
+                            <h5>
+                                NATURAL <span>BEAUTY</span>
+                            </h5>
+                            <p>
+                                자연스러운 아름다움을 지향합니다.<br/>
+                                개개인의 얼굴 맞춤 시술을 추구합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide s-slide2">
+                        <div class="content">
+                            <h5>
+                                SAFE <span>BEAUTY</span>
+                            </h5>
+                            <p>
+                                가족에게 권하지 못하는 시술,<br/>
+                                고객님께도 권하지 않습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide s-slide3">
+                        <div class="content">
+                            <h5>
+                                GLORY <span>BEAUTY</span>
+                            </h5>
+                            <p>
+                                부드럽고 자연스러운 변화를<br/>
+                                글로리에서 경험해보세요.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination-wrapper">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="article article1">
+            <img src="contents/images/a1-shadow.png" class="a1-shadow">
+            <div class="a1-2"></div>
+            <div class="article-wrapper">
+                <div class="a1-wrapper">
+                    <div class="a1-text">
+                        <h4>
+                            OUR VISION
+                        </h4>
+                        <h5>
+                            정직한 운영<br/>
+                            <span>글로리의 핵심가치</span>
+                        </h5>
+                        <p>
+                            글로리의원에서의 모든 시술은<br/>
+                            대표원장이 직접 진행합니다.
+                        </p>
+                        <a href="<?php echo G5_URL?>/sub/about/us">
+                            더 알아보기
+                            <img src="contents/images/arrow.svg" class="a1-arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article article2">
+            <div class="article-wrapper">
+                <div class="a2-title">
+                    <p>
+                        NATURAL BEAUTY
+                    </p>
+                    <h5>
+                        <span>자연스러운 변화</span>를 경험하세요
+                    </h5>
+                </div>
+                <div class="a2-box-wrapper">
+                    <div class="a2-box on">
+                        <div class="a2-box-title">
+                            리프팅
+                        </div>
+                        <div class="a2-box-text">
+                            <span>
+                                LIFTING
+                            </span>
+                            <h5>
+                                리프팅
+                            </h5>
+                            <p>
+                                자연스럽고 부드러운 변화를 줄 수 있는 시술을 추구하며,
+                                가족에게 권하지 못하면 고객님께도 권하지 않습니다.
+                                부자연스러운 결과, 획일화된 공장형 시술에 지친 분들께
+                                도움을 드릴 수 있는 글로리의원이 되겠습니다.
+                            </p>
+                            <a href="<?php echo G5_URL?>/sub/lifting/ulthera">
+                                자세히보기
+                                <img src="contents/images/arrow.svg" class="a2-arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="a2-box">
+                        <div class="a2-box-title">
+                            주사시술
+                        </div>
+                        <div class="a2-box-text">
+                            <span>
+                                INJECTION
+                            </span>
+                            <h5>
+                                주사시술
+                            </h5>
+                            <p>
+                                자연스럽고 부드러운 변화를 줄 수 있는 시술을 추구하며,
+                                가족에게 권하지 못하면 고객님께도 권하지 않습니다.
+                                부자연스러운 결과, 획일화된 공장형 시술에 지친 분들께
+                                도움을 드릴 수 있는 글로리의원이 되겠습니다.
+                            </p>
+                            <a href="<?php echo G5_URL?>/sub/injection/botox">
+                                자세히보기
+                                <img src="contents/images/arrow.svg" class="a2-arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="a2-box">
+                        <div class="a2-box-title">
+                            스페셜필러
+                        </div>
+                        <div class="a2-box-text">
+                            <span>
+                                FILLER
+                            </span>
+                            <h5>
+                                스페셜필러
+                            </h5>
+                            <p>
+                                자연스럽고 부드러운 변화를 줄 수 있는 시술을 추구하며,
+                                가족에게 권하지 못하면 고객님께도 권하지 않습니다.
+                                부자연스러운 결과, 획일화된 공장형 시술에 지친 분들께
+                                도움을 드릴 수 있는 글로리의원이 되겠습니다.
+                            </p>
+                            <a href="<?php echo G5_URL?>/sub/filler/neck">
+                                자세히보기
+                                <img src="contents/images/arrow.svg" class="a2-arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article article3">
+            <div class="a3-bg"></div>
+            <div class="a3-bg2"></div>
+            <div class="article-wrapper">
+                <div class="a3-title">
+                    <p>
+                        Facility
+                    </p>
+                    <h5>
+                        쾌적한 시술 환경을 위한<br/>
+                        <span>최고의 시설과 장비</span>
+                    </h5>
+                    <a href="<?php echo G5_URL?>/sub/about/facility">
+                        더 살펴보기
+                        <img src="contents/images/arrow.svg" class="a3-arrow">
+                    </a>
+                </div>
+                
+            </div>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="s-image">
+                            <img src="contents/images/a3-1.jpg">
+                        </div>
+                        <div class="s-text">
+                            <h5>
+                                이미지 타이틀
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="s-image">
+                            <img src="contents/images/a3-2.jpg">
+                        </div>
+                        <div class="s-text">
+                            <h5>
+                                이미지 타이틀
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="s-image">
+                            <img src="contents/images/a3-3.jpg">
+                        </div>
+                        <div class="s-text">
+                            <h5>
+                                이미지 타이틀
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="s-image">
+                            <img src="contents/images/a3-4.jpg">
+                        </div>
+                        <div class="s-text">
+                            <h5>
+                                이미지 타이틀
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="s-image">
+                            <img src="contents/images/a3-5.jpg">
+                        </div>
+                        <div class="s-text">
+                            <h5>
+                                이미지 타이틀
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="article article4">
+            <div class="a4-bg"></div>
+            <img src="contents/images/sb.svg" class="a4-sb">
+            <div class="article-wrapper">
+                <div class="a4-wrapper">
+                    <div class="a4-box-wrapper">
+                        <a href="" class="a4-box" target="_blank">
+                            <div class="a4-box-icon">
+                                <img src="contents/images/a4-1.svg">
+                            </div>
+                            <div class="a4-box-text">
+                                <h5>
+                                    진료예약
+                                </h5>
+                                <p>
+                                    온라인으로 간편하게 진료예약하세요.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="" class="a4-box">
+                            <div class="a4-box-icon">
+                                <img src="contents/images/a4-2.svg">
+                            </div>
+                            <div class="a4-box-text">
+                                <h5>
+                                    오시는길
+                                </h5>
+                                <p>
+                                    글로리의원을 찾아오시는 길입니다.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="" class="a4-box">
+                            <div class="a4-box-icon">
+                                <img src="contents/images/a4-3.svg">
+                            </div>
+                            <div class="a4-box-text">
+                                <h5>
+                                    진료일정
+                                </h5>
+                                <p>
+                                    오시기 전 진료일정을 반드시 확인하세요.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="" class="a4-box">
+                            <div class="a4-box-icon">
+                                <img src="contents/images/a4-4.svg">
+                            </div>
+                            <div class="a4-box-text">
+                                <h5>
+                                    의료진소개
+                                </h5>
+                                <p>
+                                    글로리의원의 의료진을 소개합니다.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="a4-right">
+                        <img src="contents/images/a4-5.png">
+                        <ul class="a4-r-text">
+                            <h5>
+                                대표원장<span>이호</span>
+                            </h5>
+                            <li>
+                                前 에이스피부과 원장
+                            </li>
+                            <li>
+                                前 리쥬미의원 원장
+                            </li>
+                            <li>
+                                前 바오밥성형외과 원장
+                            </li>
+                            <li>
+                                現 글로리의원 원장
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article article5">
+            <img src="contents/images/a5-shadow.png" class="a5-shadow">
+            <div class="article-wrapper">
+                <div class="a5-text">
+                    <h5>
+                        <span>" Natural Beauty "</span><br/>
+                        with. 글로리의원
+                    </h5>
+                    <a href="" target="_blank" class="a5Btn">
+                        <img src="contents/images/naver.png">
+                        네이버예약
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-top">
+                <a href="<?php echo G5_URL?>" class="logo-f"><img src="contents/images/logo.svg"></a>
+                <div class="footer-text">
+                    <ul>
+                        <li>
+                            글로리의원
+                        </li>
+                        <li>
+                            대표원장: 이호
+                        </li>
+                        <li>
+                            문의전화: 000-000-0000
+                        </li>
+                        <li>
+                            사업자등록번호: 000-00-00000
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            서울특별시 강남구 봉은사로 207, KJ빌딩 3층,<br/>
+                            지하철 언주역 4번출구 30m앞 1층 커피빈건물
+                        </li>
+                        <br/>
+                        <li>
+                            진료시간: 월-금 오전 10시 ~ 오후 8시<br/>
+                            점심시간: 오후 1시 ~ 오후 2시<br/>
+                            일요일, 국·공휴일 휴무
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-bottom">
+                <p>
+                    ⓒ 2024 글로리의원. All rights reserved.
+                </p>
+                <p class="f-personalBtn">
+                    개인정보처리방침
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="contents/js/common.js"></script>
+    <script src="contents/js/header.js"></script>
+
+    <script>
+        $(function () {
+            let a2Box = $('.a2-box');
+
+            for (let i = 0; i < a2Box.length; i++) {
+                a2Box.eq(i).click(function () {
+                    a2Box.addClass('on');
+                    a2Box.not(a2Box.eq(i)).removeClass('on');
+                })
+            }
+        })
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "fade",
+            speed: 2000,
+            loop: true,
+            loopedSlides: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + "<p>" + 0 + (index + 1) + "</p>" + "</span>";
+                },
+            },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+        });
+
+        var swiper = new Swiper(".mySwiper2", {
+            initialSlide: 0,
+            centeredSlides: false,
+            slidesPerView: 1.5,
+            spaceBetween: 0,
+            speed: 1000,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + '0' + (index + 1) + "</span>";
+                },
+            },
+            breakpoints: {
+                769: {
+                    centeredSlides: true,
+                    spaceBetween: 20
+                },
+                1251: {
+                    slidesPerView: 2.5,
+                    centeredSlides: true,
+                    spaceBetween: 30
+                },
+                2250: {
+                    slidesPerView: 3.5,
+                    centeredSlides: true,
+                    spaceBetween: 30
+                },
+            },
+        });
+    </script>
+
+</body>
+</html>

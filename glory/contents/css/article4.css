@@ -1,0 +1,171 @@
+.article4 {
+    position: relative;
+    padding-bottom: 0;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.a4-bg {
+    position: absolute;
+    top: 0; right: 0;
+    width: 50%;
+    height: 100%;
+    background: url(../images/a4-bg.png) no-repeat;
+    background-size: cover;
+    background-color: #c0ac9b20;
+    z-index: 1;
+}
+
+.a4-sb {
+    position: absolute;
+    top: -50px; right: -50px;
+    width: 700px;
+    opacity: .1;
+    z-index: 2;
+}
+
+.article4 .article-wrapper {
+    width: 75%;
+    z-index: 10;
+}
+
+.a4-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.a4-box-wrapper {
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.a4-box {
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 16px 16px 0 rgb(0 0 0 / 3%);
+    transition: all .3s;
+}
+
+.a4-box-icon {
+    position: absolute;
+    top: 50px; right: 50px;
+}
+
+.a4-box-icon img {
+    height: 60px;
+    margin-bottom: 2rem;
+    filter: invert(84%) sepia(16%) saturate(341%) hue-rotate(346deg) brightness(82%) contrast(87%);
+    user-select: none;
+}
+
+.a4-box-text {
+    margin-top: 5rem;
+}
+
+.a4-box-text h5 {
+    color: #222;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.a4-box-text p {
+    color: #aaa;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+.a4-box:hover {
+    background-color: var(--main-color);
+}
+
+.a4-box:hover .a4-box-text h5,
+.a4-box:hover .a4-box-text p {
+    color: #fff;
+}
+
+.a4-box:hover .a4-box-icon img {
+    filter: invert(100%) sepia(0%) saturate(7464%) hue-rotate(84deg) brightness(107%) contrast(102%);
+}
+
+.a4-box:first-child {
+    background-color: var(--main-color);
+}
+
+.a4-box:first-child .a4-box-text h5,
+.a4-box:first-child .a4-box-text p {
+    color: #fff;
+}
+
+.a4-box:first-child .a4-box-icon img {
+    filter: invert(100%) sepia(0%) saturate(7464%) hue-rotate(84deg) brightness(107%) contrast(102%);
+}
+
+.a4-right {
+    position: relative;
+    width: 40%;
+}
+
+.a4-right img {
+    margin-bottom: -5px;
+}
+
+.a4-r-text {
+    position: absolute;
+    top: 20px; right: -30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.a4-r-text h5 {
+    color: #444;
+    font-size: 28px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.a4-r-text h5 span {
+    color: #444;
+    font-size: 55px;
+    font-family: 'JSArirang-Regular';
+}
+
+@font-face {
+    font-family: 'JSArirang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirang-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.a4-r-text li {
+    color: #888;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .a4-sb {
+        width: 800px;
+    }
+
+    .a4-box-wrapper {
+        gap: 3rem;
+    }
+    
+    .a4-r-text {
+        top: 60px; right: 0;
+    }
+}
