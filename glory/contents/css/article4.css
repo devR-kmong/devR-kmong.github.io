@@ -82,19 +82,6 @@
     margin-top: 1rem;
 }
 
-.a4-box:hover {
-    background-color: var(--main-color);
-}
-
-.a4-box:hover .a4-box-text h5,
-.a4-box:hover .a4-box-text p {
-    color: #fff;
-}
-
-.a4-box:hover .a4-box-icon img {
-    filter: invert(100%) sepia(0%) saturate(7464%) hue-rotate(84deg) brightness(107%) contrast(102%);
-}
-
 .a4-box:first-child {
     background-color: var(--main-color);
 }
