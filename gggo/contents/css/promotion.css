@@ -17,8 +17,15 @@
     z-index: 10;
 }
 
+.p-1 {
+    position: absolute;
+    left: 425px;
+    z-index: 1;
+}
+
 .p-text {
     margin-bottom: 2rem;
+    z-index: 10;
 }
 
 .p-text h4 {
