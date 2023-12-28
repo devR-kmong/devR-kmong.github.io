@@ -1,0 +1,46 @@
+.logo {
+    display: none;
+}
+
+.logo-s {
+    display: flex;
+}
+
+.menu-item a {
+    color: #222;
+    transition: none;
+}
+
+.header.more .menu-item a {
+    color: #fff;
+}
+
+.header.Fixed .logo {
+    display: flex !important;
+}
+
+.header.Fixed .logo-s {
+    display: none !important;
+}
+
+.header.Fixed .menu-item a {
+    color: #fff;
+}
+
+.menuBtns .bar1,
+.menuBtns .bar2,
+.menuBtns .bar3 {
+    background-color: #222;
+}
+
+.header.more .menuBtns .bar1,
+.header.more .menuBtns .bar2,
+.header.more .menuBtns .bar3,
+.header.Fixed .menuBtns .bar1,
+.header.Fixed .menuBtns .bar2,
+.header.Fixed .menuBtns .bar3 {
+    background-color: #fff;
+}
+
+
+/*==================================================*/

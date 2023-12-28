@@ -1,0 +1,171 @@
+.us1-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.us1-image {
+    width: 100%;
+    height: 300px;
+    background: url(../images/us1-1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.us-text h5 {
+    color: #222;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.us-text p {
+    color: #777;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.65;
+    margin-top: 2rem;
+}
+
+
+.us2 {
+    position: relative;
+}
+
+.us2-flow-wrapper {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.us2-flow {
+    color: #fff;
+    font-size: 280px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 var(--main-color), 1px -1px 0 var(--main-color), -1px 1px 0 var(--main-color), 1px 1px 0 var(--main-color);
+    animation: flow 60s linear infinite;
+    user-select: none;
+    opacity: .3;
+    z-index: 1;
+}
+
+@keyframes flow {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-400%, 0, 0);
+    }
+}
+
+.us2-bg {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 50%;
+    height: 65%;
+    background-color: var(--main-color);
+    opacity: .15;
+    z-index: 1;
+}
+
+.us2-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    z-index: 10;
+}
+
+.us2-image {
+    box-shadow: 0 35px 35px 0 rgba(0, 0, 0, .15);
+}
+
+.us2 .us-text {
+    margin-top: 2rem;
+}
+
+.us2-sign {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.us2-sign span {
+    color: #777;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.us2-sign p {
+    color: #222;
+    font-size: 55px;
+    font-family: 'JSArirang-Regular';
+}
+
+
+.us3 {
+    position: relative;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.us3-sb {
+    position: absolute;
+    top: -0; right: 0;
+    width: 700px;
+    opacity: .1;
+    z-index: 1;
+}
+
+.us3-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    z-index: 10;
+}
+
+.us3-image {
+    width: 800px;
+    margin-bottom: -7rem;
+}
+
+.us3-text {
+    margin-top: 5rem;
+}
+
+.us3-text h5 {
+    color: #222;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.us3-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.us3-list li {
+    color: #888;
+    font-size: 19px;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .us3-sb {
+        right: 10%;
+        width: 800px;
+    }
+}

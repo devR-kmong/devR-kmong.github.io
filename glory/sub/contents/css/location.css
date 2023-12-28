@@ -1,0 +1,82 @@
+.loc-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
+
+#map {
+    width: 50%;
+    height: 500px;
+    background-color: #ddd;
+}
+
+.loc-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.loc-box h5 {
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.loc-box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.loc-box li {
+    color: #222;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.loc-box li span {
+    width: 80px;
+    color: #666;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 0;
+}
+
+.loc-box li span::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.loc-box li span::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.loc-box li p {
+    color: var(--main-color);
+}
+
+.loc-box a {
+    width: fit-content;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.loc-box a i {
+    font-size: 34px;
+}
+
+
+/*==================================================*/
