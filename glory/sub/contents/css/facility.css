@@ -1,0 +1,31 @@
+.fc-swiper {
+    width: 100%;
+}
+
+.fcSwiper1,
+.fcSwiper2 {
+    width: 100%;
+}
+
+.fcSwiper1 .swiper-slide img {
+    width: 100%;
+}
+
+.fcSwiper2 {
+    margin-top: 1rem;
+}
+
+.fcSwiper2 .swiper-slide {
+    cursor: pointer;
+}
+
+.fcSwiper1 .swiper-button-prev {
+    left: 30px;
+}
+
+.fcSwiper1 .swiper-button-next {
+    right: 30px;
+}
+
+
+/*==================================================*/

@@ -1,12 +1,13 @@
 .loc-wrapper {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     gap: 3rem;
 }
 
 #map {
-    width: 50%;
-    height: 500px;
+    width: 60%;
+    height: 700px;
     border: 1px solid #eee;
     background-color: #ddd;
 }
@@ -65,18 +66,17 @@
     color: var(--main-color);
 }
 
-.loc-box a {
+.loc-telBtn {
     width: fit-content;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 600;
-    letter-spacing: 0;
     display: flex;
     align-items: center;
     gap: 7px;
 }
 
-.loc-box a i {
-    font-size: 34px;
+.loc-telBtn i {
+    font-size: 32px;
 }
 
 

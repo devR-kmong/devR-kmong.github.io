@@ -43,22 +43,5 @@
     font-family: 'Montserrat';
 }
 
-.a5Btn {
-    color: #fff;
-    width: 260px;
-    height: 60px;
-    font-size: 19px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    background-color: #151515;
-}
-
-.a5Btn img {
-    width: 22px;
-}
-
 
 /*==================================================*/

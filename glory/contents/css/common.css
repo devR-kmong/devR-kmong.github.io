@@ -44,6 +44,29 @@ li {
 
 
 /*==================================================*/
+.rsvBtn {
+    color: #fff;
+    width: 250px;
+    height: 58px;
+    font-size: 19px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--main-color);
+}
+
+.rsvBtn img {
+    width: 22px;
+}
+
+.rsvBtn i {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+
 @font-face {
     font-family: 'SeoulHangangM';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
