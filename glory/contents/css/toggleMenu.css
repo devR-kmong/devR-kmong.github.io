@@ -28,6 +28,10 @@
     align-items: center;
 }
 
+.logo-t {
+    display: flex !important;
+}
+
 .tgm-close {
     width: 30px;
     height: 30px;

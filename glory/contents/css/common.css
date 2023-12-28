@@ -15,6 +15,7 @@
 }
 
 html, body {
+    background-color: #fff;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -46,6 +47,13 @@ li {
 @font-face {
     font-family: 'SeoulHangangM';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JSArirang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirang-RegularA1.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
