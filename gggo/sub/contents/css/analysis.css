@@ -1,0 +1,87 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.az-title {
+    width: 100%;
+    color: #222;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.az1-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.az1-box {
+    padding: 40px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 3%);
+}
+
+.az1-b-title {
+    color: #aaa;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.az1-b-grade {
+    font-size: 55px;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.az1-b-grade span {
+    font-size: 26px;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+.az1-b-grade em {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5px;
+}
+
+.az1-status {
+    display: flex;
+    align-items: flex-end;
+}
+
+.az1-status i,
+.az1-status p {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.az1-status.up .az1-s-arrow,
+.az1-status.up p {
+    color: #0acf97;
+}
+.az1-status.down .az1-s-arrow,
+.az1-status.down p {
+    color: #fa5c7c;
+}
+
+.az1-status.down .az1-s-arrow {
+    transform: rotate(180deg);
+}
+
+.az1-status span {
+    color: #666;
+    font-size: 19px;
+    margin-left: 20px;
+}
+
+.az1-b-graph {
+    margin-top: 3rem;
+}
+
+
+/*==================================================*/

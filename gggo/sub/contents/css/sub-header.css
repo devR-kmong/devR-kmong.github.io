@@ -1,0 +1,46 @@
+.header-pc .global {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.header-pc .header {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.header-pc .logo-w {
+    display: flex;
+}
+
+.header-pc .logo {
+    display: none;
+}
+
+.header-pc .menu li a {
+    color: #fff;
+}
+
+
+/*==================================================*/
+@media (min-width: 1251px) {
+    .header-pc:hover .global {
+        background-color: var(--main-color);
+    }
+    
+    .header-pc:hover .header {
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+
+    .header-pc:hover .logo-w {
+        display: none;
+    }
+
+    .header-pc:hover .logo {
+        display: flex;
+    }
+
+    .header-pc:hover .menu li a {
+        color: #222;
+    }
+}

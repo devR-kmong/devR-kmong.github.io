@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../contents/css/common.css">
+    <link rel="stylesheet" href="../contents/css/header.css">
+    <link rel="stylesheet" href="../contents/css/promotion.css">
+    <link rel="stylesheet" href="../contents/css/article_common.css">
+    <link rel="stylesheet" href="../contents/css/article1.css">
+    <link rel="stylesheet" href="../contents/css/article4.css">
+    <link rel="stylesheet" href="../contents/css/article6.css">
+    <link rel="stylesheet" href="../contents/css/footer.css">
+    <link rel="stylesheet" href="../contents/css/fixed.css">
+    <link rel="stylesheet" href="contents/css/sub-common.css">
+    <link rel="stylesheet" href="contents/css/sub-header.css">
+    <link rel="stylesheet" href="contents/css/sub-promotion.css">
+    <link rel="stylesheet" href="contents/css/analysis.css">
+    <link rel="shortcut icon" href="../contents/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>성적분석</title>
+</head>
+<body>
+    <div class="header-pc">
+        <div class="global">
+            <div class="gnb">
+                <div class="gnb-logo">
+                    <a href="" target="_blank">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </div>
+                <div class="gnb-quick">
+                    <a href="">
+                        홈으로
+                    </a>
+                    <a href="">
+                        로그인
+                    </a>
+                    <a href="">
+                        회원가입
+                    </a>
+                    <a href="">
+                        마이페이지
+                    </a>
+                    <a href="">
+                        공지사항
+                    </a>
+                    <a href="">
+                        고객센터
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="lnb">
+                <a href="" class="logo-w active"><img src="../contents/images/logo-w.svg"></a>
+                <a href="" class="logo"><img src="../contents/images/logo.svg"></a>
+                <ul class="menu">
+                    <li><a href="">전공탐색</a></li>
+                    <li><a href="">성적분석</a></li>
+                    <li><a href="">수시지원</a></li>
+                    <li><a href="">정시지원</a></li>
+                    <li><a href="">상담신청</a></li>
+                    <li><a href="">학급통계</a></li>
+                    <li><a href="">설정관리</a></li>
+                </ul>
+            </div>
+            <div class="sub-nav-wrapper">
+                <div class="sub-nav">
+                    <ul>
+                        <li><a href="">진로검사</a></li>
+                        <li><a href="">전공탐색</a></li>
+                        <li><a href="">대학탐색</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">종합분석</a></li>
+                        <li><a href="">교과상세분석</a></li>
+                        <li><a href="">수능상세분석</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">수시검색</a></li>
+                        <li><a href="">수시희망대학</a></li>
+                        <li><a href="">수시리포트</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">정시검색</a></li>
+                        <li><a href="">정시희망대학</a></li>
+                        <li><a href="">정시리포트</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">상담정보입력</a></li>
+                        <li><a href="">상담내역</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">석차일람</a></li>
+                        <li><a href="">종합석차</a></li>
+                        <li><a href="">교과석차</a></li>
+                        <li><a href="">수능석차</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">사용자관리</a></li>
+                        <li><a href="">성적관리</a></li>
+                        <li><a href="">진학결과</a></li>
+                        <li><a href="">진학통계</a></li>
+                        <li><a href="">메시지관리</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-m">
+        <a href="" class="logo active"><img src="../contents/images/logo.svg"></a>
+        <div class="toggle">
+            <div class="tg-search">
+                <i class="ri-search-line"></i>
+            </div>
+            <div class="tg-menu">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+        <div class="tgm-wrapper">
+            <div class="tgm-top">
+                <a href="" class="logo-m"><img src="../contents/images/logo.svg"></a>
+                <div class="tg-close">
+                    <img src="../contents/images/close.svg">
+                </div>
+            </div>
+            <ul class="toggle-menu">
+                <a href="" class="tgm-login">
+                    로그인
+                </a>
+                <li>
+                    <div class="tgm-head">
+                        전공탐색
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">진로검사</a></li>
+                        <li><a href="">전공탐색</a></li>
+                        <li><a href="">대학탐색</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tgm-head">
+                        성적분석
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">종합분석</a></li>
+                        <li><a href="">교과상세분석</a></li>
+                        <li><a href="">수능상세분석</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tgm-head">
+                        수시지원
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">수시검색</a></li>
+                        <li><a href="">수시희망대학</a></li>
+                        <li><a href="">수시리포트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tgm-head">
+                        정시지원
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">정시검색</a></li>
+                        <li><a href="">정시희망대학</a></li>
+                        <li><a href="">정시리포트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tgm-head">
+                        상담신청
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">상담정보입력</a></li>
+                        <li><a href="">상담내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tgm-head">
+                        학급통계
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">석차일람</a></li>
+                        <li><a href="">종합석차</a></li>
+                        <li><a href="">교과석차</a></li>
+                        <li><a href="">수능석차</a></li>                   
+                    </ul>
+                </li>
+                <li>
+                    <div class="tgm-head">
+                        설정관리
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">사용자관리</a></li>
+                        <li><a href="">성적관리</a></li>
+                        <li><a href="">진학결과</a></li>
+                        <li><a href="">진학통계</a></li>
+                        <li><a href="">메시지관리</a></li>                  
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section class="sub-promotion anlz">
+            <div class="sub-promotion-wrapper">
+                <div class="sub-p-text">
+                    <h5>
+                        성적분석
+                    </h5>
+                </div>
+            </div>
+            <div class="sub-menu">
+                <div class="sub-menu-wrapper">
+                    <a href="" class="sub-homebtn">
+                        <i class="ri-home-4-line"></i>
+                    </a>
+                    <div class="sm-vertical"></div>
+                    <div class="sub-navBtn sn-1">
+                        성적분석
+                        <i class="ri-arrow-down-s-fill"></i>
+                        <ul class="sub-dropdown dd-1">
+                            <li>
+                                성적분석
+                                <i class="ri-arrow-up-s-fill"></i>
+                            </li>
+                            <li><a href="">전공탐색</a></li>
+                            <li><a href="">성적분석</a></li>
+                            <li><a href="">수시지원</a></li>
+                            <li><a href="">정시지원</a></li>
+                            <li><a href="">상담신청</a></li>
+                            <li><a href="">학급통계</a></li>
+                            <li><a href="">설정관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="sm-vertical"></div>
+                    <div class="sub-navBtn sn-2">
+                        종합분석
+                        <i class="ri-arrow-down-s-fill"></i>
+                        <ul class="sub-dropdown dd-2">
+                            <li>
+                                종합분석
+                                <i class="ri-arrow-up-s-fill"></i>
+                            </li>
+                            <li><a href="">종합분석</a></li>
+                            <li><a href="">교과상세분석</a></li>
+                            <li><a href="">수능상세분석</a></li>
+                        </ul>
+                    </div>
+                    <div class="sm-vertical"></div>
+                    <div class="sub-navBtn sn-3">
+                        3학년 1반 3번 유혜은
+                    </div>
+                    <div class="sm-vertical"></div>
+                </div>
+            </div>
+        </section>
+        <section class="article sub-article az1">
+            <div class="article-wrapper">
+                <div class="az-title">
+                    종합분석
+                </div>
+                <div class="az1-box-wrapper">
+                    <div class="az1-box">
+                        <div class="az1-b-title">
+                            교과(등급)
+                        </div>
+                        <div class="az1-b-grade">
+                            3.25<span>등급</span>
+                        </div>
+                        <div class="az1-status up">
+                            <div class="az1-s-arrow">
+                                <i class="ri-arrow-up-fill"></i>
+                            </div>
+                            <p>
+                                1.2등급
+                            </p>
+                            <span>
+                                최고점 대비
+                            </span>
+                        </div>
+                        <div class="az1-b-graph">
+                            <div id="chart1"></div>
+                        </div>
+                    </div>
+                    <div class="az1-box">
+                        <div class="az1-b-title">
+                            수능(등급/백분위)
+                        </div>
+                        <div class="az1-b-grade">
+                            4.5<span>등급</span><em>(72.3점)</em>
+                        </div>
+                        <div class="az1-status down">
+                            <div class="az1-s-arrow">
+                                <i class="ri-arrow-up-fill"></i>
+                            </div>
+                            <p>
+                                1.2등급
+                            </p>
+                            <span>
+                                최고점 대비
+                            </span>
+                        </div>
+                        <div class="az1-b-graph">
+                            <div id="chart2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="footer-top">
+            <ul>
+                <li class="fBtn">
+                    <a href="">
+                        한국전문대학교육협의회
+                    </a>
+                </li>
+                <li class="fBtn">
+                    <a href="">
+                        개인정보처리방침
+                    </a>
+                </li>
+                <li class="fBtn">
+                    <a href="">
+                        이메일무단수집거부
+                    </a>
+                </li>
+                <li class="fBtn">
+                    <a href="">
+                        이용약관
+                    </a>
+                </li>
+                <li class="fBtn">
+                    <a href="">
+                        저작권정책
+                    </a>
+                </li>
+                <li class="fBtn">
+                    <a href="">
+                        사이트맵
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-box">
+                <a href="" class="logo-f">
+                    <img src="../contents/images/logo-f.svg">
+                </a>
+                <div class="footer-text">
+                    <p>
+                        04505 서울특별시 중구 서소문로 38 (중림동 센트럴타워 7층) 대표전화 : 02-3145-1200 팩스 : 02-364-1584<br/>
+                        사업자번호 : 116-82-03287 | 대표자(회장) : 남성희 | E-mail : kccemaster@kcce.or.kr<br/>
+                        ⓒ 2020 KCCE. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="footer-family">
+                    <p>
+                        관련사이트 바로가기
+                    </p>
+                    <div class="ff-arrow">
+                        <i class="ri-arrow-up-s-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed">
+        <div class="fixedBtn">
+            <i class="ri-arrow-right-s-line fb-arrow"></i>
+        </div>
+        <div class="fixed-contents">
+            <div class="fixed-sort">
+                <select name="" id="">
+                    <option value="">1학년</option>
+                    <option value="">2학년</option>
+                    <option value="" selected>3학년</option>
+                </select>
+                <select name="" id="">
+                    <option value="">1반</option>
+                    <option value="">2반</option>
+                    <option value="">3반</option>
+                    <option value="">4반</option>
+                    <option value="">5반</option>
+                    <option value="">6반</option>
+                </select>
+                <select name="" id="">
+                    <option value="">2023년 9월 모의고사</option>
+                    <option value="">2023년 7월 모의고사</option>
+                    <option value="">2023년 6월 모의고사</option>
+                    <option value="">2023년 5월 모의고사</option>
+                    <option value="">2023년 3월 모의고사</option>
+                </select>
+            </div>
+            <div class="fixed-list">
+                <div class="fl-box-wrapper">
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    최서연
+                                </h5>
+                                <p>
+                                    3학년 1반 1번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    조인서
+                                </h5>
+                                <p>
+                                    3학년 1반 2번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    유채은
+                                </h5>
+                                <p>
+                                    3학년 1반 3번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    조수현
+                                </h5>
+                                <p>
+                                    3학년 1반 4번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    남시현
+                                </h5>
+                                <p>
+                                    3학년 1반 5번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    박연우
+                                </h5>
+                                <p>
+                                    3학년 1반 6번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    이상명
+                                </h5>
+                                <p>
+                                    3학년 1반 7번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    송연우
+                                </h5>
+                                <p>
+                                    3학년 1반 8번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    양재영
+                                </h5>
+                                <p>
+                                    3학년 1반 9번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    이지혁
+                                </h5>
+                                <p>
+                                    3학년 1반 10번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    김예지
+                                </h5>
+                                <p>
+                                    3학년 1반 11번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    김보겸
+                                </h5>
+                                <p>
+                                    3학년 1반 12번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    최시우
+                                </h5>
+                                <p>
+                                    3학년 1반 13번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="../contents/js/fixed.js"></script>
+    <script src="contents/js/sub-header.js"></script>
+
+    <script>
+        var options = {
+            series: [{
+                name: '최고등급',
+                type: 'column',
+                color: '#10cd98',
+                data: [3.5, 4, 4, 3.8, 4.2, 2.8]
+            }, {
+                name: '최근등급',
+                type: 'line',
+                color: '#858ef5',
+                data: [6.3, 6.5, 6, 6, 7, 6]
+            }],
+            chart: {
+                height: 350,
+                type: 'line',
+            },
+            stroke: {
+                width: [0, 4]
+            },
+            dataLabels: {
+                enabled: true,
+                enabledOnSeries: [1]
+            },
+            labels: ['주요교과', '국어', '수학', '영어', '사회', '과학'],
+            xaxis: {
+                type: 'text'
+            },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart1"), options);
+        chart.render();
+    </script>
+
+    <script>
+        var options = {
+            series: [{
+                name: '최고등급',
+                type: 'column',
+                color: '#10cd98',
+                data: [3.1, 5, 4.8, 4.5, 5, 3]
+            }, {
+                name: '최근등급',
+                type: 'line',
+                color: '#858ef5',
+                data: [6.5, 6.8, 6, 6, 7, 6]
+            }],
+            chart: {
+                height: 350,
+                type: 'line',
+            },
+            stroke: {
+                width: [0, 4]
+            },
+            dataLabels: {
+                enabled: true,
+                enabledOnSeries: [1]
+            },
+            labels: ['국수영탐', '국어', '수학', '영어', '탐구1', '탐구2'],
+            xaxis: {
+                type: 'text'
+            },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart2"), options);
+        chart.render();
+    </script>
+
+</body>
+</html>
