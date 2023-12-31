@@ -285,7 +285,7 @@
                     </div>
                     <div class="sm-vertical"></div>
                     <div class="sub-navBtn sn-3">
-                        3학년 1반 3번 유혜은
+                        3학년 1반 3번 유채은
                     </div>
                     <div class="sm-vertical"></div>
                 </div>
@@ -730,6 +730,20 @@
             chart: {
                 height: 350,
                 type: 'line',
+                toolbar: {
+                    show: false,
+                    offsetX: -10,
+                    offsetY: -10,
+                    tools: {
+                        download: true,
+                        selection: false,
+                        zoom: false,
+                        zoomin: false,
+                        zoomout: false,
+                        pan: false,
+                        reset: true,
+                    }
+                },
             },
             stroke: {
                 width: [0, 4]
@@ -741,6 +755,14 @@
             labels: ['주요교과', '국어', '수학', '영어', '사회', '과학'],
             xaxis: {
                 type: 'text'
+            },
+            yaxis: {
+                min: 1,
+                max: 9,
+                tickAmount: 8,
+                decimalsInFloat: false,
+                reversed: true,
+                showForNullSeries: true,
             },
         };
 
@@ -764,6 +786,20 @@
             chart: {
                 height: 350,
                 type: 'line',
+                toolbar: {
+                    show: false,
+                    offsetX: -10,
+                    offsetY: -10,
+                    tools: {
+                        download: true,
+                        selection: false,
+                        zoom: false,
+                        zoomin: false,
+                        zoomout: false,
+                        pan: false,
+                        reset: true,
+                    }
+                },
             },
             stroke: {
                 width: [0, 4]
@@ -775,6 +811,14 @@
             labels: ['국수영탐', '국어', '수학', '영어', '탐구1', '탐구2'],
             xaxis: {
                 type: 'text'
+            },
+            yaxis: {
+                min: 1,
+                max: 9,
+                tickAmount: 8,
+                decimalsInFloat: false,
+                reversed: true,
+                showForNullSeries: true,
             },
         };
 
