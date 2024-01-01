@@ -1,0 +1,35 @@
+.article {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background: #fff;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.article-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/*==================================================*/
+@media (max-width: 550px) {
+    .article {
+        padding: 40px 0;
+    }
+}
