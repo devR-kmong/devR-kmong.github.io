@@ -1,0 +1,161 @@
+.floating {
+    position: fixed;
+    top: 150px; left: 50%;
+    transform: translate(433px, 0);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;]
+}
+
+.floating a {
+    margin-top: -4px;
+}
+
+.floating a:first-child div {
+    position: relative;
+}
+
+.fl-call {
+    position: absolute;
+    top: 40px; left: 50%;
+    transform: translate(-60%, 0);
+    width: 65px;
+    -webkit-animation: updown .7s infinite ease-in-out;
+    animation: updown .7s infinite ease-in-out;
+}
+
+.fl-1 {
+    width: 178px;
+}
+
+.fl-2,
+.fl-top {
+    width: 160px;
+}
+
+.scrollDown {
+    position: fixed;
+    bottom: 40px; left: 49.4%;
+    width: 26px;
+    -webkit-animation: upDown 1s infinite ease-in-out;
+    animation: upDown 1s infinite ease-in-out;
+    z-index: 999;
+}
+
+
+@keyframes updown {
+    0% {
+        top: 40px;
+    }
+
+    15% {
+        top: 35px;
+    }
+
+    30% {
+        top: 40px;
+    }
+
+    45% {
+        top: 35px;
+    }
+
+    60% {
+        top: 40px;
+    }
+
+    100% {
+        top: 40px;
+    }
+}
+
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-7px);
+	}
+	50% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform:  translateY(-7px);
+	}
+}
+
+
+/*==================================================*/
+@media (min-width: 2450px) {
+    .scrollDown {
+        bottom: 160px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .floating {
+        top: unset; left: unset;
+        bottom: 20px; right: 20px;
+        transform: unset;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .fl-call {
+        width: 45px;
+    }
+    
+    .fl-1 {
+        width: 148px;
+    }
+
+    .fl-2,
+    .fl-top {
+        width: 135px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .floating {
+        bottom: 15px; right: 15px;
+    }
+    
+    .fl-call {
+        top: 27px;
+        width: 35px;
+        transform: translate(-50%, 0);
+    }
+
+    @keyframes updown {
+        0% {
+            top: 27px;
+        }
+    
+        15% {
+            top: 23px;
+        }
+    
+        30% {
+            top: 27px;
+        }
+    
+        45% {
+            top: 23px;
+        }
+    
+        60% {
+            top: 27px;
+        }
+    
+        100% {
+            top: 27px;
+        }
+    }
+    
+    .fl-1,
+    .fl-2,
+    .fl-top {
+        width: 100px;
+    }
+}
