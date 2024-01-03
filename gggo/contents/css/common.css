@@ -17,11 +17,6 @@
 
 html, body {
     background-color: #fff;
-    -webkit-font-smoothing: antialiased;
-    backface-visibility: hidden;
-    image-rendering: -webkit-optimize-contrast;
-    transform: translateZ(0);
-    will-change: transform;
 }
 
 img {
