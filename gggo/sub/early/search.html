@@ -959,6 +959,8 @@
         $('.swiper-slide').click(function () {
             $(this).addClass('on');
             $('.swiper-slide').not($(this)).removeClass('on');
+            $('.es-univ img').removeClass('on')
+            $('.es-box-wrapper, .es-5').hide();
         })
     </script>
 
