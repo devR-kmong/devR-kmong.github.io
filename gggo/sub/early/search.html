@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../contents/css/common.css">
+    <link rel="stylesheet" href="../../contents/css/header.css">
+    <link rel="stylesheet" href="../../contents/css/promotion.css">
+    <link rel="stylesheet" href="../../contents/css/article_common.css">
+    <link rel="stylesheet" href="../../contents/css/article1.css">
+    <link rel="stylesheet" href="../../contents/css/article4.css">
+    <link rel="stylesheet" href="../../contents/css/article6.css">
+    <link rel="stylesheet" href="../../contents/css/footer.css">
+    <link rel="stylesheet" href="../../contents/css/fixed.css">
+    <link rel="stylesheet" href="../../contents/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../contents/css/sub-common.css">
+    <link rel="stylesheet" href="../contents/css/sub-header.css">
+    <link rel="stylesheet" href="../contents/css/sub-promotion.css">
+    <link rel="stylesheet" href="../contents/css/search.css">
+    <link rel="shortcut icon" href="../../contents/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="../../contents/js/swiper-bundle.min.js"></script>
+    <title>수시검색</title>
+</head>
+<body>
+    <div class="header-pc">
+        <div class="global">
+            <div class="gnb">
+                <div class="gnb-logo">
+                    <a href="" target="_blank">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </div>
+                <div class="gnb-quick">
+                    <a href="">
+                        홈으로
+                    </a>
+                    <a href="">
+                        로그인
+                    </a>
+                    <a href="">
+                        회원가입
+                    </a>
+                    <a href="">
+                        마이페이지
+                    </a>
+                    <a href="">
+                        공지사항
+                    </a>
+                    <a href="">
+                        고객센터
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="lnb">
+                <a href="" class="logo-w active"><img src="../../contents/images/logo-w.svg"></a>
+                <a href="" class="logo"><img src="../../contents/images/logo.svg"></a>
+                <ul class="menu">
+                    <li><a href="">전공탐색</a></li>
+                    <li><a href="">성적분석</a></li>
+                    <li><a href="">수시지원</a></li>
+                    <li><a href="">정시지원</a></li>
+                    <li><a href="">상담신청</a></li>
+                    <li><a href="">학급통계</a></li>
+                    <li><a href="">설정관리</a></li>
+                </ul>
+            </div>
+            <div class="sub-nav-wrapper">
+                <div class="sub-nav">
+                    <ul>
+                        <li><a href="">진로검사</a></li>
+                        <li><a href="">전공탐색</a></li>
+                        <li><a href="">대학탐색</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">종합분석</a></li>
+                        <li><a href="">교과상세분석</a></li>
+                        <li><a href="">수능상세분석</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">수시검색</a></li>
+                        <li><a href="">수시희망대학</a></li>
+                        <li><a href="">수시리포트</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">정시검색</a></li>
+                        <li><a href="">정시희망대학</a></li>
+                        <li><a href="">정시리포트</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">상담정보입력</a></li>
+                        <li><a href="">상담내역</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">석차일람</a></li>
+                        <li><a href="">종합석차</a></li>
+                        <li><a href="">교과석차</a></li>
+                        <li><a href="">수능석차</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">사용자관리</a></li>
+                        <li><a href="">성적관리</a></li>
+                        <li><a href="">진학결과</a></li>
+                        <li><a href="">진학통계</a></li>
+                        <li><a href="">메시지관리</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-m">
+        <a href="" class="logo active"><img src="../../contents/images/logo.svg"></a>
+        <div class="toggle">
+            <div class="tg-search">
+                <i class="ri-search-line"></i>
+            </div>
+            <div class="tg-menu">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+        <div class="tgm-wrapper">
+            <div class="tgm-top">
+                <a href="" class="logo-m"><img src="../../contents/images/logo.svg"></a>
+                <div class="tg-close">
+                    <img src="../../contents/images/close.svg">
+                </div>
+            </div>
+            <ul class="toggle-menu">
+                <a href="" class="tgm-login">
+                    로그인
+                </a>
+                <li>
+                    <div class="tgm-head">
+                        전공탐색
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">진로검사</a></li>
+                        <li><a href="">전공탐색</a></li>
+                        <li><a href="">대학탐색</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tgm-head">
+                        성적분석
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">종합분석</a></li>
+                        <li><a href="">교과상세분석</a></li>
+                        <li><a href="">수능상세분석</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tgm-head">
+                        수시지원
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">수시검색</a></li>
+                        <li><a href="">수시희망대학</a></li>
+                        <li><a href="">수시리포트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tgm-head">
+                        정시지원
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">정시검색</a></li>
+                        <li><a href="">정시희망대학</a></li>
+                        <li><a href="">정시리포트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tgm-head">
+                        상담신청
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">상담정보입력</a></li>
+                        <li><a href="">상담내역</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="tgm-head">
+                        학급통계
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">석차일람</a></li>
+                        <li><a href="">종합석차</a></li>
+                        <li><a href="">교과석차</a></li>
+                        <li><a href="">수능석차</a></li>                   
+                    </ul>
+                </li>
+                <li>
+                    <div class="tgm-head">
+                        설정관리
+                        <div class="tgm-arrow">
+                            <i class="ri-arrow-down-s-fill"></i>
+                        </div>
+                    </div>
+                    <ul class="tgm-more">
+                        <li><a href="">사용자관리</a></li>
+                        <li><a href="">성적관리</a></li>
+                        <li><a href="">진학결과</a></li>
+                        <li><a href="">진학통계</a></li>
+                        <li><a href="">메시지관리</a></li>                  
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section class="sub-promotion early">
+            <div class="sub-promotion-wrapper">
+                <div class="sub-p-text">
+                    <h5>
+                        수시검색
+                    </h5>
+                </div>
+            </div>
+            <div class="sub-menu">
+                <div class="sub-menu-wrapper">
+                    <a href="" class="sub-homebtn">
+                        <i class="ri-home-4-line"></i>
+                    </a>
+                    <div class="sm-vertical"></div>
+                    <div class="sub-navBtn sn-1">
+                        수시지원
+                        <i class="ri-arrow-down-s-fill"></i>
+                        <ul class="sub-dropdown dd-1">
+                            <li>
+                                수시지원
+                                <i class="ri-arrow-up-s-fill"></i>
+                            </li>
+                            <li><a href="">전공탐색</a></li>
+                            <li><a href="">성적분석</a></li>
+                            <li><a href="">수시지원</a></li>
+                            <li><a href="">정시지원</a></li>
+                            <li><a href="">상담신청</a></li>
+                            <li><a href="">학급통계</a></li>
+                            <li><a href="">설정관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="sm-vertical"></div>
+                    <div class="sub-navBtn sn-2">
+                        수시검색
+                        <i class="ri-arrow-down-s-fill"></i>
+                        <ul class="sub-dropdown dd-2">
+                            <li>
+                                수시검색
+                                <i class="ri-arrow-up-s-fill"></i>
+                            </li>
+                            <li><a href="">수시검색</a></li>
+                            <li><a href="">수시희망대학</a></li>
+                            <li><a href="">수시리포트</a></li>
+                        </ul>
+                    </div>
+                    <div class="sm-vertical"></div>
+                    <div class="sub-navBtn sn-3">
+                        3학년 1반 3번 유채은
+                    </div>
+                    <div class="sm-vertical"></div>
+                </div>
+            </div>
+        </section>
+        <section class="article sub-article es">
+            <div class="article-wrapper">
+                <div class="es-wrapper">
+                    <div class="swiper eSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" id="category-1" key="01" checked="false">
+                                <i class="material-icons">language</i>
+                                <p>언어</p>
+                            </div>
+                            <div class="swiper-slide" id="category-2" key="01" checked="false">
+                                <i class="material-icons">turned_in_not</i>
+                                <p>인문일반</p>
+                            </div>
+                            <div class="swiper-slide" id="category-3" key="01" checked="false">
+                                <i class="material-icons">tour</i>
+                                <p>관광/운항·서비스</p>
+                            </div>
+                            <div class="swiper-slide" id="category-4" key="01" checked="false">
+                                <i class="material-icons">people</i>
+                                <p>사회복지/상담</p>
+                            </div>
+                            <div class="swiper-slide" id="category-5" key="01" checked="false">
+                                <i class="material-icons">assured_workload</i>
+                                <p>행정/사회일반</p>
+                            </div>
+                            <div class="swiper-slide" id="category-6" key="01" checked="false">
+                                <i class="material-icons">add_business</i>
+                                <p>경영/마케팅</p>
+                            </div>
+                            <div class="swiper-slide" id="category-7" key="01" checked="false">
+                                <i class="material-icons">featured_video</i>
+                                <p>광고/홍보</p>
+                            </div>
+                            <div class="swiper-slide" id="category-8" key="01" checked="false">
+                                <i class="material-icons">local_shipping</i>
+                                <p>무역/유통</p>
+                            </div>
+                            <div class="swiper-slide" id="category-9" key="01" checked="false">
+                                <i class="material-icons">paid</i>
+                                <p>회계/금융</p>
+                            </div>
+                            <div class="swiper-slide" id="category-10" key="01" checked="false">
+                                <i class="material-icons">meeting_room</i>
+                                <p>비서/사무</p>
+                            </div>
+                            <div class="swiper-slide" id="category-11" key="01" checked="false">
+                                <i class="material-icons">escalator_warning</i>
+                                <p>유아교육</p>
+                            </div>
+                            <div class="swiper-slide" id="category-12" key="01" checked="false">
+                                <i class="material-icons">baby_changing_station</i>
+                                <p>보육</p>
+                            </div>
+                            <div class="swiper-slide" id="category-13" key="01" checked="false">
+                                <i class="material-icons">history_edu</i>
+                                <p>평생교육</p>
+                            </div>
+                            <div class="swiper-slide" id="category-14" key="01" checked="false">
+                                <i class="material-icons">agriculture</i>
+                                <p>농림/수산</p>
+                            </div>
+                            <div class="swiper-slide" id="category-15" key="01" checked="false">
+                                <i class="material-icons">pets</i>
+                                <p>축산/반려동물</p>
+                            </div>
+                            <div class="swiper-slide" id="category-16" key="01" checked="false">
+                                <i class="material-icons">restaurant_menu</i>
+                                <p>식품/조리</p>
+                            </div>
+                            <div class="swiper-slide" id="category-17" key="01" checked="false">
+                                <i class="material-icons">vaccines</i>
+                                <p>간호</p>
+                            </div>
+                            <div class="swiper-slide" id="category-18" key="01" checked="false">
+                                <i class="material-icons">health_and_safety</i>
+                                <p>보건</p>
+                            </div>
+                            <div class="swiper-slide" id="category-19" key="01" checked="false">
+                                <i class="material-icons">monitor_heart</i>
+                                <p>건강/피부</p>
+                            </div>
+                            <div class="swiper-slide" id="category-20" key="01" checked="false">
+                                <i class="material-icons">build</i>
+                                <p>건축/설비</p>
+                            </div>
+                            <div class="swiper-slide" id="category-21" key="01" checked="false">
+                                <i class="material-icons">construction</i>
+                                <p>건설/토목/조경</p>
+                            </div>
+                            <div class="swiper-slide" id="category-22" key="01" checked="false">
+                                <i class="material-icons">precision_manufacturing</i>
+                                <p>운송/기계/기전</p>
+                            </div>
+                            <div class="swiper-slide" id="category-23" key="01" checked="false">
+                                <i class="material-icons">memory</i>
+                                <p>전기/전자/반도체</p>
+                            </div>
+                            <div class="swiper-slide" id="category-24" key="01" checked="false">
+                                <i class="material-icons">computer</i>
+                                <p>컴퓨터/통신</p>
+                            </div>
+                            <div class="swiper-slide" id="category-25" key="01" checked="false">
+                                <i class="material-icons">safety_check</i>
+                                <p>화공/생명/안전</p>
+                            </div>
+                            <div class="swiper-slide" id="category-26" key="01" checked="false">
+                                <i class="material-icons">medical_services</i>
+                                <p>의료장비</p>
+                            </div>
+                            <div class="swiper-slide" id="category-27" key="01" checked="false">
+                                <i class="material-icons">crop_free</i>
+                                <p>자율전공</p>
+                            </div>
+                            <div class="swiper-slide" id="category-28" key="01" checked="false">
+                                <i class="material-icons">face_retouching_natural</i>
+                                <p>헤어/분장</p>
+                            </div>
+                            <div class="swiper-slide" id="category-29" key="01" checked="false">
+                                <i class="material-icons">headphones</i>
+                                <p>음악/음향</p>
+                            </div>
+                            <div class="swiper-slide" id="category-30" key="01" checked="false">
+                                <i class="material-icons">brush</i>
+                                <p>미술/디자인</p>
+                            </div>
+                            <div class="swiper-slide" id="category-31" key="01" checked="false">
+                                <i class="material-icons">sports_soccer</i>
+                                <p>체육/무용</p>
+                            </div>
+                            <div class="swiper-slide" id="category-32" key="01" checked="false">
+                                <i class="material-icons">festival</i>
+                                <p>공연</p>
+                            </div>
+                            <div class="swiper-slide" id="category-33" key="01" checked="false">
+                                <i class="material-icons">sports_esports</i>
+                                <p>게임</p>
+                            </div>
+                            <div class="swiper-slide" id="category-34" key="01" checked="false">
+                                <i class="material-icons">build</i>
+                                <p>제철/재료</p>
+                            </div>
+                        </div>
+                        <div class="swiperBtn-wrapper">
+                            <div class="swiper-button-prev e-sbp">
+                                <i class="ri-arrow-left-s-line"></i>
+                            </div>
+                            <div class="swiper-button-next e-sbn">
+                                <i class="ri-arrow-right-s-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../contents/images/es-1.png" class="es-1">
+                    <div class="es-box-wrapper">
+                        <div class="es-btn-wrapper">
+                            <div class="esBtn on" data-target="data1">
+                                그래프형
+                            </div>
+                            <div class="esBtn" data-target="data2">
+                                목록형
+                            </div>
+                        </div>
+                        <div class="es-box on" id="data1">
+                            <img src="../contents/images/es-2.png" class="es-2">
+                            <div class="es-b-bottom">
+                                <img src="../contents/images/es-3.png" class="es-3">
+                            </div>
+                        </div>
+                        <div class="es-box" id="data2">
+                            <div class="es-univ">
+                                <img src="../contents/images/es-4/es-4_01.jpg">
+                                <img src="../contents/images/es-4/es-4_02.jpg">
+                                <img src="../contents/images/es-4/es-4_03.jpg">
+                                <img src="../contents/images/es-4/es-4_04.jpg">
+                                <img src="../contents/images/es-4/es-4_05.jpg">
+                                <img src="../contents/images/es-4/es-4_06.jpg">
+                                <img src="../contents/images/es-4/es-4_07.jpg" class="es-4-07">
+                                <img src="../contents/images/es-4/es-4_08.jpg">
+                                <img src="../contents/images/es-4/es-4_09.jpg">
+                                <img src="../contents/images/es-4/es-4_10.jpg">
+                                <img src="../contents/images/es-4/es-4_11.jpg">
+                                <img src="../contents/images/es-4/es-4_12.jpg" class="es-4-12">
+                                <img src="../contents/images/es-4/es-4_13.jpg">
+                                <img src="../contents/images/es-4/es-4_14.jpg">
+                                <img src="../contents/images/es-4/es-4_15.jpg">
+                                <img src="../contents/images/es-4/es-4_16.jpg">
+                                <img src="../contents/images/es-4/es-4_17.jpg">
+                                <img src="../contents/images/es-4/es-4_18.jpg">
+                                <img src="../contents/images/es-4/es-4_19.jpg">
+                                <img src="../contents/images/es-4/es-4_20.jpg">
+                                <img src="../contents/images/es-4/es-4_21.jpg">
+                                <img src="../contents/images/es-4/es-4_22.jpg">
+                                <img src="../contents/images/es-4/es-4_23.jpg">
+                                <img src="../contents/images/es-4/es-4_24.jpg">
+                                <img src="../contents/images/es-4/es-4_25.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="es-5">
+                        <img src="../contents/images/es-5.png">
+                        <div class="es5-safe-wrapper">
+                            <div class="es5-safeBtn">
+                                안정
+                            </div>
+                            <div class="es5-safeBtn">
+                                안정
+                            </div>
+                            <div class="es5-safeBtn">
+                                안정
+                            </div>
+                            <div class="es5-safeBtn">
+                                안정
+                            </div>
+                            <div class="es5-safeBtn">
+                                안정
+                            </div>
+                            <div class="es5-safeBtn">
+                                안정
+                            </div>
+                            <div class="es5-safeBtn">
+                                안정
+                            </div>
+                            <div class="es5-safeBtn grey">
+                                적정
+                            </div>
+                            <div class="es5-safeBtn yellow">
+                                소신
+                            </div>
+                            <div class="es5-safeBtn red">
+                                불안
+                            </div>
+                        </div>
+                        <div class="es5-wish-wrapper">
+                            <div class="es5-wishBtn">
+                                추가
+                            </div>
+                            <div class="es5-wishBtn">
+                                추가
+                            </div>
+                            <div class="es5-wishBtn">
+                                추가
+                            </div>
+                            <div class="es5-wishBtn">
+                                추가
+                            </div>
+                            <div class="es5-wishBtn">
+                                추가
+                            </div>
+                            <div class="es5-wishBtn">
+                                추가
+                            </div>
+                            <div class="es5-wishBtn">
+                                추가
+                            </div>
+                            <div class="es5-wishBtn">
+                                추가
+                            </div>
+                            <div class="es5-wishBtn">
+                                추가
+                            </div>
+                            <div class="es5-wishBtn">
+                                추가
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="footer-top">
+            <ul>
+                <li class="fBtn">
+                    <a href="">
+                        한국전문대학교육협의회
+                    </a>
+                </li>
+                <li class="fBtn">
+                    <a href="">
+                        개인정보처리방침
+                    </a>
+                </li>
+                <li class="fBtn">
+                    <a href="">
+                        이메일무단수집거부
+                    </a>
+                </li>
+                <li class="fBtn">
+                    <a href="">
+                        이용약관
+                    </a>
+                </li>
+                <li class="fBtn">
+                    <a href="">
+                        저작권정책
+                    </a>
+                </li>
+                <li class="fBtn">
+                    <a href="">
+                        사이트맵
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-box">
+                <a href="" class="logo-f">
+                    <img src="../../contents/images/logo-f.svg">
+                </a>
+                <div class="footer-text">
+                    <p>
+                        04505 서울특별시 중구 서소문로 38 (중림동 센트럴타워 7층) 대표전화 : 02-3145-1200 팩스 : 02-364-1584<br/>
+                        사업자번호 : 116-82-03287 | 대표자(회장) : 남성희 | E-mail : kccemaster@kcce.or.kr<br/>
+                        ⓒ 2020 KCCE. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="footer-family">
+                    <p>
+                        관련사이트 바로가기
+                    </p>
+                    <div class="ff-arrow">
+                        <i class="ri-arrow-up-s-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed">
+        <div class="fixedBtn">
+            <i class="ri-arrow-right-s-line fb-arrow"></i>
+        </div>
+        <div class="fixed-contents">
+            <div class="fixed-sort">
+                <select name="" id="">
+                    <option value="">1학년</option>
+                    <option value="">2학년</option>
+                    <option value="" selected>3학년</option>
+                </select>
+                <select name="" id="">
+                    <option value="">1반</option>
+                    <option value="">2반</option>
+                    <option value="">3반</option>
+                    <option value="">4반</option>
+                    <option value="">5반</option>
+                    <option value="">6반</option>
+                </select>
+                <select name="" id="">
+                    <option value="">2023년 9월 모의고사</option>
+                    <option value="">2023년 7월 모의고사</option>
+                    <option value="">2023년 6월 모의고사</option>
+                    <option value="">2023년 5월 모의고사</option>
+                    <option value="">2023년 3월 모의고사</option>
+                </select>
+            </div>
+            <div class="fixed-list">
+                <div class="fl-box-wrapper">
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    최서연
+                                </h5>
+                                <p>
+                                    3학년 1반 1번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    조인서
+                                </h5>
+                                <p>
+                                    3학년 1반 2번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    유채은
+                                </h5>
+                                <p>
+                                    3학년 1반 3번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    조수현
+                                </h5>
+                                <p>
+                                    3학년 1반 4번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    남시현
+                                </h5>
+                                <p>
+                                    3학년 1반 5번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    박연우
+                                </h5>
+                                <p>
+                                    3학년 1반 6번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    이상명
+                                </h5>
+                                <p>
+                                    3학년 1반 7번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    송연우
+                                </h5>
+                                <p>
+                                    3학년 1반 8번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    양재영
+                                </h5>
+                                <p>
+                                    3학년 1반 9번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    이지혁
+                                </h5>
+                                <p>
+                                    3학년 1반 10번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    김예지
+                                </h5>
+                                <p>
+                                    3학년 1반 11번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    김보겸
+                                </h5>
+                                <p>
+                                    3학년 1반 12번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fl-box">
+                        <img src="../../contents/images/profile.jpg">
+                        <div class="fl-right">
+                            <a href="" class="fl-name">
+                                <h5>
+                                    최시우
+                                </h5>
+                                <p>
+                                    3학년 1반 13번
+                                </p>
+                            </a>
+                            <div class="flBtn-wrapper">
+                                <a href="" class="flBtn">
+                                    <i class="ri-message-3-line"></i>
+                                </a>
+                                <a href="" class="flBtn">
+                                    <i class="ri-mail-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="../../contents/js/fixed.js"></script>
+    <script src="../contents/js/sub-header.js"></script>
+
+    <script>
+        var swiper = new Swiper(".eSwiper", {
+            speed: 600,
+            slidesPerView: 1,
+            centeredSlides: false,
+            slidesPerGroupSkip: 0,
+            grabCursor: false,
+            breakpoints: {
+                769: {
+                    slidesPerView: 13,
+                    slidesPerGroup: 13,
+                },
+                2250: {
+                    slidesPerView: 17,
+                    slidesPerGroup: 17,
+                }
+            },
+            navigation: {
+                nextEl: ".e-sbn",
+                prevEl: ".e-sbp",
+            },
+        });
+    </script>
+
+    <script>
+        $('.swiper-slide').click(function () {
+            $(this).toggleClass('on');
+            $('.swiper-slide').not($(this)).removeClass('on');
+        })
+    </script>
+
+    <script>
+        $(function () {
+            $('.esBtn').click(function () {
+                id = $($(this).data('target')).selector;
+                $('.es-box').hide();
+                $('#' + id).show().css('display','flex');
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            for (let i = 0; i < $('.esBtn').length; i++) {
+                $('.esBtn').eq(i).click(function () {
+                    $('.esBtn').removeClass('on');
+                    $(this).addClass('on');
+                })
+            }
+        })
+    </script>
+
+    <script>
+        $('.es-univ img').click(function () {
+            $(this).toggleClass('on');
+        })
+    </script>
+
+    <script>
+        $('.es-4-07').click(function () {
+            $('.es-5').toggle();
+        })
+    </script>
+
+    <script>
+        $('.es5-wishBtn').click(function () {
+            $(this).toggleClass('on');
+            $(this).text($(this).text() == '삭제' ? '추가' : '삭제');
+        })
+    </script>
+
+</body>
+</html>
