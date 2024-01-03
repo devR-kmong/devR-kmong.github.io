@@ -168,58 +168,89 @@
     display: none;
 }
 
-.es5-safe-wrapper {
-    position: absolute;
-    top: 121px; left: 65%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.es-table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-top: 5px solid #38218e;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    display: none;
 }
 
-.es5-safeBtn {
-    color: #fff;
-    padding: 4px 8px;
+.es-table tr:first-child td {
+    color: #444;
+    padding: 6px 0;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #d6d3e5;
+}
+
+.es-table tr:nth-child(2) td {
+    color: #444;
+    padding: 6px 0;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #d6d3e5;
+}
+
+.es-table tr td {
+    color: #444;
+    padding: 0;
     font-size: 14px;
     font-weight: 400;
-    border-radius: 5px;
-    background-color: #00b050;
+    line-height: 1.7;
+    letter-spacing: 0;
+    border: 1px solid #e5e5e5;
+    word-break: break-all !important;
+    white-space: nowrap;
+    text-align: center;
 }
 
-.es5-safeBtn.grey {
-    background-color: #222;
+.es-table tr td:first-child {
+    width: 50px;
+}
+.es-table tr td:nth-child(2) {
+    width: 50px;
+}
+.es-table tr td:nth-child(5) {
+    width: 300px;
 }
 
-.es5-safeBtn.yellow {
-    background-color: #ff9933;
+.es-4-12-tr {
+    display: none;
 }
 
-.es5-safeBtn.red {
-    background-color: #ff0000;
-}
-
-
-.es5-wish-wrapper {
-    position: absolute;
-    top: 121px; right: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.es5-wishBtn {
+.es5Btn {
+    margin: 0 auto;
+    width: fit-content;
     color: #fff;
-    padding: 6px 10px;
-    font-size: 12px;
-    font-weight: 400;
+    padding: 3px 12px;
+    font-size: 14px;
+    font-weight: 500;
     background-color: #38218e;
     cursor: pointer;
 }
 
-.es5-wishBtn:hover {
+.es5Btn:hover {
     filter: brightness(110%);
 }
 
-.es5-wishBtn.on {
+.es5Btn.safe {
+    color: #00b050;
+    border: 1px solid #00b050;
+    background-color: transparent;
+}
+
+.es5Btn.good {
+    color: #222;
+    border: 1px solid #222;
+    background-color: transparent;
+}
+
+.es5Btn.wish.on {
     background-color: #dd4231;
 }
 
