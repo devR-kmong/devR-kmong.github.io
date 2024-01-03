@@ -41,7 +41,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 0 6px 6px 0;
-    background-color: var(--sub-color-1);
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .2);
     cursor: pointer;
     z-index: 100;
 }
@@ -50,11 +51,6 @@
     font-size: 24px;
     transition: all .3s;
 }
-
-.fixedBtn.show {
-    background-color: #fff;
-}
-
 
 .fixed-contents {
     height: 100vh;
