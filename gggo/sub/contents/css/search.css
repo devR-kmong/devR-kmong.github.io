@@ -90,6 +90,7 @@
     height: 440px;
     display: flex;
     gap: 2rem;
+    display: none;
 }
 
 .es-btn-wrapper {
