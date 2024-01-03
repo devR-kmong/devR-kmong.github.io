@@ -223,6 +223,13 @@
     display: none;
 }
 
+.es-gap.red {
+    color: red;
+}
+.es-gap.blue {
+    color: blue;
+}
+
 .es5Btn {
     margin: 0 auto;
     width: fit-content;
