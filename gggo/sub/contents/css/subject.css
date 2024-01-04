@@ -1,0 +1,87 @@
+.sb-top-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.sb-sort-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sb-sort {
+    position: relative;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid #ddd;
+}
+
+.sb-sort h5 {
+    position: absolute;
+    top: -10px; left: 10px;
+    color: #aaa;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+.sb-sortBtn {
+    color: #aaa;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.sb-sortBtn.on {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.sb-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sb-button i {
+    color: #aaa;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.sb-table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+.sb-table tr td {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0;
+    border: 1px solid #e5e5e5;
+    word-break: break-all !important;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.sb-table tr:first-child td,
+.sb-table tr:nth-child(2) td,
+.sb-table tr:nth-child(3) td {
+    font-weight: 600;
+    background-color: #f5f5f5;
+}
+
+
+/*==================================================*/

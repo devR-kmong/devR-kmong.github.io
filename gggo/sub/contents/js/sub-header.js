@@ -33,13 +33,13 @@ if (window.innerWidth > 1166) {
 if (window.innerWidth > 1166) {
     for (let i = 1; i < 3; i++) {
         $('.sn-'+i).hover(function () {
-            $('.dd-'+i).slideToggle(60);
+            $('.dd-'+i).toggle();
         })
     }
 } else {
     for (let i = 1; i < 3; i++) {
         $('.sn-'+i).click(function () {
-            $('.dd-'+i).slideToggle(60);
+            $('.dd-'+i).toggle();
         })
     }
 }

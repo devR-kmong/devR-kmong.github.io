@@ -11,5 +11,23 @@
     background-size: cover;
 }
 
+.form {
+    background: url(../images/form-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.statistics {
+    background: url(../images/statistics-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.adm {
+    background: url(../images/adm-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 
 /*==================================================*/
