@@ -34,12 +34,12 @@ var options = {
             },
         }
     },
-    colors: ['#00b050', '#ffbf00', '#ff9933', '#ff0000'],
+    colors: ['#dcf4dc', '#fdf8e9', '#fdeada', '#ffe7e7'],
     dataLabels: {
         enabled: true,
         textAnchor: 'start',
         style: {
-            colors: ['#fff'],
+            colors: ['#00b050', '#ffbf00', '#ff9933', '#ff0000'],
             fontSize: '16px',
             fontFamily: 'Pretendard'
         },
