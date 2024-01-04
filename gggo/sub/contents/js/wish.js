@@ -52,8 +52,8 @@ var options = {
         }
     },
     stroke: {
-        width: 0,
-        colors: ['#fff']
+        width: 1,
+        colors: ['#00b050', '#ffbf00', '#ff9933', '#ff0000'],
     },
     xaxis: {
         categories: ['안정', '적정', '소신', '불안'],
