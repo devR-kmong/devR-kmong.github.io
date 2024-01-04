@@ -291,9 +291,660 @@
                 </div>
             </div>
         </section>
-        <section class="article sub-article e-search">
+        <section class="article sub-article ew">
             <div class="article-wrapper">
-                1
+                <div class="ew-topBtn-wrapper">
+                    <div class="ew-topBtn show" data-target="">
+                        전체(<span>15</span>)
+                    </div>
+                    <div class="ew-topBtn" data-target="">
+                        수시1차(<span>15</span>)
+                    </div>
+                    <div class="ew-topBtn" data-target="">
+                        수시2차(<span>0</span>)
+                    </div>
+                </div>
+                <div class="ew-top-wrapper">
+                    <div class="ew-graph">
+                        <div id="chart"></div>
+                    </div>
+                    <div class="ew-status-wrapper">
+                        <div class="ew-status-box">
+                            <div class="ew-sb-title">
+                                교과
+                            </div>
+                            <div class="ew-status safe">
+                                안정(<span>1</span>)
+                            </div>
+                            <div class="ew-status good no">
+                                적정(<span>0</span>)
+                            </div>
+                            <div class="ew-status soso no">
+                                소신(<span>0</span>)
+                            </div>
+                            <div class="ew-status bad">
+                                불안(<span>2</span>)
+                            </div>
+                        </div>
+                        <div class="ew-status-box">
+                            <div class="ew-sb-title">
+                                종합
+                            </div>
+                            <div class="ew-status safe">
+                                안정(<span>2</span>)
+                            </div>
+                            <div class="ew-status good">
+                                적정(<span>3</span>)
+                            </div>
+                            <div class="ew-status soso">
+                                소신(<span>2</span>)
+                            </div>
+                            <div class="ew-status bad">
+                                불안(<span>3</span>)
+                            </div>
+                        </div>
+                        <div class="ew-status-box">
+                            <div class="ew-sb-title">
+                                실기
+                            </div>
+                            <div class="ew-status safe no">
+                                안정(<span>0</span>)
+                            </div>
+                            <div class="ew-status good no">
+                                적정(<span>0</span>)
+                            </div>
+                            <div class="ew-status soso no">
+                                소신(<span>0</span>)
+                            </div>
+                            <div class="ew-status bad no">
+                                불안(<span>0</span>)
+                            </div>
+                        </div>
+                        <div class="ew-status-box">
+                            <div class="ew-sb-title">
+                                기타
+                            </div>
+                            <div class="ew-status safe">
+                                안정(<span>1</span>)
+                            </div>
+                            <div class="ew-status good">
+                                적정(<span>1</span>)
+                            </div>
+                            <div class="ew-status soso no">
+                                소신(<span>0</span>)
+                            </div>
+                            <div class="ew-status bad no">
+                                불안(<span>0</span>)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ew-wrapper">
+                    <div class="ew-box-sort">
+                        <ul class="ew-bs-left">
+                            <li>
+                                대학명
+                                <i class="ri-arrow-down-s-fill"></i>
+                            </li>
+                            <li>
+                                학과명
+                                <i class="ri-arrow-down-s-fill"></i>
+                            </li>
+                            <li>
+                                수시교과합격
+                                <i class="ri-arrow-down-s-fill"></i>
+                            </li>
+                            <li>
+                                수시종합합격
+                                <i class="ri-arrow-down-s-fill"></i>
+                            </li>
+                        </ul>
+                        <div class="ew-bs-right">
+                            <i class="ri-list-check"></i>
+                            <i class="ri-layout-grid-line"></i>
+                        </div>
+                    </div>
+                    <div class="ew-box-wrapper">
+                        <div class="ew-box">
+                            <div class="ew-b-wish">
+                                <i class="ri-heart-fill" onclick="toggleAct(this)"></i>
+                            </div>
+                            <div class="ew-b-top">
+                                <div class="ew-boxBtn safe">
+                                    안정
+                                </div>
+                                <div class="ew-boxBtn">
+                                    경기
+                                </div>
+                                <div class="ew-boxBtn">
+                                    일반고
+                                </div>
+                                <div class="ew-boxBtn">
+                                    학생부100
+                                </div>
+                                <div class="ew-boxBtn d-day">
+                                    마감 D-<span>20</span>
+                                </div>
+                            </div>
+                            <div class="ew-univ-title">
+                                <img src="../contents/images/univ/daelim.png" class="ew-univ-logo">
+                                <h5>
+                                    대림대학교 AI시스템과(<span>39</span>)
+                                </h5>
+                            </div>
+                            <div class="ew-info-wrapper">
+                                <div class="ew-info">
+                                    <h5>
+                                        지원가능
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <h4>점수</h4> <span>455.75</span>(<em class="ew-i-arrow up">▲54.25</em>)
+                                        </li>
+                                        <li>
+                                            <h4>등급</h4> <span>6.27</span>(<em class="ew-i-arrow up">▲1.99</em>)
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ew-info">
+                                    <h5>
+                                        입시결과
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <p>경 쟁 률</p> <span>3.4</span>
+                                        </li>
+                                        <li>
+                                            <p>평 균</p> <span>5.3</span>
+                                        </li>
+                                        <li>
+                                            <p>최 저</p> <span>6.7</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ew-bottom-wrapper">
+                                <input type="checkbox" name="cp-cb" id="cp1">
+                                <label for="cp1" class="ew-btBtn compare">비교</label>
+                                <div class="ew-btBtn report">
+                                    수시지원 리포트
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ew-box">
+                            <div class="ew-b-wish">
+                                <i class="ri-heart-fill" onclick="toggleAct(this)"></i>
+                            </div>
+                            <div class="ew-b-top">
+                                <div class="ew-boxBtn safe">
+                                    안정
+                                </div>
+                                <div class="ew-boxBtn">
+                                    경기
+                                </div>
+                                <div class="ew-boxBtn">
+                                    일반고
+                                </div>
+                                <div class="ew-boxBtn">
+                                    학생부100
+                                </div>
+                                <div class="ew-boxBtn d-day">
+                                    마감 D-<span>20</span>
+                                </div>
+                            </div>
+                            <div class="ew-univ-title">
+                                <img src="../contents/images/univ/daelim.png" class="ew-univ-logo">
+                                <h5>
+                                    대림대학교 컴퓨터정보학부(<span>60</span>)
+                                </h5>
+                            </div>
+                            <div class="ew-info-wrapper">
+                                <div class="ew-info">
+                                    <h5>
+                                        지원가능
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <h4>점수</h4> <span>455.75</span>(<em class="ew-i-arrow up">▲54.25</em>)
+                                        </li>
+                                        <li>
+                                            <h4>등급</h4> <span>6.27</span>(<em class="ew-i-arrow up">▲1.99</em>)
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ew-info">
+                                    <h5>
+                                        입시결과
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <p>경 쟁 률</p> <span>3.4</span>
+                                        </li>
+                                        <li>
+                                            <p>평 균</p> <span>5.3</span>
+                                        </li>
+                                        <li>
+                                            <p>최 저</p> <span>6.7</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ew-bottom-wrapper">
+                                <input type="checkbox" name="cp-cb" id="cp2">
+                                <label for="cp2" class="ew-btBtn compare">비교</label>
+                                <div class="ew-btBtn report">
+                                    수시지원 리포트
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ew-box">
+                            <div class="ew-b-wish">
+                                <i class="ri-heart-fill" onclick="toggleAct(this)"></i>
+                            </div>
+                            <div class="ew-b-top">
+                                <div class="ew-boxBtn safe">
+                                    안정
+                                </div>
+                                <div class="ew-boxBtn">
+                                    경기
+                                </div>
+                                <div class="ew-boxBtn">
+                                    일반고
+                                </div>
+                                <div class="ew-boxBtn">
+                                    학생부100
+                                </div>
+                                <div class="ew-boxBtn d-day">
+                                    마감 D-<span>20</span>
+                                </div>
+                            </div>
+                            <div class="ew-univ-title">
+                                <img src="../contents/images/univ/daelim.png" class="ew-univ-logo">
+                                <h5>
+                                    대림대학교 응용SW전공(<span>14</span>)
+                                </h5>
+                            </div>
+                            <div class="ew-info-wrapper">
+                                <div class="ew-info">
+                                    <h5>
+                                        지원가능
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <h4>점수</h4> <span>455.75</span>(<em class="ew-i-arrow up">▲54.25</em>)
+                                        </li>
+                                        <li>
+                                            <h4>등급</h4> <span>6.27</span>(<em class="ew-i-arrow up">▲1.99</em>)
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ew-info">
+                                    <h5>
+                                        입시결과
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <p>경 쟁 률</p> <span>3.4</span>
+                                        </li>
+                                        <li>
+                                            <p>평 균</p> <span>5.3</span>
+                                        </li>
+                                        <li>
+                                            <p>최 저</p> <span>6.7</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ew-bottom-wrapper">
+                                <input type="checkbox" name="cp-cb" id="cp3">
+                                <label for="cp3" class="ew-btBtn compare">비교</label>
+                                <div class="ew-btBtn report">
+                                    수시지원 리포트
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ew-box">
+                            <div class="ew-b-wish">
+                                <i class="ri-heart-fill" onclick="toggleAct(this)"></i>
+                            </div>
+                            <div class="ew-b-top">
+                                <div class="ew-boxBtn safe">
+                                    안정
+                                </div>
+                                <div class="ew-boxBtn">
+                                    서울
+                                </div>
+                                <div class="ew-boxBtn">
+                                    일반고
+                                </div>
+                                <div class="ew-boxBtn">
+                                    학생부100
+                                </div>
+                                <div class="ew-boxBtn d-day">
+                                    마감 D-<span>20</span>
+                                </div>
+                            </div>
+                            <div class="ew-univ-title">
+                                <img src="../contents/images/univ/myungji.png" class="ew-univ-logo">
+                                <h5>
+                                    명지전문대학교 드론정보공학과(<span>19</span>)
+                                </h5>
+                            </div>
+                            <div class="ew-info-wrapper">
+                                <div class="ew-info">
+                                    <h5>
+                                        지원가능
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <h4>점수</h4> <span>455.75</span>(<em class="ew-i-arrow up">▲54.25</em>)
+                                        </li>
+                                        <li>
+                                            <h4>등급</h4> <span>6.27</span>(<em class="ew-i-arrow up">▲1.99</em>)
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ew-info">
+                                    <h5>
+                                        입시결과
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <p>경 쟁 률</p> <span>3.4</span>
+                                        </li>
+                                        <li>
+                                            <p>평 균</p> <span>5.3</span>
+                                        </li>
+                                        <li>
+                                            <p>최 저</p> <span>6.7</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ew-bottom-wrapper">
+                                <input type="checkbox" name="cp-cb" id="cp4">
+                                <label for="cp4" class="ew-btBtn compare">비교</label>
+                                <div class="ew-btBtn report">
+                                    수시지원 리포트
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ew-box">
+                            <div class="ew-b-wish">
+                                <i class="ri-heart-fill" onclick="toggleAct(this)"></i>
+                            </div>
+                            <div class="ew-b-top">
+                                <div class="ew-boxBtn good">
+                                    적정
+                                </div>
+                                <div class="ew-boxBtn">
+                                    서울
+                                </div>
+                                <div class="ew-boxBtn">
+                                    일반고
+                                </div>
+                                <div class="ew-boxBtn">
+                                    학생부100
+                                </div>
+                                <div class="ew-boxBtn d-day">
+                                    마감 D-<span>20</span>
+                                </div>
+                            </div>
+                            <div class="ew-univ-title">
+                                <img src="../contents/images/univ/myungji.png" class="ew-univ-logo">
+                                <h5>
+                                    명지전문대학교 소프트웨어(<span>36</span>)
+                                </h5>
+                            </div>
+                            <div class="ew-info-wrapper">
+                                <div class="ew-info">
+                                    <h5>
+                                        지원가능
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <h4>점수</h4> <span>455.75</span>(<em class="ew-i-arrow down">▼3.2</em>)
+                                        </li>
+                                        <li>
+                                            <h4>등급</h4> <span>6.27</span>(<em class="ew-i-arrow down">▼0.12</em>)
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ew-info">
+                                    <h5>
+                                        입시결과
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <p>경 쟁 률</p> <span>3.4</span>
+                                        </li>
+                                        <li>
+                                            <p>평 균</p> <span>5.3</span>
+                                        </li>
+                                        <li>
+                                            <p>최 저</p> <span>6.7</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ew-bottom-wrapper">
+                                <input type="checkbox" name="cp-cb" id="cp5">
+                                <label for="cp5" class="ew-btBtn compare">비교</label>
+                                <div class="ew-btBtn report">
+                                    수시지원 리포트
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ew-box">
+                            <div class="ew-b-wish">
+                                <i class="ri-heart-fill" onclick="toggleAct(this)"></i>
+                            </div>
+                            <div class="ew-b-top">
+                                <div class="ew-boxBtn good">
+                                    적정
+                                </div>
+                                <div class="ew-boxBtn">
+                                    서울
+                                </div>
+                                <div class="ew-boxBtn">
+                                    일반고
+                                </div>
+                                <div class="ew-boxBtn">
+                                    학생부100
+                                </div>
+                                <div class="ew-boxBtn d-day">
+                                    마감 D-<span>20</span>
+                                </div>
+                            </div>
+                            <div class="ew-univ-title">
+                                <img src="../contents/images/univ/myungji.png" class="ew-univ-logo">
+                                <h5>
+                                    명지전문대학교 정보통신(<span>33</span>)
+                                </h5>
+                            </div>
+                            <div class="ew-info-wrapper">
+                                <div class="ew-info">
+                                    <h5>
+                                        지원가능
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <h4>점수</h4> <span>455.75</span>(<em class="ew-i-arrow up">▲54.25</em>)
+                                        </li>
+                                        <li>
+                                            <h4>등급</h4> <span>6.27</span>(<em class="ew-i-arrow up">▲1.99</em>)
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ew-info">
+                                    <h5>
+                                        입시결과
+                                    </h5>
+                                    <ul>
+                                        <li>
+                                            <p>경 쟁 률</p> <span>3.4</span>
+                                        </li>
+                                        <li>
+                                            <p>평 균</p> <span>5.3</span>
+                                        </li>
+                                        <li>
+                                            <p>최 저</p> <span>6.7</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ew-bottom-wrapper">
+                                <input type="checkbox" name="cp-cb" id="cp6">
+                                <label for="cp6" class="ew-btBtn compare">비교</label>
+                                <div class="ew-btBtn report">
+                                    수시지원 리포트
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ew-compare-popup">
+                        <img src="../contents/images/close-w.svg" class="cp-closeBtn">
+                        <div class="ew-compare">
+                            <table class="cp-table">
+                                <tr>
+                                    <td>구분</td>
+                                    <td>대림대학교</td>
+                                    <td>명지전문대학교</td>
+                                </tr>
+                                <tr>
+                                    <td>합격안정성</td>
+                                    <td><div class="ew-status safe">안정</div></td>
+                                    <td><div class="ew-status good">적정</div></td>
+                                </tr>
+                                <tr>
+                                    <td>모집단위</td>
+                                    <td>컴퓨터정보학부</td>
+                                    <td>소프트웨어</td>
+                                </tr>
+                                <tr>
+                                    <td>전형</td>
+                                    <td>일반고</td>
+                                    <td>일반고</td>
+                                </tr>
+                                <tr>
+                                    <td>모집인원</td>
+                                    <td>60명</td>
+                                    <td>36명</td>
+                                </tr>
+                                <tr>
+                                    <td>전형방법</td>
+                                    <td>학생부100</td>
+                                    <td>학생부100</td>
+                                </tr>
+                                <tr>
+                                    <td>만점</td>
+                                    <td>600</td>
+                                    <td>800</td>
+                                </tr>
+                                <tr>
+                                    <td>나의점수(등급)</td>
+                                    <td>470.5(4.8)</td>
+                                    <td>595(4.8)</td>
+                                </tr>
+                                <tr>
+                                    <td>나의점수(최종컷)</td>
+                                    <td><div class="ew-i-arrow up">▲39.5</div></td>
+                                    <td><div class="ew-i-arrow down">▼3.2</div></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="background-color: transparent; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td>모집인원</td>
+                                    <td>60 / 50 / 60</td>
+                                    <td>36 / 32 / 34</td>
+                                </tr>
+                                <tr>
+                                    <td>경쟁률(3개년)</td>
+                                    <td>3.2 / 3.6 / 3.8</td>
+                                    <td>3.4 / 3.6 / 3.4</td>
+                                </tr>
+                                <tr>
+                                    <td>합격자평균등급(3개년)</td>
+                                    <td>5.2 / 5.3 / 5.1</td>
+                                    <td>5.6 / 5.3 / 5.1</td>
+                                </tr>
+                                <tr>
+                                    <td>합격자최저등급(3개년)</td>
+                                    <td>6.2 / 6.3 / 6.1</td>
+                                    <td>6.2 / 6.3 / 6.2</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" style="background-color: transparent; border: none;"></td>
+                                </tr>
+                                <tr>
+                                    <td>지역</td>
+                                    <td>경기</td>
+                                    <td>경기</td>
+                                </tr>
+                                <tr>
+                                    <td>설립</td>
+                                    <td>사립</td>
+                                    <td>국립</td>
+                                </tr>
+                                <tr>
+                                    <td>취업률</td>
+                                    <td>76%</td>
+                                    <td>82%</td>
+                                </tr>
+                                <tr>
+                                    <td>등록금</td>
+                                    <td>6,594</td>
+                                    <td>6,382</td>
+                                </tr>
+                                <tr>
+                                    <td>장학금</td>
+                                    <td>3,549</td>
+                                    <td>3,841</td>
+                                </tr>
+                                <tr>
+                                    <td>기숙사</td>
+                                    <td>24%</td>
+                                    <td>32%</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 페이징 시작 -->
+                <div class="board-pagination">
+                    <div class="paging">
+                        <a href="" class="pag-arrow">
+                            <i class="ri-arrow-left-double-line"></i>
+                        </a>
+                        <a href="" class="pag-arrow">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </a>
+                        <a href="" class="pag-num on">
+                            1
+                        </a>
+                        <a href="" class="pag-num">
+                            2
+                        </a>
+                        <a href="" class="pag-num">
+                            3
+                        </a>
+                        <a href="" class="pag-num">
+                            4
+                        </a>
+                        <a href="" class="pag-num">
+                            5
+                        </a>
+                        <a href="" class="pag-arrow">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </a>
+                        <a href="" class="pag-arrow">
+                            <i class="ri-arrow-right-double-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- 페이징 끝 -->
             </div>
         </section>
     </main>
@@ -665,6 +1316,7 @@
 
     <script src="../../contents/js/fixed.js"></script>
     <script src="../contents/js/sub-header.js"></script>
+    <script src="../contents/js/wish.js"></script>
 
 </body>
 </html>
