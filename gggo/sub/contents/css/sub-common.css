@@ -1,30 +1,30 @@
 /* 서브페이지 공통 스타일 */
 .anlz {
-    background: url(../images/anlz-bg.jpg) no-repeat;
+    background: url(../images/bg/anlz-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .early {
-    background: url(../images/early-bg.jpg) no-repeat;
+    background: url(../images/bg/early-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .form {
-    background: url(../images/form-bg.jpg) no-repeat;
+    background: url(../images/bg/form-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .statistics {
-    background: url(../images/statistics-bg.jpg) no-repeat;
+    background: url(../images/bg/statistics-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .adm {
-    background: url(../images/adm-bg.jpg) no-repeat;
+    background: url(../images/bg/adm-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
