@@ -11,7 +11,7 @@ var options = {
         },
     ],
     chart: {
-        height: 350,
+        height: 450,
         type: 'line',
         dropShadow: {
             enabled: false,
@@ -97,7 +97,7 @@ var options = {
         },
     ],
     chart: {
-        height: 350,
+        height: 450,
         type: 'line',
         dropShadow: {
             enabled: false,
