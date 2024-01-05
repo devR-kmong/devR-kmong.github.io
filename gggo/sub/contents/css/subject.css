@@ -1,3 +1,7 @@
+.article-wrapper {
+    width: 95%;
+}
+
 .sb-top-wrapper {
     width: 100%;
     display: flex;
@@ -67,7 +71,8 @@
 
 .sb-table tr td {
     color: #444;
-    font-size: 14px;
+    padding: 5px 0;
+    font-size: 18px;
     line-height: 1.7;
     letter-spacing: 0;
     border: 1px solid #e5e5e5;
