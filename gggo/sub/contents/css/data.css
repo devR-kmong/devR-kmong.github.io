@@ -1,3 +1,7 @@
+.article-wrapper {
+    width: 95%;
+}
+
 .az1-b-title {
     color: #222;
     font-size: 28px;
@@ -17,8 +21,8 @@
 
 .sta-table tr td {
     color: #444;
-    padding: 7px 0;
-    font-size: 14px;
+    padding: 10px 0;
+    font-size: 17px;
     line-height: 1.7;
     letter-spacing: 0;
     border: 1px solid #e5e5e5;
