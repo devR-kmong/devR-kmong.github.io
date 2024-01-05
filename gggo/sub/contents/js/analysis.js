@@ -374,3 +374,17 @@ $('.az3-bc-toggleBtn').click(function () {
 $(window).scroll(function () {
     $('.az3-morelist').removeClass('show');
 })
+
+
+
+// 교과 상세분석 표 토글
+$('.az2 .az-table-wrapper').hide();
+$('.az3 .az-table-wrapper').hide();
+
+$('.az2-moreBtn').click(function () {
+    $('.az2 .az-table-wrapper').show();
+})
+
+$('.az3-moreBtn').click(function () {
+    $('.az3 .az-table-wrapper').show();
+})

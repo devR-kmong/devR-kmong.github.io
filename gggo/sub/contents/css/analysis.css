@@ -108,10 +108,19 @@ body {
 
 
 .az2-sub-box {
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     margin: 2rem 0;
+}
+
+.az2-moreBtn {
+    position: absolute;
+    top: 15px; right: 15px;
+    color: #aaa;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .az2-sub {
@@ -218,10 +227,19 @@ body {
 }
 
 .az3-sub-box {
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     margin: 2rem 0;
+}
+
+.az3-moreBtn {
+    position: absolute;
+    top: 15px; right: 15px;
+    color: #aaa;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .az3-sub {
