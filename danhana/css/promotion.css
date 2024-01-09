@@ -56,26 +56,6 @@
     background-color: var(--main-color);
 }
 
-.scrollDown {
-    position: absolute;
-    bottom: 40px;
-    width: 20px;
-    transform: translate(-50%, -50%);
-    animation: upDown 1.5s ease-in-out infinite;
-}
-
-@keyframes upDown {
-	0% {
-		transform:  translateY(-7px);
-	}
-	50% {
-		transform: translateY(7px);
-	}
-	100% {
-		transform:  translateY(-7px);
-	}
-}
-
 
 
 /*==================================================*/
