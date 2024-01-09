@@ -1,0 +1,25 @@
+.article4 {
+    background: url(../images/a4-bg.jpg);
+    background-attachment: fixed;
+}
+
+.a4-text {
+    color: #fff;
+    text-align: center;
+}
+
+.a4-text h5 {
+    font-size: 65px;
+    font-family: 'EliceDigitalBaeum-Bd';
+    letter-spacing: -0.04em;
+}
+
+.a4-text p {
+    font-size: 22px;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+
+/*==================================================*/

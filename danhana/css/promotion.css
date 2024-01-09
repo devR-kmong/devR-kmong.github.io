@@ -1,0 +1,106 @@
+.promotion {
+    width: 100%;
+    height: 750px;
+    background: url(../images/hero.jpg) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion-wrapper {
+    width: 1300px;
+}
+
+.p-text {
+    margin-top: 5rem;
+}
+
+.p-text h5 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.p-text h5 b {
+    color: var(--main-color);
+    font-size: 75px;
+    font-family: 'EliceDigitalBaeum-Bd';
+}
+
+.p-text p {
+    color: #aaa;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 2rem;
+}
+
+.pBtn {
+    color: #ddd;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    background-color: transparent;
+    transition: all .3s;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+.pBtn:hover {
+    font-weight: 600;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}
+
+.scrollDown {
+    position: absolute;
+    bottom: 40px;
+    width: 20px;
+    transform: translate(-50%, -50%);
+    animation: upDown 1.5s ease-in-out infinite;
+}
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-7px);
+	}
+	50% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform:  translateY(-7px);
+	}
+}
+
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .promotion {
+        background: url(../images/hero-2k.jpg);
+    }
+}
+
+
+@media (max-width: 1350px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .p-text h5 {
+        font-size: 40px;
+    }
+
+    .p-text p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
