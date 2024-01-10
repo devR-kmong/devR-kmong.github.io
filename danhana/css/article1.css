@@ -69,6 +69,13 @@
     font-weight: 600;
 }
 
+.a1-box-text h5 span {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
 .a1-box-text p {
     color: #777;
     font-size: 17px;

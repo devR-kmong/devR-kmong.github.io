@@ -1,14 +1,52 @@
 .promotion {
+    position: relative;
     width: 100%;
     height: 750px;
-    background: url(../images/hero.jpg) no-repeat;
+    background-color: #111;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.video {
+    position: relative;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.video video {
+    width: 100%;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 10;
+}
+
+.video-overlay2 {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5) 0%, transparent 100%);
+    z-index: 10;
 }
 
 .promotion-wrapper {
     width: 1300px;
+    z-index: 20;
 }
 
 .p-text {
@@ -59,13 +97,6 @@
 
 
 /*==================================================*/
-@media (min-width: 2250px) {
-    .promotion {
-        background: url(../images/hero-2k.jpg);
-    }
-}
-
-
 @media (max-width: 1350px) {
     .promotion-wrapper {
         width: 100%;
