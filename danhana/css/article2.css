@@ -39,5 +39,29 @@
     width: 100%;
 }
 
+.swiper-button-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-top: 4rem;
+}
+
+.swiper-button-wrapper .swiper-button-prev,
+.swiper-button-wrapper .swiper-button-next {
+    position: static !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.swiper-button-wrapper .swiper-button-prev img,
+.swiper-button-wrapper .swiper-button-next img {
+    height: 18px;
+    opacity: .4;
+}
+
 
 /*==================================================*/

@@ -9,8 +9,13 @@ AOS.init({
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     effect: "fade",
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-prev",
+        prevEl: ".swiper-button-next",
+    },
     autoplay: {
-        delay: 1500,
+        delay: 2500,
         disableOnInteraction: true,
     },
 });
