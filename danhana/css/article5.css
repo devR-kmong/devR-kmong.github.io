@@ -357,9 +357,108 @@
 
 
 /*==================================================*/
-@media (max-width: 650px) {
-    .form-wrapper {
+@media (max-width: 1250px) {
+    .article5 {
+        padding: 120px 0;
+    }
+    
+    .a5-wrapper {
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .a5-left {
         width: 100%;
+    }
+
+    .a5-notice {
+        bottom: -50px; left: 235px;
+        box-shadow: none;
+    }
+
+    .a5-notice::after {
+        top: 45px; left: -7px;
+        transform: rotate(-45deg);
+    }
+
+    .a5-right {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .article5 {
+        padding: 30px 0;
+    }
+    
+    .a5-title h5 {
+        font-size: 55px;
+        margin-top: -10px;
+    }
+
+    .a5-title h5 span {
+        font-size: 65px;
+    }
+
+    .a5-title p {
+        font-size: 18px;
+        margin-top: 2rem;
+    }
+
+    .a5-notice {
+        bottom: -60px; left: 200px;
+        width: 250px;
+        padding: 14px;
+        font-size: 12px;
+    }
+    
+    .a5-notice::after {
+        top: 15px;
+    }
+    
+    .a5-contact {
+        margin-top: 2rem;
+    }
+    
+    .a5-contact li {
+        gap: 10px;
+    }
+    
+    .a5-contact li p {
+        font-size: 20px;
+    }
+
+    .a5-contact li img {
+        height: 26px
+    }
+    
+    .f-submit {
+        width: 140px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .f-personal-text label em {
+        width: 18px;
+        min-width: 18px;
+        height: 18px;
+        min-height: 18px;
+        border: 2px solid #222;
+    }
+    
+    .f-personal-text label em::after {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .f-personal-text label p {
+        font-size: 14px;
+    }
+    
+    .f-personalBtn {
+        font-size: 12px;
+        padding: 4px 6px;
     }
 
     .policy-popup {
@@ -368,80 +467,91 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+
+@media (max-width: 500px) {
+    .a5-wrapper {
+        gap: 9rem;
+    }
+    
+    .a5-notice {
+        bottom: -120px; left: 0;
+        width: 250px;
+        padding: 14px;
+        font-size: 12px;
+    }
+    
+    .a5-notice::after {
+        top: -7px; left: 20px;
+        transform: rotate(45deg);
+    }
+
+    .gform {
+        gap: 1rem;
+    }
+    
+    .gform .input-group {
+        gap: 1rem;
+    }
+
+    .gform .input-wrapper .input-title p {
+        top: 13px;
+        font-size: 15px;
+    }
+
+    .gform .inputbox {
+        height: 45px;
+        padding-left: 50px;
+        font-size: 15px;
+    }
+
+    .gform textarea {
+        height: 160px;
+        font-size: 15px;
+        margin-top: 45px;
+    }
 
     .pp-title {
-        width: 100%;
+        padding: 20px;
+    }
+
+    .pp-title p {
+        font-size: 20px;
+    }
+
+    .pp-closeBtn {
+        top: 23px; right: 23px;
+        width: 18px;
+        max-width: 18px;
     }
 
     .policy-popup textarea {
         width: 100%;
-    }
-
-    .policy-popup textarea::-webkit-scrollbar {
-        display: none;
+        height: 340px;
+        padding: 20px;
+        padding-top: 83px;
+        font-size: 14px;
     }
 }
 
 
-@media (max-width: 550px) {
-    .form-wrapper {
-        padding: 0 10px;
+@media (max-width: 450px) {
+    .a5-title h5 {
+        font-size: 42px;
     }
 
-    .gform .input-wrapper .input-title p {
-        font-size: 13px;
-    }
-    
-    .gform .inputbox {
-        height: 43px;
-        font-size: 13px;
-    }
-
-    .gform textarea {
-        font-size: 13px;
-    }
-
-    .radio-wrapper label {
-        padding: 11px 0;
-        font-size: 13px;
-    }
-
-    .f-personal {
-        padding: 10px;
-    }
-    
-    .f-personal-text label p {
-        font-size: 12px;
-        letter-spacing: -0.02em;
-    }
-
-    .f-personalBtn {
-        font-size: 10px;
-    }
-
-
-    .pp-title {
-        padding: 15px 20px;
-    }
-
-    .pp-title p {
+    .a5-title p {
         font-size: 16px;
+        margin-top: 1.5rem;
     }
-
-    .pp-closeBtn {
-        top: 16px; right: 20px;
-        width: 12px;
-    }
-
-    .policy-popup textarea {
-        height: 220px;
-        padding: 20px;
-        padding-top: 65px;
-        font-size: 13px;
+    
+    .f-bottom {
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .f-submit {
-        height: 45px;
-        font-size: 14px;
+        width: 100%;
     }
 }

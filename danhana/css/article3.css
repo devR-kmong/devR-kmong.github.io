@@ -41,6 +41,7 @@
 }
 
 .a3-box-text p {
+    height: 300px;
     color: #222;
     font-size: 22px;
     font-weight: 500;
@@ -50,8 +51,66 @@
 .a3-box-text h5 {
     color: #222;
     font-size: 35px;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 
 /*==================================================*/
+@media (max-width: 1050px) {
+    .a3-box-text {
+        padding: 50px;
+    }
+
+    .a3-box-text p {
+        height: 250px;
+        font-size: 19px;
+    }
+    
+    .a3-box-text h5 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .article3 {
+    }
+    
+    .article3::before {
+        height: 20%;
+    }
+    
+    .a3-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .a3-box-text {
+        border: 1px solid #ddd !important;
+    }
+
+    .a3-box-text p {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a3-box-text {
+        padding: 40px;
+    }
+    
+    .a3-box-text h4 {
+        font-size: 16px;
+        margin-bottom: 1.5rem;
+    }
+
+    .a3-box-text p {
+        font-size: 14px;
+    }
+
+    .a3-box-text h5 {
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+}

@@ -65,3 +65,81 @@
 
 
 /*==================================================*/
+@media (max-width: 1050px) {
+    .a2-wrapper {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .a2-title {
+        position: static;
+        height: unset;
+        padding: 0 6%;
+        margin-top: 0;
+    }
+
+    .a2-right {
+        width: 100%;
+        padding: 0 5%;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a2-title h5 {
+        font-size: 45px;
+    }
+
+    .a2-title p {
+        font-size: 16px;
+        margin-top: 1rem;
+    }
+
+    .swiper-button-wrapper {
+        gap: 6px;
+        margin-top: 3rem;
+    }
+
+    .swiper-button-wrapper .swiper-button-prev,
+    .swiper-button-wrapper .swiper-button-next {
+        width: 36px;
+        height: 36px;
+    }
+
+    .swiper-button-wrapper .swiper-button-prev img,
+    .swiper-button-wrapper .swiper-button-next img {
+        height: 14px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+    .a2-wrapper {
+        gap: 3rem;
+    }
+    
+    .a2-title {
+        padding: 0 2%;
+    }
+
+    .a2-title h5 {
+        font-size: 36px;
+    }
+
+    .a2-title p {
+        font-size: 16px;
+        font-weight: unset;
+    }
+    
+    .a2-right {
+        padding: 0 3%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a2-title p br {
+        display: none;
+    }
+}

@@ -23,3 +23,20 @@
 
 
 /*==================================================*/
+@media (max-width: 850px) {
+    .article4 {
+        padding: 100px 0;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a4-text h5 {
+        font-size: 45px;
+    }
+
+    .a4-text p {
+        font-size: 18px;
+        margin-top: 1.5rem;
+    }
+}

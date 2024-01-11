@@ -74,40 +74,32 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+
+@media (max-width: 550px) {
     footer {
         padding: 40px 0;
-    }
-    
-    .footer-box-wrapper {
-        gap: 2rem;
-    }
-
-    .footer-box {
-        gap: .5rem;
     }
     
     .fBtn-wrapper {
         display: none;
     }
-    
-    .f-info br {
+
+    .logo-f {
+        width: 150px;
+        margin-bottom: 1rem;
+    }
+
+    .f-info p {
+        font-size: 14px;
+        font-weight: unset;
+        line-height: 1.75;
+    }
+
+    .f-info p br {
         display: block;
     }
 
-    .f-info span {
+    .f-info p span {
         display: none;
-    }
-}
-
-
-@media (max-width: 450px) {
-    .logo-f {
-        width: 70px;
-        margin-bottom: 1rem;
-    }
-    
-    .f-info p {
-        font-size: 12px;
     }
 }

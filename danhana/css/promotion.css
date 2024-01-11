@@ -105,13 +105,53 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
+    .video-overlay {
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .p-text {
+        margin-top: 0;
+    }
+
     .p-text h5 {
-        font-size: 40px;
+        font-size: 45px;
+    }
+
+    .p-text h5 b {
+        font-size: 55px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .promotion {
+        height: 650px;
+    }
+    
+    .p-text h5 {
+        font-size: 36px;
+        line-height: 1.25;
+    }
+
+    .p-text h5 b {
+        font-size: 42px;
     }
 
     .p-text p {
-        font-size: 18px;
-        font-weight: 300;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .pBtn {
+        width: 160px;
+        height: 42px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        border: 1px solid var(--main-color);
+        background-color: var(--main-color);
+        margin-top: 2rem;
     }
 }
