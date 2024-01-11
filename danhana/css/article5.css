@@ -22,6 +22,11 @@
     color: var(--main-color);
     font-size: 85px;
     font-weight: 900;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {opacity: 0;}
 }
 
 .a5-title p {

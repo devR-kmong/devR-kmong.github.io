@@ -23,8 +23,20 @@
     line-height: 1.35;
 }
 
+.a1-title h5 em {
+    display: block;
+    font-size: 55px;
+    font-style: normal;
+    margin-top: 8px;
+}
+
+.a1-title h5 em br {
+    display: none;
+}
+
 .a1-title h5 span {
     color: var(--main-color);
+    font-weight: 800;
 }
 
 .a1-title p {
@@ -114,6 +126,14 @@
     .article1::before {
         height: 0;
     }
+
+    .a1-title h5 em br {
+        display: block;
+    }
+    
+    .a1-title p {
+        width: 75%;
+    }
     
     .a1-box-wrapper {
         grid-template-columns: repeat(1, 1fr);
@@ -129,6 +149,10 @@
         border-top: 1px solid #ddd;
         border-bottom: 1px solid #ddd;
     }
+
+    .a1-box:hover img {
+        transform: scale(1);
+    }
 }
 
 
@@ -138,7 +162,12 @@
     }
     
     .a1-title h5 {
-        font-size: 28px;
+        font-size: 24px;
+    }
+
+    .a1-title h5 em {
+        display: block;
+        font-size: 40px;
     }
 
     .a1-title p {
@@ -156,6 +185,10 @@
 
 
 @media (max-width: 550px) {
+    .a1-title p {
+        width: 100%;
+    }
+    
     .a1-box {
         padding: 40px;
     }
@@ -180,6 +213,10 @@
 
 @media (max-width: 450px) {
     .a1-title h5 {
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    .a1-title h5 em {
+        font-size: 32px;
     }
 }

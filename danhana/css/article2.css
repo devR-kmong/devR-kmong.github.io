@@ -1,3 +1,7 @@
+.article2 {
+    overflow: hidden;
+}
+
 .a2-wrapper {
     width: 100%;
     height: auto;
@@ -119,7 +123,7 @@
     }
 
     .a2-title p {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: unset;
     }
     
