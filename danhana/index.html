@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/article4.css">
     <link rel="stylesheet" href="css/article5.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/floating.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -34,6 +35,11 @@
     <title>단하나마케팅</title>
 </head>
 <body>
+    <div class="floating">
+        <a href="/" class="topBtn">
+            <i class="ri-arrow-up-s-line"></i>
+        </a>
+    </div>
     <header>
         <nav>
             <a href="/" class="logo-w"><img src="images/logo-w.svg"></a>
@@ -59,22 +65,21 @@
         <section class="article promotion">
             <div class="video">
                 <div class="video-overlay"></div>
-                <div class="video-overlay2"></div>
                 <video autoplay muted loop playsinline id="myVideo">
                     <source src="videos/main.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="promotion-wrapper">
                 <div class="p-text">
-                    <h5>
+                    <h5 data-aos="fade-up">
                         매출을 위해,<br/>
                         <b>단 하나</b>에 집중합니다.
                     </h5>
-                    <p>
+                    <p data-aos="fade-up" data-aos-delay="900">
                         N사 블로그 솔루션 전문 기업 단하나마케팅은<br/>
                         채널의 최적화를 위해 집중하겠습니다.
                     </p>
-                    <a href="#contact"><button class="pBtn">무료상담 받기</button></a>
+                    <a href="#contact" data-aos="zoom-in" data-aos-delay="1700"><button class="pBtn">무료상담 받기</button></a>
                 </div>
             </div>
         </section>

@@ -103,3 +103,15 @@ footer {
         display: none;
     }
 }
+
+
+@media (max-width: 450px) {
+    .logo-f {
+        width: 130px;
+        margin-bottom: 5px;
+    }
+    
+    .f-info p {
+        font-size: 12px;
+    }
+}

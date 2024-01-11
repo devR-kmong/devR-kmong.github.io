@@ -176,3 +176,10 @@
         height: 45px;
     }
 }
+
+
+@media (max-width: 450px) {
+    .a1-title h5 {
+        font-size: 24px;
+    }
+}

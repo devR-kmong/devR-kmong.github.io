@@ -1,7 +1,7 @@
 .promotion {
     position: relative;
     width: 100%;
-    height: 750px;
+    height: 100vh !important;
     background-color: #111;
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@
 }
 
 .video video {
-    width: 100%;
+    width: 105%;
 }
 
 .video-overlay {
@@ -32,15 +32,6 @@
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, .3);
-    z-index: 10;
-}
-
-.video-overlay2 {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5) 0%, transparent 100%);
     z-index: 10;
 }
 
@@ -67,7 +58,7 @@
 }
 
 .p-text p {
-    color: #aaa;
+    color: #fff;
     font-size: 19px;
     font-weight: 500;
     line-height: 1.6;
@@ -75,13 +66,13 @@
 }
 
 .pBtn {
-    color: #ddd;
+    color: #fff;
     font-size: 17px;
     outline: none;
     border: none;
     width: 200px;
     height: 50px;
-    border: 1px solid rgba(255, 255, 255, .5);
+    border: 1px solid #fff;
     background-color: transparent;
     transition: all .3s;
     margin-top: 4rem;
@@ -97,6 +88,21 @@
 
 
 /*==================================================*/
+@media (min-width: 1921px) and (max-width: 2449px) {
+    .video video {
+        width: 140%;
+        height: 140%;
+    }
+}
+
+
+@media (max-width: 1919px) {
+    .video video {
+        height: 100%;
+    }
+}
+
+
 @media (max-width: 1350px) {
     .promotion-wrapper {
         width: 100%;
@@ -107,7 +113,7 @@
 
 @media (max-width: 850px) {
     .video-overlay {
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(0, 0, 0, .6);
     }
 
     .p-text {
@@ -125,10 +131,6 @@
 
 
 @media (max-width: 550px) {
-    .promotion {
-        height: 650px;
-    }
-    
     .p-text h5 {
         font-size: 36px;
         line-height: 1.25;
@@ -147,7 +149,6 @@
     .pBtn {
         width: 160px;
         height: 42px;
-        color: #fff;
         font-size: 14px;
         font-weight: 600;
         border: 1px solid var(--main-color);

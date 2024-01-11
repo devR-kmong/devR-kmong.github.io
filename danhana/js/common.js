@@ -51,10 +51,8 @@ $(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 50) {
                 $('.floating').fadeIn(80);
-                $('.scrollDown').fadeOut(80);
             } else {
                 $('.floating').fadeOut(80);
-                $('.scrollDown').fadeIn(80);
             }
         });
     });

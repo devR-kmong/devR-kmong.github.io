@@ -40,3 +40,14 @@
         margin-top: 1.5rem;
     }
 }
+
+
+@media (max-width: 450px) {
+    .a4-text h5 {
+        font-size: 36px;
+    }
+
+    .a4-text p {
+        font-size: 16px;
+    }
+}

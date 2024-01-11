@@ -86,6 +86,10 @@
 
 
 @media (max-width: 850px) {
+    .a2-wrapper {
+        gap: 3rem;
+    }
+    
     .a2-title h5 {
         font-size: 45px;
     }
@@ -96,27 +100,14 @@
     }
 
     .swiper-button-wrapper {
-        gap: 6px;
-        margin-top: 3rem;
+        display: none;
     }
-
-    .swiper-button-wrapper .swiper-button-prev,
-    .swiper-button-wrapper .swiper-button-next {
-        width: 36px;
-        height: 36px;
-    }
-
-    .swiper-button-wrapper .swiper-button-prev img,
-    .swiper-button-wrapper .swiper-button-next img {
-        height: 14px;
-    }
-
 }
 
 
 @media (max-width: 550px) {
     .a2-wrapper {
-        gap: 3rem;
+        gap: 2rem;
     }
     
     .a2-title {
