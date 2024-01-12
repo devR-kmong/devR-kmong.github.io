@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contents/css/common.css">
+    <link rel="stylesheet" href="contents/css/header.css">
+    <link rel="stylesheet" href="contents/css/toggleMenu.css">
+    <link rel="stylesheet" href="contents/css/promotion.css">
+    <link rel="stylesheet" href="contents/css/article_common.css">
+    <link rel="stylesheet" href="contents/css/article1.css">
+    <link rel="stylesheet" href="contents/css/article2.css">
+    <link rel="stylesheet" href="contents/css/article3.css">
+    <link rel="stylesheet" href="contents/css/article4.css">
+    <link rel="stylesheet" href="contents/css/article5.css">
+    <link rel="stylesheet" href="contents/css/footer.css">
+    <link rel="stylesheet" href="contents/css/aos.css">
+    <link rel="stylesheet" href="contents/css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="contents/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="contents/js/swiper-bundle.min.js"></script>
+    <script src="contents/js/aos.js"></script>
+    <title>블랭크아카데미</title>
+</head>
+<body>
+    <div class="header">
+        <div class="gnb">
+            <a href="<?php echo G5_URL?>" class="logo"><img src="contents/images/logo-w.svg"></a>
+            <a href="<?php echo G5_URL?>" class="logo logo-s"><img src="contents/images/logo.svg"></a>
+            <div class="menu">
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/about" class="menu-head">
+                        아카데미소개
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/about#motive">
+                                창립계기
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/about#philosophy">
+                                철학
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/about#value">
+                                핵심가치
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/portfolio">
+                                포트폴리오
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/lecturer" class="menu-head">
+                        강사진소개
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/lecturer?sca=프리웨이트">
+                                프리웨이트
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/lecturer?sca=골프">
+                                골프
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/lecturer?sca=요가">
+                                요가
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/education" class="menu-head">
+                        교육안내
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/education?sca=온라인교육">
+                                온라인교육
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/education?sca=오프라인교육">
+                                오프라인교육
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/review" class="menu-head">
+                        커뮤니티
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/review">
+                                교육후기
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/faq">
+                                자주하는질문
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/gallery">
+                                갤러리
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="menuBtns">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="toggleMenu">
+                <div class="tgm-top">
+                    <a href="<?php echo G5_URL?>" class="logo logo-t"><img src="contents/images/logo-w.svg"></a>
+                    <div class="tgm-close">
+                        <img src="contents/images/close-w.svg">
+                    </div>
+                </div>
+                <div class="tgm-menu-wrapper">
+                    <div class="tgm-menu" data-target="data1">
+                        <a href="<?php echo G5_URL?>/sub/about/us" class="tgm-head">
+                            아카데미소개<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data1">
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/about#motive">
+                                    창립계기
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/about#philosophy">
+                                    철학
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/about#value">
+                                    핵심가치
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/portfolio">
+                                    포트폴리오
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data2">
+                        <a href="<?php echo G5_URL?>/sub/lifting/ulthera" class="tgm-head">
+                            강사진소개<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data2">
+                            <li>
+                                <a href="<?php echo G5_URL?>/lecturer?sca=프리웨이트">
+                                    프리웨이트
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/lecturer?sca=골프">
+                                    골프
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/lecturer?sca=요가">
+                                    요가
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data3">
+                        <a href="<?php echo G5_URL?>/sub/injection/botox" class="tgm-head">
+                            교육안내<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data3">
+                            <li>
+                                <a href="<?php echo G5_URL?>/education?sca=온라인교육">
+                                    온라인교육
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/education?sca=오프라인교육">
+                                    오프라인교육
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data4">
+                        <a href="<?php echo G5_URL?>/sub/filler/neck" class="tgm-head">
+                            커뮤니티<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data4">
+                            <li>
+                                <a href="<?php echo G5_URL?>/review">
+                                    교육후기
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/faq">
+                                    자주하는질문
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/gallery">
+                                    갤러리
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="carousel promotion">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide s-slide1">
+                        <div class="content">
+                            <h5>
+                                <span>Revolution</span><br/>
+                                in Training
+                            </h5>
+                            <p>
+                                틀에 갇힌 관념을 깨고 더 좋은 움직임을 위해<br/>
+                                끊임없이 노력하고 연구합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide s-slide2">
+                        <div class="content">
+                            <h5>
+                                <span>Training</span><br/>
+                                of Leaders
+                            </h5>
+                            <p>
+                                각 분야별 전문가들로 구축된 인프라,<br/>
+                                최고의 지도자를 양성합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination-wrapper">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="article article1">
+            <div class="a1-bg"></div>
+            <div class="article-wrapper">
+                <div class="a1-wrapper">
+                    <div class="a1-title">
+                        <p>
+                            BLANK ACADEMY
+                        </p>
+                        <h5>
+                            더 좋은 움직임을 위해<br/>
+                            <span>고정관념을 깨다</span>
+                        </h5>
+                    </div>
+                    <div class="a1-box-wrapper">
+                        <div class="a1-box-group">
+                            <div class="a1-box">
+                                <img src="contents/images/pl.svg" class="pl">
+                                <img src="contents/images/pl.svg" class="pl pl2">
+                                <div class="a1-b-num">
+                                    <p>
+                                        01
+                                    </p>
+                                </div>
+                                <div class="a1-b-text">
+                                    <h5>
+                                        Customer Trust
+                                    </h5>
+                                    <p>
+                                        고객이 믿고 투자할 수 있는
+                                    </p>
+                                </div>
+                                <div class="a1-b-image">
+                                    <img src="contents/images/a1-1.jpg">
+                                </div>
+                            </div>
+                            <div class="a1-box">
+                                <img src="contents/images/pl.svg" class="pl">
+                                <img src="contents/images/pl.svg" class="pl pl2">
+                                <div class="a1-b-num">
+                                    <p>
+                                        02
+                                    </p>
+                                </div>
+                                <div class="a1-b-text">
+                                    <h5>
+                                        Flexible Thinking
+                                    </h5>
+                                    <p>
+                                        유연한 사고로 상황을 판단하는
+                                    </p>
+                                </div>
+                                <div class="a1-b-image">
+                                    <img src="contents/images/a1-2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a1-box-group">
+                            <div class="a1-box">
+                                <img src="contents/images/pl.svg" class="pl">
+                                <img src="contents/images/pl.svg" class="pl pl2">
+                                <div class="a1-b-num">
+                                    <p>
+                                        03
+                                    </p>
+                                </div>
+                                <div class="a1-b-text">
+                                    <h5>
+                                        Trendy
+                                    </h5>
+                                    <p>
+                                        다양한 진로 방향성을 제시하는
+                                    </p>
+                                </div>
+                                <div class="a1-b-image">
+                                    <img src="contents/images/a1-3.jpg">
+                                </div>
+                            </div>
+                            <div class="a1-box">
+                                <img src="contents/images/pl.svg" class="pl">
+                                <img src="contents/images/pl.svg" class="pl pl2">
+                                <div class="a1-b-num">
+                                    <p>
+                                        04
+                                    </p>
+                                </div>
+                                <div class="a1-b-text">
+                                    <h5>
+                                        High Value
+                                    </h5>
+                                    <p>
+                                        각 분야별 전문가들과의 인프라 구축
+                                    </p>
+                                </div>
+                                <div class="a1-b-image">
+                                    <img src="contents/images/a1-4.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article article2">
+            <div class="article-wrapper">
+                <div class="a2-wrapper">
+                    <img src="contents/images/a2-1.jpg" class="a2-image">
+                    <div class="a2-text">
+                        <h4>
+                            REVOLUTION
+                        </h4>
+                        <h5>
+                            트레이닝의 <span>혁명</span>
+                        </h5>
+                        <p>
+                            틀에 박힌 트레이닝을 지속해오며 의심을 하고 있던 프로골퍼와 요가강사가,
+                            어느 날 우연히 협응성과 사고의 유연성에 미쳐있는 한 트레이너와의 만남을 통해,
+                            <br/><br/>
+                            틀에 갇힌 관념을 깨고 각 분야에 시너지를 내며<br/>
+                            더 좋은 움직임을 연구하는 집단
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article article3">
+            <div class="article-wrapper">
+                <div class="a3-title">
+                    <h4>
+                        BLANK REVIEW
+                    </h4>
+                    <h5>
+                        교육후기가 <span>증명</span>합니다
+                    </h5>
+                    <p>
+                        블랭크 아카데미 수강생들이 직접 남긴 후기를 확인하시고, 블랭크에 합류하세요!
+                    </p>
+                </div>
+                <div class="swiper a3Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="" class="ss-moreBtn">
+                                view more +
+                            </a>
+                            <div class="ss-text">
+                                <h5>
+                                    정말 틀에 박힌 사고를 깰 수 있게 되었어요!
+                                </h5>
+                                <p>
+                                    고정관념에 사로잡혔던 이전 교육의 문제점을 없애고 정말 혁명과도 같은 신선한 교육을 받을 수 있어 너무 좋았습니다. 주변에도 추천할 예정이에요.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="ss-moreBtn">
+                                view more +
+                            </a>
+                            <div class="ss-text">
+                                <h5>
+                                    정말 틀에 박힌 사고를 깰 수 있게 되었어요!
+                                </h5>
+                                <p>
+                                    고정관념에 사로잡혔던 이전 교육의 문제점을 없애고 정말 혁명과도 같은 신선한 교육을 받을 수 있어 너무 좋았습니다. 주변에도 추천할 예정이에요.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="ss-moreBtn">
+                                view more +
+                            </a>
+                            <div class="ss-text">
+                                <h5>
+                                    정말 틀에 박힌 사고를 깰 수 있게 되었어요!
+                                </h5>
+                                <p>
+                                    고정관념에 사로잡혔던 이전 교육의 문제점을 없애고 정말 혁명과도 같은 신선한 교육을 받을 수 있어 너무 좋았습니다. 주변에도 추천할 예정이에요.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="ss-moreBtn">
+                                view more +
+                            </a>
+                            <div class="ss-text">
+                                <h5>
+                                    정말 틀에 박힌 사고를 깰 수 있게 되었어요!
+                                </h5>
+                                <p>
+                                    고정관념에 사로잡혔던 이전 교육의 문제점을 없애고 정말 혁명과도 같은 신선한 교육을 받을 수 있어 너무 좋았습니다. 주변에도 추천할 예정이에요.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="ss-moreBtn">
+                                view more +
+                            </a>
+                            <div class="ss-text">
+                                <h5>
+                                    정말 틀에 박힌 사고를 깰 수 있게 되었어요!
+                                </h5>
+                                <p>
+                                    고정관념에 사로잡혔던 이전 교육의 문제점을 없애고 정말 혁명과도 같은 신선한 교육을 받을 수 있어 너무 좋았습니다. 주변에도 추천할 예정이에요.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="ss-moreBtn">
+                                view more +
+                            </a>
+                            <div class="ss-text">
+                                <h5>
+                                    정말 틀에 박힌 사고를 깰 수 있게 되었어요!
+                                </h5>
+                                <p>
+                                    고정관념에 사로잡혔던 이전 교육의 문제점을 없애고 정말 혁명과도 같은 신선한 교육을 받을 수 있어 너무 좋았습니다. 주변에도 추천할 예정이에요.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="ss-moreBtn">
+                                view more +
+                            </a>
+                            <div class="ss-text">
+                                <h5>
+                                    정말 틀에 박힌 사고를 깰 수 있게 되었어요!
+                                </h5>
+                                <p>
+                                    고정관념에 사로잡혔던 이전 교육의 문제점을 없애고 정말 혁명과도 같은 신선한 교육을 받을 수 있어 너무 좋았습니다. 주변에도 추천할 예정이에요.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="ss-moreBtn">
+                                view more +
+                            </a>
+                            <div class="ss-text">
+                                <h5>
+                                    정말 틀에 박힌 사고를 깰 수 있게 되었어요!
+                                </h5>
+                                <p>
+                                    고정관념에 사로잡혔던 이전 교육의 문제점을 없애고 정말 혁명과도 같은 신선한 교육을 받을 수 있어 너무 좋았습니다. 주변에도 추천할 예정이에요.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article article4">
+            <div class="article-wrapper">
+                4
+            </div>
+        </section>
+        <section class="article article5">
+            <div class="article-wrapper">
+                5
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <p>
+                ⓒ 2024 블랭크아카데미. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+
+    <script src="contents/js/common.js"></script>
+    <script src="contents/js/header.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "fade",
+            speed: 2000,
+            loop: true,
+            loopedSlides: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + "<p>" + 0 + (index + 1) + "</p>" + "</span>";
+                },
+            },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".a3Swiper", {
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+            grabCursor: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                1051: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 40,
+                },
+                2000: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 50,
+                },
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: true,
+            },
+        });
+    </script>
+
+</body>
+</html>

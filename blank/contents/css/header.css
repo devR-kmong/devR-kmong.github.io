@@ -1,0 +1,141 @@
+.header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 110px;
+    padding-top: 42px;
+    display: flex;
+    justify-content: center;
+    transition: all .15s;
+    z-index: 99;
+}
+
+.header.more {
+    height: 300px;
+    background-color: #333;
+}
+
+.Fixed {
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: #333;
+}
+
+.logo {
+    width: 160px;
+    height: fit-content;
+    margin-top: -10px;
+}
+
+.logo-s {
+    display: none;
+}
+
+.gnb {
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+}
+
+.menu-item a {
+    width: 220px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all .2s;
+}
+
+.menu-item i {
+    display: none;
+}
+
+.menu-head {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sub-menu {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    margin-top: 2.5rem;
+    display: none;
+}
+
+.sub-menu li a {
+    color: #fff;
+    font-size: 17px;
+}
+
+.menuBtns {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 152px;
+    cursor: pointer;
+}
+
+.menuBtns .bar1,
+.menuBtns .bar2,
+.menuBtns .bar3 {
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+}
+
+
+/*==================================================*/
+@media (max-width: 1350px) {
+    .gnb {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .header {
+        padding-top: 18px;
+        background: url(../images/ctt-m.png) no-repeat;
+        background-position: bottom left;
+        background-size: cover;
+    }
+    
+    .gnb .menu {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .header {
+        height: 100px;
+    }
+
+    .logo {
+        width: 75px;
+    }
+
+    .menuBtns {
+        gap: 6px;
+        margin-top: 10px;
+    }
+
+    .menuBtns .bar1,
+    .menuBtns .bar2,
+    .menuBtns .bar3 {
+        width: 24px;
+    }
+}
