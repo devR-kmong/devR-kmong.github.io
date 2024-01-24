@@ -12,9 +12,11 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(document).scrollTop() > Offset.top) {
             $('.menu').addClass('Fixed');
+            $('.logo').hide();
         }
         else {
             $('.menu').removeClass('Fixed');
+            $('.logo').show();
         }
     });
 });

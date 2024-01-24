@@ -2,5 +2,35 @@
     padding-top: 0;
 }
 
+.a1-flow-wrapper {
+    width: 100%;
+    margin-top: -5rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.a1-flow {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    animation: flow 60s linear infinite;
+    user-select: none;
+    z-index: 1;
+}
+
+.a1-flow img {
+    height: 100px;
+}
+
+@keyframes flow {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-400%, 0, 0);
+    }
+}
+
 
 /*==================================================*/

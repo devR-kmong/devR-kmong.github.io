@@ -1,4 +1,23 @@
+.article3 .article-wrapper {
+    width: 100%;
+}
 
+.a3-title {
+    margin-bottom: 6rem;
+}
+
+.mySwiper {
+    width: 100%;
+}
+
+.mySwiper .swiper-slide img {
+    width: 100%;
+}
 
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .article3 .article-wrapper {
+        padding: 0;
+    }
+}
