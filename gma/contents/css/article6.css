@@ -1,0 +1,64 @@
+.article6 {
+    position: relative;
+    background: url(../images/a6-bg.jpg);
+    overflow: hidden;
+}
+
+.article6 .article-wrapper {
+    width: 100%;
+}
+
+.a6-roller {
+    position: absolute;
+    top: 37%; right: 0;
+    z-index: 3;
+}
+
+.a6-title {
+    margin-bottom: 3rem;
+}
+
+.a6-paint-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a6-paint {
+    position: absolute;
+    top: 40px; left: 0;
+    width: 80%;
+    height: 250px;
+    background-color: var(--main-color);
+    mix-blend-mode: multiply;
+}
+
+.a6-1 {
+    position: absolute;
+    top: 90px;
+}
+
+.a6-text {
+    color: #888;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 360px;
+}
+
+.a6-text span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .a6-paint {
+        top: 38px;
+        width: 85%;
+    }
+}

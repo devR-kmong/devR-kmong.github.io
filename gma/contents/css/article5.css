@@ -1,0 +1,88 @@
+.article5 {
+    background: url(../images/a5-bg.jpg);
+    overflow: hidden;
+}
+
+.article5 .article-wrapper {
+    width: 100%;
+}
+
+.a5-1 {
+    margin-bottom: 2rem;
+}
+
+.a5-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: -60px;
+}
+
+.a5-2 {
+    margin-right: -100px;
+}
+
+.a5-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.a5-flow-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+
+.a5-flow {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    animation: flow 200s linear infinite;
+}
+
+.a5-image {
+    position: relative;
+    width: 300px;
+    min-width: 300px;
+}
+
+.a5-image::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #00000090 0%, transparent 100%);
+    z-index: 1;
+}
+
+.a5-image img {
+    margin-bottom: -5px;
+}
+
+.a5-image p {
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 24px;
+    font-family: 'BMEULJIRO';
+    z-index: 10;
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.a5-flow:hover {
+    animation-play-state: paused;
+}
+
+.a5-image:hover p {
+    bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*==================================================*/

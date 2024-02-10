@@ -1,0 +1,334 @@
+.header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    transition: all 1s ease;
+    z-index: 98;
+}
+
+.nav {
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    max-width: 200px;
+    padding-top: 4px;
+}
+
+.gnb {
+    display: flex;
+    gap: 4rem;
+    margin-right: 60px;
+    transition: all 1s ease;
+}
+
+.gnb li a,
+.gnb a {
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.gnb li a.actives::after {
+    content: '';
+    position: absolute;
+    bottom: -22px; left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--main-color);
+}
+
+.askBtn {
+    color: #fff;
+    font-size: 32px;
+    font-family: 'PuradakGentleGothicR';
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+}
+
+
+.Fixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    background-color: rgba(0, 0, 0, .85);
+}
+
+.actives {
+    color: var(--main-color) !important;
+    font-weight: 800 !important;
+}
+
+.header.Fixed .nav {
+    justify-content: center;
+}
+
+.header.Fixed .logo,
+.header.Fixed .askBtn {
+    display: none;
+    transition: all 1s ease;
+}
+
+.header.Fixed .gnb {
+    opacity: 1;
+    visibility: visible;
+    width: 1200px;
+    justify-content: space-between;
+    margin-right: 0;
+}
+
+#check,
+.m-telBtn,
+.menuBtns,
+.overlay,
+.m-sb {
+    display: none;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .gnb {
+        margin-right: 220px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .nav {
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 1919px) {    
+    .gnb {
+        display: none;
+    }
+
+    .header {
+        transition: none;
+    }
+    
+    .header.Fixed .nav {
+        justify-content: center;
+    }
+    
+    .header.Fixed .logo,
+    .header.Fixed .askBtn {
+        display: none;
+    }
+
+    .header.Fixed .gnb {
+        display: flex;
+        transition: none;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .header {
+        height: 80px;
+        transition: all 1s ease;
+    }
+    
+    .logo {
+        display: flex;
+        width: 120px;
+        max-width: 120px;
+    }
+
+    .Fixed {
+        height: 80px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .header.Fixed .nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header.Fixed .logo {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header.Fixed .gnb {
+        width: 80%;
+        justify-content: center;
+    }
+    
+    .askBtn {
+        display: none;
+    }
+
+    .m-telBtn {
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+    }
+
+    .menuBtns {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .nav label {
+        display: flex;
+        z-index: 8;
+    }
+
+    .gnb {
+        position: relative;
+        position: absolute;
+        top: 0; left: -100%;
+        width: 80%;
+        height: 100vh;
+        padding-left: 50px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        background-color: #111;
+        touch-action: none;
+        transition: all .3s ease !important;
+        opacity: 1;
+        visibility: visible;
+        z-index: 7;
+        overflow: hidden;
+    }
+
+    .gnb li a {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .gnb li a.actives::after {
+        bottom: -7px;
+        height: 3px;
+        background-color: transparent;
+    }
+
+    .actives {
+        color: #fff !important;
+        font-weight: 700 !important;
+    }
+
+    .m-sb {
+        position: absolute;
+        bottom: -50px; right: -50px;
+        width: 400px;
+        display: flex;
+        animation: rotate_image 10s linear infinite;
+        opacity: .05;
+    }
+
+    .m-hide {
+        display: none;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-color: rgba(0, 0, 0, .6);
+        transition: all .3s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 6;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 24px;
+        height: 2px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: .3s ease;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-5px, 2px);
+        transform: rotate(-45deg) translate(-5px, 2px);
+        background-color: #fff;
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -6px);
+        transform: rotate(45deg) translate(-9px, -6px);
+        background-color: #fff;
+    }
+    
+    #check:checked ~ .gnb {left: 0;}
+    #check:checked ~ .overlay {
+        opacity: 1;
+        visibility: visible;
+        touch-action: none;
+    }
+}
+
+
+
+@media (max-width: 550px) {
+    .header,
+    .Fixed {
+        height: 70px;
+    }
+
+    .logo {
+        width: 90px;
+        max-width: 90px;
+    }
+    
+    .m-telBtn {
+        font-size: 20px;
+    }
+    
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 24px;
+        height: 2px;
+        margin: 3px 0;
+        transition: .3s ease;
+    }
+
+    .bar2 {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-5px, 2px);
+        transform: rotate(-45deg) translate(-3px, 3px);
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -6px);
+        transform: rotate(45deg) translate(-4px, -4px);
+    }
+}

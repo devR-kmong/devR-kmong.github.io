@@ -1,0 +1,47 @@
+.article8 {
+    background: url(../images/a8-bg.jpg);
+}
+
+.a8-title {
+    margin-bottom: 3rem;
+}
+
+.a8-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.a8-box {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 3%);
+}
+
+.a8-box-number {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.a8-box-text h5 {
+    color: #222;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.a8-box-text p {
+    color: #aaa;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+
+/*==================================================*/
