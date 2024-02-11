@@ -41,7 +41,6 @@ li {
 }
 
 
-/*==================================================*/
 @font-face {
     font-family: 'PuradakGentleGothicR';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
@@ -89,5 +88,19 @@ li {
 
     100% {
         transform: translate3d(-600%, 0, 0);
+    }
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    @keyframes flow {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+    
+        100% {
+            transform: translate3d(-1200%, 0, 0);
+        }
     }
 }

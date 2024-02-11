@@ -36,6 +36,11 @@
 }
 
 .a3-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
     margin: 7rem 0;
 }
 
@@ -52,8 +57,40 @@
     animation: flow 80s linear infinite;
 }
 
-.a3-flow img {
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .article3 .article-wrapper {
+        padding: 0;
+    }
 }
 
 
-/*==================================================*/
+@media (max-width: 850px) {
+    .a3-1 {
+        width: 85%;
+    }
+    
+    .a3-2 {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a3-title {
+        gap: 3rem;
+        margin: 5rem 0;
+    }
+    
+    .a3-3 {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a3-title {
+        margin: 4rem 0;
+    }
+}

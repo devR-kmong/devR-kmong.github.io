@@ -237,7 +237,6 @@
     position: relative;
     width: 550px;
     padding: 30px;
-    border-radius: 7px;
     background-color: #fff;
 }
 
@@ -312,10 +311,6 @@
 
 
 @media (max-width: 550px) {
-    .form-wrapper {
-        padding: 0 10px;
-    }
-    
     .a11-form .input-group {
         padding: 10px 0;
         gap: 10px;
@@ -345,6 +340,24 @@
 
 
 @media (max-width: 450px) {
+    .a11-title {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .a11-form .input-wrapper .input-title {
+        width: 77px;
+        min-width: 77px;
+    }
+
+    .a11-form .input-wrapper .input-title h5 {
+        font-size: 13px;
+    }
+
+    .a11-form .radio-wrapper label {
+        font-size: 12px;
+    }
+    
     .a11-personal {
         padding: 14px 10px;
     }

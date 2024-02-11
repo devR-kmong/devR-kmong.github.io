@@ -68,6 +68,13 @@
 }
 
 
+@media (max-width: 1750px) {
+    .a7-video {
+        display: none;
+    }
+}
+
+
 @media (max-width: 1050px) {
     .a7-box-wrapper {
         width: 100%;

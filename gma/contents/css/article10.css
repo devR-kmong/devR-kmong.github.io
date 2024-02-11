@@ -127,6 +127,11 @@
 
 
 @media (max-width: 550px) {
+    .a10-title {
+        width: 85%;
+        margin-bottom: -2rem;
+    }
+    
     .mySwiper .swiper-slide {
         opacity: 0;
     }
