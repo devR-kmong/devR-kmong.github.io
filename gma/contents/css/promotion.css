@@ -18,6 +18,7 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: 4rem;
+    margin-left: 30px;
 }
 
 .p-1 {
@@ -102,6 +103,10 @@
         width: fit-content;
     }
 
+    .p-text {
+        margin-left: 60px;
+    }
+    
     .p-1 {
         margin-bottom: -6%;
     }
@@ -157,6 +162,7 @@
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        margin-left: 0;
     }
 
     .p-1 {
