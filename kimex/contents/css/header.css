@@ -1,0 +1,148 @@
+.header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    z-index: 98;
+}
+
+.gnb {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 4rem;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Fixed {
+    position: fixed;
+    top: 0;
+    height: 90px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.active {
+    display: none;
+}
+
+.logo, .logo-w {
+    width: 130px;
+}
+
+#check,
+.gnb label,
+.overlay {
+    display: none;
+}
+
+
+/*==================================================*/
+@media (max-width: 1450px) {
+    .gnb {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .header {
+        height: 75px;
+    }
+
+    .gnb label {
+        display: flex;
+        z-index: 8;
+    }
+
+    .menuBtns {
+        display: inline-block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0; left: -100%;
+        width: 80%;
+        height: 100vh;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #111;
+        touch-action: none;
+        transition: all .2s;
+        z-index: 7;
+        gap: 2.2rem;
+    }
+
+    .menu li a {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .Fixed2 {
+        color: #fff !important;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-color: rgba(0, 0, 0, .6);
+        transition: all .3s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 6;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 24px;
+        height: 2px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: .3s ease;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 2px);
+        background-color: #fff;
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-9px, -6px);
+        background-color: #fff;
+    }
+    
+    #check:checked ~ .menu {left: 0;}
+    #check:checked ~ .overlay {
+        opacity: 1;
+        visibility: visible;
+        touch-action: none;
+    }
+}

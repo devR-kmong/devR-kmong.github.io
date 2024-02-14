@@ -1,0 +1,35 @@
+.Fixed {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.sub-promotion {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.sub-promotion-wrapper {
+    width: 1400px;
+}
+
+.sub-p-text {
+    margin-top: 3rem;
+}
+
+.sub-p-text p {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 1rem;
+}
+
+.sub-p-text h5 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Montserrat';
+}
+
+
+/*==================================================*/

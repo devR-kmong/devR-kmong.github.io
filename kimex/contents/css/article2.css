@@ -1,0 +1,15 @@
+.article2 {
+    background-color: #000;
+}
+
+.article2 .article-wrapper {
+    width: 100%;
+}
+
+
+/*==================================================*/
+@media (max-width: 1450px) {
+    .article2 .article-wrapper {
+        padding: 0;
+    }
+}
