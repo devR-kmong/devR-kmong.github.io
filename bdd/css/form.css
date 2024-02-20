@@ -340,11 +340,6 @@
 
 
 @media (max-width: 450px) {
-    .a7-title {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-    
     .a7-form .input-wrapper .input-title {
         width: 77px;
         min-width: 77px;

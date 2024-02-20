@@ -31,36 +31,6 @@ nav {
     animation: ring 1.6s cubic-bezier(0, 0, .64, 1.4) infinite;
 }
 
-@keyframes ring {
-    15% {
-        transform: rotate(-12deg);
-    }
-
-    30% {
-        transform: rotate(12deg);
-    }
-
-    45% {
-        transform: rotate(-10deg);
-    }
-
-    60% {
-        transform: rotate(5deg);
-    }
-
-    85% {
-        transform: rotate(0deg);
-    }
-
-    90% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
 nav li a {
     position: relative;
     color: var(--main-color);
@@ -90,5 +60,67 @@ header.Fixed nav li a {
 }
 
 
-
 /*==================================================*/
+@media (max-width: 1350px) {
+    nav {
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+
+
+@media (max-width: 950px) {
+    header {
+        height: 120px;
+    }
+    
+    nav {
+        gap: 2rem;
+    }
+    
+    nav li a {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .Fixed {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    nav li a {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    header,
+    .Fixed {
+        height: 100px;
+    }
+    
+    .logo,
+    header.Fixed .logo {
+        width: 60px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    header,
+    .Fixed {
+        height: 80px;
+    }
+    
+    .logo,
+    header.Fixed .logo {
+        width: 50px;
+    }
+}

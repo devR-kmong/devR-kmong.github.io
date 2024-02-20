@@ -85,6 +85,36 @@ li {
     }
 }
 
+@keyframes ring {
+    15% {
+        transform: rotate(-12deg);
+    }
+
+    30% {
+        transform: rotate(12deg);
+    }
+
+    45% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(5deg);
+    }
+
+    85% {
+        transform: rotate(0deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 
 /*==================================================*/
 @media (max-width: 768px) {
