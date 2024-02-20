@@ -21,17 +21,19 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-$(function () {
-    var Offset = $('header').offset();
-    $(window).scroll(function () {
-        if ($(document).scrollTop() > Offset.top) {
-            $('header').addClass('Fixed');
-        }
-        else {
-            $('header').removeClass('Fixed');
-        }
+if (window.innerWidth > 769) {
+    $(function () {
+        var Offset = $('header').offset();
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > Offset.top) {
+                $('header').addClass('Fixed');
+            }
+            else {
+                $('header').removeClass('Fixed');
+            }
+        });
     });
-});
+}
 
 
 
