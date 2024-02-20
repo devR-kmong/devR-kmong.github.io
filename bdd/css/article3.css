@@ -1,0 +1,56 @@
+.a3-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 8rem;
+}
+
+.a3-title {
+    position: sticky;
+    top: 140px;
+    height: fit-content;
+}
+
+.a3-title p {
+    color: var(--main-color);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.a3-title h5 {
+    color: #222;
+    font-size: 65px;
+    font-weight: 800;
+    white-space: nowrap;
+    letter-spacing: -0.06em;
+}
+
+.a3-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.a3-box img {
+    border-radius: 30px;
+}
+
+.a3-box-text {
+    margin-top: 1rem;
+}
+
+.a3-box-text h5 {
+    color: #222;
+    font-size: 32px;
+}
+
+.a3-box-text p {
+    color: #aaa;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-top: 12px;
+}
+
+
+/*==================================================*/

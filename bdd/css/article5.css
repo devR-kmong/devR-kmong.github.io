@@ -1,0 +1,12 @@
+.article5 {
+    background: url(../images/a5-bg.jpg);
+}
+
+.article5 .a2-flow img {
+    border: none;
+    padding: 15px;
+    background-color: #fff;
+}
+
+
+/*==================================================*/

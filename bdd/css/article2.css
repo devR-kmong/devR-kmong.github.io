@@ -1,0 +1,42 @@
+.article2 {
+    background: url(../images/a2-bg.jpg);
+}
+
+.a2-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.a2-title p {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.a2-title h5 {
+    font-size: 75px;
+    animation: blink .7s step-end infinite;
+    letter-spacing: -0.06em;
+}
+
+.a2-flow-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.a2-flow {
+    padding: 30px 0;
+    display: flex;
+    gap: 2rem;
+    animation: flow 150s linear infinite;
+}
+
+.a2-flow img {
+    width: 450px;
+    border-radius: 30px;
+    border: 6px solid #fff;
+}
+
+
+/*==================================================*/
