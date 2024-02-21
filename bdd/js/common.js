@@ -9,8 +9,6 @@ new WOW({
 
 
 var swiper = new Swiper(".mySwiper", {
-    effect: "fade",
-    speed: 500,
     loop: true,
     loopedSlides: 1,
     pagination: {
@@ -19,6 +17,35 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+var swiper = new Swiper(".a5Swiper", {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".sbn",
+        prevEl: ".sbp",
+    },
+    breakpoints: {
+        951: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+        },
+        1251: {
+            slidesPerView: 3.5,
+            spaceBetween: 20,
+        },
+        2000: {
+            slidesPerView: 4.5,
+            spaceBetween: 30,
+        },
+    },
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: true,
+    },
+});
 
 
 if (window.innerWidth > 769) {
@@ -35,6 +62,21 @@ if (window.innerWidth > 769) {
     });
 }
 
+
+
+$(function () {
+    $('.floating').hide();
+    
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('.floating').fadeIn(80);
+            } else {
+                $('.floating').fadeOut(80);
+            }
+        });
+    });
+});
 
 
 

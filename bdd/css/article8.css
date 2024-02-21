@@ -1,0 +1,31 @@
+.article8 {
+    background-color: #2ac1bc;
+}
+
+.a8-title {
+    margin-bottom: 3rem;
+}
+
+.a8-box-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .a8-title {
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a8-title {
+        margin-bottom: 0;
+    }
+    
+    .a8-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
