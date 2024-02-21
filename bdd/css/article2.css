@@ -1,6 +1,9 @@
 .article2 {
     padding-bottom: 100px;
-    background: url(../images/a2-bg.jpg);
+    background-color: var(--sub-color);
+    background-image: linear-gradient(#ffcf5f 1px, transparent 1px), linear-gradient(to right, #ffcf5f 1px, var(--sub-color) 1px);
+    background-size: 20px 20px;
+    background-repeat: repeat;
 }
 
 .a2-title {

@@ -1,6 +1,9 @@
 .article4 {
     position: relative;
-    background: url(../images/a4-bg.jpg);
+    background-color: #f2f2f2;
+    background-image:  repeating-linear-gradient(0deg, #ddd, #ddd 1px, #f2f2f2 1px, #f2f2f2);
+    background-size: 20px 20px;
+    background-repeat: repeat;
     overflow: hidden;
 }
 
@@ -52,10 +55,6 @@
 
 
 @media (max-width: 1250px) {
-    .article4 {
-        background: #f2f2f2;
-    }
-    
     .a4-box-wrapper {
         flex-direction: column;
     }

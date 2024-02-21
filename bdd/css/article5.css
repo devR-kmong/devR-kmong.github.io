@@ -1,6 +1,9 @@
 .article5 {
     padding-bottom: 100px;
-    background: url(../images/a5-bg.jpg);
+    background-color: var(--sub-color);
+    background-image: linear-gradient(#ffcf5f 1px, transparent 1px), linear-gradient(to right, #ffcf5f 1px, var(--sub-color) 1px);
+    background-size: 20px 20px;
+    background-repeat: repeat;
 }
 
 .article5 .a2-flow img {
@@ -17,7 +20,6 @@
 .a5Swiper .swiper-slide {
     transform: scale(.8);
     transition: all .3s;
-    opacity: .6;
 }
 
 .a5Swiper .swiper-slide img {
@@ -28,7 +30,6 @@
 
 .a5Swiper .swiper-slide-active {
     transform: scale(1);
-    opacity: 1;
 }
 
 .a5Swiper .swiper-button-wrapper {
@@ -48,7 +49,7 @@
     align-items: center;
     border-radius: 25px;
     background-color: #fff;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .1);
 }
 
 .a5Swiper .swiper-button-prev img,
