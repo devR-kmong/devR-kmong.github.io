@@ -3,13 +3,6 @@
     overflow: hidden;
 }
 
-.a6-1 {
-    position: absolute;
-    bottom: -100px; left: -150px;
-    width: 700px;
-    z-index: 10;
-}
-
 .a6-title {
     margin-bottom: 3rem;
 }
@@ -31,16 +24,12 @@
 
 /*==================================================*/
 @media (min-width: 2250px) {
-    .a6-1 {
-        width: 900px;
-    }
-
     .a6-table {
-        width: 90%;
+        width: 100%;
     }
 
     .a6-notice {
-        top: 100px;
+        top: 0;
     }
 }
 
@@ -53,10 +42,6 @@
 
 
 @media (max-width: 1250px) {
-    .a6-1 {
-        width: 50%;
-    }
-
     .a6-title {
         width: 75%;
     }
@@ -71,10 +56,6 @@
 
 
 @media (max-width: 768px) {
-    .a6-1 {
-        bottom: -7%; left: -15%;
-    }
-    
     .a6-title {
         width: 90%;
         margin-top: 6%;
