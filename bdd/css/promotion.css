@@ -111,6 +111,14 @@
 
 
 @media (max-width: 550px) {
+    .carousel {
+        height: 1000px;
+    }
+    
+    .mySwiper .swiper-slide {
+        height: 1000px !important;
+    }
+    
     .s-slide1 {
         background: url(../images/b1-m.jpg) no-repeat;
         background-size: cover;
