@@ -1,0 +1,131 @@
+.a2-title {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.a2-title p {
+    color: #888;
+    font-size: var(--font-sub);
+    margin-bottom: 1.5rem;
+}
+
+.a2-title h5 {
+    color: #222;
+    font-size: var(--font-main);
+    font-weight: 800;
+}
+
+.a2-title h5 span {
+    color: var(--main-color);
+}
+
+.a2-graph-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a2-tag {
+    position: absolute;
+    top: -50px; right: 0;
+    color: #aaa;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.a2-line-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.a2-line {
+    width: 100%;
+    border: 1px dashed #ddd;
+}
+
+.a2-graph {
+    position: relative;
+    width: 70px;
+    height: 400px;
+    background-color: #eee;
+}
+
+.a2-activeBar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--main-color);
+    transition: all .3s;
+    z-index: 1;
+}
+
+.a2-graph:nth-child(3) .a2-activeBar {
+    animation: h56 1s both;
+}
+.a2-graph:nth-child(4) .a2-activeBar {
+    animation: h48 1s both;
+}
+.a2-graph:nth-child(5) .a2-activeBar {
+    animation: h56 1s both;
+}
+.a2-graph:nth-child(6) .a2-activeBar {
+    animation: h90 1s both;
+}
+.a2-graph:nth-child(7) .a2-activeBar {
+    animation: h48 1s both;
+}
+.a2-graph:nth-child(8) .a2-activeBar {
+    animation: h56 1s both;
+}
+.a2-graph:nth-child(9) .a2-activeBar {
+    animation: h90 1s both;
+}
+
+@keyframes h48 {
+    100% {
+        height: 48%;
+    }
+}
+@keyframes h56 {
+    100% {
+        height: 56%;
+    }
+}
+@keyframes h90 {
+    100% {
+        height: 90%;
+    }
+}
+
+.a2-cate {
+    position: absolute;
+    bottom: -30px; left: 50%;
+    transform: translate(-50%, 0);
+    color: #222;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.a2-num {
+    position: absolute;
+    bottom: 15px; left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    z-index: 10;
+}
+
+
+/*==================================================*/
