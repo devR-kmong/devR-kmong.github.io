@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="contents/css/footer.css">
     <link rel="stylesheet" href="contents/css/floating.css">
     <link rel="stylesheet" href="contents/css/animate.css">
+    <link rel="stylesheet" href="contents/css/form.css">
     <link rel="stylesheet" href="contents/css/aos.css">
     <link rel="shortcut icon" href="contents/images/favicon.png"  type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css">
@@ -367,28 +368,192 @@
     </section>
     <section class="article article6" id="solution">
         <div class="article-wrapper">
-            
+            <div class="at-wrapper">
+                <div class="a6-title">
+                    <p>
+                        저희가 맞춤형으로 다 해드릴게요
+                    </p>
+                    <h5>
+                        복잡한 성능점검<br/>
+                        <span>한 번에</span> 해결하세요
+                    </h5>
+                </div>
+                <div class="a6-right">
+                    <ul class="a6-list">
+                        <h5>
+                            성능점검 체크리스트
+                        </h5>
+                        <li>
+                            <span></span>
+                            설비현황 파악 / 견적
+                        </li>
+                        <li>
+                            <span></span>
+                            성능점검
+                        </li>
+                        <li>
+                            <span></span>
+                            유지관리 / 관리자선임
+                        </li>
+                        <li>
+                            <span></span>
+                            보고서제작
+                        </li>
+                        <li>
+                            <span></span>
+                            대관업무
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <section class="article article7" id="management">
         <div class="article-wrapper">
-            
+            <div class="at-wrapper">
+                <div class="a7-title">
+                    <h5>
+                        현재 업무에만<br/>
+                        <span>집중</span>할 수 있도록
+                    </h5>
+                    <p>
+                        분기/상·하반기별 맞춤 유지관리 가능<br/>
+                        지자체 보고서 제출일정 및 서류 관리까지
+                    </p>
+                </div>
+                <div class="a7-right">
+                    <img src="contents/images/a7-1.png" class="a7-1">
+                </div>
+            </div>
         </div>
     </section>
     <section class="article article8" id="contact">
         <div class="article-wrapper">
-            
+            <div class="at-wrapper">
+                <div class="a8-title">
+                    <h5>
+                        간편하게<br/>
+                        견적 접수하세요
+                    </h5>
+                    <p>
+                        보내주신 정보를 토대로 담당자가<br/>
+                        순차적으로 연락드리겠습니다.
+                    </p>
+                </div>
+                <div class="form-wrapper">
+                    <form class="gform" action="" method="POST" onSubmit="alert('문의가 성공적으로 접수되었습니다.');wcs_submit();">
+                        <div class="input-wrapper">
+                            <div class="input-title">
+                                <p>건축물·담당자명 <span>*</span></p>
+                            </div>
+                            <input type="text" name="name" placeholder="건축물·담당자명" class="inputbox" autocomplete="off" required />
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="input-title">
+                                <p>연락처 <span>*</span></p>
+                            </div>
+                            <input type="tel" name="phone" placeholder="연락처" class="inputbox phoneNumber" autocomplete="off" required />
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="input-title">
+                                <p>이메일 <span>*</span></p>
+                            </div>
+                            <input type="email" name="email" placeholder="이메일" class="inputbox" autocomplete="off" required />
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="input-title">
+                                <p>유입경로 <span>*</span></p>
+                            </div>
+                            <div class="radio-wrapper">
+                                <input type="radio" id="rb1" name="category" value="검색광고" checked required />
+                                <label for="rb1">
+                                    검색광고
+                                </label>
+                                <input type="radio" id="rb2" name="category" value="지인" required />
+                                <label for="rb2">
+                                    지인
+                                </label>
+                                <input type="radio" id="rb3" name="category" value="SNS" required />
+                                <label for="rb3">
+                                    SNS
+                                </label>
+                                <input type="radio" id="rb4" name="category" value="기타" required />
+                                <label for="rb4">
+                                    기타
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-wrapper" style="width: 100%;">
+                            <div class="input-title">
+                                <p>문의내용 <span>*</span></p>
+                            </div>
+                            <textarea name="message" placeholder="연면적, 건축물 경과년수 등 자세한 정보를 입력해주세요." class="textbox" autocomplete="off" required></textarea>
+                        </div>
+                        <div class="f-personal">
+                            <div class="f-personal-text">
+                                <input type="checkbox" id="cb" checked required />
+                                <label for="cb">
+                                    <em></em>
+                                    <p>
+                                        개인정보수집 및 이용에 동의합니다.
+                                    </p>
+                                </label>
+                            </div>
+                            <div class="f-personalBtn">
+                                <p>내용보기</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="f-submit">
+                            <p>전송하기</p>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
     <section class="footer">
         <div class="footer-wrapper">
-            <p>
-                footer
-            </p>
+            <div class="footer-box-wrapper">
+                <div class="footer-box">
+                    <img src="contents/images/logo-w.svg" class="logo-f">
+                    <div class="f-info">
+                        <p>
+                            대표자 : 이창균 <span>│</span> <br/>사업자등록번호 : 844-86-01761<em><br/></em>
+                            대표전화 : 1533-2105 <span>│</span> <br/>FAX : 02-868-0418 <span>│</span> <br/>EMAIL : ahvaca.kor@gmail.com<em><br/></em>
+                            본원 : 서울특별시 금천구 가산디지털1로 16, 14층 1406-1408F호 (가산동, 가산SKV1 AP타워)
+                        </p>
+                        <br/>
+                        <p>
+                            ⓒ 한국건축물성능관리원. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <div class="pp-wrapper pp-wrapper1">
+        <div class="policy-popup">
+            <div class="pp-closeBtn">
+                <img src="contents/images/close.svg">
+            </div>
+            <div class="pp-title">
+                <p>개인정보처리방침</p>
+            </div>
+            <textarea readonly>1. 개인정보의 수집 및 이용 목적
+개인정보 수집방법 : 홈페이지(견적문의)
+견적 안내 · 서비스 설명 · 회사 소식 등의 다양한 정보 및 컨텐츠 제공
+
+2. 수집하는 개인정보 항목
+성함 · 연락처 · 이메일
+
+3. 개인정보의 보유 및 이용 기간
+고객님의 정보는 개인정보 보호법에 따라 보호됩니다.
+입력해주신 개인정보는 문의 · 상담 목적으로 사용되며 사용 후 즉시 폐기됩니다.</textarea>
+        </div>
+    </div>
 
     <script src="contents/js/common.js"></script>
+    <script src="contents/js/form.js"></script>
     
 </body>
 </html>
