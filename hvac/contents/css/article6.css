@@ -1,0 +1,75 @@
+.article6 {
+    background-color: #f5f5f5;
+}
+
+.a6-title {
+    min-width: 550px;
+}
+
+.a6-title p {
+    color: #888;
+    font-size: var(--font-sub);
+    margin-bottom: 2rem;
+}
+
+.a6-title h5 {
+    color: #222;
+    font-size: var(--font-main);
+    font-weight: 800;
+}
+
+.a6-title h5 span {
+    color: var(--main-color);
+}
+
+.a6-right {
+    position: relative;
+    width: 100%;
+    height: 754px;
+    background: url(../images/a6-1.png) no-repeat;
+    background-size: cover;
+}
+
+.a6-list {
+    position: absolute;
+    top: 30%; left: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.a6-list h5 {
+    color: #222;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.a6-list li {
+    color: #ccc;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all .5s;
+}
+
+.a6-list li span {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: all .5s;
+}
+
+.a6-list li.on {
+    color: #888;
+}
+
+.a6-list li.on span {
+    background-color: #888;
+    border: 1px solid #888;
+}
+
+
+/*==================================================*/

@@ -1,0 +1,27 @@
+.article7 {
+    background-color: #f5f5f5;
+}
+
+.a7-title {
+    min-width: 500px;
+}
+
+.a7-title h5 {
+    color: #222;
+    font-size: var(--font-main);
+    font-weight: 800;
+}
+
+.a7-title h5 span {
+    color: var(--main-color);
+}
+
+.a7-title p {
+    color: #888;
+    font-size: var(--font-sub);
+    line-height: 1.6;
+    margin-top: 2rem;
+}
+
+
+/*==================================================*/

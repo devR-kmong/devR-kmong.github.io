@@ -1,0 +1,20 @@
+.article8 {
+    background: url(../images/a8-bg.jpg);
+}
+
+.a8-title {
+    color: #fff;
+}
+
+.a8-title h5 {
+    font-size: var(--font-big);
+}
+
+.a8-title p {
+    font-size: var(--font-sub);
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+
+
+/*==================================================*/
