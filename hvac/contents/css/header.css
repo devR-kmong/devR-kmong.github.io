@@ -41,13 +41,13 @@
     background: var(--main-color);
 }
 
-.menuBtn:nth-child(1) img {
+.menu li:nth-child(1) img {
     height: 55%;
 }
-.menuBtn:nth-child(2) img {
-    height: 61%;
+.menu li:nth-child(2) img {
+    height: 60%;
 }
-.menuBtn:nth-child(3) img {
+.menu li:nth-child(3) img {
     height: 57%;
 }
 
