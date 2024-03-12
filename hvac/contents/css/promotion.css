@@ -104,3 +104,25 @@
         margin-top: 3rem;
     }
 }
+
+
+@media (max-width: 450px) {
+    .p-text h5 {
+        font-size: 45px;
+    }
+    
+    .p-text h5 span {
+        font-weight: 700;
+    }
+
+    .p-text p {
+        font-size: 18px;
+    }
+
+    .pBtn {
+        width: 160px;
+        height: 43px;
+        font-size: 15px;
+        margin-top: 2.5rem;
+    }
+}
