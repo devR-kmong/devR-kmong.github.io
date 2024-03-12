@@ -61,3 +61,10 @@
         gap: 1rem;
     }
 }
+
+
+@media (max-width: 450px) {
+    .at-wrapper {
+        gap: 0;
+    }
+}

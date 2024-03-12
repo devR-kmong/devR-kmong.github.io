@@ -93,6 +93,10 @@
         font-size: 55px;
     }
 
+    .p-text p {
+        font-size: 20px;
+    }
+
     .p-text p br {
         display: block;
     }

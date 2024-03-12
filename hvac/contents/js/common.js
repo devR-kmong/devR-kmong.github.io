@@ -18,7 +18,7 @@ if (window.innerWidth > 1600) {
     new WOW({
         boxClass:     'wow',
         animateClass: 'animated',
-        offset:       200,
+        offset:       100,
         mobile:       true,
         live:         true
     }).init();

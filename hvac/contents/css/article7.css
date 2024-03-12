@@ -48,7 +48,12 @@
         overflow: hidden;
     }
     
+    .a7-title p {
+        margin-top: 1.5rem;
+    }
+    
     .a7-right {
-        width: 115%;
+        width: 120%;
+        margin-right: -20px;
     }
 }

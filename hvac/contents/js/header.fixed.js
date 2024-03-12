@@ -18,17 +18,19 @@ $(function () {
 
 
 ////////////////////////////////////////////////////////////////////
-$(function () {
-    $(window).scroll(function () {
-        var here = $('.article8').offset().top;
-        var height = $(document).scrollTop();
-
-        if (here <= height) {
-            $('.logo').addClass('active');
-            $('.logo-w').removeClass('active');
-            $('.menuBtn').removeClass('on');
-            $('.telBtn').removeClass('on');
-            $('.remoteBtn.actives').addClass('on');
-        }
-    })
-});
+if (window.innerWidth > 1600) {
+    $(function () {
+        $(window).scroll(function () {
+            var here = $('.article8').offset().top;
+            var height = $(document).scrollTop();
+    
+            if (here <= height) {
+                $('.logo').addClass('active');
+                $('.logo-w').removeClass('active');
+                $('.menuBtn').removeClass('on');
+                $('.telBtn').removeClass('on');
+                $('.remoteBtn.actives').addClass('on');
+            }
+        })
+    });
+}
