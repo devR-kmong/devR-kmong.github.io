@@ -60,3 +60,62 @@
 
 
 /*==================================================*/
+@media (max-width: 950px) {
+    .a4-box {
+        width: 90%;
+    }
+
+    .a4-box-icon {
+        width: 10%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a4-box {
+        position: relative;
+        width: 80%;
+        gap: 1.5rem;
+    }
+    
+    .a4-box p {
+        padding: 30px;
+        padding-top: 40px;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+
+    .a4-box-icon {
+        position: absolute;
+        top: -20px; left: 20px;
+        flex-direction: row;
+    }
+
+    .a4-box:nth-child(2n) .a4-box-icon {
+        left: unset; right: 20px;
+        flex-direction: row-reverse;
+    }
+    
+    .a4-box-icon img {
+        width: 50px;
+        min-width: 50px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-box-wrapper {
+        gap: 4rem;
+    }
+    
+    .a4-box p {
+        padding: 25px;
+        padding-top: 30px;
+        font-size: 15px;
+    }
+
+    .a4-box-icon img {
+        width: 40px;
+        min-width: 40px;
+    }
+}

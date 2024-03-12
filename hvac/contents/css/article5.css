@@ -25,3 +25,19 @@
 
 
 /*==================================================*/
+@media (max-width: 550px) {
+    .a5-text h5 {
+        font-size: 45px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a5-text h5 {
+        font-size: 36px;
+    }
+
+    .a5-text p {
+        margin-top: 2rem;
+    }
+}

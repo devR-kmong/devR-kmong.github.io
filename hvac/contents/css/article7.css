@@ -25,3 +25,30 @@
 
 
 /*==================================================*/
+@media (max-width: 1350px) {
+    .a7-title {
+        min-width: unset;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a7-title {
+        width: 100%;
+    }
+    
+    .a7-right {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article7 {
+        overflow: hidden;
+    }
+    
+    .a7-right {
+        width: 115%;
+    }
+}

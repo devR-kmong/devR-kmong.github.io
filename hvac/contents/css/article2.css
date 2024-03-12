@@ -117,3 +117,100 @@
 
 
 /*==================================================*/
+@media (max-width: 768px) {
+    .article2 {
+        padding-bottom: 20%;
+    }
+    
+    .a2-tag {
+        font-size: 15px;
+    }
+    
+    .a2-graph {
+        width: 50px;
+    }
+    
+    .a2-cate {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a2-title p {
+        margin-bottom: 1rem;
+    }
+    
+    .a2-tag {
+        top: -35px;
+    }
+    
+    .a2-line-wrapper {
+        display: none;
+    }
+    
+    .a2-graph-wrapper {
+        flex-direction: column;
+        justify-content: unset;
+        gap: 10px;
+    }
+
+    .a2-graph {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .a2-activeBar {
+        width: 0%;
+        height: 40px;
+    }
+
+    @keyframes h48 {
+        100% {
+            width: 48%;
+        }
+    }
+    @keyframes h56 {
+        100% {
+            width: 56%;
+        }
+    }
+    @keyframes h90 {
+        100% {
+            width: 90%;
+        }
+    }
+
+    .a2-cate {
+        bottom: unset;
+        top: 50%; left: 10px;
+        transform: translate(0, -50%);
+        color: #fff;
+        font-weight: 600;
+        text-align: left;
+        z-index: 10;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a2-title {
+        margin-bottom: 3rem;
+    }
+
+    .a2-tag {
+        font-size: 13px;
+    }
+    
+    .a2-graph,
+    .a2-activeBar {
+        height: 30px;
+    }
+    
+    .a2-cate {
+        font-size: 13px;
+    }
+}

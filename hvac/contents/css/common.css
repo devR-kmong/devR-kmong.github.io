@@ -41,4 +41,37 @@ li {
 
 
 /*=========================================================*/
+@media (max-width: 950px) {
+    :root {
+        --font-main: 65px;
+        --font-sub: 22px;
+        --font-big: 85px;
+    }
+}
 
+
+@media (max-width: 768px) {
+    :root {
+        --font-main: 55px;
+        --font-sub: 20px;
+        --font-big: 75px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    :root {
+        --font-main: 45px;
+        --font-sub: 16px;
+        --font-big: 65px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    :root {
+        --font-main: 36px;
+        --font-sub: 14px;
+        --font-big: 50px;
+    }
+}

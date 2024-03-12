@@ -24,52 +24,42 @@
 
 .a6-right {
     position: relative;
-    width: 100%;
-    height: 754px;
-    background: url(../images/a6-1.png) no-repeat;
-    background-size: cover;
 }
 
-.a6-list {
+.a6-2 {
     position: absolute;
-    top: 30%; left: 18%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    top: 27%; left: 14%;
+    width: 45%;
 }
 
-.a6-list h5 {
-    color: #222;
-    font-size: 32px;
-    font-weight: 800;
-    margin-bottom: 1rem;
-}
-
-.a6-list li {
-    color: #ccc;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    transition: all .5s;
-}
-
-.a6-list li span {
-    width: 16px;
-    height: 16px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    transition: all .5s;
-}
-
-.a6-list li.on {
-    color: #888;
-}
-
-.a6-list li.on span {
-    background-color: #888;
-    border: 1px solid #888;
-}
 
 
 /*==================================================*/
+@media (max-width: 1350px) {
+    .a6-title {
+        min-width: unset;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a6-title {
+        width: 100%;
+    }
+    
+    .a6-right {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article6 {
+        padding-bottom: 30px;
+        overflow: hidden;
+    }
+    
+    .a6-right {
+        width: 115%;
+    }
+}

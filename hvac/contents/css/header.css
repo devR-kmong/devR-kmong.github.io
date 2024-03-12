@@ -23,10 +23,6 @@
     gap: 10px;
 }
 
-.menu li:last-child {
-    margin-left: 1rem;
-}
-
 .menuBtn {
     width: 40px;
     height: 40px;
@@ -45,19 +41,23 @@
     height: 55%;
 }
 .menu li:nth-child(2) img {
-    height: 60%;
+    height: 53%;
 }
 .menu li:nth-child(3) img {
     height: 57%;
 }
 
 .telBtn {
+    width: unset;
+    height: unset;
     display: flex;
     align-items: center;
     gap: 5px;
     color: #fff;
     font-size: 28px;
     font-weight: 700;
+    background: transparent;
+    margin-left: 1rem;
 }
 
 .telBtn i {
@@ -66,6 +66,7 @@
 
 .telBtn.on {
     color: #222;
+    background-color: transparent;
 }
 
 @keyframes ringring {
@@ -79,6 +80,7 @@
 
 .logo, .logo-w {
     width: 230px;
+    margin-bottom: 7px;
 }
 
 .active {
@@ -88,8 +90,67 @@
 
 
 /*==================================================*/
+@media (max-width: 1600px) {
+    .Fixed {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    }
+}
+
+
 @media (max-width: 1350px) {
     .gnb {
         padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        height: 75px;
+    }
+    
+    .logo, .logo-w {
+        width: 180px;
+    }
+
+    .menu {
+        gap: 5px;
+    }
+
+    .menuBtn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .telBtn {
+        font-size: 22px;
+        margin-left: 0;
+        background: rgba(255, 255, 255, .1);
+    }
+
+    .telBtn i {
+        color: #fff !important;
+        font-size: 16px;
+        animation: none;
+    }
+    
+    .telBtn p {
+        display: none;
+    }
+
+    .telBtn.on {
+        background-color: var(--main-color);
+    }
+}
+
+
+@media (max-width: 450px) {
+    .header {
+        height: 66px;
+    }
+    
+    .logo, .logo-w {
+        width: 150px;
     }
 }

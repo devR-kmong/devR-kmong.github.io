@@ -45,6 +45,11 @@
 }
 
 .a3-box-icon {
+    width: 110px;
+    min-width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 3rem;
 }
 
@@ -68,8 +73,8 @@
     font-size: 16px;
     line-height: 1.7;
     opacity: 0;
-    margin-top: -55px;
     visibility: hidden;
+    margin-top: -55px;
     transition: all .3s;
 }
 
@@ -81,3 +86,92 @@
 
 
 /*==================================================*/
+@media (max-width: 1350px) {
+    .a3-box {
+        padding: 35px;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .a3-box-icon {
+        width: unset;
+        min-width: unset;
+        margin-left: 0;
+    }
+
+    .a3-box-icon {
+        height: 86px;
+    }
+    
+    .a3-box-text {
+        text-align: center;
+    }
+    
+    .a3-box-text p {
+        opacity: 1;
+        visibility: visible;
+        margin-top: 12px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .a3-title {
+        position: relative;
+    }
+    
+    .a3-0 {
+        position: absolute;
+        top: -70%; right: 0;
+        width: 45%;
+    }
+    
+    .a3-box-wrapper {
+        gap: 1rem;
+    }
+    
+    .a3-box-text p br {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a3-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .a3-box {
+        border-radius: 20px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a3-title {
+        margin-bottom: 2rem;
+    }
+    
+    .a3-box-wrapper {
+        gap: 2rem;
+    }
+    
+    .a3-box {
+        padding: 30px;
+        gap: 1rem;
+    }
+    
+    .a3-box-icon img {
+        height: 76px;
+    }
+    
+    .a3-box-text h5 {
+        font-size: 18px;
+    }
+
+    .a3-box-text p {
+        font-size: 13px;
+    }
+}

@@ -119,10 +119,12 @@ $(window).resize(function () {
     var width_size = window.innerWidth;
 
     if (width_size == 1920) {
+        $(window).scrollTop(0);
         document.location.reload();
     }
 
     if (width_size == 2560) {
+        $(window).scrollTop(0);
         document.location.reload();
     }
 })
@@ -134,39 +136,4 @@ if (navigator.userAgent.indexOf("Trident") > 0) {
     alert("이 사이트에 대한 Internet Explorer 지원이 종료되었습니다. " +
         "확인 버튼을 누르면 Edge 브라우저로 이동합니다.")
     window.location = 'microsoft-edge:' + window.location.href;
-}
-
-
-
-
-var isVisible = false;
-
-$(window).on('scroll', function () {
-    if (checkVisible($('.article6')) && !isVisible) {
-        $(function () {
-            var idx = 0;
-            setInterval(time, 800);
-            function time() {
-                var box = $('.a6-list li');
-                box.eq(idx).addClass('on');
-                idx++;
-                if (idx >= 6) {
-                    box.removeClass('on');
-                    idx = 0
-                };
-            }
-        });
-        isVisible = true;
-    }
-});
-
-function checkVisible(elm, eval) {
-    eval = eval || "object visible";
-    var viewportHeight = $(window).height(), // Viewport Height
-        scrolltop = $(window).scrollTop(), // Scroll Top
-        y = $(elm).offset().top,
-        elementHeight = $(elm).height();
-
-    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
-    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
 }

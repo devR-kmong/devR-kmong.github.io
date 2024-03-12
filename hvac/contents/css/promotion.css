@@ -15,6 +15,10 @@
     width: 1300px;
 }
 
+.p-text {
+    width: 100%;
+}
+
 .p-text h5 {
     color: #fff;
     font-size: 85px;
@@ -37,6 +41,10 @@
     font-weight: 500;
 }
 
+.p-text p br {
+    display: none;
+}
+
 .pBtn {
     color: #fff;
     width: 230px;
@@ -54,7 +62,14 @@
 
 
 /*==================================================*/
-@media (max-width: 1450px) {
+@media (max-width: 1600px) {
+    .promotion {
+        height: 100vh !important;
+    }
+}
+
+
+@media (max-width: 1350px) {
     .promotion-wrapper {
         width: 100%;
         padding: 0 20px;
@@ -64,11 +79,28 @@
 
 @media (max-width: 768px) {
     .p-text h5 {
-        font-size: 40px;
+        font-size: 65px;
     }
 
     .p-text p {
-        font-size: 18px;
-        font-weight: 300;
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .p-text h5 {
+        font-size: 55px;
+    }
+
+    .p-text p br {
+        display: block;
+    }
+
+    .pBtn {
+        width: 180px;
+        height: 48px;
+        font-size: 17px;
+        margin-top: 3rem;
     }
 }

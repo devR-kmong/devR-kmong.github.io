@@ -30,9 +30,34 @@
 
 
 /*==================================================*/
+@media (max-width: 1600px) {
+    .article {
+        height: auto;
+        padding: 120px 0;
+        overflow: unset;
+    }
+}
+
+
 @media (max-width: 1350px) {
     .article-wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+
+    .at-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article {
+        padding: 60px 0;
+    }
+
+    .at-wrapper {
+        gap: 1rem;
     }
 }
