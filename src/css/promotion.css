@@ -29,13 +29,12 @@
 
 .p-text h4 {
     width: fit-content;
-    background: linear-gradient(45.8deg, rgb(175, 104, 254) 9.3%, rgb(101, 223, 255) 75.1%);
+    background: linear-gradient(45.8deg, #af68fe 9.3%, #65dfff 75.1%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 155px;
     font-weight: unset;
     font-family: "Jersey 25", sans-serif;
-    letter-spacing: 0;
 }
 
 .p-text p {

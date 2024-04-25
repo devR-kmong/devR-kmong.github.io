@@ -1,7 +1,6 @@
 .article2 {
     position: relative;
     padding-bottom: 0;
-    overflow: hidden;
 }
 
 .globe {
@@ -15,13 +14,12 @@
 }
 
 .a2-title h5 {
-    background: linear-gradient(45.8deg, rgb(175, 104, 254) 9.3%, rgb(101, 223, 255) 75.1%);
+    background: linear-gradient(45.8deg, #af68fe 9.3%, #65dfff 75.1%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 200px;
     font-weight: unset;
     font-family: "Jersey 25", sans-serif;
-    letter-spacing: 0;
 }
 
 .a2-title p {
@@ -62,24 +60,19 @@
     gap: 2px;
 }
 .pin-us {
-
-    top: 40%; right: 28%;
+    top: 41%; right: 23%;
 }
-
-.pin-it {
-    top: 39%; left: 16%;
+.pin-fr {
+    top: 35%; left: 14%;
 }
-
-.pin-cn {
-    top: 43%; left: 35%;
-}
-
 .pin-hk {
     top: 49%; left: 37%;
 }
-
 .pin-kr {
     top: 42%; left: 40%;
+}
+.pin-as {
+    bottom: 15%; left: 46%;
 }
 
 .gps {
@@ -179,19 +172,12 @@
     .pin-us {
         right: 25%;
     }
-    
-    .pin-it {
+    .pin-fr {
         left: 12%;
     }
-    
-    .pin-cn {
-        left: 34%;
-    }
-    
     .pin-hk {
         top: 49%; left: 37%;
     }
-    
     .pin-kr {
         top: 41%; left: 39%;
     }

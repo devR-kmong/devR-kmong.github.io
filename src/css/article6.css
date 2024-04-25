@@ -1,22 +1,24 @@
-.a5-title {
+.article6 .a5-title {
+    text-align: right;
+}
+
+.a6-text {
     width: 100%;
-    margin-bottom: 5rem;
+    margin-top: -7rem;
 }
 
-.a5-title h5 {
-    color: #222;
-    font-size: 36px;
-    line-height: 1.4;
-}
-
-.a5-title h5 span {
-    font-weight: 800;
+.a6-text h5 {
+    width: fit-content;
     background: linear-gradient(45.8deg, #af68fe 9.3%, #65dfff 75.1%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 120px;
+    font-weight: unset;
+    font-family: "Jersey 25", sans-serif;
 }
 
-.a5-title p {
+.a6-text p {
+    width: 600px;
     color: #aaa;
     font-size: 18px;
     line-height: 1.65;

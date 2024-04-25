@@ -1,4 +1,47 @@
+.article3 {
+    position: relative;
+    padding: 120px 0 400px 0;
+    overflow: hidden;
+}
 
+.a3-car {
+    position: absolute;
+    bottom: 0; right: -500px;
+    width: 80%;
+    opacity: .6;
+}
+
+.a3-text {
+    width: 100%;
+    z-index: 10;
+}
+
+.a3-text h5 {
+    width: fit-content;
+    background: linear-gradient(45.8deg, #af68fe 9.3%, #65dfff 75.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 140px;
+    font-weight: unset;
+    font-family: "Jersey 25", sans-serif;
+}
+
+.a3-text p {
+    width: 570px;
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.65;
+    margin-top: 1rem;
+}
 
 
 /*==================================================*/
+@media (min-width: 2250px) {
+    .article3 {
+        padding: 120px 0 400px 0;
+    }
+    
+    .a3-car {
+        width: 65%;
+    }
+}

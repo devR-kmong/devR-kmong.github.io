@@ -12,15 +12,12 @@
     gap: 7rem;
 }
 
-.a1-box:nth-child(1) .a1-image {
-    width: 40%;
-}
+.a1-box:nth-child(1) .a1-image,
 .a1-box:nth-child(2) .a1-image {
-    width: 60%;
-    transform: perspective(1000px) rotateY(-20deg);
+    width: 600px;
 }
 .a1-box:nth-child(3) .a1-image {
-    width: 30%;
+    width: 350px;
 }
 
 .a1-box-text {
@@ -41,7 +38,7 @@
     font-size: 70px;
     font-weight: 500;
     font-family: "Jersey 25", sans-serif;
-    background: linear-gradient(45.8deg, rgb(175, 104, 254) 9.3%, rgb(101, 223, 255) 75.1%);
+    background: linear-gradient(45.8deg, #af68fe 9.3%, #65dfff 75.1%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
