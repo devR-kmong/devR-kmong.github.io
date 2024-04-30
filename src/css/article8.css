@@ -12,12 +12,12 @@
 }
 
 .a8-title h5 {
-    font-size: 100px;
-    font-weight: unset;
-    font-family: "Jersey 25", sans-serif;
+    font-size: 75px;
+    font-weight: 800;
     background: linear-gradient(45.8deg, #af68fe 9.3%, #65dfff 75.1%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: -0.04em;
 }
 
 .h-box-wrapper {
