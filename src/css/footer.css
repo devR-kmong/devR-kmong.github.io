@@ -4,15 +4,78 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #dedede;
+    border-top: 1px dashed #dedede;
     background-color: #fff;
     padding: 60px 0;
 }
 
 .footer-wrapper {
     width: 1200px;
+    display: flex;
+    justify-content: space-between;
 }
 
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fl-top {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.logo-f {
+    width: 80px;
+}
+
+.fl-top ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.fl-top ul li a {
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-text p {
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer-text p span {
+    color: #888;
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-right .fBtn-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-right .fBtn-wrapper .nrBtn {
+    box-shadow: none;
+}
+
+.frBtn {
+    color: #bbb;
+    font-size: 13px;
+}
 
 
 /*==================================================*/

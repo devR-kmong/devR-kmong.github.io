@@ -14,10 +14,10 @@
 
 .a1-box:nth-child(1) .a1-image,
 .a1-box:nth-child(2) .a1-image {
-    width: 600px;
+    width: 450px;
 }
 .a1-box:nth-child(3) .a1-image {
-    width: 350px;
+    width: 280px;
 }
 
 .a1-box-text {

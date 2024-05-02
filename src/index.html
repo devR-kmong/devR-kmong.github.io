@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/aos.js"></script>
@@ -39,10 +39,7 @@
     <header>
         <nav>
             <a href="/" class="logo"><img src="images/logo.svg"></a>
-            <div class="nav-right">
-                <a href="https://saferoadclub.gitbook.io/src-ai" class="navBtn navBtn-m">
-                    Whitepaper
-                </a>
+            <div class="gnb">
                 <input type="checkbox" id="check">
                 <label for="check">
                     <div class="menuBtns">
@@ -58,11 +55,30 @@
                     <li><a href="#roadmap">Roadmap</a></li>
                     <li><a href="#team">Team</a></li>
                 </ul>
+                <div class="overlay"></div>
             </div>
-            <div class="overlay"></div>
-            <a href="https://saferoadclub.gitbook.io/src-ai" class="navBtn" target="_blank">
-                Whitepaper
-            </a>
+            <div class="nav-right">
+                <div class="nrBtn-wrapper">
+                    <a href="https://t.me/SRCofficial_channel" target="_blank" class="nrBtn">
+                        <i class="ri-telegram-fill"></i>
+                    </a>
+                    <a href="https://saferoadclub.gitbook.io/src-ai" target="_blank" class="nrBtn">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="" target="_blank" class="nrBtn">
+                        <i class="ri-discord-fill"></i>
+                    </a>
+                    <a href="https://twitter.com/SrcAi_Official" target="_blank" class="nrBtn">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="" target="_blank" class="nrBtn">
+                        <img src="images/linktree.svg">
+                    </a>
+                </div>
+                <a href="https://saferoadclub.gitbook.io/src-ai" class="navBtn" target="_blank">
+                    Whitepaper
+                </a>
+            </div>
         </nav>
     </header>
     <main>
@@ -113,7 +129,7 @@
                                 AI Agent
                             </h5>
                             <p>
-                                AI Agent performs app activities to boost your points rewarding.
+                                AI Agent performs app activities to boost your points rewarding.<br/>
                                 Provide analytics of your data.
                             </p>
                         </div>
@@ -182,6 +198,7 @@
             <img src="images/a3-car.svg" class="a3-car" id="car">
         </section>
         <section class="article article4">
+            <img src="images/blur2.png" class="a4-blur">
             <div class="article-wrapper">
                 <img src="images/a4-1.png" class="a4-image">
             </div>
@@ -231,6 +248,7 @@
             </div>
         </section>
         <section class="article article8" id="roadmap">
+            <img src="images/blur.png" class="a8-blur">
             <div class="article-wrapper">
                 <div class="h-wrapper">
                     <div class="a8-title">
@@ -321,9 +339,11 @@
         </section>
         <section class="article article9" id="team">
             <div class="article-wrapper">
-                <div class="a9-box-wrapper grid grid3">
+                <div class="a9-box-wrapper grid grid4">
                     <div class="a9-box">
-                        <img src="images/team/team_lee.png">
+                        <div class="a9-box-image">
+                            <img src="images/team/team_lee.png">
+                        </div>
                         <div class="a9-box-text">
                             <h5>
                                 HC Lee (lead)
@@ -334,7 +354,9 @@
                         </div>
                     </div>
                     <div class="a9-box">
-                        <img src="images/team/team_justinc.png">
+                        <div class="a9-box-image">
+                            <img src="images/team/team_justinc.png">
+                        </div>
                         <div class="a9-box-text">
                             <h5>
                                 Justin Chang
@@ -345,7 +367,9 @@
                         </div>
                     </div>
                     <div class="a9-box">
-                        <img src="images/team/team_logan.png">
+                        <div class="a9-box-image">
+                            <img src="images/team/team_logan.png">
+                        </div>
                         <div class="a9-box-text">
                             <h5>
                                 Logan Kim
@@ -356,7 +380,9 @@
                         </div>
                     </div>
                     <div class="a9-box">
-                        <img src="images/team/team_dean.png">
+                        <div class="a9-box-image">
+                            <img src="images/team/team_dean.png">
+                        </div>
                         <div class="a9-box-text">
                             <h5>
                                 Dean Kang
@@ -367,7 +393,9 @@
                         </div>
                     </div>
                     <div class="a9-box">
-                        <img src="images/team/team_joo.png">
+                        <div class="a9-box-image">
+                            <img src="images/team/team_joo.png">
+                        </div>
                         <div class="a9-box-text">
                             <h5>
                                 Gary J
@@ -378,7 +406,9 @@
                         </div>
                     </div>
                     <div class="a9-box">
-                        <img src="images/team/team_dongw.png">
+                        <div class="a9-box-image">
+                            <img src="images/team/team_dongw.png">
+                        </div>
                         <div class="a9-box-text">
                             <h5>
                                 Dongwan Kim
@@ -389,7 +419,9 @@
                         </div>
                     </div>
                     <div class="a9-box">
-                        <img src="images/team/team_so.png">
+                        <div class="a9-box-image">
+                            <img src="images/team/team_so.png">
+                        </div>
                         <div class="a9-box-text">
                             <h5>
                                 Jungmin So
@@ -400,7 +432,9 @@
                         </div>
                     </div>
                     <div class="a9-box">
-                        <img src="images/team/team_yohan.png">
+                        <div class="a9-box-image">
+                            <img src="images/team/team_yohan.png">
+                        </div>
                         <div class="a9-box-text">
                             <h5>
                                 Yohan Park
@@ -411,7 +445,9 @@
                         </div>
                     </div>
                     <div class="a9-box">
-                        <img src="images/team/team_jinsung.png">
+                        <div class="a9-box-image">
+                            <img src="images/team/team_jinsung.png">
+                        </div>
                         <div class="a9-box-text">
                             <h5>
                                 Jinsung Yang
@@ -422,7 +458,9 @@
                         </div>
                     </div>
                     <div class="a9-box">
-                        <img src="images/team/team_back.png">
+                        <div class="a9-box-image">
+                            <img src="images/team/team_back.png">
+                        </div>
                         <div class="a9-box-text">
                             <h5>
                                 Seungho Baek
@@ -435,23 +473,233 @@
                 </div>
             </div>
         </section>
-        <section class="article article10">
+        <section class="article article11">
             <div class="article-wrapper">
-                <div class="a10-text">
-                    TURN YOUR DAILY DRIVING<br/>
-                    INTO PASSIVE INCOME
+                <div class="a11-flow-wrapper">
+                    <div class="a11-flow">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                    </div>
+                </div>
+                <div class="a11-flow-wrapper">
+                    <div class="a11-flow a11-flow2">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                        <img src="images/partners/p1.png">
+                        <img src="images/partners/p2.png">
+                        <img src="images/partners/p3.png">
+                        <img src="images/partners/p4.png">
+                        <img src="images/partners/p5.png">
+                        <img src="images/partners/p6.png">
+                        <img src="images/partners/p7.png">
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="article article11">
+        <section class="article article10">
+            <img src="images/blur.png" class="a10-blur">
             <div class="article-wrapper">
-                partners
+                <div class="a10-wrapper">
+                    <div class="a10-left">
+                        <div class="a10-text">
+                            <p>
+                                Turn your daily driving into
+                            </p>
+                            <h5>
+                                PASSIVE<br/>
+                                <span>INCOME</span>
+                            </h5>
+                        </div>
+                        <div class="pBtn-wrapper">
+                            <a href="" class="pBtn" target="_blank">
+                                <img src="images/googleplay.svg">
+                            </a>
+                            <a href="" class="pBtn" target="_blank">
+                                <img src="images/appstore.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="a10-right">
+                        <img src="images/a1-1.png" class="a10-1">
+                        <img src="images/a10-coin.png" class="a10-coin" value="5">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="footer-wrapper">
-            footer
+            <div class="footer-left">
+                <div class="fl-top">
+                    <a href="/" class="logo-f"><img src="images/logo.svg"></a>
+                    <ul>
+                        <li><a href="#main">Home</a></li>
+                        <li><a href="#get">How to Get</a></li>
+                        <li><a href="#economy">Game Economy</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                        <li><a href="#team">Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-text">
+                    <p>
+                        SRC is an AI powered data monetization app designed to bring economic value to routine activities.<br/>
+                        <span>
+                            COPYRIGHT 2024 SRC Universe CORP. ALL RIGHTS RESERVED I POWERED BY SRC Universe CORP.
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="fBtn-wrapper">
+                    <a href="https://t.me/SRCofficial_channel" target="_blank" class="nrBtn">
+                        <i class="ri-telegram-fill"></i>
+                    </a>
+                    <a href="https://saferoadclub.gitbook.io/src-ai" target="_blank" class="nrBtn">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="" target="_blank" class="nrBtn">
+                        <i class="ri-discord-fill"></i>
+                    </a>
+                    <a href="https://twitter.com/SrcAi_Official" target="_blank" class="nrBtn">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="" target="_blank" class="nrBtn">
+                        <img src="images/linktree.svg">
+                    </a>
+                </div>
+                <a href="https://saferoadclub.gitbook.io/src-ai" class="frBtn" target="_blank">
+                    Whitepaper
+                </a>
+            </div>
         </div>
     </footer>
     

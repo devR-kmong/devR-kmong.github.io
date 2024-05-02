@@ -10,6 +10,15 @@ header {
     z-index: 98;
 }
 
+.Fixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, .5);
+}
+
 nav {
     width: 100%;
     padding: 0 40px;
@@ -18,16 +27,18 @@ nav {
     align-items: center;
 }
 
-nav label {
-    display: none;
+.logo {
+    width: 86px;
+    padding-top: 4px;
+    margin-right: 230px;
 }
 
-nav ul {
+.gnb ul {
     display: flex;
     gap: 2rem;
 }
 
-nav ul li a {
+.gnb li a {
     color: #333;
     padding: 10px 15px;
     font-size: 16px;
@@ -35,8 +46,52 @@ nav ul li a {
     border-radius: 5px;
 }
 
-nav ul li a:hover {
+.gnb li a:hover {
     background-color: rgba(0, 0, 0, .05);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nrBtn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nrBtn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .05);
+    transition: all .3s;
+}
+
+.nrBtn i {
+    color: #151515;
+    font-size: 21px;
+}
+
+.nrBtn img {
+    height: 55%;
+    filter: invert(6%) sepia(1%) saturate(743%) hue-rotate(314deg) brightness(109%) contrast(97%);
+}
+
+.nrBtn:hover {
+    background-color: #fff;
+}
+
+.nrBtn:hover i,
+.nrBtn:hover img {
+    transform: scale(1.1);
 }
 
 .navBtn {
@@ -47,30 +102,16 @@ nav ul li a:hover {
     border-radius: 5px;
     text-transform: uppercase;
     background: linear-gradient(45.8deg, rgb(175, 104, 254) 9.3%, rgb(101, 223, 255) 75.1%);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .05);
 }
 
-.Fixed {
-    position: fixed;
-    top: 0;
-    height: 70px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, .5);
-}
-
-.logo {
-    width: 86px;
-    padding-top: 4px;
-}
-
-.actives {
-    /* color: var(--main-color); */
+.navBtn:hover {
+    filter: brightness(95%);
 }
 
 #check,
 .menuBtns,
-.overlay,
-.navBtn-m {
+.overlay {
     display: none;
 }
 
@@ -89,24 +130,11 @@ nav ul li a:hover {
         z-index: 8;
     }
 
-    .nav-right {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .navBtn {
-        display: none;
-    }
-
-    .navBtn-m {
-        display: flex;
-    }
-
     .menuBtns {
         display: inline-block;
     }
 
-    nav ul {
+    .gnb {
         position: absolute;
         top: 0; left: -100%;
         width: 80%;
@@ -121,7 +149,7 @@ nav ul li a:hover {
         gap: 2.2rem;
     }
 
-    nav ul li a {
+    .gnb li a {
         color: #fff;
         font-size: 26px;
     }

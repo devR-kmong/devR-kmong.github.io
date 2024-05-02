@@ -1,5 +1,16 @@
-.a9-box img {
+.a9-box-image {
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.a9-box-image img {
+    width: 100%;
+    margin-bottom: -5px;
+    transition: all .15s;
+}
+
+.a9-box:hover .a9-box-image img {
+    transform: scale(1.05);
 }
 
 .a9-box-text {
