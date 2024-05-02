@@ -80,6 +80,10 @@ nav {
     font-size: 21px;
 }
 
+.nrBtn:nth-child(4) i {
+    font-size: 19px;
+}
+
 .nrBtn img {
     height: 55%;
     filter: invert(6%) sepia(1%) saturate(743%) hue-rotate(314deg) brightness(109%) contrast(97%);
