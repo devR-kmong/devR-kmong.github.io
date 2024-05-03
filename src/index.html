@@ -39,24 +39,13 @@
     <header>
         <nav>
             <a href="/" class="logo"><img src="images/logo.svg"></a>
-            <div class="gnb">
-                <input type="checkbox" id="check">
-                <label for="check">
-                    <div class="menuBtns">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                </label>
-                <ul>
-                    <li><a href="#main">Home</a></li>
-                    <li><a href="#get">How to Get</a></li>
-                    <li><a href="#economy">Game Economy</a></li>
-                    <li><a href="#roadmap">Roadmap</a></li>
-                    <li><a href="#team">Team</a></li>
-                </ul>
-                <div class="overlay"></div>
-            </div>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#get">How to Get</a></li>
+                <li><a href="#economy">Game Economy</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
             <div class="nav-right">
                 <div class="nrBtn-wrapper">
                     <a href="https://t.me/SRCofficial_channel" target="_blank" class="nrBtn">
@@ -76,8 +65,26 @@
                     </a>
                 </div>
                 <a href="https://saferoadclub.gitbook.io/src-ai" class="navBtn" target="_blank">
-                    Whitepaper
+                    <i class="ri-book-2-fill"></i>
+                    <p>Whitepaper</p>
                 </a>
+                <div class="gnb-m">
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <div class="menuBtns">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </label>
+                    <ul>
+                        <li><a href="#main">Home</a></li>
+                        <li><a href="#get">How to Get</a></li>
+                        <li><a href="#economy">Game Economy</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                        <li><a href="#team">Team</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -111,7 +118,9 @@
             <div class="article-wrapper">
                 <div class="a1-box-wrapper">
                     <div class="a1-box">
-                        <img src="images/a1-1.png" class="a1-image">
+                        <div class="a1-box-image">
+                            <img src="images/a1-1.png" class="a1-image">
+                        </div>
                         <div class="a1-box-text">
                             <span>01</span>
                             <h5>
@@ -133,10 +142,14 @@
                                 Provide analytics of your data.
                             </p>
                         </div>
-                        <img src="images/a1-2.png" class="a1-image">
+                        <div class="a1-box-image">
+                            <img src="images/a1-2.png" class="a1-image">
+                        </div>
                     </div>
                     <div class="a1-box">
-                        <img src="images/a1-3.png" class="a1-image">
+                        <div class="a1-box-image">
+                            <img src="images/a1-3.png" class="a1-image">
+                        </div>
                         <div class="a1-box-text">
                             <span>03</span>
                             <h5>
@@ -200,7 +213,10 @@
         <section class="article article4">
             <img src="images/blur2.png" class="a4-blur">
             <div class="article-wrapper">
-                <img src="images/a4-1.png" class="a4-image">
+                <picture class="a4-image">
+                    <source srcset="images/a4-1-m.png" media="(max-width: 550px)">
+                    <img src="images/a4-1.png">
+                </picture>
             </div>
         </section>
         <section class="article article5">
@@ -216,7 +232,10 @@
                     </p>
                 </div>
             </div>
-            <img src="images/a5-1.png" class="a5-image">
+            <picture class="a5-image">
+                <source srcset="images/a5-1-m.png" media="(max-width: 550px)">
+                <img src="images/a5-1.png">
+            </picture>
         </section>
         <section class="article article6">
             <div class="article-wrapper">
@@ -231,7 +250,10 @@
                     </p>
                 </div>
             </div>
-            <img src="images/a6-1.png" class="a6-image">
+            <picture class="a6-image">
+                <source srcset="images/a6-1-m.png" media="(max-width: 550px)">
+                <img src="images/a6-1.png">
+            </picture>
             <div class="a6-text">
                 <h5>
                     AI+Depin
@@ -244,7 +266,10 @@
         </section>
         <section class="article article7" id="economy">
             <div class="article-wrapper">
-                <img src="images/a7-1.png" class="a7-image">
+                <picture class="a7-image">
+                    <source srcset="images/a7-1-m.png" media="(max-width: 550px)">
+                    <img src="images/a7-1.png">
+                </picture>
             </div>
         </section>
         <section class="article article8" id="roadmap">
@@ -650,6 +675,9 @@
                     </ul>
                 </div>
                 <div class="footer-text">
+                    <h5>
+                        Support: <a href="mailto: src@src-ai.com">src@src-ai.com</a>
+                    </h5>
                     <p>
                         SRC is an AI powered data monetization app designed to bring economic value to routine activities.<br/>
                         <span>

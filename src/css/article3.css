@@ -45,3 +45,46 @@
         width: 65%;
     }
 }
+
+
+@media (max-width: 1550px) {
+    .article3 {
+        padding: 10% 0 35% 0;
+    }
+    
+    .a3-car {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a3-text h5 {
+        font-size: 100px;
+    }
+
+    .a3-text p {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a3-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .a3-text h5 {
+        font-size: 70px;
+        text-align: center;
+    }
+    
+    .a3-text p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}

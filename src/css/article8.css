@@ -5,12 +5,14 @@
 .a8-blur {
     position: absolute;
     top: 0; right: 0;
+    z-index: 1;
 }
 
 .h-wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .a8-title {
@@ -111,11 +113,20 @@
 
 
 /*==================================================*/
-@media (max-width: 1050px) {
+@media (max-width: 1250px) {
     .h-wrapper {
         flex-direction: column;
     }
 
+    .a8-title {
+        position: static;
+        margin-top: 0;
+    }
+
+    .a8-title h5 {
+        width: fit-content;
+    }
+    
     .h-box-wrapper {
         width: 100%;
         margin-top: 5rem;
@@ -124,7 +135,24 @@
 
 
 @media (max-width: 550px) {
+    .a8-blur {
+        top: 5%;
+    }
+    
+    .a8-title h5 {
+        font-size: 55px;
+    }
+    
+    .h-box-wrapper {
+        margin-top: 3rem;
+    }
+    
+    .h-box-wrapper::after {
+        left: 99px;
+    }
+    
     .h-box {
+        padding-bottom: 3rem;
         gap: 2rem;
     }
 
@@ -132,11 +160,29 @@
         gap: 1rem;
     }
 
-    .h-box-wrapper::after {
-        left: 93px;
+    .h-box-year h5 {
+        width: 75px;
+        font-size: 18px;
+    }
+
+    .h-box-year span {
+        border-radius: 50%;
+    }
+
+    .h-box-year span::after {
+        border-radius: 50%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a8-title h5 {
+        width: 100%;
+        font-size: 45px;
+        text-align: center;
     }
     
-    .h-box-info p {
-        font-size: 15px;
+    .h-box-info li {
+        font-size: 14px;
     }
 }

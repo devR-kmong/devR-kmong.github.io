@@ -6,16 +6,19 @@
     justify-content: center;
     align-items: center;
     background: url(../images/hero.jpg);
+    background-position: right !important;
 }
 
 .promotion-wrapper {
     width: 1200px;
+    z-index: 2;
 }
 
 .p-image {
     position: absolute;
     top: 12%; right: 3%;
     width: 53%;
+    z-index: 1;
 }
 
 .p-text h5 {
@@ -68,9 +71,75 @@
 }
 
 
+@media (max-width: 1550px) {
+    .promotion {
+        overflow: hidden;
+    }
+    
+    .p-image {
+        top: 50%; right: -5%;
+        transform: translate(0, -50%) rotate(-10deg);
+        min-width: 800px;
+    }
+}
+
+
 @media (max-width: 1250px) {
     .promotion-wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .p-image {
+        right: -20%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .promotion {
+        justify-content: flex-start !important;
+    }
+    
+    .p-image {
+        top: unset;
+        bottom: -10%;
+        min-width: 600px;
+    }
+
+    .p-text {
+        margin-top: 3rem;
+    }
+    
+    .p-text h5 {
+        font-size: 45px;
+    }
+
+    .p-text h4 {
+        font-size: 120px;
+    }
+
+    .p-text p {
+        font-size: 22px;
+    }
+
+    .pBtn img {
+        width: 140px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .p-image {
+        top: unset;
+        bottom: -15%; right: -40%;
+        opacity: .7;
+    }
+
+    .pBtn-wrapper {
+        margin-top: 2rem;
     }
 }

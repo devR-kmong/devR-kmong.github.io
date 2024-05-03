@@ -32,3 +32,67 @@
 
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .a6-image,
+    .a6-text {
+        width: 90%
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a6-text {
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a6-text {
+        margin-top: 3rem;
+    }
+    
+    .a6-text h5 {
+        font-size: 90px;
+    }
+
+    .a6-text p {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article6 {
+        padding-top: 0;
+    }
+    
+    .article6 .a5-title {
+        text-align: left;
+    }
+
+    .a6-image {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 450px) {    
+    .a6-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .a6-text h5 {
+        font-size: 75px;
+        text-align: center;
+    }
+
+    .a6-text p {
+        font-size: 14px;
+        text-align: center;
+    }
+}

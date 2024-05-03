@@ -42,9 +42,21 @@ footer {
     font-weight: 700;
 }
 
+.footer-text h5 {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.footer-text h5 a:hover {
+    text-decoration: underline;
+}
+
 .footer-text p {
     color: #555;
     font-size: 15px;
+    line-height: 1.4;
     font-weight: 500;
 }
 
@@ -75,6 +87,11 @@ footer {
 .frBtn {
     color: #bbb;
     font-size: 13px;
+    text-transform: uppercase;
+}
+
+.frBtn:hover {
+    text-decoration: underline;
 }
 
 
@@ -83,5 +100,94 @@ footer {
     .footer-wrapper {
         width: 100%;
         padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .footer-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .fl-top {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .logo-f {
+        width: 100px;
+    }
+
+    .footer-text h5 {
+        text-align: center;
+    }
+
+    .footer-text p {
+        text-align: center;
+    }
+
+    .footer-right {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .frBtn {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    footer {
+        padding: 40px 0;
+    }
+    
+    .footer-left {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fl-top ul {
+        display: none;
+    }
+    
+    .footer-text {
+        width: 75%;
+    }
+    
+    .footer-text h5 {
+        font-size: 14px;
+    }
+    
+    .footer-text p {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .footer-wrapper {
+        gap: 2rem;
+    }
+    
+    .footer-left {
+        gap: 1rem;
+    }
+    
+    .logo-f {
+        width: 70px;
+    }
+    
+    .footer-text {
+        width: 90%;
+    }
+
+    .footer-text p span {
+        font-size: 11px;
     }
 }

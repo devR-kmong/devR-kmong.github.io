@@ -5,8 +5,9 @@
 
 .globe {
     position: absolute;
-    top: 100px;
+    top: 10%;
     width: 1200px;
+    filter: brightness(95%);
 }
 
 .a2-title {
@@ -138,32 +139,20 @@
 
 /*==================================================*/
 @media (max-width: 768px) {
-    .globe {
-        top: 50px;
-        filter: brightness(50%);
-    }
-
-    .a2-title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
     .a2-title h5 {
-        font-size: 32px;
+        font-size: 140px;
     }
 
     .a2-title p {
-        width: 80%;
-        font-size: 14px;
+        font-size: 26px;
         margin-top: 1rem;
     }
 
-    .a2-title p br {
-        display: none;
+    .globe {
+        top: 15%;
+        filter: brightness(50%);
     }
-
+    
     .worldmap {
         width: 90%;
         filter: brightness(95%);
@@ -181,9 +170,35 @@
     .pin-kr {
         top: 41%; left: 39%;
     }
+    .pin-as {
+        bottom: 14%; left: 45%;
+    }
 
     .gps {
         width: 12px;
         height: 12px;
     }
 }
+
+
+@media (max-width: 550px) {
+    .article2 {
+        padding: 60px 0;
+    }
+    
+    .globe {
+        top: 20%;
+        filter: brightness(40%);
+    }
+    
+    .a2-title h5 {
+        font-size: 120px;
+    }
+    
+    .a2-title p {
+        font-size: 20px;
+        margin-top: 0;
+    }
+}
+
+

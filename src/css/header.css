@@ -33,12 +33,12 @@ nav {
     margin-right: 230px;
 }
 
-.gnb ul {
+nav ul {
     display: flex;
     gap: 2rem;
 }
 
-.gnb li a {
+nav ul li a {
     color: #333;
     padding: 10px 15px;
     font-size: 16px;
@@ -46,7 +46,7 @@ nav {
     border-radius: 5px;
 }
 
-.gnb li a:hover {
+nav ul li a:hover {
     background-color: rgba(0, 0, 0, .05);
 }
 
@@ -104,73 +104,81 @@ nav {
     font-weight: 700;
     padding: 10px 20px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
     text-transform: uppercase;
     background: linear-gradient(45.8deg, rgb(175, 104, 254) 9.3%, rgb(101, 223, 255) 75.1%);
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .05);
+}
+
+.navBtn i {
+    font-weight: lighter;
 }
 
 .navBtn:hover {
     filter: brightness(95%);
 }
 
-#check,
-.menuBtns,
-.overlay {
+.gnb-m {
     display: none;
 }
 
 
 /*==================================================*/
-@media (max-width: 1250px) {
-    nav {
-        padding: 0 20px;
+@media (max-width: 1650px) {
+    .logo {
+        margin-right: 0;
     }
 }
 
 
-@media (max-width: 950px) {
-    nav label {
+@media (max-width: 1250px) {
+    nav {
+        padding: 0 20px;
+    }
+    
+    nav ul {
+        display: none;
+    }
+
+    .gnb-m {
         display: flex;
-        z-index: 8;
+    }
+
+    .gnb-m #check {
+        display: none;
+    }
+    
+    .gnb-m ul {
+        position: absolute;
+        top: 0; left: -100%;
+        width: 85%;
+        height: 100vh;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fff;
+        border-right: 1px solid #eee;
+        box-shadow: 10px 0 25px rgba(0, 0, 0, .08);
+        touch-action: none;
+        transition: all .2s;
+        z-index: 7;
+        gap: 2.5rem;
+    }
+
+    .gnb-m li a {
+        color: #333;
+        font-size: 28px;
+        font-weight: 800;
     }
 
     .menuBtns {
         display: inline-block;
     }
-
-    .gnb {
-        position: absolute;
-        top: 0; left: -100%;
-        width: 80%;
-        height: 100vh;
-        padding-left: 50px;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #111;
-        touch-action: none;
-        transition: all .2s;
-        z-index: 7;
-        gap: 2.2rem;
-    }
-
-    .gnb li a {
-        color: #fff;
-        font-size: 26px;
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%;
-        height: 100vh;
-        display: block;
-        background-color: rgba(0, 0, 0, .6);
-        transition: all .3s;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 6;
-    }
-
+    
     .bar1,
     .bar2,
     .bar3 {
@@ -178,7 +186,7 @@ nav {
         height: 2px;
         background-color: #222;
         margin: 6px 0;
-        transition: .3s ease;
+        transition: .2s ease;
     }
 
     .change .bar1 {
@@ -195,42 +203,86 @@ nav {
         background-color: #222;
     }
     
-    #check:checked ~ ul {left: 0;}
-    #check:checked ~ .overlay {
-        opacity: 1;
-        visibility: visible;
-        touch-action: none;
+    #check:checked ~ ul {
+        left: 0;
     }
 }
 
 
 @media (max-width: 768px) {
+    header {
+        height: 80px;
+    }
+    
     .logo {
         width: 72px;
+    }
+
+    .nav-right {
+        gap: 1.5rem;
+    }
+    
+    .nrBtn {
+        width: 26px;
+        height: 26px;
+    }
+
+    .nrBtn i {
+        font-size: 18px;
+    }
+
+    .nrBtn:nth-child(4) i {
+        font-size: 16px;
+    }
+
+    .navBtn {
+        font-size: 14px;
+        padding: 8px 16px;
     }
 }
 
 
 @media (max-width: 550px) {
-    header {
-        height: 60px;
-    }
-
+    header,
     .Fixed {
         height: 60px;
     }
     
-    .logo, .logo-w {
+    .logo {
         width: 50px;
+    }
+    
+    .nrBtn {
+        box-shadow: none;
+    }
+    
+    .nav-right {
+        gap: 15px;
+    }
+    
+    .navBtn {
+        padding: 0;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        box-shadow: none;
+        margin-left: -10px;
+    }
+    
+    .navBtn p {
+        display: none;
+    }
+    
+    .menuBtns {
+        margin-top: 3px;
     }
     
     .bar1,
     .bar2,
     .bar3 {
-        width: 24px;
+        width: 20px;
         height: 2px;
         margin: 3px 0;
-        transition: .3s ease;
     }
 
     .bar2 {

@@ -18,3 +18,22 @@
 
 
 /*==================================================*/
+@media (max-width: 1550px) {
+    .article4 {
+        padding-top: 120px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article4 {
+        padding-top: 80px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a4-blur {
+        width: 100%;
+    }
+}

@@ -1,6 +1,6 @@
 .a5-title {
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .a5-title h5 {
@@ -29,3 +29,47 @@
 
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .a5-image {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a5-title h5 {
+        font-size: 28px;
+    }
+    
+    .a5-title p {
+        font-size: 16px;
+        line-height: 1.55;
+        margin-top: 10px;
+    }
+
+    .a5-title p br {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article5 {
+        padding-top: 0;
+    }
+
+    .a5-image {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a5-title h5 {
+        font-size: 22px;
+    }
+    
+    .a5-title p {
+        font-size: 14px;
+    }
+}

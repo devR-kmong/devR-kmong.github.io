@@ -50,3 +50,55 @@
 
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .article11 .article-wrapper {
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article11 {
+        padding: 0;
+    }
+    
+    .a11-flow {
+        gap: 3rem;
+        animation: flow 120s linear infinite;
+    }
+    
+    .a11-flow2 {
+        animation: flow2 120s linear infinite;
+    }
+    
+    .a11-flow img {
+        width: 25%;
+    }
+    
+    @keyframes flow {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+    
+        100% {
+            transform: translate3d(-1200%, 0, 0);
+        }
+    }
+    
+    @keyframes flow2 {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+    
+        100% {
+            transform: translate3d(1200%, 0, 0);
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a11-flow2 {
+        margin-top: -5px;
+    }
+}
