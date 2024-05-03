@@ -142,4 +142,8 @@
     .a10-text h5 {
         font-size: 70px;
     }
+
+    .a10-left .pBtn {
+        width: 40%;
+    }
 }
