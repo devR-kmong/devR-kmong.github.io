@@ -20,8 +20,8 @@ if (window.innerWidth > 951) {
     window.addEventListener('scroll', function () {
         let value = window.scrollY;
     
-        if (value >= 3200) {
-            car.style.right = (value - 3200) * 1.2 - 500 + 'px';
+        if (value >= 3100) {
+            car.style.right = (value - 3100) * 1.2 - 500 + 'px';
         }
     })
 }
