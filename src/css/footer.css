@@ -46,7 +46,7 @@ footer {
     color: #333;
     font-size: 16px;
     line-height: 1.4;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .footer-text h5 a:hover {
@@ -62,10 +62,8 @@ footer {
 
 .footer-text p span {
     color: #888;
-    display: block;
     font-size: 13px;
     font-weight: 300;
-    margin-top: 10px;
 }
 
 .footer-right {
@@ -166,6 +164,11 @@ footer {
     
     .footer-text p {
         font-size: 12px;
+    }
+
+    .footer-text p span {
+        display: block;
+        margin-top: 10px;
     }
 }
 
