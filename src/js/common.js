@@ -2,7 +2,7 @@ AOS.init({
     once: true,
     delay: 100,
     offset: 200,
-    duration: 1200,
+    duration: 800,
 });
 
 
@@ -86,4 +86,13 @@ if (window.innerWidth > 1550) {
             shift.style.transform = `translateX(${x2}px) translateY(${y2}px)`;
         });
     }
+}
+
+
+if (window.innerWidth <= 950) {
+    $('.a1-box-image').attr('data-aos', 'fade-up');
+}
+
+if (window.innerWidth <= 550) {
+    $('.a5-title').attr('data-aos', 'fade-right');
 }
