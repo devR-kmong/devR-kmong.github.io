@@ -6,6 +6,15 @@ AOS.init({
 });
 
 
+new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 200,
+    mobile: true,
+    live: true
+}).init();
+
+
 
 $(function () {
     var isVisible = false;
@@ -15,7 +24,7 @@ $(function () {
             $(function () {
                 var typed3 = new Typed('#typed', {
                     strings: ['단순한 우연일까요?'],
-                    typeSpeed: 140,
+                    typeSpeed: 80,
                     backSpeed: 20,
                     smartBackspace: true,
                     showCursor: true,
