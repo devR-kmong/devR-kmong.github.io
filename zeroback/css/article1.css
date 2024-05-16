@@ -1,0 +1,194 @@
+.article1 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 1400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%222000%22 height=%221400%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%23fff%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%23ececec%22 stroke-width=%22.6%22 mask=%22url(%23b)%22%3E%3Cpath fill=%22%23ececec1c%22 d=%22M0 0h71v71H0z%22%2F%3E%3Cpath fill=%22%23ecececd4%22 d=%22M71 0h71v71H71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M142 0h71v71h-71zM213 0h71v71h-71zM284 0h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececc9%22 d=%22M355 0h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M426 0h71v71h-71zM497 0h71v71h-71zM568 0h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececab%22 d=%22M639 0h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M710 0h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec6f%22 d=%22M781 0h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececb2%22 d=%22M852 0h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M923 0h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec56%22 d=%22M994 0h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1065 0h71v71h-71zM1136 0h71v71h-71zM1207 0h71v71h-71zM1278 0h71v71h-71zM1349 0h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec05%22 d=%22M1420 0h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec43%22 d=%22M1491 0h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececece8%22 d=%22M1562 0h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1633 0h71v71h-71zM1704 0h71v71h-71zM1775 0h71v71h-71zM1846 0h71v71h-71zM1917 0h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececab%22 d=%22M0 71h71v71H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M71 71h71v71H71zM142 71h71v71h-71zM213 71h71v71h-71zM284 71h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececde%22 d=%22M355 71h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M426 71h71v71h-71zM497 71h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec83%22 d=%22M568 71h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M639 71h71v71h-71zM710 71h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececd1%22 d=%22M781 71h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M852 71h71v71h-71zM923 71h71v71h-71zM994 71h71v71h-71zM1065 71h71v71h-71zM1136 71h71v71h-71zM1207 71h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececd6%22 d=%22M1278 71h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1349 71h71v71h-71zM1420 71h71v71h-71zM1491 71h71v71h-71zM1562 71h71v71h-71zM1633 71h71v71h-71zM1704 71h71v71h-71zM1775 71h71v71h-71zM1846 71h71v71h-71zM1917 71h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec78%22 d=%22M0 142h71v71H0z%22%2F%3E%3Cpath fill=%22%23ececec25%22 d=%22M71 142h71v71H71z%22%2F%3E%3Cpath fill=%22%23ecececc8%22 d=%22M142 142h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M213 142h71v71h-71zM284 142h71v71h-71zM355 142h71v71h-71zM426 142h71v71h-71zM497 142h71v71h-71zM568 142h71v71h-71zM639 142h71v71h-71zM710 142h71v71h-71zM781 142h71v71h-71zM852 142h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececc7%22 d=%22M923 142h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececece8%22 d=%22M994 142h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec61%22 d=%22M1065 142h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1136 142h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec9a%22 d=%22M1207 142h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec82%22 d=%22M1278 142h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec75%22 d=%22M1349 142h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1420 142h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececdc%22 d=%22M1491 142h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececfe%22 d=%22M1562 142h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1633 142h71v71h-71zM1704 142h71v71h-71zM1775 142h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec25%22 d=%22M1846 142h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1917 142h71v71h-71zM0 213h71v71H0zM71 213h71v71H71zM142 213h71v71h-71zM213 213h71v71h-71zM284 213h71v71h-71zM355 213h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec86%22 d=%22M426 213h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M497 213h71v71h-71zM568 213h71v71h-71zM639 213h71v71h-71zM710 213h71v71h-71zM781 213h71v71h-71zM852 213h71v71h-71zM923 213h71v71h-71zM994 213h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec24%22 d=%22M1065 213h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececa9%22 d=%22M1136 213h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1207 213h71v71h-71zM1278 213h71v71h-71zM1349 213h71v71h-71zM1420 213h71v71h-71zM1491 213h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec36%22 d=%22M1562 213h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec5a%22 d=%22M1633 213h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececf4%22 d=%22M1704 213h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec76%22 d=%22M1775 213h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1846 213h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececcb%22 d=%22M1917 213h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 284h71v71H0zM71 284h71v71H71z%22%2F%3E%3Cpath fill=%22%23ececec85%22 d=%22M142 284h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M213 284h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec3a%22 d=%22M284 284h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M355 284h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececa1%22 d=%22M426 284h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec75%22 d=%22M497 284h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M568 284h71v71h-71zM639 284h71v71h-71zM710 284h71v71h-71zM781 284h71v71h-71zM852 284h71v71h-71zM923 284h71v71h-71zM994 284h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececa7%22 d=%22M1065 284h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececfb%22 d=%22M1136 284h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1207 284h71v71h-71zM1278 284h71v71h-71zM1349 284h71v71h-71zM1420 284h71v71h-71zM1491 284h71v71h-71zM1562 284h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec1d%22 d=%22M1633 284h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececa4%22 d=%22M1704 284h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1775 284h71v71h-71zM1846 284h71v71h-71zM1917 284h71v71h-71zM0 355h71v71H0zM71 355h71v71H71zM142 355h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec13%22 d=%22M213 355h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M284 355h71v71h-71zM355 355h71v71h-71zM426 355h71v71h-71zM497 355h71v71h-71zM568 355h71v71h-71zM639 355h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec3e%22 d=%22M710 355h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M781 355h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec88%22 d=%22M852 355h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M923 355h71v71h-71zM994 355h71v71h-71zM1065 355h71v71h-71zM1136 355h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececcb%22 d=%22M1207 355h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1278 355h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec1a%22 d=%22M1349 355h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececc4%22 d=%22M1420 355h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1491 355h71v71h-71zM1562 355h71v71h-71zM1633 355h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec77%22 d=%22M1704 355h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececdb%22 d=%22M1775 355h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1846 355h71v71h-71zM1917 355h71v71h-71zM0 426h71v71H0zM71 426h71v71H71zM142 426h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececbd%22 d=%22M213 426h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M284 426h71v71h-71zM355 426h71v71h-71zM426 426h71v71h-71zM497 426h71v71h-71zM568 426h71v71h-71zM639 426h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec3c%22 d=%22M710 426h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M781 426h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec23%22 d=%22M852 426h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec72%22 d=%22M923 426h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M994 426h71v71h-71zM1065 426h71v71h-71zM1136 426h71v71h-71zM1207 426h71v71h-71zM1278 426h71v71h-71zM1349 426h71v71h-71zM1420 426h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec03%22 d=%22M1491 426h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1562 426h71v71h-71zM1633 426h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec53%22 d=%22M1704 426h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1775 426h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececf7%22 d=%22M1846 426h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececa7%22 d=%22M1917 426h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 497h71v71H0zM71 497h71v71H71zM142 497h71v71h-71zM213 497h71v71h-71zM284 497h71v71h-71zM355 497h71v71h-71zM426 497h71v71h-71zM497 497h71v71h-71zM568 497h71v71h-71zM639 497h71v71h-71zM710 497h71v71h-71zM781 497h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec20%22 d=%22M852 497h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec31%22 d=%22M923 497h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M994 497h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececcc%22 d=%22M1065 497h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1136 497h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec6b%22 d=%22M1207 497h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1278 497h71v71h-71zM1349 497h71v71h-71zM1420 497h71v71h-71zM1491 497h71v71h-71zM1562 497h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec52%22 d=%22M1633 497h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececbd%22 d=%22M1704 497h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1775 497h71v71h-71zM1846 497h71v71h-71zM1917 497h71v71h-71zM0 568h71v71H0zM71 568h71v71H71zM142 568h71v71h-71zM213 568h71v71h-71zM284 568h71v71h-71zM355 568h71v71h-71zM426 568h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec5d%22 d=%22M497 568h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M568 568h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec78%22 d=%22M639 568h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececa9%22 d=%22M710 568h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec0a%22 d=%22M781 568h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M852 568h71v71h-71zM923 568h71v71h-71zM994 568h71v71h-71zM1065 568h71v71h-71zM1136 568h71v71h-71zM1207 568h71v71h-71zM1278 568h71v71h-71zM1349 568h71v71h-71zM1420 568h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececf6%22 d=%22M1491 568h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1562 568h71v71h-71zM1633 568h71v71h-71zM1704 568h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececfc%22 d=%22M1775 568h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececfd%22 d=%22M1846 568h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec37%22 d=%22M1917 568h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 639h71v71H0zM71 639h71v71H71zM142 639h71v71h-71zM213 639h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec72%22 d=%22M284 639h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M355 639h71v71h-71zM426 639h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececf8%22 d=%22M497 639h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M568 639h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec15%22 d=%22M639 639h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M710 639h71v71h-71zM781 639h71v71h-71zM852 639h71v71h-71zM923 639h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec43%22 d=%22M994 639h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1065 639h71v71h-71zM1136 639h71v71h-71zM1207 639h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec44%22 d=%22M1278 639h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1349 639h71v71h-71zM1420 639h71v71h-71zM1491 639h71v71h-71zM1562 639h71v71h-71zM1633 639h71v71h-71zM1704 639h71v71h-71zM1775 639h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec44%22 d=%22M1846 639h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1917 639h71v71h-71zM0 710h71v71H0zM71 710h71v71H71z%22%2F%3E%3Cpath fill=%22%23ececec21%22 d=%22M142 710h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M213 710h71v71h-71zM284 710h71v71h-71zM355 710h71v71h-71zM426 710h71v71h-71zM497 710h71v71h-71zM568 710h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec0b%22 d=%22M639 710h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M710 710h71v71h-71zM781 710h71v71h-71zM852 710h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec84%22 d=%22M923 710h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M994 710h71v71h-71zM1065 710h71v71h-71zM1136 710h71v71h-71zM1207 710h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec9e%22 d=%22M1278 710h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1349 710h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececa1%22 d=%22M1420 710h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececc0%22 d=%22M1491 710h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1562 710h71v71h-71zM1633 710h71v71h-71zM1704 710h71v71h-71zM1775 710h71v71h-71zM1846 710h71v71h-71zM1917 710h71v71h-71zM0 781h71v71H0zM71 781h71v71H71z%22%2F%3E%3Cpath fill=%22%23ececec5b%22 d=%22M142 781h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M213 781h71v71h-71zM284 781h71v71h-71zM355 781h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec21%22 d=%22M426 781h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M497 781h71v71h-71zM568 781h71v71h-71zM639 781h71v71h-71zM710 781h71v71h-71zM781 781h71v71h-71zM852 781h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec72%22 d=%22M923 781h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M994 781h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec2d%22 d=%22M1065 781h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec54%22 d=%22M1136 781h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1207 781h71v71h-71zM1278 781h71v71h-71zM1349 781h71v71h-71zM1420 781h71v71h-71zM1491 781h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec9b%22 d=%22M1562 781h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1633 781h71v71h-71zM1704 781h71v71h-71zM1775 781h71v71h-71zM1846 781h71v71h-71zM1917 781h71v71h-71zM0 852h71v71H0z%22%2F%3E%3Cpath fill=%22%23ecececee%22 d=%22M71 852h71v71H71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M142 852h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec12%22 d=%22M213 852h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec89%22 d=%22M284 852h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M355 852h71v71h-71zM426 852h71v71h-71zM497 852h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececfc%22 d=%22M568 852h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec49%22 d=%22M639 852h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M710 852h71v71h-71zM781 852h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec2c%22 d=%22M852 852h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M923 852h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececff%22 d=%22M994 852h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1065 852h71v71h-71zM1136 852h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec25%22 d=%22M1207 852h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec41%22 d=%22M1278 852h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececd5%22 d=%22M1349 852h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1420 852h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec6b%22 d=%22M1491 852h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececa4%22 d=%22M1562 852h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1633 852h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec70%22 d=%22M1704 852h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1775 852h71v71h-71zM1846 852h71v71h-71zM1917 852h71v71h-71zM0 923h71v71H0zM71 923h71v71H71z%22%2F%3E%3Cpath fill=%22%23ececec52%22 d=%22M142 923h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M213 923h71v71h-71zM284 923h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececa2%22 d=%22M355 923h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M426 923h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec91%22 d=%22M497 923h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececbe%22 d=%22M568 923h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececcb%22 d=%22M639 923h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M710 923h71v71h-71zM781 923h71v71h-71zM852 923h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec1e%22 d=%22M923 923h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M994 923h71v71h-71zM1065 923h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec18%22 d=%22M1136 923h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1207 923h71v71h-71zM1278 923h71v71h-71zM1349 923h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececba%22 d=%22M1420 923h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec93%22 d=%22M1491 923h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1562 923h71v71h-71zM1633 923h71v71h-71zM1704 923h71v71h-71zM1775 923h71v71h-71zM1846 923h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec78%22 d=%22M1917 923h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec19%22 d=%22M0 994h71v71H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M71 994h71v71H71z%22%2F%3E%3Cpath fill=%22%23ececec5e%22 d=%22M142 994h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M213 994h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececece7%22 d=%22M284 994h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M355 994h71v71h-71zM426 994h71v71h-71zM497 994h71v71h-71zM568 994h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececb0%22 d=%22M639 994h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M710 994h71v71h-71zM781 994h71v71h-71zM852 994h71v71h-71zM923 994h71v71h-71zM994 994h71v71h-71zM1065 994h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec14%22 d=%22M1136 994h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececc3%22 d=%22M1207 994h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1278 994h71v71h-71zM1349 994h71v71h-71zM1420 994h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec4c%22 d=%22M1491 994h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1562 994h71v71h-71zM1633 994h71v71h-71zM1704 994h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec84%22 d=%22M1775 994h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1846 994h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececac%22 d=%22M1917 994h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec04%22 d=%22M0 1065h71v71H0z%22%2F%3E%3Cpath fill=%22%23ececec58%22 d=%22M71 1065h71v71H71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M142 1065h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec92%22 d=%22M213 1065h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M284 1065h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec56%22 d=%22M355 1065h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M426 1065h71v71h-71zM497 1065h71v71h-71zM568 1065h71v71h-71zM639 1065h71v71h-71zM710 1065h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec96%22 d=%22M781 1065h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M852 1065h71v71h-71zM923 1065h71v71h-71zM994 1065h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec9c%22 d=%22M1065 1065h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1136 1065h71v71h-71zM1207 1065h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec9f%22 d=%22M1278 1065h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1349 1065h71v71h-71zM1420 1065h71v71h-71zM1491 1065h71v71h-71zM1562 1065h71v71h-71zM1633 1065h71v71h-71zM1704 1065h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec21%22 d=%22M1775 1065h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1846 1065h71v71h-71zM1917 1065h71v71h-71zM0 1136h71v71H0z%22%2F%3E%3Cpath fill=%22%23ececec79%22 d=%22M71 1136h71v71H71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M142 1136h71v71h-71zM213 1136h71v71h-71zM284 1136h71v71h-71zM355 1136h71v71h-71zM426 1136h71v71h-71zM497 1136h71v71h-71zM568 1136h71v71h-71zM639 1136h71v71h-71zM710 1136h71v71h-71zM781 1136h71v71h-71zM852 1136h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec7d%22 d=%22M923 1136h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M994 1136h71v71h-71zM1065 1136h71v71h-71zM1136 1136h71v71h-71zM1207 1136h71v71h-71zM1278 1136h71v71h-71zM1349 1136h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec9b%22 d=%22M1420 1136h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec87%22 d=%22M1491 1136h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1562 1136h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec3e%22 d=%22M1633 1136h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1704 1136h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec72%22 d=%22M1775 1136h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1846 1136h71v71h-71zM1917 1136h71v71h-71zM0 1207h71v71H0zM71 1207h71v71H71z%22%2F%3E%3Cpath fill=%22%23ececec55%22 d=%22M142 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M213 1207h71v71h-71zM284 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec0d%22 d=%22M355 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M426 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec2a%22 d=%22M497 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M568 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec6d%22 d=%22M639 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M710 1207h71v71h-71zM781 1207h71v71h-71zM852 1207h71v71h-71zM923 1207h71v71h-71zM994 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec6b%22 d=%22M1065 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1136 1207h71v71h-71zM1207 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec21%22 d=%22M1278 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1349 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececa6%22 d=%22M1420 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1491 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec0e%22 d=%22M1562 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1633 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec23%22 d=%22M1704 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1775 1207h71v71h-71zM1846 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec3f%22 d=%22M1917 1207h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec09%22 d=%22M0 1278h71v71H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M71 1278h71v71H71z%22%2F%3E%3Cpath fill=%22%23ecececdf%22 d=%22M142 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec3a%22 d=%22M213 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M284 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececece5%22 d=%22M355 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec2d%22 d=%22M426 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M497 1278h71v71h-71zM568 1278h71v71h-71zM639 1278h71v71h-71zM710 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec2f%22 d=%22M781 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M852 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec48%22 d=%22M923 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec1d%22 d=%22M994 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1065 1278h71v71h-71zM1136 1278h71v71h-71zM1207 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec1b%22 d=%22M1278 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1349 1278h71v71h-71zM1420 1278h71v71h-71zM1491 1278h71v71h-71zM1562 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececba%22 d=%22M1633 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1704 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec08%22 d=%22M1775 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1846 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec64%22 d=%22M1917 1278h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 1349h71v71H0zM71 1349h71v71H71zM142 1349h71v71h-71zM213 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec6b%22 d=%22M284 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec42%22 d=%22M355 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M426 1349h71v71h-71zM497 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec02%22 d=%22M568 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M639 1349h71v71h-71zM710 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececd8%22 d=%22M781 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec9b%22 d=%22M852 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M923 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec8b%22 d=%22M994 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1065 1349h71v71h-71zM1136 1349h71v71h-71zM1207 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec6e%22 d=%22M1278 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1349 1349h71v71h-71zM1420 1349h71v71h-71zM1491 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececb2%22 d=%22M1562 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1633 1349h71v71h-71zM1704 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec51%22 d=%22M1775 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ececec4a%22 d=%22M1846 1349h71v71h-71z%22%2F%3E%3Cpath fill=%22%23ecececf1%22 d=%22M1917 1349h71v71h-71z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%2250%25%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22 stop-opacity=%22.5%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+}
+
+.a1-title {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.a1-title h5 {
+    color: #222;
+    font-size: 65px;
+    line-height: 1.3;
+}
+
+.a1-title h5 span {
+    color: #fff;
+    padding: 2px 8px;
+    font-weight: 800;
+    border-radius: 7px;
+    background-color: var(--main-color);
+}
+
+.a1-title p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.a1-title p span {
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .20);
+    cursor: default;
+}
+
+.a1-title p span:hover {
+    background-color: rgba(0, 0, 0, .30);
+}
+
+.a1Btn {
+    width: fit-content;
+    color: #222;
+    font-size: 19px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5rem;
+    transition: all .2s;
+}
+
+.a1Btn img {
+    width: 34px;
+}
+
+.a1Btn:hover {
+    gap: 20px;
+}
+
+.a1-image {
+    position: absolute;
+    top: 30%; right: -15%;
+    transform: translate(0, -50%);
+    width: 70%;
+}
+
+.a1-map {
+    width: 60%;
+    user-select: none;
+    opacity: .4;
+}
+
+.pin {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.pin-1 {
+    bottom: 27%; left: 16%;
+}
+.pin-2 {
+    bottom: 24%; left: 15%;
+}
+.pin-3 {
+    bottom: 25%; left: 19%;
+}
+.pin-4 {
+    bottom: 19%; left: 13%;
+}
+.pin-5 {
+    bottom: 21%; left: 17%;
+}
+.pin-6 {
+    bottom: 18%; left: 20%;
+}
+.pin-7 {
+    bottom: 55%; left: 20%;
+}
+.pin-8 {
+    bottom: 52%; left: 22%;
+}
+
+.gps {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.gps::before {
+    content: '';
+    position: relative;
+    display: block;
+    width: 300%;
+    height: 300%;
+    box-sizing: border-box;
+    margin-left: -100%;
+    margin-top: -100%;
+    border-radius: 45px;
+    background-color: var(--main-color);
+    animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.gps::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 15px;
+    animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+}
+
+@keyframes pulse-ring {
+    0% {
+        transform: scale(.33);
+    }
+
+    80%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-dot {
+    0% {
+        transform: scale(.8);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(.8);
+    }
+}
+
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .a1-title h5 {
+        font-size: 77px;
+    }
+
+    .a1-title p {
+        font-size: 22px;
+    }
+    
+    .a1-image {
+        right: -22%;
+    }
+    
+    .a1-map {
+        width: 55%;
+    }
+
+    .gps {
+        width: 30px;
+        height: 30px;
+    }
+}
