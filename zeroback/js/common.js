@@ -1,7 +1,7 @@
 AOS.init({
     once: true,
     delay: 100,
-    offset: 200,
+    offset: 100,
     duration: 1200,
 });
 
@@ -56,17 +56,9 @@ $(function () {
     $(window).scroll(function () {
         if ($(document).scrollTop() > Offset.top) {
             $('header').addClass('Fixed');
-            $('.logo-w').addClass('active');
-            $('.logo').removeClass('active');
-            $('nav ul li a').addClass('Fixed2');
-            $('.bar1, .bar2, .bar3').addClass('bar-color');
         }
         else {
             $('header').removeClass('Fixed');
-            $('.logo-w').removeClass('active');
-            $('.logo').addClass('active');
-            $('nav ul li a').removeClass('Fixed2');
-            $('.bar1, .bar2, .bar3').removeClass('bar-color');
         }
     });
 });
@@ -104,7 +96,7 @@ $(window).on('scroll', function () {
 
 
 $(function () {
-    $('.floating a, .logo, .logo-w, nav ul li a, .p-text a, .logo-f').click(function (e) {
+    $('.floating a, .logo, nav ul li a, .logo-f').click(function (e) {
         $.scrollTo(this.hash || 0, 500);
         e.preventDefault();
     });
@@ -133,3 +125,31 @@ if (navigator.userAgent.indexOf("Trident") > 0) {
         "확인 버튼을 누르면 Edge 브라우저로 이동합니다.")
     window.location = 'microsoft-edge:' + window.location.href;
 };
+
+
+
+var swiper = new Swiper(".a7Swiper", {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 1.2,
+    spaceBetween: 20,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        1051: {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+        },
+        2000: {
+            slidesPerView: 3.5,
+            spaceBetween: 40,
+        },
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+});

@@ -18,6 +18,28 @@
     align-items: center;
 }
 
+.at-title {
+    margin-bottom: 4rem;
+}
+
+.at-sb {
+    width: 40px;
+    transform: rotate(-10deg);
+    margin-bottom: 10px;
+}
+
+.at-title h5 {
+    color: var(--sub-color);
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.at-title p {
+    color: #555;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
 
 
 /*==================================================*/
@@ -25,12 +47,5 @@
     .article-wrapper {
         width: 100%;
         padding: 0 20px;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .article {
-        padding: 60px 0;
     }
 }

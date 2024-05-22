@@ -3,6 +3,7 @@
     padding: 300px 0;
     background-color: var(--sub-color);
     background: linear-gradient(to bottom, #000 0%, var(--sub-color) 100%);
+    overflow: hidden;
 }
 
 .a2-bg {
@@ -14,16 +15,18 @@
 
 .a2-flow-wrapper {
     position: absolute;
-    top: 30px;
+    top: 0;
     width: 100%;
+    padding: 26px 0;
     user-select: none;
     overflow: hidden;
-    z-index: 1;
+    z-index: 3;
+    background-color: var(--main-color);
 }
 
 .a2-flow-wrapper.flow2 {
     top: unset;
-    bottom: 30px;
+    bottom: 0;
 }
 
 .a2-flow {
@@ -149,6 +152,13 @@
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
     }
+}
+
+.a2-sb {
+    width: 30%;
+    filter: invert(100%) sepia(0%) saturate(4%) hue-rotate(223deg) brightness(106%) contrast(101%);
+    margin-top: 5rem;
+    z-index: 50;
 }
 
 

@@ -4,28 +4,51 @@ $(document).on("keyup", ".phoneNumber", function () {
 
 
 
-$('.f-personal-text').click(function () {
+$('.a8-personal-text').click(function () {
     if ($('#cb').is(':checked')) {
-        $('.f-personal').removeClass('f-personal-no');
-        $('.f-personal-text label p').html('개인정보수집 및 이용에 동의합니다.');
-        $('.gform .f-submit').attr('disabled', false);
+        $('.a8-personal').removeClass('a8-personal-no');
+        $('.a8-personal-text label p').html('개인정보 수집 및 이용에 동의합니다.');
+        $('.a8-form .a8-submit').attr('disabled', false);
     } else {
-        $('.f-personal').addClass('f-personal-no');
-        $('.f-personal-text label p').html('개인정보처리방침에 동의해주세요.');
-        $('.gform .f-submit').attr('disabled', true);
+        $('.a8-personal').addClass('a8-personal-no');
+        $('.a8-personal-text label p').html('개인정보처리방침에 동의해주세요.');
+        $('.a8-form .a8-submit').attr('disabled', true);
     }
-});
+})
 
+
+
+$('.ff-open2').click(function () {
+    $('.floating').toggleClass('up');
+    $('.floating .ff-closeBtn').toggleClass('i-rotate2');
+})
+
+
+$('.f-personal').click(function () {
+    if ($('#cb2').is(':checked')) {
+        $('.f-form .f-submit').attr('disabled', false);
+    } else {
+        $('.f-form .f-submit').attr('disabled', true);
+    }
+})
 
 
 $('.f-personalBtn').click(function () {
-    $('.pp-wrapper').fadeIn().css('display','flex');
+    $('.f-popup-wrapper').fadeIn().css('display','flex');
     $('.policy-popup textarea').scrollTop(0);
-});
+})
 
-$('.pp-closeBtn').click(function () {
-    $('.pp-wrapper').fadeOut();
-});
+
+$('.f-popup-closeBtn').click(function () {
+    $('.f-popup-wrapper').fadeOut();
+})
+
+
+$('.f-popup-wrapper').on('scroll touchmove mousewheel', function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    return false;
+})
 
 
 
@@ -33,7 +56,7 @@ $(document).on(
     'keydown',
     function (event) {
         if (event.key == "Escape") {
-            $('.pp-wrapper').fadeOut();
+            $('.f-popup-wrapper').fadeOut();
         }
     }
 );
