@@ -42,7 +42,7 @@
 }
 
 .a5-box-text p {
-    color: var(--main-color);
+    color: #aaa;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -53,8 +53,34 @@
     font-size: 20px;
 }
 
+.a5-box-icon {
+    width: 66px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--main-color);
+}
+
 .a5-box-icon img {
-    height: 60px;
+    height: 60%;
+}
+.a5-box:nth-child(2) .a5-box-icon img {
+    width: 70%;
+    height: auto;
+}
+.a5-box:nth-child(4) .a5-box-icon img {
+    height: 52%;
+    padding-top: 3px;
+}
+.a5-box:nth-child(6) .a5-box-icon img {
+    width: 60%;
+    height: auto;
+}
+.a5-box:nth-child(7) .a5-box-icon img {
+    width: 70%;
+    height: auto;
 }
 
 .a5-right {
