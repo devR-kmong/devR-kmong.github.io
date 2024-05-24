@@ -94,6 +94,13 @@
 
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .article7 .article-wrapper {
+        padding: 0;
+    }
+}
+
+
 @media (max-width: 768px) {
     .a7Swiper .swiper-slide {
         padding: 45px;
