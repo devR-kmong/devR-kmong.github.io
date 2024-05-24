@@ -131,7 +131,7 @@ if (navigator.userAgent.indexOf("Trident") > 0) {
 var swiper = new Swiper(".a7Swiper", {
     loop: true,
     centeredSlides: true,
-    slidesPerView: 1.2,
+    slidesPerView: 1.5,
     spaceBetween: 20,
     grabCursor: true,
     navigation: {
@@ -139,12 +139,16 @@ var swiper = new Swiper(".a7Swiper", {
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        1051: {
+        1251: {
             slidesPerView: 2.5,
             spaceBetween: 30,
         },
-        2000: {
+        1651: {
             slidesPerView: 3.5,
+            spaceBetween: 30,
+        },
+        2000: {
+            slidesPerView: 4.5,
             spaceBetween: 40,
         },
     },
