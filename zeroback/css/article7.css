@@ -142,6 +142,7 @@
     }
 
     .ss-bottom p {
+        height: 145px;
         font-size: 15px;
     }
 }

@@ -143,9 +143,4 @@ button, input {
             transform: translate3d(-800%, 0, 0);
         }
     }
-
-
-    .grid2 {
-        grid-template-columns: repeat(1, 1fr);
-    }
 }

@@ -92,16 +92,9 @@
         min-width: 900px;
         opacity: .45;
     }
-    
-    .a3-text {
-        text-align: center;
-    }
-    
-    .a3-text h5 {
-        font-size: 45px;
-    }
 
     .a3-text p {
+        width: 100%;
         font-size: 16px;
     }
 }

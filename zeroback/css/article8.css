@@ -271,7 +271,11 @@
 
 
 /*==================================================*/
-@media (max-width: 900px) {
+@media (max-width: 850px) {
+    .article8 {
+        padding: 80px 0 30px 0;
+    }
+    
     .a8-form .form-wrapper {
         padding: 0 30px;
     }
@@ -351,11 +355,6 @@
 
 
 @media (max-width: 450px) {
-    .a8-title {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-    
     .a8-form .input-wrapper .input-title {
         width: 77px;
         min-width: 77px;

@@ -23,7 +23,17 @@
     margin-top: -2rem;
 }
 
+.a5-left .at-title .at-sb {
+    display: none;
+}
+
+.a5-left .at-title h5 {
+    display: flex;
+    gap: 1rem;
+}
+
 .a5-left .at-title h5 img {
+    display: flex !important;
     margin-bottom: 2rem;
 }
 
@@ -131,10 +141,21 @@
     }
 
     .a5-left .at-title {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 5rem;
     }
 
+    .a5-left .at-title .at-sb {
+        display: flex;
+    }
+
+    .a5-left .at-title h5 .at-sb {
+        display: none !important;
+    }
+    
     .a5-right {
         width: 100%;
     }
