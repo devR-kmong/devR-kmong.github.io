@@ -247,13 +247,19 @@
 
 
 @media (max-width: 450px) {
+    .a5-box {
+        padding: 22px;
+        padding-top: 40px;
+    }
+    
     .a5-box-text h5 {
         font-size: 14px;
     }
 
     .a5-box-icon {
+        top: 20px; right: 20px;
         width: 34px;
         height: 34px;
-        border-radius: 8px;
+        border-radius: 12px;
     }
 }

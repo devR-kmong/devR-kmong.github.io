@@ -92,7 +92,8 @@
 
 @media (max-width: 1050px) {
     .p-image {
-        height: 70%;
+        width: 50%;
+        height: auto;
     }
 
     .p-text {
@@ -102,10 +103,17 @@
 }
 
 
+@media (max-width: 650px) {
+    .p-image {
+        width: 65%;
+    }
+}
+
+
 @media (max-width: 550px) {
     .p-image {
         right: -15%;
-        min-width: max-content;
+        width: 75%;
     }
 
     .p-text {

@@ -110,7 +110,7 @@
 
 @media (max-width: 550px) {
     .a7Swiper .swiper-slide {
-        padding: 35px;
+        padding: 35px 25px;
     }
 
     .ss-top {

@@ -180,6 +180,11 @@
 
 
 @media (max-width: 850px) {
+    .a2-bg {
+        min-width: 1200px;
+        opacity: .08;
+    }
+    
     .a2-title {
         font-size: 36px;
     }

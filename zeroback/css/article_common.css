@@ -72,3 +72,18 @@
         font-size: 18px;
     }
 }
+
+
+@media (max-width: 550px) {
+    .at-sb {
+        width: 24px;
+    }
+
+    .at-title h5 {
+        font-size: 36px;
+    }
+
+    .at-title p {
+        font-size: 15px;
+    }
+}
