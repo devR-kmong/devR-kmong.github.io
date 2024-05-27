@@ -112,4 +112,36 @@
     .a7Swiper .swiper-slide {
         padding: 35px;
     }
+
+    .ss-top {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ss-profile {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ss-profile img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .ss-profile h5 {
+        font-size: 17px;
+        font-weight: 700;
+    }
+    
+    .ss-star {
+        margin-top: 10px;
+    }
+
+    .ss-star i {
+        font-size: 18px;
+    }
+
+    .ss-bottom p {
+        font-size: 15px;
+    }
 }

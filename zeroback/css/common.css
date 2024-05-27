@@ -108,6 +108,16 @@ button, input {
     }
 }
 
+@keyframes slide2-m {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    
+    100% {
+        transform: translate3d(-150%, 0, 0);
+    }
+}
+
 
 /*==================================================*/
 @media (max-width: 1250px) {
@@ -132,5 +142,10 @@ button, input {
         100% {
             transform: translate3d(-800%, 0, 0);
         }
+    }
+
+
+    .grid2 {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

@@ -99,6 +99,10 @@
     margin-bottom: 15rem;
 }
 
+.a2-text p br {
+    display: none;
+}
+
 .a2-text h5 {
     font-size: 70px;
     font-weight: 400;
@@ -157,3 +161,99 @@
 
 
 /*==================================================*/
+@media (max-width: 1500px) {
+    .a2-logo {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .a2-text p {
+        line-height: 1.35;
+    }
+    
+    .a2-text p br {
+        display: block;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a2-title {
+        font-size: 36px;
+    }
+
+    .a2-circle-wrapper {
+        margin: 13rem 0;
+    }
+
+    .a2-text p {
+        font-size: 32px;
+        margin-bottom: 10rem;
+    }
+
+    .a2-text h5 {
+        font-size: 45px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a2-title br {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article2 {
+        padding: 200px 0 120px 0;
+    }
+    
+    .a2-flow-wrapper {
+        padding: 20px 0;
+    }
+    
+    .a2-flow img {
+        width: 200px;
+    }
+
+    .a2-title {
+        font-size: 32px;
+    }
+    
+    .a2-circle-wrapper {
+        gap: 2rem;
+        margin: 10rem 0;
+    }
+
+    .a2-circle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .a2-big {
+        font-size: 65px;
+    }
+
+    .a2-arrow {
+        margin: 10rem 0;
+    }
+
+    .a2-arrow span {
+        width: 30px;
+        height: 30px;
+        border-bottom: 3px solid white;
+        border-right: 3px solid white;
+    }
+
+    .a2-text p {
+        font-size: 22px;
+        margin-bottom: 7rem;
+    }
+
+    .a2-text h5 {
+        font-size: 36px;
+    }
+}

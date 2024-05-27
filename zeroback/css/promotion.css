@@ -70,7 +70,19 @@
 }
 
 
-@media (max-width: 1250px) {
+@media (max-width: 1450px) {
+    .promotion {
+        overflow: hidden;
+    }
+    
+    .p-image {
+        left: unset;
+        right: -5%;
+    }
+}
+
+
+@media (max-width: 1350px) {
     .promotion-wrapper {
         width: 100%;
         padding: 0 20px;
@@ -78,13 +90,25 @@
 }
 
 
-@media (max-width: 768px) {
-    .p-text h5 {
-        font-size: 40px;
+@media (max-width: 1050px) {
+    .p-image {
+        height: 70%;
     }
 
-    .p-text p {
-        font-size: 18px;
-        font-weight: 300;
+    .p-text {
+        width: 70%;
+        margin-bottom: 15rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .p-image {
+        right: -15%;
+        min-width: max-content;
+    }
+
+    .p-text {
+        width: 80%;
     }
 }

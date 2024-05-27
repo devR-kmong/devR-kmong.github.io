@@ -2,6 +2,7 @@
     position: relative;
     padding: 0;
     background-repeat: repeat;
+    background-position: left !important;
     background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 1400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%222000%22 height=%221400%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%23f2f2f2%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%23ddd%22 stroke-width=%22.8%22 mask=%22url(%23b)%22%3E%3Cpath fill=%22none%22 d=%22M0 0h87v87H0zM87 0h87v87H87z%22%2F%3E%3Cpath fill=%22%23ddddddf8%22 d=%22M174 0h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M261 0h87v87h-87zM435 0h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddc4%22 d=%22M609 0h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd97%22 d=%22M783 0h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd56%22 d=%22M870 0h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 0h87v87h-87zM1131 0h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddd9%22 d=%22M1218 0h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1305 0h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd27%22 d=%22M1392 0h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1479 0h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd62%22 d=%22M1566 0h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1653 0h87v87h-87zM1740 0h87v87h-87zM1827 0h87v87h-87zM1914 0h87v87h-87zM87 87h87v87H87z%22%2F%3E%3Cpath fill=%22%23dddddd89%22 d=%22M174 87h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M261 87h87v87h-87zM348 87h87v87h-87zM435 87h87v87h-87zM522 87h87v87h-87zM609 87h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddfa%22 d=%22M696 87h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddd5%22 d=%22M783 87h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddbf%22 d=%22M870 87h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 87h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd12%22 d=%22M1131 87h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd93%22 d=%22M1218 87h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1305 87h87v87h-87zM1392 87h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd18%22 d=%22M1479 87h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd59%22 d=%22M1566 87h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1653 87h87v87h-87zM0 174h87v87H0z%22%2F%3E%3Cpath fill=%22%23dddddd9c%22 d=%22M87 174h87v87H87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M174 174h87v87h-87zM261 174h87v87h-87zM348 174h87v87h-87zM435 174h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddf0%22 d=%22M522 174h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M609 174h87v87h-87zM696 174h87v87h-87zM783 174h87v87h-87zM957 174h87v87h-87zM1044 174h87v87h-87zM1131 174h87v87h-87zM1218 174h87v87h-87zM1305 174h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddee%22 d=%22M1392 174h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddaa%22 d=%22M1479 174h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1566 174h87v87h-87zM1827 174h87v87h-87zM1914 174h87v87h-87zM0 261h87v87H0z%22%2F%3E%3Cpath fill=%22%23dddddd14%22 d=%22M87 261h87v87H87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M261 261h87v87h-87zM348 261h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd09%22 d=%22M435 261h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M522 261h87v87h-87zM609 261h87v87h-87zM696 261h87v87h-87zM870 261h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddea%22 d=%22M957 261h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd3f%22 d=%22M1044 261h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1131 261h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddaa%22 d=%22M1218 261h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1305 261h87v87h-87zM1566 261h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd14%22 d=%22M1653 261h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1914 261h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddc8%22 d=%22M0 348h87v87H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M87 348h87v87H87zM261 348h87v87h-87zM348 348h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd63%22 d=%22M435 348h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M522 348h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd5b%22 d=%22M609 348h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M696 348h87v87h-87zM783 348h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddde3%22 d=%22M870 348h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd25%22 d=%22M1044 348h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd24%22 d=%22M1131 348h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1218 348h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd41%22 d=%22M1392 348h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddc2%22 d=%22M1479 348h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1566 348h87v87h-87zM1653 348h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddc1%22 d=%22M1740 348h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1827 348h87v87h-87zM1914 348h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd39%22 d=%22M0 435h87v87H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M174 435h87v87h-87zM261 435h87v87h-87zM348 435h87v87h-87zM435 435h87v87h-87zM522 435h87v87h-87zM609 435h87v87h-87zM696 435h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd85%22 d=%22M783 435h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddba%22 d=%22M870 435h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M957 435h87v87h-87zM1044 435h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd4d%22 d=%22M1131 435h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1218 435h87v87h-87zM1305 435h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd99%22 d=%22M1392 435h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1479 435h87v87h-87zM1566 435h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd91%22 d=%22M1653 435h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1740 435h87v87h-87zM1914 435h87v87h-87zM87 522h87v87H87zM174 522h87v87h-87zM261 522h87v87h-87zM348 522h87v87h-87zM435 522h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd0c%22 d=%22M522 522h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M696 522h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd80%22 d=%22M783 522h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M870 522h87v87h-87zM957 522h87v87h-87zM1044 522h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd78%22 d=%22M1131 522h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1218 522h87v87h-87zM1305 522h87v87h-87zM1392 522h87v87h-87zM1479 522h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd90%22 d=%22M1566 522h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1653 522h87v87h-87zM1740 522h87v87h-87zM1827 522h87v87h-87zM1914 522h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddda8%22 d=%22M0 609h87v87H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M87 609h87v87H87z%22%2F%3E%3Cpath fill=%22%23dddddd49%22 d=%22M261 609h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M348 609h87v87h-87zM435 609h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddde8%22 d=%22M522 609h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M609 609h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddb8%22 d=%22M696 609h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd78%22 d=%22M783 609h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M870 609h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd5f%22 d=%22M957 609h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddf7%22 d=%22M1044 609h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1131 609h87v87h-87zM1305 609h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddddc%22 d=%22M1479 609h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1566 609h87v87h-87zM1653 609h87v87h-87zM1740 609h87v87h-87zM1827 609h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddd6%22 d=%22M1914 609h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 696h87v87H0zM87 696h87v87H87zM174 696h87v87h-87zM261 696h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd80%22 d=%22M348 696h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M435 696h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd17%22 d=%22M522 696h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M609 696h87v87h-87zM696 696h87v87h-87zM783 696h87v87h-87zM870 696h87v87h-87zM957 696h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd58%22 d=%22M1044 696h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1131 696h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd92%22 d=%22M1218 696h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1305 696h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddda5%22 d=%22M1479 696h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd2d%22 d=%22M1566 696h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1653 696h87v87h-87zM1740 696h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd0e%22 d=%22M1827 696h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd7e%22 d=%22M1914 696h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 783h87v87H0zM87 783h87v87H87zM174 783h87v87h-87zM261 783h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddfc%22 d=%22M348 783h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M435 783h87v87h-87zM522 783h87v87h-87zM696 783h87v87h-87zM783 783h87v87h-87zM870 783h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddab%22 d=%22M957 783h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 783h87v87h-87zM1305 783h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd86%22 d=%22M1392 783h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1479 783h87v87h-87zM1566 783h87v87h-87zM1653 783h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd0d%22 d=%22M1740 783h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1827 783h87v87h-87zM1914 783h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd40%22 d=%22M0 870h87v87H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M87 870h87v87H87z%22%2F%3E%3Cpath fill=%22%23ddddddf0%22 d=%22M261 870h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd37%22 d=%22M348 870h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M435 870h87v87h-87zM609 870h87v87h-87zM696 870h87v87h-87zM783 870h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddda5%22 d=%22M870 870h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M957 870h87v87h-87zM1044 870h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd5b%22 d=%22M1218 870h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1305 870h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddb5%22 d=%22M1392 870h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1479 870h87v87h-87zM1566 870h87v87h-87zM1653 870h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddac%22 d=%22M1740 870h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1827 870h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd48%22 d=%22M1914 870h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 957h87v87H0zM87 957h87v87H87zM174 957h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddde1%22 d=%22M261 957h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddded%22 d=%22M348 957h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddb0%22 d=%22M435 957h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M522 957h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddd4%22 d=%22M609 957h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd9f%22 d=%22M783 957h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddcc%22 d=%22M870 957h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M957 957h87v87h-87zM1044 957h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd26%22 d=%22M1131 957h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1218 957h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddd2%22 d=%22M1305 957h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd0e%22 d=%22M1566 957h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1740 957h87v87h-87zM1827 957h87v87h-87zM1914 957h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddddb%22 d=%22M87 1044h87v87H87z%22%2F%3E%3Cpath fill=%22%23dddddd3c%22 d=%22M174 1044h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M261 1044h87v87h-87zM348 1044h87v87h-87zM435 1044h87v87h-87zM522 1044h87v87h-87zM609 1044h87v87h-87zM783 1044h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd82%22 d=%22M870 1044h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 1044h87v87h-87zM1131 1044h87v87h-87zM1305 1044h87v87h-87zM1392 1044h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd05%22 d=%22M1566 1044h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1653 1044h87v87h-87zM1740 1044h87v87h-87zM1827 1044h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd53%22 d=%22M1914 1044h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd67%22 d=%22M0 1131h87v87H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M174 1131h87v87h-87zM261 1131h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddb7%22 d=%22M348 1131h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M435 1131h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddce%22 d=%22M522 1131h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M609 1131h87v87h-87zM696 1131h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd1e%22 d=%22M783 1131h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd81%22 d=%22M870 1131h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddbb%22 d=%22M957 1131h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 1131h87v87h-87zM1131 1131h87v87h-87zM1218 1131h87v87h-87zM1305 1131h87v87h-87zM1392 1131h87v87h-87zM1479 1131h87v87h-87zM1566 1131h87v87h-87zM1653 1131h87v87h-87zM1740 1131h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddde5%22 d=%22M1827 1131h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1914 1131h87v87h-87zM0 1218h87v87H0zM87 1218h87v87H87zM261 1218h87v87h-87zM348 1218h87v87h-87zM435 1218h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd8a%22 d=%22M609 1218h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M696 1218h87v87h-87zM870 1218h87v87h-87zM957 1218h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddf8%22 d=%22M1044 1218h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1131 1218h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddde0%22 d=%22M1218 1218h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1479 1218h87v87h-87zM1566 1218h87v87h-87zM1653 1218h87v87h-87zM1740 1218h87v87h-87zM1914 1218h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd1b%22 d=%22M0 1305h87v87H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M87 1305h87v87H87zM174 1305h87v87h-87zM261 1305h87v87h-87zM348 1305h87v87h-87zM522 1305h87v87h-87zM609 1305h87v87h-87zM696 1305h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd89%22 d=%22M783 1305h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M870 1305h87v87h-87zM957 1305h87v87h-87zM1131 1305h87v87h-87zM1218 1305h87v87h-87zM1305 1305h87v87h-87zM1392 1305h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd45%22 d=%22M1479 1305h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddd2%22 d=%22M1566 1305h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1653 1305h87v87h-87zM1827 1305h87v87h-87zM1914 1305h87v87h-87zM0 1392h87v87H0zM87 1392h87v87H87zM174 1392h87v87h-87zM261 1392h87v87h-87zM348 1392h87v87h-87zM435 1392h87v87h-87zM870 1392h87v87h-87zM957 1392h87v87h-87zM1044 1392h87v87h-87zM1131 1392h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddc2%22 d=%22M1218 1392h87v87h-87z%22%2F%3E%3Cpath fill=%22%23ddddddbe%22 d=%22M1305 1392h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1392 1392h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd06%22 d=%22M1479 1392h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1653 1392h87v87h-87z%22%2F%3E%3Cpath fill=%22%23dddddd9f%22 d=%22M1740 1392h87v87h-87z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1827 1392h87v87h-87zM1914 1392h87v87h-87z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%2250%25%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22 stop-opacity=%22.5%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
     overflow: hidden;
 }
@@ -90,18 +91,18 @@
 .a5-flow-wrapper {
     width: 100%;
     height: 1000px;
-    display: flex;
-    flex-direction: column;
 }
 
 .a5-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     animation: slide2 15s linear infinite;
 }
 
 .a5-flow img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 2rem;
 }
 
 .a5-flow-wrapper:hover .a5-flow {
@@ -110,3 +111,128 @@
 
 
 /*==================================================*/
+@media (max-width: 1250px) {
+    .article5 {
+        padding: 60px 0;
+    }
+    
+    .article5 .a2-flow-wrapper.flow2 {
+        display: none;
+    }
+
+    .a5-wrapper {
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    .a5-left {
+        padding: 0;
+        width: 100%;
+    }
+
+    .a5-left .at-title {
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    .a5-right {
+        width: 100%;
+    }
+
+    .a5-flow-wrapper {
+        width: 800px;
+        height: auto;
+    }
+
+    .a5-flow {
+        flex-direction: row;
+        animation: slide2-m 6s linear infinite;
+    }
+
+    .a5-flow img {
+        width: 400px;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a5-box {
+        position: relative;
+        flex-direction: row;
+    }
+
+    .a5-box-icon {
+        position: absolute;
+        top: 35px; right: 35px;
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a5-box {
+        padding: 30px;
+    }
+    
+    .a5-box-text p {
+        font-size: 14px;
+    }
+    
+    .a5-box-text h5 {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .a5-box-icon {
+        top: 30px; right: 30px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a5-wrapper {
+        gap: 3rem;
+    }
+    
+    .a5-box {
+        padding: 25px;
+    }
+    
+    .a5-box-text p {
+        font-size: 13px;
+    }
+    
+    .a5-box-text h5 {
+        font-size: 16px;
+    }
+
+    .a5-box-icon {
+        top: 25px; right: 25px;
+        width: 40px;
+        height: 40px;
+        border-radius: 9px;
+    }
+
+    .a5-flow {
+        gap: 1rem;
+    }
+    
+    .a5-flow img {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a5-box-text h5 {
+        font-size: 14px;
+    }
+
+    .a5-box-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+    }
+}

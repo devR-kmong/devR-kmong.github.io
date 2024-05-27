@@ -65,3 +65,34 @@
 
 
 /*==================================================*/
+@media (max-width: 1050px) {
+    .a6-box-wrapper {
+        gap: 1.5rem;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a6-box-text h5 {
+        font-size: 26px;
+    }
+
+    .a6-box-text p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a6-box-wrapper {
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article6 {
+        background: linear-gradient(to bottom, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 90%, rgba(0,0,255,1) 100%);
+    }
+}
