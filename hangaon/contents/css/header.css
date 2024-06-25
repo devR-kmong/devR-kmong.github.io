@@ -1,0 +1,210 @@
+.header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    z-index: 98;
+}
+
+.header:hover {
+    background-color: #1b1b1b;
+}
+
+.gnb {
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    color: #fff;
+    padding: 25px 0;
+    font-size: 17px;
+    font-family: 'GmarketSansMedium';
+}
+
+.menu-item a:hover {
+    color: var(--main-color);
+}
+
+.mi-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-hover {
+    position: absolute;
+    top: 70px; left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+    display: none;
+}
+
+.sub-menu {
+    width: 100%;
+    padding: 14px 36px !important;
+    text-align: center;
+}
+
+.sub-menu:hover {
+    color: #fff !important;
+    background-color: var(--main-color);
+}
+
+.Fixed {
+    position: fixed;
+    top: 0;
+    height: 75px;
+    background-color: #1b1b1b;
+}
+
+.logo {
+    width: 170px;
+}
+
+.gnb-right {
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+#check,
+.gnb label,
+.overlay {
+    display: none;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .menu {
+        gap: 5rem;
+    }
+}
+
+
+@media (max-width: 1700px) {
+    .gnb-right {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1500px) {
+    .header {
+        height: 75px;
+    }
+
+    .gnb {
+        padding: 0 20px;
+    }
+
+    .gnb label {
+        display: flex;
+        z-index: 8;
+    }
+
+    .menuBtns {
+        display: inline-block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0; left: -100%;
+        width: 80%;
+        height: 100vh;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #111;
+        touch-action: none;
+        transition: all .2s;
+        z-index: 7;
+        gap: 2.2rem;
+    }
+
+    .menu li a {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .Fixed2 {
+        color: #fff !important;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-color: rgba(0, 0, 0, .6);
+        transition: all .3s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 6;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 24px;
+        height: 2px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: .3s ease;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 2px);
+        background-color: #fff;
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-9px, -6px);
+        background-color: #fff;
+    }
+
+    .bar-color {
+        background-color: #222;
+    }
+    
+    #check:checked ~ .menu {left: 0;}
+    #check:checked ~ .overlay {
+        opacity: 1;
+        visibility: visible;
+        touch-action: none;
+    }
+}
