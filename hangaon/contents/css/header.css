@@ -25,7 +25,7 @@
 .menu {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .menu-item {
@@ -36,7 +36,7 @@
     color: #fff;
     padding: 25px 0;
     font-size: 17px;
-    font-family: 'GmarketSansMedium';
+    font-weight: 600;
 }
 
 .menu-item a:hover {
@@ -51,7 +51,7 @@
 
 .menu-hover {
     position: absolute;
-    top: 70px; left: 50%;
+    top: 70px; left: 46%;
     transform: translate(-50%, 0);
     display: flex;
     flex-direction: column;
@@ -69,8 +69,7 @@
 }
 
 .sub-menu:hover {
-    color: #fff !important;
-    background-color: var(--main-color);
+    background-color: rgba(255, 255, 255, .05);
 }
 
 .Fixed {

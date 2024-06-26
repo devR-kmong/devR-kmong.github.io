@@ -212,14 +212,13 @@
 
 .swiper-button-next {
     position: relative;
-    color: rgba(255, 255, 255, .5);
+    color: #fff;
     width: 48px;
     height: 48px;
     font-size: 22px;
     line-height: 50px;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, .3);
     overflow: hidden;
     cursor: pointer;
     z-index: 10;
@@ -320,8 +319,6 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: 10px;
-    left: 0;
     width: 100%
 }
 
@@ -359,15 +356,7 @@
     transform: scale(.33)
 }
 
-.swiper-pagination-bullet {
-    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 5px));
-    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 5px));
-    display: inline-block;
-    border-radius: 50%;
-    background: var(--swiper-pagination-bullet-inactive-color, #fff);
-    opacity: var(--swiper-pagination-bullet-inactive-opacity, .5);
-    transition: all .3s ease-in-out;
-}
+
 
 button.swiper-pagination-bullet {
     border: none;
@@ -384,14 +373,6 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet:only-child {
     display: none !important
-}
-
-.swiper-pagination-bullet-active {
-    opacity: var(--swiper-pagination-bullet-opacity, 1);
-    background: var(--swiper-pagination-color, var(--swiper-theme-color));
-    width: 30px;
-    height: 5px;
-    border-radius: 30px;
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets,

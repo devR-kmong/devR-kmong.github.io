@@ -1,6 +1,41 @@
 .article4 {
-    background-color: #f1f1f1;
+    position: relative;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.article4 .article-wrapper {
+    width: 1400px;
+}
+
+.article4 .video-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 2;
+}
+
+.article4 video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 110%;
+    z-index: 1;
+}
+
+.article4 .a3-wrapper {
+    flex-direction: row;
 }
 
 
 /*==================================================*/
+
+
+
+@media (max-height: 950px) {
+    .article4 {
+        height: auto;
+    }
+}

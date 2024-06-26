@@ -21,7 +21,51 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    // on: {
+    //     transitionStart: function () {
+
+    //         var videos = document.querySelectorAll('video');
+
+    //         Array.prototype.forEach.call(videos, function (video) {
+    //             video.pause();
+    //         });
+    //     },
+
+    //     transitionEnd: function () {
+
+    //         var activeIndex = this.activeIndex;
+    //         var activeSlide = document.getElementsByClassName('swiper-slide')[activeIndex];
+    //         var activeSlideVideo = activeSlide.getElementsByTagName('video')[0];
+    //         activeSlideVideo.play();
+
+    //     },
+    // }
 });
+
+var swiper = new Swiper(".mySwiper2", {
+    initialSlide: 0,
+    centeredSlides: false,
+    slidesPerView: 1.5,
+    spaceBetween: 30,
+    speed: 1000,
+    navigation: {
+        nextEl: ".sbn",
+        prevEl: ".sbp",
+    },
+    breakpoints: {
+        769: {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 60
+        },
+        1251: {
+            slidesPerView: 2.5,
+            centeredSlides: true,
+            spaceBetween: 80
+        },
+    },
+});
+
 
 
 

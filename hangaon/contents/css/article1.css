@@ -1,4 +1,82 @@
+.article1 {
+    position: relative;
+    padding-bottom: 0;
+    overflow: hidden;
+}
 
+.article1::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 25%;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: 1;
+}
+
+.a1-sb {
+    position: absolute;
+    top: -5%; right: 3%;
+    width: 30%;
+    opacity: .07;
+}
+
+.article1 .article-wrapper {
+    width: 100%;
+}
+
+.a1-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    z-index: 10;
+}
+
+.a1-left {
+    width: 45%;
+    margin-bottom: -4px;
+}
+
+.a1-image {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.a1-right {
+    width: 600px;
+}
+
+.a1-right h4 {
+    color: #555;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.a1-right h5 {
+    color: var(--main-color);
+    font-size: 85px;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.a1-right h5 span {
+    display: block;
+    color: #222;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.a1-right p {
+    color: #aaa;
+    font-size: 19px;
+    line-height: 1.65;
+    margin-top: 5rem;
+}
 
 
 /*==================================================*/
