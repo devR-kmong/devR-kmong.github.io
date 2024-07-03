@@ -28,7 +28,7 @@
 }
 
 .logo-f {
-    width: 180px;
+    width: 200px;
 }
 
 .footer-menu {
@@ -40,7 +40,7 @@
 }
 
 .footer-menu li {
-    color: var(--main-color);
+    color: #aaa;
     font-size: 17px;
     font-weight: 500;
 }
@@ -49,7 +49,7 @@
     display: flex;
     width: 100%;
     height: 1px;
-    background-color: #c2996c60;
+    background-color: rgba(255, 255, 255, .2);
 }
 
 .footer-bottom {
@@ -60,7 +60,7 @@
 }
 
 .f-text {
-    color: var(--main-color);
+    color: #aaa;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0;
