@@ -2,7 +2,7 @@
     position: absolute;
     top: 0; left: 0;
     width: 100%;
-    height: 90px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@
 
 .gnb {
     width: 100%;
-    padding: 0 50px;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,7 +64,7 @@
 
 .sub-menu {
     width: 100%;
-    padding: 14px 36px !important;
+    padding: 13px 38px !important;
     text-align: center;
 }
 
@@ -75,7 +75,7 @@
 .Fixed {
     position: fixed;
     top: 0;
-    height: 75px;
+    height: 80px;
     background-color: #1b1b1b;
 }
 
