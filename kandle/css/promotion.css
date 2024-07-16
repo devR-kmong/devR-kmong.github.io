@@ -1,0 +1,212 @@
+.promotion {
+    width: 100%;
+    height: 800px !important;
+    background: url(../images/hero.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    overflow: hidden;
+}
+
+.promotion-wrapper {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    display: flex;
+}
+
+.symbol {
+    position: absolute;
+    top: -170px; left: -100px;
+}
+
+.p-1,
+.p-2,
+.p-3 {
+    position: absolute;
+}
+
+.p-1 {
+    top: 100px; right: -220px;
+    -webkit-animation: upDown 2s ease-in-out infinite;
+    animation: upDown 2s ease-in-out infinite;
+}
+
+.p-2 {
+    top: -170px; right: 50px;
+    -webkit-animation: upDown2 2.5s ease-in-out infinite;
+    animation: upDown2 2.5s ease-in-out infinite;
+}
+
+.p-3 {
+    top: 70px; right: 320px;
+    -webkit-animation: upDown 3s ease-in-out infinite;
+    animation: upDown 3s ease-in-out infinite;
+}
+
+.p-text h5 {
+    width: fit-content;
+    color: #fff;
+    font-size: 60px;
+    font-weight: unset;
+    font-family: 'Cafe24Shiningstar';
+    transform: rotate(-5deg);
+}
+
+.p-text h1 {
+    color: #fff;
+    font-size: 70px;
+    line-height: 1.2;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.p-text h1 span {
+    font-weight: 700;
+}
+
+.pBtn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    z-index: 2;
+}
+
+.pBtn {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 50px;
+    background-color: #fff;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .08);
+}
+
+.pBtn:hover {
+    background-color: #000;
+}
+
+.pBtn:hover i {
+    color: #fff;
+}
+
+.pBtn:hover p {
+    color: #fff;
+}
+
+.pBtn i {
+    color: #222;
+    font-size: 25px;
+}
+
+.pBtn:first-child i {
+    padding-bottom: 2px;
+}
+
+.pBtn p {
+    color: #222;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+}
+
+
+@font-face {
+    font-family: 'Cafe24Shiningstar';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-5px);
+	}
+	50% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform:  translateY(-5px);
+	}
+}
+
+@keyframes upDown2 {
+	0% {
+		transform:  translateY(5px);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
+	100% {
+		transform:  translateY(5px);
+	}
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .p-1,
+    .p-2,
+    .p-3 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .promotion {
+        height: 500px !important;
+    }
+
+    .promotion-wrapper {
+        padding-top: 40px;
+    }
+
+    .symbol {
+        left: 0;
+    }
+    
+    .p-text h5 {
+        font-size: 40px;
+    }
+    
+    .p-text h1 {
+        font-size: 45px;
+    }
+
+    .pBtn-wrapper {
+        margin-top: 1.5rem;
+    }
+
+    .pBtn {
+        width: 160px;
+    }
+
+    .pBtn i {
+        font-size: 20px;
+    }
+
+    .pBtn p {
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .pBtn-wrapper {
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
