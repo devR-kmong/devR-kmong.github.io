@@ -1,0 +1,111 @@
+.article2 {
+    background-color: #fff;
+}
+
+.a2-wrapper {
+    color: #222;
+    width: 100%;
+}
+
+.a2-title {
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.a2-title span {
+    font-weight: 700;
+    background: linear-gradient(to top, var(--main-color) 15%, transparent 15%);
+}
+
+.a2-contents {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a2-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.a2-box {
+    width: fit-content;
+    padding: 20px 60px;
+    background-color: #fff;
+    box-shadow: 0 12px 12px 3px rgba(0, 0, 0, .07);
+}
+
+.a2-box:nth-child(1) {
+    border-radius: 40px 40px 40px 0;
+}
+
+.a2-box:nth-child(2) {
+    margin-left: 30px;
+    border-radius: 40px 40px 0 40px;
+}
+
+.a2-box:nth-child(3) {
+    border-radius: 40px 40px 40px 0;
+}
+
+.a2-box:nth-child(4) {
+    margin-left: 30px;
+    border-radius: 40px 40px 0 40px;
+}
+
+.a2-box p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
+.a2-box p span {
+    color: var(--main-color);
+    font-weight: 700;
+    background-color: #fff6a7;
+}
+
+.a2-image {
+    width: 500px;
+    padding-top: 20rem;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 950px) {
+    .a2-contents {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .a2-image {
+        width: 100%;
+        padding-top: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a2-box {
+        padding: 15px 30px;
+    }
+    
+    .a2-box p {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a2-title {
+        font-size: 24px;
+    }
+
+    .a2-box p {
+        font-size: 16px;
+    }
+}
