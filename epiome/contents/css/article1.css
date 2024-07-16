@@ -1,0 +1,74 @@
+.article1 .article-wrapper {
+    width: 75%;
+}
+
+.a1-title {
+    width: 80%;
+    margin-bottom: 5rem;
+}
+
+.a1-title h4 {
+    color: var(--main-color);
+    font-size: 16px;
+    font-family: 'Montserrat';
+    margin-bottom: 2rem;
+}
+
+.a1-title h5 {
+    color: #222;
+    font-size: 48px;
+    line-height: 1.3;
+}
+
+.a1-title p {
+    color: #aaa;
+    font-size: 21px;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.a1-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.a1-box {
+    width: 100%;
+}
+
+.a1-box-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.a1-box-image img {
+    width: 100%;
+    object-fit: cover;
+    transition: all .3s;
+    margin-bottom: -5px;
+}
+
+.a1-box:hover img {
+    transform: scale(1.05);
+}
+
+.a1-box-text {
+    padding: 40px 30px;
+}
+
+.a1-box-text h5 {
+    color: #222;
+    font-size: 24px;
+}
+
+.a1-box-text p {
+    color: #888;
+    font-size: 16px;
+    line-height: 1.65;
+    margin-top: 1.3rem;
+}
+
+
+/*==================================================*/
