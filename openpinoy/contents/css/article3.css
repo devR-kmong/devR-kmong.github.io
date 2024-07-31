@@ -15,7 +15,7 @@
     overflow: hidden;
 }
 
-.a3-box::after {
+.a3-box::before {
     content: '';
     position: absolute;
     bottom: 0; left: 0;
@@ -23,6 +23,21 @@
     height: 160px;
     background: linear-gradient(to top, rgba(0, 0, 0, .7) 0%, transparent 100%);
     z-index: 1;
+}
+
+.a3-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, var(--main-color) 0%, transparent 100%);
+    transition: all .7s;
+    z-index: 2;
+}
+
+.a3-box:hover::after {
+    height: 100%;
 }
 
 .a3-box-image {
@@ -34,13 +49,13 @@
     object-fit: cover;
     object-position: center;
     background-color: #000;
-    transition: all .3s;
+    transition: all .7s;
 }
 
 .a3-box-text {
     position: absolute;
     bottom: 50px; left: 50px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .a3-box-text h5 {
@@ -50,14 +65,14 @@
 }
 
 .a3-moreBtn {
-    color: rgba(255, 255, 255, .7);
+    color: #fff;
     font-size: 15px;
     font-family: 'Montserrat';
     display: flex;
     align-items: center;
     gap: 1rem;
     letter-spacing: 0;
-    transition: all .3s;
+    transition: all .7s;
     margin-top: 1.5rem;
 }
 
@@ -65,15 +80,15 @@
     width: 30px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
     user-select: none;
-    opacity: .7;
 }
 
 .a3-box:hover .a3-box-image {
+    filter: grayscale(1);
     transform: translate(-50%, -50%) scale(1.1);
 }
 
 .a3-box:hover .a3-moreBtn {
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 
