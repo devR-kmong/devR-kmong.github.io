@@ -1,0 +1,95 @@
+.floating {
+    position: relative;
+    position: fixed;
+    bottom: 50px; right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    z-index: 98;
+}
+
+.topBtn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 6px 6px 18px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    background-color: #ff4a0b;
+}
+
+.topBtn i {
+    color: #fff;
+    font-size: 22px;
+}
+
+.f-telBtn {
+    position: relative;
+    position: absolute;
+    bottom: 70px; right: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #ff4a0b;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .2);
+}
+
+.f-telBtn::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 95%;
+    height: 91%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    z-index: 2;
+}
+
+.f-telBtn p {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.f-telBtn p img {
+    width: 40px;
+    animation: updown 1s infinite ease-in-out;
+}
+
+@keyframes updown {
+    0% {transform:translateY(0);}
+    10% {transform:translateY(-3px);}
+    20% {transform:translateY(0);}
+    30% {transform:translateY(-3px);}
+    40% {transform:translateY(0);}
+    100% {transform:translateY(0);}
+}
+
+.f-telBtn h5 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .floating {
+        bottom: 35px; right: 35px;
+    }
+    
+    .floating a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 16px;
+        cursor: unset;
+    }
+}

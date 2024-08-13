@@ -1,0 +1,43 @@
+.article3 {
+    position: relative;
+    background: url(../images/a3-bg.jpg);
+}
+
+.a3-truck {
+    position: absolute;
+    top: 50%; right: 8%;
+}
+
+.a3-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.a3-title h5 {
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 110px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    white-space: nowrap;
+    background-color: var(--main-color);
+}
+
+.a3-title p {
+    color: #222;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.a3-map {
+    width: 50%;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .a3-truck {
+        right: 18%;
+    }
+}
