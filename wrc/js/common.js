@@ -77,3 +77,33 @@ $(function () {
         }
     );
 })
+
+
+
+$(function () {
+    // 타이머 변수 초기화
+    let inactivityTimer;
+
+    // 사용자가 상호작용(스크롤, 클릭)할 때마다 타이머를 재설정하는 함수
+    function resetInactivityTimer() {
+        // 기존 타이머가 있으면 제거
+        clearTimeout(inactivityTimer);
+
+        // 새로운 타이머 설정 (예: 5초)
+        inactivityTimer = setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            $('body').css('overflow', 'unset');
+            $('.hs-popup').scrollTop(0)
+            $('.hs-popup-wrapper').hide();
+            
+        }, 10000); // 5000ms = 5초
+    }
+
+    // 상호작용 이벤트 리스너 등록
+    window.addEventListener('scroll', resetInactivityTimer);
+    window.addEventListener('click', resetInactivityTimer);
+
+    // 초기 타이머 설정 (페이지 로드 후 최초로 실행)
+    resetInactivityTimer();
+})
