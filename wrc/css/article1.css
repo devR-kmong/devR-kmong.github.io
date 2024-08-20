@@ -1,0 +1,157 @@
+.hs-text {
+    text-align: center;
+}
+
+.hs-text h5 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.hs-text p {
+    color: rgba(255, 255, 255, .5);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.hs-year-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin: 10rem 0;
+}
+
+.hs-year {
+    width: 100%;
+    font-size: 200px;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: -0.04em;
+    transition: all .3s;
+    opacity: .3;
+}
+
+.hs-year:hover {
+    opacity: 1;
+}
+
+.hs-popup-wrapper {
+    position: relative;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    z-index: 99;
+}
+
+.hs-closeBtn {
+    position: absolute;
+    top: 45px; right: 40px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.hs-closeBtn img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(104%) contrast(101%);
+    user-select: none;
+}
+
+.hs-popup {
+    color: #000;
+    width: 1000px;
+    height: 80vh;
+    padding: 80px;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+.hs-p-title {
+    font-size: 130px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -0.06em;
+}
+
+.hs-p-prize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.prize {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #111;
+}
+
+.prize span {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.hSwiper {
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.hSwiper .swiper-wrapper {
+    padding-bottom: 3rem;
+}
+
+.hSwiper .swiper-slide img {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hs-p-text h5 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hs-p-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.hs-p-box h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.hs-p-text p,
+.hs-p-box p,
+.hs-p-box ul li {
+    color: #888;
+    font-size: 16px;
+    line-height: 1.6;
+    list-style: circle;
+    list-style-position: inside;
+}
+
+
+/*==================================================*/
