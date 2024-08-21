@@ -11,7 +11,7 @@ header {
 }
 
 nav {
-    width: 1200px;
+    width: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,8 +23,9 @@ nav {
 
 
 /*==================================================*/
-@media (min-width: 2250px) {
+@media (min-width: 1450px) {
     nav {
-        width: 1400px;
+        width: 100%;
+        padding: 0 20px;
     }
 }
