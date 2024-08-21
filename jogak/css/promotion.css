@@ -1,0 +1,115 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.promotion::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 50%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .9) 0%, transparent 100%);
+    z-index: 3;
+}
+
+.promotion::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2;
+}
+
+.promotion-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    z-index: 1;
+}
+
+.slide-bg {
+    width: 100%;
+    height: 31%;
+    display: flex;
+    gap: 3rem;
+    animation: flow 200s linear infinite;
+}
+.slide-bg:nth-child(2) {
+    flex-direction: row-reverse;
+    animation: flow2 200s linear infinite;
+}
+
+.slide-bg img {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.promotion-wrapper {
+    width: 1400px;
+    z-index: 4;
+}
+
+.p-text {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.pBtn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.pBtn {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    width: 210px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .15);
+    transition: all .3s;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.pBtn:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.typed-cursor {
+    font-weight: 200 !important;
+}
+
+
+/*==================================================*/
+@media (max-width: 1450px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
