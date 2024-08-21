@@ -43,6 +43,10 @@
     opacity: 1;
 }
 
+.hs-year:nth-child(2n) {
+    margin-left: -3rem;
+}
+
 .hs-popup-wrapper {
     position: relative;
     position: fixed;
@@ -73,7 +77,8 @@
     position: relative;
     color: #000;
     width: 850px;
-    height: 80vh;
+    height: auto;
+    max-height: 80vh;
     background-color: #fff;
     overflow-y: scroll;
 }
