@@ -1,3 +1,8 @@
+.article1 {
+    background: url(../images/a1-bg.jpg);
+    background-attachment: fixed;
+}
+
 .at-title {
     width: 100%;
 }
