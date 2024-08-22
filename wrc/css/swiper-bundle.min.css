@@ -18,12 +18,8 @@
 }
 
 .swiper {
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
     overflow: hidden;
-    list-style: none;
-    padding: 0;
     z-index: 1;
     display: block
 }
@@ -374,7 +370,7 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: var(--swiper-pagination-bottom, 8px);
+    bottom: var(--swiper-pagination-bottom, 20px);
     top: var(--swiper-pagination-top, auto);
     left: 0;
     width: 100%

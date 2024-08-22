@@ -1,22 +1,39 @@
-.article1 {
-    background: url(../images/a1-bg.jpg);
-    background-attachment: fixed;
+.at-title img {
+    margin-top: 3rem;
 }
 
-.at-title {
-    width: 100%;
+.a1-image {
+    position: relative;
 }
 
-.hs-text h5 {
-    font-size: 36px;
+.a1-1 {
+    z-index: 1;
+}
+
+.a1-text {
+    position: absolute;
+    top: 50px; left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.a1-text h5 {
+    font-size: 32px;
     line-height: 1.4;
     font-weight: 600;
     margin-bottom: 2rem;
 }
 
-.hs-text p {
-    color: rgba(255, 255, 255, .6);
-    font-size: 19px;
+.a1-text p {
+    font-size: 17px;
+    font-weight: 500;
     line-height: 1.7;
 }
 
@@ -36,15 +53,11 @@
     cursor: pointer;
     letter-spacing: -0.04em;
     transition: all .3s;
-    opacity: .3;
+    opacity: .2;
 }
 
 .hs-year:hover {
     opacity: 1;
-}
-
-.hs-year:nth-child(2n) {
-    margin-left: -3rem;
 }
 
 .hs-popup-wrapper {
@@ -81,6 +94,20 @@
     max-height: 80vh;
     background-color: #fff;
     overflow-y: scroll;
+}
+
+.hs-popup::-webkit-scrollbar {
+    width: .5em;
+}
+
+.hs-popup::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .0);
+}
+
+.hs-popup::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    outline: none;
 }
 
 .hs-p-title {
@@ -137,7 +164,7 @@
 
 .hSwiper .swiper-slide img {
     width: 100% !important;
-    height: 500px;
+    height: 600px;
     object-fit: cover !important;
     object-position: center !important;
 }

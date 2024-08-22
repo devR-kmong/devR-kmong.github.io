@@ -4,12 +4,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: #fff;
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: cover !important;
-    padding: 200px 0;
-    color: #fff;
+    padding: 120px 0;
 }
 
 .article-wrapper {
@@ -20,9 +19,12 @@
 }
 
 .at-title {
-    font-size: 75px;
-    font-weight: 600;
     margin-bottom: 3rem;
+}
+
+.at-title h5 {
+    font-size: 75px;
+    text-align: center;
 }
 
 
