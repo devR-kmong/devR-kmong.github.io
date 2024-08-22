@@ -73,9 +73,9 @@ nav ul li a {
 }
 
 
-@media (max-width: 850px) {
+@media (max-width: 1050px) {
     header {
-        height: 75px;
+        height: 80px;
     }
 
     nav label {
@@ -83,6 +83,14 @@ nav ul li a {
         z-index: 8;
     }
 
+    .logo {
+        font-size: 26px;
+    }
+    
+    .telBtn {
+        display: none;
+    }
+    
     .menuBtns {
         display: inline-block;
     }
@@ -125,14 +133,14 @@ nav ul li a {
     .bar3 {
         width: 24px;
         height: 2px;
-        background-color: #fff;
+        background-color: #222;
         margin: 6px 0;
         transition: .3s ease;
     }
 
     .change .bar1 {
         transform: rotate(-45deg) translate(-5px, 2px);
-        background-color: #fff;
+        background-color: #222;
     }
 
     .change .bar2 {
@@ -141,10 +149,6 @@ nav ul li a {
 
     .change .bar3 {
         transform: rotate(45deg) translate(-9px, -6px);
-        background-color: #fff;
-    }
-
-    .bar-color {
         background-color: #222;
     }
     

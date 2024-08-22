@@ -81,7 +81,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
     display: none;
     z-index: 99;
 }
@@ -166,3 +166,119 @@
 
 
 /*==================================================*/
+@media (max-width: 1350px) {
+    .a1-popup {
+        width: 90%;
+        height: 80vh;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .a1-box-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .a1-box {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a1-popup {
+        padding: 30px;
+        gap: 3rem;
+    }
+
+    .a1-p-box h5 {
+        font-size: 32px;
+    }
+    
+    .a1-p-b-image.grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a1-title {
+        margin-bottom: 3rem;
+    }
+
+    .a1-title h5 {
+        font-size: 40px;
+    }
+
+    .a1-title p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+    .a1-box {
+        padding: 25px;
+    }
+
+    .a1Btn {
+        margin-top: 1rem;
+    }
+
+    .a1-table thead,
+    .a1-table .data-head {
+        height: 30px;
+        font-size: 13px;
+    }
+
+    table td,
+    table th {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a1-box-wrapper {
+        gap: 1rem;
+    }
+
+    .a1-box {
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+    
+    .a1-box-text h5 {
+        font-size: 18px;
+    }
+    
+    .a1-box-text p {
+        font-size: 14px;
+    }
+
+    .a1Btn {
+        color: #fff;
+        width: 100%;
+        border-radius: 5px;
+        background-color: var(--main-color);
+    }
+
+    .a1-p-title h5,
+    .a1-p-box h5 {
+        font-size: 28px;
+    }
+
+    .a1-table thead,
+    .a1-table .data-head {
+        font-size: 12px;
+    }
+
+    table td,
+    table th {
+        padding: 6px;
+        font-size: 10px;
+    }
+}

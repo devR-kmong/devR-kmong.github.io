@@ -1,6 +1,7 @@
 .article3 {
     position: relative;
     background: url(../images/a3-bg.jpg);
+    overflow: hidden;
 }
 
 .a3-truck {
@@ -39,5 +40,68 @@
 @media (min-width: 2250px) {
     .a3-truck {
         right: 18%;
+    }
+}
+
+
+@media (max-width: 1650px) {
+    .a3-truck {
+        top: unset;
+        bottom: 10%;
+        right: -100px;
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .a3-title h5 {
+        font-size: 70px;
+    }
+
+    .a3-title p {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a3-truck {
+        bottom: 2%;
+        width: 100%;
+    }
+    
+    .a3-title {
+        width: 100%;
+    }
+
+    .a3-title p {
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+    .a3-map {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a3-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .a3-title h5 {
+        width: fit-content;
+        padding: 10px 20px;
+        font-size: 45px;
+        border-radius: 6px;
+    }
+
+    .a3-title p {
+        font-size: 18px;
     }
 }

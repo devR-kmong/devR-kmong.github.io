@@ -71,7 +71,7 @@ footer {
         display: none;
     }
     
-    .f-info br {
+    .f-info p br {
         display: block;
     }
 
@@ -81,12 +81,7 @@ footer {
 }
 
 
-@media (max-width: 450px) {
-    .logo-f {
-        width: 70px;
-        margin-bottom: 1rem;
-    }
-    
+@media (max-width: 550px) {
     .f-info p {
         font-size: 12px;
     }
