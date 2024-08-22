@@ -220,11 +220,6 @@
     transition: all .2s;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    transform: scale(1.5);
-}
-
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
     opacity: .35;
