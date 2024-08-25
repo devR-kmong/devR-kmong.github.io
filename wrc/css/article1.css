@@ -167,6 +167,7 @@
     height: 600px;
     object-fit: cover !important;
     object-position: center !important;
+    margin-bottom: -8px;
 }
 
 .hs-p-text {
