@@ -81,50 +81,54 @@
 
 /*==================================================*/
 @media (max-width: 1050px) {
-    .floating a {
+    .topBtn {
         width: 60px;
         height: 60px;
         line-height: 60px;
         border-radius: 20px;
         box-shadow: none;
+        margin-bottom: 5rem;
     }
     
     .f-telBtn {
-        padding: 0;
-        background-color: #46c25c;
+        position: fixed;
+        bottom: 0; left: 0;
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
     }
     
     .f-telBtn::after {
         display: none;
     }
-    
-    .f-telBtn h5,
-    .f-telBtn p span {
-        display: none;
-    }
-
-    .f-telBtn p img {
-        width: 55%;
-        margin: 0 auto;
-        animation: none;
-    }
 }
 
 
-@media (max-width: 768px) {
-    .floating {
-        bottom: 35px; right: 35px;
-    }
-    
-    .floating a {
+@media (max-width: 650px) {
+    .topBtn {
         width: 40px;
         height: 40px;
         line-height: 40px;
-        border-radius: 16px;
-        cursor: unset;
+        border-radius: 0;
+        margin-bottom: 3rem;
+        margin-right: -20px;
+    }
+    
+    .f-telBtn p {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .f-telBtn p img {
+        width: 24px;
     }
 
-    .f-telBtn {
-        bottom: 50px;
+    .f-telBtn h5 {
+        font-size: 24px;
+        font-weight: 700;
     }
 }

@@ -47,9 +47,10 @@ footer {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
     footer {
         padding: 40px 20px;
+        margin-bottom: 85px;
     }
     
     .footer-right {
@@ -77,6 +78,13 @@ footer {
 
     .f-info span {
         display: none;
+    }
+}
+
+
+@media (max-width: 650px) {
+    footer {
+        margin-bottom: 66px;
     }
 }
 
