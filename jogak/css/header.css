@@ -18,12 +18,12 @@ nav {
 }
 
 .logo {
-    width: 160px;
+    width: 140px;
 }
 
 
 /*==================================================*/
-@media (min-width: 1450px) {
+@media (max-width: 1450px) {
     nav {
         width: 100%;
         padding: 0 20px;

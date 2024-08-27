@@ -6,11 +6,9 @@ $(document).on("keyup", ".phoneNumber", function () {
 
 $('.f-personal-text').click(function () {
     if ($('#cb').is(':checked')) {
-        $('.f-personal').removeClass('f-personal-no');
-        $('.f-personal-text label p').html('개인정보수집 및 이용에 동의합니다.');
+        $('.f-personal-text label p').html('개인정보 수집 및 이용 동의');
         $('.gform .f-submit').attr('disabled', false);
     } else {
-        $('.f-personal').addClass('f-personal-no');
         $('.f-personal-text label p').html('개인정보처리방침에 동의해주세요.');
         $('.gform .f-submit').attr('disabled', true);
     }
