@@ -94,8 +94,6 @@
 
 .a6-contact li img {
     height: 32px;
-    filter: invert(15%) sepia(68%) saturate(4727%) hue-rotate(351deg) brightness(92%) contrast(89%);
-    user-select: none;
 }
 
 .a6-contact li:nth-child(2) img {
