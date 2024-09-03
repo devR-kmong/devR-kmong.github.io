@@ -1,6 +1,8 @@
 .article3 {
     position: relative;
-    height: 850px;
+    height: 100vh;
+    background: url(../images/a3-bg.jpg);
+    background-attachment: fixed;
     overflow: hidden;
     animation: glow 1s infinite;
 }
