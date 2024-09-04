@@ -165,6 +165,10 @@
     border-bottom: 3px solid #222;
 }
 
+.gform .input-group:first-child .input-wrapper:nth-child(2) .inputbox {
+    padding-left: 85px;
+}
+
 .gform textarea {
     color: #222;
     width: 100%;
