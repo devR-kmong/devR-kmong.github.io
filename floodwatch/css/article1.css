@@ -1,0 +1,114 @@
+.article1 {
+    position: relative;
+    padding-bottom: 0;
+    background-color: transparent;
+    overflow: hidden;
+}
+.article1::after {
+    content: '';
+    position: absolute;
+    top: 400px; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.a1-city {
+    position: absolute;
+    bottom: 250px;
+    filter: grayscale(1);
+    transform: scale(2);
+    user-select: none;
+    opacity: .5;
+    z-index: 2;
+}
+
+.a1-flood {
+    position: absolute;
+    bottom: 0;
+    user-select: none;
+    z-index: 5;
+    transition: all .3s;
+    opacity: 0;
+}
+
+.a1-flood-text {
+    position: absolute;
+    bottom: 10px; left: 50%;
+    transform: translate(-50%, 0);
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 6;
+    transition: all .3s;
+    opacity: 0;
+}
+
+.a1-cloud {
+    position: relative;
+    width: 60%;
+    z-index: 2;
+}
+
+.a1-cloud img {
+    width: 100%;
+}
+
+.a1-cloud-text {
+    position: absolute;
+    top: 40%; left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.a1-cloud-text h5 {
+    color: var(--sub-color);
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.a1-cloud-text p {
+    color: var(--main-color);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+.a1-rain {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    z-index: 3;
+}
+
+.a1-rain img {
+    width: 150px
+}
+
+.a1-rain p {
+    position: absolute;
+    top: 30%; right: 0;
+    width: 300px;
+    color: #888;
+    font-size: 25px;
+    line-height: 1.8;
+}
+
+.a1-house {
+    width: 100%;
+    z-index: 4;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .a1-city {
+        transform: scale(1.5);
+    }
+}
