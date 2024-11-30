@@ -18,6 +18,13 @@
     align-items: center;
 }
 
+.ar-title {
+    color: #222;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    z-index: 10;
+}
 
 
 /*==================================================*/
@@ -29,8 +36,8 @@
 }
 
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
     .article {
-        padding: 40px 0;
+        padding: 60px 0;
     }
 }

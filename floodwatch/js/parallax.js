@@ -11,7 +11,7 @@ window.addEventListener('scroll', function () {
         city.style.bottom = 300 + 'px';
     }
     
-    if (value >= 1900) {
+    if (value >= 2100) {
         flood.style.opacity = 1;
         floodText.style.opacity = 1;
     } else {

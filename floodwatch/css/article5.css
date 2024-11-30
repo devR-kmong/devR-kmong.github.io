@@ -1,3 +1,75 @@
+.article5 {
+    position: relative;
+}
+
+.article5 .article-wrapper {
+    width: 100%;
+}
+
+.a5Swiper {
+    width: 100%;
+}
+
+.a5Swiper .swiper-wrapper {
+    padding: 30px;
+}
+
+.a5Swiper .swiper-slide {
+    height: 300px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 6px 22px rgba(45,52,61,.12);
+    border-radius: 10px;
+}
+
+.a5Swiper .swiper-slide span {
+    color: var(--sub-color);
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.a5Swiper .swiper-slide h5 {
+    color: #222;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.a5Swiper .swiper-slide ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.a5Swiper .swiper-slide ul li {
+    color: #888;
+    font-size: 15px;
+    line-height: 1.5;
+    list-style-type: '- ';
+    list-style-position: inside;
+}
+
+.a5Swiper .swiper-button-wrapper {
+    position: absolute;
+    top: 50%; left: 35%;
+}
+
+.a5Swiper .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 18px;
+    background-color: #fff;
+    box-shadow: 0 6px 22px rgba(45,52,61,.12);
+}
+
+.a5Swiper .swiper-button-next i {
+    color: rgba(0, 0, 0, .4);
+    font-size: 28px;
+}
 
 
 

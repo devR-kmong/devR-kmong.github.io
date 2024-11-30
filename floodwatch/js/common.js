@@ -46,3 +46,31 @@ if (navigator.userAgent.indexOf("Trident") > 0) {
         "확인 버튼을 누르면 Edge 브라우저로 이동합니다.")
     window.location = 'microsoft-edge:' + window.location.href;
 };
+
+
+
+var swiper = new Swiper(".a5Swiper", {
+    initialSlide: 0,
+    centeredSlides: true,
+    grabCursor: true,
+    slidesPerView: 2.5,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        769: {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+        },
+        1919: {
+            slidesPerView: 4.5,
+            spaceBetween: 40,
+        },
+        2250: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+        },
+    },
+});

@@ -1,22 +1,31 @@
 .article2 {
     position: relative;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    padding-bottom: 300px;
 }
 .article2::after {
     content: '';
     position: absolute;
     top: 0; left: 0;
     width: 100%;
-    height: 500px;
-    background-color: var(--rain-color);
+    height: 600px;
+    background: linear-gradient(to bottom, var(--rain-color) 0%, #1997d2 50%, var(--main-color) 100%);
+}
+
+.article2 .article-wrapper {
+    width: 1000px;
 }
 
 .a2-box {
-    padding: 120px;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    border-radius: 20px;
     background-color: #fff;
     box-shadow: 0 8px 30px rgba(45,52,61,.12);
     z-index: 2;
@@ -24,8 +33,8 @@
 
 .a2-box-text {
     color: var(--main-color);
-    width: 70%;
-    font-size: 32px;
+    width: 75%;
+    font-size: 30px;
     font-weight: 500;
     line-height: 1.7;
     text-align: center;
