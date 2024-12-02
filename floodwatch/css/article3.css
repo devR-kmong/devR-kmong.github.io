@@ -1,8 +1,6 @@
 .article3 {
     position: relative;
-    background-color: #f1f1f1;
-    background: linear-gradient(to bottom, #e8e8e8 0%, #fff 100%);
-    margin-bottom: -1px;
+    background-color: #e8e8e8;
 }
 
 .a3-people {
@@ -38,7 +36,7 @@
 }
 
 .a3-box-text h5 {
-    color: #222;
+    color: var(--main-color);
     font-size: 24px;
     margin-bottom: 1rem;
 }
@@ -59,7 +57,7 @@
 }
 
 .a3-box-text ul p {
-    color: #444;
+    color: var(--sub-color);
     font-size: 18px;
     font-weight: 700;
     margin-top: 1rem;
