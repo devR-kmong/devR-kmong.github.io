@@ -1,0 +1,33 @@
+.article4 {
+    position: relative;
+}
+.article4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: var(--main-color);
+    z-index: 1;
+}
+
+.a4-mockup {
+    position: absolute;
+    bottom: 0; right: 0;
+    height: 80%;
+    z-index: 2;
+}
+
+.a4-coin {
+    position: absolute;
+    bottom: 4%; left: 40%;
+    width: 30%;
+    z-index: 2;
+}
+
+.article4 .p-text {
+    margin-bottom: 5rem;
+}
+
+
+/*=========================================================*/
