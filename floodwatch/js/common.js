@@ -1,9 +1,18 @@
-AOS.init({
-    once: true,
-    delay: 100,
-    offset: 200,
-    duration: 1200,
-});
+if (window.innerWidth > 768) {
+    AOS.init({
+        once: true,
+        delay: 100,
+        offset: 200,
+        duration: 1200,
+    })
+} else {
+    AOS.init({
+        once: true,
+        delay: 50,
+        offset: 100,
+        duration: 1200,
+    })
+}
 
 
 
@@ -53,18 +62,22 @@ var swiper = new Swiper(".a5Swiper", {
     initialSlide: 0,
     centeredSlides: true,
     grabCursor: true,
-    slidesPerView: 2.5,
+    slidesPerView: 1.5,
     spaceBetween: 20,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        769: {
-            slidesPerView: 3.5,
+        1050: {
+            slidesPerView: 2.5,
             spaceBetween: 30,
         },
-        1919: {
+        1050: {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+        },
+        1650: {
             slidesPerView: 4.5,
             spaceBetween: 40,
         },

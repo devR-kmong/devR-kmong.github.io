@@ -64,6 +64,10 @@
     text-align: center;
 }
 
+.a4-box-title span {
+    display: none;
+}
+
 .a4-box:nth-child(3) .a4-box-title {
     background-color: #1997d2;
 }
@@ -99,3 +103,50 @@
 
 
 /*==================================================*/
+@media (max-width: 1050px) {
+    .a4-arrow {
+        display: none;
+    }
+    
+    .a4-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .a4-box-title span {
+        display: flex;
+        margin-right: 10px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a4-box-wrapper {
+        gap: 3rem;
+    }
+    
+    .a4-box-title {
+        font-size: 22px;
+        height: 55px;
+    }
+
+    .a4-box ul {
+        gap: 10px;
+    }
+    
+    .a4-box ul li {
+        height: 55px;
+        padding: 0 15px;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-box-wrapper {
+        gap: 1rem;
+    }
+    
+    .a4-check i {
+        font-size: 22px;
+    }
+}

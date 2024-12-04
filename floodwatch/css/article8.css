@@ -15,7 +15,6 @@
     flex-direction: column;
     gap: 2rem;
 }
-
 .a8-box-group.first {
     position: sticky;
     top: 30px;
@@ -57,3 +56,36 @@
 
 
 /*==================================================*/
+@media (max-width: 950px) {
+    .a8-box-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .a8-box-group {
+        width: 100%;
+    }
+    .a8-box-group.first {
+        position: static;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a8-box-wrapper,
+    .a8-box-group {
+        gap: 1rem;
+    }
+
+    .a8-box-text {
+        padding: 25px;
+    }
+
+    .a8-box-text h5 {
+        font-size: 19px;
+    }
+
+    .a8-box-text ul li {
+        font-size: 14px;
+    }
+}
