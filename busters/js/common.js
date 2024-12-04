@@ -68,19 +68,10 @@ if (window.innerWidth > 1600) {
     document.write(
         '<script src="js/box_scroll.js"><\/script>'
     )
-    document.write(
-        '<script src="js/header.fixed.js"><\/script>'
-    )
 }
 else {
     document.clear(
         '<script src="js/box_scroll.js"><\/script>'
-    )
-    document.clear(
-        '<script src="js/header.fixed.js"><\/script>'
-    )
-    document.write(
-        '<script src="js/header.fixed.m.js"><\/script>'
     )
 }
 
@@ -91,23 +82,9 @@ $(window).resize(function () {
 
     if (width_size == 1920) {
         document.location.reload();
+    } else if (width_size == 2560) {
+        document.location.reload();
     }
-})
-
-
-
-$('.menuBtns').click(function () {
-    $(this).toggleClass('change');
-})
-
-$('nav ul li a').click(function () {
-    $('#check').prop('checked', false);
-    $('.menuBtns').removeClass('change');
-})
-
-$('.overlay').click(function () {
-    $('#check').prop('checked', false);
-    $('.menuBtns').removeClass('change');
 })
 
 
