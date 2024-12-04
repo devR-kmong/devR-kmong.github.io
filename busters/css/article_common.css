@@ -24,6 +24,7 @@
 
 .ar-text {
     width: 100%;
+    min-width: 50%;
 }
 
 .ar-text h5 {

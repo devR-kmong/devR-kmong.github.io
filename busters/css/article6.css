@@ -1,5 +1,11 @@
-.article6 {
-    background-color: #eee;
+.a6-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.a6-mockup {
+    height: 65%;
 }
 
 
