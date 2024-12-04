@@ -20,8 +20,8 @@
 
 .a4-coin {
     position: absolute;
-    bottom: 4%; left: 40%;
-    width: 30%;
+    bottom: -1%; left: 30%;
+    width: 800px;
     z-index: 2;
 }
 
@@ -31,3 +31,8 @@
 
 
 /*=========================================================*/
+@media (min-width: 2250px) {
+    .a4-coin {
+        left: 40%;
+    }
+}
