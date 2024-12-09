@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1027.56423" height="1033.44833" viewBox="0 0 1027.56423 1033.44833">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #474747;
+      }
+
+      .cls-2 {
+        fill: #2e2e2e;
+      }
+
+      .cls-3 {
+        fill: #828282;
+      }
+
+      .cls-4 {
+        fill: #545454;
+      }
+
+      .cls-5 {
+        fill: #282828;
+      }
+
+      .cls-6 {
+        fill: #030303;
+      }
+
+      .cls-7 {
+        fill: #383838;
+      }
+
+      .cls-8 {
+        fill: #171717;
+      }
+
+      .cls-9 {
+        fill: #1c1c1c;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Ñëîé_1" data-name="Ñëîé 1">
+      <g>
+        <polygon id="path4666" class="cls-1" points="209.451 283.02 768.241 158.705 598.223 667.743 209.451 283.02"/>
+        <polygon id="path4668" class="cls-2" points="209.451 283.02 398.519 0 768.241 158.705 209.451 283.02"/>
+        <polygon id="path4670" class="cls-3" points="768.241 158.705 1027.564 622.495 598.223 667.743 768.241 158.705"/>
+        <polygon id="path4672" class="cls-4" points="768.241 158.705 904.14 209.807 1027.564 622.495 768.241 158.705"/>
+        <polygon id="path4674" class="cls-5" points="123.424 823.641 209.451 283.02 598.223 667.743 123.424 823.641"/>
+        <polygon id="path4676" class="cls-6" points="123.424 823.641 0 410.953 209.451 283.02 123.424 823.641"/>
+        <polygon id="path4678" class="cls-7" points="1027.564 622.495 629.045 1033.448 598.223 667.743 1027.564 622.495"/>
+        <polygon id="path4680" class="cls-8" points="629.045 1033.448 123.424 823.641 598.223 667.743 629.045 1033.448"/>
+        <polygon id="path4682" class="cls-9" points="398.519 0 209.451 283.02 0 410.953 398.519 0"/>
+        <polygon id="path4684" class="cls-9" points="904.14 209.807 768.241 158.705 398.519 0 904.14 209.807"/>
+      </g>
+    </g>
+  </g>
+</svg>
