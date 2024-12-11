@@ -1,0 +1,90 @@
+.article2 {
+    padding-bottom: 250px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.article2 .ar-title {
+    width: 100%;
+    margin-bottom: 6rem;
+    z-index: 2;
+}
+
+.a2-title p {
+    font-size: 26px;
+    margin-bottom: 1.5rem;
+}
+
+.a2-title h5 {
+    font-size: 55px;
+    line-height: 1.35;
+}
+
+.a2-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15rem;
+}
+
+.a2-box {
+    position: relative;
+}
+.a2-box:nth-child(2) {
+    margin-right: 40rem;
+}
+
+.a2-box-image {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.a2-box-image img {
+    opacity: .6;
+}
+
+.a2-box-text {
+    position: absolute;
+    bottom: -25%; right: 5%;
+    text-align: right;
+}
+
+.a2-box:nth-child(2) .a2-box-text {
+    right: unset;
+    left: 5%;
+    text-align: left;
+}
+.a2-box:nth-child(3) .a2-box-text {
+    bottom: -22%;
+}
+
+.a2-box-text h4 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 2rem;
+}
+
+.a2-box-text h5 {
+    color: #fff;
+    font-size: 100px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.a2-box-text p {
+    color: #aaa;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .a2-3d {
+        top: -7%;
+        width: 1000px;
+    }
+}
