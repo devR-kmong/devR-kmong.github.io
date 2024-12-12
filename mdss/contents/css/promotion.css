@@ -3,12 +3,31 @@
     width: 100%;
     height: 100vh;
     background: url(../images/hero.jpg);
+    background-attachment: fixed !important;
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
+}
+.promotion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, #000000bb 0%, transparent 100%);
+    z-index: 1;
+}
+.promotion::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, #000000bb 0%, transparent 100%);
+    z-index: 1;
 }
 
 .promotion-wrapper {
@@ -35,6 +54,7 @@
 .p-text p {
     font-size: 24px;
     font-weight: 500;
+    line-height: 1.5;
     margin-top: 2rem;
 }
 
