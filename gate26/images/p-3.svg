@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="951.7264" height="930.5978" viewBox="0 0 951.7264 930.5978">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="5367.86752" y1="3418.61377" x2="5873.55588" y2="3418.61377" gradientTransform="translate(6811.28658 1851.15322) rotate(160.51229)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff0301"/>
+      <stop offset="0.40503" stop-color="#d30e0b"/>
+      <stop offset="0.84637" stop-color="#ff0301"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="5713.28915" y1="2265.98741" x2="5887.53766" y2="1264.05774" gradientTransform="translate(6472.66188 2043.35925) rotate(180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.21229" stop-color="#ff9388"/>
+      <stop offset="0.64297" stop-color="#fe694a"/>
+      <stop offset="0.86313" stop-color="#fe572f"/>
+    </linearGradient>
+  </defs>
+  <title>Asset 4</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <polygon class="cls-1" points="462.222 0 498.037 930.598 0 209.645 462.222 0"/>
+        <polygon class="cls-2" points="462.222 0 498.037 930.598 951.726 157.328 462.222 0"/>
+      </g>
+    </g>
+  </g>
+</svg>

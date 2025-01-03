@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="599.27002" height="814.3876" viewBox="0 0 599.27002 814.3876">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="2719.61542" y1="-1734.906" x2="3318.88544" y2="-1734.906" gradientTransform="translate(3318.88544 -1362.2843) rotate(180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.02514" stop-color="#ea4224"/>
+      <stop offset="0.20391" stop-color="#ff9388"/>
+      <stop offset="0.32238" stop-color="#fb8576"/>
+      <stop offset="0.55768" stop-color="#f26049"/>
+      <stop offset="0.72812" stop-color="#ea4224"/>
+      <stop offset="0.80042" stop-color="#e83e22"/>
+      <stop offset="0.87116" stop-color="#e2321c"/>
+      <stop offset="0.94104" stop-color="#d91f12"/>
+      <stop offset="1" stop-color="#ce0806"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="3019.25043" y1="-2038.3804" x2="3019.25043" y2="-2176.6719" gradientTransform="translate(3318.88544 -1362.2843) rotate(180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.0838" stop-color="#ff9388"/>
+      <stop offset="0.88573" stop-color="#ff9388"/>
+      <stop offset="1" stop-color="#ff9388"/>
+    </linearGradient>
+  </defs>
+  <title>Asset 3</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <path class="cls-1" d="M599.27,745.2434V69.1475C599.27,30.9534,465.11662,0,299.635,0,134.1536,0,0,30.9534,0,69.1475V745.2434Z"/>
+        <path class="cls-2" d="M0,745.2434c0-38.1905,134.1536-69.1473,299.635-69.1473,165.4816,0,299.635,30.9568,299.635,69.1473,0,38.1874-134.1534,69.1442-299.635,69.1442C134.1536,814.3876,0,783.4308,0,745.2434Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

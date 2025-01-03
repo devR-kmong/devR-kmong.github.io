@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="907.2012" height="954.3354" viewBox="0 0 907.2012 954.3354">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-7);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-2201.89932" y1="-639.16887" x2="-1945.33792" y2="-639.16887" gradientTransform="translate(-1734.09542 -497.33295) rotate(-169.83967)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f789a2"/>
+      <stop offset="0.43255" stop-color="#f64a56"/>
+      <stop offset="0.81789" stop-color="#f41718"/>
+      <stop offset="1" stop-color="#f40300"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-2349.2409" y1="-356.59804" x2="-1945.33792" y2="-356.59804" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="-2488.41626" y1="-855.91384" x2="-2014.92564" y2="-855.91384" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-2715.11908" y1="-187.36675" x2="-2136.82486" y2="-187.36675" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="-2810.14845" y1="-869.35973" x2="-2326.9022" y2="-869.35973" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="-2810.14845" y1="-483.41667" x2="-2528.1454" y2="-483.41667" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="-2623.17477" y1="-576.96827" x2="-1840.53484" y2="-576.96827" gradientTransform="translate(-1734.09542 -497.33295) rotate(-169.83967)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff6b69"/>
+      <stop offset="0.16902" stop-color="#f75755"/>
+      <stop offset="0.73209" stop-color="#dd1a18"/>
+      <stop offset="1" stop-color="#d30200"/>
+    </linearGradient>
+  </defs>
+  <title>Asset 1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <polygon class="cls-1" points="96.666 314.734 281.995 340.514 291.77 680.44 106.441 654.66 96.666 314.734"/>
+        <polygon class="cls-2" points="351.161 124.382 536.49 150.163 281.995 340.514 96.666 314.734 351.161 124.382"/>
+        <polygon class="cls-3" points="106.441 654.66 291.77 680.44 556.041 830.015 370.712 804.235 106.441 654.66"/>
+        <polygon class="cls-4" points="347.605 0 532.933 25.78 893.87 230.067 708.541 204.287 347.605 0"/>
+        <polygon class="cls-5" points="721.872 668.596 907.201 694.376 559.626 954.335 374.297 928.555 721.872 668.596"/>
+        <polygon class="cls-6" points="708.541 204.287 893.87 230.067 907.201 694.376 721.872 668.596 708.541 204.287"/>
+        <path class="cls-7" d="M374.2968,928.5553,13.3602,724.2681,0,260.0222,347.6045,0,708.5412,204.2871,721.8723,668.596ZM351.1607,124.3824,96.6657,314.7342l9.7757,339.9261L370.7119,804.2352,625.2071,613.8843l-9.7759-339.927L351.1607,124.3824"/>
+      </g>
+    </g>
+  </g>
+</svg>

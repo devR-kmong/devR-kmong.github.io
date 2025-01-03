@@ -1,0 +1,65 @@
+.a6-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.a6-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.a6-title img {
+    height: 40px;
+}
+
+.a6-title p {
+    color: #222;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.a6-title h5 {
+    color: var(--main-color);
+    font-size: 55px;
+}
+
+.a6-image {
+    position: relative;
+    width: 500px;
+    height: 988px;
+    border-radius: 70px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+
+.a6-mockup {
+    position: absolute;
+    top: 0; left: 0;
+    margin-top: -2px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.a6-1 {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    padding-top: 30px;
+    animation: motion 5s linear 0s infinite alternate;
+    z-index: 1;
+}
+
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: -300%;}
+}
+
+
+/*==================================================*/

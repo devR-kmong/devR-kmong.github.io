@@ -1,0 +1,269 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background-color: var(--main-color) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.p-26 {
+    position: absolute;
+    top: 22%; right: -2%;
+    height: 50%;
+    opacity: .08;
+    z-index: 1;
+}
+
+.promotion-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.p-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.p-text h5 {
+    color: #fff;
+    font-size: 65px;
+}
+
+.p-text h5 span {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.p-text P {
+    color: #ffffffbb;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.p-logo {
+    width: 722px;
+    margin: 2rem 0;
+}
+
+.p-store-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.p-storeBtn img {
+    width: 190px;
+    margin-bottom: -4px;
+}
+
+.p-box-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    margin-top: 6rem;
+    animation: slide 50s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-200%, 0, 0);
+    }
+}
+
+.p-box {
+    padding: 45px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+}
+
+.p-box-text {
+    width: 300px;
+    height: 100px;
+}
+
+.p-box-text h5 {
+    color: #333;
+    font-size: 30px;
+    font-family: 'yg-jalnan';
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+}
+
+.p-box-text p {
+    color: #888;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.p-box-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.p-box-image img {
+    height: 60px;
+    opacity: .7;
+    user-select: none;
+}
+
+.p-store-m {
+    display: none;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .promotion {
+        height: 100vh !important;
+    }
+
+    .p-box-wrapper {
+        margin-top: 8rem;
+    }
+}
+
+
+@media (max-width: 1650px) {
+    .promotion {
+        height: auto !important;
+        padding: 180px 0 120px 0 !important;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .promotion {
+        padding: 160px 0 120px 0 !important;
+    }
+    
+    .p-text p {
+        font-size: 36px;
+    }
+
+    .p-text h5 {
+        font-size: 55px;
+    }
+
+    .p-text h5 i {
+        display: block;
+    }
+
+    .p-store-m {
+        padding: 20px;
+        width: 350px;
+        color: #fff;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: calc();
+        border-radius: 12px;
+        background-color: var(--main-color);
+        margin-top: 3rem;
+    }
+
+    .p-box-wrapper {
+        animation: slide 25s linear infinite;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .promotion {
+        padding: 140px 0 80px 0 !important;
+    }
+
+    .p-text p {
+        font-size: 24px;
+    }
+    
+    .p-text h5  {
+        font-size: 38px;
+    }
+
+    .p-store-wrapper {
+        gap: 10px;
+        margin-top: 1.5rem;
+    }
+
+    .p-storeBtn img {
+        width: 140px;
+    }
+
+    .p-store-m {
+        width: 200px;
+        padding: 15px;
+        font-size: 14px;
+        margin-top: 2rem;
+    }
+
+    .p-box-wrapper {
+        gap: 1rem;
+        margin-top: 6rem;
+        animation: slide 20s linear infinite;
+    }
+
+    .p-box {
+        padding: 28px;
+    }
+
+    .p-box-text {
+        width: 180px;
+        height: 80px;
+    }
+
+    .p-box-text h5 {
+        font-size: 22px;
+    }
+
+    .p-box-text p {
+        font-size: 13px;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+    
+        100% {
+            transform: translate3d(-500%, 0, 0);
+        }
+    }
+
+    .p-box-image img {
+        height: 54px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .p-text p {
+        font-size: 20px;
+    }
+    
+    .p-text h5  {
+        font-size: 32px;
+    }
+    
+    .p-storeBtn img {
+        width: 120px;
+    }
+}

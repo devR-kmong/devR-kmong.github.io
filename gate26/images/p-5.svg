@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="844.5506" height="844.55093" viewBox="0 0 844.5506 844.55093">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="3071.43616" y1="208.60134" x2="4042.06278" y2="198.64621" gradientTransform="translate(2845.47086 3028.09427) rotate(-135)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fe572f"/>
+      <stop offset="0.41474" stop-color="#ff9388"/>
+      <stop offset="1" stop-color="#ff0301"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="3660.00366" y1="-17.83038" x2="2071.01674" y2="845.6518" gradientTransform="matrix(0, -0.99999, 0.99999, 0, 319.64623, 4042.31423)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9388"/>
+      <stop offset="1" stop-color="#ff0301"/>
+    </linearGradient>
+  </defs>
+  <title>Asset 5</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <path class="cls-1" d="M699.55524,827.53318l127.9771-127.978c60.0855-60.0855-43.9964-261.5847-232.4743-450.0627C406.58,61.01548,205.08072-43.06732,144.99522,17.01818L17.01733,144.99608Z"/>
+        <ellipse class="cls-2" cx="358.28676" cy="486.26421" rx="153.85789" ry="482.62687" transform="translate(-238.90096 395.77048) rotate(-45)"/>
+      </g>
+    </g>
+  </g>
+</svg>

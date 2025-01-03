@@ -1,0 +1,13 @@
+.article3 .at-img-wrapper {
+    position: relative;
+}
+
+.a3-3 {
+    position: absolute;
+    top: 15%; right: -7%;
+    width: 60%;
+    z-index: 10;
+}
+
+
+/*==================================================*/

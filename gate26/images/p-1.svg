@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="781.2757" height="788.3164" viewBox="0 0 781.2757 788.3164">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="10915.26609" cy="-4441.78479" r="927.20888" gradientTransform="translate(11384.2112 -3911.8927) rotate(180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9388"/>
+      <stop offset="0.08047" stop-color="#ff8177"/>
+      <stop offset="0.24121" stop-color="#ff534c"/>
+      <stop offset="0.46549" stop-color="#ff0a08"/>
+      <stop offset="0.48603" stop-color="#ff0301"/>
+      <stop offset="0.5802" stop-color="#ff1b0e"/>
+      <stop offset="0.77374" stop-color="#fe572f"/>
+    </radialGradient>
+  </defs>
+  <title>Asset 2</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <ellipse class="cls-1" cx="390.63822" cy="394.1591" rx="390.63747" ry="394.1591"/>
+    </g>
+  </g>
+</svg>
