@@ -38,10 +38,6 @@
 .menu:nth-child(3) {
     border-radius: 0 7px 7px 0;
 }
-.menu.on:nth-child(3) {
-    border: 1px solid var(--main-color);
-    background-color: var(--main-color);
-}
 
 .logo {
     width: 100px;

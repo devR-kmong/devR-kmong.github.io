@@ -21,9 +21,14 @@
 
 .f-info {
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 1.8;
+}
+
+.f-info span {
+    font-size: 14px;
+    letter-spacing: -0.043em;
 }
 
 .f-info br {
@@ -36,6 +41,7 @@
 
 .f-copyright {
     color: rgba(255, 255, 255, .5);
+    font-size: 15px;
     margin-top: 3rem;
 }
 

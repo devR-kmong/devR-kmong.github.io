@@ -61,22 +61,6 @@ if (navigator.userAgent.indexOf("Trident") > 0) {
 }
 
 
-$(function () {
-    $(window).scroll(function () {
-
-        var here = $(".article2").offset().top;
-        var height = $(document).scrollTop();
-
-        if (here > height) {
-            $('.menu').removeClass('on');
-        }
-        else {
-            $('.menu').addClass('on');
-        }
-    })
-});
-
-
 $(document).on("keyup", ".phoneNumber", function () {
     $(this).val($(this).val().replace(/[^0-9]/g, "").replace(/(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)?([0-9]{4})$/, "$1-$2-$3").replace("--", "-"));
 });
@@ -113,3 +97,24 @@ $(document).on(
         }
     }
 );
+
+
+
+$(function () {
+    $('.flBtn').bind("mouseover", function () {
+        $(this).addClass('on');
+    })
+    $('.flBtn').bind("mouseleave", function () {
+        $(this).removeClass('on');
+    })
+})
+
+
+
+if (window.innerWidth > 1600) {
+    $('.floating').on('scroll touchmove mousewheel', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    })
+}  

@@ -12,7 +12,7 @@
 
 .form-wrapper {
     width: 70%;
-    padding: 50px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -29,7 +29,7 @@
 
 .input-title h5 {
     color: #222;
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@
 
 .input-wrapper h5 {
     color: #333;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .input-wrapper h5 span {
@@ -50,7 +50,7 @@
 
 .input-wrapper .inputbox {
     width: 100%;
-    height: 52px;
+    height: 48px;
     padding: 0 16px;
     font-size: 18px;
     font-weight: 500;
@@ -70,7 +70,7 @@
 
 .input-wrapper textarea {
     width: 100%;
-    height: 140px;
+    height: 100px;
     padding: 16px;
     font-size: 18px;
     font-weight: 500;
@@ -227,3 +227,24 @@
 
 
 /*=============================================================*/
+@media (min-width: 2250px) {
+    .form-wrapper {
+        padding: 50px;
+    }
+
+    .input-title h5 {
+        font-size: 36px;
+    }
+
+    .input-wrapper h5 {
+        font-size: 18px;
+    }
+    
+    .input-wrapper .inputbox {
+        height: 52px;
+    }
+
+    .input-wrapper textarea {
+        height: 140px;
+    }
+}

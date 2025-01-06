@@ -4,9 +4,14 @@
 
 .a2-mockup {
     position: absolute;
-    bottom: 0; right: 2%;
+    bottom: 0; right: 8%;
     height: 80%;
 }
 
 
 /*=========================================================*/
+@media (min-width: 2250px) {
+    .a2-mockup {
+        right: 2%;
+    }
+}

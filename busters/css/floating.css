@@ -1,95 +1,86 @@
 .floating {
     position: fixed;
-    bottom: 30px; right: 30px;
+    top: 50%; left: 0;
+    transform: translate(0, -50%);
     display: flex;
     flex-direction: column;
-    gap: 12px;
     z-index: 98;
 }
 
-.floating a {
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    cursor: pointer;
-}
-
-.topBtn {
-    background: var(--main-color);
-}
-
-.topBtn i {
-    color: #fff;
-    font-size: 22px;
-}
-
-.kakaoBtn {
-    background-color: #f9e108;
-}
-
-.kakaoBtn i {
-    color: #3d2324;
-    font-size: 32px;
-}
-
-.telBtn {
-    position: relative;
-    background-color: #23cb94;
-}
-
-.telBtn i {
-    font-size: 26px;
-}
-
-.fl-num {
-    position: relative;
-    position: absolute;
-    top: 50%; right: 70px;
-    transform: translate(0, -50%);
-    color: #222;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: 'Montserrat';
-    padding: 0 15px;
-    white-space: nowrap;
-    border-radius: 10px;
+.flBtn {
+    width: 84px;
+    height: 84px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    transition: all .2s ease;
+}
+
+.flBtn.on {
+    width: 320px;
+    gap: 1.5rem;
+    transition: width .3s;
+}
+
+.flBtn.on h5 {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s;
+    transition-delay: .3s;
+}
+
+.flBtn.on p {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s;
+    transition-delay: .3s;
+}
+
+.flBtn.on p span {
+    font-weight: 600;
+}
+
+.flBtn i {
+    color: #fff;
+    font-size: 45px;
+}
+
+.flBtn h5 {
+    color: #fff;
+    font-size: 24px;
     opacity: 0;
     visibility: hidden;
 }
 
-.fl-num::after {
-    content: '';
-    position: absolute;
-    top: 50%; right: -6px;
-    transform: translate(0, -50%) rotate(45deg);
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    box-shadow: 10px 0 10px rgba(0, 0, 0, .1);
+.flBtn p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.telBtn:hover .fl-num {
-    opacity: 1;
-    visibility: visible;
+.telBtn {
+    background-color: #35d27b;
+}
+
+.kakaoBtn {
+    background-color: #ffe919;
+}
+.kakaoBtn i {
+    color: #3d2324;
+}
+
+.kakaoBtn p {
+    color: #3d2324;
+}
+
+.kakaoBtn p span {
+    color: #3d232470;
+    font-size: 19px;
+    font-weight: 400;
 }
 
 
 /*==================================================*/
-@media (max-width: 768px) {
-    .topBtn {
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-    }
-
-    .topBtn i {
-        font-size: 17px;
-    }
-}
