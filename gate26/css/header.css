@@ -27,31 +27,37 @@ nav {
     align-items: center;
 }
 
-.logo {
+.logo,
+.logo-w {
     z-index: 90;
 }
 
-.logo img {
-    height: 30px;
+.logo img,
+.logo-w img {
+    height: 34rem;
     padding-top: 4px;
+}
+
+.logo-w.hide,
+.logo.hide {
+    display: none;
 }
 
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30rem;
 }
 
 .nav-right ul {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin-right: 2rem;
+    gap: 30rem;
 }
 
 .nav-right ul li a {
     color: #fff;
-    font-size: 17px;
+    font-size: 19rem;
 }
 
 .navBtn {
@@ -76,7 +82,8 @@ nav {
 
 #check,
 .menuBtns,
-.m-menu {
+.m-menu,
+.nav-right label {
     display: none;
 }
 
@@ -84,7 +91,8 @@ nav {
 /*==================================================*/
 @media (max-width: 1250px) {
     nav {
-        padding: 0 20px;
+        width: 90%;
+        padding: 0;
     }
 }
 
@@ -97,10 +105,6 @@ nav {
     .langBtn,
     .userBtn {
         display: none;
-    }
-
-    .nav-right {
-        gap: 1rem;
     }
 
     .navBtn {
@@ -131,12 +135,11 @@ nav {
         top: 0; left: 0;
         width: 100%;
         height: 100vh;
-        padding: 20px;
-        padding-top: 90px;
+        padding-top: 120rem;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-        background-color: #f1f3f6;
+        align-items: center;
+        background-color: #eee;
         transition: all .3s ease;
         touch-action: none;
         opacity: 0;
@@ -144,6 +147,7 @@ nav {
     }
 
     .m-menulist {
+        width: 90%;
         padding: 18px;
         display: flex;
         flex-direction: column;
@@ -208,13 +212,14 @@ nav {
     .bar3 {
         width: 24px;
         height: 2px;
-        background-color: #222;
+        background-color: #fff;
         margin: 6px 0;
         transition: .1s ease;
     }
 
     .change .bar1 {
         transform: rotate(-45deg) translate(-5px, 2px);
+        background-color: #222;
     }
 
     .change .bar2 {
@@ -223,6 +228,7 @@ nav {
 
     .change .bar3 {
         transform: rotate(45deg) translate(-9px, -6px);
+        background-color: #222;
     }
     
     #check:checked ~ .m-menu {
@@ -232,18 +238,17 @@ nav {
 }
 
 
+@media (max-width: 650px) {
+    .nav-right ul {
+        display: none;
+    }
+}
+
+
 @media (max-width: 550px) {
     header,
     .Fixed {
         height: 72px;
-    }
-    
-    .logo img {
-        height: 20px;
-    }
-
-    .nav-right {
-        gap: 14px;
     }
 
     .navBtn {
@@ -255,10 +260,6 @@ nav {
     .navBtn img {
         width: 10px;
     }
-
-    .m-menu {
-        padding-top: 72px;
-    }
 }
 
 
@@ -268,8 +269,14 @@ nav {
         height: 62px;
     }
 
-    .m-menu {
-        padding-top: 64px;
+    .nav-right ul li a {
+        font-size: 21rem;
+    }
+
+    .navBtn {
+        font-size: 11px;
+        width: 70px;
+        height: 26px;
     }
     
     .m-menulist {
@@ -285,5 +292,27 @@ nav {
 
     .m-lang-right {
         font-size: 12px;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 24px;
+        height: 2px;
+        margin: 3px 0;
+        transition: .3s ease;
+    }
+
+    .bar2 {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-3px, 3px);
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-4px, -4px);
     }
 }

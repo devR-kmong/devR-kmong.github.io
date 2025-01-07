@@ -11,11 +11,23 @@
     box-sizing: border-box;
     word-break: keep-all;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.2rem;
 }
 
-html, body {
+html.safari.desktop {
+    font-size: 0.040083333vw;
+}
+
+html,
+body {
+    font-size: 6.25%;
     -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-size: 17rem;
+    word-break: keep-all;
+    overflow-y: overlay;
 }
 
 img {
@@ -50,5 +62,31 @@ button, input {
 
 
 /*==================================================*/
+@media (min-width:2250px) {
+    html,
+    html.safari.desktop {
+        font-size: 0.05254860746190225vw;
+    }
+}
+
+@media (max-width:1650px) {
+    html,
+    html.safari.desktop {
+        font-size: 0.06756756756756757vw;
+    }
+}
+
+@media (max-width: 1050px) {
+    html,
+    html.safari.desktop {
+        font-size: 0.09775171065493645vw;
+    }
+}
 
 
+@media (max-width: 768px) {
+    html,
+    html.safari.desktop {
+        font-size: 0.13020833333333335vw;
+    }
+}

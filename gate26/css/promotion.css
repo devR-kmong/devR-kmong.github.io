@@ -1,7 +1,7 @@
 .promotion {
     position: relative;
     width: 100%;
-    height: 1100px;
+    height: 100vh !important;
     background-color: var(--main-color) !important;
     display: flex;
     justify-content: center;
@@ -36,43 +36,43 @@
 
 .p-text h5 {
     color: #fff;
-    font-size: 65px;
+    font-size: 60rem;
 }
 
 .p-text h5 span {
-    font-size: 45px;
+    font-size: 40rem;
     font-weight: 300;
 }
 
 .p-text P {
     color: #ffffffbb;
-    font-size: 28px;
+    font-size: 26rem;
     font-weight: 500;
 }
 
 .p-logo {
-    width: 722px;
-    margin: 2rem 0;
+    width: 700rem;
+    margin: 40rem 0;
 }
 
 .p-store-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin-top: 3rem;
+    gap: 15rem;
+    margin-top: 30rem;
 }
 
 .p-storeBtn img {
-    width: 190px;
+    width: 190rem;
     margin-bottom: -4px;
 }
 
 .p-box-wrapper {
     width: 100%;
     display: flex;
-    gap: 3rem;
-    margin-top: 6rem;
+    gap: 30rem;
+    margin-top: 60rem;
     animation: slide 50s linear infinite;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .p-box {
-    padding: 45px;
+    padding: 45rem;
     border-radius: 30px;
     background-color: #fff;
     box-shadow: 0 0 25px rgba(0, 0, 0, .1);
@@ -100,7 +100,7 @@
 
 .p-box-text h5 {
     color: #333;
-    font-size: 30px;
+    font-size: 30rem;
     font-family: 'yg-jalnan';
     text-transform: uppercase;
     letter-spacing: 0.01em;
@@ -108,9 +108,9 @@
 
 .p-box-text p {
     color: #888;
-    font-size: 18px;
+    font-size: 18rem;
     line-height: 1.6;
-    margin-top: 10px;
+    margin-top: 10rem;
 }
 
 .p-box-image {
@@ -120,7 +120,7 @@
 }
 
 .p-box-image img {
-    height: 60px;
+    height: 60rem;
     opacity: .7;
     user-select: none;
 }
@@ -131,55 +131,14 @@
 
 
 /*==================================================*/
-@media (min-width: 2250px) {
-    .promotion {
-        height: 100vh !important;
-    }
-
-    .p-box-wrapper {
-        margin-top: 8rem;
-    }
-}
-
-
 @media (max-width: 1650px) {
     .promotion {
         height: auto !important;
-        padding: 180px 0 120px 0 !important;
     }
 }
 
 
 @media (max-width: 1050px) {
-    .promotion {
-        padding: 160px 0 120px 0 !important;
-    }
-    
-    .p-text p {
-        font-size: 36px;
-    }
-
-    .p-text h5 {
-        font-size: 55px;
-    }
-
-    .p-text h5 i {
-        display: block;
-    }
-
-    .p-store-m {
-        padding: 20px;
-        width: 350px;
-        color: #fff;
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: calc();
-        border-radius: 12px;
-        background-color: var(--main-color);
-        margin-top: 3rem;
-    }
-
     .p-box-wrapper {
         animation: slide 25s linear infinite;
     }
@@ -187,57 +146,6 @@
 
 
 @media (max-width: 550px) {
-    .promotion {
-        padding: 140px 0 80px 0 !important;
-    }
-
-    .p-text p {
-        font-size: 24px;
-    }
-    
-    .p-text h5  {
-        font-size: 38px;
-    }
-
-    .p-store-wrapper {
-        gap: 10px;
-        margin-top: 1.5rem;
-    }
-
-    .p-storeBtn img {
-        width: 140px;
-    }
-
-    .p-store-m {
-        width: 200px;
-        padding: 15px;
-        font-size: 14px;
-        margin-top: 2rem;
-    }
-
-    .p-box-wrapper {
-        gap: 1rem;
-        margin-top: 6rem;
-        animation: slide 20s linear infinite;
-    }
-
-    .p-box {
-        padding: 28px;
-    }
-
-    .p-box-text {
-        width: 180px;
-        height: 80px;
-    }
-
-    .p-box-text h5 {
-        font-size: 22px;
-    }
-
-    .p-box-text p {
-        font-size: 13px;
-    }
-
     @keyframes slide {
         0% {
             transform: translate3d(0, 0, 0);
@@ -246,24 +154,5 @@
         100% {
             transform: translate3d(-500%, 0, 0);
         }
-    }
-
-    .p-box-image img {
-        height: 54px;
-    }
-}
-
-
-@media (max-width: 450px) {
-    .p-text p {
-        font-size: 20px;
-    }
-    
-    .p-text h5  {
-        font-size: 32px;
-    }
-    
-    .p-storeBtn img {
-        width: 120px;
     }
 }

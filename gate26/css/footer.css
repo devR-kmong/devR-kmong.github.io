@@ -13,17 +13,17 @@ footer {
     color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 30rem;
 }
 
 .footer-top {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 30rem;
 }
 
 .fBtn {
-    font-size: 18px;
+    font-size: 18rem;
     font-weight: 500;
 }
 
@@ -34,25 +34,24 @@ footer {
 }
 
 .footer-bottom p {
-    font-size: 14px;
+    font-size: 16rem;
     font-weight: 300;
-    letter-spacing: 0.02em;
 }
 
 .logo-f {
     display: block;
-    width: 200px;
-    margin-bottom: 2rem;
+    width: 200rem;
+    margin-bottom: 20rem;
 }
 
 .f-right {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 20rem;
 }
 
 .f-right a {
-    font-size: 16px;
+    font-size: 16rem;
 }
 
 
@@ -86,22 +85,5 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-}
-
-
-@media (max-width: 450px) {
-    .logo-f {
-        width: 160px;
-        margin-bottom: 1.5rem;
-    }
-    
-    .footer-bottom p {
-        font-size: 11px;
-    }
-
-    .f-right a {
-        font-size: 14px;
-        font-weight: 500;
     }
 }

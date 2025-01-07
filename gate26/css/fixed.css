@@ -20,7 +20,7 @@
 .fx-left {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 15rem;
 }
 
 .fx-app {
@@ -29,14 +29,14 @@
 
 .fx-left h5 {
     color: var(--main-color);
-    font-size: 22px;
+    font-size: 22rem;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 5rem;
 }
 
 .fx-left h5 img {
-    height: 20px;
+    height: 20rem;
 }
 
 .fx-left h5 .fixed26 {
@@ -46,11 +46,11 @@
 .fx-right {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 10rem;
 }
 
 .fx-right img {
-    width: 180px;
+    width: 180rem;
     margin-bottom: -4px;
 }
 

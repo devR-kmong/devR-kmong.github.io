@@ -1,11 +1,15 @@
-.article3 .at-img-wrapper {
+.article3 .at-img {
     position: relative;
 }
 
-.a3-3 {
+.a3-msg-wrapper {
     position: absolute;
-    top: 15%; right: -7%;
-    width: 60%;
+    top: 15%; left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
     z-index: 10;
 }
 
