@@ -8,7 +8,7 @@ AOS.init({
 new WOW({
     boxClass:     'wow',
     animateClass: 'animated',
-    offset:       200,
+    offset:       500,
     mobile:       true,
     live:         true
 }).init();

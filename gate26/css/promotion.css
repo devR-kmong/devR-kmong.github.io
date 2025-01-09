@@ -131,6 +131,13 @@
 
 
 /*==================================================*/
+@media (min-width: 2250px) {
+    .p-box-wrapper {
+        margin-top: 100rem;
+    }
+}
+
+
 @media (max-width: 1650px) {
     .promotion {
         height: auto !important;

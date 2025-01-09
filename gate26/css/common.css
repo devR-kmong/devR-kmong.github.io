@@ -62,13 +62,6 @@ button, input {
 
 
 /*==================================================*/
-@media (min-width:2250px) {
-    html,
-    html.safari.desktop {
-        font-size: 0.05254860746190225vw;
-    }
-}
-
 @media (max-width:1650px) {
     html,
     html.safari.desktop {
