@@ -10,7 +10,7 @@ new WOW({
     animateClass: 'animated',
     offset:       500,
     mobile:       true,
-    live:         true
+    live:         false
 }).init();
 
 
