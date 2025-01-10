@@ -56,8 +56,8 @@
     top: 0; left: 50%;
     transform: translate(-50%, 0);
     width: 90%;
-    padding-top: 30px;
-    animation: motion 10s linear 0s alternate;
+    padding-top: 14px;
+    animation: motion 10s linear 1s alternate;
     z-index: 1;
 }
 

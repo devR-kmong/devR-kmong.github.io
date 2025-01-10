@@ -1,14 +1,23 @@
-AOS.init({
-    once: true,
-    delay: 100,
-    offset: 200,
-    duration: 1200,
-})
+if (window.innerWidth > 768) {
+    AOS.init({
+        once: true,
+        delay: 200,
+        offset: 600,
+        duration: 1200,
+    })
+} else {
+    AOS.init({
+        once: true,
+        delay: 100,
+        offset: 200,
+        duration: 1200,
+    })
+}
 
 new WOW({
     boxClass:     'wow',
     animateClass: 'animated',
-    offset:       500,
+    offset:       200,
     mobile:       true,
     live:         false
 }).init();
