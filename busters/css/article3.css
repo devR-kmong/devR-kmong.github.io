@@ -17,3 +17,27 @@
         height: 80%;
     }
 }
+
+
+@media (max-width: 1250px) {
+    .a3-mockup {
+        width: 80%;
+        margin-left: 40%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a3-mockup {
+        width: 100%;
+        margin-left: 10%;
+        margin-bottom: -100px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a3-mockup {
+        margin-bottom: -50px;
+    }
+}

@@ -73,6 +73,7 @@
     height: 100px;
     padding: 16px;
     font-size: 18px;
+    line-height: 1.5;
     font-weight: 500;
     border: none;
     outline: none;
@@ -246,5 +247,68 @@
 
     .input-wrapper textarea {
         height: 140px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .a7-wrapper {
+        flex-direction: column;
+    }
+
+    .form-wrapper {
+        padding: 50px 35px 35px 35px;
+        border-radius: 40px 40px 0 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a7-wrapper {
+        gap: 3rem;
+    }
+    
+    .form-wrapper {
+        width: 90%;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .policy-popup {
+        width: 90%;
+    }
+    
+    .policy-popup textarea {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a7-wrapper {
+        gap: 1rem;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .form-wrapper {
+        padding: 35px;
+    }
+    
+    .input-title h5 {
+        font-size: 26px;
+    }
+    
+    .input-wrapper h5 {
+        font-size: 14px;
+    }
+
+    .input-wrapper .inputbox,
+    .input-wrapper textarea {
+        padding: 14px;
     }
 }

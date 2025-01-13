@@ -29,3 +29,42 @@
         right: 15%;
     }
 }
+
+
+@media (max-width: 1250px) {
+    .article4::after {
+        height: 40%;
+    }
+    
+    .a4-mockup {
+        width: 60%;
+        margin-left: 50%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article4::after {
+        height: 25%;
+    }
+    
+    .a4-mockup {
+        width: 90%;
+        margin-left: 30%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article4 .p-text.dark {
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-mockup {
+        width: 80%;
+        margin-left: 25%;
+    }
+}

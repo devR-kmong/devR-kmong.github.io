@@ -33,24 +33,22 @@ if (window.innerWidth > 1600) {
     document.write(
         '<script src="js/box_scroll.js"><\/script>'
     )
+
+    $(function () {
+        $('.flBtn').bind("mouseover", function () {
+            $(this).addClass('on');
+        })
+        $('.flBtn').bind("mouseleave", function () {
+            $(this).removeClass('on');
+        })
+    })
+    
 }
 else {
     document.clear(
         '<script src="js/box_scroll.js"><\/script>'
     )
 }
-
-
-
-$(window).resize(function () {
-    var width_size = window.innerWidth;
-
-    if (width_size == 1920) {
-        document.location.reload();
-    } else if (width_size == 2560) {
-        document.location.reload();
-    }
-})
 
 
 
@@ -97,17 +95,6 @@ $(document).on(
         }
     }
 );
-
-
-
-$(function () {
-    $('.flBtn').bind("mouseover", function () {
-        $(this).addClass('on');
-    })
-    $('.flBtn').bind("mouseleave", function () {
-        $(this).removeClass('on');
-    })
-})
 
 
 

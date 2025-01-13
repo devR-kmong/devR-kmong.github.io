@@ -26,8 +26,9 @@
     line-height: 1.8;
 }
 
-.f-info span {
+.f-info em {
     font-size: 14px;
+    font-style: normal;
     letter-spacing: -0.043em;
 }
 
@@ -54,8 +55,64 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1250px) {
+    .footer {
+        padding: 60px 0;
+    }
+}
+
+
+@media (max-width: 768px) {
     .footer-wrapper {
-        padding: 0 20px;
+        padding-bottom: 50px;
+    }
+
+    .logo-f {
+        width: 200px;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .logo-f {
+        width: 160px;
+    }
+
+    .f-info {
+        font-size: 15px;
+    }
+
+    .f-info span {
+        display: none;
+    }
+
+    .f-info br {
+        display: block;
+    }
+
+    .f-info em {
+        display: block;
+    }
+
+    .f-copyright {
+        font-size: 13px;
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .footer {
+        padding: 40px 0;
+    }
+
+    .logo-f {
+        width: 140px;
+    }
+    
+    .f-info,
+    .f-info em {
+        font-size: 13px;
     }
 }
