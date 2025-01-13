@@ -1,6 +1,37 @@
 .article6 {
+    position: relative;
     background: url(../images/a6-bg.jpg);
     background-size: cover;
+}
+
+.apanim {
+    position: absolute;
+    top: 55%; left: 0;
+    width: 100%;
+    transform: rotate(-10deg);
+}
+
+.bar {
+    position: relative;
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to right, transparent 0%, #fff 100%);
+    animation: loading 10s linear both;
+}
+
+@keyframes loading {
+    100% {
+        width: 200%;
+    }
+}
+
+.airplane {
+    position: absolute;
+    top: -52px; right: -60px;
+    width: 200px;
+    min-width: 200px;
 }
 
 .a6-wrapper {
@@ -62,8 +93,13 @@
 }
 
 @keyframes motion {
-	0% {margin-top: 0px;}
-	100% {margin-top: -300%;}
+    0% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -300%;
+    }
 }
 
 

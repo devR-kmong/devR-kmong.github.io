@@ -11,7 +11,7 @@
 }
 
 .article-wrapper {
-    width: 1300rem;
+    width: 1300px;
     display: flex;
     justify-content: space-between;
     gap: 70rem;
