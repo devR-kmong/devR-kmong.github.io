@@ -40,8 +40,13 @@
 .ar-text p {
     color: #888;
     font-size: 22px;
+    font-weight: 300;
     line-height: 1.5;
     margin-top: 2rem;
+}
+
+.ar-text p b {
+    font-weight: 800;
 }
 
 .ar-text.dark h5 {
@@ -50,7 +55,6 @@
 
 .ar-text.dark p {
     color: #fff;
-    font-size: 24px;
 }
 
 

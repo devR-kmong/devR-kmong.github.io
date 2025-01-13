@@ -31,8 +31,13 @@
 .p-text p {
     color: #fff;
     font-size: 28px;
+    font-weight: 300;
     line-height: 1.5;
     margin-top: 2rem;
+}
+
+.p-text p b {
+    font-weight: 800;
 }
 
 .p-text.dark h5 {
