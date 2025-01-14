@@ -125,7 +125,7 @@
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
     .floating {
         bottom: 80px; right: 25px;
     }
