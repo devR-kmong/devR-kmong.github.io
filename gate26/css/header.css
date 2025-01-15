@@ -55,7 +55,7 @@ nav {
     gap: 30rem;
 }
 
-.nav-right ul li a {
+.nav-right ul li {
     color: #fff;
     font-size: 19rem;
 }
