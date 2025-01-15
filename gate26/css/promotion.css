@@ -120,9 +120,7 @@
 }
 
 .p-box-image img {
-    height: 60rem;
-    opacity: .7;
-    user-select: none;
+    width: 85rem;
 }
 
 .p-store-m {

@@ -104,3 +104,11 @@ $('.menuBtns').click(function () {
     $('.logo-w').toggleClass('hide');
     $('.logo').toggleClass('hide');
 });
+
+
+
+$('.a0-video').click(function () {
+    $('.a0-playBtn').hide();
+    $('.a0-image').fadeOut();
+    $(this).css('cursor', 'default');
+});
