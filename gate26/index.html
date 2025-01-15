@@ -25,11 +25,12 @@
     <link rel="stylesheet" href="css/article6.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
@@ -74,9 +75,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="GATE26_광고제안.pdf" download>
+                        <div class="formBtn">
                             광고문의
-                        </a>
+                        </div>
                     </li>
                 </ul>
                 <a href="" target="_blank" class="navBtn">
@@ -97,10 +98,10 @@
                             회사소개
                             <i class="ri-arrow-right-s-line"></i>
                         </a>
-                        <a href="GATE26_광고제안.pdf" class="m-menuBtn" download>
+                        <div class="m-menuBtn formBtn">
                             광고문의
                             <i class="ri-arrow-right-s-line"></i>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -631,9 +632,9 @@
                     <a href="https://www.asianaidt.com/" class="fBtn" target="_blank">
                         회사소개
                     </a>
-                    <a href="GATE26_광고제안.pdf" class="fBtn" download>
+                    <div class="fBtn formBtn">
                         광고문의
-                    </a>
+                    </div>
                     <a href="terms/TermsOfLocationInfo.html" class="fBtn" target="_blank">
                         위치정보동의
                     </a>
@@ -655,17 +656,17 @@
                 </div>
                 <ul class="fr-sns">
                     <li>
-                        <a href="https://blog.naver.com/" target="_blank">
+                        <a href="https://blog.naver.com/gate26__" target="_blank">
                             <img src="images/naverblog.png">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/gate26_official/" target="_blank">
+                        <a href="https://www.instagram.com/gate26_official" target="_blank">
                             <img src="images/instagram.png">
                         </a>
                     </li>
                     <li>
-                        <a href="https://youtube.com" target="_blank">
+                        <a href="https://www.youtube.com/@gate26_" target="_blank">
                             <img src="images/youtube.png">
                         </a>
                     </li>
@@ -673,6 +674,81 @@
             </div>
         </div>
     </footer>
+
+    <div class="fixed-form">
+        <div class="f-form">
+            <div class="f-form-top">
+                <div class="f-form-title">
+                    광고문의
+                </div>
+                <div class="f-form-closeBtn">
+                    <i class="ri-close-large-line"></i>
+                </div>
+            </div>
+            <form class="gform" action="" method="POST" onSubmit="alert('문의가 성공적으로 접수되었습니다.');wcs_submit();">
+                <div class="input-wrapper">
+                    <div class="input-title">
+                        <p>이름</p>
+                    </div>
+                    <input type="text" name="name" placeholder="홍길동" class="inputbox" required />
+                </div>
+                <div class="input-wrapper">
+                    <div class="input-title">
+                        <p>이메일</p>
+                    </div>
+                    <input type="email" name="email" placeholder="email@naver.com" class="inputbox" required />
+                </div>
+                <div class="input-wrapper">
+                    <div class="input-title">
+                        <p>연락처</p>
+                    </div>
+                    <input type="tel" name="phone" placeholder="010-1234-5678" class="inputbox phoneNumber" required />
+                </div>
+                <div class="input-wrapper">
+                    <div class="input-title">
+                        <p>소속</p>
+                    </div>
+                    <input type="text" name="company" placeholder="주식회사 가나다" class="inputbox" />
+                </div>
+                <div class="input-wrapper">
+                    <div class="input-title">
+                        <p>부서명 · 직함</p>
+                    </div>
+                    <input type="text" name="position" placeholder="마케팅팀 사원" class="inputbox" />
+                </div>
+                <div class="input-wrapper">
+                    <div class="input-title">
+                        <p>방문경로</p>
+                    </div>
+                    <input type="text" name="route" placeholder="온라인 광고" class="inputbox" />
+                </div>
+                <div class="input-wrapper">
+                    <div class="input-title">
+                        <p>문의내용</p>
+                    </div>
+                    <textarea name="message" class="inputbox textarea" placeholder="광고 제휴문의 드려요"></textarea>
+                </div>
+                <div class="f-personal">
+                    <div class="f-personal-text">
+                        <input type="checkbox" id="cb" checked required />
+                        <label for="cb">
+                            <em></em>
+                            <p>
+                                <span>[필수]</span> 개인정보 수집 및 이용 동의
+                            </p>
+                        </label>
+                    </div>
+                    <a href="terms/PrivacyPolicy.html" target="_blank" class="f-personalBtn">
+                        <p>보기</p>
+                    </a>
+                </div>
+                <div class="ffBtn-wrapper">
+                    <button type="button" class="f-cancel f-form-closeBtn"><p>취소</p></button>
+                    <button type="submit" class="f-submit"><p>전송하기</p></button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="js/common.js"></script>
 

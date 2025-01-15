@@ -1,0 +1,317 @@
+.formBtn {
+    cursor: pointer;
+}
+
+.fixed-form {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 999;
+    display: none;
+}
+
+.f-form {
+    position: relative;
+    width: 550px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.f-form-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25rem;
+}
+
+.f-form-closeBtn {
+    padding: 12rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.f-form-closeBtn:hover {
+    background-color: #f7f7f7;
+}
+
+.f-form-closeBtn i {
+    font-size: 28px;
+}
+
+.f-form-title {
+    color: #222;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.gform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+
+.gform .input-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.gform .input-wrapper .input-title p {
+    width: 110px;
+    color: #222;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.gform .inputbox {
+    color: #222;
+    width: 100%;
+    height: 45px;
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+.gform .inputbox::placeholder {
+    color: #bbb;
+}
+
+.gform .inputbox:focus {
+    border: 2px solid var(--main-color);
+}
+
+.gform .inputbox.textarea {
+    min-height: 90px;
+    padding: 12px;
+    line-height: 1.5;
+}
+
+.gform textarea:focus {
+    border: 2px solid var(--main-color) !important;
+}
+
+.ffBtn-wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10rem;
+}
+
+.f-cancel.f-form-closeBtn {
+    flex: 1;
+    position: sticky;
+    color: #888;
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.f-submit {
+    flex: 3;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.f-submit:hover {
+    filter: brightness(97%);
+}
+
+.f-submit:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+    background-color: #eee;
+}
+
+.f-personal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin: 10px 0;
+}
+
+.f-personal-text input {
+    display: none;
+}
+
+.f-personal-text label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.f-personal-text label em {
+    position: relative;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    min-height: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.f-personal-text label em::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: var(--main-color);
+    display: none;
+}
+
+.f-personal-text label p {
+    color: #222;
+    font-size: 17px;
+    font-weight: 500;
+    user-select: none;
+    cursor: pointer;
+}
+
+.f-personal-text label p span {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+#cb:checked ~ label em::after {
+    display: block;
+}
+
+.f-personalBtn {
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.f-personalBtn:hover {
+    filter: brightness(97%);
+}
+
+
+/*==================================================*/
+@media (max-width: 650px) {
+    .f-form {
+        width: 80%;
+        padding: 40px;
+        border-radius: 15px;
+    }
+
+    .f-form-closeBtn {
+        top: 25px; right: 25px;
+    }
+
+    .f-form-closeBtn i {
+        font-size: 20px;
+    }
+    
+    .f-form-title {
+        font-size: 22px;
+    }
+
+    .gform .input-wrapper .input-title p {
+        width: 60px;
+        color: #222;
+        font-size: 16px;
+    }
+    
+    .gform .inputbox {
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    .f-cancel.f-form-closeBtn {
+        height: 46px;
+        font-size: 15px;
+    }
+    
+    .f-submit {
+        height: 46px;
+        font-size: 15px;
+    }
+    
+    .f-personal-text label em {
+        width: 16px;
+        min-width: 16px;
+        height: 16px;
+        min-height: 16px;
+    }
+    
+    .f-personal-text label em::after {
+        width: 8px;
+        height: 8px;
+    }
+
+    .f-personal-text label p {
+        font-size: 14px;
+    }
+
+    .f-personalBtn {
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .gform,
+    .gform .input-wrapper {
+        gap: 12px;
+    }
+    
+    .f-form {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .f-form-closeBtn {
+        top: 17px;
+        right: 15px;
+    }
+
+    .f-form-title {
+        margin-bottom: 2rem;
+    }
+
+    .ffBtn-wrapper {
+        margin-top: 1rem;
+    }
+}

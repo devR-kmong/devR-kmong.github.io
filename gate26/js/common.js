@@ -112,3 +112,43 @@ $('.a0-video').click(function () {
     $('.a0-image').fadeOut();
     $(this).css('cursor', 'default');
 });
+
+
+$('.formBtn').click(function () {
+    $('.fixed-form').fadeIn().css('display', 'flex');
+})
+
+$('.f-form-closeBtn').click(function () {
+    $('.fixed-form').fadeOut();
+})
+
+
+
+$('.f-personal-text').click(function () {
+    if ($('#cb').is(':checked')) {
+        $('.f-personal').removeClass('f-personal-no');
+        $('.gform .f-submit').attr('disabled', false);
+    } else {
+        $('.f-personal').addClass('f-personal-no');
+        $('.gform .f-submit').attr('disabled', true);
+    }
+})
+
+$('.fixed-form').on('scroll touchmove mousewheel', function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    return false;
+})
+
+$(document).on("keyup", ".phoneNumber", function () {
+    $(this).val($(this).val().replace(/[^0-9]/g, "").replace(/(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)?([0-9]{4})$/, "$1-$2-$3").replace("--", "-"));
+});
+
+$(document).on(
+    'keydown',
+    function (event) {
+        if (event.key == "Escape") {
+            $('.fixed-form').fadeOut();
+        }
+    }
+);
