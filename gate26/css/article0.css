@@ -62,11 +62,9 @@
     position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
     border: 5px solid #000;
     margin-bottom: 100rem;
     cursor: pointer;
-    overflow: hidden;
 }
 
 .a0-playBtn {
