@@ -18,7 +18,7 @@ footer {
 .footer-left {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 .logo-f {
