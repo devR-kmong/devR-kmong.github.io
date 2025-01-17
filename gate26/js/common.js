@@ -2,7 +2,7 @@ if (window.innerWidth > 768) {
     AOS.init({
         once: true,
         delay: 200,
-        offset: 600,
+        offset: 400,
         duration: 1200,
     })
 } else {
