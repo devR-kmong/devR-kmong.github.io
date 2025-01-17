@@ -57,3 +57,8 @@
 
 
 /*==================================================*/
+@media (max-width: 1050px) {
+    .fixed-wrapper {
+        display: none !important;
+    }
+}

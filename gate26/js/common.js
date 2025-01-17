@@ -1,15 +1,22 @@
 if (window.innerWidth > 768) {
     AOS.init({
         once: true,
-        delay: 200,
+        delay: 100,
+        offset: 300,
+        duration: 1200,
+    })
+} else if (window.innerWidth > 2250) {
+    AOS.init({
+        once: true,
+        delay: 150,
         offset: 400,
         duration: 1200,
     })
 } else {
     AOS.init({
         once: true,
-        delay: 100,
-        offset: 200,
+        delay: 0,
+        offset: 100,
         duration: 1200,
     })
 }

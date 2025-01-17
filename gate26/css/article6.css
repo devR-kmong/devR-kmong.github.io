@@ -18,7 +18,7 @@
     height: 4px;
     backdrop-filter: blur(10px);
     background: linear-gradient(to right, transparent 0%, #fff 100%);
-    animation: loading 10s linear both;
+    animation: loading 10s linear infinite;
 }
 
 @keyframes loading {
@@ -87,7 +87,6 @@
     top: 0; left: 50%;
     transform: translate(-50%, 0);
     width: 90%;
-    padding-top: 14px;
     animation: motion 10s linear 1s alternate;
     z-index: 1;
 }
@@ -104,3 +103,8 @@
 
 
 /*==================================================*/
+@media (max-width: 550px) {
+    .bar {
+        animation-duration: 7s !important;
+    }
+}

@@ -8,7 +8,7 @@
 
 .a0-flow {
     width: 110%;
-    padding: 40px 0;
+    padding: 40rem 0;
     background-color: #92d7ff50;
     transform: rotate(2deg);
 }
@@ -20,7 +20,7 @@
 
 .a0-flow h5 {
     color: #fff;
-    font-size: 80px;
+    font-size: 80rem;
     font-weight: 700;
     font-family: 'Montserrat';
     animation: marquee 60s linear infinite;
@@ -73,7 +73,7 @@
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
+    width: 200rem;
     transition: all .1s;
     z-index: 3;
 }
@@ -97,3 +97,51 @@
 
 
 /*==================================================*/
+@media (max-width: 768px) {
+    .a0-flow {
+        padding: 30rem 0;
+    }
+    
+    .a0-flow h5 {
+        font-size: 45rem;
+    }
+    
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(-300%);
+        }
+    }
+    
+    @keyframes marquee2 {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(300%);
+        }
+    }
+
+    .a0-video {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article0 {
+        padding: 30px 0;
+    }
+    
+    .a0-flow2 {
+        margin-bottom: 0;
+    }
+    
+    .a0-playBtn {
+        width: 150rem;
+    }
+}

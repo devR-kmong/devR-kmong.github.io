@@ -50,7 +50,7 @@
     color: #aaa;
     font-size: 17rem;
     line-height: 1.65;
-    margin-top: 20rem;
+    margin-top: 30rem;
 }
 
 .at-img-wrapper {
@@ -71,7 +71,8 @@
 /*==================================================*/
 @media (max-width: 1350px) {
     .article-wrapper {
-        width: 90%;
+        width: 100%;
+        padding: 0 20px;
     }
 }
 
@@ -101,6 +102,38 @@
     }
 
     .at-img {
-        height: 700rem;
+        height: 960rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .at-title h5 {
+        font-size: 65rem;
+    }
+
+    .at-title p {
+        font-size: 22rem;
+    }
+
+    .at-img {
+        height: 710rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .at-wave {
+        width: 40rem;
+        margin-bottom: 20rem;
+    }
+    
+    .at-title h4 {
+        font-size: 30rem;
+        margin-bottom: 40rem;
+    }
+    
+    .at-title p {
+        font-size: 24rem;
     }
 }
