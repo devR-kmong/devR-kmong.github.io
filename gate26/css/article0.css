@@ -8,7 +8,7 @@
 
 .a0-flow {
     width: 110%;
-    padding: 60px 0;
+    padding: 40px 0;
     background-color: #92d7ff50;
     transform: rotate(2deg);
 }
@@ -23,7 +23,7 @@
     font-size: 80px;
     font-weight: 700;
     font-family: 'Montserrat';
-    animation: marquee 30s linear infinite;
+    animation: marquee 60s linear infinite;
     letter-spacing: -0.04em;
     white-space: nowrap;
 }
@@ -33,7 +33,7 @@
     font-family: 'Pretendard';
     display: flex;
     justify-content: flex-end;
-    animation: marquee2 30s linear infinite;
+    animation: marquee2 60s linear infinite;
     transform: translateX(-100%);
     white-space: nowrap;
 }
@@ -60,10 +60,12 @@
 
 .a0-video {
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 100%;
-    border: 5px solid #000;
-    margin-bottom: 100rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+    margin: 0 auto;
+    margin-bottom: 50rem;
+    overflow: hidden;
     cursor: pointer;
 }
 
@@ -71,6 +73,7 @@
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+    width: 200px;
     transition: all .1s;
     z-index: 3;
 }
