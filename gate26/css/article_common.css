@@ -61,7 +61,8 @@
 
 .at-img {
     width: 100%;
-    height: 690rem;
+    height: 0;
+    padding-bottom: 106%;
     border-radius: 20rem;
     box-shadow: 0 0 25px rgba(0, 0, 0, .1);
     overflow: hidden;
@@ -100,10 +101,6 @@
     .at-img-wrapper {
         width: 100%;
     }
-
-    .at-img {
-        height: 960rem;
-    }
 }
 
 
@@ -114,10 +111,6 @@
 
     .at-title p {
         font-size: 22rem;
-    }
-
-    .at-img {
-        height: 710rem;
     }
 }
 
