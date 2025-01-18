@@ -95,9 +95,23 @@
     z-index: 1;
 }
 
+video[poster] {
+    width: 100%;
+    height: 100%;
+}
+
 
 /*==================================================*/
 @media (max-width: 768px) {
+    .a0-video {
+        cursor: default;
+    }
+    
+    .a0-playBtn,
+    .a0-image {
+        display: none;
+    }
+    
     .a0-flow {
         padding: 30rem 0;
     }
