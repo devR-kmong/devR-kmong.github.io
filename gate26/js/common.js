@@ -141,11 +141,13 @@ $('.f-personal-text').click(function () {
     }
 })
 
-$('.fixed-form').on('scroll touchmove mousewheel', function (event) {
+if (window.innerWidth > 550) {
+    $('.fixed-form').on('scroll touchmove mousewheel', function (event) {
     event.preventDefault();
     event.stopPropagation();
     return false;
 })
+}
 
 $(document).on("keyup", ".phoneNumber", function () {
     $(this).val($(this).val().replace(/[^0-9]/g, "").replace(/(^02|^0505|^1[0-9]{3}|^0[0-9]{2})([0-9]+)?([0-9]{4})$/, "$1-$2-$3").replace("--", "-"));
