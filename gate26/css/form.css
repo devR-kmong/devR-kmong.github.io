@@ -281,12 +281,9 @@
         height: 8px;
     }
 
-    .f-personal-text label p {
-        font-size: 14px;
-    }
-
+    .f-personal-text label p,
     .f-personalBtn {
-        display: none;
+        font-size: 14px;
     }
 }
 
