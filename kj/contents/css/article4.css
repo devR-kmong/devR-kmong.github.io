@@ -1,0 +1,53 @@
+.a4-title h4 {
+    color: #aaa;
+    font-size: 24rem;
+    font-weight: 600;
+    margin-top: 30rem;
+}
+
+#daumRoughmapContainer1741874305884 {
+    width: 100%;
+    height: 600rem;
+    z-index: 1;
+}
+
+.root_daum_roughmap .wrap_map {
+    width: 100%;
+    height: 100% !important;
+}
+
+.a4-address {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gold-color);
+}
+
+.a4-address p {
+    color: #fff;
+    font-size: 20rem;
+    font-weight: 600;
+    padding-left: 30rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    letter-spacing: -0.5px;
+}
+
+.a4-address i {
+    font-weight: lighter;
+}
+
+.a4-address a {
+    color: #fff;
+    height: 100%;
+    padding: 25rem 40rem;
+    font-size: 22rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: var(--main-color);
+}
+
+
+/*==================================================*/
