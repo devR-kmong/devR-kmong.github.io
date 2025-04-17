@@ -35,8 +35,9 @@
 }
 
 .logo {
-    width: 80rem;
+    width: 160rem;
     height: fit-content;
+    margin-top: -7px;
 }
 
 .gnb {
