@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contents/css/common.css">
+    <link rel="stylesheet" href="contents/css/header.css">
+    <link rel="stylesheet" href="contents/css/toggleMenu.css">
+    <link rel="stylesheet" href="contents/css/promotion.css">
+    <link rel="stylesheet" href="contents/css/article_common.css">
+    <link rel="stylesheet" href="contents/css/article1.css">
+    <link rel="stylesheet" href="contents/css/article2.css">
+    <link rel="stylesheet" href="contents/css/article3.css">
+    <link rel="stylesheet" href="contents/css/article4.css">
+    <link rel="stylesheet" href="contents/css/article5.css">
+    <link rel="stylesheet" href="contents/css/footer.css">
+    <link rel="stylesheet" href="contents/css/aos.css">
+    <link rel="shortcut icon" href="contents/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+    <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="contents/js/vanilla-tilt.js"></script>
+    <script src="contents/js/aos.js"></script>
+    <title>금사랑금거래소</title>
+</head>
+<body>
+    <div class="header">
+        <div class="gnb">
+            <a href="<?php echo G5_URL?>" class="logo"><img src="contents/images/logo.svg"></a>
+            <div class="menu">
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/goldtax" class="menu-head">
+                        실시간 금시세
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/apply/write">
+                                문자알림신청
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">
+                                카카오채널
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">
+                                통합블로그
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">
+                                틱톡
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/product" class="menu-head">
+                        제품안내
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/product?sca=자체제작제품">
+                                자체제작제품
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/product?sca=위탁판매제품">
+                                위탁판매제품
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/deal_subject" class="menu-head">
+                        매입안내
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/deal_subject">
+                                매입품목
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/deal_process">
+                                매입절차
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/branch" class="menu-head">
+                        지점안내
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/branch">
+                                지점정보
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/about" class="menu-head">
+                        회사소개
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/notice">
+                                공지사항
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/faq">
+                                자주하는질문
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="menuBtns">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="toggleMenu">
+                <div class="tgm-top">
+                    <a href="<?php echo G5_URL?>" class="logo logo-t"><img src="contents/images/logo.svg"></a>
+                    <div class="tgm-close">
+                        <img src="contents/images/close-w.svg">
+                    </div>
+                </div>
+                <div class="tgm-menu-wrapper">
+                    <div class="tgm-menu" data-target="data1">
+                        <a href="<?php echo G5_URL?>/sub/about" class="tgm-head">
+                            실시간금시세<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data1">
+                            <li>
+                                <a href="<?php echo G5_URL?>/apply/write">
+                                    문자알림신청
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    카카오채널 <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    통합블로그 <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    틱톡 <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data2">
+                        <a href="<?php echo G5_URL?>/lecturer" class="tgm-head">
+                            제품안내<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data2">
+                            <li>
+                                <a href="<?php echo G5_URL?>/product?sca=자체제작제품">
+                                    자체제작제품
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/product?sca=위탁판매제품">
+                                    위탁판매제품
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data3">
+                        <a href="<?php echo G5_URL?>/education" class="tgm-head">
+                            매입안내<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data3">
+                            <li>
+                                <a href="<?php echo G5_URL?>/deal_subject">
+                                    매입품목
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/deal_process">
+                                    매입절차
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data4">
+                        <a href="<?php echo G5_URL?>/review" class="tgm-head">
+                            지점안내<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data4">
+                            <li>
+                                <a href="<?php echo G5_URL?>/branch">
+                                    지점정보
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data5">
+                        <a href="<?php echo G5_URL?>/review" class="tgm-head">
+                            회사소개<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data5">
+                            <li>
+                                <a href="<?php echo G5_URL?>/notice">
+                                    공지사항
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/faq">
+                                    자주하는질문
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="promotion">
+            <div class="promotion-wrapper">
+                <div class="p-left">
+                    <div class="p-box">
+                        <div class="p-box-title">
+                            <h5>
+                                실시간 금시세
+                            </h5>
+                            <div id="today"></div>
+                        </div>
+                        <div class="prc-box-wrapper">
+                            <div class="prc-box">
+                                <div class="pb-left">
+                                    24K
+                                </div>
+                                <ul class="pb-right">
+                                    <li>
+                                        <span>사실 때</span>
+                                        <p>642,000</p>
+                                    </li>
+                                    <li>
+                                        <span>파실 때</span>
+                                        <p>542,000</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="prc-box">
+                                <div class="pb-left">
+                                    18K
+                                </div>
+                                <ul class="pb-right">
+                                    <li>
+                                        <span>사실 때</span>
+                                        <p>제품시세적용</p>
+                                    </li>
+                                    <li>
+                                        <span>파실 때</span>
+                                        <p>398,000</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="prc-box">
+                                <div class="pb-left">
+                                    14K
+                                </div>
+                                <ul class="pb-right">
+                                    <li>
+                                        <span>사실 때</span>
+                                        <p>제품시세적용</p>
+                                    </li>
+                                    <li>
+                                        <span>파실 때</span>
+                                        <p>309,000</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-right">
+                    <div class="p-box-wrapper">
+                        <div class="p-box">
+                            <div class="p-box-title">
+                                <h5>
+                                    제품별 매입 시세
+                                </h5>
+                            </div>
+                            <div class="prc2-box-wrapper">
+                                <div class="prc2-box">
+                                    <div class="prc2-box-name">
+                                        골드바
+                                    </div>
+                                    <div class="prc2-box-line"></div>
+                                    <div class="prc2-box-price">
+                                        580,000
+                                    </div>
+                                </div>
+                                <div class="prc2-box">
+                                    <div class="prc2-box-name">
+                                        3대 마크 주물금
+                                    </div>
+                                    <div class="prc2-box-line"></div>
+                                    <div class="prc2-box-price">
+                                        570,000
+                                    </div>
+                                </div>
+                                <div class="prc2-box">
+                                    <div class="prc2-box-name">
+                                        검인반지, 메달
+                                    </div>
+                                    <div class="prc2-box-line"></div>
+                                    <div class="prc2-box-price">
+                                        560,000
+                                    </div>
+                                </div>
+                                <div class="prc2-box">
+                                    <div class="prc2-box-name">
+                                        검인 목걸이, 팔찌, 열쇠
+                                    </div>
+                                    <div class="prc2-box-line"></div>
+                                    <div class="prc2-box-price">
+                                        550,000
+                                    </div>
+                                </div>
+                                <div class="prc2-box">
+                                    <div class="prc2-box-name">
+                                        실버바 1kg
+                                    </div>
+                                    <div class="prc2-box-line"></div>
+                                    <div class="prc2-box-price">
+                                        1,500,000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-box">
+                            <div class="p-box-title">
+                                <h5>
+                                    순금 공동 구매가
+                                </h5>
+                            </div>
+                            <div class="prc2-box-wrapper">
+                                <div class="prc2-box">
+                                    <div class="prc2-box-name">
+                                        주물금 10돈
+                                    </div>
+                                    <div class="prc2-box-line"></div>
+                                    <div class="prc2-box-price">
+                                        5,600,000
+                                    </div>
+                                </div>
+                                <div class="prc2-box">
+                                    <div class="prc2-box-name">
+                                        골드바 10돈
+                                    </div>
+                                    <div class="prc2-box-line"></div>
+                                    <div class="prc2-box-price">
+                                        5,700,000
+                                    </div>
+                                </div>
+                                <div class="prc2-box">
+                                    <div class="prc2-box-name">
+                                        실버바 1kg
+                                    </div>
+                                    <div class="prc2-box-line"></div>
+                                    <div class="prc2-box-price">
+                                        1,800,000
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article article1">
+            <div class="article-wrapper">
+                1
+            </div>
+        </section>
+        <section class="article article2">
+            <div class="article-wrapper">
+                2
+            </div>
+        </section>
+        <section class="article article3">
+            <div class="article-wrapper">
+                3
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <p>
+                ⓒ 금사랑금거래소. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+
+    <script src="contents/js/common.js"></script>
+    <script src="contents/js/header.js"></script>
+
+    <script>
+        if (window.innerWidth > 768) {
+            VanillaTilt.init(document.querySelectorAll('.p-box'), {
+                max: 4,
+                speed: 1000,
+                glare: true,
+                "max-glare": 0.1,
+            });
+        }
+    </script>
+
+    <script>
+        const today = new Date();
+
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const date = String(today.getDate()).padStart(2, '0');
+
+        const days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+        const day = days[today.getDay()];
+
+        const formattedDate = `${year}.${month}.${date} ${day}`;
+        document.getElementById('today').textContent = formattedDate;
+    </script>
+
+</body>
+</html>

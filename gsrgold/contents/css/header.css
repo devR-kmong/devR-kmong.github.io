@@ -1,0 +1,163 @@
+.header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100rem;
+    padding-top: 39rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    transition: all .15s;
+    z-index: 99;
+}
+
+.header.more {
+    height: 290rem;
+    background-color: var(--sub-color);
+    box-shadow: 0 0 50px rgba(0, 0, 0, .3);
+}
+
+.Fixed {
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: var(--sub-color);
+}
+
+.header.more .menu-item a,
+.header.Fixed .menu-item a {
+    color: var(--main-color);
+}
+
+.header.more .menuBtns div,
+.header.Fixed .menuBtns div {
+    background-color: var(--main-color);
+}
+
+.logo {
+    width: 80rem;
+    height: fit-content;
+}
+
+.gnb {
+    width: 1200rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+}
+
+.menu-item a {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all .2s;
+}
+
+.menu-item i {
+    display: none;
+}
+
+.menu-head {
+    font-size: 20rem;
+    font-weight: 600;
+}
+
+.sub-menu {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    margin-top: 40rem;
+    transition: all .15s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub-menu.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-menu li a {
+    color: rgba(255, 255, 255, .5) !important;
+    padding: 0 40rem;
+    font-size: 17rem;
+    font-weight: 500;
+}
+
+.sub-menu li a:hover {
+    color: var(--main-color) !important;
+}
+
+.menuBtns {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    cursor: pointer;
+}
+
+.menuBtns .bar1,
+.menuBtns .bar2,
+.menuBtns .bar3 {
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+}
+
+
+/*==================================================*/
+@media (max-width: 1650px) {
+    .gnb {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .menu-item a {
+        font-size: 22rem;
+    }
+
+    .sub-menu li a {
+        padding: 0 55rem;
+        font-size: 19rem;
+    }
+    
+    .menuBtns .bar1,
+    .menuBtns .bar2,
+    .menuBtns .bar3 {
+        width: 24px;
+        height: 2px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        height: 90rem;
+        padding-top: 35rem;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    .menuBtns .bar1,
+    .menuBtns .bar2,
+    .menuBtns .bar3 {
+        width: 24px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+}
