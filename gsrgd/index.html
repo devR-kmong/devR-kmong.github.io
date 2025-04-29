@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contents/css/common.css">
+    <link rel="stylesheet" href="contents/css/header.css">
+    <link rel="stylesheet" href="contents/css/toggleMenu.css">
+    <link rel="stylesheet" href="contents/css/promotion.css">
+    <link rel="stylesheet" href="contents/css/article_common.css">
+    <link rel="stylesheet" href="contents/css/article1.css">
+    <link rel="stylesheet" href="contents/css/article2.css">
+    <link rel="stylesheet" href="contents/css/article3.css">
+    <link rel="stylesheet" href="contents/css/footer.css">
+    <link rel="stylesheet" href="contents/css/aos.css">
+    <link rel="shortcut icon" href="contents/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="contents/js/aos.js"></script>
+    <title>금사랑금거래소</title>
+</head>
+<style>
+    .Fixed {
+        position: absolute;
+        background-color: transparent;
+    }
+
+    .footer {
+        background-color: transparent;
+    }
+</style>
+<body>
+    <div class="header">
+        <div class="gnb">
+            <a href="<?php echo G5_URL?>" class="logo"><img src="contents/images/logo.svg"></a>
+            <div class="menu">
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>" class="menu-head">
+                        실시간 금시세
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>">
+                                실시간 금시세
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/product" class="menu-head">
+                        제품안내
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/product?sca=자체제작제품">
+                                자체제작제품
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/product?sca=위탁판매제품">
+                                위탁판매제품
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/deal_subject" class="menu-head">
+                        매입안내
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/deal_subject">
+                                매입품목
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/sub/deal_process">
+                                매입절차
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/branch" class="menu-head">
+                        지점안내
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/branch">
+                                지점정보
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="menu-item">
+                    <a href="<?php echo G5_URL?>/sub/about" class="menu-head">
+                        회사소개
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <li>
+                            <a href="<?php echo G5_URL?>/notice">
+                                공지사항
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo G5_URL?>/faq">
+                                자주하는질문
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="menuBtns">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="toggleMenu">
+                <div class="tgm-top">
+                    <a href="<?php echo G5_URL?>" class="logo logo-t"><img src="contents/images/logo.svg"></a>
+                    <div class="tgm-close">
+                        <img src="contents/images/close-w.svg">
+                    </div>
+                </div>
+                <div class="tgm-menu-wrapper">
+                    <div class="tgm-menu" data-target="data1">
+                        <a href="<?php echo G5_URL?>/product" class="tgm-head">
+                            제품안내<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data1">
+                            <li>
+                                <a href="<?php echo G5_URL?>/product?sca=자체제작제품">
+                                    자체제작제품
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/product?sca=위탁판매제품">
+                                    위탁판매제품
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data2">
+                        <a href="<?php echo G5_URL?>/sub/deal_subject" class="tgm-head">
+                            매입안내<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data2">
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/deal_subject">
+                                    매입품목
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/sub/deal_process">
+                                    매입절차
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data3">
+                        <a href="<?php echo G5_URL?>/branch" class="tgm-head">
+                            지점안내<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data3">
+                            <li>
+                                <a href="<?php echo G5_URL?>/branch">
+                                    지점정보
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tgm-menu" data-target="data4">
+                        <a href="<?php echo G5_URL?>/sub/about" class="tgm-head">
+                            회사소개<span>.</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="tgm-sub" id="data4">
+                            <li>
+                                <a href="<?php echo G5_URL?>/notice">
+                                    공지사항
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo G5_URL?>/faq">
+                                    자주하는질문
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="main-background"></div>
+        <section class="promotion">
+            <div class="promotion-wrapper">
+                <div class="p-text" data-aos="fade-up">
+                    <h5>
+                        금사랑금거래소
+                    </h5>
+                    <p>
+                        단순한 거래를 넘어 고객님과의<br/>
+                        가치 있는 만남을 소중히 여깁니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="article article1">
+            <div class="article-wrapper">
+                <div class="a1-box-wrapper">
+                    <div class="a1-box-group" data-aos="fade-up">
+                        <div class="a1-notice">
+                            <p>
+                                단위: 3.75g (자사골드바 기준)
+                            </p>
+                            <p id="today"></p>
+                        </div>
+                        <div class="a1-box">
+                            <div></div>
+                            <div class="a1-box-right">
+                                <div class="a1-box-text">
+                                    <h5>
+                                        내가살때 (VAT포함)
+                                    </h5>
+                                </div>
+                                <div class="a1-box-text">
+                                    <h5>
+                                        내가팔때
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a1-box">
+                            <div class="a1-box-left">
+                                <h5>
+                                    24K 금시세
+                                </h5>
+                            </div>
+                            <div class="a1-box-right">
+                                <div class="a1-box-text">
+                                    <h5 class="counter">642,000</h5>
+                                </div>
+                                <div class="a1-box-text">
+                                    <h5 class="counter">542,000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a1-box">
+                            <div class="a1-box-left">
+                                <h5>
+                                    18K 금시세
+                                </h5>
+                            </div>
+                            <div class="a1-box-right">
+                                <div class="a1-box-text">
+                                    <h5>제품시세적용</h5>
+                                </div>
+                                <div class="a1-box-text">
+                                    <h5 class="counter">398,000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a1-box">
+                            <div class="a1-box-left">
+                                <h5>
+                                    14K 금시세
+                                </h5>
+                            </div>
+                            <div class="a1-box-right">
+                                <div class="a1-box-text">
+                                    <h5>제품시세적용</h5>
+                                </div>
+                                <div class="a1-box-text">
+                                    <h5 class="counter">309,000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a1-box-group" data-aos="fade-up">
+                        <div class="a1-box">
+                            <ul>
+                                <li>
+                                    <span>골드바</span>
+                                    <div class="a1-box-line"></div>
+                                    <h5 class="counter">580,000</h5>
+                                </li>
+                                <li>
+                                    <span>3대 마크 주물금</span>
+                                    <div class="a1-box-line"></div>
+                                    <h5 class="counter">570,000</h5>
+                                </li>
+                                <li>
+                                    <span>검인 반지, 메달</span>
+                                    <div class="a1-box-line"></div>
+                                    <h5 class="counter">560,000</h5>
+                                </li>
+                                <li>
+                                    <span>검인 목걸이, 팔찌, 열쇠</span>
+                                    <div class="a1-box-line"></div>
+                                    <h5 class="counter">550,000</h5>
+                                </li>
+                                <li>
+                                    <span>실버바 1kg</span>
+                                    <div class="a1-box-line"></div>
+                                    <h5 class="counter">1,500,000</h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-top">
+                <a href="<?php echo G5_URL?>" class="logo-f">
+                    <img src="contents/images/logo-w.svg">
+                </a>
+                <div class="fBtn-wrapper">
+                    <div class="fBtn popup" data-target="data5">
+                        개인정보처리방침
+                    </div>
+                    <div class="fBtn popup" data-target="data6">
+                        이메일무단수집거부
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mid">
+                <div class="footer-text">
+                    <p>
+                        금사랑금거래소 | 대표: 박은영<br/>
+                        사업자등록번호 : 183-44-00731<br/>
+                        경기도 화성시 동탄역로 150 113호, 114호
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <div class="fb-left">
+                    <p>
+                        ⓒ 2025 금사랑금거래소. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fBtn-popup-wrapper">
+        <div class="fBtn-closeBtn">
+            <img src="contents/images/close.svg">
+        </div>
+        <div class="fBtn-popup">
+            <div class="fp-text" id="data5">
+                <div class="fpt-title">
+                    개인정보처리방침
+                </div>
+                <p>
+                    <b>제1조 (개인정보 수집에 대한 동의)</b>
+                    회사는 이용자들이 회사의 개인정보처리방침 또는 이용약관의 내용에 대하여 “동의”버튼 또는 체크박스를 클릭하면 개인정보 수집에 대해 동의한 것으로 봅니다.
+                    <br/><br/>
+                    <b>제2조 (개인정보 수집항목)</b>
+                    온라인 문의를 통한 상담을 위해 처리하는 개인정보 항목은 아래와 같습니다.<br/>
+                    수집항목 : 성명, 이메일, 전화번호
+                    <br/><br/>
+                    <b>제3조 (개인정보의 이용목적)</b>
+                    회사는 이용자의 사전 동의 없이는 이용자의 개인 정보를 공개하지 않으며, 원활한 고객상담, 각종 서비스의 제공을 위해 아래와 같이 개인정보를 수집하고 있습니다.<br/>
+                    모든 정보는 상기 목적에 필요한 용도 이외로는 사용되지 않으며 수집 정보의 범위나 사용 목적, 용도가 변경될 시에는 반드시 사전 동의를 구할 것입니다.
+                    <br/><br/>
+                    성명 : 제품상담에 따른 본인 확인<br/>
+                    이메일, 전화번호 : 제품상담 및 고지사항 전달, 새로운 서비스 및 신상품 정보 제공(DM, SMS, 이메일 등 이용)
+                    <br/><br/>
+                    이용자는 개인정보의 수집/이용에 대한 동의를 거부할 수 있습니다. 다만, 동의를 거부하는 경우 온라인 문의를 통한 상담은 불가하며 서비스 이용 및 혜택 제공에 제한을 받을 수 있습니다.
+                    <br/><br/>
+                    <b>제4조 (개인정보의 보유 및 이용기간)</b>
+                    원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.<br/>
+                    그리고 상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한 일정한 기간 동안 정보를 보관합니다.<br/>
+                    이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.
+                    <br/><br/>
+                    계약 또는 청약철회 등에 관한 기록 : 5년(전자상거래등에서의 소비자보호에 관한 법률)<br/>
+                    소비자의 불만 또는 분쟁처리에 관한 기록 : 3년(전자상거래등에서의 소비자 보호에 관한 법률)<br/>
+                    신용정보의 수집/처리 및 이용 등에 관한 기록 : 3년(신용정보의 이용 및 보호에 관한 법률)
+                    <br/><br/>
+                    회사는 귀중한 이용자의 개인정보를 안전하게 처리하며, 유출의 방지를 위하여 다음과 같은 방법을 통하여 개인정보를 파기합니다.<br/>
+                    종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.
+                    <br/><br/>
+                    전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.
+                </p>
+            </div>
+            <div class="fp-text" id="data6">
+                <div class="fpt-title">
+                    이메일무단수집거부
+                </div>
+                <p>
+                    전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여, 본 웹사이트에 게시된 이메일 주소를 무단으로 수집하는 것을 거부합니다. 무단으로 이메일 주소를 수집할 경우, 정보통신망법에 의해 형사 처벌될 수 있음을 유념하시기 바랍니다.
+                    <br/><br/>
+                    <b>[부칙]</b>
+                    (시행일) 본 이메일 무단 수집 거부 정책은 2025년 1월 1일부터 시행합니다.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="contents/js/common.js"></script>
+    <script src="contents/js/header.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="contents/js/jquery.counterup.min.js"></script>
+
+    <script>
+        const today = new Date();
+
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const date = String(today.getDate()).padStart(2, '0');
+
+        const days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+        const day = days[today.getDay()];
+
+        const formattedDate = `${year}년 ${month}월 ${date}일 ${day}`;
+        document.getElementById('today').textContent = formattedDate;
+    </script>
+
+    <script>
+        $(function () {
+            $('.popup').click(function () {
+                $('.fBtn-popup-wrapper').fadeIn(100).css('display', 'flex');
+                id = $($(this).data('target')).selector;
+                $('.fp-text').hide();
+                $('#' + id).show().css('display','flex');
+            });
+
+            $('.fBtn-closeBtn').click(function () {
+                $('.fBtn-popup-wrapper').fadeOut(100);
+            })
+        });
+
+        $(document).mouseup(function (e){
+            var LayerPopup = $('.fBtn-popup-wrapper');
+                if(LayerPopup.has(e.target).length === 0){
+                    LayerPopup.fadeOut(100);
+                }
+            });
+    </script>
+
+    <script>
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1500
+        });
+    </script>
+
+</body>
+</html>

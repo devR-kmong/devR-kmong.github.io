@@ -1,0 +1,44 @@
+.promotion {
+    width: 100%;
+    padding-top: 200rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.promotion-wrapper {
+    width: 1300rem;
+    z-index: 2;
+}
+
+.p-text {
+    color: #fff;
+    text-align: center;
+}
+
+.p-text h5 {
+    font-size: 50rem;
+}
+
+.p-text p {
+    font-size: 16rem;
+    line-height: 1.6;
+    letter-spacing: -0.5px;
+    margin-top: 20rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 1350px) {
+    .promotion-wrapper {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .promotion {
+        height: auto;
+        padding: 150rem 0 20rem 0;
+    }
+}
