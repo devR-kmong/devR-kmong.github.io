@@ -1,0 +1,127 @@
+.article4 {
+    position: relative;
+    padding-bottom: 0;
+    background-color: #f2f2f2;
+    background: url(../images/a4-bg.jpg);
+}
+
+.article4 .article-wrapper {
+    width: 100%;
+    padding: 0 !important;
+}
+
+.a4Swiper {
+    width: 100%;
+}
+
+.a4-wrapper {
+    position: relative;
+    width: 1150rem;
+    height: 700rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a4-pagination {
+    position: absolute;
+    bottom: 10%; left: 25rem;
+}
+
+.a4-pagination div i {
+    font-size: 30rem;
+}
+
+.a4-image {
+    height: 100%;
+    margin-bottom: -5px;
+    opacity: 0;
+}
+
+.a4-image img {
+    height: 100%;
+}
+
+.a4-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+    opacity: 0;
+}
+
+.a4-top h5 {
+    color: var(--main-color);
+    font-size: 20rem;
+    font-weight: 700;
+    font-family: 'Play';
+    letter-spacing: 0;
+    margin-bottom: 60rem;
+}
+
+.a4-top img {
+    margin-bottom: 15rem;
+}
+
+.a4-top p {
+    color: var(--sub-green);
+    font-size: 36rem;
+    line-height: 1.5;
+    font-family: 'MaruBuriBold';
+    white-space: nowrap;
+}
+
+.a4-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+}
+
+.a4-bottom p {
+    color: var(--sub-green);
+    font-size: 40rem;
+    font-family: 'MaruBuriBold';
+    display: flex;
+    align-items: baseline;
+    gap: 15rem;
+}
+
+.a4-bottom p span {
+    font-size: 20rem;
+    font-family: 'MaruBuriBold';
+}
+
+.a4-bottom ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    padding-left: 16rem;
+}
+
+.a4-bottom ul li {
+    color: #777;
+    font-size: 16rem;
+    list-style: circle;
+}
+
+.a4Swiper .swiper-slide-active .a4-text {
+    animation: slideAnimation 1.5s both;
+}
+
+.a4Swiper .swiper-slide-active .a4-image {
+    animation: slideAnimation2 1.5s both;
+}
+
+
+@keyframes slideAnimation2 {
+    0% {
+        opacity: 0;
+        transform: translateX(30rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*==================================================*/
