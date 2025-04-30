@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 30rem;
+    z-index: 4;
 }
 
 .a1-box-group {
@@ -30,7 +31,7 @@
 
 .a1-box {
     width: 70%;
-    padding: 50rem 0;
+    padding: 45rem 0 15rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +57,7 @@
 }
 
 .a1-box-right {
-    width: 50%;
+    width: 55%;
     display: flex;
     justify-content: space-between;
 }
@@ -64,13 +65,32 @@
 .a1-box-text {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
 }
 
 .a1-box-text h5 {
     width: 100%;
     font-size: 30rem;
     text-align: center;
+}
+
+.a1-box-text .arrow {
+    font-size: 16px;
+    display: flex;
+    gap: 5px;
+}
+
+.a1-box-text span {
+    opacity: .7;
+    letter-spacing: 0;
+}
+
+.a1-box-title {
+    font-size: 40rem;
+    font-weight: 600;
+    margin-bottom: 50rem;
 }
 
 .a1-box ul {
@@ -92,6 +112,7 @@
 
 .a1-box ul li h5 {
     font-size: 28rem;
+    opacity: 1 !important;
 }
 
 .a1-box-line {
@@ -138,6 +159,11 @@
     .a1-box-left h5,
     .a1-box-text h5 {
         font-size: 24rem;
+    }
+
+    .a1-box-title {
+        font-size: 30rem;
+        margin-bottom: 30rem;
     }
 
     .a1-box ul li {

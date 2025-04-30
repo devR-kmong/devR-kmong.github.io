@@ -27,7 +27,7 @@
     }
 
     .footer {
-        background-color: transparent;
+        background: linear-gradient(to top, rgba(0, 0, 0, .8) 70%, transparent);
     }
 </style>
 <body>
@@ -201,17 +201,20 @@
         </div>
     </div>
     <main>
-        <div class="main-background"></div>
+        <div class="main-background">
+            <div class="video">
+                <div class="video-overlay"></div>
+                <video autoplay muted loop playsinline id="myVideo">
+                    <source src="contents/videos/main.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
         <section class="promotion">
             <div class="promotion-wrapper">
-                <div class="p-text" data-aos="fade-up">
+                <div class="p-text">
                     <h5>
-                        금사랑금거래소
+                        금사랑 금거래소
                     </h5>
-                    <p>
-                        단순한 거래를 넘어 고객님과의<br/>
-                        가치 있는 만남을 소중히 여깁니다.
-                    </p>
                 </div>
             </div>
         </section>
@@ -249,9 +252,21 @@
                             <div class="a1-box-right">
                                 <div class="a1-box-text">
                                     <h5 class="counter">642,000</h5>
+                                    <div class="arrow">
+                                        <p style="color: red; transform: rotate(90deg);">
+                                            <i class="ri-play-reverse-large-fill"></i>
+                                        </p>
+                                        <span>2,000</span>
+                                    </div>
                                 </div>
                                 <div class="a1-box-text">
                                     <h5 class="counter">542,000</h5>
+                                    <div class="arrow">
+                                        <p>
+                                            <i class="ri-subtract-fill"></i>
+                                        </p>
+                                        <span>0</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -267,6 +282,12 @@
                                 </div>
                                 <div class="a1-box-text">
                                     <h5 class="counter">398,000</h5>
+                                    <div class="arrow">
+                                        <p style="color: blue; transform: rotate(-90deg);">
+                                            <i class="ri-play-reverse-large-fill"></i>
+                                        </p>
+                                        <span>1,000</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -282,11 +303,74 @@
                                 </div>
                                 <div class="a1-box-text">
                                     <h5 class="counter">309,000</h5>
+                                    <div class="arrow">
+                                        <p style="color: red; transform: rotate(90deg);">
+                                            <i class="ri-play-reverse-large-fill"></i>
+                                        </p>
+                                        <span>1,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a1-box">
+                            <div class="a1-box-left">
+                                <h5>
+                                    백금시세
+                                </h5>
+                            </div>
+                            <div class="a1-box-right">
+                                <div class="a1-box-text">
+                                    <h5 class="counter">194,000</h5>
+                                    <div class="arrow">
+                                        <p style="color: red; transform: rotate(90deg);">
+                                            <i class="ri-play-reverse-large-fill"></i>
+                                        </p>
+                                        <span>22,000</span>
+                                    </div>
+                                </div>
+                                <div class="a1-box-text">
+                                    <h5 class="counter">150,000</h5>
+                                    <div class="arrow">
+                                        <p style="color: blue; transform: rotate(-90deg);">
+                                            <i class="ri-play-reverse-large-fill"></i>
+                                        </p>
+                                        <span>1,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="a1-box">
+                            <div class="a1-box-left">
+                                <h5>
+                                    은시세
+                                </h5>
+                            </div>
+                            <div class="a1-box-right">
+                                <div class="a1-box-text">
+                                    <h5 class="counter">6,670</h5>
+                                    <div class="arrow">
+                                        <p>
+                                            <i class="ri-subtract-fill"></i>
+                                        </p>
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                                <div class="a1-box-text">
+                                    <h5 class="counter">5,310</h5>
+                                    <div class="arrow">
+                                        <p>
+                                            <i class="ri-subtract-fill"></i>
+                                        </p>
+                                        <span>0</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="a1-box-group" data-aos="fade-up">
+                        <div class="a1-box-title">
+                            제품별 매입시세
+                        </div>
                         <div class="a1-box">
                             <ul>
                                 <li>

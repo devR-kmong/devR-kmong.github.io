@@ -8,7 +8,7 @@
     align-items: center;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
-    background-color: rgba(25, 28, 64, 0.719);
+    background-color: rgba(0, 0, 0, .7);
     display: none;
 }
 
