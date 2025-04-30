@@ -87,7 +87,7 @@ button, input {
 }
 
 .video video {
-    height: 1450px;
+    height: 1080px;
 }
 
 .video-overlay {
@@ -101,6 +101,20 @@ button, input {
 
 
 /*==================================================*/
+@media (min-height: 1081px) {
+    .video video {
+        height: 1450px;
+    }
+}
+
+
+@media (min-width: 1921px) {
+    .video video {
+        height: 1450px;
+    }
+}
+
+
 @media (max-width:1650px) {
     html,
     html.safari.desktop {
