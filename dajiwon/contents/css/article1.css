@@ -63,18 +63,28 @@
     margin-top: 30rem;
 }
 
+.a1-box-num{
+    color: var(--main-color);
+    font-size: 18rem;
+    font-weight: 700;
+    margin-bottom: 20rem;
+}
+
 .a1-box-text h5 {
     color: #222;
     font-size: 26rem;
     font-weight: 700;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 12rem;
 }
 
 .a1-box-text h5 span {
-    color: var(--main-color);
-    font-size: 16rem;
+    color: #ccc;
+    font-size: 20rem;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    letter-spacing: -0.5px;
 }
 
 .a1-box-text p {
