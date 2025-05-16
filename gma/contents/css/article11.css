@@ -1,0 +1,24 @@
+.article11 {
+    background: url(../images/a5-bg.jpg);
+}
+
+.a11-title {
+    margin-bottom: 4rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 850px) {
+    .a11-title {
+        width: 75%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a11-title {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}

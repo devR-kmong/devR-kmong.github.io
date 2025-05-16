@@ -1,0 +1,147 @@
+.article4 {
+    position: relative;
+    background-color:var(--main-color);
+}
+
+.article4 .article-wrapper {
+    width: 85%;
+}
+
+.a4-wrapper {
+    width: 100%;
+    padding: 120px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid #000;
+    background: url(../images/a4-bg.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.a4-title {
+    margin-bottom: 5rem;
+}
+
+.a4-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.a4-graph {
+    width: 50%;
+}
+
+.a4-receipt {
+    position: relative;
+    width: 40%;
+}
+
+.a4-price {
+    position: absolute;
+    bottom: 15%; left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    animation: blink .8s step-end infinite;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .a4-box-wrapper {
+        gap: 8rem;
+    }
+    
+    .a4-graph {
+        width: 45%;
+    }
+
+    .a4-receipt {
+        width: 35%;
+    }
+}
+
+
+@media (max-width: 1650px) {
+    .a4-wrapper {
+        padding: 80px 40px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .a4-wrapper {
+        background-repeat: repeat;
+        background-size: 250%;
+    }
+
+    .a4-title {
+        width: 75%;
+    }
+    
+    .a4-box-wrapper {
+        flex-direction: column;
+    }
+
+    .a4-graph,
+    .a4-receipt {
+        width: 90%;
+    }
+
+    .a4-receipt img:first-child {
+        width: 100%;
+    }
+
+    .a4-graph {
+        margin-right: 50px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article4 {
+        padding: 30px 0;
+    }
+
+    .article4 .article-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .a4-wrapper {
+        padding: 60px 30px;
+        border: 4px solid #000;
+    }
+
+    .a4-title {
+        width: 85%;
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a4-box-wrapper {
+        gap: 3rem;
+    }
+    
+    .a4-graph,
+    .a4-receipt {
+        width: 95%;
+    }
+
+    .a4-graph {
+        margin-right: 30px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a4-wrapper {
+        padding: 30px;
+    }
+}
