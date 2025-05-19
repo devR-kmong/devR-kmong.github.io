@@ -1,0 +1,98 @@
+.article2 {
+    background: #111;
+    background: url(../images/a2-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    border: 15rem solid var(--main-color);
+    border-top: none;
+    border-bottom: none;
+}
+
+.a2-title {
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+
+.a2-logo {
+    position: absolute;
+    top: 0; right: 0;
+    width: 350rem;
+    animation: blink2 1s infinite;
+}
+
+.a2-title h5 {
+    font-size: 80rem;
+    line-height: 1.15;
+}
+
+.a2-title h5 span {
+    font-size: 80rem;
+}
+
+.a2-title h6 {
+    color: #ddd;
+    font-size: 22rem;
+    font-weight: 400;
+    font-family: 'Gmarket Sans';
+    line-height: 1.6;
+    margin-top: 30rem;
+}
+
+.a2-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100rem;
+    margin-top: 80rem;
+}
+
+.a2-box {
+    position: relative;
+    padding: 0 60rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 6px solid var(--main-color);
+    background-color: rgba(255, 255, 255, .07);
+}
+
+.a2-box-image {
+    position: absolute;
+    bottom: -4px; right: 60rem;
+}
+
+.a2-box-image img {
+    height: 250rem;
+}
+
+.a2-box-num {
+    position: absolute;
+    top: -62rem; left: 0;
+    color: #fff;
+    padding: 15rem 20rem;
+    font-size: 28rem;
+    font-weight: 700;
+    font-family: 'Gmarket Sans';
+    background-color: var(--main-color);
+}
+
+.a2-box-text {
+    width: 50%;
+    margin: 80rem 0;
+}
+
+.a2-box-text h5 {
+    color: #fff;
+    font-size: 38rem;
+    font-family: 'Gmarket Sans';
+}
+
+.a2-box-text p {
+    color: #ccc;
+    font-size: 20rem;
+    line-height: 1.5;
+    margin-top: 20rem;
+}
+
+
+/*==================================================*/

@@ -1,0 +1,109 @@
+.article4 {
+    position: relative;
+    padding: 0;
+    height: 90vh;
+    background-color: #111;
+    border: 15rem solid var(--main-color);
+    border-top: none;
+    border-bottom: none;
+}
+
+.a4-image {
+    position: absolute;
+    bottom: -50%;
+    width: 55%;
+}
+
+.article4 .article-wrapper {
+    width: 100% !important;
+}
+
+.a4-title {
+    position: absolute;
+    top: 120rem;
+    width: fit-content;
+    text-align: center;
+}
+
+.a4-title p {
+    color: #fff;
+}
+
+.a4-title h5 span {
+    font-size: 90rem;
+}
+
+.a4-title h6 {
+    margin-top: 15rem;
+}
+
+.a4-box-wrapper {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.a4-box {
+    width: 50%;
+    padding: 300rem 200rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all .6s ease;
+    overflow: hidden;
+}
+
+.a4-box-text {
+    text-align: center;
+}
+
+.a4-box-text p {
+    color: #fff;
+    font-size: 30rem;
+    font-family: 'Nanum Myeongjo';
+    margin-bottom: 20rem;
+}
+
+.a4-box-text h5 {
+    color: rgba(255, 255, 255, .2);
+    font-size: 70rem;
+    font-family: 'Danjo-bold-Regular';
+    -webkit-text-stroke: 1px #fff;
+    transition: all .6s ease;
+}
+
+.a4-left {
+    align-items: flex-start;
+    background: #333;
+    background: url(../images/a4-left.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.a4-right {
+    align-items: flex-end;
+    background: #444;
+    background: url(../images/a4-right.jpg) no-repeat;
+    background-position: right;
+    background-size: 100%;
+}
+
+.a4-box:hover {
+    padding: 300rem 250rem;
+    background-size: 105%;
+}
+
+.a4-box:hover h5 {
+    color: #fff;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .a4-box-text p {
+        font-size: 40rem;
+    }
+
+    .a4-box-text h5 {
+        font-size: 90rem;
+    }
+}

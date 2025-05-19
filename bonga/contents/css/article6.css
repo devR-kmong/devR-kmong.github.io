@@ -1,0 +1,40 @@
+.article6 {
+    position: relative;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.a6-1 {
+    position: absolute;
+    top: -10%; left: -450rem;
+    width: 900rem;
+    opacity: .3 !important;
+}
+.a6-2 {
+    position: absolute;
+    bottom: -17%; right: -10%;
+    width: 700rem;
+    z-index: 12;
+}
+
+.a6-table-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+
+.a6-table {
+    width: 100%;
+}
+
+.a6-notice {
+    position: absolute;
+    top: 100rem;
+    border: 1px solid rgba(255, 255, 255, .15);
+}
+
+
+/*==================================================*/
