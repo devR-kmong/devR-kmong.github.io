@@ -1,0 +1,246 @@
+.toggle-menu {
+    position: relative;
+    position: absolute;
+    top: -1500%; left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #000;
+    touch-action: none;
+    transition: all .6s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 998;
+}
+
+.toggle-menu::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 100rem;
+    height: 100rem;
+    background-color: var(--main-color);
+    z-index: 999;
+}
+
+.tm-list-wrapper {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 120rem;
+}
+
+.tm-list {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tm-listBox {
+    padding: 30rem 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+    transition: all 1s;
+    padding-left: 80px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.tm-listBox:last-child {
+    border-bottom: none;
+}
+.tm-listBox:nth-of-type(1) {
+    transition-delay: .3s;
+}
+.tm-listBox:nth-of-type(2) {
+    transition-delay: .4s;
+}
+.tm-listBox:nth-of-type(3) {
+    transition-delay: .5s;
+}
+.tm-listBox:nth-of-type(4) {
+    transition-delay: .6s;
+}
+.tm-listBox:nth-of-type(5) {
+    transition-delay: .7s;
+}
+.tm-listBox:nth-of-type(6) {
+    transition-delay: .8s;
+}
+.tm-listBox:nth-of-type(7) {
+    transition-delay: .9s;
+}
+
+.toggle-menu.on {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.toggle-menu.on .tm-listBox {
+    padding-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.tm-l-head {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.tm-l-head i {
+    display: none;
+}
+
+.tm-listBox ul {
+    display: flex;
+    gap: 30rem;
+}
+
+.tm-listBox ul li {
+    color: rgba(255, 255, 255, .7);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.tm-listBox ul li:hover {
+    color: #fff;
+}
+
+.gnb-right {
+    display: none;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .toggle-menu::after {
+        display: none;
+    }
+
+    .gnb-right {
+        display: flex;
+    }
+    
+    .menuBtns {
+        position: relative;
+        width: 110rem;
+        height: 110rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20rem;
+        background-color: var(--main-color);
+        cursor: pointer;
+        margin: 0;
+        margin-right: -24px;
+        z-index: 999;
+    }
+
+    .menuBtns .bar {
+        width: 32px;
+        height: 2px;
+        background-color: #fff;
+        transition: all .3s ease;
+    }
+
+    .menuBtns .bar1 {
+        position: absolute;
+    }
+
+    .menuBtns .bar2 {
+        transition: width .3s ease;
+    }
+    .menuBtns .bar3 {
+        position: absolute;
+        width: 20px;
+        transition-delay: .1s;
+    }
+    .menuBtns .bar4 {
+        transition: width .3s ease;
+        transition-delay: .2s;
+    }
+
+    .menuBtns .bar1.change {
+        transform: rotate(45deg);
+    }
+    .menuBtns .bar2.change,
+    .menuBtns .bar4.change {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menuBtns .bar3.change {
+        transform: rotate(-45deg);
+        width: 32px;
+    }
+
+    .tm-image {
+        display: none;
+    }
+
+    .tm-list-wrapper {
+        width: 100%;
+        padding-left: 60rem;
+    }
+
+    .menuBtns .bar,
+    .menuBtns .bar3.change {
+        width: 36rem;
+        gap: 12px;
+    }
+    
+    .tm-l-head {
+        width: fit-content;
+        width: 100%;
+        padding: 30rem 0;
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 20rem;
+        cursor: pointer;
+    }
+
+    .tm-l-head i {
+        font-size: 20px;
+        display: flex;
+        font-weight: lighter;
+        transition: all .3s;
+    }
+
+    .i-rotate2 {
+        transform: rotate(135deg);
+    }
+    
+    .tm-listBox {
+        padding: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .15);
+    }
+
+    .tm-listBox ul {
+        display: none;
+    }
+
+    .tm-listBox ul.on {
+        padding-bottom: 40rem;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    
+    .tm-listBox ul li {
+        color: #ffffffb5;
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .tm-list-wrapper {
+        padding-top: 0;
+    }
+}

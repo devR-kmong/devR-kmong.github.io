@@ -1,0 +1,128 @@
+.article4 {
+    padding: 200rem 0;
+    background: url(../images/a4-bg.png);
+}
+
+.a4-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 100rem;
+}
+
+.a4-title {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+}
+
+.a4-title p {
+    font-size: 15rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.a4-title h5 {
+    font-size: 55rem;
+    line-height: 1.2;
+    font-family: 'GMarket Sans';
+}
+
+.a4-title a {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    width: fit-content;
+    font-size: 18rem;
+    margin-top: 40rem;
+    transition: all .2s;
+}
+.a4-title a:hover {
+    gap: 15rem;
+}
+
+.a4-box-wrapper {
+    width: 55%;
+    display: flex;
+    gap: 40rem;
+}
+
+.a4-box-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40rem;
+}
+.a4-box-group:nth-child(2) {
+    margin-top: 100rem;
+}
+
+.a4-box {
+    width: 100%;
+    padding: 40rem 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30rem;
+    border-radius: 30rem;
+    border: 1px solid rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 15rem 50rem 0 rgba(0, 0, 0, .1);
+}
+
+.a4-box-num {
+    color: #fff;
+    font-size: 16rem;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    letter-spacing: 0;
+    text-align: right;
+}
+
+.a4-box-text {
+    color: #fff;
+    width: 100%;
+}
+
+.a4-box-text h5 {
+    font-size: 26rem;
+}
+
+.a4-box-text h4 {
+    font-size: 15rem;
+    letter-spacing: 1px;
+    margin-top: 15rem;
+}
+
+.a4-box-text p {
+    color: rgba(255, 255, 255, .6);
+    font-size: 16rem;
+    line-height: 1.4;
+    margin-top: 20rem;
+}
+
+.a4-arrow {
+    color: #fff;
+    width: 50rem;
+    height: 50rem;
+    font-size: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .2);
+    transition: all .3s;
+}
+
+.a4-box:hover .a4-arrow {
+    transform: rotate(-45deg);
+    background-color: rgba(255, 255, 255, .4);
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    
+}
