@@ -138,27 +138,4 @@
         padding: 0 20px;
     }
 }
-
-
-@media (min-width: 1251px) {
-    .header:hover {
-        background-color: #fff;
-    }
-    
-    .header:hover .logo-w {
-        display: none;
-    }
-    
-    .header:hover .logo {
-        display: flex;
-    }
-    
-    .header:hover .gnb-menu li a {
-        color: #3d3d3d;
-        font-weight: 700;
-    }
-
-    .header:hover .menuBtns {
-        background-color: var(--main-color);
-    }
 }
