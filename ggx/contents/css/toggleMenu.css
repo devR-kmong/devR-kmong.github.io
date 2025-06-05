@@ -1,0 +1,140 @@
+.toggle-menu {
+    position: absolute;
+    top: -1500%; left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, .8);
+    touch-action: none;
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 996;
+}
+
+.menuBtns {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    transition: all .3s;
+    cursor: pointer;
+    margin-right: 50px;
+    z-index: 999;
+}
+
+.menuBtns .bar {
+    width: 60px;
+    height: 2px;
+    background-color: #fff;
+    transition: all .3s ease;
+}
+
+.menuBtns .bar1 {
+    position: absolute;
+}
+
+.menuBtns .bar2 {
+    transition: width .3s ease;
+}
+.menuBtns .bar3 {
+    position: absolute;
+    transition-delay: .1s;
+}
+.menuBtns .bar4 {
+    transition: width .3s ease;
+    transition-delay: .2s;
+}
+
+.menuBtns .bar1.change {
+    transform: rotate(45deg);
+}
+.menuBtns .bar2.change,
+.menuBtns .bar4.change {
+    opacity: 0;
+    visibility: hidden;
+}
+.menuBtns .bar3.change {
+    transform: rotate(-45deg);
+}
+
+.tm-list-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100rem;
+}
+
+.tm-list {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tm-listBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+
+.toggle-menu.on {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.tm-l-head {
+    font-size: 60rem;
+    font-weight: 700;
+    font-family: 'artific';
+    opacity: .3;
+}
+.tm-listBox:hover .tm-l-head {
+    opacity: 1;
+}
+
+.tm-l-head i {
+    display: none;
+}
+
+.tm-listBox ul {
+    display: flex;
+    gap: 30rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+}
+
+.tm-listBox ul li a {
+    color: rgba(255, 255, 255, .7);
+    font-size: 22rem;
+    font-weight: 300;
+    font-family: 'artific';
+    letter-spacing: 0;
+}
+.tm-listBox ul li a:hover {
+    color: var(--main-color);
+}
+
+.tm-listBox:hover ul {
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 40rem;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .tm-l-head {
+        font-size: 70rem;
+    }
+}

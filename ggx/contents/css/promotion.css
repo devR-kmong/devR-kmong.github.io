@@ -1,0 +1,14 @@
+.promotion {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper,
+.swiper .swiper-slide .swiper-gl-image {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*==================================================*/
