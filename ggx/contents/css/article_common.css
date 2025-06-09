@@ -6,10 +6,7 @@
     justify-content: center;
     align-items: center;
     background-color: #000;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-size: cover !important;
-    padding: 120rem 0;
+    padding: 160rem 0;
 }
 
 .article-wrapper {
@@ -23,6 +20,6 @@
 /*==================================================*/
 @media (max-width: 768px) {
     .article {
-        padding: 60rem 0;
+        padding: 100rem 0;
     }
 }

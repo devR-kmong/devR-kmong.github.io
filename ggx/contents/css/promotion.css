@@ -3,8 +3,14 @@
     height: 100vh;
 }
 
-.swiper,
-.swiper .swiper-slide .swiper-gl-image {
+.pSwiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.pSwiper .swiper,
+.pSwiper .swiper .swiper-slide .swiper-gl-image {
     width: 100%;
     height: 100%;
 }

@@ -1,4 +1,28 @@
+.article2 {
+    position: relative;
+}
 
+.a2-sticky {
+    position: sticky;
+    top: 50%;
+    height: fit-content;
+    padding-bottom: 30rem;
+    color: #fff;
+    font-size: 80rem;
+    font-weight: 300;
+    font-family: 'artific';
+    z-index: 100;
+    opacity: 0;
+}
+
+.a2Swiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.a2Swiper .swiper-slide img {
+    border-radius: 70rem;
+}
 
 
 /*==================================================*/
