@@ -1,4 +1,5 @@
 .article4 {
+    background-color: #fff;
     overflow: hidden;
 }
 
@@ -31,15 +32,15 @@
 }
 
 #slider div .main {
-    width: 350rem;
-    box-shadow: 10rem 0 30rem rgba(0, 0, 0, .5);
+    width: 300rem;
+    box-shadow: 10rem 0 5rem rgba(0, 0, 0, .2);
     z-index: 3;
 }
 
 #slider div .landing {
-    width: 120rem;
+    width: 200rem;
     transform: scale(.9);
-    margin-left: -15rem;
+    margin-left: -10rem;
     z-index: 2;
 }
 
