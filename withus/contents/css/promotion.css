@@ -79,7 +79,6 @@
     align-items: center;
     gap: 20rem;
     animation: upDown 1.5s ease-in-out infinite;
-    filter: invert(1);
 }
 
 @keyframes upDown {
