@@ -1,0 +1,87 @@
+.a5-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.a5-box-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50rem;
+}
+
+.a5-box {
+    width: 100%;
+    height: 150rem;
+    color: #aaa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.a5-box h5 {
+    font-size: 26rem;
+}
+
+.a5-box p {
+    font-size: 16rem;
+    line-height: 1.5;
+    margin-top: 15rem;
+}
+
+.a5-box-title {
+    height: 100rem;
+    font-size: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+}
+
+.a5-box-title i {
+    font-size: 40rem;
+}
+
+.a5-box-title img {
+    height: 50rem;
+}
+
+.a5-box-group.a5-right .a5-box {
+    position: relative;
+    width: 87%;
+    background-color: #000;
+    transform: scale(1.15);
+    border: 2px solid var(--main-color);
+    box-shadow: -20rem 0 20rem rgba(0, 0, 0, .4);
+    overflow: hidden;
+}
+.a5-box-group.a5-right .a5-box::before {
+    content: '';
+    position: absolute;
+    top: 0; right: -25rem;
+    width: 50rem;
+    height: 20rem;
+    transform: rotate(45deg);
+    background-color: var(--main-color);
+}
+
+.a5-box-group.a5-right .a5-box h5 {
+    color: var(--main-color);
+}
+
+.a5-box-group.a5-right .a5-box p {
+    color: #ccc;
+    font-weight: 500;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    
+}
