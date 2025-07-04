@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
+
 /* promotion */
 const prom = gsap.timeline();
 
@@ -23,12 +24,6 @@ ScrollTrigger.create({
     onEnter: () => {
         document.querySelector(".header").style.display = "none";
     },
-    onLeave: () => {
-        document.querySelector(".header").style.display = "block";
-    },
-    onLeaveBack: () => {
-        document.querySelector(".header").style.display = "block";
-    },
     onEnterBack: () => {
         document.querySelector(".header").style.display = "none";
     }
@@ -50,7 +45,45 @@ ScrollTrigger.create({
     scrub: 2,
     pin: true,
     anticipatePin: 1,
+    onEnter: () => {
+        document.querySelector(".header").style.display = "block";
+        $('.gnb ul li a').addClass('black');
+        $('.logo-w').addClass('hide');
+        $('.logo').removeClass('hide');
+    },
+    onLeaveBack: () => {
+        document.querySelector(".header").style.display = "block";
+        $('.gnb ul li a').removeClass('black');
+        $('.logo').addClass('hide');
+        $('.logo-w').removeClass('hide');
+    },
+    onEnterBack: () => {
+        $('.gnb ul li a').addClass('black');
+        $('.logo-w').addClass('hide');
+        $('.logo').removeClass('hide');
+    }
 });
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                $('.gnb ul li a').addClass('black');
+                $('.logo-w').addClass('hide');
+                $('.logo').removeClass('hide');
+            } else {
+                $('.gnb ul li a').removeClass('black');
+                $('.logo').addClass('hide');
+                $('.logo-w').removeClass('hide');
+            }
+        });
+    },
+    {
+        threshold: 0, // 단 1px이라도 보이면 감지됨
+    }
+);
+
+observer.observe(document.querySelector(".article1"));
 
 
 
@@ -97,7 +130,39 @@ ScrollTrigger.create({
     scrub: 2,
     pin: true,
     anticipatePin: 1,
+    onEnter: () => {
+        $('.gnb ul li a').addClass('black');
+        $('.logo-w').addClass('hide');
+        $('.logo').removeClass('hide');
+    },
+    onLeaveBack: () => {
+        $('.gnb ul li a').removeClass('black');
+        $('.logo').addClass('hide');
+        $('.logo-w').removeClass('hide');
+    },
+    onEnterBack: () => {
+        $('.gnb ul li a').addClass('black');
+        $('.logo-w').addClass('hide');
+        $('.logo').removeClass('hide');
+    }
 });
+
+const observer2 = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+                $('.gnb ul li a').removeClass('black');
+                $('.logo').addClass('hide');
+                $('.logo-w').removeClass('hide');
+            }
+        });
+    },
+    {
+        threshold: 0, // 단 1px이라도 보이면 감지됨
+    }
+);
+
+observer2.observe(document.querySelector(".article4"));
 
 
 
