@@ -4,9 +4,8 @@ gsap.registerPlugin(ScrollTrigger);
 /* promotion */
 const prom = gsap.timeline();
 
-prom.to(".p-sb", { y: -130, scale: 0.5, autoAlpha: 0 })
+prom.to(".p-sb", { y: -270, scale: 0.5, autoAlpha: 0 })
     .to(".scrollDown", { bottom: '-70rem' }, "<")
-    .to(".white-bg", { autoAlpha: 0 }, "<")
     .from(".main-background", { autoAlpha: 0 }, "<")
     .from(".p-sbw", { autoAlpha: 0 })
     .from(".p-text h6", { y: 50, autoAlpha: 0 }, "<")
