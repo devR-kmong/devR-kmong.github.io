@@ -35,8 +35,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20rem;
-    margin-top: 30rem;
+    gap: 50rem;
+    margin-top: 20rem;
 }
 
 .a1-icon {
@@ -46,6 +46,7 @@
 
 .a1-icon.reverse {
     animation: marquee1 10s linear infinite;
+    filter: grayscale(1);
     opacity: .3;
 }
 
@@ -71,14 +72,11 @@
 
 .a1-icon {
     display: flex;
-    gap: 20rem;
+    gap: 100rem;
 }
 
 .a1-icon img {
-    width: 100rem;
-    min-width: 100rem;
-    border-radius: 30rem;
-    overflow: hidden;
+    height: 45rem;
 }
 
 
