@@ -36,6 +36,10 @@
     letter-spacing: -0.5px;
 }
 
+.gnb ul li a.black {
+    color: #222;
+}
+
 .gnb ul li a:hover {
     color: var(--main-color);
 }
@@ -45,8 +49,13 @@
     top: 0;
 }
 
-.logo{
+.logo, .logo-w {
     width: 180rem;
+}
+
+.logo.hide,
+.logo-w.hide {
+    display: none;
 }
 
 #check,

@@ -28,6 +28,11 @@
     color: #fff;
     font-size: 60rem;
     font-family: 'Montserrat';
+    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-color: #0c0c0c;
+    paint-order: stroke fill;
+    text-align: center;
+    text-shadow: 4px 6px 0 #0c0c0c, 4px 6px 0 #0c0c0c, 4px 6px 0 #0c0c0c;
 }
 
 .p-text h5 {
@@ -35,6 +40,12 @@
     font-size: 120rem;
     font-weight: 700;
     font-family: 'Montserrat';
+    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-color: #0c0c0c;
+    paint-order: stroke fill;
+    text-align: center;
+    text-shadow: 4px 6px 0 #0c0c0c, 4px 6px 0 #0c0c0c, 4px 6px 0 #0c0c0c;
+    text-transform: uppercase;
     letter-spacing: -5px;
 }
 
@@ -42,6 +53,11 @@
     color: #fff;
     font-size: 24rem;
     font-family: 'Montserrat';
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #0c0c0c;
+    paint-order: stroke fill;
+    text-align: center;
+    text-shadow: 2px 3px 0 #0c0c0c, 2px 3px 0 #0c0c0c, 2px 3px 0 #0c0c0c;
     line-height: 1.5;
     font-weight: 500;
     margin-top: 30rem;
