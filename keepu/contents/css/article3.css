@@ -1,0 +1,26 @@
+.article3 {
+    height: 100vh;
+    padding: 0 !important;
+    margin-bottom: -1px;
+}
+
+.a3-bg {
+    transform: scale(1.3);
+}
+
+.article3 .at-text {
+    position: absolute;
+    bottom: 150rem; left: 0;
+    z-index: 3;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

@@ -1,0 +1,28 @@
+.article6 {
+    padding: 0;
+}
+
+.a6-title {
+    width: 100%;
+    text-align: left;
+}
+
+.a6-image {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15rem 15rem 0 0;
+    margin-bottom: -5px;
+    overflow: hidden;
+}
+
+.a6-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    
+}
