@@ -1,4 +1,5 @@
 .promotion {
+    position: relative;
     width: 100%;
     padding-bottom: 0 !important;
     display: flex;
@@ -6,7 +7,22 @@
     align-items: center;
 }
 
+.p-image {
+    position: absolute;
+    bottom: -330rem;
+    width: 90%;
+    border-radius: 15rem 15rem 0 0;
+    margin-bottom: -5px;
+    overflow: hidden;
+}
+
+.p-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
 .p-text {
+    height: 100vh;
     text-align: center;
     margin: 30rem 0 80rem 0;
 }
@@ -28,19 +44,6 @@
     line-height: 1.5;
     font-weight: 500;
     margin-top: 33rem;
-}
-
-.p-image {
-    width: 90%;
-    margin: 0 auto;
-    border-radius: 15rem 15rem 0 0;
-    margin-bottom: -5px;
-    overflow: hidden;
-}
-
-.p-image img {
-    width: 100%;
-    object-fit: cover;
 }
 
 

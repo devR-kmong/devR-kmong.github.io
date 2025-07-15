@@ -12,7 +12,7 @@ ScrollTrigger.create({
     trigger: ".promotion",
     start: "top top",
     end: "+=500",
-    scrub: 2,
+    scrub: true,
 });
 
 
@@ -46,15 +46,13 @@ ScrollTrigger.create({
     end: "+=2000",
     scrub: true,
     pin: true,
-    anticipatePin: 1,
 });
 
 
 /* article3 */
 const article3 = gsap.timeline();
-const isMobile2 = window.innerWidth < 769;
 
-article3.to(".a3-bg", isMobile2 ? { scale: 1.2 } : { x: 150 })
+article3.to(".a3-bg", isMobile ? { scale: 1.2 } : { x: 150 })
     .from(".article3 .at-text", { y: 80, autoAlpha: 0 })
 
 ScrollTrigger.create({
@@ -64,7 +62,6 @@ ScrollTrigger.create({
     end: "+=2000",
     scrub: true,
     pin: true,
-    anticipatePin: 1,
 });
 
 
@@ -82,7 +79,6 @@ ScrollTrigger.create({
     end: "+=2000",
     scrub: true,
     pin: true,
-    anticipatePin: 1,
 });
 
 
@@ -98,7 +94,7 @@ ScrollTrigger.create({
     trigger: ".article6",
     start: "top top",
     end: "+=500",
-    scrub: 2,
+    scrub: true,
 });
 
 
@@ -115,13 +111,4 @@ ScrollTrigger.create({
     end: "+=2000",
     scrub: true,
     pin: true,
-    anticipatePin: 1,
-});
-
-
-
-window.addEventListener("load", function () {
-    setTimeout(() => {
-        ScrollTrigger.refresh(true);
-    }, 300);
 });
