@@ -1,0 +1,85 @@
+.article3 {
+    position: relative;
+    padding-bottom: 0;
+    background-color: #000;
+}
+
+.a3-bulb1 {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 2;
+}
+.a3-bulb2 {
+    position: absolute;
+    top: 0; right: 0;
+    z-index: 2;
+}
+
+.a3-bg {
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 100%;
+    background: url(../images/a3-bg.jpg) no-repeat;
+    background-size: cover;
+    opacity: .6;
+    z-index: 1;
+}
+
+.a3-3d {
+    width: 100%;
+    z-index: 3;
+}
+
+.a3-title {
+    margin-bottom: 80rem;
+    z-index: 3;
+}
+
+.a3-title h5 .dot-wrap {
+    left: 59%;
+}
+
+.slider {
+    padding: 10rem 0;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    background-color: #000;
+    user-select: none;
+    cursor: grab;
+    z-index: 2;
+}
+
+.slider.dragging {
+    cursor: grabbing;
+}
+
+.slider div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.slider div img {
+    pointer-events: none;
+}
+
+.slider div img {
+    width: 600rem;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

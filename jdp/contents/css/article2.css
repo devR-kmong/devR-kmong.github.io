@@ -1,0 +1,222 @@
+.article2 {
+    position: relative;
+    background-color: #000;
+    background: url(../images/a2-bg.jpg);
+}
+
+.a2-img-flow-wrapper {
+    position: absolute;
+    top: 0; left: 20rem;
+    display: flex;
+    gap: 20rem;
+}
+.a2-img-flow-wrapper2 {
+    left: unset;
+    right: 20rem;
+}
+
+.a2-img-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    animation: flow1 10s linear infinite;
+    opacity: .6;
+}
+.a2-img-flow2 {
+    display: flex;
+    animation: flow2 10s linear infinite;
+    opacity: .4;
+}
+.a2-img-flow3 {
+    opacity: .2;
+}
+
+.a2-img-flow img {
+    width: 120rem;
+}
+
+.a2-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.point-title {
+    width: 200rem;
+    margin: 30rem -30rem 50rem 0;
+}
+
+.a2-title p {
+    font-size: 20rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 40rem;
+}
+
+.a2-title p br {
+    display: none;
+}
+
+.a2-title h5 {
+    position: relative;
+    font-size: 60rem;
+    font-family: 'Paperozi';
+}
+
+.dot-wrap {
+    position: absolute;
+    top: -12rem; left: 42%;
+    display: flex;
+    align-items: center;
+    gap: 43rem;
+}
+
+.dot-wrap .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.a2-title h5 em {
+    color: var(--main-color);
+    font-style: normal;
+    font-family: 'Paperozi';
+}
+
+.a2-title h5 span {
+    color: transparent;
+    font-weight: 900;
+    font-family: 'Paperozi';
+    -webkit-text-stroke: 1px #fff;
+    animation: pulseTxt 0.75s infinite;
+}
+
+.a2-box-wrapper {
+    width: 800rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    margin: 60rem 0 20rem 0;
+}
+
+.a2-box {
+    width: 100%;
+    height: 220rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+}
+
+.a2-box:nth-child(1) {
+    background: url(../images/1cha.png) no-repeat;
+    background-size: cover;
+}
+.a2-box:nth-child(2) {
+    background: url(../images/2cha.png) no-repeat;
+    background-size: cover;
+}
+.a2-box:nth-child(3) {
+    background: url(../images/3cha.png) no-repeat;
+    background-size: cover;
+}
+
+.a2-box:nth-child(1):hover {
+    background: url(../images/menu/m16.jpg) no-repeat;
+    background-size: cover;
+}
+.a2-box:nth-child(2):hover {
+    background: url(../images/menu/m17.jpg) no-repeat;
+    background-size: cover;
+}
+.a2-box:nth-child(3):hover {
+    background: url(../images/menu/m4.jpg) no-repeat;
+    background-size: cover;
+}
+
+.a2-box-text {
+    color: transparent;
+    font-size: 50rem;
+    font-weight: 900;
+    font-family: 'Paperozi';
+    -webkit-text-stroke: 2px #fff;
+}
+
+.a2-text {
+    width: 800rem;
+    padding: 50rem;
+    padding-left: 70rem;
+    border: 1px solid #fff;
+    background-color: #000;
+    background: url(../images/a2-text-bg.png) no-repeat;
+    background-size: cover;
+}
+
+.a2-text h5 {
+    color: var(--main-color);
+    font-size: 45rem;
+    font-family: 'Simple';
+}
+
+.a2-text p {
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 10rem;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .a2-img-flow img {
+        width: 150rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article2 {
+        padding: 120rem 0;
+    }
+    
+    .a2-img-flow2,
+    .a2-img-flow3 {
+        display: none;
+    }
+
+    .a2-img-flow {
+        opacity: .5;
+    }
+    
+    .a2-img-flow-wrapper2 .a2-img-flow {
+        animation: flow2 15s linear infinite;
+    }
+    
+    .a2-box {
+        padding: 30rem 50rem;
+        mix-blend-mode: unset;
+    }
+    
+    .a2-box-left {
+        font-size: 30rem;
+        white-space: nowrap;
+    }
+
+    .a2-box-left span {
+        font-size: 50rem;
+    }
+
+    .a2-box-right {
+        font-size: 100rem;
+        font-weight: 700;
+        font-family: 'Gmarket Sans';
+    }
+
+    .a2-bottom {
+        font-size: 26rem;
+    }
+}
