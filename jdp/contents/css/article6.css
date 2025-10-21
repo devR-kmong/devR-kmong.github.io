@@ -1,0 +1,87 @@
+.article6 {
+    position: relative;
+    background-color:var(--main-color);
+}
+
+.article6 .article-wrapper {
+    width: 80%;
+}
+
+.a6-title p,
+.a6-title h5 {
+    color: #000;
+    font-weight: 800;
+}
+
+.a6-title p {
+    font-weight: lighter;
+    margin-bottom: 40rem;
+}
+
+.a6-title h5 {
+    font-family: 'Paperozi';
+}
+
+.a6-title h5 span {
+    color: var(--main-color);
+    font-family: 'Paperozi';
+    letter-spacing: -3rem;
+    animation: none;
+}
+
+.a6-wrapper {
+    width: 100%;
+    padding: 100rem 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10rem solid #000;
+    background: url(../images/a6-bg.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.a6-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100rem;
+}
+
+.a6-graph {
+    width: 50%;
+}
+
+.a6-receipt {
+    position: relative;
+    width: 40%;
+}
+
+.a6-price {
+    position: absolute;
+    bottom: 16%; left: 50%;
+    transform: translate(-50%, 0);
+    width: 77%;
+    animation: blink .8s step-end infinite;
+}
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .a6-price {
+        left: 49%;
+        width: 74%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 550px) {
+
+}

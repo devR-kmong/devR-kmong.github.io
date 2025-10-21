@@ -1,0 +1,246 @@
+.floating {
+    position: relative;
+    position: sticky;
+    bottom: -1px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: var(--green-color);
+    z-index: 97;
+}
+
+.fl-0won {
+    position: absolute;
+    bottom: 0; left: 2%;
+    width: 250rem;
+}
+
+.topBtn {
+    position: absolute;
+    bottom: 120rem; right: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 6px 6px 18px rgba(0, 0, 0, .25);
+    background-color: var(--main-color);
+    cursor: pointer;
+    z-index: 98;
+}
+
+.topBtn i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.topBtn p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: -10px;
+    letter-spacing: 0;
+}
+
+.topBtn:hover p {
+    color: #fff;
+}
+
+.floating-wrapper {
+    width: 1400rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.f-closeBtn {
+    display: none;
+}
+
+.floating-title {
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
+.ff-open-mobile {
+    display: none;
+}
+
+.f-tel img {
+    width: 66rem;
+    min-width: 66rem;
+    animation: updown 1s infinite ease-in-out;
+}
+
+@keyframes updown {
+    0% {transform:translateY(0);}
+    10% {transform:translateY(-3px);}
+    20% {transform:translateY(0);}
+    30% {transform:translateY(-3px);}
+    40% {transform:translateY(0);}
+    100% {transform:translateY(0);}
+}
+
+.ft-text p {
+    color: #fff;
+    font-size: 28rem;
+    font-family: 'ChungjuKimsaeng';
+    margin: 5px 0 3px 0;
+}
+
+.ft-text h5 {
+    color: #fff;
+    font-size: 55rem;
+    font-weight: 900;
+    font-family: 'Paperozi';
+    white-space: nowrap;
+}
+
+.f-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.f-form .inputbox {
+    color: #222;
+    width: 225rem;
+    height: 55rem;
+    padding: 0 15px;
+    font-size: 18rem;
+    font-weight: 600;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+.f-form .inputbox::placeholder {
+    color: #aaa;
+    font-weight: 500;
+}
+
+.f-form .select {
+    position: relative;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.f-form .select select {
+    color: #222;
+    width: 225rem;
+    height: 55rem;
+    padding-left: 15rem;
+    font-size: 18rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    -webkit-appearance: none;
+}
+
+.f-form .select select option {
+    font-size: 18rem;
+    background-color: #fff;
+}
+
+.select-arrow {
+    color: #aaa;
+    font-size: 18rem;
+    font-weight: 600;
+    font-weight: lighter;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-arrow p {
+    position: absolute;
+    top: 50%; left: 20rem;
+    transform: translate(0, -50%);
+    font-size: 18rem;
+    font-weight: 500;
+    cursor: default;
+}
+
+.select-arrow i {
+    position: absolute;
+    top: 50%; right: 20rem;
+    transform: translate(0, -50%);
+}
+
+.f-form .f-submit {
+    color: #fff;
+    width: 225rem;
+    height: 55rem;
+    font-size: 18rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.f-form .f-submit:disabled {
+    color: #aaa;
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+
+.f-personal {
+    display: flex;
+    align-items: center;
+    margin-top: 12rem;
+    gap: 5px;
+}
+
+.f-personal input {
+    display: none;
+}
+
+.f-personal label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.f-personal label em {
+    position: relative;
+    width: 14px;
+    min-width: 14px;
+    height: 14px;
+    min-height: 14px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.f-personal label em::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    display: none;
+}
+
+.f-personal label p,
+.f-personal span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#cb2:checked ~ label em::after {
+    display: block;
+}

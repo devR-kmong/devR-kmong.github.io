@@ -1,0 +1,331 @@
+.article10 {
+    position: relative;
+    padding-top: 160rem;
+    padding-bottom: 0;
+    background: url(../images/a10-bg.jpg);
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.a10-noise {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/noise.gif');
+    background-position: 0 0;
+    background-size: auto;
+    pointer-events: none;
+    opacity: 0.05;
+    transition: opacity .2s cubic-bezier(.445, .05, .55, .95); 
+    border-radius: 0;
+    z-index: 2;
+}
+
+.article10 .article-wrapper {
+    width: 1500rem;
+}
+
+.a10-paper {
+    position: absolute;
+    bottom: -40rem; left: 50%;
+    transform: rotate(5deg);
+    width: 750rem;
+    height: 1000rem;
+    background-color: #f8f8f8;
+    z-index: 3;
+}
+
+.a10-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 50rem;
+}
+
+.a10-title {
+    width: 40%;
+    margin-top: 50rem;
+}
+
+.a10-title h6 {
+    font-size: 22rem;
+    font-weight: unset;
+    font-family: 'ChungjuKimsaeng';
+    margin-bottom: 30rem;
+}
+
+.a10-title h5 {
+    font-size: 70rem;
+    font-family: 'Paperozi';
+}
+
+.a10-title h5 span {
+    color: var(--main-color);
+    font-family: 'Paperozi';
+}
+
+.a10-title p {
+    font-size: 17rem;
+    line-height: 1.6;
+    margin-top: 30rem;
+}
+
+.a10Btn {
+    width: fit-content;
+    padding: 22rem 45rem;
+    font-size: 45rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    border-radius: 7rem;
+    background-color: var(--main-color);
+    margin-top: 60rem;
+    animation: pulseAnim-3 1.3s infinite;
+}
+
+.a10Btn span {
+    width: 50rem;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: tel 1.3s infinite ease-in-out;
+}
+
+.a10Btn span i {
+    color: var(--main-color);
+    font-size: 30rem;
+    font-weight: unset;
+}
+
+.form-wrapper {
+    position: relative;
+    width: 750rem;
+    padding: 120rem 80rem;
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    z-index: 10;
+}
+
+.a10-sb {
+    position: absolute;
+    top: 15%; left: 26%;
+    width: 350rem;
+    opacity: .08;
+}
+
+.a10-clip {
+    position: absolute;
+    top: -8%; right: 40rem;
+    width: 15%;
+}
+
+.a10-pen {
+    position: absolute;
+    bottom: 20rem; right: -300rem;
+    transform: rotate(-5deg);
+    width: 400rem;
+}
+
+.form-title {
+    margin-bottom: 30rem;
+}
+
+.a10-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30rem;
+}
+
+.a10-form .input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.a10-form .input-wrapper .input-title h5 {
+    color: #111;
+    font-size: 19px;
+    font-weight: 500;
+    display: flex;
+    gap: 5px;
+}
+
+.a10-form .input-wrapper .input-title h5 span {
+    color: var(--main-color);
+    font-size: 5rem;
+}
+
+.a10-form .inputbox {
+    color: #111;
+    width: 100%;
+    height: 45px;
+    font-size: 19px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #111;
+    transition: all .3s ease;
+}
+
+.a10-form textarea {
+    color: #111;
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    font-size: 19px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: 2px solid #111;
+    resize: none;
+}
+
+.a10-form .inputbox::placeholder {
+    color: #ccc;
+    font-weight: 200;
+}
+
+.a10-form textarea::placeholder {
+    color: #ccc;
+    font-weight: 200;
+}
+
+.a10-form .radio-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.a10-form .radio-wrapper input[type="radio"] {
+    display: none;
+}
+
+.a10-form .radio-wrapper label {
+    flex: 1;
+    color: #111;
+    padding: 14px 0;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: 'Pretendard';
+    border: 2px solid #111;
+    background-color: #fff;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.a10-form .radio-wrapper label:hover {
+    background-color: #f8f8f8;
+}
+
+.a10-form .radio-wrapper input[type="radio"]:checked+label {
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #111;
+    background-color: #111;
+}
+
+.a10-submit {
+    color: #fff;
+    width: 100%;
+    height: 65px;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0 19px;
+    border: none;
+    outline: none;
+    background-color: var(--green-color);
+    cursor: pointer;
+}
+
+.a10-submit:disabled {
+    color: #bbb;
+    font-weight: 500;
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+.a10-personal {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #111;
+}
+
+.a10-personal-no {
+    border: 2px solid red;
+}
+
+.a10-personal-text input {
+    display: none;
+}
+
+.a10-personal-text label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.a10-personal-text label em {
+    position: relative;
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    min-height: 16px;
+    background-color: #fff;
+    border: 1px solid #111;
+    cursor: pointer;
+}
+
+.a10-personal-text label em::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #111;
+    display: none;
+}
+
+.a10-personal-text label p {
+    color: #111;
+    font-size: 16px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#cb:checked ~ label em::after {
+    display: block;
+}
+
+.a10-personalBtn {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    background-color: #111;
+    cursor: pointer;
+}
+
+
+
+
+/*==================================================*/

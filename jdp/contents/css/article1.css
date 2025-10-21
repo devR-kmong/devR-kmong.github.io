@@ -3,6 +3,7 @@
     padding: 0;
     height: 100vh;
     background-color: transparent;
+    z-index: 98;
 }
 
 .main-background {

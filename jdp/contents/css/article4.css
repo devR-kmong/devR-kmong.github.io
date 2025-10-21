@@ -1,5 +1,76 @@
 .article4 {
-    background-color: var(--main-color);
+    position: relative;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.a4-background {
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.a4-title {
+    text-align: center;
+}
+
+.a4-title p {
+    font-size: 24rem;
+    font-weight: 500;
+    font-family: 'ChungjuKimsaeng';
+    line-height: 1.6;
+    margin-bottom: 15rem;
+}
+
+.a4-title h5 {
+    color: #fff;
+    font-size: 65rem;
+    font-weight: 800;
+    font-family: 'Paperozi';
+}
+
+.a4-title h5 span {
+    color: transparent;
+    font-weight: 900;
+    font-family: 'Paperozi';
+    -webkit-text-stroke: 1px #fff;
+    animation: pulseTxt 0.75s infinite;
+}
+
+.a4-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    margin-top: 60rem;
+}
+
+.a4-box {
+    position: relative;
+    padding: 40rem;
+    text-align: center;
+    background-color: #0000006c;
+}
+.a4-box::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(.94);
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--main-color);
+    z-index: 1;
+}
+
+.a4-box h5 {
+    font-size: 40rem;
+    font-family: 'Paperozi';
+    margin-top: 20rem;
+}
+
+.a4-arrow {
+    color: var(--main-color);
+    font-size: 70rem;
 }
 
 
