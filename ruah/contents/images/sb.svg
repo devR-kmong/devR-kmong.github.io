@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 334.32 327.34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_무제_그라디언트_8);
+      }
+
+      .cls-2 {
+        fill: #8bc442;
+      }
+    </style>
+    <radialGradient id="_무제_그라디언트_8" data-name="무제 그라디언트 8" cx="165.76" cy="168.38" fx="165.76" fy="168.38" r="164.27" gradientUnits="userSpaceOnUse">
+      <stop offset=".76" stop-color="#d8e6ef"/>
+      <stop offset=".82" stop-color="#cadeec"/>
+      <stop offset=".94" stop-color="#a8cae4"/>
+      <stop offset="1" stop-color="#96c0e0"/>
+    </radialGradient>
+  </defs>
+  <g id="_레이어_1" data-name="레이어 1">
+    <g>
+      <path class="cls-2" d="M334.32,327.34s-5.97-28.34-61.5-41.95c66.11-57.01,72.87-165.12,14.07-229.68C229.07-13.52,115.94-19.11,51.43,43.91l32.79,32.79c47.3-44.68,128.35-39.45,169.25,11.3,64.04,74.36,8.76,193.29-89.17,192.93,0,0-115.87.03-115.87.03,30.09,27.26,68.4,45.38,109.38,46.38h176.51Z"/>
+      <path class="cls-1" d="M116.6,270.46s-71.82-.03-76.98,0C-15,209.41-12.78,110.2,44.02,51.31l32.8,32.8c-12.65,13.51-21.41,29.86-26.2,47.3-13.06,47.64,2.09,109.95,65.97,139.05Z"/>
+    </g>
+  </g>
+</svg>
