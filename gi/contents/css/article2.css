@@ -40,7 +40,7 @@
     grid-template-columns: repeat(5, 1fr);
     background-color: #111;
     background: url(../images/a2-bg.png) no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     transition: background 0.5s ease;
     z-index: 3;
