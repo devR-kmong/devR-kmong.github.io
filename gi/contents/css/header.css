@@ -10,6 +10,9 @@
     transition: all .3s;
     z-index: 997;
 }
+.header.hide {
+    transform: translateY(-100%);
+}
 
 .gnb {
     width: 100%;
