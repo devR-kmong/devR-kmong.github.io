@@ -1,0 +1,154 @@
+.header {
+    background-color: #fff !important;
+    border-bottom: 1px solid #eee;
+}
+.header.Fixed {
+    box-shadow: none;
+}
+.langBtn {
+    color: #3d3d3d;
+}
+.gnb-menu-item,
+.gnb-menu-item a {
+    color: #3d3d3d;
+    font-weight: 700;
+}
+.sub-menu {
+    border-top: none;
+}
+.logo-w {
+    display: none !important;
+}
+.logo {
+    display: flex !important;
+}
+.menuBtns {
+    background-color: var(--main-color);
+}
+
+.gnb-menu-item a.gnb-menu-item:hover {
+    color: var(--main-color) !important;
+    border-bottom: 3px solid var(--main-color) !important;
+}
+
+.gnb-menu-item-hover {
+    color: var(--main-color) !important;
+    border-bottom: 3px solid var(--main-color) !important;
+}
+
+.sub-promotion {
+    width: 100%;
+    padding-bottom: 0;
+    background-color: #fff;
+}
+
+.sub-promotion-wrapper {
+    width: 1400rem;
+    padding-top: 100rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-p-title {
+    width: 100%;
+}
+
+.sub-p-title h5 {
+    color: #222;
+    font-size: 50rem;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.sub-p-title h5 span {
+    color: var(--main-color);
+}
+
+.sub-p-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100rem 0 30rem 0;
+    z-index: 1;
+}
+
+.sub-navigation {
+    display: flex;
+    align-items: center;
+    gap: 50rem;
+}
+
+.sub-navBtn {
+    color: #aaa;
+    font-size: 20rem;
+    font-weight: 500;
+}
+.sub-navBtn.show {
+    color: #000;
+    font-weight: 700;
+}
+.sub-navBtn:hover {
+    color: #333;
+}
+
+.sub-p-route {
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
+.sub-p-route p {
+    letter-spacing: 0;
+}
+
+.sub-promotion img {
+    width: 1400rem;
+    height: 550rem;
+    object-fit: cover;
+    animation: jjuk 2s .8s both;
+    z-index: 2;
+}
+
+@keyframes jjuk {
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1450px) {
+    .sub-promotion-wrapper {
+        width: 90%;
+    }
+
+    .sub-promotion img {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sub-p-route {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .sub-promotion-wrapper {
+        padding-top: 160rem;
+    }
+
+    .sub-navBtn {
+        font-size: 28rem;
+    }
+
+    .sub-promotion img {
+        height: 350rem;
+    }
+}

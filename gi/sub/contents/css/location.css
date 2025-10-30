@@ -1,0 +1,274 @@
+.loc-map {
+    position: relative;
+    width: 100%;
+    height: 500rem;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.loc-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.root_daum_roughmap .wrap_map {
+    height: 100% !important;
+}
+.root_daum_roughmap .map_border {
+    opacity: 0 !important;
+}
+
+
+.loc-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35rem;
+}
+
+.loc-box-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 100rem;
+}
+
+.loc-box {
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
+.loc-box-icon {
+    width: 66rem;
+    min-width: 66rem;
+    height: 66rem;
+    min-height: 66rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.loc-box-icon i {
+    color: #fff;
+    font-size: 24rem;
+}
+
+.loc-box-text p {
+    color: var(--main-color);
+    font-size: 17rem;
+    font-weight: 700;
+}
+
+.loc-box-text h5 {
+    color: #222;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+    margin-top: 6px;
+}
+
+.locBtn {
+    position: absolute;
+    top: 20rem; right: 20rem;
+    display: flex;
+    width: 170rem;
+    height: 60rem;
+    color: #fff;
+    font-size: 22rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    background-color: var(--main-color);
+    box-shadow: 0 15rem 15rem 0 rgba(0, 0, 0, .2);
+    z-index: 97;
+}
+
+
+.loc2 {
+    padding-top: 0;
+}
+
+.us-map {
+    position: relative;
+}
+.us-map img {
+    user-select: none;
+    opacity: .5;
+}
+
+.pin-cate {
+    position: absolute;
+    bottom: 100rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.pin-cate .pin {
+    position: static;
+    animation: none;
+}
+
+.pin-cate div {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+.pin-cate div p {
+    color: #444;
+    font-size: 18rem;
+    font-weight: 700;
+}
+
+.pin {
+    position: relative;
+    position: absolute;
+    width: 32rem;
+    height: 32rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    animation: pulseAnim 1.3s infinite;
+    transition: all .3s;
+    cursor: pointer;
+}
+.pin2 {
+    background-color: #e38a2a;
+    animation: pulseAnim2 1.3s infinite;
+}
+
+.pin-info {
+    position: absolute;
+    top: 40rem; left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.pin-info h5 {
+    color: #888;
+    font-size: 13rem;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    letter-spacing: -1rem;
+}
+
+.pin-info p {
+    color: var(--main-color);
+    font-size: 17rem;
+    font-weight: 700;
+}
+.pin2 .pin-info p {
+    color: #e38a2a;
+}
+
+.pin:hover {
+    transform: scale(1.15);
+}
+
+.pin:hover .pin-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+@keyframes pulseAnim {
+	0% {
+		box-shadow: 0 0 0 0 var(--main-color);
+	}
+	70% {
+		box-shadow: 0 0 0 10rem rgb(151 213 229 / 0%);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgb(151 213 229 / 0%);
+	}
+}
+@keyframes pulseAnim2 {
+	0% {
+		box-shadow: 0 0 0 0 #e38a2a;
+	}
+	70% {
+		box-shadow: 0 0 0 10rem rgb(151 213 229 / 0%);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgb(151 213 229 / 0%);
+	}
+}
+
+.pin.il {
+    top: 235rem; right: 440rem;
+}
+.pin.det {
+    top: 210rem; right: 330rem;
+}
+.pin.lv {
+    top: 335rem; right: 370rem;
+}
+.pin.lex {
+    top: 345rem; right: 335rem;
+}
+.pin.il.pin2 {
+    transform: scale(.4);
+}
+.pin.il.pin2:hover {
+    transform: scale(1.15);
+}
+.pin.det.pin2 {
+    transform: scale(.4);
+}
+.pin.det.pin2:hover {
+    transform: scale(1.15);
+}
+.pin.clv.pin2 {
+    top: 220rem; right: 270rem;
+}
+.pin.px.pin2 {
+    top: 480rem; left: 250rem;
+}
+.pin.hst.pin2 {
+    top: 610rem; left: 680rem;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .loc-box-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30rem;
+    }
+}
+
+
+
+@media (max-width: 550px) {
+    .loc-box-icon {
+        width: 80rem;
+        min-width: 80rem;
+        height: 80rem;
+        min-height: 80rem;
+    }
+    
+    .loc-box-icon i {
+        color: #fff;
+        font-size: 30rem;
+    }
+    
+    .loc-box-text p {
+        font-size: 20rem;
+    }
+    
+    .loc-box-text h5 {
+        font-size: 26rem;
+        margin-top: 5px;
+    }
+}
