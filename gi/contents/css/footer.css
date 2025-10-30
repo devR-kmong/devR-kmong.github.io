@@ -86,7 +86,7 @@
 }
 
 .footer-wrapper {
-    width: 1400rem;
+    width: 1300rem;
     display: flex;
     flex-direction: column;
     gap: 50rem;
@@ -153,7 +153,7 @@
 
 
 /*==================================================*/
-@media (max-width: 1450px) {
+@media (max-width: 1350px) {
     .footer-wrapper {
         width: 100%;
         padding: 0 30px;
