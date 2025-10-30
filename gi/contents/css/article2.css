@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.article2 .article-wrapper {
+    width: 90%;
+}
+
 .a2-flow-wrapper {
     position: absolute;
     top: 120rem;
@@ -33,7 +37,7 @@
     width: 100%;
     height: 70vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     background-color: #111;
     background: url(../images/a2-bg.png) no-repeat;
     background-position: bottom;
