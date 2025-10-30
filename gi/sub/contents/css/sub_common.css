@@ -43,7 +43,7 @@
 }
 
 .sub-promotion-wrapper {
-    width: 1400rem;
+    width: 1300rem;
     padding-top: 100rem;
     display: flex;
     flex-direction: column;
@@ -121,7 +121,7 @@
 
 
 /*==================================================*/
-@media (max-width: 1450px) {
+@media (max-width: 1350px) {
     .sub-promotion-wrapper {
         width: 90%;
     }
