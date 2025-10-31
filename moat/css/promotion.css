@@ -52,9 +52,62 @@
 	}
 }
 
+.p-mobile {
+    display: none;
+}
+
 
 
 /*==================================================*/
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 90%;
+    }
+}
 
+
+@media (max-width: 768px) {
+    .scrollDown {
+        bottom: 140rem;
+    }
+    
+    .p-logo {
+        display: none;
+    }
+
+    .p-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .p-mobile {
+        display: flex;
+        color: #fff;
+        font-size: 90rem;
+        font-family: 'Montserrat';
+        line-height: 1.1;
+        text-align: center;
+        margin: 30rem 0;
+    }
+    
+    .p-text h6 {
+        font-size: 24rem;
+    }
+
+    .p-text p {
+        font-size: 20rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .p-text h6 {
+        font-size: 30rem;
+    }
+
+    .p-text p {
+        font-size: 24rem;
+    }
 }

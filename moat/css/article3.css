@@ -72,6 +72,7 @@
 }
 
 .a3-box-text p {
+    color: #ffffff96;
     font-size: 20rem;
     font-weight: 500;
     margin-top: 10rem;
@@ -81,10 +82,63 @@
 
 /*==================================================*/
 @media (max-width: 768px) {
+    .a3-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20rem;
+    }
+
+    .a3-box {
+        height: 250rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .a3-box .a3-box-text::before {
+        content: '';
+        position: absolute;
+        top: 0 !important; left: 100% !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 1;
+    }
+    .a3-box:nth-child(1) .a3-box-text::before {
+        background-image: linear-gradient(to right, #61b3f1, transparent);
+    }
+    .a3-box:nth-child(2) .a3-box-text::before {
+        background-image: linear-gradient(to right, #000, transparent);
+    }
+    .a3-box:nth-child(3) .a3-box-text::before {
+        background-image: linear-gradient(to right, #d19a24, transparent);
+    }
     
+    .a3-box-image {
+        width: 90%;
+    }
+
+    .a3-box-image img {
+        margin-bottom: -5px;
+    }
+
+    .a3-box-text {
+        width: 50%;
+        padding: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .a3-box-text h5 {
+        white-space: nowrap;
+    }
 }
 
 
 @media (max-width: 550px) {
-    
+    .a3-box-text h5 {
+        font-size: 45rem;
+    }
+
+    .a3-box-text p {
+        font-size: 28rem;
+    }
 }

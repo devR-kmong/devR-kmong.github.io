@@ -74,10 +74,18 @@
 
 /*==================================================*/
 @media (max-width: 768px) {
-    
+    .a2-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
 @media (max-width: 550px) {
+    .a2-box-text h5 {
+        font-size: 30rem;
+    }
     
+    .a2-box-text ul li {
+        font-size: 20rem;
+    }
 }

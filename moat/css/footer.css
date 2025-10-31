@@ -19,22 +19,18 @@ footer {
 .footer-box {
     display: flex;
     flex-direction: column;
-    gap: 20rem;
+    gap: 20px;
 }
 
 .f-info p {
     color: #ffffffa4;
-    font-size: 15rem;
+    font-size: 14px;
     line-height: 1.8;
     letter-spacing: 0;
 }
 
-.f-info p span br {
+.f-info p em br {
     display: none;
-}
-
-.f-info em br {
-    display: block;
 }
 
 .logo-f {
@@ -55,8 +51,19 @@ footer {
 }
 
 
+@media (max-width: 768px) {
+    .f-info p span {
+        display: none;
+    }
+
+    .f-info p em br {
+        display: block;
+    }
+}
+
+
 @media (max-width: 550px) {
     .f-info p {
-        font-size: 24rem;
+        font-size: 22rem;
     }
 }

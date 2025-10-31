@@ -9,6 +9,7 @@
     background-position: center !important;
     background-size: cover !important;
     padding: 120rem 0;
+    overflow: hidden;
 }
 
 .article-wrapper {
@@ -25,6 +26,7 @@
 
 .ar-title h5 {
     font-size: 50rem;
+    font-family: 'Pretendard Variable' !important;
 }
 
 .ar-title p {
@@ -44,6 +46,6 @@
 
 @media (max-width: 768px) {
     .article {
-        padding: 60rem 0;
+        padding: 90rem 0;
     }
 }

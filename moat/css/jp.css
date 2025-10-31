@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;500;600;700;800&display=swap');
+
+
+* {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.a2-box-name h5,
+.a3-box-text h5,
+.a3-box-text p,
+.a4Swiper .ss-title h5 {
+    font-family: "Pretendard Variable";
+}
+
+.a0-box-icon {
+    line-height: 77rem;
+}
+
+.article1 .article-wrapper {
+    width: 90%;
+}
+
+.a4Swiper .ss-info h5 {
+    font-size: 20rem;
+}
+
+.a4Swiper .ss-info p {
+    font-size: 13rem;
+}
+
+
+@media (max-width: 550px) {
+    .a1-box h5 {
+        font-size: 30rem;
+    }
+
+    .a1-box p {
+        font-size: 20rem;
+    }
+}

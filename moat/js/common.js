@@ -98,3 +98,23 @@ if (navigator.userAgent.indexOf("Trident") > 0) {
         "확인 버튼을 누르면 Edge 브라우저로 이동합니다.")
     window.location = 'microsoft-edge:' + window.location.href;
 };
+
+
+
+if (window.innerWidth > 768) {
+    document.querySelectorAll('.swiper-slide').forEach(slide => {
+        slide.addEventListener('mouseenter', () => {
+            const textEl = slide.querySelector('.ss-text');
+            if (textEl) textEl.classList.add('show');
+        });
+
+        slide.addEventListener('mouseleave', () => {
+            const textEl = slide.querySelector('.ss-text');
+            if (textEl) textEl.classList.remove('show');
+        });
+    });
+} else {
+    $('.a4Swiper .swiper-slide').click(function () {
+        $('.a4Swiper .swiper-slide .ss-text').toggleClass('show');
+    })
+}

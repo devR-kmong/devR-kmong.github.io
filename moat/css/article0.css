@@ -48,10 +48,24 @@
 
 /*==================================================*/
 @media (max-width: 768px) {
+    .ar-title p {
+        padding: 0 100rem;
+        font-size: 24rem;
+        line-height: 1.4;
+    }
     
+    .a0-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
 @media (max-width: 550px) {
-    
+    .a0-box-text h5 {
+        font-size: 30rem;
+    }
+
+    .a0-box-text p {
+        font-size: 22rem;
+    }
 }
