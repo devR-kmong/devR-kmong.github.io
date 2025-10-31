@@ -1,9 +1,8 @@
 .a1-box-wrapper {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 50rem;
+    gap: 100rem;
 }
 
 .a1-center {
@@ -12,26 +11,19 @@
 
 .a1-box {
     width: 50%;
-    padding-bottom: 20rem;
     display: flex;
     flex-direction: column;
     gap: 20rem;
-    border: 1px solid #ddd;
-    box-shadow: 0 15rem 50rem 0 rgba(80, 86, 131, .15);
     background-color: #fff;
-
 }
 
 .a1-box h5 {
-    padding: 15rem;
     font-size: 30rem;
-    background-color: #eee;
-    text-align: center;
+    margin-bottom: 10rem;
 }
 
 .a1-box p {
     color: #444;
-    padding: 0 20rem;
     font-size: 20rem;
     font-weight: 500;
     display: flex;
@@ -41,6 +33,13 @@
 
 .a1-box p i {
     margin-bottom: -4px;
+}
+
+.a1-box:nth-child(1) {
+    text-align: right;
+}
+.a1-box:nth-child(1) p {
+    flex-direction: row-reverse;
 }
 
 
