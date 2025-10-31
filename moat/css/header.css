@@ -73,6 +73,27 @@ nav ul li a {
     color: var(--main-color);
 }
 
+.langBtn {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.langBtn img {
+    border: 1px solid #fff;
+}
+
+header.Fixed .langBtn {
+    color: #222;
+}
+
+header.Fixed .langBtn img {
+    border: 1px solid #ddd;
+}
+
 #check,
 .menuBtns,
 .overlay {
