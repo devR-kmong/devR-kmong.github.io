@@ -1,0 +1,55 @@
+.a1-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50rem;
+}
+
+.a1-center {
+    width: 500rem;
+}
+
+.a1-box {
+    width: 50%;
+    padding-bottom: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 15rem 50rem 0 rgba(80, 86, 131, .15);
+    background-color: #fff;
+
+}
+
+.a1-box h5 {
+    padding: 15rem;
+    font-size: 30rem;
+    background-color: #eee;
+    text-align: center;
+}
+
+.a1-box p {
+    color: #444;
+    padding: 0 20rem;
+    font-size: 20rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.a1-box p i {
+    margin-bottom: -4px;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

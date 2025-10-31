@@ -1,0 +1,37 @@
+.floating {
+    position: fixed;
+    bottom: 50rem; right: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 98;
+}
+
+.floating a {
+    width: 55rem;
+    height: 55rem;
+    text-align: center;
+    line-height: 55rem;
+    border-radius: 20rem;
+    cursor: pointer;
+}
+
+.topBtn {
+    background: var(--main-color);
+    transition: all .3s;
+}
+
+.topBtn i {
+    color: #fff;
+    font-size: 35rem;
+}
+
+.topBtn:hover {
+    transform: scale(1.15);
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+
+}
