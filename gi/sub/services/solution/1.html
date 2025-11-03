@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../contents/css/common.css">
+    <link rel="stylesheet" href="../../../contents/css/header.css">
+    <link rel="stylesheet" href="../../../contents/css/gnb.css">
+    <link rel="stylesheet" href="../../../contents/css/toggleMenu.css">
+    <link rel="stylesheet" href="../../../contents/css/promotion.css">
+    <link rel="stylesheet" href="../../../contents/css/article_common.css">
+    <link rel="stylesheet" href="../../../contents/css/article1.css">
+    <link rel="stylesheet" href="../../../contents/css/article2.css">
+    <link rel="stylesheet" href="../../../contents/css/article3.css">
+    <link rel="stylesheet" href="../../../contents/css/article4.css">
+    <link rel="stylesheet" href="../../../contents/css/footer.css">
+    <link rel="stylesheet" href="../../../contents/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../../contents/css/aos.css">
+    <link rel="stylesheet" href="../../contents/css/services.css">
+    <link rel="shortcut icon" href="../../../contents/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+    <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="../../../contents/js/swiper-bundle.min.js"></script>
+    <script src="../../../contents/js/aos.js"></script>
+    <title>미국시장 진입</title>
+</head>
+<body>
+    <div class="header">
+        <div class="gnb">
+            <a href="<?php echo G5_URL?>" class="logo-w"><img src="../../../contents/images/logo-w.svg"></a>
+            <a href="<?php echo G5_URL?>" class="logo active"><img src="../../../contents/images/logo.svg"></a>
+            <nav>
+                <ul class="gnb-menu">
+                    <li class="gnb-menu-item gmi-1" data-target="data1"><a href="<?php echo G5_URL?>/sub/about/us">회사소개</a></li>
+                    <li class="gnb-menu-item gmi-2" data-target="data2"><a href="<?php echo G5_URL?>/sub/services/solution">사업분야</a></li>
+                    <li class="gnb-menu-item gmi-3" data-target="data3"><a href="<?php echo G5_URL?>/news">리소스센터</a></li>
+                    <li class="gnb-menu-item gmi-4"><a href="<?php echo G5_URL?>/faqs">FAQs</a></li>
+                </ul>
+            </nav>
+            <div class="gnb-right">
+                <a href="" class="langBtn">
+                    <i class="ri-global-line"></i>
+                    ENG
+                </a>
+                <a href="<?php echo G5_URL?>/contact/write" class="ctaBtn">
+                    문의하기
+                </a>
+                <div class="menuBtns">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                    <div class="bar bar4"></div>
+                </div>
+                <div class="toggle-menu">
+                    <div class="tm-list-wrapper">
+                        <div class="tm-list">
+                            <div class="tm-listBox">
+                                <a href="<?php echo G5_URL?>/sub/about/us" class="tm-l-head"><em>Company</em><span>회사소개</span><i class="ri-add-line"></i></a>
+                                <ul>
+                                    <li><a href="<?php echo G5_URL?>/sub/about/us">회사개요</a></li>
+                                    <li><a href="<?php echo G5_URL?>/sub/about/vision">비전 & 미션</a></li>
+                                    <li><a href="<?php echo G5_URL?>/sub/about/whygi">GI의 차별성</a></li>
+                                    <li><a href="<?php echo G5_URL?>/sub/about/location">사업장 소개</a></li>
+                                </ul>
+                            </div>
+                            <div class="tm-listBox">
+                                <a href="<?php echo G5_URL?>/sub/services/solution/1" class="tm-l-head"><em>Service</em><span>사업분야</span><i class="ri-add-line"></i></a>
+                                <ul>
+                                    <li><a href="<?php echo G5_URL?>/sub/services/solution/1">종합솔루션</a></li>
+                                    <li><a href="<?php echo G5_URL?>/sub/services/modular/1">모듈형서비스</a></li>
+                                </ul>
+                            </div>
+                            <div class="tm-listBox">
+                                <a href="<?php echo G5_URL?>/news" class="tm-l-head"><em>Resources</em><span>리소스센터</span><i class="ri-add-line"></i></a>
+                                <ul>
+                                    <li><a href="<?php echo G5_URL?>/news">뉴스</a></li>
+                                    <li><a href="<?php echo G5_URL?>/insight">인사이트</a></li>
+                                    <li><a href="<?php echo G5_URL?>/sub/case">고객사례</a></li>
+                                </ul>
+                            </div>
+                            <div class="tm-listBox">
+                                <a href="<?php echo G5_URL?>/faqs"><em>FAQs</em><span>FAQs</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-menu">
+            <div class="sub-menu-list sml-1" id="data1">
+                <div class="sub-title">
+                    회사소개
+                </div>
+                <ul>
+                    <li><a href="<?php echo G5_URL?>/sub/about/us">회사개요</a></li>
+                    <li><a href="<?php echo G5_URL?>/sub/about/vision">비전 & 미션</a></li>
+                    <li><a href="<?php echo G5_URL?>/sub/about/whygi">GI의 차별성</a></li>
+                    <li><a href="<?php echo G5_URL?>/sub/about/location">사업장 소개</a></li>
+                </ul>
+            </div>
+            <div class="sub-menu-list sml-2" id="data2">
+                <div class="sub-title">
+                    사업분야
+                </div>
+                <div class="sub-menu-group">
+                    <div>
+                        <h6>종합솔루션</h6>
+                        <ul>
+                            <li><a href="<?php echo G5_URL?>/sub/services/solution/1">미국시장 진입</a></li>
+                            <li><a href="<?php echo G5_URL?>/sub/services/solution/2">미국시장 재진입</a></li>
+                            <li><a href="<?php echo G5_URL?>/sub/services/solution/3">공식 파트너십</a></li>
+                            <li><a href="<?php echo G5_URL?>/sub/services/solution/4">현지 원격지원</a></li>
+                            <li><a href="<?php echo G5_URL?>/sub/services/solution/5">영업실행 & 고객관리</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>모듈형서비스</h6>
+                        <ul>
+                            <li><a href="<?php echo G5_URL?>/sub/services/modular/1">산업 전시회 실행지원 (참가형 / 참관형)</a></li>
+                            <li><a href="<?php echo G5_URL?>/sub/services/modular/2">One-Stop 물류 · 납품</a></li>
+                            <li><a href="<?php echo G5_URL?>/sub/services/modular/3">결제일정 조율지원</a></li>
+                            <li><a href="<?php echo G5_URL?>/sub/services/modular/4">현지 검수 · 선별</a></li>
+                            <li><a href="<?php echo G5_URL?>/sub/services/modular/5">법인설립 지원</a></li>
+                            <li><a href="<?php echo G5_URL?>/sub/services/modular/6">고객사 긴급미팅 · 협의지원</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-menu-list sml-3" id="data3">
+                <div class="sub-title">
+                    리소스센터
+                </div>
+                <ul>
+                    <li><a href="<?php echo G5_URL?>/news">뉴스</a></li>
+                    <li><a href="<?php echo G5_URL?>/insight">인사이트</a></li>
+                    <li><a href="<?php echo G5_URL?>/case">고객사례</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="article sub-promotion services">
+            <div class="sv-noise"></div>
+            <img src="../../contents/images/sol1-bg.jpg" class="sv-bg">
+            <div class="sub-promotion-wrapper">
+                <div class="sub-p-text">
+                    <h5 data-aos="fade-up">
+                        미국 시장 첫 진입,<br/>
+                        현지에서 전 과정을 지원합니다.
+                    </h5>
+                    <p data-aos="fade-up" data-aos-delay="600">
+                        시장조사, 채널 · 가격 전략, 첫 바이어 계약, 최종 납품가지<br/>
+                        전 과정을 패키지로 지원합니다.
+                    </p>
+                    <a href="<?php echo G5_URL?>/contact/write" class="pBtn sub-pBtn" data-aos="zoom-out" data-aos-delay="1200">
+                        문의하기
+                    </a>
+                </div>
+            </div>
+            <picture class="scrollDown">
+                <source srcset="../../../contents/images/scrollDown2.svg" media="(max-width: 850px)">
+                <img src="../../../contents/images/scrollDown.svg">
+            </picture>
+        </section>
+        <section class="article sub-article sv1">
+            <div class="article-wrapper">
+                <div class="sv-wrapper">
+                    <div class="sv-title" data-aos="fade-right">
+                        <h6>
+                            GI Solution
+                        </h6>
+                        <h5>
+                            미국시장 진입, 걱정마세요!<br/>
+                            GI 솔루션을 제시합니다.
+                        </h5>
+                        <p>
+                            
+                        </p>
+                    </div>
+                    <div class="sv1-box-wrapper">
+                        <div class="sv1-box" data-aos="fade-up">
+                            ❗현지 네트워크 부재
+                        </div>
+                        <div class="sv1-box" data-aos="fade-up">
+                            ✅ 타깃 아웃리치로 의사결정자 미팅 세팅
+                        </div>
+                        <div class="sv1-box" data-aos="fade-up">
+                            ❗응답 지연으로 관심 이탈
+                        </div>
+                        <div class="sv1-box" data-aos="fade-up">
+                            ✅ 표준화된 응답·협상 운영 (SLA 48h)
+                        </div>
+                        <div class="sv1-box" data-aos="fade-up">
+                            ❗샘플/테스트 혼선
+                        </div>
+                        <div class="sv1-box" data-aos="fade-up">
+                            ✅ 테스트 코디 (요건·일정·문서 흐름화)
+                        </div>
+                        <div class="sv1-box" data-aos="fade-up">
+                            ❗조건 패키징 미숙
+                        </div>
+                        <div class="sv1-box" data-aos="fade-up">
+                            ✅ 딜 데스크 (결제·인코텀스·서차지·볼륨딜 설계)
+                        </div>
+                        <div class="sv1-box" data-aos="fade-up">
+                            ❗납품 가시성 부족
+                        </div>
+                        <div class="sv1-box" data-aos="fade-up">
+                            ✅ PO ~ 납품 트래킹 (ETA·POD·예외 에스컬레이션)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article sub-article sv2">
+            <div class="article-wrapper">
+                <div class="sv-wrapper">
+                    <div class="sv-title" data-aos="fade-right">
+                        <h6>
+                            Process
+                        </h6>
+                        <h5>
+                            꼼꼼한 프로세스로<br/>
+                            신뢰를 더합니다.
+                        </h5>
+                    </div>
+                    <div class="sv2-box-wrapper">
+                        <div class="sv2-line"></div>
+                        <div class="sv2-box" data-aos="fade-up">
+                            <h6>
+                                STEP 1
+                            </h6>
+                            <h5>
+                                사전 준비
+                            </h5>
+                            <p>
+                                고객사 대응 문서, 협상 원칙 정리
+                            </p>
+                        </div>
+                        <div class="sv2-arrow" data-aos="fade-up" data-aos-delay="200">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                        <div class="sv2-box" data-aos="fade-up">
+                            <h6>
+                                STEP 2
+                            </h6>
+                            <h5>
+                                바이어 발굴 · 미팅
+                            </h5>
+                            <p>
+                                타겟 아웃리치로 유효 미팅 확보
+                            </p>
+                        </div>
+                        <div class="sv2-arrow" data-aos="fade-up" data-aos-delay="200">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                        <div class="sv2-box" data-aos="fade-up">
+                            <h6>
+                                STEP 3
+                            </h6>
+                            <h5>
+                                테스트 코디네이션
+                            </h5>
+                            <p>
+                                샘플 · 일정 조율
+                            </p>
+                        </div>
+                        <div class="sv2-arrow" data-aos="fade-up" data-aos-delay="200">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                        <div class="sv2-box" data-aos="fade-up">
+                            <h6>
+                                STEP 4
+                            </h6>
+                            <h5>
+                                조건 협상 · 계약
+                            </h5>
+                            <p>
+                                고객사 대응 문서, 협상 원칙 정리
+                            </p>
+                        </div>
+                        <div class="sv2-arrow" data-aos="fade-up" data-aos-delay="200">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+                        <div class="sv2-box" data-aos="fade-up">
+                            <h6>
+                                STEP 5
+                            </h6>
+                            <h5>
+                                이행 · 납품 · 사후관리
+                            </h5>
+                            <p>
+                                물류 트래킹, POD/클레임 TAT 운영
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article sub-article sv3">
+            <div class="article-wrapper">
+                <div class="sv-title" data-aos="fade-down">
+                    <h5>
+                        기대성과
+                    </h5>
+                </div>
+                <div class="sv3-box-wrapper">
+                    <div class="sv3-box" data-aos="fade-up">
+                        <div class="sv3-box-icon">
+                            <i class="fi fi-rr-users-alt"></i>
+                        </div>
+                        <p>
+                            첫 고객 확보 성공률 ↑
+                        </p>
+                    </div>
+                    <div class="sv3-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="sv3-box-icon">
+                            <i class="fi fi-rr-calendar-check"></i>
+                        </div>
+                        <p>
+                            납품 지연 · 신뢰 저하 리스크 ↓
+                        </p>
+                    </div>
+                    <div class="sv3-box" data-aos="fade-up" data-aos-delay="400">
+                        <div class="sv3-box-icon">
+                            <i class="fi fi-rr-donate"></i>
+                        </div>
+                        <p>
+                            안정적 미국시장 진입 기반 확보
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-top">
+                <a href="<?php echo G5_URL?>" class="logo-f">
+                    <img src="../../../contents/images/logo-w.svg">
+                </a>
+                <div class="fBtn-wrapper">
+                    <div class="fBtn" data-target="data8">
+                        개인정보처리방침
+                    </div>
+                    <div class="fBtn" data-target="data9">
+                        이메일무단수집거부
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mid">
+                <div class="footer-text">
+                    <p>
+                        Grant International Inc<br/>
+                        Tel : +1 (773)234-9955<br/>
+                        Email : contact@grantinter.com
+                        <br/><br/>
+                        211 W Wacker Dr. FL 3, Unit 1917<br/>
+                        Chicago, IL 60606 USA
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <div class="fb-left">
+                    <p>
+                        ⓒ Grant International Inc. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../../contents/js/common.js"></script>
+    <script src="../../../contents/js/header.js"></script>
+    
+</body>
+</html>
