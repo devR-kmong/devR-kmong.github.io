@@ -1,0 +1,95 @@
+.article2 {
+    background-color: #535b64;
+}
+
+.article2 .ar-title {
+    position: relative;
+}
+
+.a2-person {
+    position: absolute;
+    bottom: -120rem; right: 0;
+    width: 550rem;
+}
+
+.a2Swiper {
+    width: 100%;
+}
+
+.a2Swiper .swiper-slide {
+    position: relative;
+    border: 7rem solid #fff;
+}
+.a2Swiper .swiper-slide::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200rem;
+    background: linear-gradient(to top, var(--main-color), transparent);
+    z-index: 1;
+}
+
+.a2Swiper .swiper-slide .ss-text {
+    position: absolute;
+    bottom: 30rem; left: 30rem;
+    z-index: 2;
+}
+
+.a2Swiper .swiper-slide .ss-text h6 {
+    color: #fff;
+    font-size: 28rem;
+    font-weight: 600;
+}
+.a2Swiper .swiper-slide .ss-text p {
+    color: #ffffffb5;
+    font-size: 18rem;
+}
+
+.a2Swiper .swiperBtn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20rem;
+    margin-top: 50rem;
+}
+
+.a2Swiper .sbnBtn {
+    cursor: pointer;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: static !important;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .article2 .article-wrapper {
+        width: 100%;
+    }
+
+    .article2 .ar-title {
+        padding: 0 35rem;
+        padding-bottom: 300rem;
+    }
+    .article2 .ar-title h5 {
+        font-size: 80rem;
+    }
+
+    .article2 .ar-title h5 br {
+        display: none;
+    }
+    
+    .a2Swiper .swiperBtn-wrapper {
+        margin-top: 100rem;
+        margin-right: 100rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a2Swiper .sbnBtn {
+        border: 1px solid rgba(255, 255, 255, .3);
+    }
+}

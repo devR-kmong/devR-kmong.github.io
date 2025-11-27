@@ -1,0 +1,69 @@
+.article4 {
+    background: url(../images/a4-bg.jpg);
+    background-attachment: fixed;
+}
+
+.article4 .article-wrapper {
+    align-items: flex-end;
+}
+
+.a4-text {
+    width: 50%;
+    padding: 80rem 50rem;
+    background-color: #fff;
+}
+
+.a4-text p {
+    color: var(--main-color);
+    font-size: 30rem;
+    font-family: 'SabonLTPro';
+    line-height: 1.4;
+    margin-top: 30rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .article4 {
+        position: relative;
+        height: 1400rem;
+        padding-bottom: 0;
+        background: var(--bg-white);
+        background-attachment: unset;
+    }
+    .article4::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 60%;
+        background: url(../images/a4-bg.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+    }
+    
+    .article4 .article-wrapper {
+        align-items: center;
+    }
+
+    .a4-text {
+        width: 100%;
+        margin-bottom: -100%;
+        z-index: 2;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .article4 {
+        height: 1600rem;
+    }
+    
+    .article4 .ar-title h5 {
+        font-size: 70rem;
+    }
+    .a4-text p {
+        font-size: 36rem;
+    }
+}
