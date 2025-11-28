@@ -4,9 +4,16 @@
     height: 500rem;
     display: flex;
     justify-content: center;
-    background: url(../images/sub-bg.jpg);
-    background-position: center;
     overflow: hidden;
+}
+
+.sub-promotion.people {
+    background: url(../images/people-bg.jpg);
+    background-position: center;
+}
+.sub-promotion.history {
+    background: url(../images/history-bg.jpg);
+    background-position: center;
 }
 
 
