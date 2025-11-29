@@ -11,7 +11,7 @@
 }
 
 .footer-wrapper {
-    width: 1400rem;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,6 +99,13 @@
 
 
 /*==================================================*/
+@media (min-width: 2250px) {
+    .footer-wrapper {
+        width: 70%;
+    }
+}
+
+
 @media (max-width: 1450px) {
     .footer-wrapper {
         width: 90%;

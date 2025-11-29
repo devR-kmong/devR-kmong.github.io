@@ -9,7 +9,7 @@
 }
 
 .promotion-wrapper {
-    width: 1400rem;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -60,6 +60,13 @@
 
 
 /*==================================================*/
+@media (min-width: 2250px) {
+    .promotion-wrapper {
+        width: 70%;
+    }
+}
+
+
 @media (max-width: 1450px) {
     .promotion-wrapper {
         width: 90%;
