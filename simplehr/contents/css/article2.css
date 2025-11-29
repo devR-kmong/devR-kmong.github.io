@@ -1,0 +1,36 @@
+.a2-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 120rem;
+}
+
+.a2-box p {
+    color: #222;
+    font-size: 20rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.a2-box p b {
+    font-size: 22rem;
+}
+
+.a2-box img {
+    width: 100%;
+    object-fit: cover;
+    margin-top: 30rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

@@ -1,0 +1,22 @@
+.a4-title h6 {
+    color: var(--main-color);
+    font-size: 20rem;
+    margin-bottom: 20rem;
+}
+
+.a4-box-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

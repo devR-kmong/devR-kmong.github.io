@@ -1,0 +1,28 @@
+.a5-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30rem;
+}
+
+.a5-box {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20rem;
+}
+
+.a5-box img {
+    border-radius: 20rem;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

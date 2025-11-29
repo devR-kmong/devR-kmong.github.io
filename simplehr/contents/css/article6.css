@@ -1,0 +1,53 @@
+.article6 {
+    background-color: #222;
+    background: url(../images/a6-bg.jpg);
+}
+
+.a6-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a6-text {
+    color: #fff;
+    font-size: 32rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.a6Btn {
+    width: 300rem;
+    height: 80rem;
+    font-size: 28rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border-radius: 50rem;
+    background-color: #fff;
+}
+
+.a6Btn i {
+    font-size: 22rem;
+    font-weight: lighter;
+}
+
+.a6Btn:hover {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

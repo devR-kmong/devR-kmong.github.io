@@ -1,0 +1,3 @@
+$(function () {
+    $('.header').removeClass('trans');
+})

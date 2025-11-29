@@ -1,0 +1,184 @@
+.mb-switch {
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+    margin-bottom: 50rem;
+    margin-left: 125px;
+}
+
+.mb-switch p {
+    font-size: 22rem;
+    font-weight: 600;
+    opacity: .4;
+}
+
+.mb-switch p.on {
+    opacity: 1;
+}
+
+.mb-switch h5 {
+    color: var(--main-color);
+    font-size: 20rem;
+    opacity: 0;
+}
+
+.mb-switch h5.on {
+    opacity: 1;
+}
+
+.switch {
+    width: 58px;
+    padding: 4px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 50rem;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.switch.off {
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.switch .circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.mb-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15rem;
+    margin-top: 20rem;
+}
+
+.mb-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 7rem;
+    overflow: hidden;
+}
+.mb-box:hover {
+    background-color: rgba(255, 255, 255, .07);
+}
+.mb-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 10rem;
+}
+.mb-box.free::before {
+    background-color: rgb(212, 212, 212);
+}
+.mb-box.basic::before {
+    background-color: rgb(198, 169, 114);
+}
+.mb-box.special::before {
+    background-color: rgb(255, 27, 27);
+}
+.mb-box.premium::before {
+    background-color: var(--main-color);
+}
+.mb-box.pro::before {
+    background-color: rgb(81, 0, 255);
+}
+
+.mb-box-top {
+    padding: 30rem 0 20rem 0;
+    font-size: 22rem;
+    font-weight: 700;
+}
+
+.mb-box-price {
+    width: 100%;
+    padding: 30rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.foryear {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    margin-bottom: 20rem;
+}
+.foryear.hide {
+    display: none;
+}
+
+.foryear p {
+    color: var(--main-color);
+    font-size: 16rem;
+    font-weight: 600;
+}
+
+.foryear em {
+    color: #00000057;
+    font-size: 16rem;
+    font-style: normal;
+    text-decoration: line-through;
+}
+
+.formonth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formonth .price {
+    display: flex;
+    align-items: baseline;
+    gap: 10rem;
+}
+
+.formonth .price h5 {
+    font-size: 36rem;
+}
+
+.formonth .price span,
+.formonth .price em {
+    color: #777;
+    font-size: 18rem;
+    font-style: normal;
+}
+
+.formonth p {
+    color: #555;
+    font-size: 15rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.mb-box-list {
+    padding: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.mb-box-list li {
+    font-size: 18rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 768rem) {
+    
+}
