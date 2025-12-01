@@ -6,13 +6,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
     transition: all .3s;
     z-index: 96;
 }
 .header.Fixed {
     position: fixed;
-    height: 90px;
+    height: 80px;
+    background-color: #fff;
     box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
 }
 
@@ -102,16 +102,10 @@
     color: #222 !important;
 }
 
-.logo,
-.logo-w {
+.logo {
     width: 170px;
     max-width: 170px;
     user-select: none;
-}
-
-.logo.hide,
-.logo-w.hide {
-    display: none;
 }
 
 .gnb-right {
@@ -151,54 +145,6 @@ a.gnbBtn:hover {
     display: none;
 }
 
-
-.header.trans {
-    background-color: transparent;
-    box-shadow: none;
-}
-.header.trans.Fixed {
-    background-color: #fff;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-}
-
-.header.trans .menu-item a:first-child,
-.header.trans .menu-item a:first-child i {
-    color: #fff;
-}
-
-.header.trans .menu-item a:first-child:hover,
-.header.trans .menu-item .menu-hover li a:hover {
-    background-color: rgba(255, 255, 255, .1);
-}
-
-.header.trans .gnb-right a {
-    color: #fff;
-}
-
-.header.trans .menu-hover {
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, .1);
-    background-color: rgba(0, 0, 0, .15);
-}
-
-.header.trans.Fixed .menu-item a:first-child:hover,
-.header.trans.Fixed .menu-item .menu-hover li a:hover {
-    background-color: #f5f5f5;
-}
-
-.header.trans.Fixed .menu-hover {
-    border: 1px solid #f2f2f2;
-    background-color: #fff;
-}
-
-.header.trans.Fixed .gnb-right a {
-    color: #2d343d;
-    font-weight: 700;
-}
-
-.header.trans.Fixed .gnbBtn {
-    color: #fff !important;
-}
 
 
 /*==================================================*/
@@ -348,33 +294,9 @@ a.gnbBtn:hover {
         margin: 1.5rem auto 0 auto;
     }
 
-    .header.trans .toggleBtn i {
-        color: #fff;
-    }
-    
-    .header.trans .menu-hover {
-        backdrop-filter: unset;
-        border: none;
-    }
-
-    .header.trans.Fixed .toggleBtn i {
-        color: #222;
-    }
-    
-    .header.trans.Fixed .menu-item a:first-child:hover,
-    .header.trans.Fixed .menu-item .menu-hover li a:hover,
-    .header.trans .menu-item a:first-child:hover,
-    .header.trans .menu-item .menu-hover li a:hover {
-        background-color: transparent;
-    }
-
     .menu-hover.on {
         border: none;
         background-color: rgba(0, 0, 0, .15) !important;
-    }
-
-    .header.trans.Fixed .menu-hover {
-        border: none;
     }
 }
 

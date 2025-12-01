@@ -1,22 +1,11 @@
 $(function () {
-    $('.header').addClass('trans');
-})
-
-$(function () {
     var Offset = $('.header').offset();
     $(window).scroll(function () {
         if ($(document).scrollTop() > Offset.top) {
             $('.header').addClass('Fixed');
-            $('.logo-w').addClass('hide');
-            $('.logo').removeClass('hide');
-            $('.menu-item a').addClass('on');
         }
         else {
             $('.header').removeClass('Fixed');
-            $('.logo-w').removeClass('hide');
-            $('.logo').addClass('hide');
-            $('.menu-item a').removeClass('on');
-            $('.mi-head').removeClass('on');
         }
     });
 });
