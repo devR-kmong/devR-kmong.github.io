@@ -21,3 +21,24 @@ if (navigator.userAgent.indexOf("Trident") > 0) {
         "확인 버튼을 누르면 Edge 브라우저로 이동합니다.")
     window.location = 'microsoft-edge:' + window.location.href;
 }
+
+
+
+$(window).on('scroll', function () {
+    $('section').each(function () {
+        if ($(window).scrollTop() >= $(this).offset().top - 300) {
+            var id = $(this).attr('id');
+            $('.sv-nav').removeClass('on');
+            $('.sv-nav[href=#' + id + ']').addClass('on');
+        }
+    });
+});
+
+
+
+$(function () {
+    $('.sv-nav').click(function (e) {
+        $.scrollTo(this.hash || 0, 300);
+        e.preventDefault();
+    });
+});
