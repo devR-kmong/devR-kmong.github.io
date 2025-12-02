@@ -6,13 +6,18 @@
 }
 
 .a5-box {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 20rem;
+    height: auto;
+    background-color: #fff !important;
+    box-shadow: 0 15rem 50rem 0 rgba(80, 86, 131, .2);
 }
 
-.a5-box img {
-    border-radius: 20rem;
+.a5-box .a1-box-text p {
+    padding-right: 0;
+}
+
+.a5-box-icon {
+    height: 45rem;
+    margin-bottom: 40rem;
 }
 
 

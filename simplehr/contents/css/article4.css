@@ -5,9 +5,32 @@
 }
 
 .a4-box-wrapper {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 100rem;
+    gap: 70rem;
+}
+
+.a4-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+}
+
+.a4-box img {
+    border-radius: 20rem;
+}
+
+.a4-box-text h6 {
+    font-size: 30rem;
+}
+
+.a4-box-text p {
+    color: #aaa;
+    font-size: 20rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 15rem;
 }
 
 
