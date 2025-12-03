@@ -120,6 +120,10 @@
     .pd3Swiper .a1-box {
         height: auto;
     }
+
+    .a1-box-wrapper.grid4 {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 
