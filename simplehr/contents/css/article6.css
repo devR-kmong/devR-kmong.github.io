@@ -1,5 +1,6 @@
 .article6 {
-    background: var(--main-color);
+    background: #111;
+    background: url(../images/a6-bg.jpg);
 }
 
 .a6-wrapper {
@@ -36,7 +37,7 @@
 
 .a6Btn:hover {
     color: #fff;
-    background-color: #000;
+    background-color: var(--main-color);
 }
 
 

@@ -21,7 +21,7 @@
 
 .p-image {
     position: absolute;
-    top: 30%; left: 50%;
+    top: 20%; left: 50%;
     width: 700rem;
     background: url(../images/p-image.png) no-repeat;
     background-size: cover;
@@ -106,6 +106,13 @@
 
 
 /*==================================================*/
+@media (min-width: 2250px) {
+    .p-image {
+        top: 25%;
+    }
+}
+
+
 @media (max-width: 1250px) {
     .promotion-wrapper {
         width: 90%;

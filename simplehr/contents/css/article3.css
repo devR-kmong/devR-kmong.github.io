@@ -1,3 +1,10 @@
+.a3-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 120rem;
+}
+
 .a3-box {
     width: 100%;
     display: flex;
