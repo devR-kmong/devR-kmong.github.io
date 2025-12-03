@@ -11,13 +11,16 @@
 }
 
 .a1-box {
+    height: 360rem;
     padding: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--bg-white);
 }
 
 .a1-box img {
     width: 75rem;
-    margin-bottom: 80rem;
 }
 
 .a1-box-text p {
@@ -41,8 +44,11 @@
     }
 
     .a1-box {
+        height: auto;
         padding: 40rem;
         display: flex;
+        flex-direction: row;
+        justify-content: unset;
         align-items: center;
         gap: 30rem;
     }
