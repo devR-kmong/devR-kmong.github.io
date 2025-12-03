@@ -37,7 +37,7 @@ $(window).on('scroll', function () {
 
 
 $(function () {
-    $('.topBtn, .svBtn, .sv-nav').click(function (e) {
+    $('.topBtn, .sv-nav').click(function (e) {
         $.scrollTo(this.hash || 0, 300);
         e.preventDefault();
     });
