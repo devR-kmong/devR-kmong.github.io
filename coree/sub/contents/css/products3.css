@@ -1,0 +1,22 @@
+.pp3Swiper .swiper-slide .ar-title {
+    margin-right: 0;
+    transform: translateX(0);
+}
+
+.pp3Swiper .swiper-slide-active .ar-title {
+    transition: all 0s;
+}
+
+.pd3-title {
+    width: 100%;
+    color: var(--main-color);
+    font-size: 30rem;
+    font-weight: 600;
+    margin-bottom: 30rem;
+    text-transform: uppercase;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+}

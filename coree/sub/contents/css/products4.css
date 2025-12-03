@@ -1,0 +1,29 @@
+.pd3-title {
+    margin-bottom: -60rem;
+}
+
+.pd3Swiper .swiper-slide {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.pd3Swiper .swiper-slide img {
+    mix-blend-mode: multiply;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .pd3-title {
+        margin-bottom: 30rem;
+    }
+    
+    .pd3Swiper .swiper-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

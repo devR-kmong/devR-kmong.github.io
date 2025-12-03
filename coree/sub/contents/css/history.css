@@ -9,7 +9,7 @@
 }
 
 .hs1 .ar-title h6 {
-    color: #535b64;
+    color: var(--sub-text);
     font-size: 22rem;
     font-weight: 400;
     line-height: 1.5;
@@ -61,7 +61,7 @@
 }
 
 .hs1Swiper .ss-text {
-    color: #535b64;
+    color: var(--sub-text);
     font-size: 22rem;
     line-height: 1.5;
     margin-left: 120rem;
@@ -76,12 +76,11 @@
 .hs2-map {
     position: absolute;
     bottom: 50rem;
-    width: 100%;
     z-index: 1;
 }
 
 .hs2Swiper {
-    width: 80%;
+    width: 100%;
     margin-top: 350rem;
     z-index: 2;
 }
@@ -89,7 +88,7 @@
 .hs2-box {
     position: relative;
     border: 8rem solid #fff;
-    height: 230rem;
+    height: 300rem;
 }
 .hs2-box::before {
     content: '';
@@ -211,10 +210,6 @@
     .swiperBtn-wrapper {
         width: 53%;
     }
-
-    .hs2Swiper {
-        width: 90%;
-    }
 }
 
 
@@ -230,12 +225,16 @@
         display: none;
     }
 
+    .hs2 .article-wrapper {
+        width: 100%;
+        padding-left: 5%;
+    }
+    
     .hs2-map {
         bottom: 330rem; left: 0;
     }
 
     .hs2Swiper {
-        width: calc(100% - 5%);
         margin-right: 0;
     }
 

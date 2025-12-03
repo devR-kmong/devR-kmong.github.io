@@ -37,7 +37,7 @@
 }
 
 .pp2-text {
-    color: #535b64;
+    color: var(--sub-text);
     font-size: 20rem;
     line-height: 1.6;
     margin-bottom: 50rem;
@@ -63,7 +63,7 @@
 .tmSwiper {
     position: absolute;
     bottom: 0; right: 0;
-    max-width: 52%;
+    max-width: 55%;
     height: 300rem;
 }
 
@@ -107,11 +107,12 @@
     line-height: 1.4;
     letter-spacing: 1rem;
     margin-top: 30rem;
+    padding-right: 20%;
 }
 
 .pp3Swiper .ss-image {
     position: relative;
-    min-width: 45%;
+    min-width: 43%;
 }
 
 .pp3Swiper .ss-image::before {
@@ -192,6 +193,14 @@
     .pp3-wrapper {
         width: calc(100% - 15%);
     }
+
+    .pp3Swiper .ss-image {
+        min-width: 40%;
+    }
+
+    .tmSwiper {
+        max-width: 58%;
+    }
 }
 
 
@@ -212,7 +221,7 @@
 
 @media (max-width: 950px) {
     .tmSwiper {
-        width: 45%;
+        width: 54%;
         max-width: unset;
     }
 }

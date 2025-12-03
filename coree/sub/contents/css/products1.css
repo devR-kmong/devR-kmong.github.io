@@ -1,0 +1,147 @@
+.pd2 {
+    background-color: var(--bg-white);
+}
+
+.pd2 .article-wrapper {
+    position: relative;
+}
+
+.pd2-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 200rem;
+}
+
+.pd2-image {
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translate(0, -50%);
+    width: 50%;
+}
+
+.pd2-text {
+    width: 40%;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.pd2-text h6 {
+    color: var(--main-color);
+    font-size: 30rem;
+    margin-bottom: 10rem;
+}
+
+.pd2-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding-left: 15rem;
+}
+
+.pd2-text ul li {
+    color: var(--sub-text);
+    font-size: 20rem;
+    font-weight: 300;
+    line-height: 1.2;
+    list-style-type: '• ';
+}
+
+.pd2-text p {
+    color: var(--sub-text);
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 30rem;
+}
+
+.pd3Swiper {
+    width: 100%;
+}
+
+.pd3Swiper .swiperBtn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20rem;
+    margin-bottom: 50rem;
+    filter: invert(1);
+}
+
+.pd3Swiper .a1-box {
+    height: 400rem;
+}
+
+.pd3Swiper .a1-box h5 {
+    font-size: 40rem;
+    font-weight: 500;
+    font-family: unset;
+}
+
+.pd3Swiper .a1-box p {
+    font-size: 24rem;
+}
+
+.a1-box-wrapper.grid4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .pd2-wrapper {
+        flex-direction: column;
+        gap: 100rem;
+    }
+    
+    .pd2-image {
+        position: static;
+        transform: unset;
+        width: 100%;
+    }
+    
+    .pd2-text {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .pd3Swiper .swiperBtn-wrapper {
+        display: none;
+    }
+    
+    .pd3Swiper .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30rem;
+    }
+
+    .pd3Swiper .a1-box {
+        height: auto;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .pd2 .ar-title h5 {
+        font-size: 75rem;
+    }
+
+    .pd2-text h6 {
+        font-size: 40rem;
+        margin-bottom: 30rem;
+    }
+
+    .pd2-text ul {
+        padding-left: 20rem;
+    }
+
+    .pd2-text ul li {
+        font-size: 34rem;
+    }
+
+    .pd2-text p {
+        font-size: 36rem;
+    }
+}
