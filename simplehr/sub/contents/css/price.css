@@ -39,9 +39,6 @@
 .mb-box.premium::before {
     background-color: var(--main-color);
 }
-.mb-box.pro::before {
-    background-color: rgb(81, 0, 255);
-}
 
 .mb-box-top {
     padding: 30rem 0 20rem 0;
@@ -52,6 +49,7 @@
 .mb-box-price {
     width: 100%;
     padding: 30rem 10rem;
+    padding-top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,6 +138,200 @@
     border-radius: 50%;
 }
 
+
+.pr-arrow {
+    width: 100%;
+    margin-top: -200rem;
+    margin-bottom: 30rem;
+}
+
+.pr2-title h5 {
+    color: #222;
+    font-size: 36rem;
+    font-weight: 700;
+    margin-bottom: 50rem;
+}
+
+.pr2-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+}
+
+.pr2-arrow {
+    font-size: 50rem;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.pr2-arrow i {
+    margin: 0 -18rem;
+    opacity: .1;
+}
+.pr2-arrow i:nth-child(1) {
+    animation: ararar 1s both infinite;
+}
+.pr2-arrow i:nth-child(2) {
+    animation: ararar 1s .3s both infinite;
+}
+.pr2-arrow i:nth-child(3) {
+    animation: ararar 1s .6s both infinite;
+}
+
+@keyframes ararar {
+    50% {
+        opacity: .3;
+    }
+}
+
+.pr2-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50rem;
+}
+
+.pr2-box-left {
+    position: relative;
+    width: 50%;
+    padding: 24rem 50rem;
+    display: flex;
+    align-items: center;
+    gap: 50rem;
+    border-radius: 10rem;
+    box-shadow: 0 15rem 50rem 0 rgba(80, 86, 131, .15);
+}
+
+.pr2-box-left h5 {
+    width: 20%;
+    font-size: 24rem;
+    text-align: center;
+}
+
+.pr2-box-left p {
+    color: #333;
+    font-size: 20rem;
+    font-weight: 600;
+}
+
+.pr2-box-right {
+    width: 50%;
+    padding: 24rem 50rem;
+    font-size: 22rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    box-shadow: 0 15rem 50rem 0 rgba(80, 86, 131, .15);
+}
+
+.pr2-box-right:last-child {
+    color: #000;
+    text-shadow: none;
+    --border-angle: 0turn;
+
+    /* 밝은 배경 */
+    --main-bg: conic-gradient(from var(--border-angle), #fff, #f9f9f9 50%, #fff 100%);
+
+    border: solid 2px transparent;
+
+    /* 파란색 계열 그라디언트 테두리 */
+    --gradient-border: conic-gradient(
+        from var(--border-angle),
+        transparent 20%,
+        var(--main-color),
+        var(--main-color),
+        var(--main-color),
+        transparent 90%
+    );
+
+    background: var(--main-bg) padding-box,
+                var(--gradient-border) border-box,
+                var(--main-bg) border-box;
+
+    background-position: center center;
+    animation: bg-spin 3s linear infinite;
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+.pr2-box:nth-child(2) .pr2-box-left h5 {
+    color: rgb(243, 200, 122);
+}
+.pr2-box:nth-child(3) .pr2-box-left h5 {
+    color: rgb(255, 107, 107);
+}
+.pr2-box:nth-child(4) .pr2-box-left h5 {
+    color: var(--main-color);
+}
+
+.pr2-box:nth-child(1) .pr2-box-right:last-child {
+    --gradient-border: conic-gradient(
+        from var(--border-angle),
+        transparent 20%,
+        #aaa,
+        #aaa,
+        #aaa,
+        transparent 90%
+    );
+}
+.pr2-box:nth-child(2) .pr2-box-right:last-child {
+    --gradient-border: conic-gradient(
+        from var(--border-angle),
+        transparent 20%,
+        rgb(243, 200, 122),
+        rgb(243, 200, 122),
+        rgb(243, 200, 122),
+        transparent 90%
+    );
+}
+.pr2-box:nth-child(3) .pr2-box-right:last-child {
+    --gradient-border: conic-gradient(
+        from var(--border-angle),
+        transparent 20%,
+        rgb(255, 107, 107),
+        rgb(255, 107, 107),
+        rgb(255, 107, 107),
+        transparent 90%
+    );
+}
+.pr2-box:nth-child(4) .pr2-box-right:last-child {
+    --gradient-border: conic-gradient(
+        from var(--border-angle),
+        transparent 20%,
+        var(--main-color),
+        var(--main-color),
+        var(--main-color),
+        transparent 90%
+    );
+}
+
+.pr2-box:nth-child(1) .pr2-box-right i {
+    color: #aaa;
+    font-weight: lighter;
+}
+.pr2-box:nth-child(2) .pr2-box-right i {
+    color: rgb(243, 200, 122);
+    font-weight: lighter;
+}
+.pr2-box:nth-child(3) .pr2-box-right i {
+    color: rgb(255, 107, 107);
+    font-weight: lighter;
+}
+.pr2-box:nth-child(4) .pr2-box-right i {
+    color: var(--main-color);
+    font-weight: lighter;
+}
 
 
 /*==================================================*/
