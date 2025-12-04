@@ -1,4 +1,16 @@
+.pp3-wrapper .ar-title.dark {
+    position: absolute;
+    top: 0; left: 45%;
+    z-index: 10;
+}
+
+.pp3Swiper .ss-image {
+    width: 43%;
+    min-width: unset;
+}
+
 .pp3Swiper .swiper-slide .ar-title {
+    opacity: 1;
     margin-right: 0;
     transform: translateX(0);
 }
@@ -18,5 +30,29 @@
 
 
 /*==================================================*/
+@media (min-width: 2250px) {
+    .pp3-wrapper .ar-title.dark {
+        left: 42%;
+    }
+    
+    .pp3Swiper .ss-image {
+        width: 40%;
+    }
+}
+
+
 @media (max-width: 768px) {
+    .pp3-wrapper .ar-title.dark {
+        position: static;
+        padding-left: 5%;
+        margin-bottom: 50rem;
+    }
+
+    .pp3Swiper .ar-title em {
+        height: auto;
+    }
+    
+    .pp3Swiper .ss-image {
+        width: 100%;
+    }
 }
