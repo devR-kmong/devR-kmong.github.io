@@ -1,24 +1,4 @@
 $(function () {
-    let lastScroll = 0;
-
-    $(window).on('scroll', function () {
-        const currentScroll = $(this).scrollTop();
-
-        if (currentScroll <= 0) {
-            $('.header').removeClass('white hide');
-        } else if (currentScroll > lastScroll) {
-            $('.header').addClass('hide').removeClass('white');
-        } else {
-            $('.header').removeClass('hide').addClass('white');
-        }
-
-        lastScroll = currentScroll;
-    });
-});
-
-
-
-$(function () {
     var Offset = $('.header').offset();
     $(window).scroll(function () {
         if ($(document).scrollTop() > Offset.top) {
@@ -67,4 +47,5 @@ if (window.innerWidth < 551) {
             tmArrow.not(tmArrow.eq(i)).removeClass('i-rotate2');
         })
     }
+
 }
