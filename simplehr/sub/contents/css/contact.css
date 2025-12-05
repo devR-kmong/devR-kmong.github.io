@@ -1,0 +1,180 @@
+.inquiry-wrap {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Pretendard", sans-serif;
+}
+
+.inquiry-form {
+    width: 100%;
+}
+
+/* 2열 정렬 */
+.form-row {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.form-group.msg {
+    align-items: flex-start;
+    gap: 15px;
+    margin: 50px 0;
+}
+
+.form-group label {
+    width: 130px;
+    font-size: 16px;
+    color: #222;
+}
+
+.form-group label span {
+    color: red;
+}
+
+.form-group input {
+    flex: 1;
+    border: none;
+    padding: 10px 5px;
+    font-size: 15px;
+    outline: none;
+    border-bottom: 1px solid #bbb;
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #bbb;
+    padding: 15px;
+    font-size: 15px;
+    resize: none;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-bottom: 1px solid #111;
+}
+.form-group textarea:focus {
+    border: 1px solid #111;
+}
+
+
+/* 개인정보 */
+.privacy-wrap {
+    margin-top: 30px;
+}
+
+.privacy-title {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.privacy-title span {
+    color: red;
+}
+
+.privacy-box {
+    border: 1px solid #bbb;
+    padding: 20px;
+    height: 180px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* 동의 라디오 */
+.agree-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    gap: 25px;
+    font-size: 15px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio input {
+    display: none;
+}
+
+.radio span {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 6px;
+}
+
+.radio input:checked + span {
+    border-color: var(--main-color);
+}
+
+.radio input:checked + span:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+/* 버튼 */
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn-wrap button {
+    width: 220px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .form-row {
+        width: 100%;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .form-group.msg {
+        margin: 25px 0;
+    }
+}
