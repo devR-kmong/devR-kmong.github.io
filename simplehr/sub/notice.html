@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../contents/css/common.css">
+    <link rel="stylesheet" href="../contents/css/header.css">
+    <link rel="stylesheet" href="../contents/css/promotion.css">
+    <link rel="stylesheet" href="../contents/css/article_common.css">
+    <link rel="stylesheet" href="../contents/css/article1.css">
+    <link rel="stylesheet" href="../contents/css/article2.css">
+    <link rel="stylesheet" href="../contents/css/article3.css">
+    <link rel="stylesheet" href="../contents/css/article4.css">
+    <link rel="stylesheet" href="../contents/css/article5.css">
+    <link rel="stylesheet" href="../contents/css/article6.css">
+    <link rel="stylesheet" href="../contents/css/footer.css">
+    <link rel="stylesheet" href="../contents/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../contents/css/aos.css">
+    <link rel="stylesheet" href="../contents/css/floating.css">
+    <link rel="stylesheet" href="contents/css/sub_common.css">
+    <link rel="stylesheet" href="contents/css/notice.css">
+    <link rel="shortcut icon" href="../contents/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="../contents/js/jquery.scrollTo.min.js"></script>
+    <script src="../contents/js/swiper-bundle.min.js"></script>
+    <script src="../contents/js/aos.js"></script>
+    <title>공지사항</title>
+</head>
+<body>
+    <div class="floating">
+        <a href="/" class="topBtn">
+            <i class="ri-arrow-up-s-line"></i>
+        </a>
+    </div>
+    <div class="header">
+        <div class="gnb">
+            <div class="gnb-left">
+                <a href="<?php echo G5_URL ?>" class="logo-w"><img src="../contents/images/logo-w.svg"></a>
+                <a href="<?php echo G5_URL ?>" class="logo hide"><img src="../contents/images/logo.svg"></a>
+                <ul class="menu">
+                    <img src="../contents/images/sb.svg" class="menu-sb">
+                    <div class="closeBtn">
+                        <i class="ri-close-large-line"></i>
+                    </div>
+                    <li class="menu-item">
+                        <a href="<?php echo G5_URL ?>">심플오피스HR</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#service" class="svBtn">서비스</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="<?php echo G5_URL ?>/sub/price">이용요금</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#none" class="mi-head">Partners<i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="menu-hover mh-3">
+                            <li><a href="https://esangedu.kr/esang/main/" target="blank">이상에듀</a></li>
+                            <li><a href="https://edu.nayanet.co.kr/home/index.php" target="blank">안전보건교육센터</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="<?php echo G5_URL ?>/notice" class="mi-head">고객지원<i class="ri-arrow-down-s-line"></i></a>
+                        <ul class="menu-hover mh-4">
+                            <li><a href="<?php echo G5_URL ?>/notice">공지사항</a></li>
+                            <li><a href="<?php echo G5_URL ?>/contact/write">이용문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="gnb-right">
+                <a href="" target="_blank">
+                    로그인
+                </a>
+                <a href="<?php echo G5_URL ?>/contact/write" class="gnbBtn">
+                    <p>이용문의</p>
+                </a>
+                <div class="toggleBtn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="sub-promotion">
+            <div class="sub-promotion-wrapper">
+                <div class="sub-p-text">
+                    <h5>
+                        심플오피스HR <span>공지사항</span>
+                    </h5>
+                    <p>
+                        심플오피스HR의 다양한 소식을 만나보세요.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="article sub-article">
+            <div class="article-wrapper">
+                <div class="board-wrap">
+            
+                    <!-- 상단 정보 + 검색 -->
+                    <div class="board-top">
+                        <div class="board-total">3건</div>
+            
+                        <div class="board-search">
+                            <input type="text" placeholder="Search">
+                            <button>
+                                <i class="ri-search-line"></i>
+                            </button>
+                        </div>
+                    </div>
+            
+                    <!-- 게시판 테이블 -->
+                    <div class="board-list">
+            
+                        <a href="notice_view.html" class="board-item notice">
+                            <div class="num notice-badge">공지</div>
+                            <div class="title">심플오피스HR 공식 런칭!</div>
+                            <div class="date">2025-10-12</div>
+                        </a>
+            
+                        <div class="board-item">
+                            <div class="num">3</div>
+                            <div class="title">심플오피스HR의 파트너 소개 - 이상에듀</div>
+                            <div class="date">2025-11-05</div>
+                        </div>
+            
+                        <div class="board-item">
+                            <div class="num">2</div>
+                            <div class="title">심플오피스HR 소식</div>
+                            <div class="date">2025-10-01</div>
+                        </div>
+            
+                        <div class="board-item">
+                            <div class="num">1</div>
+                            <div class="title">안녕하십니까, 심플오피스HR입니다.</div>
+                            <div class="date">2025-09-28</div>
+                        </div>
+            
+                    </div>
+            
+                    <!-- 페이징 -->
+                    <div class="board-pagination">
+                        <a href="#" class="page-btn"><i class="ri-arrow-left-s-line"></i></a>
+                        <a href="#" class="page-btn active">1</a>
+                        <a href="#" class="page-btn">2</a>
+                        <a href="#" class="page-btn">3</a>
+                        <a href="#" class="page-btn"><i class="ri-arrow-right-s-line"></i></a>
+                    </div>
+            
+                </div>
+            
+            </div>
+        </section>
+    </main>
+    <section class="article article6">
+        <div class="article-wrapper">
+            <div class="a6-wrapper">
+                <div class="a6-text">
+                    심플오피스HR이 궁금하신가요?<br/>
+                    언제든지 문의해주세요.
+                </div>
+                <a href="<?php echo G5_URL?>/contact/write" class="a6Btn">
+                    <h5>
+                        이용문의 바로가기
+                    </h5>
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-top">
+                <ul class="ft-menu">
+                    <h5>
+                        심플오피스HR
+                    </h5>
+                    <li><a href="<?php echo G5_URL?>">메인화면</a></li>
+                </ul>
+                <ul class="ft-menu">
+                    <h5>
+                        서비스소개
+                    </h5>
+                    <li><a href="<?php echo G5_URL ?>/sub/service#1">입사/퇴사관리</a></li>
+                    <li><a href="<?php echo G5_URL ?>/sub/service#2">근태/휴가관리</a></li>
+                    <li><a href="<?php echo G5_URL ?>/sub/service#3">급여관리</a></li>
+                    <li><a href="<?php echo G5_URL ?>/sub/service#4">법정교육관리</a></li>
+                </ul>
+                <ul class="ft-menu">
+                    <h5>
+                        이용요금
+                    </h5>
+                    <li><a href="<?php echo G5_URL?>/sub/price">이용요금</a></li>
+                </ul>
+                <ul class="ft-menu">
+                    <h5>
+                        파트너사
+                    </h5>
+                    <li><a href="https://esangedu.kr/esang/main/" target="blank">이상에듀</a></li>
+                    <li><a href="https://edu.nayanet.co.kr/home/index.php" target="blank">안전보건교육센터</a></li>
+                </ul>
+                <ul class="ft-menu">
+                    <h5>
+                        고객지원
+                    </h5>
+                    <li><a href="<?php echo G5_URL ?>/notice">공지사항</a></li>
+                    <li><a href="<?php echo G5_URL ?>/contact/write">이용문의</a></li>
+                </ul>
+            </div>
+            <div class="footer-mid">
+                <div class="fm-left">
+                    <a href="<?php echo G5_URL?>" class="logo-f">
+                        <img src="../contents/images/logo-w.svg">
+                    </a>
+                    <div class="footer-text">
+                        <p>
+                            ㈜나야넷 | 대표 : 구영모<br/>사업자등록번호 : 783-87-00353<br/>주소 : 서울특별시 금천구 가산디지털1로 145, 804호(에이스하이엔드타워 3차)<em><br/></em>
+                            TEL : 02.6494.2010 | FAX : 02.6008.2012 
+                        </p>
+                        <div class="fBtn-wrapper">
+                            <a href="<?php echo G5_URL?>/policy/terms_and_conditions_of_service_use" class="fBtn">
+                                서비스 이용약관
+                            </a>
+                            <a href="<?php echo G5_URL?>/policy/personal_information_processing_policy" class="fBtn">
+                                개인정보처리방침
+                            </a>
+                            <a href="" class="fBtn">
+                                사업자등록번호 확인
+                            </a>
+                        </div>
+                        <p>
+                            Copyright <a href="<?php echo G5_BBS_URL?>/login.php">@Nayanet inc.</a> All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+                <select class="family_site" onChange="if(this.selectedIndex) {this.blur(); window.open(options[selectedIndex].value);}">
+                    <option value="" class="selected">FAMILY SITE</option>
+                    <option value="https://nayanet.co.kr">주식회사 나야넷</option>
+                    <option value="https://esangedu.kr/esang/main">이상에듀</option>
+                    <option value="https://archive.esangedu.kr">이상에듀 아카이브</option>
+                    <option value="https://edu.nayanet.co.kr/home/index.php">안전보건교육센터</option>
+                    <option value="https://nayatour.kr">나야넷 투어</option>
+                    <option value="https://medyon.esangedu.kr">메디온</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="../contents/js/common.js"></script>
+    <script src="../contents/js/header.js"></script>
+
+</body>
+</html>
