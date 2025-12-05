@@ -36,10 +36,24 @@
 
 /*==================================================*/
 @media (max-width: 768px) {
-    
+    .a4-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .a4-box img {
+        height: 250rem;
+        object-fit: cover;
+        border-radius: 10rem;
+    }
 }
 
 
 @media (max-width: 550px) {
-    
+    .a4-box-text h6 {
+        font-size: 40rem;
+    }
+
+    .a4-box-text p {
+        font-size: 24rem;
+    }
 }

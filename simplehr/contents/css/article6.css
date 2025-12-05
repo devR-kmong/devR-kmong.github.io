@@ -44,10 +44,29 @@
 
 /*==================================================*/
 @media (max-width: 768px) {
+    .article6 {
+        padding: 100rem 0 150rem 0;
+    }
     
+    .a6-wrapper {
+        flex-direction: column;
+        gap: 50rem;
+    }
+
+    .a6-text {
+        text-align: center;
+    }
 }
 
 
 @media (max-width: 550px) {
-    
+    .a6-text {
+        font-size: 40rem;
+    }
+
+    .a6Btn {
+        width: 350rem;
+        height: 90rem;
+        font-size: 32rem;
+    }
 }

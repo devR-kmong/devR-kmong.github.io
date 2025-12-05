@@ -73,7 +73,18 @@
 
 /*==================================================*/
 @media (max-width: 768px) {
+    .a3-box {
+        flex-direction: column;
+        gap: 30rem;
+    }
+
+    .a3-box-text ul {
+        display: none;
+    }
     
+    .a3-box-right {
+        width: 100%;
+    }
 }
 
 

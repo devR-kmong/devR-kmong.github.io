@@ -30,7 +30,7 @@
 /*==================================================*/
 @media (max-width: 768px) {
     .floating {
-        bottom: 35px; right: 35px;
+        bottom: 70px; right: 35px;
     }
     
     .floating a {
@@ -38,6 +38,5 @@
         height: 40px;
         line-height: 40px;
         border-radius: 16px;
-        cursor: unset;
     }
 }

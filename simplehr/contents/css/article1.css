@@ -77,10 +77,47 @@
 
 /*==================================================*/
 @media (max-width: 768px) {
+    .article1 {
+        padding-top: 150rem;
+    }
+
+    .a1-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20rem;
+    }
+
+    .a1-box {
+        height: auto;
+    }
     
+    .a1-box-text {
+        width: 60%;
+    }
+
+    .a1-box-image {
+        height: 60%;
+    }
 }
 
 
 @media (max-width: 550px) {
-    
+    .a1-title h5 {
+        font-size: 60rem;
+    }
+
+    .a1-title p {
+        font-size: 26rem;
+    }
+
+    .a1-title p br {
+        display: none;
+    }
+
+    .a1-box-text h6 {
+        font-size: 40rem;
+    }
+
+    .a1-box-text p {
+        font-size: 22rem;
+    }
 }

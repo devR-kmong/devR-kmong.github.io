@@ -24,7 +24,17 @@
 
 /*==================================================*/
 @media (max-width: 768px) {
-    
+    .a5-title br {
+        display: none;
+    }
+
+    .a5-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .a5-box .a1-box-text {
+        width: 100%;
+    }
 }
 
 
