@@ -335,6 +335,84 @@
 
 
 /*==================================================*/
-@media (max-width: 768rem) {
+@media (max-width: 768px) {
+    .mb-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 0;
+    }
+
+    .pr-arrow {
+        margin-top: -100rem;
+    }
+
+    .pr2-box-wrapper {
+        gap: 80rem;
+    }
     
+    .pr2-box {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .pr2-arrow {
+        font-size: 40rem;
+        transform: rotate(90deg) !important;
+        display: none;
+    }
+
+    .pr2-arrow i:nth-child(1) {
+        opacity: .5;
+        animation: none;
+    }
+    
+    .pr2-arrow i:nth-child(2),
+    .pr2-arrow i:nth-child(3) {
+        display: none;
+    }
+
+    .pr2-box-left,
+    .pr2-box-right {
+        width: 100%;
+    }
+
+    .pr2-box-left {
+        flex-direction: column;
+        gap: 10rem;
+    }
+    
+    .pr2-box-right {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .mb-box-top {
+        font-size: 30rem;
+    }
+    
+    .mb-box-list li {
+        font-size: 22rem;
+    }
+
+    .formonth p {
+        font-size: 20rem;
+    }
+
+    .formonth .price h5 {
+        font-size: 50rem;
+    }
+
+    .formonth .price span, .formonth .price em {
+        font-size: 22rem;
+    }
+
+    .pr2-box-left h5 {
+        font-size: 30rem;
+    }
+
+    .pr2-box-right {
+        padding: 30rem 10rem;
+        font-size: 30rem;
+    }
 }

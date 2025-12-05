@@ -30,7 +30,6 @@
     align-items: center;
     gap: 20rem;
     text-align: center;
-    margin-top: 100rem;
 }
 
 .sub-p-text h5 {
@@ -57,5 +56,11 @@
 
 /*==================================================*/
 @media (max-width: 768px) {
+    .sub-promotion {
+        height: 350rem;
+    }
     
+    .sub-p-text p br {
+        display: block;
+    }
 }
