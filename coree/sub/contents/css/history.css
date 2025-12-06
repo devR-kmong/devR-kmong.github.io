@@ -155,6 +155,7 @@
 
 .hs3Swiper .ss-year h5 {
     color: #fff;
+    white-space: nowrap;
 }
 
 .hs3Swiper .ss-line {
