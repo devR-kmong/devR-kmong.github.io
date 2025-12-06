@@ -61,6 +61,8 @@
     width: 100%;
 }
 
+.ft4Swiper .swiperBtn-wrapper,
+.ft3Swiper .swiperBtn-wrapper,
 .pd3Swiper .swiperBtn-wrapper {
     display: flex;
     justify-content: flex-end;
@@ -107,6 +109,8 @@
         margin: 0;
     }
     
+    .ft4Swiper .swiperBtn-wrapper,
+    .ft3Swiper .swiperBtn-wrapper,
     .pd3Swiper .swiperBtn-wrapper {
         display: none;
     }
