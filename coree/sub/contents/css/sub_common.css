@@ -31,6 +31,18 @@
     background: url(../images/eurasia-bg.jpg);
     background-position: right;
 }
+.sub-promotion.overseas {
+    background: url(../images/overseas-bg.jpg);
+    background-position: right;
+}
+.sub-promotion.research {
+    background: url(../images/research-bg.jpg);
+    background-position: right;
+}
+.sub-promotion.financial {
+    background: url(../images/financial-bg.jpg);
+    background-position: right;
+}
 
 
 
