@@ -96,7 +96,11 @@
     margin: 100rem 0 -60rem 0;
 }
 
-.ft3 .pd3Swiper .swiper-slide h5 {
+.ft3 .pd4Swiper {
+    width: 100%;
+}
+
+.ft3 .pd4Swiper .swiper-slide h5 {
     font-family: "SabonLTPro", serif;
 }
 
@@ -179,12 +183,17 @@
     background-color: transparent;
 }
 
+.ft6 .a1-box h5 {
+    font-size: 30rem;
+}
+
 .ft6 .a1-box ul {
     padding-left: 20rem;
     margin-top: 40rem;
 }
 
 .ft6 .a1-box ul li {
+    font-size: 18rem;
     list-style: disc;
 }
 
@@ -286,6 +295,13 @@
 
 
 /*==================================================*/
+@media (max-width: 1650px) {
+    .a1-box-wrapper.grid4 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
 @media (max-width: 1250px) {
     .nxft2-box-wrapper {
         grid-template-columns: repeat(3, 1fr);
@@ -331,6 +347,12 @@
         margin-top: 40rem;
     }
 
+    .a1-box-wrapper.grid4 {
+        display: flex;
+        flex-direction: column;
+        gap: 30rem;
+    }
+    
     .pd3-title.more,
     .ft3 .pd3-title.mb {
         margin: 60rem 0 30rem 0;
@@ -406,7 +428,34 @@
     }
 
     .nxft2-box-wrapper {
+        padding-left: 50rem;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nxft2-box {
+        position: relative;
+    }
+    .nxft2-box::before {
+        content: '';
+        position: absolute;
+        top: 62rem; left: -33rem;
+        width: 33rem;
+        height: 1px;
+        background-color: #ccc;
+    }
+    .nxft2-box::after {
+        content: '●';
+        position: absolute;
+        top: 50rem; left: -50rem;
+        width: 24rem;
+        height: 24rem;
+        color: var(--light-blue);
+        font-size: 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid var(--light-blue);
     }
 
     .nxft3-tbody {
@@ -432,6 +481,10 @@
 
     .ft3 .ar-title em {
         font-size: 30rem;
+    }
+
+    .ft6 .a1-box h5 {
+        font-size: 40rem;
     }
 
     .ft6 .a1-box ul li p {

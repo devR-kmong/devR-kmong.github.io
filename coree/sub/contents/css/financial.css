@@ -14,6 +14,14 @@
     justify-content: space-between;
 }
 
+.fn2 .a1-box-text h5 {
+    font-size: 32rem;
+}
+
+.fn2 .a1-box-text p {
+    font-size: 18rem;
+}
+
 
 .fn3 {
     background-color: var(--sub-text);
@@ -34,6 +42,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 30rem;
     margin-top: 100rem;
 }
 
@@ -95,6 +104,14 @@
 
 
 @media (max-width: 550px) {
+    .fn2 .a1-box-text h5 {
+        font-size: 36rem;
+    }
+
+    .fn2 .a1-box-text p {
+        font-size: 22rem;
+    }
+    
     .fn3-text p {
         font-size: 30rem;
     }

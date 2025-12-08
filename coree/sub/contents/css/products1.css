@@ -63,7 +63,8 @@
 
 .ft4Swiper .swiperBtn-wrapper,
 .ft3Swiper .swiperBtn-wrapper,
-.pd3Swiper .swiperBtn-wrapper {
+.pd3Swiper .swiperBtn-wrapper,
+.pd4Swiper .swiperBtn-wrapper {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -111,16 +112,19 @@
     
     .ft4Swiper .swiperBtn-wrapper,
     .ft3Swiper .swiperBtn-wrapper,
-    .pd3Swiper .swiperBtn-wrapper {
+    .pd3Swiper .swiperBtn-wrapper,
+    .pd4Swiper .swiperBtn-wrapper {
         display: none;
     }
     
+    .pd4Swiper .swiper-wrapper,
     .pd3Swiper .swiper-wrapper {
         display: flex;
         flex-direction: column;
         gap: 30rem;
     }
 
+    .pd4Swiper .a1-box,
     .pd3Swiper .a1-box {
         height: auto;
     }
