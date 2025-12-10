@@ -1,0 +1,134 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.p-flow-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.p-flow {
+    color: #fff;
+    font-size: 50rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    letter-spacing: 3rem;
+    animation: marquee 10s linear infinite;
+}
+
+.p-flow span {
+    color: var(--main-color);
+    margin-left: -25rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.p-sb {
+    position: absolute;
+    top: -20%; right: -10%;
+    height: 140%;
+    object-fit: cover;
+    opacity: .03;
+    z-index: 1;
+}
+
+.promotion-wrapper {
+    width: 1300rem;
+}
+
+.p-text {
+    position: relative;
+    color: #fff;
+    margin-top: 50rem;
+    z-index: 2;
+}
+
+.p-text h6 {
+    font-size: 37rem;
+    margin-bottom: 30rem;
+}
+
+.p-text h6 span {
+    color: var(--main-color);
+}
+
+.p-text h5 {
+    color: #000;
+    width: fit-content;
+    line-height: .9;
+    font-size: 220rem;
+    font-family: 'Montserrat';
+    letter-spacing: -4rem;
+    padding: 0 4rem;
+    font-weight: 800;
+    background-color: var(--main-color);
+}
+
+.p-text p {
+    font-size: 22rem;
+    line-height: 1.5;
+    margin-top: 60rem;
+}
+
+
+@media (max-width: 1450px) {
+    .p-sb {
+        top: 0;
+        height: 100%;
+        transform: scale(1.2);
+    }
+}
+
+
+@media (max-width: 1350px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .p-text {
+        text-align: center;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-250%);
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    .p-flow-wrapper {
+        bottom: 25%;
+    }
+    
+    .p-text p {
+        font-size: 28rem;
+    }
+}

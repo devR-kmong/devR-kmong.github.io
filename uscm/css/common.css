@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+    font-family: 'Pretendard Variable', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic','Nanum Gothic', sans-serif;
+    letter-spacing: -1rem;
+}
+
+html.safari.desktop {
+    font-size: 0.040083333vw;
+}
+
+html,
+body {
+    font-size: 6.25%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-size: 17rem;
+    word-break: keep-all;
+    background: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+:root {
+    --main-color: #61ff31;
+}
+
+::selection {
+    color: #000;
+    background-color: var(--main-color);
+}
+
+#gradient-canvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    --gradient-color-1: #0011ff;
+    --gradient-color-2: #000ba8;
+    --gradient-color-3: #002281;
+    --gradient-color-4: #00195e;
+    --gradient-color-5: #0F2254;
+    --gradient-color-6: #001444;
+    --gradient-color-7: #010714;
+    z-index: 1;
+}
+
+
+/*==================================================*/
+@media (max-width: 1650px) {
+    html,
+    html.safari.desktop {
+        font-size: 0.06756756756756757vw;
+    }
+}
+
+
+@media (max-width: 991px) {
+    html,
+    html.safari.desktop {
+        font-size: 0.13020833333333335vw;
+    }
+}
