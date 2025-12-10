@@ -109,6 +109,7 @@
 @media (max-width: 991px) {
     .p-text {
         text-align: center;
+        margin-top: 0;
     }
 
     @keyframes marquee {
@@ -125,7 +126,11 @@
 
 @media (max-width: 550px) {
     .p-flow-wrapper {
-        bottom: 25%;
+        bottom: 150rem;
+    }
+
+    .p-text {
+        margin-top: -30%;
     }
     
     .p-text p {
