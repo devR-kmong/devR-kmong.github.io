@@ -15,6 +15,21 @@ if (window.innerWidth > 768) {
 }
 
 
+$('.menuBtns').click(function () {
+    $(this).toggleClass('change');
+});
+
+$('nav ul li a').click(function () {
+    $('#check').prop('checked', false);
+    $('.menuBtns').removeClass('change');
+});
+
+$('.overlay').click(function () {
+    $('#check').prop('checked', false);
+    $('.menuBtns').removeClass('change');
+});
+
+
 
 
 var swiper = new Swiper(".ab1Swiper", {
