@@ -47,7 +47,7 @@ p {
 }
 
 :root {
-    --main-color: #61ff31;
+    --main-color: #1de9b6;
 }
 
 ::selection {
@@ -85,4 +85,5 @@ p {
     html.safari.desktop {
         font-size: 0.13020833333333335vw;
     }
+
 }
