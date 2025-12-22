@@ -1,0 +1,277 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/hero.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.promotion::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    animation: pulse 2s infinite;
+    mix-blend-mode: color-dodge;
+    z-index: 1;
+}
+
+@keyframes pulse {
+    50% {
+        background-color: #ff00001c;
+    }
+
+    100% {
+        background-color: #00000000;
+    }
+}
+
+.promotion-wrapper {
+    position: relative;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-notice {
+    position: absolute;
+    bottom: -60px; left: 50%;
+    transform: translate(-50%, 0);
+    color: rgba(255, 255, 255, .2);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+.p-signboard {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.p-board {
+    width: 800px;
+    mix-blend-mode: hard-light;
+    opacity: .9;
+    z-index: 10;
+}
+
+.p-neon {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    mix-blend-mode: hard-light;
+    animation: neon 2s infinite;
+    z-index: 1;
+}
+
+@keyframes neon {
+    0%,
+    31%,
+    34%,
+    39%,
+    42%,
+    47% {
+        opacity: 0;
+    }
+
+    5%,
+    30%,
+    35%,
+    38%,
+    43%,
+    46% {
+        opacity: 0.4;
+    }
+
+    50%,
+    55%,
+    60%,
+    67%,
+    51%,
+    54%,
+    68%,
+    100% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.2;
+    }
+}
+
+
+.p-flow-wrapper {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.p-flow {
+    color: rgba(255, 255, 255, .03);
+    padding: 20px 0;
+    font-size: 260px;
+    font-weight: unset;
+    font-family: 'PuradakGentleGothicR';
+    display: flex;
+    white-space: nowrap;
+    animation: slide 20s linear infinite;
+}
+
+.p-box-wrapper {
+    width:  fit-content;
+    display: flex;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.p-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.p-box h5 {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.p-box p {
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.p-box p em {
+    font-size: 100px;
+    font-style: normal;
+    font-family: 'PuradakGentleGothicR';
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff0000, 0 0 0.5em #ff0000, 0 0 0.1em #ff0000, 0 10px 3px #000;
+    white-space: nowrap;
+    text-align: right;
+    letter-spacing: -0.06em;
+}
+
+.p-box p span {
+    font-size: 36px;
+    margin-left: 5px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .promotion {
+        height: auto;
+    }
+    
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .p-flow-wrapper {
+        bottom: 0;
+    }
+    
+    .p-flow {
+        font-size: 200px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .p-box-wrapper {
+        width: 90%;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .p-box {
+        gap: 1rem;
+    }
+    
+    .p-box h5 {
+        font-size: 18px;
+    }
+    
+    .p-box p em {
+        font-size: 60px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .promotion {
+        padding-bottom: 80px !important;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .p-notice {
+        left: unset;
+        right: 50px;
+        transform: unset;
+    }
+    
+    .p-box-wrapper {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 3rem;
+    }
+
+    .p-box p span {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .p-flow {
+        font-size: 160px;
+    }
+    
+    .p-signboard {
+        margin-top: 3rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .promotion {
+        padding-bottom: 60px !important;
+    }
+
+    .p-notice {
+        bottom: -40px; right: 40px;
+        font-size: 13px;
+    }
+    
+    .p-box-wrapper {
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .p-box h5 {
+        font-size: 15px;
+    }
+    
+    .p-box p em {
+        font-size: 45px;
+    }
+}

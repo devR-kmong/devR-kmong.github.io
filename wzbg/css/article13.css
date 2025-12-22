@@ -1,0 +1,441 @@
+.article13 {
+    position: relative;
+    padding-bottom: 0;
+    background: url(../images/a13-bg.jpg);
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.a13-paper {
+    position: absolute;
+    bottom: -120px; left: 50%;
+    transform: translate(-50%, 0) rotate(5deg);
+    width: 750px;
+    height: 1200px;
+    background-color: #f8f8f8;
+    z-index: 1;
+}
+
+.form-wrapper {
+    position: relative;
+    width: 750px;
+    padding: 80px;
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    z-index: 10;
+}
+
+.a13-clip {
+    position: absolute;
+    top: -8%; right: 40px;
+    width: 15%;
+}
+
+.a13-pen {
+    position: absolute;
+    bottom: 20px; right: -300px;
+    transform: rotate(-5deg);
+    width: 400px;
+}
+
+.a13-title {
+    margin-bottom: 3rem;
+}
+
+.a13-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.a13-form .input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.a13-form .input-wrapper .input-title p {
+    color: #111;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.a13-form .input-wrapper .input-title p span {
+    color: #f23c24;
+}
+
+.a13-form .inputbox {
+    color: #111;
+    height: 45px;
+    font-size: 19px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #111;
+    transition: all .3s ease;
+}
+
+.a13-form textarea {
+    color: #111;
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    font-size: 19px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: 2px solid #111;
+}
+
+.a13-form .inputbox::placeholder {
+    color: #ccc;
+    font-weight: 200;
+}
+
+.a13-form textarea::placeholder {
+    color: #ccc;
+    font-weight: 200;
+}
+
+.a13-form .radio-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.a13-form .radio-wrapper input[type="radio"] {
+    display: none;
+}
+
+.a13-form .radio-wrapper label {
+    flex: 1;
+    color: #111;
+    padding: 14px 0;
+    font-size: 19px;
+    font-weight: 500;
+    font-family: 'Pretendard';
+    border: 2px solid #111;
+    background-color: #fff;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.a13-form .radio-wrapper label:hover {
+    background-color: #f8f8f8;
+}
+
+.a13-form .radio-wrapper input[type="radio"]:checked+label {
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #111;
+    background-color: #111;
+}
+
+.a13-submit {
+    color: #fff;
+    width: 100%;
+    height: 65px;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0 19px;
+    border: none;
+    outline: none;
+    background-color: #f23c24;
+    cursor: pointer;
+}
+
+.a13-submit:disabled {
+    color: #ccc;
+    font-weight: 300;
+    cursor: not-allowed;
+    background-color: #f2f2f2;
+}
+
+.a13-personal {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #111;
+}
+
+.a13-personal-no {
+    border: 2px solid red;
+}
+
+.a13-personal-text input {
+    display: none;
+}
+
+.a13-personal-text label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.a13-personal-text label em {
+    position: relative;
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    min-height: 16px;
+    background-color: #fff;
+    border: 1px solid #111;
+    cursor: pointer;
+}
+
+.a13-personal-text label em::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #111;
+    display: none;
+}
+
+.a13-personal-text label p {
+    color: #111;
+    font-size: 16px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#cb:checked ~ label em::after {
+    display: block;
+}
+
+.a13-personalBtn {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+
+.pp-wrapper {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 99;
+    display: none;
+}
+
+.policy-popup {
+    position: relative;
+}
+
+.pp-title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 30px;
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    z-index: 1;
+}
+
+.pp-title p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.pp-closeBtn {
+    position: absolute;
+    top: 26px; right: 30px;
+    width: 20px;
+    max-width: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.policy-popup textarea {
+    color: #222;
+    width: 600px;
+    height: 340px;
+    padding: 30px;
+    padding-top: 95px;
+    font-size: 15px;
+    line-height: 1.4;
+    border: none;
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+.policy-popup textarea::-webkit-scrollbar {
+    width: .3em;
+}
+
+.policy-popup textarea::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .0);
+}
+
+.policy-popup textarea::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    outline: none;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 950px) {
+    .article13 {
+        padding-top: 100px;
+    }
+    
+    .a13-paper {
+        bottom: -100px;
+        width: 90%;
+        transform: translate(-50%, 0) rotate(3deg);
+    }
+    
+    .form-wrapper {
+        width: 90%;
+    }
+
+    .a13-clip {
+        top: -7%;
+    }
+    
+    .a13-pen {
+        bottom: unset;
+        top: 5%; right: -25%;
+        transform: rotate(-10deg);
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .a13-paper {
+        bottom: -210px;
+    }
+    
+    .form-wrapper {
+        padding: 50px;
+    }
+
+    .a13-title {
+        width: 75%;
+    }
+    
+    .policy-popup {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pp-title {
+        width: 100%;
+    }
+
+    .policy-popup textarea {
+        width: 100%;
+    }
+
+    .policy-popup textarea::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a13-paper {
+        bottom: -120px; left: 51%;
+        width: 95%;
+        height: 900px;
+        transform: translate(-50%, 0) rotate(2deg);
+    }
+    
+    .form-wrapper {
+        width: 98%;
+        padding: 40px;
+    }
+
+    .a13-form {
+        gap: 1rem;
+    }
+
+    .a13-clip {
+        top: -7%;
+        width: 20%;
+    }
+
+    .a13-form .input-wrapper .input-title p {
+        font-size: 16px;
+    }
+    
+    .a13-form .inputbox {
+        font-size: 17px;
+    }
+    
+    .a13-form textarea {
+        height: 80px;
+        font-size: 17px;
+    }
+    
+    .a13-form .radio-wrapper label {
+        padding: 11px 0;
+        font-size: 13px;
+    }
+
+    .a13-personal {
+        padding: 10px;
+    }
+    
+    .a13-personal-text label p {
+        font-size: 13px;
+    }
+
+    .a13-personalBtn {
+        font-size: 11px;
+    }
+
+
+    .pp-title {
+        padding: 15px 20px;
+    }
+
+    .pp-title p {
+        font-size: 16px;
+    }
+
+    .pp-closeBtn {
+        top: 16px; right: 20px;
+        width: 12px;
+    }
+
+    .policy-popup textarea {
+        height: 220px;
+        padding: 20px;
+        padding-top: 65px;
+        font-size: 13px;
+    }
+
+    .a13-submit {
+        height: 45px;
+        font-size: 14px;
+    }
+}
