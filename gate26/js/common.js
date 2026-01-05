@@ -178,3 +178,38 @@ $(document).on(
         }
     }
 );
+
+
+
+
+const lenis = new Lenis({
+    duration: 1.2,
+    wheelMultiplier: 0.6,
+    wrapper: window,
+    content: document.documentElement,
+    gestureOrientation: 'vertical',
+    smoothWheel: true,
+    smoothTouch: false,
+});
+
+document.querySelectorAll('.fBtn-popup').forEach(el => {
+    el.addEventListener('wheel', e => {
+        // 내부에서 스크롤이 가능한 경우 이벤트 전파 막지 않음
+        const isScrollable = el.scrollHeight > el.clientHeight
+        if (isScrollable) {
+            e.stopPropagation()
+        }
+    })
+})
+
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
