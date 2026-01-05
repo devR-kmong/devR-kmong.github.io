@@ -1,0 +1,39 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.p-text {
+    width: 50%;
+    padding-right: 15%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.p-text h5 {
+    font-size: 100rem;
+    font-weight: 200;
+}
+
+.p-text p {
+    font-size: 24rem;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-top: 50rem;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1450px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
