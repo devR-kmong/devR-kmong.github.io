@@ -1,0 +1,21 @@
+.we1-bg {
+    top: 40%;
+    width: 80%;
+    height: 0%;
+}
+
+.we1-text {
+    margin-top: 20%;
+}
+
+.we2-bg {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 70%;
+}
+
+.we2-text {
+    left: unset;
+    right: 0;
+}

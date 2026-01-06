@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../contents/css/aos.css">
     <link rel="stylesheet" href="contents/css/sub_common.css">
     <link rel="stylesheet" href="contents/css/brand.css">
+    <link rel="stylesheet" href="contents/css/exist.css">
     <link rel="shortcut icon" href="../contents/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -49,50 +50,49 @@
         <section class="sub-promotion">
             <img src="contents/images/scrollDown.svg" class="scrollDown">
             <div class="sub-p-title">
-                <span id="typed1"></span>
+                <span id="typed2"></span>
             </div>
             <div class="p-text sub-p-text">
                 <h5>
-                    We design beauty with intelligence.
+                    To Build the Vertical OS for K-Beauty Medical Aesthetics.
                 </h5>
                 <p>
-                    기술로 설계하고, 미학으로 완성합니다.
+                    K-뷰티 의료 미학을 위한 수직적 운영 체제를 구축합니다.
                 </p>
             </div>
         </section>
-        <section class="article sub-article br1">
-            <img src="contents/images/br1-bg.jpg" class="br1-bg">
+        <section class="article sub-article br1 we1">
             <div class="article-wrapper">
-                <div class="br1-text">
+                <div class="br1-text we1-text">
                     <h5>
-                        Where Aesthetics<br/>
-                        Meets Intelligence
+                        Beyond Fragmented<br/>
+                        Beauty Care
                     </h5>
                     <p>
-                        Gaia Labs는 미학과 기술의 결합이 뷰티 산업의 본질을 바꾼다고 믿습니다.
-                        <br/><br/>
-                        우리는 아름다움을 감각의 영역에만 두지 않습니다.<br/>
-                        의료진의 전문성, 임상 데이터, 그리고 인공지능 기술을 연결해<br/>
-                        보다 정밀하고 일관된 미의 기준을 만들어갑니다.
+                        K-Beauty 의료미용 산업은 빠르게 성장하고 있지만,<br />
+                        진단·운영·마케팅·사후 관리가 분절된 구조 속에서
+                        서비스 품질과 산업 전반의 신뢰는 정체되어 있습니다.
+                        <br /><br />
+                        Gaia Labs는 이 문제를
+                        개별 솔루션이 아닌 Vertical OS로 해결합니다.<br />
+                        우리는 의사가 설계한 AI 진단 기술을 중심으로
+                        병원 운영, 환자 경험, 마케팅, 사후 관리까지<br />
+                        의료미용 산업 전반을 하나의 흐름으로 연결하는
+                        통합 운영 시스템을 구축합니다.
                     </p>
                 </div>
             </div>
+            <img src="contents/images/we1-bg.jpg" class="br1-bg we1-bg">
         </section>
-        <section class="article sub-article br2">
-            <img src="contents/images/br2-bg.jpg" class="br2-bg">
+        <section class="article sub-article br2 we2">
+            <img src="contents/images/we2-bg.jpg" class="br2-bg we2-bg">
             <div class="article-wrapper">
-                <div class="br2-text">
+                <div class="br2-text we2-text">
                     <p>
-                        Gaia Labs의 기술은<br />
-                        병원의 효율적인 운영을 지원하는 데서 멈추지 않습니다.<br />
-                        임상 현장에서 검증된 인사이트를 구조화하고,
-                        브랜딩·운영·비즈니스 전반으로 확장하여
-                        의료 미용 산업이 지속적으로 성장할 수 있는 기반을 설계합니다.
-                        <br /><br />
-                        궁극적으로 우리는
-                        개별 클리닉의 성장을 넘어,<br />
-                        기술로 완성되는 새로운 K-Beauty의 기준을 제시하고<br />
-                        글로벌 시장에서 한국 미용 산업의 위상을 높이는 것을 목표로 합니다.
+                        Gaia Labs의 Vertical OS는<br />
+                        병원의 효율적인 운영을 넘어<br />
+                        의료미용 산업의 신뢰 구조를 재정의하고,<br />
+                        K-Beauty가 글로벌 시장에서 지속 가능한 경쟁력을 갖추도록 합니다.
                     </p>
                 </div>
             </div>
@@ -125,8 +125,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        var typed3 = new Typed('#typed1', {
-            strings: ['Brand Philosophy'],
+        var typed3 = new Typed('#typed2', {
+            strings: ['Why We Exist?'],
             typeSpeed: 80,
             backSpeed: 30,
             smartBackspace: true,
@@ -156,10 +156,10 @@
 
         const br1 = gsap.timeline();
 
-        br1.from(".br1-text h5", { y: -50, autoAlpha: 0 }, "<")
+        br1.from(".br1-text h5", { y: -50, autoAlpha: 0 })
         .from(".br1-text p", { y: 50, autoAlpha: 0 }, "<")
-        .to(".br1-bg", { x: "30%" }, "<")
-        .to(".br1-bg", { autoAlpha: 1 })
+        .to(".we1-bg", { height: "40%" }, "<")
+        .to(".we1-bg", { autoAlpha: 1 })
 
         ScrollTrigger.create({
             animation: br1,
@@ -174,9 +174,7 @@
 
         const br2 = gsap.timeline();
 
-        gsap.set(".br2-bg", { filter: "brightness(80%)" });
-
-        br2.to(".br2-bg", { filter: "brightness(50%)" })
+        br2.to(".br2-bg", { width: "70%" })
         .from(".br2-text", { y: 50, autoAlpha: 0 }, "<")
             
 

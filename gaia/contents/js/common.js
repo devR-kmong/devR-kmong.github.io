@@ -15,6 +15,19 @@ if (window.innerWidth > 768) {
 }
 
 
+$(function () {
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1500) {
+                $('.scrollDown').fadeOut();
+            } else {
+                $('.scrollDown').fadeIn();
+            }
+        });
+    });
+});
+
+
 
 if (navigator.userAgent.indexOf("Trident") > 0) {
     alert("이 사이트에 대한 Internet Explorer 지원이 종료되었습니다. " +

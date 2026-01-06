@@ -16,10 +16,29 @@
     z-index: 3;
 }
 
+.scrollDown {
+    position: fixed;
+    bottom: 5%;
+    width: 40rem;
+    animation: upDown 1.5s ease-in-out infinite;
+}
+
+@keyframes upDown {
+	0% {
+		transform:  translateY(-7px);
+	}
+	50% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform:  translateY(-7px);
+	}
+}
+
 .sub-p-text {
     width: 100%;
     text-align: right;
-    padding-right: 50rem;
+    padding-right: 10%;
 }
 
 .sub-p-text h5 {
