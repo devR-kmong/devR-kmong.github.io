@@ -4,7 +4,11 @@
     height: 100vh;
     background-color: #000;
     overflow: hidden;
-    margin-bottom: -1px;
+    z-index: 4;
+}
+
+.article-wrapper {
+    width: 1400rem;
 }
 
 .at-bg {
@@ -32,6 +36,7 @@
 
 .at-text p {
     font-size: 20rem;
+    font-weight: 300;
     line-height: 1.6;
     letter-spacing: -0.5rem;
     margin-top: 20rem;

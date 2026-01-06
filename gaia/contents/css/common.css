@@ -61,7 +61,7 @@ body::before {
     top: 0;
     transform-style: flat;
     pointer-events: none;
-    z-index: -1;
+    z-index: 3;
 }
 
 img {
@@ -79,10 +79,6 @@ li {
     list-style: none;
 }
 
-h5 {
-    letter-spacing: -2rem;
-}
-
 button, input {
     outline: none;
 }
@@ -94,6 +90,7 @@ button, input {
 .i-rotate {
     transform: rotate(180deg);
 }
+
 
 
 /*==================================================*/

@@ -16,8 +16,9 @@ ScrollTrigger.create({
 [1, 2, 3, 4].forEach((num) => {
     const tl = gsap.timeline();
 
-    tl.from(`.a${num}-bg`, { scale: 1.05, autoAlpha: 0.5 })
-        .from(`.article${num} .at-text`, { y: 80, ease: 'none', autoAlpha: 0 }, "<");
+    tl.from(`.a${num}-bg`, { scale: 1.05, autoAlpha: 0.1 })
+        .from(`.article${num} .at-text`, { y: 80, ease: 'none', autoAlpha: 0 }, "<")
+        .to(`.article${num} .at-text h5`, { autoAlpha: 1 })
 
     ScrollTrigger.create({
         animation: tl,
