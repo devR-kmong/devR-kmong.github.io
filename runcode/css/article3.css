@@ -1,0 +1,19 @@
+.article3 {
+    height: 60vh;
+    background: url(../images/a3-bg.jpg);
+    background-attachment: fixed;
+}
+
+.a3-text {
+    width: 100%;
+}
+
+.a3-text h5 {
+    font-size: 40rem;
+}
+
+.a3-text p {
+    font-size: 18rem;
+    line-height: 1.5;
+    margin-top: 20rem;
+}

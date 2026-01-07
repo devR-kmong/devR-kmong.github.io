@@ -1,0 +1,59 @@
+.a1-title {
+    text-align: center;
+}
+
+.a1-title img {
+    width: 50rem;
+    filter: invert(1);
+    margin-bottom: 15rem;
+    user-select: none;
+}
+
+.a1-title h5 {
+    font-size: 45rem;
+    font-weight: 500;
+    margin-bottom: 50rem;
+}
+
+.a1-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30rem;
+}
+
+.a1-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2d2d2d;
+    background-color: #fff;
+}
+.a1-box:hover {
+    filter: brightness(110%);
+}
+
+.a1-box i {
+    color:#fff;
+    padding: 50rem;
+    font-size: 50rem;
+    text-align: center;
+    background-color: var(--main-color);
+}
+
+.a1-box-text {
+    padding: 30rem;
+    text-align: center;
+}
+
+.a1-box-text h5 {
+    color: #000;
+    font-size: 28rem;
+    margin: 0 0 15px 0;
+}
+
+.a1-box-text p {
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+    word-break: keep-all;
+}
