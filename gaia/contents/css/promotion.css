@@ -51,9 +51,17 @@
 
 
 /*==================================================*/
-@media (max-width: 1450px) {
-    .promotion-wrapper {
+@media (max-width: 991px) {
+    .p-text {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 5%;
+        text-align: right;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .p-text p {
+        font-size: 24rem;
     }
 }

@@ -60,6 +60,29 @@
 
 
 /*==================================================*/
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+    .scrollDown {
+        right: 5%;
+    }
     
+    .sub-p-title {
+        top: 12%; left: 5%;
+        font-size: 100rem;
+    }
+
+    .sub-p-text {
+        padding: 0 5% 0 10%;
+        margin-bottom: 20%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .sub-p-text {
+        margin-bottom: 40%;
+    }
+    
+    .sub-p-text p {
+        margin-top: 0;
+    }
 }

@@ -58,3 +58,18 @@
     font-weight: 300;
     line-height: 1.7;
 }
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    .br2-bg {
+        object-position: right;
+    }
+
+    .br2-text {
+        left: unset;
+        bottom: 10%; right: 5%;
+        width: 50%;
+        text-align: right;
+    }
+}

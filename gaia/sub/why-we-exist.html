@@ -54,7 +54,7 @@
             </div>
             <div class="p-text sub-p-text">
                 <h5>
-                    To Build the Vertical OS for K-Beauty Medical Aesthetics.
+                    To Build the Vertical OS for <span style="white-space: nowrap;">K-Beauty</span> Medical Aesthetics.
                 </h5>
                 <p>
                     K-뷰티 의료 미학을 위한 수직적 운영 체제를 구축합니다.
@@ -85,7 +85,10 @@
             <img src="contents/images/we1-bg.jpg" class="br1-bg we1-bg">
         </section>
         <section class="article sub-article br2 we2">
-            <img src="contents/images/we2-bg.jpg" class="br2-bg we2-bg">
+            <picture class="we2-bg">
+                <source srcset="contents/images/we2-bg-m.jpg" media="(max-width: 991px)">
+                <img src="contents/images/we2-bg.jpg">
+            </picture>
             <div class="article-wrapper">
                 <div class="br2-text we2-text">
                     <p>
@@ -155,32 +158,48 @@
 
 
         const br1 = gsap.timeline();
+        const mm = gsap.matchMedia();
 
-        br1.from(".br1-text h5", { y: -50, autoAlpha: 0 })
-        .from(".br1-text p", { y: 50, autoAlpha: 0 }, "<")
-        .to(".we1-bg", { height: "40%" }, "<")
-        .to(".we1-bg", { autoAlpha: 1 })
+        mm.add({
+            isDesktop: "(min-width: 992px)",
+            isMobile: "(max-width: 991px)"
+        }, (context) => {
+            let { isMobile } = context.conditions;
 
-        ScrollTrigger.create({
-            animation: br1,
-            trigger: ".br1",
-            start: "top top",
-            end: "+=1500",
-            scrub: true,
-            pin: true,
-            anticipatePin: 1,
+            const bgAnimation = isMobile
+                ? { width: "50%" }
+                : { height: "35%" };
+
+            br1.from(".br1-text h5", { y: -50, autoAlpha: 0 })
+                .from(".br1-text p", { y: 50, autoAlpha: 0 }, "<")
+                .to(".we1-bg", { ...bgAnimation }, "<")
+                .to(".we1-bg", { autoAlpha: 1 });
+
+            ScrollTrigger.create({
+                animation: br1,
+                trigger: ".br1",
+                start: "top top",
+                end: "+=1500",
+                scrub: true,
+                pin: true,
+                anticipatePin: 1,
+            });
+
+            return () => {
+                br1.kill();
+            };
         });
 
 
-        const br2 = gsap.timeline();
+        const we2 = gsap.timeline();
 
-        br2.to(".br2-bg", { width: "70%" })
-        .from(".br2-text", { y: 50, autoAlpha: 0 }, "<")
+        we2.to(".we2-bg", { width: "70%" })
+        .from(".we2-text", { y: 50, autoAlpha: 0 }, "<")
             
 
         ScrollTrigger.create({
-            animation: br2,
-            trigger: ".br2",
+            animation: we2,
+            trigger: ".we2",
             start: "top top",
             end: "+=1500",
             scrub: true,

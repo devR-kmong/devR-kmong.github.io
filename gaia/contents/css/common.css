@@ -84,7 +84,7 @@ button, input {
 }
 
 :root {
-    --main-color: #fb842d;
+    --main-color: #084044;
 }
 
 .i-rotate {
@@ -101,7 +101,7 @@ button, input {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     html,
     html.safari.desktop {
         font-size: 0.13020833333333335vw;

@@ -34,93 +34,34 @@
 
 
 
-
 /*==================================================*/
 @media (max-width: 1450px) {
     .footer-wrapper {
-        width: 100%;
-        padding: 0 30px;
+        padding: 0 20px;
     }
 }
 
 
-@media (max-width: 1050px) {
-    .fBtn-popup {
-        width: 90%;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .fBtn-popup {
-        width: 100%;
-        height: 100vh;
-        max-height: 100vh;
-    }
-
-    .fBtn-closeBtn {
-        bottom: 5%;
-        box-shadow: none;
-        background-color: #000;
-    }
-
-    .fBtn-closeBtn img {
-        filter: invert(100%) sepia(0%) saturate(7495%) hue-rotate(189deg) brightness(103%) contrast(102%);
-    }
-    
-    .footer {
-        padding: 60rem 0;
-    }
-    
-    .footer-top {
-        flex-direction: column;
+@media (max-width: 991px) {
+    .footer-wrapper {
+        flex-direction: column-reverse;
         align-items: unset;
-        border-bottom: none;
-        margin-bottom: -70rem;
+        gap: 60rem;
     }
-    
-    .fBtn-wrapper {
-        display: none;
+
+    .footer-mid {
+        width: 100%;
+    }
+
+    .logo-f {
+        float: right;
+        font-size: 80rem;
     }
 }
 
 
 @media (max-width: 550px) {
-    .fBtn-popup {
-        padding: 60rem;
-    }
-
-    .fp-text p,
-    .fp-text ul li {
-        font-size: 20rem;
-    }
-    
-    .footer-wrapper {
-        gap: 60rem;
-    }
-    
-    .fmh {
-        font-size: 24rem;
-    }
-
-    .f-menu-item .f-menu-hover li a {
-        font-size: 20rem;
-    }
-
-    .footer-text p,
-    .fb-left p {
-        font-size: 20rem;
-    }
-}
-
-
-@media (max-width: 450px) {
-    .fp-text p,
-    .fp-text ul li {
-        font-size: 22rem;
-    }
-    
-    .footer-wrapper {
-        padding: 0 20px;
+    .footer-text p {
+        font-size: 18rem;
     }
 }
