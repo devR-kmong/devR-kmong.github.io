@@ -1,0 +1,39 @@
+.article2 {
+    height: 100vh;
+}
+
+.a2-vertical {
+    width: 2px;
+    height: 100rem;
+    background-color: #fff;
+}
+
+.a2-text {
+    margin-bottom: 20%;
+}
+
+.a2-text h5 {
+    font-size: 80rem;
+    font-weight: 500;
+    font-family: 'Inter';
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30rem;
+    letter-spacing: 0;
+}
+
+.a2-slogun {
+    font-size: 22rem;
+    letter-spacing: 0;
+}
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}
