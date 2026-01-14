@@ -31,11 +31,11 @@
 
 .logo {
     position: fixed;
-    top: 50%; left: 50%;
+    top: 20%; left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
     display: flex;
-    width: 200rem;
+    width: 100rem;
     mix-blend-mode: difference;
     z-index: 9999;
 }
