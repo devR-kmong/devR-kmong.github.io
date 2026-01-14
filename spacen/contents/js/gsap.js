@@ -110,19 +110,17 @@ a3.to("video", {
 });
 
 
-
-ScrollTrigger.create({
-    trigger: ".article3",
-    start: "top bottom",
-    scrub: true,
-    pin: false,
-});
-
-a3.from(".a3-box", {
-    y: 250,
+gsap.from(".a3-box", {
+    y: 100,
     autoAlpha: 0,
+    stagger: 0.3,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".a3-box-wrapper",
+        start: "top 50%",
+        toggleActions: "play reverse play reverse"
+    }
 });
-
 
 
 
@@ -139,6 +137,6 @@ ScrollTrigger.create({
 
 
 a4.to("video", {
-    top: "-10%",
+    top: "-15%",
     autoAlpha: 0,
 });
