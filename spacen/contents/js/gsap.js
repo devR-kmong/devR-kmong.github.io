@@ -10,13 +10,13 @@ mm.add({
     let { isDesktop, isMobile } = context.conditions;
 
     promotion.from(".logo", {
-        width: isMobile ? "150rem" : "60%",
+        width: isMobile ? "100rem" : "60%",
         y: isMobile ? "15%" : "0"
     });
 
     promotion.to(".logo", {
-        left: "5%", 
-        top: "5%"
+        left: "70rem", 
+        top: "40rem"
     }, "<");
 
     promotion.to("video", {
