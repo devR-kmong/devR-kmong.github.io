@@ -1,0 +1,49 @@
+.article1 {
+    position: relative;
+    height: 50vh;
+}
+
+.a1-bg {
+    position: absolute;
+    bottom: 0; left: 15%;
+    width: 50%;
+    z-index: 1;
+}
+
+.a1-text {
+    margin-left: 30%;
+    z-index: 2;
+}
+
+.a1-text h6 {
+    font-size: 22rem;
+    font-weight: 500;
+    font-family: 'Inter';
+    letter-spacing: 0;
+    margin-bottom: 15rem;
+}
+
+.a1-text h5 {
+    font-size: 45rem;
+    font-weight: 600;
+}
+
+.a1-text p {
+    color: #222;
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-top: 35rem;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

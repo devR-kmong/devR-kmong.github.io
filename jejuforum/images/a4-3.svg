@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382.38 382.38">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path d="M0,191.19h191.19s-92.55,220.42-191.19,0Z"/>
+      <path d="M191.19,191.19h191.19s-92.55-220.42-191.19,0Z"/>
+      <path d="M191.19,0v191.19S-29.22,98.64,191.19,0Z"/>
+      <path d="M191.19,191.19v191.19s220.41-92.55,0-191.19Z"/>
+    </g>
+  </g>
+</svg>

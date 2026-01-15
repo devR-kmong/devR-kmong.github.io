@@ -1,0 +1,64 @@
+.a4-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30rem;
+}
+
+.a4-box {
+    position: relative;
+    padding: 50rem;
+    padding-top: 120rem;
+    border: 2px solid #000;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.a4-box img {
+    position: absolute;
+    top: 50rem; right: 50rem;
+    height: 60rem;
+    /* filter: invert(11%) sepia(74%) saturate(1783%) hue-rotate(219deg) brightness(91%) contrast(101%); */
+    user-select: none;
+}
+
+.a4-box h5 {
+    font-size: 24rem;
+}
+
+.a4-box h5 span {
+    font-size: 18rem;
+    font-weight: 500;
+    margin-left: 10rem;
+}
+
+.a4-box p {
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 20rem;
+}
+
+.a4-box-wrapper:last-child .a4-box {
+    padding-top: 80rem;
+}
+
+.a4-box:hover {
+    color: #000 !important;
+    animation: gradient-change 2s linear infinite alternate;
+    background: linear-gradient(to right in oklch,
+            var(--color-1),
+            var(--color-2));
+}
+
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}
