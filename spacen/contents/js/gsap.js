@@ -19,7 +19,7 @@ mm.add({
         top: "40rem"
     }, "<");
 
-    promotion.to("video", {
+    promotion.to(".main-video", {
         left: "70%",
         top: "40%",
         scale: 0.9
@@ -41,8 +41,11 @@ mm.add({
 
 
 
-const a1 = gsap.timeline();
+// 비디오 요소 선택
+const videos = document.querySelectorAll(".main-video video");
+const mainVideo2 = videos[1];
 
+const a1 = gsap.timeline();
 ScrollTrigger.create({
     animation: a1,
     trigger: ".article1",
@@ -52,13 +55,20 @@ ScrollTrigger.create({
     pin: true,
 });
 
-a1.to(".a1-text-box div", {
-    top: "-295%",
-});
+a1.to(".a1-text-box div", { top: "-295%" });
+a1.to(".a1-text", { y: -50 }, "<");
 
-a1.to(".a1-text", {
-    y: -50,
-}, "<");
+gsap.to(mainVideo2, {
+    opacity: 1,
+    duration: 0.5,
+    ease: "power1.inOut",
+    scrollTrigger: {
+        trigger: ".article1",
+        start: "top top",
+        end: "+=1500",
+        toggleActions: "play reverse play reverse",
+    }
+});
 
 
 
@@ -74,7 +84,7 @@ ScrollTrigger.create({
     pin: false,
 });
 
-a2.to("video", {
+a2.to(".main-video", {
     left: "50%",
     top: "60%",
     scale: .6,
@@ -103,7 +113,7 @@ ScrollTrigger.create({
     pin: false,
 });
 
-a3.to("video", {
+a3.to(".main-video", {
     left: "30%",
     scale: 1,
     ease: "none",
@@ -136,7 +146,7 @@ ScrollTrigger.create({
 });
 
 
-a4.to("video", {
+a4.to(".main-video", {
     top: "-15%",
     autoAlpha: 0,
 });
