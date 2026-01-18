@@ -1,0 +1,71 @@
+.a1-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.a1-title {
+    width: 100%;
+    margin-bottom: 50rem;
+}
+
+.a1-title p {
+    color: var(--main-color);
+    font-size: 20rem;
+    font-weight: 700;
+    margin-bottom: 20rem;
+    letter-spacing: 0;
+}
+
+.a1-title h5 {
+    font-size: 45rem;
+    font-weight: 700;
+}
+
+.a1-box-wrapper {
+    min-width: 55%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30rem;
+}
+
+.a1-box {
+    padding: 50rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.a1-box:nth-child(1) {
+    background-color: var(--main-color);
+}
+.a1-box:nth-child(4) {
+    background-color: var(--main-color);
+}
+
+.a1-box:nth-child(1) i,
+.a1-box:nth-child(1) h5,
+.a1-box:nth-child(1) p,
+.a1-box:nth-child(4) i,
+.a1-box:nth-child(4) h5,
+.a1-box:nth-child(4) p {
+    color: #fff;
+}
+
+.a1-box i {
+    color: var(--main-color);
+    font-size: 40rem;
+    margin-bottom: 30rem;
+}
+
+.a1-box-text h5 {
+    color: #000;
+    font-size: 26rem;
+}
+
+.a1-box-text p {
+    color: #000;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 20rem;
+}
