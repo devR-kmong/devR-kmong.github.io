@@ -9,7 +9,6 @@
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: cover !important;
-    padding: 120rem 0;
 }
 
 .article-wrapper {
@@ -26,4 +25,5 @@
     .article {
         padding: 80rem 0;
     }
+
 }
