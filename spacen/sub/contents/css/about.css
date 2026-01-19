@@ -2,15 +2,20 @@
     height: 100vh;
 }
 
-.ab1-text-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 100rem;
+.ab1-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 150rem;
 }
 
-.ab1-text {
-    width: 100%;
-    margin-bottom: 10%;
+.ab1-sb {
+    width: 300rem;
+}
+
+.ab1-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 100rem;
 }
 
 .ab1-text span {

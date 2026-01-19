@@ -49,24 +49,27 @@
     <main>
         <section class="article sub-article ab1">
             <div class="article-wrapper">
-                <div class="ab1-text-wrapper">
-                    <div class="ab1-text" data-aos="fade-up">
-                        <span>
-                            Slogun
-                        </span>
-                        <h6>
-                            <em>Shot! to [ AND Another ] Space :</em><br/>
-                            We are wayfinders of your burning centerpoint.
-                        </h6>
-                    </div>
-                    <div class="ab1-text" data-aos="fade-up" data-aos-delay="1000">
-                        <span>
-                            Who We Are
-                        </span>
-                        <p>
-                            Space N은 [중심의 온도]를 추구하는 문화예술 공간 창작 그룹입니다.<br />
-                            시각미술을 기반으로 예술적 맥락의 공간을 창조하고, 목적에 맞는 빛으로 그 가치를 명확하게 전합니다.
-                        </p>
+                <div class="ab1-wrapper">
+                    <img src="../contents/images/sb-w.svg" class="ab1-sb">
+                    <div class="ab1-text-wrapper">
+                        <div class="ab1-text" data-aos="fade-up">
+                            <span>
+                                Slogun
+                            </span>
+                            <h6>
+                                <em>Shot! to [ AND Another ] Space :</em><br />
+                                We are wayfinders of your burning centerpoint.
+                            </h6>
+                        </div>
+                        <div class="ab1-text" data-aos="fade-up" data-aos-delay="1000">
+                            <span>
+                                Who We Are
+                            </span>
+                            <p>
+                                Space N은 [중심의 온도]를 추구하는 문화예술 공간 창작 그룹입니다.<br />
+                                시각미술을 기반으로 예술적 맥락의 공간을 창조하고, 목적에 맞는 빛으로 그 가치를 명확하게 전합니다.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,57 +141,51 @@
     <script src="../contents/js/common.js"></script>
 
     <script>
-    gsap.registerPlugin(ScrollTrigger);
+        const cards = document.querySelectorAll('.card');
+        const slotList = document.getElementById('slotList');
+        const totalItems = cards.length;
 
-    const cards = document.querySelectorAll('.card');
-    const slotList = document.getElementById('slotList');
-    const totalItems = cards.length;
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".sticky-container",
+                start: "top top",
+                end: "+=2000",
+                pin: true,
+                scrub: 1,
+                anticipatePin: 1
+            }
+        });
 
-    // 전체 가로 스크롤 및 섹션 고정(Pin) 애니메이션
-    const tl = gsap.timeline({
-        scrollTrigger: {
+        tl.to("#horizontalScroll", {
+            xPercent: -120,
+            ease: "none"
+        });
+
+        ScrollTrigger.create({
             trigger: ".sticky-container",
             start: "top top",
-            end: "+=2000", // 이 값이 300vh 역할을 합니다. 숫자가 작을수록 스크롤 속도가 빨라집니다.
-            pin: true,     // height: 300vh 대신 사용하는 핵심 설정
+            end: "+=2000",
             scrub: 1,
-            anticipatePin: 1
-        }
-    });
+            onUpdate: (self) => {
+                const progress = self.progress;
+                const index = Math.min(Math.floor(progress * totalItems), totalItems - 1);
 
-    tl.to("#horizontalScroll", {
-        xPercent: -120,
-        ease: "none"
-    });
+                gsap.to(slotList, {
+                    y: -(index * 1.2) + "em",
+                    duration: 0.3,
+                    ease: "power2.out",
+                    overwrite: true
+                });
 
-    // 슬롯머신 및 카드 활성화 상태 연동
-    ScrollTrigger.create({
-        trigger: ".sticky-container",
-        start: "top top",
-        end: "+=2000", // 위 타임라인의 end 값과 동일하게 설정
-        scrub: 1,
-        onUpdate: (self) => {
-            const progress = self.progress;
-            const index = Math.min(Math.floor(progress * totalItems), totalItems - 1);
-
-            // 슬롯 텍스트 이동
-            gsap.to(slotList, {
-                y: -(index * 1.2) + "em",
-                duration: 0.3,
-                ease: "power2.out",
-                overwrite: true
-            });
-
-            // 카드 활성화 스타일
-            cards.forEach((card, i) => {
-                if (i === index) {
-                    card.classList.add('active');
-                } else {
-                    card.classList.remove('active');
-                }
-            });
-        }
-    });
+                cards.forEach((card, i) => {
+                    if (i === index) {
+                        card.classList.add('active');
+                    } else {
+                        card.classList.remove('active');
+                    }
+                });
+            }
+        });
     </script>
     
 </body>
