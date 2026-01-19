@@ -1,0 +1,143 @@
+.ab1 {
+    height: 100vh;
+}
+
+.ab1-text-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100rem;
+}
+
+.ab1-text {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.ab1-text span {
+    display: block;
+    font-size: 17rem;
+    font-weight: 600;
+    font-family: 'Inter';
+    margin-bottom: 30rem;
+}
+
+.ab1-text h6 {
+    font-size: 20rem;
+    font-weight: 300;
+    line-height: 1.6;
+    font-family: 'Inter';
+    margin-top: 20rem;
+}
+
+.ab1-text h6 em {
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.ab1-text p {
+    font-size: 20rem;
+    font-weight:300;
+    line-height: 1.6;
+}
+
+
+.ab2 {
+    overflow: hidden;
+}
+
+.vision-section {
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+
+.sticky-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.sticky-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+.main-title {
+    font-size: 120rem;
+    font-family: 'Inter';
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15%;
+}
+
+.slot-machine {
+    height: 1.2em;
+    overflow: hidden;
+    position: relative;
+    padding: 0 10px;
+    min-width: 150px;
+    font-weight: 700;
+}
+
+.slot-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.1s ease-out;
+}
+
+.slot-list li {
+    height: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal-scroll-wrapper {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 150rem;
+    padding-left: 50%;
+}
+
+.card {
+    min-width: 400rem;
+    transition: opacity 0.4s, transform 0.4s;
+    opacity: .2;
+}
+
+.card.active {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.card h6 {
+    font-size: 30rem;
+    font-weight: 600;
+    font-family: 'Inter';
+}
+
+.card p {
+    font-size: 17rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: 30rem;
+    letter-spacing: 0;
+}
+
+.card p b {
+    font-weight: 600;
+}
+
+
+/*==================================================*/
