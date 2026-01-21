@@ -109,7 +109,7 @@
                 </div>
             </div>
         </section>
-        <section class="article sub-article bz3">
+        <section class="article sub-article bz3 parallax__item" data-bgcolor="#000">
             <div class="article-wrapper">
                 <div class="bz-title">
                     <h5>
@@ -170,7 +170,7 @@
                 </div>
             </div>
         </section>
-        <section class="article sub-article bz4">
+        <section class="article sub-article bz4 parallax__item" data-bgcolor="#0000ff">
             <div class="article-wrapper">
                 <div class="bz-title">
                     <h5>
@@ -223,6 +223,30 @@
     </footer>
 
     <script src="../contents/js/common.js"></script>
+
+    <script>
+        if (window.innerWidth > 768) {
+            gsap.utils.toArray('.parallax__item').forEach((item) => {
+                let color = item.getAttribute('data-bgcolor');
+
+                ScrollTrigger.create({
+                    trigger: item,
+                    start: 'top 15%',
+                    end: 'bottom 5%',
+                    markers: false,
+
+                    onEnter: () => gsap.to('section', {
+                        backgroundColor: color,
+                        duration: 1,
+                    }),
+                    onEnterBack: () => gsap.to('section', {
+                        backgroundColor: color,
+                        duration: 1,
+                    }),
+                });
+            });
+        }
+    </script>
     
 </body>
 </html>

@@ -47,7 +47,8 @@
         </nav>
     </header>
     <main>
-        <section class="article sub-article ab1">
+        <section class="article sub-article ab1 parallax__item" data-bgcolor="#000">
+            <div class="a1-color"></div>
             <div class="article-wrapper">
                 <div class="ab1-text">
                     <h5>
@@ -71,7 +72,7 @@
                 </div>
             </div>
         </section>
-        <section class="article sub-article ab2">
+        <section class="article sub-article ab2 parallax__item" data-bgcolor="#0000ff">
             <div class="vision-section">
                 <div class="sticky-container">
                     <div class="sticky-content">
@@ -137,6 +138,30 @@
 
     <script src="../contents/js/common.js"></script>
 
+    <script>
+        if (window.innerWidth > 768) {
+            gsap.utils.toArray('.parallax__item').forEach((item) => {
+                let color = item.getAttribute('data-bgcolor');
+
+                ScrollTrigger.create({
+                    trigger: item,
+                    start: 'top 15%',
+                    end: 'bottom 5%',
+                    markers: false,
+
+                    onEnter: () => gsap.to('section', {
+                        backgroundColor: color,
+                        duration: 1,
+                    }),
+                    onEnterBack: () => gsap.to('section', {
+                        backgroundColor: color,
+                        duration: 1,
+                    }),
+                });
+            });
+        }
+    </script>
+    
     <script>
         const cards = document.querySelectorAll('.card');
         const slotList = document.getElementById('slotList');
