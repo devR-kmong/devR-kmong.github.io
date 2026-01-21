@@ -1,49 +1,46 @@
 .ab1 {
-    height: 100vh;
+    padding-top: 200rem;
 }
 
-.ab1-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 150rem;
+.ab1-text {
+    width: 100%;
+    padding-left: 10%;
 }
 
-.ab1-sb {
-    width: 300rem;
-}
-
-.ab1-text-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 100rem;
-}
-
-.ab1-text span {
-    display: block;
-    font-size: 17rem;
-    font-weight: 600;
+.ab1-text h5 {
+    font-size: 100rem;
+    font-weight: 400;
     font-family: 'Inter';
-    margin-bottom: 30rem;
-}
-
-.ab1-text h6 {
-    font-size: 20rem;
-    font-weight: 300;
-    line-height: 1.6;
-    font-family: 'Inter';
-    margin-top: 20rem;
-}
-
-.ab1-text h6 em {
-    font-style: normal;
     text-transform: uppercase;
+    letter-spacing: 0;
 }
 
 .ab1-text p {
-    font-size: 20rem;
-    font-weight:300;
-    line-height: 1.6;
+    font-size: 32rem;
+    font-weight: 200;
+    margin-top: 50rem;
+    letter-spacing: 0;
 }
+
+.ab1-image {
+    width: 100%;
+    height: 850rem;
+    margin: -100rem 0;
+}
+
+.ab1-bottom {
+    width: 50%;
+    padding-bottom: 120rem;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.ab1-bottom p {
+    font-size: 22rem;
+    font-weight: 200;
+    line-height: 1.8;
+}
+
 
 
 .ab2 {
