@@ -1,0 +1,194 @@
+.bz1 {
+    position: relative;
+    height: 100vh;
+    padding-bottom: 120rem;
+    overflow: hidden;
+}
+
+.bz1 .article-wrapper {
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.bz1-image {
+    position: absolute;
+    top: 0; right: 0;
+    width: 45%;
+}
+
+.bz-title {
+    width: 100%;
+}
+
+.bz-title h5 {
+    font-size: 50rem;
+    font-weight: 300;
+    font-family: 'Inter';
+    letter-spacing: 1px;
+}
+
+.bz1-text {
+    width: 45%;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.bz1-text h6 {
+    font-size: 22rem;
+    font-weight: 300;
+    margin-top: 100rem;
+}
+
+.bz1-text p {
+    font-size: 17rem;
+    line-height: 1.6;
+    margin-top: 50rem;
+}
+
+
+.bz-title p {
+    font-size: 20rem;
+    letter-spacing: 0;
+    line-height: 1.6;
+    margin-top: 15rem;
+}
+
+
+.bz2 {
+    padding-top: 120rem;
+}
+
+.bz2-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 200rem;
+    z-index: 2;
+}
+
+.bz2-image {
+    width: 400rem;
+    margin-top: 50rem;
+}
+
+.bz2-box-wrapper {
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bz2-box {
+    padding: 80rem 0;
+    border-bottom: 1px solid #fff;
+}
+.bz2-box:last-child {
+    border-bottom: none;
+}
+
+.bz2-box h6 {
+    font-size: 22rem;
+    font-weight: 500;
+}
+
+.bz2-box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin-top: 20rem;
+}
+
+.bz2-box ul li {
+    font-size: 17rem;
+    font-weight: 300;
+}
+
+
+.bz3 {
+    padding: 120rem 0;
+    overflow: hidden;
+}
+
+.bz3 .bz-title,
+.bz4 .bz-title {
+    display: flex;
+    align-items: flex-end;
+    gap: 30rem;
+}
+
+.bz3-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50rem;
+}
+
+.bz3-box {
+    width: 100%;
+}
+
+.bz3-box span {
+    display: block;
+    font-size: 15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 30rem;
+    padding-bottom: 20rem;
+    border-bottom: 1px solid #fff;
+}
+
+.bz3-box h6 {
+    font-size: 20rem;
+    font-weight: 500;
+}
+
+.bz3-box ul {
+    font-size: 15rem;
+    line-height: 1.5;
+    margin-top: 20rem;
+}
+
+
+.bz4 {
+    padding: 120rem 0;
+    background-color: var(--main-color);
+}
+
+.bz4-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30rem;
+    margin-top: 50rem;
+}
+
+.bz4-box {
+    flex: 1;
+    color: #000;
+    padding: 50rem;
+    background-color: #fff;
+}
+
+.bz4-box h6 {
+    font-size: 24rem;
+}
+
+.bz4-box p {
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 20rem 0 40rem 0;
+}
+
+.bz4-box ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+.bz4-box ul li {
+    color: #fff;
+    font-size: 18rem;
+    font-weight: 500;
+    padding: 8rem 12rem;
+    font-size: 15px;
+    background-color: var(--main-color);
+}
