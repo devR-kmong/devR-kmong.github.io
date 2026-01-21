@@ -148,8 +148,8 @@
 
 
 .bz4 {
+    height: 100vh;
     padding: 120rem 0;
-    background-color: var(--main-color);
 }
 
 .bz4-box-wrapper {
@@ -163,7 +163,7 @@
 .bz4-box {
     flex: 1;
     color: #000;
-    padding: 50rem;
+    padding: 60rem;
     background-color: #fff;
 }
 
