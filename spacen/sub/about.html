@@ -48,8 +48,16 @@
     </header>
     <main>
         <section class="article sub-article ab1 parallax__item" data-bgcolor="#000">
-            <div class="a1-color"></div>
+            <div class="ab-video">
+                <video autoplay muted loop playsinline>
+                    <source src="contents/vidoes/space.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="ab1-color"></div>
             <div class="article-wrapper">
+                <div class="ab1-logo">
+                    <img src="../contents/images/sb-w.svg">
+                </div>
                 <div class="ab1-text">
                     <h5>
                         Shot! to<br/>
@@ -137,7 +145,23 @@
     </footer>
 
     <script src="../contents/js/common.js"></script>
+    
+    <script>
+        const ab1 = gsap.timeline();
 
+        ScrollTrigger.create({
+            animation: ab1,
+            trigger: ".ab1",
+            start: "top top",
+            end: "+=1500",
+            scrub: true,
+            pin: true,
+        });
+        
+        ab1.to(".ab1-logo", { scale: 0 });
+        ab1.from(".ab1-text", { scale: 0 });
+    </script>
+    
     <script>
         if (window.innerWidth > 768) {
             gsap.utils.toArray('.parallax__item').forEach((item) => {
