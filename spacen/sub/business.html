@@ -69,42 +69,39 @@
         </section>
         <section class="article sub-article bz2">
             <div class="article-wrapper">
-                <div class="bz2-wrapper">
-                    <div class="bz-title">
-                        <h5>
-                            Details
-                        </h5>
-                        <p>
-                            세부 사업분야 소개
-                        </p>
-                        <img src="https://images.unsplash.com/photo-1758007664211-49b4805638e5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8" class="bz2-image">
+                <div class="bz-title">
+                    <h5>
+                        Details
+                    </h5>
+                    <p>
+                        세부 사업분야 소개
+                    </p>
+                </div>
+                <div class="bz2-box-wrapper">
+                    <div class="bz2-box">
+                        <h6>1. 공간 기획 및 디자인</h6>
+                        <ul>
+                            <li>클라이언트 니즈 기반의 서사적 공간 경험 기획</li>
+                            <li>사용자 경험을 반영한 공간 설계 및 디자인 개발</li>
+                            <li>문화예술 전시·상업 브랜딩·공공 프로젝트 등 공간 유형별 차별화 전략</li>
+                            <li>통합 디렉팅 및 원스톱 서비스를 통한 공간의 스토리텔링 강화</li>
+                        </ul>
                     </div>
-                    <div class="bz2-box-wrapper">
-                        <div class="bz2-box">
-                            <h6>1. 공간 기획 및 디자인</h6>
-                            <ul>
-                                <li>클라이언트 니즈 기반의 서사적 공간 경험 기획</li>
-                                <li>사용자 경험을 반영한 공간 설계 및 디자인 개발</li>
-                                <li>문화예술 전시·상업 브랜딩·공공 프로젝트 등 공간 유형별 차별화 전략</li>
-                                <li>통합 디렉팅 및 원스톱 서비스를 통한 공간의 스토리텔링 강화</li>
-                            </ul>
-                        </div>
-                        <div class="bz2-box">
-                            <h6>2. 공간 설계 및 시공 · 공정 관리</h6>
-                            <ul>
-                                <li>예술적 요소와 기술적 요소가 조화된 합리적 시공 계획 수립</li>
-                                <li>체계적이고 세밀한 공정 관리를 통한 효율적 프로젝트 수행</li>
-                                <li>전문 시공사 네트워킹·협업 관리로 공간 완성도 극대화</li>
-                            </ul>
-                        </div>
-                        <div class="bz2-box">
-                            <h6>3. VD(비주얼 디렉팅) / AD(아트 디렉팅)</h6>
-                            <ul>
-                                <li>공간 컨디션과 구현 목적에 따른 맞춤형 기획 및 디렉팅</li>
-                                <li>섬세한 그래픽·컬러·소재·조명 연출 디자인으로 유기적 공간 구현</li>
-                                <li>다양한 예술 형식 활용과 아티스트 협업을 통한 트렌디한 연출 및 디렉팅</li>
-                            </ul>
-                        </div>
+                    <div class="bz2-box">
+                        <h6>2. 공간 설계 및 시공 · 공정 관리</h6>
+                        <ul>
+                            <li>예술적 요소와 기술적 요소가 조화된 합리적 시공 계획 수립</li>
+                            <li>체계적이고 세밀한 공정 관리를 통한 효율적 프로젝트 수행</li>
+                            <li>전문 시공사 네트워킹·협업 관리로 공간 완성도 극대화</li>
+                        </ul>
+                    </div>
+                    <div class="bz2-box">
+                        <h6>3. VD(비주얼 디렉팅) / AD(아트 디렉팅)</h6>
+                        <ul>
+                            <li>공간 컨디션과 구현 목적에 따른 맞춤형 기획 및 디렉팅</li>
+                            <li>섬세한 그래픽·컬러·소재·조명 연출 디자인으로 유기적 공간 구현</li>
+                            <li>다양한 예술 형식 활용과 아티스트 협업을 통한 트렌디한 연출 및 디렉팅</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -248,14 +245,19 @@
             start: "top top",
             end: "+=500",
             scrub: true,
-            pin: true,
             anticipatePin: 1
+        });
+
+        bz1.from(".bz1 .bz-title h5", {
+            x: "15%",
+            fontSize: "150rem"
         });
 
         bz1.to(".bz1-image", {
             x: "50%",
+            scale: 1,
             autoAlpha: 1,
-        });
+        }, "<");
 
         bz1.from(".bz1-text", {
             y: 100,
@@ -264,6 +266,19 @@
 
 
         const bz2 = gsap.timeline();
+
+        ScrollTrigger.create({
+            animation: bz2,
+            trigger: ".bz2",
+            start: "bottom 80%",
+            end: "+=500",
+            scrub: true,
+            anticipatePin: 1
+        });
+
+        bz2.to(".bz1-image", {
+            autoAlpha: 0,
+        })
 
         gsap.from(".bz2-wrapper .bz-title", {
             x: -50,
