@@ -54,7 +54,7 @@ button, input {
 }
 
 :root {
-    --main-color: blue;
+    --main-color: #0167ff;
 }
 
 .main-video {
@@ -79,6 +79,7 @@ button, input {
 
 .main-video video:nth-child(2) {
     opacity: 0;
+    filter: grayscale(.4);
 }
 
 
