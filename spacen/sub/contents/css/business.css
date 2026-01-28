@@ -11,8 +11,9 @@
 }
 
 .bz1-image {
-    position: absolute;
-    top: 0; right: 0;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -61,22 +62,12 @@
     padding-top: 120rem;
 }
 
-.bz2-wrapper {
-    width: 100%;
-    display: flex;
-    gap: 200rem;
-    z-index: 2;
-}
-
-.bz2-image {
-    width: 400rem;
-    margin-top: 50rem;
-}
-
 .bz2-box-wrapper {
-    min-width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    margin-right: auto;
+    margin-left: 0;
 }
 
 .bz2-box {
