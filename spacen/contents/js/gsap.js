@@ -1,42 +1,28 @@
-gsap.registerPlugin(ScrollTrigger);
-
-const promotion = gsap.timeline();
-let mm = gsap.matchMedia();
-
-mm.add({
-    isDesktop: "(min-width: 992px)",
-    isMobile: "(max-width: 991px)"
-}, (context) => {
-    let { isDesktop, isMobile } = context.conditions;
-
-    promotion.from(".logo", {
-        width: isMobile ? "100rem" : "60%",
-        y: isMobile ? "15%" : "0"
-    });
-
-    promotion.to(".logo", {
-        left: "70rem", 
-        top: "40rem"
-    }, "<");
-
-    promotion.to(".main-video", {
-        left: "70%",
-        top: "40%",
-        scale: 0.9
-    }, "<");
-
-    ScrollTrigger.create({
-        animation: promotion,
+const promotion = gsap.timeline({
+    scrollTrigger: {
         trigger: ".promotion",
         start: "top top",
         end: "bottom",
         scrub: true,
-    });
-
-    return () => {
-        promotion.kill();
-    };
+    }
 });
+
+promotion.from(".logo", {
+    width: "60%",
+    y: "15%",
+});
+
+promotion.to(".logo", {
+    width: "100rem",
+    left: "70rem",
+    top: "20rem"
+}, "<");
+
+promotion.to(".main-video", {
+    left: "70%",
+    top: "40%",
+    scale: 0.9
+}, "<");
 
 
 
@@ -104,28 +90,3 @@ gsap.from(".a2-box", {
         toggleActions: "play reverse play reverse"
     }
 });
-
-
-const ft = gsap.timeline();
-
-ScrollTrigger.create({
-    animation: ft,
-    trigger: ".footer",
-    start: "top bottom",
-    end: "bottom bottom",
-    scrub: true,
-    anticipatePin: 1,
-})
-
-ft.to(".main-video", {
-    left: "75%",
-    top: "30%",
-    scale: .8,
-})
-
-ft.to(".logo", {
-    width: "23%",
-    left: "13%",
-    top: "unset",
-    bottom: "30rem",
-}, "<")

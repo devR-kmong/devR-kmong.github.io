@@ -1,3 +1,30 @@
+gsap.registerPlugin(ScrollTrigger);
+
+
+const ft = gsap.timeline();
+
+ScrollTrigger.create({
+    animation: ft,
+    trigger: ".footer",
+    start: "top bottom",
+    end: "bottom bottom",
+    scrub: true,
+    anticipatePin: 1,
+})
+
+ft.to(".main-video", {
+    left: "75%",
+    top: "30%",
+    scale: .8,
+})
+
+ft.to(".logo", {
+    width: "23%",
+    top: "75%",
+    left: "13%",
+}, "<")
+
+
 if (window.innerWidth > 768) {
     AOS.init({
         once: true,
@@ -13,6 +40,7 @@ if (window.innerWidth > 768) {
         duration: 1200,
     })
 }
+
 
 
 
