@@ -46,17 +46,18 @@ const videos = document.querySelectorAll(".main-video video");
 const mainVideo2 = videos[1];
 
 const a1 = gsap.timeline();
+
 ScrollTrigger.create({
     animation: a1,
     trigger: ".article1",
     start: "top top",
-    end: "+=1500",
+    end: "+=500",
     scrub: true,
     pin: true,
+    anticipatePin: 1
 });
 
 a1.to(".a1-text-box div", { top: "-295%" });
-a1.to(".a1-text", { y: -50 }, "<");
 
 gsap.to(mainVideo2, {
     opacity: 1,
@@ -79,74 +80,27 @@ ScrollTrigger.create({
     animation: a2,
     trigger: ".article2",
     start: "top bottom",
-    end: "top top",
     scrub: true,
     pin: false,
+    anticipatePin: 1
 });
 
 a2.to(".main-video", {
     left: "50%",
     top: "60%",
-    scale: .6,
+    scale: .7,
     ease: "none",
 });
 
 
-ScrollTrigger.create({
-    trigger: ".article2",
-    start: "top top",
-    end: "+=400",
-    scrub: true,
-    pin: true,
-});
-
-
-
-const a3 = gsap.timeline();
-
-ScrollTrigger.create({
-    animation: a3,
-    trigger: ".article3",
-    start: "top bottom",
-    end: "+=1000",
-    scrub: true,
-    pin: false,
-});
-
-a3.to(".main-video", {
-    left: "30%",
-    scale: 1,
-    ease: "none",
-});
-
-
-gsap.from(".a3-box", {
+gsap.from(".a2-box", {
     y: 100,
     autoAlpha: 0,
     stagger: 0.3,
     duration: 1,
     scrollTrigger: {
-        trigger: ".a3-box-wrapper",
+        trigger: ".a2-box-wrapper",
         start: "top 50%",
         toggleActions: "play reverse play reverse"
     }
-});
-
-
-
-const a4 = gsap.timeline();
-
-ScrollTrigger.create({
-    animation: a4,
-    trigger: ".article4",
-    start: "top bottom",
-    end: "top top",
-    scrub: true,
-    pin: false,
-});
-
-
-a4.to(".main-video", {
-    top: "-15%",
-    autoAlpha: 0,
 });
