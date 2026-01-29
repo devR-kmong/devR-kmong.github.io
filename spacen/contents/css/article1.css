@@ -14,7 +14,7 @@
 
 .a1-text h5 {
     display: flex;
-    font-size: 150rem;
+    font-size: 120rem;
     font-weight: 500;
     font-family: 'Inter';
     white-space: nowrap;
@@ -23,7 +23,7 @@
 
 .a1-text-box {
     position: relative;
-    min-width: 300rem;
+    min-width: 250rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,9 +63,10 @@
 }
 
 .a1-text p {
-    width: 50%;
-    font-size: 25rem;
+    width: 55%;
+    font-size: 22rem;
     line-height: 1.7;
+    white-space: nowrap;
 }
 
 

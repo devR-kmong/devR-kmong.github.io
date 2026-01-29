@@ -6,9 +6,6 @@
     align-items: center;
     color: #fff;
     background-color: #000;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-size: cover !important;
 }
 
 .article-wrapper {
@@ -25,5 +22,4 @@
     .article {
         padding: 80rem 0;
     }
-
 }

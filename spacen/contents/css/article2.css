@@ -1,30 +1,34 @@
 .article2 {
-    height: 100vh;
+    padding: 120rem 0;
 }
 
-.a2-vertical {
-    width: 2px;
-    height: 100rem;
-    background-color: #fff;
+.a2-box-wrapper {
+    width: 50%;
+    margin-left: 0;
+    margin-right: auto;
 }
 
-.a2-text {
-    margin-bottom: 20%;
+.a2-box {
+    padding: 40rem 0;
+    display: flex;
+    gap: 50rem;
+    border-bottom: 1px solid #fff;
 }
 
-.a2-text h5 {
-    font-size: 80rem;
-    font-weight: 500;
+.a2-box-num {
+    font-size: 28rem;
     font-family: 'Inter';
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 30rem;
-    letter-spacing: 0;
 }
 
-.a2-slogun {
-    font-size: 22rem;
+.a2-box-text h6 {
+    font-size: 28rem;
+    font-weight: 500;
+}
+
+.a2-box-text p {
+    font-weight: 300;
     letter-spacing: 0;
+    margin-top: 20rem;
 }
 
 
