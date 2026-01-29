@@ -9,13 +9,11 @@ const promotion = gsap.timeline({
 
 promotion.from(".logo", {
     width: "60%",
-    y: "15%",
 });
 
 promotion.to(".logo", {
-    width: "100rem",
     left: "70rem",
-    top: "20rem"
+    top: "40rem"
 }, "<");
 
 promotion.to(".main-video", {

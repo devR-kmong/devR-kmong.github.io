@@ -20,7 +20,7 @@ ft.to(".main-video", {
 
 ft.to(".logo", {
     width: "23%",
-    top: "75%",
+    top: "85%",
     left: "13%",
 }, "<")
 
