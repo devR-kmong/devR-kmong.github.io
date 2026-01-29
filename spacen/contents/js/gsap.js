@@ -104,3 +104,28 @@ gsap.from(".a2-box", {
         toggleActions: "play reverse play reverse"
     }
 });
+
+
+const ft = gsap.timeline();
+
+ScrollTrigger.create({
+    animation: ft,
+    trigger: ".footer",
+    start: "top bottom",
+    end: "bottom bottom",
+    scrub: true,
+    anticipatePin: 1,
+})
+
+ft.to(".main-video", {
+    left: "75%",
+    top: "30%",
+    scale: .8,
+})
+
+ft.to(".logo", {
+    width: "23%",
+    left: "13%",
+    top: "unset",
+    bottom: "30rem",
+}, "<")

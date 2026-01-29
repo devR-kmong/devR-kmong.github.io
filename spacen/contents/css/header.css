@@ -8,6 +8,7 @@
     align-items: center;
     transition: all .3s;
     z-index: 98;
+    mix-blend-mode: difference;
 }
 
 .gnb {
@@ -27,13 +28,13 @@
     font-size: 16px;
     font-family: 'Inter';
     text-transform: uppercase;
+    
 }
 
 .logo {
     position: fixed;
     top: 20%; left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
     display: flex;
     width: 100rem;
     mix-blend-mode: difference;
