@@ -1,0 +1,81 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.promotion video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-logo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    mix-blend-mode: difference;
+    z-index: 2;
+}
+
+.hero-logo-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-sb {
+    position: absolute;
+    width: 100%;
+}
+
+.hero-sb img {
+    height: 600rem;
+    height: auto;
+    display: block;
+}
+
+.hero-mirrored {
+    transform: scaleX(-1);
+    opacity: 0;
+}
+
+.hero-inner-content {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    gap: 0;
+}
+
+.hero-inner-content span {
+    margin: 0 -30rem;
+}
+
+.hero-inner-content img {
+    height: 600rem;
+}
+
+.hero-inner-content .hero-com img {
+    width: 400rem;
+    height: unset;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 90%;
+    }
+}
