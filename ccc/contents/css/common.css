@@ -55,11 +55,10 @@ button, input {
 }
 
 :root {
-    --main-color: #d41e18;
+    --main-color: #ffdf00;
 }
 
 ::selection {
-    color: #fff;
     background-color: var(--main-color);
 }
 
