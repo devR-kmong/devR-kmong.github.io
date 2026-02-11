@@ -58,6 +58,15 @@ button, input {
     --main-color: #d41e18;
 }
 
+::selection {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 
 /*==================================================*/
