@@ -46,8 +46,8 @@ $(function() {
 
 
 const lenis = new Lenis({
-    duration: 1.2,
-    wheelMultiplier: 0.6,
+    duration: 0.8,
+    wheelMultiplier: 0.8,
     wrapper: window,
     content: document.documentElement,
     gestureOrientation: 'vertical',

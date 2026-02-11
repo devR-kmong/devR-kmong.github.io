@@ -12,8 +12,8 @@ heroTl
     .to(".hero-original", { x: 160, duration: 1.5, ease: "power2.inOut" }, "cross")
     .to(".hero-mirrored", { x: -160, duration: 1.5, ease: "power2.inOut" }, "cross")
 
-    // 3-1. 1초 정지
-    .to({}, { duration: 1 })
+    // 3-1. 정지
+    .to({}, { duration: 0.2 })
 
     // 4. 교집합이 벌어지며 내부 ( company ) 등장
     // 이때 mirrored는 점점 투명해지며 사라지고, 원래 구성 요소들이 나타남
@@ -53,37 +53,3 @@ heroTl
         x: 220,
         duration: 0.8
     }, "final");
-
-
-
-
-const a2 = gsap.timeline();
-
-ScrollTrigger.create({
-    animation: a2,
-    trigger: ".article2",
-    start: "top bottom",
-    scrub: true,
-    pin: false,
-    anticipatePin: 1
-});
-
-a2.to(".main-video", {
-    left: "50%",
-    top: "60%",
-    scale: .9,
-    ease: "none",
-});
-
-
-gsap.from(".a2-box", {
-    y: 100,
-    autoAlpha: 0,
-    stagger: 0.2,
-    duration: 0.7,
-    scrollTrigger: {
-        trigger: ".a2-box-wrapper",
-        start: "top 50%",
-        toggleActions: "play reverse play reverse"
-    }
-});
