@@ -34,7 +34,6 @@
     color: var(--main-color);
     font-size: 250rem;
     font-weight: 700;
-    font-family: 'Inter';
     -webkit-text-stroke: 3px;
     -webkit-text-stroke-color: #000;
     white-space: nowrap;

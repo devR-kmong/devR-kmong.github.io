@@ -13,7 +13,35 @@
 }
 
 .ab1 {
+    position: relative;
     height: 100vh;
+}
+
+.scrollDown {
+    position: absolute;
+    bottom: 5%;
+    width: 80rem;
+    animation: upDown 1.5s ease-in-out infinite;
+    filter: invert(87%) sepia(17%) saturate(3217%) hue-rotate(358deg) brightness(102%) contrast(105%);
+    z-index: 20;
+}
+
+.scrollDown img {
+    filter: invert(1);
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
 }
 
 .ab1-text {

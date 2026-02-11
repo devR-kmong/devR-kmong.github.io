@@ -20,6 +20,7 @@
 
 .menu {
     display: flex;
+    align-items: center;
     gap: 20rem;
 }
 
@@ -28,6 +29,10 @@
     font-size: 16px;
     font-family: 'Inter';
     text-transform: uppercase;
+}
+
+.menu-item.lang {
+    opacity: .4;
 }
 
 #logo-container {

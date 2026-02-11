@@ -43,8 +43,8 @@
                 <li class="menu-item"><a href="">Project</a></li>
                 <li class="menu-item"><a href="">Archive</a></li>
                 <li class="menu-item"><a href="">Contact</a></li>
-                <li class="menu-item"><a href=""><i class="ri-global-line"></i> EN</a></li>
-                <li class="menu-item"><a href="" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                <li class="menu-item"><a href="" target="_blank">Instagram</a></li>
+                <li class="menu-item lang"><a href=""><i class="ri-global-line"></i> EN</a></li>
             </ul>
             <div class="overlay"></div>
         </nav>
@@ -54,6 +54,9 @@
             <img src="../contents/images/logo.svg">
         </div>
         <section class="article sub-article ab1">
+            <div class="scrollDown">
+                <img src="../contents/images/scrollDown2.svg">
+            </div>
             <div class="article-wrapper">
                 <div class="ab1-text">
                     <h5>
@@ -145,6 +148,20 @@
 
     <script src="../contents/js/common.js"></script>
 
+    <script>
+        $(function () {
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200) {
+                        $('.scrollDown').fadeOut(80);
+                    } else {
+                        $('.scrollDown').fadeIn(80);
+                    }
+                });
+            });
+        });
+    </script>
+    
     <script>
         const tl1 = gsap.timeline({
             scrollTrigger: {
