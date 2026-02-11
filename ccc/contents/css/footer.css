@@ -5,6 +5,9 @@
     justify-content: center;
     align-items: center;
     background-color: #f3f3f3;
+    background: url(../images/footer-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 30rem;
 }
 
@@ -31,10 +34,12 @@
 .ft-top h5 {
     color: var(--main-color);
     font-size: 250rem;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'Inter';
-    letter-spacing: 10rem;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: #000;
     white-space: nowrap;
+    user-select: none;
 }
 
 .ft-center {
@@ -42,15 +47,20 @@
     margin-bottom: 100rem;
 }
 
-.ft-center h6 {
-    font-size: 22rem;
+.ft-center p {
+    font-size: 24rem;
     font-weight: 600;
-    font-family: 'Inter';
-    text-transform: uppercase;
 }
 
 .ft-center p br {
     display: none;
+}
+
+.ft-center h6 {
+    font-size: 20rem;
+    font-weight: 500;
+    font-family: 'Inter';
+    text-transform: uppercase;
 }
 
 .ft-bottom {
@@ -63,4 +73,13 @@
 
 
 /*==================================================*/
-@media (max-width: 991px) {}
+@media (min-width: 2250px) {
+    .ft-top {
+        top: 50%;
+    }
+}
+
+
+@media (max-width: 991px) {
+    
+}
