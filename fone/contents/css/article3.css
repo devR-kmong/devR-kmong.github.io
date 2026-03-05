@@ -1,0 +1,120 @@
+.a3-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 30rem;
+}
+
+.a3-title {
+    width: 50%;
+    padding: 60rem;
+    border-radius: 20rem;
+    background: url(../images/a3-bg.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.a3-title img {
+    width: 100rem;
+    margin-bottom: 30rem;
+}
+
+.a3-title h5 {
+    color: #fff;
+    font-size: 36rem;
+}
+
+.a3-form {
+    width: 50%;
+    padding: 60rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+    border-radius: 20rem;
+    border: 1px solid #eee;
+    background-image: linear-gradient(to bottom, #f7f7f7, #ecf0f4);
+}
+
+.input-group label {
+    color: #333;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.frm_input {
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    letter-spacing: 0;
+}
+.frm_input:focus {
+    border: 1px solid var(--main-color);
+}
+
+.frm_input::placeholder {
+    color: #ccc;
+}
+
+.radio-button-group { 
+    display: flex; 
+    gap: 8px; 
+    flex-wrap: wrap; 
+}
+
+.radio-button-group input[type="radio"] { display: none; }
+
+.radio-button-group label {
+    flex: 1;
+    height: 50px;
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 0;
+    letter-spacing: 0;
+}
+
+.radio-button-group input[type="radio"]:checked + label {
+    color: var(--main-color);
+    font-weight: 600;
+    border: 1px solid var(--main-color);
+}
+
+.submitBtn {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: var(--main-color);
+    margin-top: 20rem;
+    cursor: pointer;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

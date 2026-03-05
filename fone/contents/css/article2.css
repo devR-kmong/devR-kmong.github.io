@@ -1,0 +1,64 @@
+.article2 {
+    padding: 0;
+    margin: -50rem 0;
+}
+
+.a2-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    border-radius: 20rem;
+    border: 1px solid #eee;
+    background-image: linear-gradient(to bottom, #f7f7f7, #ecf0f4);
+}
+
+.a2-image {
+    position: absolute;
+    bottom: -50rem; right: -50rem;
+    width: 450rem;
+    will-change: transform;
+}
+
+.a2-text {
+    padding: 80rem;
+}
+
+.a2-text h5 {
+    color: #222;
+    font-size: 40rem;
+    font-family: 'Paperozi';
+}
+
+.a2-text h5 span {
+    color: var(--main-color);
+    font-family: 'Paperozi';
+}
+
+.a2-text p {
+    color: #888;
+    font-size: 18rem;
+    line-height: 1.5;
+    margin-top: 30rem;
+}
+
+.a2Btn {
+    color: #fff;
+    font-weight: 600;
+    background-color: var(--main-color);
+}
+
+.a2Btn:hover {
+    color: #fff;
+    background-color: #111;
+}
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}
