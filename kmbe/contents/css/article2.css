@@ -1,0 +1,64 @@
+.article2 {
+    background-color: #111;
+    background: url(../images/a2-bg.jpg);
+}
+
+.a2-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80rem 20rem;
+}
+
+.a2-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a2-laurel {
+    width: 400rem;
+    height: 400rem;
+    padding-bottom: 40rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/laurel.png) no-repeat;
+    background-size: cover;
+}
+
+.a2-laurel h6 {
+    color: #fff;
+    color: #ffcb47;
+    font-size: 24rem;
+    text-align: center;
+}
+
+.a2-laurel span {
+    color: #ffcb47;
+    font-size: 80rem;
+    font-weight: 700;
+    letter-spacing: -2.5rem;
+}
+
+.a2-box p {
+    color: #ffffffce;
+    padding: 20rem;
+    font-size: 22rem;
+    border-radius: 10rem;
+    background-color: #ffffff1a;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

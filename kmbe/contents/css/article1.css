@@ -1,0 +1,46 @@
+.article1 {
+    position: relative;
+    height: 100vh;
+    background-color: #000;
+}
+
+.a1-logo {
+    display: flex;
+    align-items: center;
+    gap: 50rem;
+    z-index: 2;
+}
+
+.a1-logo img {
+    height: 50rem;
+}
+
+.a1-logo img:last-child {
+    height: 70rem;
+}
+
+.a1-logo i {
+    color: #fff;
+    font-size: 40rem;
+}
+
+.a1-text {
+    color: #fff;
+    font-size: 22rem;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 50rem;
+    z-index: 2;
+}
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

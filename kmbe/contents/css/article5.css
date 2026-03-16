@@ -1,0 +1,47 @@
+.article5 {
+    background-color: #111;
+    background-image: linear-gradient(to bottom, #000, #1d1506);
+}
+
+.a5-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+}
+
+.a5-box-text {
+    margin-top: 20rem;
+}
+
+.a5-box-text h5 {
+    color: #fff;
+    font-size: 26rem;
+}
+
+.a5-box-text h5 span {
+    color: var(--gold-point);
+    font-size: 18rem;
+    font-weight: 500;
+    letter-spacing: -0.5rem;
+    margin-left: 10rem;
+}
+
+.a5-box-text p {
+    color: #888;
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 20rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

@@ -1,0 +1,86 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/hero.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.promotion::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(to right, #000 50%, transparent);
+    opacity: .4;
+    z-index: 2;
+}
+
+.promotion video {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%;
+    height: 102%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.promotion-wrapper {
+    width: 1400rem;
+}
+
+.p-text {
+    position: relative;
+    margin-top: 30rem;
+    z-index: 3;
+}
+
+.p-text h6 {
+    color: #fff;
+    font-size: 22rem;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    margin-bottom: 30rem;
+}
+
+.p-text h5 {
+    color: #fff;
+    font-size: 65rem;
+}
+
+.p-text p {
+    color: #fff;
+    font-size: 24rem;
+    line-height: 1.5;
+    margin-top: 40rem;
+}
+
+.pBtn {
+    color: #fff;
+    font-size: 24rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    padding: 20rem 40rem;
+    border: 1px solid var(--gold-point);
+    background-color: #000;
+    margin-top: 70rem;
+    cursor: pointer;
+}
+
+.pBtn:hover {
+    border: 1px solid transparent;
+    background-color: var(--gold-point);
+}
+
+
+/*==================================================*/
+@media (max-width: 1450px) {
+    .promotion-wrapper {
+        width: 90%;
+    }
+}
