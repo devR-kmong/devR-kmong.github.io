@@ -27,7 +27,7 @@
 
 .info-table th {
     width: 180rem;
-    color: #fff;
+    color: #f5f5f7;
     padding: 25rem 0;
     font-size: 24rem;
     font-weight: 700;
@@ -37,7 +37,7 @@
 }
 
 .info-table td {
-    color: #fff;
+    color: #f5f5f7;
     font-size: 22rem;
     padding: 15px 10px;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
