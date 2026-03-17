@@ -41,6 +41,11 @@
     cursor: pointer;
 }
 
+.logo-f {
+    width: 160rem;
+    margin-bottom: 40rem;
+}
+
 .footer-text p {
     color: rgba(255, 255, 255, .6);
     font-size: 15rem;
