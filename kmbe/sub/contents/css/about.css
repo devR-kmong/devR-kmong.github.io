@@ -1,0 +1,88 @@
+.ab {
+    position: relative;
+    height: 100vh;
+}
+
+.ab-title {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 60rem;
+    line-height: 1.2;
+    margin-bottom: 50rem;
+    text-align: center;
+}
+
+.ab-box-wrapper {
+    width: 100%;
+    margin-bottom: -200rem;
+}
+
+.ab-box {
+    padding: 80rem 60rem;
+    background-color: #f5f5f7;
+    box-shadow: 0 -30rem 30rem rgba(0, 0, 0, .3);
+    margin-top: -200rem;
+}
+
+.ab-box h6 {
+    color: #222;
+    font-size: 30rem;
+}
+
+.ab-box p {
+    color: #222;
+    font-size: 20rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 40rem;
+}
+
+.ab-box p b {
+    color: var(--gold-point);
+    display: block;
+    font-size: 24rem;
+    font-family: 'Montserrat';
+    margin-bottom: 10rem;
+}
+
+.ab-bottom {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5f5f7;
+    text-align: center;
+}
+
+.ab-bottom h5 {
+    font-size: 40rem;
+    font-weight: 500;
+}
+
+.ab-bottom p {
+    color: #ffffffa8;
+    font-size: 20rem;
+    font-family: serif;
+    font-style: italic;
+    letter-spacing: 1rem;
+    margin-top: 20rem;
+}
+
+.ab-logo {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+
+}
+
+
+@media (max-width: 550px) {
+
+}

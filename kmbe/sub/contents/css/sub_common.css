@@ -1,0 +1,72 @@
+.logo1 {
+    display: none;
+}
+.logo2 {
+    display: flex;
+}
+
+.Fixed {
+    background-color: #fff;
+}
+
+.menu li a {
+    color: #111;
+}
+
+.sub-promotion {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sub-promotion-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-p-text {
+    margin-left: 10%;
+    margin-top: 15%;
+    margin-bottom: 50rem;
+}
+
+.sub-p-text h5 {
+    color: #222;
+    font-size: 70rem;
+}
+
+.sub-p-text h5 span {
+    color: var(--gold-point);
+    font-size: 32rem;
+    font-family: 'Montserrat';
+    margin-left: 20rem;
+    letter-spacing: -1rem;
+}
+
+.sub-p-image {
+    position: relative;
+    width: 102%;
+    height: 65vh;
+    overflow: hidden;
+}
+
+.sub-p-image img {
+    position: absolute;
+    top: 0;
+    width: 102%;
+    height: 150%;
+    object-fit: cover;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    
+}
+
+
+@media (max-width: 550px) {
+
+}
