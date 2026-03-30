@@ -1,8 +1,57 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
+const isVisited = sessionStorage.getItem("isVisited");
+const loadingScreen = document.querySelector(".loading-screen");
+const barFill = document.querySelector(".loading-bar-fill");
+const counterText = document.querySelector(".loading-counter");
+
+if (!isVisited) {
+    const loadTL = gsap.timeline();
+
+    loadTL
+        // 1. 로딩바 채우기 (0% -> 100%)
+        .to(barFill, {
+            width: "100%",
+            duration: 0.7,
+            ease: "power2.inOut"
+        })
+        // 2. 숫자 카운트 (동시 진행)
+        .to(counterText, {
+            innerText: 100, // 텍스트 숫자를 100으로 변경
+            duration: 0.7,
+            snap: { innerText: 1 }, // 소수점 없이 1단위로 끊어서 카운트
+            ease: "power2.inOut",
+            onUpdate: function () {
+                // 숫자가 업데이트될 때마다 '%'를 붙여줌
+                counterText.innerText += "%";
+            }
+        }, "<")
+
+        // 3. 로딩바와 숫자가 100%가 된 후, 약간 대기했다가 로딩화면 페이드아웃
+        .to(".loading-screen", {
+            opacity: 0,
+            delay: 0.4,
+            duration: 0.4,
+            display: "none",
+            ease: "power1.inOut",
+            onStart: () => {
+                // 이 시점에 방문 기록을 남겨야 합니다.
+                sessionStorage.setItem("isVisited", "true");
+            }
+        });
+} else {
+    // [재방문/새로고침 시] 로딩 화면 즉시 숨김
+    if (loadingScreen) {
+        loadingScreen.style.display = "none";
+    }
+}
+
+
+
 gsap.from(".promotion-wrapper > *", {
     y: 50,
+    delay: 1.3,
     opacity: 0,
     duration: 0.8,
     stagger: 0.4,
