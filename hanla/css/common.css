@@ -92,14 +92,70 @@ b.hl {
 }
 
 
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loading-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.loading-icon {
+    width: 40px;
+}
+
+.loading-bar-container {
+    width: 400rem;
+    height: 6px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.loading-bar-fill {
+    width: 0%;
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+.loading-counter {
+    color: #333;
+    font-size: 24rem;
+    font-weight: 700;
+}
+
+
 
 /*==================================================*/
-/* @media (min-width: 2250px) {
-    html,
-    html.safari.desktop {
-        font-size: 0.05254860746190225vw;
+@media (min-width: 992px) {
+    ::-webkit-scrollbar {
+        display: block !important;
+        width: 8px;
     }
-} */
+
+    ::-webkit-scrollbar-track {
+        background-color: #ddd;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, .0);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #333;
+        outline: none;
+    }
+}
 
 @media (max-width: 1650px) {
     html,
