@@ -1,0 +1,46 @@
+.a3-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article3 .ar-title {
+    margin-bottom: 0;
+}
+
+.a3-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40rem;
+}
+
+.a3-list li {
+    color: #222;
+    font-size: 22rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+.a3-list li i {
+    color: #35c96e;
+    font-size: 40rem;
+    font-weight: lighter;
+}
+
+.a3-image {
+    width: 45%;
+}
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

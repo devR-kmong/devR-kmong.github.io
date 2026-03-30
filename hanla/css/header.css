@@ -1,0 +1,45 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    z-index: 98;
+}
+
+nav {
+    width: 1100rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 32px;
+}
+
+.ctaBtn {
+    width: 120px;
+    padding: 8px 0;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+
+/*==================================================*/
+@media (max-width: 1150px) {
+    nav {
+        width: 90%;
+    }
+}

@@ -1,0 +1,43 @@
+.floating-group {
+    position: fixed;
+    right: 40rem;
+    bottom: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.4s, opacity 0.3s;
+    z-index: 98;
+}
+
+.flBtn {
+    width: 60rem;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 26rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.flBtn:hover {
+    transform: translateY(-3px);
+}
+
+.flBtn.kakao {
+    color: #391c1d;
+    font-size: 36rem;
+    background-color: #f2da00;
+}
+
+.flBtn.topBtn {
+    color: #fff;
+    font-size: 20rem;
+    background-color: var(--main-color);
+}
+
+
+
+/*==================================================*/
