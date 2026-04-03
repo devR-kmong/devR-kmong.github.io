@@ -1,0 +1,129 @@
+.article2 {
+    background-color: var(--main-color);
+}
+
+.article2 .article-wrapper {
+    width: 85%;
+    flex-direction: row;
+    gap: 100rem;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.article2 .ar-title {
+    min-width: 20%;
+}
+
+.a2Swiper {
+    width: 100%;
+    user-select: none;
+    overflow: hidden;
+}
+
+.a2Swiper .swiper-slide {
+    height: auto;
+    padding: 50rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50rem;
+    background-color: #fff;
+}
+
+.a2Swiper .sbnBtn {
+    color: var(--main-color);
+    width: 70rem;
+    height: 70rem;
+    font-size: 45rem;
+    font-weight: lighter;
+    text-shadow: 0 0 30rem rgba(0, 0, 0, .3);
+    background-color: #fff;
+    border-radius: 25rem;
+    box-shadow: 0 10rem 30rem 0 rgba(80, 86, 131, .4);
+    transition: all .3s;
+    cursor: pointer;
+    margin-top: -30rem;
+}
+
+.a2Swiper .sbnBtn:hover {
+    transform: scale(1.15);
+}
+
+.a2Swiper .sbnBtn.swiper-button-disabled {
+    opacity: 0;
+}
+
+.ss-profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ss-profile img {
+    width: 75rem;
+    border-radius: 20rem;
+}
+
+.ss-name h5 {
+    color: #222;
+    font-size: 26rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    letter-spacing: 0;
+}
+
+.ss-stars {
+    color: #ffbb00;
+    font-size: 24rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.ss-title {
+    color: #222;
+    font-size: 28rem;
+    font-weight: 700;
+    margin: 40rem 0;
+}
+
+.ss-text p {
+    color: #666;
+    font-size: 20rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 100rem;
+}
+
+.ss-text h5 {
+    position: absolute;
+    bottom: 40rem; left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    width: 85%;
+    padding: 5px 0;
+    font-size: 50rem;
+    font-weight: 800;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 5px;
+    background-color: var(--point-color);
+}
+
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    .a2Swiper .swiper-button-prev {
+        left: 11%;
+    }
+
+    .a2Swiper .swiper-button-next {
+        right: 11%;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+}

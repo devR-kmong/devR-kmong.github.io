@@ -1,0 +1,77 @@
+.article1 {
+    overflow: hidden;
+}
+
+.a1-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50rem;
+    margin-top: -50rem;
+}
+
+.a1-image {
+    width: 60%;
+    mix-blend-mode: multiply;
+    margin-bottom: -200rem;
+}
+
+.a1-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+}
+
+.a1-box {
+    padding: 30rem;
+    display: flex;
+    align-items: center;
+    gap: 30rem;
+    border-radius: 20rem;
+    background-color: #fff;
+    box-shadow: 0 15rem 50rem 0 rgba(80, 86, 131, .2);
+}
+
+.a1-box p {
+    color: #222;
+    padding-right: 40rem;
+    font-size: 24rem;
+    font-weight: 700;
+    font-family: 'Paperozi';
+    line-height: 1.5;
+}
+
+.a1-box p span {
+    color: var(--point-color);
+    font-size: 28rem;
+    font-weight: 700;
+    font-family: 'Paperozi';
+}
+
+.a1-box-num {
+    width: 60rem;
+    min-width: 60rem;
+    height: 60rem;
+    min-height: 60rem;
+    color: #fff;
+    font-size: 28rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14rem;
+    background-color: var(--main-color);
+}
+
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}
