@@ -1,0 +1,37 @@
+.article1 {
+    position: relative;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+}
+
+.a1-1 {
+    position: absolute;
+    top: 25%; left: 5%;
+    width: 300rem;
+    z-index: 3;
+}
+
+.a1-2 {
+    position: absolute;
+    top: 50%; right: 5%;
+    width: 330rem;
+    z-index: 1;
+}
+
+.a1-text {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(0, -50%);
+    color: var(--dk-black);
+    font-size: 180rem;
+    font-weight: 700;
+    font-family: 'Outfit';
+    text-transform: uppercase;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.a1-text span {
+    font-family: 'Outfit';
+}

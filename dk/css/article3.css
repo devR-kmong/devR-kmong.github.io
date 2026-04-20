@@ -1,0 +1,103 @@
+.article3 {
+    padding: 200rem 0;
+    background-color: #000;
+    background: url(../images/a3-bg.png);
+}
+
+.a3-title {
+    width: 100%;
+    color: #fff;
+    margin-bottom: 120rem;
+}
+
+.a3-title h5 {
+    font-size: 75rem;
+}
+
+.a3-title h5 span {
+    font-weight: 800;
+    letter-spacing:-2rem;
+}
+
+.a3-title p {
+    font-size: 22rem;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 30rem;
+}
+
+.a3-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50rem;
+    z-index: 2;
+}
+
+.a3-box {
+    width: 100%;
+    text-align: center;
+}
+
+.a3-box p {
+    color: #fff;
+    width: 100%;
+    font-size: 24rem;
+    font-weight: 500;
+    padding-bottom: 10rem;
+    margin-bottom: 20rem;
+    border-bottom: 1px solid #ffffff80;
+}
+
+.a3-box h5 {
+    color: #fff;
+    font-size: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+}
+
+.rolling-counter {
+    color: #fff;
+    display: flex;
+    height: 80rem;
+    font-size: 80rem;
+    line-height: 80rem;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.a3-box:nth-child(3) .digit-col {
+    width: 0.85ch;
+}
+
+.digit-rail {
+    display: flex;
+    flex-direction: column;
+    transition: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .article3 {
+        padding-top: 150rem;
+    }
+
+    .a3-circle {
+        bottom: -90%;
+        width: 200%;
+        height: 1000rem;
+    }
+
+    .a3-box-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .a3-vertical {
+        display: none;
+    }
+}
