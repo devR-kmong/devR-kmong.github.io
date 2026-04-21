@@ -12,7 +12,8 @@ header {
 }
 
 nav {
-    width: 1300rem;
+    width: 100%;
+    padding: 0 50rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,7 +135,7 @@ nav ul li a {
     .bar3 {
         width: 24px;
         height: 2px;
-        background-color: #fff;
+        background-color: #000;
         margin: 6px 0;
         transition: .3s ease;
     }

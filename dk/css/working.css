@@ -1,0 +1,98 @@
+.wk-title {
+    width: 100%;
+    font-size: 55rem;
+    line-height: 1.4;
+    margin-bottom: 80rem;
+}
+
+.wk1-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 200rem;
+}
+
+.wk1-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 70rem;
+}
+.wk1-box:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.wk1-box img {
+    width: 60%;
+    min-width: 60%;
+    border-radius: 20rem;
+}
+
+.wk1-box h6 {
+    width: 50%;
+    color: #222;
+    font-size: 36rem;
+    line-height: 1.4;
+}
+
+
+.wk2 {
+    background-color: #f5f5f5;
+}
+
+.wk2-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50rem;
+}
+
+.wk2-box {
+    padding: 50rem;
+    border-radius: 20rem;
+    background-color: #fff;
+}
+
+.wk2-box-icon {
+    font-size: 60rem;
+    margin-bottom: 30rem;
+}
+
+.wk2-box h6 {
+    font-size: 30rem;
+    font-weight: 600;
+}
+
+.wk2-box p {
+    color: #333;
+    font-size: 18rem;
+    line-height: 1.6;
+    margin-top: 20rem;
+}
+
+.wk2-box.empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+.wk2-box.empty img {
+    width: 40%;
+}
+
+.wk2-box.empty p {
+    color: #aaa;
+}
+
+
+
+@media (max-width: 991px) {
+
+}
+
+
+@media (max-width: 550px) {
+    
+}
