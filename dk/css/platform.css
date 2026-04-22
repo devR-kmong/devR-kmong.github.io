@@ -1,0 +1,37 @@
+.pl1-image {
+    margin: 50rem 0;
+}
+
+.p-text h6 {
+    color: #ff801fc0;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 1px solid #ff801f5e;
+    background-color: #ff801f15;
+    margin-bottom: 20rem;
+}
+
+
+.p-text.pl2 h6 {
+    color: #8a4dffc0;
+    border: 1px solid #8a4dff5e;
+    background-color: #8a4dff15;
+}
+
+.textShine2 {
+    background: linear-gradient(to right,
+            #8a4dff 10%,
+            #5700f8 30%,
+            #8a4dff 50%,
+            #5700f8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 2s infinite alternate;
+}
+
+.pl2-bg {
+    background-color: #8a4dff !important;
+}

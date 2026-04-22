@@ -51,10 +51,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 50rem;
-    background-color: var(--main-color);
-}
-.pBtn:last-child {
     background-color: var(--dk-black);
+}
+.pBtn:first-child {
+    background-color: var(--main-color);
 }
 
 .scrollDown {
