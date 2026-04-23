@@ -1,8 +1,3 @@
-.sub-promotion {
-    border-bottom: 1px solid #ddd;
-}
-
-
 .br-wrapper {
     width: 100%;
     display: flex;
@@ -40,8 +35,10 @@
 
 .br-text p {
     color: #333;
-    font-size: 17rem;
+    font-size: 18rem;
+    font-weight: 500;
     line-height: 1.6;
+    text-align: right;
 }
 
 

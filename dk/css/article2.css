@@ -59,3 +59,13 @@
     margin-top: auto;
     margin-bottom: 0;
 }
+
+.a2-box.dark {
+    background-color: #111;
+}
+.a2-box.dark .a2-box-text p {
+    color: #eee;
+}
+.a2-box.dark .a2Btn {
+    background-color: var(--main-color);
+}

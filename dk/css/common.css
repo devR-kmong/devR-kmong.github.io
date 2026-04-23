@@ -126,6 +126,40 @@ p {
 }
 
 
+.ftc-title {
+    color: #fff;
+    text-align: center;
+}
+
+.ftc-title h5 {
+    font-size: 50rem;
+}
+
+.ftc-title p {
+    font-size: 20rem;
+    line-height: 1.5;
+    margin-top: 20rem;
+}
+
+.ftcBtn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60rem;
+}
+
+.ftcBtn {
+    color: #fff;
+    font-size: 18rem;
+    font-weight: 600;
+    padding: 16rem 40rem;
+    border-radius: 4px;
+    background-color: #111;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+
 
 /*==================================================*/
 @media (max-width: 1650px) {

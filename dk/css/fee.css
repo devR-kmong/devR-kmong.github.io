@@ -1,0 +1,321 @@
+.fee1 {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.fee-title {
+    text-align: center;
+    margin-bottom: 50rem;
+}
+.fee-title.left {
+    width: 100%;
+    text-align: left;
+}
+
+.fee-title h5 {
+    font-size: 45rem;
+}
+
+.fee-title p {
+    font-size: 20rem;
+    margin-top: 20rem;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30rem;
+}
+
+.card {
+    width: 450rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10rem;
+    background: #fff;
+    overflow: hidden;
+}
+
+.card-header {
+    color: #fff;
+    padding: 50rem;
+    height: 300rem;
+}
+
+.orange .card-header {
+    background: linear-gradient(to right,
+        var(--main-color) 10%,
+        #ff4c1f 30%,
+        var(--main-color) 50%,
+        #ff4c1f 100%);
+    background-size: 500% auto;
+    animation: textShine 2s infinite alternate;
+}
+.blue .card-header {
+    background: linear-gradient(to right,
+        #8a4dff 10%,
+        #5700f8 30%,
+        #8a4dff 50%,
+        #5700f8 100%);
+    background-size: 500% auto;
+    animation: textShine 2s infinite alternate;
+}
+
+.category {
+    font-size: 30rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 32rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.setup-fee {
+    font-size: 17rem;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 17rem;
+    line-height: 1.5;
+}
+
+.card-body {
+    padding: 40px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 30rem;
+}
+
+.features li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    padding-left: 20px;
+}
+
+.features li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.include-text {
+    font-weight: bold;
+    font-size: 22rem;
+    margin-bottom: 30rem;
+}
+
+.ctaBtn {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 18rem;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: auto;
+    transition: all .2s;
+}
+
+.btn-orange {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.btn-blue {
+    border: 2px solid #8a4dff;
+    color: #8a4dff;
+}
+
+.btn-orange:hover {
+    color: #fff;
+    background-color: var(--main-color);
+}
+.btn-blue:hover {
+    color: #fff;
+    background-color: #8a4dff;
+}
+
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table thead th {
+    font-size: 24rem;
+    padding: 25rem 10rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.comparison-table tbody tr td {
+    padding: 20rem;
+    border-bottom: 1px solid #efefef;
+    text-align: center;
+    font-size: 18rem;
+}
+
+.comparison-table td.item-label {
+    text-align: left;
+    padding-left: 50rem;
+    color: #000;
+    width: 40%;
+}
+
+.comparison-table tbody td:not(.item-label) {
+    font-weight: 500;
+    width: 30%;
+}
+
+.category-row td {
+    color: #333;
+    padding: 15rem 25rem;
+    padding-left: 49rem !important;
+    font-weight: 700 !important;
+    font-size: 20rem;
+    background-color: #f5f5f5;
+    text-align: left !important;
+}
+
+
+.fee3 {
+    padding: 60rem 0;
+    overflow: hidden;
+}
+
+.fee3-logo-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fee3-logo {
+    display: inline-block;
+    will-change: transform;
+    transform: translateX(20%);
+    animation: slide-left 10s linear infinite;
+}
+
+.fee3-logo.reverse {
+    animation: slide-right 10s linear infinite;
+    filter: grayscale(1);
+    opacity: .3;
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(-200%);
+    }
+
+    to {
+        transform: translateX(-300%);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-300%);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+.fee3-logo {
+    display: flex;
+    gap: 80rem;
+}
+
+.fee3-logo img {
+    max-width: 180rem;
+    max-height: 90rem;
+    object-fit: contain;
+}
+
+
+.fee4 .article-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.faq-container {
+    width: 800rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-q {
+    padding: 30rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+
+.q-pfx {
+    color: var(--main-color);
+    font-weight: bold;
+    margin-right: 20rem;
+    font-size: 28rem;
+}
+
+.faq-q .txt {
+    flex: 1;
+    font-size: 22rem;
+    font-weight: 600;
+}
+
+.arrow {
+    color: #aaa;
+    font-size: 24rem;
+    transition: transform 0.3s;
+}
+
+.faq-a {
+    display: none;
+    color: #444;
+    padding: 40rem 60rem;
+    font-size: 18rem;
+    line-height: 1.7;
+    background: #f8f9fa;
+}
+
+.faq-item.on .arrow {
+    transform: rotate(180deg);
+    color: var(--main-color);
+}
+
+
+.fee5-text {
+    color: #fff;
+    font-size: 45rem;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.fee5Btn {
+    padding: 20rem 40rem;
+    color: #fff;
+    font-size: 20rem;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #111;
+    margin-top: 50rem;
+}
