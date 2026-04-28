@@ -50,6 +50,7 @@ p {
 :root {
     --main-color: #ff801f;
     --dk-black: #1c1c1c;
+    --swiper-theme-color: var(--main-color) !important;
 }
 
 .grad {

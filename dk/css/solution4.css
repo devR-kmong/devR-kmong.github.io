@@ -1,0 +1,110 @@
+.sub-promotion {
+    padding: 120rem 0;
+    background: #fff;
+    background-image: linear-gradient(to right, #fbfbfc 60%, #ffefe5, #fbfbfc);
+}
+
+.sol-image {
+    margin: 50rem 0;
+}
+
+.sol1Swiper .ss-text img {
+    height: 50rem;
+    margin-top: 20rem;
+}
+
+.sol1Swiper .ss-text span {
+    display: block;
+    color: #d1d5db;
+    font-size: 26rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 20rem;
+}
+
+
+.sol2 {
+    border-top: 1px solid #eee;
+}
+
+
+.sol3 {
+    background-color: #f9fafb;
+}
+
+
+.sol4-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30rem;
+}
+
+.sol4-box {
+    padding: 40rem 50rem;
+    border-radius: 10rem;
+    background-color: #f9fafb;
+}
+
+.sol4-box img {
+    height: 90rem;
+    margin-bottom: 30rem;
+}
+
+.sol4-box h6 {
+    font-size: 26rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.sol4-box p {
+    color: #525c6b;
+    font-size: 18rem;
+    line-height: 1.6;
+    margin-top: 20rem;
+}
+
+
+.sol5 {
+    background-color: #f5f5f5;
+    background: url(../images/글로벌링크/sol3-bg.png) no-repeat;
+    background-position: bottom !important;
+    background-size: cover;
+}
+
+.sol5-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50rem;
+}
+
+.sol5 .sol-title {
+    text-align: left;
+}
+
+.sol5 .sol-title img {
+    width: 240rem;
+    margin-bottom: 50rem;
+}
+
+
+
+@media (max-width: 991px) {
+    .sol4-box-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .sol4-box h6 {
+        font-size: 32rem;
+    }
+
+    .sol4-box p {
+        font-size: 22rem;
+    }
+}
