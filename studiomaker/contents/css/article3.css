@@ -1,0 +1,129 @@
+:root {
+    --bg: #1a1a1a;
+    --card-bg: #222222;
+    --gold: var(--main-color);
+    --gold-light: #e2c898;
+    --text-white: #e8e8e8;
+    --text-muted: #888;
+    --text-sub: #666;
+}
+
+.article3 {
+    background-color: #111;
+}
+
+.a3-title {
+    margin-bottom: 50rem;
+}
+
+.a3-title h5 {
+    color: #777;
+    font-size: 32rem;
+    font-weight: 200;
+    font-family: 'Inter';
+    letter-spacing: 3rem;
+}
+
+.posts-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.post-card {
+    padding: 28px 28px 32px;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(14px);
+    background-color: #ffffff06;
+    transition: background .2s;
+}
+
+.post-card:hover {
+    background-color: #ffffff08;
+}
+
+.post-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 0;
+    background: var(--gold);
+    transition: height 0.35s ease;
+}
+
+.post-card:hover::before {
+    height: 100%;
+}
+
+.post-category {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.post-title {
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--text-white);
+    line-height: 1.4;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.post-card:hover .post-title {
+    color: #fff;
+}
+
+.post-date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10.5px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+}
+
+.gold-line {
+    width: 24px;
+    height: 1.5px;
+    background: var(--gold);
+    margin-bottom: 18px;
+    transition: width 0.3s ease;
+}
+
+.post-card:hover .gold-line {
+    width: 38px;
+}
+
+.post-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.post-tag {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 11.5px;
+    font-weight: 300;
+    color: var(--text-sub);
+    letter-spacing: 0.02em;
+    transition: color 0.3s ease;
+}
+
+.post-card:hover .post-tag {
+    color: #888;
+}
+
+
+/*==================================================*/
+@media (max-width: 991px) {}
+
+
+@media (max-width: 550px) {}

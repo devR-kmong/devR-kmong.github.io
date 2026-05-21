@@ -1,0 +1,92 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/hero.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promotion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000051;
+    z-index: 1;
+}
+.promotion::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 40%;
+    height: 100%;
+    background-image: linear-gradient(to right, #000, transparent);
+    z-index: 2;
+}
+
+.promotion-wrapper {
+    width: 80%;
+    z-index: 3;
+}
+
+.p-text {
+    margin-top: 60rem;
+}
+
+.p-text h5 {
+    color: #ddd;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 1.2;
+    font-family: 'Inter';
+    letter-spacing: 8rem;
+}
+
+.p-text h5 span {
+    color: var(--main-color);
+    font-family: 'Inter';
+}
+
+.p-text p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-top: 30rem;
+}
+
+.pBtn {
+    width: fit-content;
+    color: #ddd;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 80rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.pBtn .line {
+    width: 40rem;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.pBtn i {
+    transition: all .2s;
+}
+
+.pBtn:hover i {
+    margin-left: 10px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .promotion-wrapper {
+        width: 90%;
+    }
+}

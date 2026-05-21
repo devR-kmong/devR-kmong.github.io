@@ -1,0 +1,132 @@
+:root {
+    --gold: var(--main-color);
+    --gold-light: #e2c898;
+    --text-en: #c9a96e;
+    --text-ko: #a89070;
+    --divider: rgba(201, 169, 110, 0.2);
+}
+
+.article1 {
+    background-color: #111;
+}
+
+.services-bar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 28px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(18px);
+    animation: fadeUp 0.7s ease forwards;
+}
+
+.service-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.service-item:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.service-item:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.service-item:nth-child(4) {
+    animation-delay: 0.55s;
+}
+
+.service-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60px;
+    background: var(--divider);
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.icon-wrap {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    transition: transform 0.35s ease;
+}
+
+.service-item:hover .icon-wrap {
+    transform: translateY(-3px);
+}
+
+.icon-wrap svg {
+    width: 100%;
+    height: 100%;
+    stroke: var(--gold);
+    fill: none;
+    stroke-width: 1.3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 0.3s ease;
+}
+
+.service-item:hover .icon-wrap svg {
+    stroke: var(--gold-light);
+}
+
+.service-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--text-en);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.service-item:hover .service-title {
+    color: var(--gold-light);
+}
+
+.divider-line {
+    width: 28px;
+    height: 1px;
+    background: var(--divider);
+    margin: 0 auto 14px;
+}
+
+.service-desc {
+    color: #888;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+
+}
+
+
+@media (max-width: 550px) {
+
+}
