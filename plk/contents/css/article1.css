@@ -1,0 +1,94 @@
+.article1 {
+    padding: 0;
+}
+
+.article1 .article-wrapper {
+    padding: 80rem 20rem;
+    border-radius: 15rem;
+    background-color: #fff;
+    box-shadow: 0 15rem 50rem 0 rgba(80, 86, 131, .2);
+    margin-top: -40rem;
+}
+
+.a1-title h5 {
+    color: #222;
+    font-size: 45rem;
+    margin-bottom: 70rem;
+}
+.a1-title h5 span {
+    color: var(--main-color);
+}
+
+.a1-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.a1-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px dashed #ddd;
+}
+.a1-box:last-child {
+    border-right: none;
+}
+
+.a1-box-icon i {
+    color: var(--main-color);
+    font-size: 55rem;
+}
+
+.a1-box-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.a1-box-text h6 {
+    color: #222;
+    font-size: 22rem;
+    line-height: 1.3;
+}
+
+.a1-box-text p {
+    color: #999;
+    font-size: 15rem;
+    line-height: 1.5;
+    margin-top: 15rem;
+}
+
+.a1-flow-wrapper {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.a1-flow {
+    display: inline-block;
+    color: #eee;
+    will-change: transform;
+}
+
+.a1-flow span {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 100rem;
+    font-weight: 400;
+    letter-spacing: 8px;
+}
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

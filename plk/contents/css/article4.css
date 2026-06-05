@@ -1,0 +1,187 @@
+.article4 {
+    position: relative;
+    background: url(../images/a4-bg.avif);
+}
+.article4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    z-index: 1;
+}
+
+.article4 .article-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100rem;
+    z-index: 2;
+}
+
+/* 좌측 */
+.contact-left {
+    flex: 1;
+    color: #fff;
+}
+
+.contact-heading h5 {
+    color: #fff;
+    font-size: 65rem;
+    line-height: 1.15;
+    margin-bottom: 40rem;
+}
+
+.contact-ticker-wrap {
+    height: 500rem;
+    overflow: hidden;
+}
+
+.contact-ticker {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: tickerSlide 12s linear infinite;
+}
+
+.contact-ticker li {
+    color: #fff;
+    padding: 15rem 0;
+    font-size: 22rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@keyframes tickerSlide {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.contact-phone {
+    color: #fff;
+    font-size: 18rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30rem;
+}
+
+/* 우측 */
+.contact-right {
+    flex: 1;
+    padding: 60rem;
+    border-radius: 10rem;
+    backdrop-filter: blur(20rem);
+    border: 1px solid #ffffff25;
+    background: #ffffff15;
+}
+
+.contact-desc h5 {
+    color: #fff;
+    font-size: 32rem;
+    font-weight: 600;
+    margin-bottom: 20rem;
+}
+
+.contact-desc p {
+    color: #fff;
+    font-size: 17rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 40rem;
+}
+
+.contact-sub {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.form-row {
+    margin-bottom: 25px;
+}
+
+.form-row.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group label {
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 6px;
+    letter-spacing: 0;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 55px;
+    color: #333;
+    padding: 0 12px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.form-group select {
+    color: #333;
+    background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpolyline points='1,1 5,5 9,1' fill='none' stroke='%23aaa' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 12px center;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 18px 0;
+    font-size: 22px;
+    font-weight: 600;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.form-group input::placeholder {
+    color: #bbb;
+    font-weight: 400;
+}
+.form-group select.placeholder {
+    color: #bbb;
+    font-weight: 400;
+}
+.form-group select option {
+    color: #333;
+}
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    
+}
+
+
+@media (max-width: 550px) {
+    
+}

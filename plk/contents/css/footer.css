@@ -1,0 +1,147 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #01163a;
+    padding: 100rem 0;
+}
+
+.footer-wrapper {
+    width: 1400rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50rem;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 50rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.ft-left {
+    display: flex;
+    align-items: center;
+    gap: 50rem;
+}
+
+.ft-l-info h6 {
+    color: #fff;
+    font-size: 26rem;
+}
+
+.ft-l-info p {
+    color: #fff;
+    font-size: 18rem;
+    line-height: 1.4;
+    margin-top: 15px;
+    letter-spacing: 0;
+}
+
+.logo-f {
+    width: 200rem;
+}
+
+.fBtn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50rem;
+}
+
+.fBtn {
+    color: #fff;
+    font-size: 18rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+.footer-text p {
+    color: rgba(255, 255, 255, .5);
+    font-size: 15rem;
+    line-height: 1.8;
+    letter-spacing: 0;
+}
+
+.footer-bot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.fb-left p {
+    color: rgba(255, 255, 255, .3);
+    font-size: 15rem;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+.admBtn {
+    color: rgba(255, 255, 255, .3);
+    font-size: 13rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.f-menu {
+    display: none;
+}
+
+
+/*==================================================*/
+@media (max-width: 1450px) {
+    .footer-wrapper {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .footer {
+        padding: 60rem 0;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: unset;
+        border-bottom: none;
+        margin-bottom: -70rem;
+    }
+
+    .fBtn-wrapper {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .footer-wrapper {
+        gap: 60rem;
+    }
+
+    .fmh {
+        font-size: 24rem;
+    }
+
+    .f-menu-item .f-menu-hover li a {
+        font-size: 20rem;
+    }
+
+    .footer-text p,
+    .fb-left p {
+        font-size: 20rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .footer-wrapper {
+        padding: 0 20px;
+    }
+}

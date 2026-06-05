@@ -1,0 +1,101 @@
+.article2 {
+    background-color: var(--main-color);
+    background: url(../images/a2-bg.jpg);
+    background-attachment: fixed;
+}
+
+.a2-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 70rem;
+}
+
+.a2-title p {
+    font-size: 22rem;
+    margin-bottom: 10px;
+}
+
+.a2-title h5 {
+    font-size: 50rem;
+}
+
+
+.a2-box-wrapper {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20rem;
+    z-index: 2;
+}
+
+.a2-top {
+    position: absolute;
+    top: -30rem; right: 0;
+    color: #ffffff50;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.a2-box {
+    width: 100%;
+    padding: 50rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.a2-box p {
+    color: #333;
+    font-size: 20rem;
+    font-weight: 600;
+    margin-bottom: 20rem;
+}
+
+.a2-box h5 {
+    font-size: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+}
+
+.rolling-counter {
+    color: var(--main-color);
+    display: flex;
+    height: 80rem;
+    font-size: 80rem;
+    line-height: 80rem;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.a2-box:nth-child(3) .digit-col {
+    width: 0.85ch;
+}
+
+.digit-rail {
+    display: flex;
+    flex-direction: column;
+    transition: none;
+}
+
+
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    .a2-box-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .a2-vertical {
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    
+}
