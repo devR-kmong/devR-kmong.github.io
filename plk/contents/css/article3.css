@@ -58,7 +58,7 @@
     color: #fff;
     padding: 4rem 9rem;
     font-size: 14rem;
-    background-color: #bbb;
+    background-color: #111;
     border-radius: 2rem;
 }
 
@@ -106,10 +106,15 @@
     padding: 7rem 0;
     border-bottom: 1px solid #eee;
 }
-
-.row:last-child {
+.row:nth-child(2) {
     border-bottom: none;
 }
+.row:nth-child(3),
+.row:nth-child(4),
+.row:nth-child(5) {
+    display: none;
+}
+
 
 .rk {
     color: #222;
