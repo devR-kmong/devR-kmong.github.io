@@ -1,0 +1,106 @@
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #571ac7, transparent);
+    padding: 100rem 0;
+    z-index: 2;
+}
+
+.footer-wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+}
+
+.logo-f {
+    width: 100rem;
+}
+
+.fBtn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50rem;
+}
+
+.fBtn {
+    color: #fff;
+    font-size: 18rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer-text p {
+    color: rgba(255, 255, 255, .5);
+    font-size: 15rem;
+    line-height: 1.8;
+    letter-spacing: 0;
+}
+
+.footer-bot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.fb-left p {
+    color: rgba(255, 255, 255, .3);
+    font-size: 15rem;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+.admBtn {
+    color: rgba(255, 255, 255, .3);
+    font-size: 13rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.f-menu {
+    display: none;
+}
+
+
+/*==================================================*/
+@media (max-width: 1024px) {
+    .footer {
+        padding: 60rem 0;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: unset;
+        border-bottom: none;
+        margin-bottom: -70rem;
+    }
+
+    .fBtn-wrapper {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer-wrapper {
+        gap: 60rem;
+    }
+
+    .fmh {
+        font-size: 24rem;
+    }
+
+    .f-menu-item .f-menu-hover li a {
+        font-size: 20rem;
+    }
+
+    .footer-text p,
+    .fb-left p {
+        font-size: 20rem;
+    }
+}

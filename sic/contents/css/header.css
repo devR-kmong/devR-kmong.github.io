@@ -1,0 +1,45 @@
+.header {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    z-index: 98;
+}
+
+.gnb {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Inter';
+}
+
+.Fixed {
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    width: 120px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1024px) {
+
+}
