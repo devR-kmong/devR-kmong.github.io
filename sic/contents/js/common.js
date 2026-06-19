@@ -1,10 +1,9 @@
 $(function () {
-    var Offset = $('.header').offset();
+    var Offset = $('.promotion').offset();
     $(window).scroll(function () {
         var scrollTop = $(document).scrollTop();
-        var footerTop = $('.footer').offset().top;
 
-        if (scrollTop > Offset.top + 300 && scrollTop + $(window).height() < footerTop) {
+        if (scrollTop > Offset.top + 200) {
             $('.main-bg').addClass('active');
         } else {
             $('.main-bg').removeClass('active');
