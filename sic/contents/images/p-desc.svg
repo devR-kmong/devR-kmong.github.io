@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 697.6357954884 44.7958984375">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_5-31);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-39, .cls-40, .cls-41, .cls-42, .cls-43, .cls-44, .cls-45, .cls-46, .cls-47, .cls-48, .cls-49, .cls-50, .cls-51, .cls-52, .cls-53, .cls-54, .cls-55, .cls-56, .cls-57, .cls-58, .cls-59, .cls-60, .cls-61, .cls-62, .cls-63, .cls-64, .cls-65, .cls-66, .cls-67, .cls-68, .cls-69, .cls-70, .cls-71, .cls-72, .cls-73, .cls-74, .cls-75, .cls-76, .cls-77, .cls-78, .cls-79, .cls-80, .cls-81, .cls-82 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_5-69);
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_5-57);
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_5-20);
+      }
+
+      .cls-5 {
+        fill: url(#Degradado_sin_nombre_5);
+      }
+
+      .cls-6 {
+        fill: url(#Degradado_sin_nombre_5-25);
+      }
+
+      .cls-7 {
+        fill: url(#Degradado_sin_nombre_5-9);
+      }
+
+      .cls-8 {
+        fill: url(#Degradado_sin_nombre_5-33);
+      }
+
+      .cls-9 {
+        fill: url(#Degradado_sin_nombre_5-11);
+      }
+
+      .cls-10 {
+        fill: url(#Degradado_sin_nombre_5-55);
+      }
+
+      .cls-11 {
+        fill: url(#Degradado_sin_nombre_5-67);
+      }
+
+      .cls-12 {
+        fill: url(#Degradado_sin_nombre_5-10);
+      }
+
+      .cls-13 {
+        fill: url(#Degradado_sin_nombre_5-39);
+      }
+
+      .cls-14 {
+        fill: url(#Degradado_sin_nombre_5-13);
+      }
+
+      .cls-15 {
+        fill: url(#Degradado_sin_nombre_5-34);
+      }
+
+      .cls-16 {
+        fill: url(#Degradado_sin_nombre_5-53);
+      }
+
+      .cls-17 {
+        fill: url(#Degradado_sin_nombre_5-71);
+      }
+
+      .cls-18 {
+        fill: url(#Degradado_sin_nombre_5-64);
+      }
+
+      .cls-19 {
+        fill: url(#Degradado_sin_nombre_5-51);
+      }
+
+      .cls-20 {
+        fill: url(#Degradado_sin_nombre_5-23);
+      }
+
+      .cls-21 {
+        fill: url(#Degradado_sin_nombre_5-70);
+      }
+
+      .cls-22 {
+        fill: url(#Degradado_sin_nombre_5-76);
+      }
+
+      .cls-23 {
+        fill: url(#Degradado_sin_nombre_5-66);
+      }
+
+      .cls-24 {
+        fill: url(#Degradado_sin_nombre_5-38);
+      }
+
+      .cls-25 {
+        fill: url(#Degradado_sin_nombre_5-17);
+      }
+
+      .cls-26 {
+        fill: url(#Degradado_sin_nombre_5-21);
+      }
+
+      .cls-27 {
+        fill: url(#Degradado_sin_nombre_5-15);
+      }
+
+      .cls-28 {
+        fill: url(#Degradado_sin_nombre_5-4);
+      }
+
+      .cls-29 {
+        fill: url(#Degradado_sin_nombre_5-72);
+      }
+
+      .cls-30 {
+        fill: url(#Degradado_sin_nombre_5-40);
+      }
+
+      .cls-31 {
+        fill: url(#Degradado_sin_nombre_5-65);
+      }
+
+      .cls-32 {
+        fill: url(#Degradado_sin_nombre_5-54);
+      }
+
+      .cls-33 {
+        fill: url(#Degradado_sin_nombre_5-56);
+      }
+
+      .cls-34 {
+        fill: url(#Degradado_sin_nombre_5-12);
+      }
+
+      .cls-35 {
+        fill: url(#Degradado_sin_nombre_5-73);
+      }
+
+      .cls-36 {
+        fill: url(#Degradado_sin_nombre_5-29);
+      }
+
+      .cls-37 {
+        fill: url(#Degradado_sin_nombre_5-26);
+      }
+
+      .cls-38 {
+        fill: url(#Degradado_sin_nombre_5-22);
+      }
+
+      .cls-39 {
+        fill: url(#Degradado_sin_nombre_5-3);
+      }
+
+      .cls-40 {
+        fill: url(#Degradado_sin_nombre_5-63);
+      }
+
+      .cls-41 {
+        fill: url(#Degradado_sin_nombre_5-6);
+      }
+
+      .cls-42 {
+        fill: url(#Degradado_sin_nombre_5-61);
+      }
+
+      .cls-43 {
+        fill: url(#Degradado_sin_nombre_5-68);
+      }
+
+      .cls-44 {
+        fill: url(#Degradado_sin_nombre_5-35);
+      }
+
+      .cls-45 {
+        fill: url(#Degradado_sin_nombre_5-77);
+      }
+
+      .cls-46 {
+        fill: url(#Degradado_sin_nombre_5-50);
+      }
+
+      .cls-47 {
+        fill: url(#Degradado_sin_nombre_5-27);
+      }
+
+      .cls-48 {
+        fill: url(#Degradado_sin_nombre_5-2);
+      }
+
+      .cls-49 {
+        fill: url(#Degradado_sin_nombre_5-19);
+      }
+
+      .cls-50 {
+        fill: url(#Degradado_sin_nombre_5-75);
+      }
+
+      .cls-51 {
+        fill: url(#Degradado_sin_nombre_5-36);
+      }
+
+      .cls-52 {
+        fill: url(#Degradado_sin_nombre_5-62);
+      }
+
+      .cls-53 {
+        fill: url(#Degradado_sin_nombre_5-52);
+      }
+
+      .cls-54 {
+        fill: url(#Degradado_sin_nombre_5-45);
+      }
+
+      .cls-55 {
+        fill: url(#Degradado_sin_nombre_5-37);
+      }
+
+      .cls-56 {
+        fill: url(#Degradado_sin_nombre_5-14);
+      }
+
+      .cls-57 {
+        fill: url(#Degradado_sin_nombre_5-60);
+      }
+
+      .cls-58 {
+        fill: url(#Degradado_sin_nombre_5-79);
+      }
+
+      .cls-59 {
+        fill: url(#Degradado_sin_nombre_5-47);
+      }
+
+      .cls-60 {
+        fill: url(#Degradado_sin_nombre_5-49);
+      }
+
+      .cls-61 {
+        fill: url(#Degradado_sin_nombre_5-58);
+      }
+
+      .cls-62 {
+        fill: url(#Degradado_sin_nombre_5-42);
+      }
+
+      .cls-63 {
+        fill: url(#Degradado_sin_nombre_5-41);
+      }
+
+      .cls-64 {
+        fill: url(#Degradado_sin_nombre_5-81);
+      }
+
+      .cls-65 {
+        fill: url(#Degradado_sin_nombre_5-43);
+      }
+
+      .cls-66 {
+        fill: url(#Degradado_sin_nombre_5-59);
+      }
+
+      .cls-67 {
+        fill: url(#Degradado_sin_nombre_5-44);
+      }
+
+      .cls-68 {
+        fill: url(#Degradado_sin_nombre_5-82);
+      }
+
+      .cls-69 {
+        fill: url(#Degradado_sin_nombre_5-78);
+      }
+
+      .cls-70 {
+        fill: url(#Degradado_sin_nombre_5-80);
+      }
+
+      .cls-71 {
+        fill: url(#Degradado_sin_nombre_5-7);
+      }
+
+      .cls-72 {
+        fill: url(#Degradado_sin_nombre_5-18);
+      }
+
+      .cls-73 {
+        fill: url(#Degradado_sin_nombre_5-74);
+      }
+
+      .cls-74 {
+        fill: url(#Degradado_sin_nombre_5-24);
+      }
+
+      .cls-75 {
+        fill: url(#Degradado_sin_nombre_5-8);
+      }
+
+      .cls-76 {
+        fill: url(#Degradado_sin_nombre_5-16);
+      }
+
+      .cls-77 {
+        fill: url(#Degradado_sin_nombre_5-28);
+      }
+
+      .cls-78 {
+        fill: url(#Degradado_sin_nombre_5-48);
+      }
+
+      .cls-79 {
+        fill: url(#Degradado_sin_nombre_5-32);
+      }
+
+      .cls-80 {
+        fill: url(#Degradado_sin_nombre_5-46);
+      }
+
+      .cls-81 {
+        fill: url(#Degradado_sin_nombre_5-30);
+      }
+
+      .cls-82 {
+        fill: url(#Degradado_sin_nombre_5-5);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_5" data-name="Degradado sin nombre 5" x1="81.6804732228" y1="14.623046875" x2="81.6804732228" y2=".2890625" gradientUnits="userSpaceOnUse">
+      <stop offset=".327493" stop-color="#b167aa"/>
+      <stop offset=".732709" stop-color="#5253a3"/>
+      <stop offset=".73966" stop-color="#5153a3"/>
+      <stop offset=".893957" stop-color="#4d52a3"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_5-2" data-name="Degradado sin nombre 5" x1="97.4475630665" y1="14.8076171875" x2="97.4475630665" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-3" data-name="Degradado sin nombre 5" x1="111.4949263478" y1="14.787109375" x2="111.4949263478" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-4" data-name="Degradado sin nombre 5" x1="123.4126509571" x2="123.4126509571" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-5" data-name="Degradado sin nombre 5" x1="135.4941939259" y1="14.787109375" x2="135.4941939259" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-6" data-name="Degradado sin nombre 5" x1="159.2373579884" x2="159.2373579884" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-7" data-name="Degradado sin nombre 5" x1="173.9189986134" x2="173.9189986134" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-8" data-name="Degradado sin nombre 5" x1="188.0588911915" y1="14.787109375" x2="188.0588911915" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-9" data-name="Degradado sin nombre 5" x1="211.2388228321" x2="211.2388228321" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-10" data-name="Degradado sin nombre 5" x1="226.5564497853" x2="226.5564497853" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-11" data-name="Degradado sin nombre 5" x1="242.3030318165" y1="14.787109375" x2="242.3030318165" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-12" data-name="Degradado sin nombre 5" x1="256.1453169728" x2="256.1453169728" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-13" data-name="Degradado sin nombre 5" x1="267.8792036915" x2="267.8792036915" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-14" data-name="Degradado sin nombre 5" x1="280.0217818165" y1="14.787109375" x2="280.0217818165" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-15" data-name="Degradado sin nombre 5" x1="294.5913618946" x2="294.5913618946" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-16" data-name="Degradado sin nombre 5" x1="308.9353560353" y1="14.787109375" x2="308.9353560353" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-17" data-name="Degradado sin nombre 5" x1="320.710258379" x2="320.710258379" y2="12.4521484375" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-18" data-name="Degradado sin nombre 5" x1="351.282524004" x2="351.282524004" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-19" data-name="Degradado sin nombre 5" x1="366.5994185353" x2="366.5994185353" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-20" data-name="Degradado sin nombre 5" x1="382.3460005665" y1="14.787109375" x2="382.3460005665" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-21" data-name="Degradado sin nombre 5" x1="396.1890181446" x2="396.1890181446" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-22" data-name="Degradado sin nombre 5" x1="407.9221724415" x2="407.9221724415" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-23" data-name="Degradado sin nombre 5" x1="420.0647505665" y1="14.787109375" x2="420.0647505665" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-24" data-name="Degradado sin nombre 5" x1="434.6348189259" x2="434.6348189259" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-25" data-name="Degradado sin nombre 5" x1="448.9788130665" y1="14.787109375" x2="448.9788130665" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-26" data-name="Degradado sin nombre 5" x1="472.6406783009" x2="472.6406783009" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-27" data-name="Degradado sin nombre 5" x1="487.3228072071" x2="487.3228072071" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-28" data-name="Degradado sin nombre 5" x1="501.2373579884" x2="501.2373579884" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-29" data-name="Degradado sin nombre 5" x1="515.3867720509" x2="515.3867720509" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-30" data-name="Degradado sin nombre 5" x1="538.4844283009" y1="14.787109375" x2="538.4844283009" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-31" data-name="Degradado sin nombre 5" x1="552.5938033009" y1="14.787109375" x2="552.5938033009" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-32" data-name="Degradado sin nombre 5" x1="566.5898970509" x2="566.5898970509" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-33" data-name="Degradado sin nombre 5" x1="579.9307173634" y1="14.787109375" x2="579.9307173634" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-34" data-name="Degradado sin nombre 5" x1="594.4487837696" x2="594.4487837696" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-35" data-name="Degradado sin nombre 5" x1="608.3320845509" y1="14.787109375" x2="608.3320845509" y2=".125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-36" data-name="Degradado sin nombre 5" x1="620.1064986134" x2="620.1064986134" y2="12.4521484375" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-37" data-name="Degradado sin nombre 5" x1="5.596977129" y1="42.623046875" x2="5.596977129" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-38" data-name="Degradado sin nombre 5" x1="21.876274004" y1="42.623046875" x2="21.876274004" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-39" data-name="Degradado sin nombre 5" x1="36.2817915821" y1="42.623046875" x2="36.2817915821" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-40" data-name="Degradado sin nombre 5" x1="50.4419478321" y1="42.623046875" x2="50.4419478321" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-41" data-name="Degradado sin nombre 5" x1="73.9187544728" y1="42.623046875" x2="73.9187544728" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-42" data-name="Degradado sin nombre 5" x1="88.0784224415" y1="42.623046875" x2="88.0784224415" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-43" data-name="Degradado sin nombre 5" x1="102.4846724415" y1="42.623046875" x2="102.4846724415" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-44" data-name="Degradado sin nombre 5" x1="116.3272017384" y1="42.623046875" x2="116.3272017384" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-45" data-name="Degradado sin nombre 5" x1="140.1626509571" y1="42.623046875" x2="140.1626509571" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-46" data-name="Degradado sin nombre 5" x1="154.1077193165" y1="42.623046875" x2="154.1077193165" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-47" data-name="Degradado sin nombre 5" x1="167.7249068165" y1="42.787109375" x2="167.7249068165" y2="28.125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-48" data-name="Degradado sin nombre 5" x1="181.7517622853" y1="42.787109375" x2="181.7517622853" y2="28.125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-49" data-name="Degradado sin nombre 5" x1="196.3213423634" y1="42.623046875" x2="196.3213423634" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-50" data-name="Degradado sin nombre 5" x1="211.0029829884" y1="42.623046875" x2="211.0029829884" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-51" data-name="Degradado sin nombre 5" x1="224.1804732228" y1="42.623046875" x2="224.1804732228" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-52" data-name="Degradado sin nombre 5" x1="237.8589400196" y1="42.623046875" x2="237.8589400196" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-53" data-name="Degradado sin nombre 5" x1="260.6091841603" y1="42.623046875" x2="260.6091841603" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-54" data-name="Degradado sin nombre 5" x1="274.4519575978" y1="42.787109375" x2="274.4519575978" y2="28.125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-55" data-name="Degradado sin nombre 5" x1="288.6426314259" y1="42.787109375" x2="288.6426314259" y2="28.125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-56" data-name="Degradado sin nombre 5" x1="302.6694868946" y1="42.623046875" x2="302.6694868946" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-57" data-name="Degradado sin nombre 5" x1="316.1023482228" y1="42.623046875" x2="316.1023482228" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-58" data-name="Degradado sin nombre 5" x1="330.2627486134" y1="42.623046875" x2="330.2627486134" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-59" data-name="Degradado sin nombre 5" x1="344.6682661915" y1="42.623046875" x2="344.6682661915" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-60" data-name="Degradado sin nombre 5" x1="358.7769087696" y1="42.623046875" x2="358.7769087696" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-61" data-name="Degradado sin nombre 5" x1="370.735649004" y1="44.6708984375" x2="370.735649004" y2="40.4521484375" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-62" data-name="Degradado sin nombre 5" x1="392.2671431446" y1="42.623046875" x2="392.2671431446" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-63" data-name="Degradado sin nombre 5" x1="416.2671431446" y1="42.623046875" x2="416.2671431446" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-64" data-name="Degradado sin nombre 5" x1="430.6724165821" y1="42.623046875" x2="430.6724165821" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-65" data-name="Degradado sin nombre 5" x1="446.2249068165" y1="42.623046875" x2="446.2249068165" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-66" data-name="Degradado sin nombre 5" x1="471.3398970509" y1="42.623046875" x2="471.3398970509" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-67" data-name="Degradado sin nombre 5" x1="485.5308150196" y1="42.623046875" x2="485.5308150196" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-68" data-name="Degradado sin nombre 5" x1="500.2334517384" y1="42.623046875" x2="500.2334517384" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-69" data-name="Degradado sin nombre 5" x1="513.8301314259" y1="42.623046875" x2="513.8301314259" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-70" data-name="Degradado sin nombre 5" x1="527.9390181446" y1="42.623046875" x2="527.9390181446" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-71" data-name="Degradado sin nombre 5" x1="539.9385298634" y1="42.623046875" x2="539.9385298634" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-72" data-name="Degradado sin nombre 5" x1="551.9180220509" y1="42.623046875" x2="551.9180220509" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-73" data-name="Degradado sin nombre 5" x1="566.0781783009" y1="42.623046875" x2="566.0781783009" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-74" data-name="Degradado sin nombre 5" x1="580.5859908009" y1="42.787109375" x2="580.5859908009" y2="28.125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-75" data-name="Degradado sin nombre 5" x1="594.5303267384" y1="42.623046875" x2="594.5303267384" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-76" data-name="Degradado sin nombre 5" x1="617.9360884571" y1="42.623046875" x2="617.9360884571" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-77" data-name="Degradado sin nombre 5" x1="631.9834517384" y1="42.623046875" x2="631.9834517384" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-78" data-name="Degradado sin nombre 5" x1="645.7647017384" y1="42.787109375" x2="645.7647017384" y2="28.125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-79" data-name="Degradado sin nombre 5" x1="657.8467329884" y1="42.623046875" x2="657.8467329884" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-80" data-name="Degradado sin nombre 5" x1="670.3066939259" y1="42.623046875" x2="670.3066939259" y2="28.2890625" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-81" data-name="Degradado sin nombre 5" x1="684.6504439259" y1="42.787109375" x2="684.6504439259" y2="28.125" xlink:href="#Degradado_sin_nombre_5"/>
+    <linearGradient id="Degradado_sin_nombre_5-82" data-name="Degradado sin nombre 5" x1="696.4258345509" y1="42.623046875" x2="696.4258345509" y2="40.4521484375" xlink:href="#Degradado_sin_nombre_5"/>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-5" d="M81.7212447071,10.4658203125h.041015625l1.5151367188-10.1767578125h3.1333007812v14.333984375h-2.1298828125V4.34375h-.041015625l-1.5151367188,10.279296875h-2.1298828125l-1.6381835938-10.13671875h-.0405273438v10.13671875h-1.9658203125V.2890625h3.1328125l1.6381835938,10.1767578125Z"/>
+      <path class="cls-48" d="M96.3418501759.2890625v11.0576171875c0,1.0234375.4506835938,1.392578125,1.1669921875,1.392578125.716796875,0,1.1674804688-.369140625,1.1674804688-1.392578125V.2890625h2.1293945312v10.9140625c0,2.2939453125-1.146484375,3.6044921875-3.3579101562,3.6044921875-2.2119140625,0-3.3583984375-1.310546875-3.3583984375-3.6044921875V.2890625h2.2524414062Z"/>
+      <path class="cls-39" d="M111.5151900196.125c2.19140625,0,3.3173828125,1.310546875,3.3173828125,3.6044921875v.4501953125h-2.1293945312v-.59375c0-1.0244140625-.4096679688-1.4130859375-1.1264648438-1.4130859375s-1.1264648438.388671875-1.1264648438,1.4130859375c0,1.0439453125.4506835938,1.822265625,1.9252929688,3.1123046875,1.8837890625,1.6591796875,2.4775390625,2.8466796875,2.4775390625,4.484375,0,2.2939453125-1.146484375,3.6044921875-3.3583984375,3.6044921875-2.2114257812,0-3.3579101562-1.310546875-3.3579101562-3.6044921875v-.8798828125h2.1293945312v1.0234375c0,1.0234375.4506835938,1.392578125,1.1674804688,1.392578125.7163085938,0,1.1669921875-.369140625,1.1669921875-1.392578125,0-1.0439453125-.4506835938-1.822265625-1.9248046875-3.1123046875-1.8837890625-1.6591796875-2.4780273438-2.8466796875-2.4780273438-4.484375,0-2.2939453125,1.1264648438-3.6044921875,3.3173828125-3.6044921875Z"/>
+      <path class="cls-28" d="M122.2861861134.2890625h2.2529296875v14.333984375h-2.2529296875V.2890625Z"/>
+      <path class="cls-82" d="M138.8525923634,9.2783203125v1.904296875c0,2.2939453125-1.1469726562,3.6044921875-3.3583984375,3.6044921875s-3.3583984375-1.310546875-3.3583984375-3.6044921875V3.7294921875c0-2.2939453125,1.1469726562-3.6044921875,3.3583984375-3.6044921875s3.3583984375,1.310546875,3.3583984375,3.6044921875v1.392578125h-2.1298828125v-1.5361328125c0-1.0244140625-.4506835938-1.4130859375-1.1669921875-1.4130859375-.716796875,0-1.1674804688.388671875-1.1674804688,1.4130859375v7.740234375c0,1.0234375.4506835938,1.392578125,1.1674804688,1.392578125.7163085938,0,1.1669921875-.369140625,1.1669921875-1.392578125v-2.0478515625h2.1298828125Z"/>
+      <path class="cls-41" d="M157.9370650196,14.623046875h-2.2524414062V.2890625h2.2524414062v6.1435546875h2.5595703125V.2890625h2.2934570312v14.333984375h-2.2934570312v-6.1435546875h-2.5595703125v6.1435546875Z"/>
+      <path class="cls-71" d="M177.8608931446,14.623046875h-2.2729492188l-.3891601562-2.6005859375h-2.7641601562l-.3891601562,2.6005859375h-2.068359375l2.2934570312-14.333984375h3.296875l2.2934570312,14.333984375ZM172.7212447071,10.0771484375h2.1704101562l-1.064453125-7.2490234375h-.041015625l-1.0649414062,7.2490234375Z"/>
+      <path class="cls-75" d="M188.0791548634.125c2.19140625,0,3.3173828125,1.310546875,3.3173828125,3.6044921875v.4501953125h-2.1293945312v-.59375c0-1.0244140625-.4096679688-1.4130859375-1.1264648438-1.4130859375s-1.1259765625.388671875-1.1259765625,1.4130859375c0,1.0439453125.4501953125,1.822265625,1.9248046875,3.1123046875,1.8837890625,1.6591796875,2.4775390625,2.8466796875,2.4775390625,4.484375,0,2.2939453125-1.146484375,3.6044921875-3.3583984375,3.6044921875-2.2114257812,0-3.3579101562-1.310546875-3.3579101562-3.6044921875v-.8798828125h2.1293945312v1.0234375c0,1.0234375.4506835938,1.392578125,1.1669921875,1.392578125.716796875,0,1.1674804688-.369140625,1.1674804688-1.392578125,0-1.0439453125-.4506835938-1.822265625-1.9248046875-3.1123046875-1.8837890625-1.6591796875-2.4780273438-2.8466796875-2.4780273438-4.484375,0-2.2939453125,1.1264648438-3.6044921875,3.3173828125-3.6044921875Z"/>
+      <path class="cls-7" d="M210.4199751759,6.330078125h3.091796875v2.0478515625h-3.091796875v4.197265625h3.890625v2.0478515625h-6.1435546875V.2890625h6.1435546875v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-12" d="M226.5972212696,10.4658203125h.041015625l1.5151367188-10.1767578125h3.1333007812v14.333984375h-2.1298828125V4.34375h-.041015625l-1.5151367188,10.279296875h-2.1298828125l-1.6381835938-10.13671875h-.0405273438v10.13671875h-1.9658203125V.2890625h3.1328125l1.6381835938,10.1767578125Z"/>
+      <path class="cls-9" d="M238.8833540821,3.7294921875c0-2.2939453125,1.2080078125-3.6044921875,3.419921875-3.6044921875,2.2114257812,0,3.4194335938,1.310546875,3.4194335938,3.6044921875v7.453125c0,2.2939453125-1.2080078125,3.6044921875-3.4194335938,3.6044921875-2.2119140625,0-3.419921875-1.310546875-3.419921875-3.6044921875V3.7294921875ZM241.1357954884,11.326171875c0,1.0234375.4506835938,1.4130859375,1.1674804688,1.4130859375.7163085938,0,1.1669921875-.3896484375,1.1669921875-1.4130859375V3.5859375c0-1.0244140625-.4506835938-1.4130859375-1.1669921875-1.4130859375-.716796875,0-1.1674804688.388671875-1.1674804688,1.4130859375v7.740234375Z"/>
+      <path class="cls-34" d="M252.6641158009.2890625h6.9624023438v2.0478515625h-2.3549804688v12.2861328125h-2.2524414062V2.3369140625h-2.3549804688V.2890625Z"/>
+      <path class="cls-14" d="M266.7529829884.2890625h2.2524414062v14.333984375h-2.2524414062V.2890625Z"/>
+      <path class="cls-56" d="M276.6021040821,3.7294921875c0-2.2939453125,1.2080078125-3.6044921875,3.419921875-3.6044921875,2.2114257812,0,3.4194335938,1.310546875,3.4194335938,3.6044921875v7.453125c0,2.2939453125-1.2080078125,3.6044921875-3.4194335938,3.6044921875-2.2119140625,0-3.419921875-1.310546875-3.419921875-3.6044921875V3.7294921875ZM278.8545454884,11.326171875c0,1.0234375.4506835938,1.4130859375,1.1674804688,1.4130859375.7163085938,0,1.1669921875-.3896484375,1.1669921875-1.4130859375V3.5859375c0-1.0244140625-.4506835938-1.4130859375-1.1669921875-1.4130859375-.716796875,0-1.1674804688.388671875-1.1674804688,1.4130859375v7.740234375Z"/>
+      <path class="cls-27" d="M293.0859908009,4.2412109375h-.041015625v10.3818359375h-2.0268554688V.2890625h2.8256835938l2.2729492188,8.580078125h.041015625V.2890625h2.0068359375v14.333984375h-2.3139648438l-2.7646484375-10.3818359375Z"/>
+      <path class="cls-76" d="M308.9556197071.125c2.19140625,0,3.3173828125,1.310546875,3.3173828125,3.6044921875v.4501953125h-2.1293945312v-.59375c0-1.0244140625-.4096679688-1.4130859375-1.1264648438-1.4130859375s-1.1264648438.388671875-1.1264648438,1.4130859375c0,1.0439453125.4506835938,1.822265625,1.9252929688,3.1123046875,1.8837890625,1.6591796875,2.4775390625,2.8466796875,2.4775390625,4.484375,0,2.2939453125-1.146484375,3.6044921875-3.3583984375,3.6044921875-2.2114257812,0-3.3579101562-1.310546875-3.3579101562-3.6044921875v-.8798828125h2.1293945312v1.0234375c0,1.0234375.4506835938,1.392578125,1.1674804688,1.392578125.7163085938,0,1.1669921875-.369140625,1.1669921875-1.392578125,0-1.0439453125-.4506835938-1.822265625-1.9248046875-3.1123046875-1.8837890625-1.6591796875-2.4780273438-2.8466796875-2.4780273438-4.484375,0-2.2939453125,1.1264648438-3.6044921875,3.3173828125-3.6044921875Z"/>
+      <path class="cls-25" d="M321.7954634571,12.4521484375v2.1708984375h-2.1704101562v-2.1708984375h2.1704101562Z"/>
+      <path class="cls-72" d="M350.4634322071,6.330078125h3.091796875v2.0478515625h-3.091796875v4.197265625h3.890625v2.0478515625h-6.1430664062V.2890625h6.1430664062v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-49" d="M366.6401900196,10.4658203125h.041015625l1.5151367188-10.1767578125h3.1333007812v14.333984375h-2.1298828125V4.34375h-.041015625l-1.5151367188,10.279296875h-2.1298828125l-1.6381835938-10.13671875h-.0405273438v10.13671875h-1.9658203125V.2890625h3.1328125l1.6381835938,10.1767578125Z"/>
+      <path class="cls-4" d="M378.9263228321,3.7294921875c0-2.2939453125,1.2080078125-3.6044921875,3.419921875-3.6044921875,2.2114257812,0,3.4194335938,1.310546875,3.4194335938,3.6044921875v7.453125c0,2.2939453125-1.2080078125,3.6044921875-3.4194335938,3.6044921875-2.2119140625,0-3.419921875-1.310546875-3.419921875-3.6044921875V3.7294921875ZM381.1787642384,11.326171875c0,1.0234375.4506835938,1.4130859375,1.1674804688,1.4130859375.7163085938,0,1.1669921875-.3896484375,1.1669921875-1.4130859375V3.5859375c0-1.0244140625-.4506835938-1.4130859375-1.1669921875-1.4130859375-.716796875,0-1.1674804688.388671875-1.1674804688,1.4130859375v7.740234375Z"/>
+      <path class="cls-26" d="M392.7080611134.2890625h6.9619140625v2.0478515625h-2.3549804688v12.2861328125h-2.2524414062V2.3369140625h-2.3544921875V.2890625Z"/>
+      <path class="cls-38" d="M406.7959517384.2890625h2.2524414062v14.333984375h-2.2524414062V.2890625Z"/>
+      <path class="cls-20" d="M416.6450728321,3.7294921875c0-2.2939453125,1.2080078125-3.6044921875,3.419921875-3.6044921875,2.2114257812,0,3.4194335938,1.310546875,3.4194335938,3.6044921875v7.453125c0,2.2939453125-1.2080078125,3.6044921875-3.4194335938,3.6044921875-2.2119140625,0-3.419921875-1.310546875-3.419921875-3.6044921875V3.7294921875ZM418.8975142384,11.326171875c0,1.0234375.4506835938,1.4130859375,1.1674804688,1.4130859375.7163085938,0,1.1669921875-.3896484375,1.1669921875-1.4130859375V3.5859375c0-1.0244140625-.4506835938-1.4130859375-1.1669921875-1.4130859375-.716796875,0-1.1674804688.388671875-1.1674804688,1.4130859375v7.740234375Z"/>
+      <path class="cls-74" d="M433.1294478321,4.2412109375h-.041015625v10.3818359375h-2.0268554688V.2890625h2.8256835938l2.2729492188,8.580078125h.041015625V.2890625h2.0068359375v14.333984375h-2.3139648438l-2.7646484375-10.3818359375Z"/>
+      <path class="cls-6" d="M448.9990767384.125c2.19140625,0,3.3173828125,1.310546875,3.3173828125,3.6044921875v.4501953125h-2.1293945312v-.59375c0-1.0244140625-.4096679688-1.4130859375-1.1264648438-1.4130859375s-1.1259765625.388671875-1.1259765625,1.4130859375c0,1.0439453125.4501953125,1.822265625,1.9248046875,3.1123046875,1.8837890625,1.6591796875,2.4775390625,2.8466796875,2.4775390625,4.484375,0,2.2939453125-1.146484375,3.6044921875-3.3583984375,3.6044921875-2.2114257812,0-3.3579101562-1.310546875-3.3579101562-3.6044921875v-.8798828125h2.1293945312v1.0234375c0,1.0234375.4506835938,1.392578125,1.1669921875,1.392578125.716796875,0,1.1674804688-.369140625,1.1674804688-1.392578125,0-1.0439453125-.4506835938-1.822265625-1.9248046875-3.1123046875-1.8837890625-1.6591796875-2.4780273438-2.8466796875-2.4780273438-4.484375,0-2.2939453125,1.1264648438-3.6044921875,3.3173828125-3.6044921875Z"/>
+      <path class="cls-37" d="M471.3398970509,14.623046875h-2.251953125V.2890625h2.251953125v6.1435546875h2.5595703125V.2890625h2.2939453125v14.333984375h-2.2939453125v-6.1435546875h-2.5595703125v6.1435546875Z"/>
+      <path class="cls-47" d="M491.2647017384,14.623046875h-2.2734375l-.388671875-2.6005859375h-2.7646484375l-.388671875,2.6005859375h-2.068359375l2.29296875-14.333984375h3.296875l2.2939453125,14.333984375ZM486.1240767384,10.0771484375h2.1708984375l-1.064453125-7.2490234375h-.041015625l-1.0654296875,7.2490234375Z"/>
+      <path class="cls-77" d="M501.3193892384,11.9814453125h.041015625l1.69921875-11.6923828125h2.068359375l-2.2119140625,14.333984375h-3.3583984375l-2.2109375-14.333984375h2.2724609375l1.7001953125,11.6923828125Z"/>
+      <path class="cls-36" d="M514.5674361134,6.330078125h3.0927734375v2.0478515625h-3.0927734375v4.197265625h3.890625v2.0478515625h-6.142578125V.2890625h6.142578125v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-81" d="M541.8428267384,9.2783203125v1.904296875c0,2.2939453125-1.146484375,3.6044921875-3.3583984375,3.6044921875s-3.3583984375-1.310546875-3.3583984375-3.6044921875V3.7294921875c0-2.2939453125,1.146484375-3.6044921875,3.3583984375-3.6044921875s3.3583984375,1.310546875,3.3583984375,3.6044921875v1.392578125h-2.1298828125v-1.5361328125c0-1.0244140625-.4501953125-1.4130859375-1.1669921875-1.4130859375s-1.1669921875.388671875-1.1669921875,1.4130859375v7.740234375c0,1.0234375.4501953125,1.392578125,1.1669921875,1.392578125s1.1669921875-.369140625,1.1669921875-1.392578125v-2.0478515625h2.1298828125Z"/>
+      <path class="cls-1" d="M549.1738814259,3.7294921875c0-2.2939453125,1.2080078125-3.6044921875,3.419921875-3.6044921875,2.2109375,0,3.419921875,1.310546875,3.419921875,3.6044921875v7.453125c0,2.2939453125-1.208984375,3.6044921875-3.419921875,3.6044921875-2.2119140625,0-3.419921875-1.310546875-3.419921875-3.6044921875V3.7294921875ZM551.4268111134,11.326171875c0,1.0234375.4501953125,1.4130859375,1.1669921875,1.4130859375s1.1669921875-.3896484375,1.1669921875-1.4130859375V3.5859375c0-1.0244140625-.4501953125-1.4130859375-1.1669921875-1.4130859375s-1.1669921875.388671875-1.1669921875,1.4130859375v7.740234375Z"/>
+      <path class="cls-79" d="M563.6104048634.2890625h2.251953125v12.2861328125h3.70703125v2.0478515625h-5.958984375V.2890625Z"/>
+      <path class="cls-8" d="M576.5107954884,3.7294921875c0-2.2939453125,1.2080078125-3.6044921875,3.419921875-3.6044921875,2.2109375,0,3.419921875,1.310546875,3.419921875,3.6044921875v7.453125c0,2.2939453125-1.208984375,3.6044921875-3.419921875,3.6044921875-2.2119140625,0-3.419921875-1.310546875-3.419921875-3.6044921875V3.7294921875ZM578.7637251759,11.326171875c0,1.0234375.4501953125,1.4130859375,1.1669921875,1.4130859375s1.1669921875-.3896484375,1.1669921875-1.4130859375V3.5859375c0-1.0244140625-.4501953125-1.4130859375-1.1669921875-1.4130859375s-1.1669921875.388671875-1.1669921875,1.4130859375v7.740234375Z"/>
+      <path class="cls-15" d="M595.6572798634,14.623046875c-.123046875-.3681640625-.205078125-.59375-.205078125-1.7607421875v-2.2529296875c0-1.3310546875-.4501953125-1.822265625-1.474609375-1.822265625h-.7783203125v5.8359375h-2.251953125V.2890625h3.3994140625c2.333984375,0,3.3369140625,1.0849609375,3.3369140625,3.296875v1.1259765625c0,1.474609375-.470703125,2.416015625-1.4736328125,2.8876953125v.041015625c1.1259765625.470703125,1.494140625,1.53515625,1.494140625,3.0302734375v2.2119140625c0,.6962890625.0205078125,1.2080078125.24609375,1.740234375h-2.29296875ZM593.1992720509,2.3369140625v4.40234375h.880859375c.83984375,0,1.3515625-.3681640625,1.3515625-1.515625v-1.412109375c0-1.0244140625-.3486328125-1.474609375-1.146484375-1.474609375h-1.0859375Z"/>
+      <path class="cls-44" d="M608.3525923634.125c2.19140625,0,3.3173828125,1.310546875,3.3173828125,3.6044921875v.4501953125h-2.1298828125v-.59375c0-1.0244140625-.4091796875-1.4130859375-1.1259765625-1.4130859375s-1.1259765625.388671875-1.1259765625,1.4130859375c0,1.0439453125.4501953125,1.822265625,1.9248046875,3.1123046875,1.8837890625,1.6591796875,2.4775390625,2.8466796875,2.4775390625,4.484375,0,2.2939453125-1.146484375,3.6044921875-3.3583984375,3.6044921875-2.2109375,0-3.3583984375-1.310546875-3.3583984375-3.6044921875v-.8798828125h2.1298828125v1.0234375c0,1.0234375.4501953125,1.392578125,1.1669921875,1.392578125s1.1669921875-.369140625,1.1669921875-1.392578125c0-1.0439453125-.4501953125-1.822265625-1.9248046875-3.1123046875-1.8837890625-1.6591796875-2.4775390625-2.8466796875-2.4775390625-4.484375,0-2.2939453125,1.1259765625-3.6044921875,3.3173828125-3.6044921875Z"/>
+      <path class="cls-51" d="M621.1914595509,12.4521484375v2.1708984375h-2.169921875v-2.1708984375h2.169921875Z"/>
+      <path class="cls-55" d="M5.6685103321,34.9853515625h-.041015625l-.7983398438,7.6376953125H1.7368697071L.1397017384,28.2890625h2.1909179688l1.1879882812,11.3037109375h.041015625l1.064453125-11.3037109375h2.1708984375l1.10546875,11.3857421875h.041015625l1.1469726562-11.3857421875h1.9658203125l-1.5971679688,14.333984375h-2.9897460938l-.798828125-7.6376953125Z"/>
+      <path class="cls-24" d="M20.5762251759,42.623046875h-2.2529296875v-14.333984375h2.2529296875v6.1435546875h2.5595703125v-6.1435546875h2.2934570312v14.333984375h-2.2934570312v-6.1435546875h-2.5595703125v6.1435546875Z"/>
+      <path class="cls-13" d="M35.4629439259,34.330078125h3.091796875v2.0478515625h-3.091796875v4.197265625h3.890625v2.0478515625h-6.1435546875v-14.333984375h6.1435546875v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-30" d="M48.9365767384,32.2412109375h-.041015625v10.3818359375h-2.0268554688v-14.333984375h2.8256835938l2.2729492188,8.580078125h.041015625v-8.580078125h2.0068359375v14.333984375h-2.3139648438l-2.7646484375-10.3818359375Z"/>
+      <path class="cls-63" d="M70.4375533009,28.2890625h6.9624023438v2.0478515625h-2.3549804688v12.2861328125h-2.2524414062v-12.2861328125h-2.3549804688v-2.0478515625Z"/>
+      <path class="cls-62" d="M86.7783736134,42.623046875h-2.2529296875v-14.333984375h2.2529296875v6.1435546875h2.5595703125v-6.1435546875h2.2934570312v14.333984375h-2.2934570312v-6.1435546875h-2.5595703125v6.1435546875Z"/>
+      <path class="cls-65" d="M101.6655806446,34.330078125h3.091796875v2.0478515625h-3.091796875v4.197265625h3.890625v2.0478515625h-6.1430664062v-14.333984375h6.1430664062v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-67" d="M115.2007368946,37.8720703125l-2.8461914062-9.5830078125h2.3549804688l1.69921875,6.5322265625h.041015625l1.6997070312-6.5322265625h2.150390625l-2.8466796875,9.5830078125v4.7509765625h-2.2524414062v-4.7509765625Z"/>
+      <path class="cls-54" d="M141.3706587696,42.623046875c-.1225585938-.3681640625-.2045898438-.59375-.2045898438-1.7607421875v-2.2529296875c0-1.3310546875-.4506835938-1.822265625-1.474609375-1.822265625h-.7778320312v5.8359375h-2.2524414062v-14.333984375h3.3989257812c2.3344726562,0,3.337890625,1.0849609375,3.337890625,3.296875v1.1259765625c0,1.474609375-.4711914062,2.416015625-1.474609375,2.8876953125v.041015625c1.1264648438.470703125,1.4951171875,1.53515625,1.4951171875,3.0302734375v2.2119140625c0,.6962890625.0205078125,1.2080078125.2456054688,1.740234375h-2.2934570312ZM138.9136275196,30.3369140625v4.40234375h.8803710938c.8393554688,0,1.3515625-.3681640625,1.3515625-1.515625v-1.412109375c0-1.0244140625-.3481445312-1.474609375-1.1469726562-1.474609375h-1.0849609375Z"/>
+      <path class="cls-80" d="M153.2886275196,34.330078125h3.091796875v2.0478515625h-3.091796875v4.197265625h3.890625v2.0478515625h-6.1430664062v-14.333984375h6.1430664062v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-59" d="M167.7451704884,28.125c2.19140625,0,3.3173828125,1.310546875,3.3173828125,3.6044921875v.4501953125h-2.1293945312v-.59375c0-1.0244140625-.4096679688-1.4130859375-1.1264648438-1.4130859375s-1.1259765625.388671875-1.1259765625,1.4130859375c0,1.0439453125.4501953125,1.822265625,1.9248046875,3.1123046875,1.8837890625,1.6591796875,2.4775390625,2.8466796875,2.4775390625,4.484375,0,2.2939453125-1.146484375,3.6044921875-3.3583984375,3.6044921875-2.2114257812,0-3.3579101562-1.310546875-3.3579101562-3.6044921875v-.8798828125h2.1293945312v1.0234375c0,1.0234375.4506835938,1.392578125,1.1669921875,1.392578125.716796875,0,1.1674804688-.369140625,1.1674804688-1.392578125,0-1.0439453125-.4506835938-1.822265625-1.9248046875-3.1123046875-1.8837890625-1.6591796875-2.4780273438-2.8466796875-2.4780273438-4.484375,0-2.2939453125,1.1264648438-3.6044921875,3.3173828125-3.6044921875Z"/>
+      <path class="cls-78" d="M178.3320845509,31.7294921875c0-2.2939453125,1.2080078125-3.6044921875,3.419921875-3.6044921875,2.2114257812,0,3.4194335938,1.310546875,3.4194335938,3.6044921875v7.453125c0,2.2939453125-1.2080078125,3.6044921875-3.4194335938,3.6044921875-2.2119140625,0-3.419921875-1.310546875-3.419921875-3.6044921875v-7.453125ZM180.5845259571,39.326171875c0,1.0234375.4506835938,1.4130859375,1.1674804688,1.4130859375.7163085938,0,1.1669921875-.3896484375,1.1669921875-1.4130859375v-7.740234375c0-1.0244140625-.4506835938-1.4130859375-1.1669921875-1.4130859375-.716796875,0-1.1674804688.388671875-1.1674804688,1.4130859375v7.740234375Z"/>
+      <path class="cls-60" d="M194.8159712696,32.2412109375h-.041015625v10.3818359375h-2.0268554688v-14.333984375h2.8256835938l2.2729492188,8.580078125h.041015625v-8.580078125h2.0068359375v14.333984375h-2.3139648438l-2.7646484375-10.3818359375Z"/>
+      <path class="cls-46" d="M214.9448775196,42.623046875h-2.2729492188l-.3891601562-2.6005859375h-2.7641601562l-.3891601562,2.6005859375h-2.068359375l2.2934570312-14.333984375h3.296875l2.2934570312,14.333984375ZM209.8052290821,38.0771484375h2.1704101562l-1.064453125-7.2490234375h-.041015625l-1.0649414062,7.2490234375Z"/>
+      <path class="cls-19" d="M220.6992720509,28.2890625h6.9624023438v2.0478515625h-2.3549804688v12.2861328125h-2.2524414062v-12.2861328125h-2.3549804688v-2.0478515625Z"/>
+      <path class="cls-53" d="M237.0400923634,34.330078125h3.091796875v2.0478515625h-3.091796875v4.197265625h3.890625v2.0478515625h-6.1435546875v-14.333984375h6.1435546875v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-16" d="M257.1279829884,28.2890625h6.9624023438v2.0478515625h-2.3549804688v12.2861328125h-2.2524414062v-12.2861328125h-2.3549804688v-2.0478515625Z"/>
+      <path class="cls-32" d="M271.0322798634,31.7294921875c0-2.2939453125,1.2080078125-3.6044921875,3.419921875-3.6044921875,2.2114257812,0,3.4194335938,1.310546875,3.4194335938,3.6044921875v7.453125c0,2.2939453125-1.2080078125,3.6044921875-3.4194335938,3.6044921875-2.2119140625,0-3.419921875-1.310546875-3.419921875-3.6044921875v-7.453125ZM273.2847212696,39.326171875c0,1.0234375.4506835938,1.4130859375,1.1674804688,1.4130859375.7163085938,0,1.1669921875-.3896484375,1.1669921875-1.4130859375v-7.740234375c0-1.0244140625-.4506835938-1.4130859375-1.1669921875-1.4130859375-.716796875,0-1.1674804688.388671875-1.1674804688,1.4130859375v7.740234375Z"/>
+      <path class="cls-10" d="M288.8472212696,34.63671875h3.1538085938v4.5458984375c0,2.2939453125-1.1469726562,3.6044921875-3.3583984375,3.6044921875s-3.3583984375-1.310546875-3.3583984375-3.6044921875v-7.453125c0-2.2939453125,1.1469726562-3.6044921875,3.3583984375-3.6044921875s3.3583984375,1.310546875,3.3583984375,3.6044921875v1.392578125h-2.1298828125v-1.5361328125c0-1.0244140625-.4506835938-1.4130859375-1.1669921875-1.4130859375-.716796875,0-1.1674804688.388671875-1.1674804688,1.4130859375v7.740234375c0,1.0234375.4506835938,1.392578125,1.1674804688,1.392578125.7163085938,0,1.1669921875-.369140625,1.1669921875-1.392578125v-2.6416015625h-1.0239257812v-2.0478515625Z"/>
+      <path class="cls-33" d="M301.8506392384,34.330078125h3.091796875v2.0478515625h-3.091796875v4.197265625h3.890625v2.0478515625h-6.1435546875v-14.333984375h6.1435546875v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-3" d="M312.6211470509,28.2890625h6.9624023438v2.0478515625h-2.3549804688v12.2861328125h-2.2524414062v-12.2861328125h-2.3549804688v-2.0478515625Z"/>
+      <path class="cls-61" d="M328.9624556446,42.623046875h-2.2524414062v-14.333984375h2.2524414062v6.1435546875h2.5595703125v-6.1435546875h2.2934570312v14.333984375h-2.2934570312v-6.1435546875h-2.5595703125v6.1435546875Z"/>
+      <path class="cls-66" d="M343.8491743946,34.330078125h3.091796875v2.0478515625h-3.091796875v4.197265625h3.890625v2.0478515625h-6.1430664062v-14.333984375h6.1430664062v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-57" d="M359.9849165821,42.623046875c-.1225585938-.3681640625-.2045898438-.59375-.2045898438-1.7607421875v-2.2529296875c0-1.3310546875-.4506835938-1.822265625-1.474609375-1.822265625h-.7778320312v5.8359375h-2.2524414062v-14.333984375h3.3989257812c2.3344726562,0,3.337890625,1.0849609375,3.337890625,3.296875v1.1259765625c0,1.474609375-.4711914062,2.416015625-1.474609375,2.8876953125v.041015625c1.1264648438.470703125,1.4951171875,1.53515625,1.4951171875,3.0302734375v2.2119140625c0,.6962890625.0205078125,1.2080078125.2456054688,1.740234375h-2.2934570312ZM357.5278853321,30.3369140625v4.40234375h.8803710938c.8393554688,0,1.3515625-.3681640625,1.3515625-1.515625v-1.412109375c0-1.0244140625-.3481445312-1.474609375-1.1469726562-1.474609375h-1.0849609375Z"/>
+      <path class="cls-42" d="M369.6504439259,42.623046875v-2.1708984375h2.1704101562v1.9453125l-.9829101562,2.2734375h-.9213867188l.59375-2.0478515625h-.8598632812Z"/>
+      <path class="cls-52" d="M396.2090376759,42.623046875h-2.2729492188l-.3891601562-2.6005859375h-2.7641601562l-.3891601562,2.6005859375h-2.068359375l2.2934570312-14.333984375h3.296875l2.2934570312,14.333984375ZM391.0693892384,38.0771484375h2.1704101562l-1.064453125-7.2490234375h-.041015625l-1.0649414062,7.2490234375Z"/>
+      <path class="cls-40" d="M414.7617720509,32.2412109375h-.041015625v10.3818359375h-2.0268554688v-14.333984375h2.8256835938l2.2729492188,8.580078125h.041015625v-8.580078125h2.0068359375v14.333984375h-2.3139648438l-2.7646484375-10.3818359375Z"/>
+      <path class="cls-18" d="M429.8535689259,34.330078125h3.091796875v2.0478515625h-3.091796875v4.197265625h3.890625v2.0478515625h-6.1435546875v-14.333984375h6.1435546875v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-31" d="M446.2964400196,34.9853515625h-.041015625l-.7983398438,7.6376953125h-3.0922851562l-1.5971679688-14.333984375h2.1909179688l1.1879882812,11.3037109375h.041015625l1.064453125-11.3037109375h2.1708984375l1.10546875,11.3857421875h.041015625l1.1469726562-11.3857421875h1.9658203125l-1.5971679688,14.333984375h-2.9897460938l-.798828125-7.6376953125Z"/>
+      <path class="cls-23" d="M470.5205611134,34.330078125h3.0927734375v2.0478515625h-3.0927734375v4.197265625h3.890625v2.0478515625h-6.142578125v-14.333984375h6.142578125v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-11" d="M489.4619673634,28.2890625l-2.3544921875,6.9619140625,2.5185546875,7.3720703125h-2.375l-1.8232421875-5.671875h-.041015625l-1.8427734375,5.671875h-2.1083984375l2.5185546875-7.3720703125-2.35546875-6.9619140625h2.3349609375l1.6787109375,5.283203125h.041015625l1.7197265625-5.283203125h2.0888671875Z"/>
+      <path class="cls-43" d="M503.5713423634,31.8310546875v1.8642578125c0,2.29296875-1.1064453125,3.5419921875-3.3583984375,3.5419921875h-1.0654296875v5.3857421875h-2.251953125v-14.333984375h3.3173828125c2.251953125,0,3.3583984375,1.2490234375,3.3583984375,3.5419921875ZM499.1475142384,30.3369140625v4.8525390625h1.0654296875c.716796875,0,1.10546875-.3271484375,1.10546875-1.3515625v-2.1494140625c0-1.0244140625-.388671875-1.3515625-1.10546875-1.3515625h-1.0654296875Z"/>
+      <path class="cls-2" d="M513.0107954884,34.330078125h3.0927734375v2.0478515625h-3.0927734375v4.197265625h3.890625v2.0478515625h-6.142578125v-14.333984375h6.142578125v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-21" d="M529.1475142384,42.623046875c-.123046875-.3681640625-.205078125-.59375-.205078125-1.7607421875v-2.2529296875c0-1.3310546875-.4501953125-1.822265625-1.474609375-1.822265625h-.7783203125v5.8359375h-2.251953125v-14.333984375h3.3994140625c2.333984375,0,3.3369140625,1.0849609375,3.3369140625,3.296875v1.1259765625c0,1.474609375-.470703125,2.416015625-1.4736328125,2.8876953125v.041015625c1.1259765625.470703125,1.494140625,1.53515625,1.494140625,3.0302734375v2.2119140625c0,.6962890625.0205078125,1.2080078125.24609375,1.740234375h-2.29296875ZM526.6895064259,30.3369140625v4.40234375h.880859375c.83984375,0,1.3515625-.3681640625,1.3515625-1.515625v-1.412109375c0-1.0244140625-.3486328125-1.474609375-1.146484375-1.474609375h-1.0859375Z"/>
+      <path class="cls-17" d="M538.8125533009,28.2890625h2.251953125v14.333984375h-2.251953125v-14.333984375Z"/>
+      <path class="cls-29" d="M551.0986861134,34.330078125h3.0927734375v2.0478515625h-3.0927734375v4.197265625h3.890625v2.0478515625h-6.142578125v-14.333984375h6.142578125v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-35" d="M564.5732954884,32.2412109375h-.041015625v10.3818359375h-2.02734375v-14.333984375h2.8251953125l2.2734375,8.580078125h.041015625v-8.580078125h2.0068359375v14.333984375h-2.314453125l-2.763671875-10.3818359375Z"/>
+      <path class="cls-73" d="M583.9443892384,37.2783203125v1.904296875c0,2.2939453125-1.146484375,3.6044921875-3.3583984375,3.6044921875s-3.3583984375-1.310546875-3.3583984375-3.6044921875v-7.453125c0-2.2939453125,1.146484375-3.6044921875,3.3583984375-3.6044921875s3.3583984375,1.310546875,3.3583984375,3.6044921875v1.392578125h-2.1298828125v-1.5361328125c0-1.0244140625-.4501953125-1.4130859375-1.1669921875-1.4130859375s-1.1669921875.388671875-1.1669921875,1.4130859375v7.740234375c0,1.0234375.4501953125,1.392578125,1.1669921875,1.392578125s1.1669921875-.369140625,1.1669921875-1.392578125v-2.0478515625h2.1298828125Z"/>
+      <path class="cls-50" d="M593.7109908009,34.330078125h3.0927734375v2.0478515625h-3.0927734375v4.197265625h3.890625v2.0478515625h-6.142578125v-14.333984375h6.142578125v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-22" d="M621.1914595509,31.5859375v.51171875c0,1.474609375-.4501953125,2.3955078125-1.453125,2.8671875v.041015625c1.2080078125.470703125,1.6787109375,1.53515625,1.6787109375,3.05078125v1.1669921875c0,2.2119140625-1.1669921875,3.3994140625-3.419921875,3.3994140625h-3.5419921875v-14.333984375h3.3994140625c2.333984375,0,3.3369140625,1.0849609375,3.3369140625,3.296875ZM616.7070845509,30.3369140625v3.7880859375h.880859375c.83984375,0,1.3515625-.3681640625,1.3515625-1.515625v-.7978515625c0-1.0244140625-.3486328125-1.474609375-1.146484375-1.474609375h-1.0859375ZM616.7070845509,36.1728515625v4.40234375h1.2900390625c.7578125,0,1.16796875-.34765625,1.16796875-1.4130859375v-1.2490234375c0-1.3310546875-.4306640625-1.740234375-1.4541015625-1.740234375h-1.00390625Z"/>
+      <path class="cls-45" d="M631.1641158009,34.330078125h3.0927734375v2.0478515625h-3.0927734375v4.197265625h3.890625v2.0478515625h-6.142578125v-14.333984375h6.142578125v2.0478515625h-3.890625v3.9931640625Z"/>
+      <path class="cls-69" d="M645.9697798634,34.63671875h3.1533203125v4.5458984375c0,2.2939453125-1.146484375,3.6044921875-3.3583984375,3.6044921875s-3.3583984375-1.310546875-3.3583984375-3.6044921875v-7.453125c0-2.2939453125,1.146484375-3.6044921875,3.3583984375-3.6044921875s3.3583984375,1.310546875,3.3583984375,3.6044921875v1.392578125h-2.1298828125v-1.5361328125c0-1.0244140625-.4501953125-1.4130859375-1.1669921875-1.4130859375s-1.1669921875.388671875-1.1669921875,1.4130859375v7.740234375c0,1.0234375.4501953125,1.392578125,1.1669921875,1.392578125s1.1669921875-.369140625,1.1669921875-1.392578125v-2.6416015625h-1.0234375v-2.0478515625Z"/>
+      <path class="cls-58" d="M656.7207564259,28.2890625h2.251953125v14.333984375h-2.251953125v-14.333984375Z"/>
+      <path class="cls-70" d="M668.8018111134,32.2412109375h-.041015625v10.3818359375h-2.02734375v-14.333984375h2.8251953125l2.2734375,8.580078125h.041015625v-8.580078125h2.0068359375v14.333984375h-2.314453125l-2.763671875-10.3818359375Z"/>
+      <path class="cls-64" d="M684.6709517384,28.125c2.19140625,0,3.3173828125,1.310546875,3.3173828125,3.6044921875v.4501953125h-2.1298828125v-.59375c0-1.0244140625-.4091796875-1.4130859375-1.1259765625-1.4130859375s-1.1259765625.388671875-1.1259765625,1.4130859375c0,1.0439453125.4501953125,1.822265625,1.9248046875,3.1123046875,1.8837890625,1.6591796875,2.4775390625,2.8466796875,2.4775390625,4.484375,0,2.2939453125-1.146484375,3.6044921875-3.3583984375,3.6044921875-2.2109375,0-3.3583984375-1.310546875-3.3583984375-3.6044921875v-.8798828125h2.1298828125v1.0234375c0,1.0234375.4501953125,1.392578125,1.1669921875,1.392578125s1.1669921875-.369140625,1.1669921875-1.392578125c0-1.0439453125-.4501953125-1.822265625-1.9248046875-3.1123046875-1.8837890625-1.6591796875-2.4775390625-2.8466796875-2.4775390625-4.484375,0-2.2939453125,1.1259765625-3.6044921875,3.3173828125-3.6044921875Z"/>
+      <path class="cls-68" d="M697.5107954884,40.4521484375v2.1708984375h-2.169921875v-2.1708984375h2.169921875Z"/>
+    </g>
+  </g>
+</svg>

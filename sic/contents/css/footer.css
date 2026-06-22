@@ -1,0 +1,79 @@
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #3615adad, transparent);
+    padding: 200rem 0 100rem 0;
+    z-index: 2;
+}
+
+.footer__festival {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: rgba(255, 255, 255, 0.45);
+    text-transform: uppercase;
+    margin: 0 0 18px;
+}
+
+.footer__tagline {
+    color: #fff;
+    font-size: 32px;
+    line-height: 1.1;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2rem;
+}
+
+.footer__tagline--last {
+    margin-bottom: 32px;
+}
+
+.footer__follow-label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 16px;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin: 0 0 40px;
+}
+
+.footer__nav a {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer__nav a:hover {
+    color: #fff;
+}
+
+.footer__divider {
+    width: 40px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 auto 24px;
+}
+
+.footer__copy {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 0.06em;
+    margin: 0;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1024px) {
+
+}

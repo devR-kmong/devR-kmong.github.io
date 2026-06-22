@@ -1,0 +1,39 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70rem;
+    z-index: 3;
+}
+
+.p-title {
+    width: 50%;
+}
+
+.p-date {
+    width: 40%;
+}
+
+.p-desc {
+    width: 50%;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1024px) {
+
+}
