@@ -40,15 +40,14 @@
 .footer__nav {
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 22px;
     flex-wrap: wrap;
     margin: 0 0 40px;
 }
 
 .footer__nav a {
     color: rgba(255, 255, 255, 0.75);
-    font-size: 13px;
-    letter-spacing: 0.08em;
+    font-size: 22px;
     text-decoration: none;
     text-transform: uppercase;
 }
