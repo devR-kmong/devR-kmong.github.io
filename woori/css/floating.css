@@ -1,0 +1,103 @@
+.floating {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 98;
+}
+
+.flBtn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.flBtn.topBtn {
+    background: var(--main-color);
+}
+
+.flBtn.topBtn i {
+    color: #fff;
+    font-size: 22px;
+}
+
+.flBtn.contactBtn {
+    background: #111;
+    position: relative;
+}
+
+.flBtn.contactBtn>i {
+    color: #fff;
+    font-size: 22px;
+}
+
+.flContact {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    background: #111;
+    border-radius: 16px;
+    padding: 20px 24px;
+    width: 240px;
+    display: none;
+    text-align: left;
+    line-height: 1;
+}
+
+.flBtn.contactBtn:hover .flContact {
+    display: block;
+}
+
+.flContact-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #333;
+}
+
+.flContact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.flContact ul li {
+    font-size: 13px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.4;
+}
+
+.flContact ul li i {
+    font-size: 15px;
+    color: var(--main-color);
+    flex-shrink: 0;
+}
+
+/*==================================================*/
+@media (max-width: 1024px) {
+    .floating {
+        bottom: 35px;
+        right: 35px;
+    }
+
+    .floating a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 16px;
+        cursor: unset;
+    }
+}

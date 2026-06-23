@@ -1,151 +1,152 @@
 .promotion {
-    position: relative;
     width: 100%;
-    height: 95vh !important;
-    background: url(../images/hero.jpg);
+    min-height: 100vh;
+    background: url(../images/hero.avif);
+    background-position: bottom center;
+    background-size: cover;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    overflow: hidden;
-}
-
-.p-image {
-    position: absolute;
-    bottom: 0; right: -200px;
-    user-select: none;
-    min-width: max-content;
 }
 
 .promotion-wrapper {
-    width: 1200px;
+    width: 1400rem;
+}
+
+.p-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-image {
+    width: 550rem;
+    margin-bottom: -90rem;
+    animation: floating 2s ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .p-text {
-    margin-bottom: 8rem;
+    margin-bottom: -90rem;
 }
 
-.p-text h1 {
-    color: #fff;
-    font-size: 60px;
+.p-text h5 {
+    color: #222;
+    font-size: 65rem;
     font-weight: 700;
-    line-height: 1.35;
+    line-height: 1.2;
+}
+.p-text h5 span {
+    color: var(--main-color);
 }
 
 .p-text p {
-    color: #fff;
-    font-size: 24px;
-    line-height: 1.5;
+    color: #333;
+    font-size: 22rem;
     font-weight: 500;
-    letter-spacing: -0.02em;
-    margin-top: 2rem;
+    line-height: 1.5;
+    margin-top: 25rem;
 }
 
-.p-text p br {
-    display: none;
+.p-box-wrapper {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20rem;
+    margin: 60rem 0;
+    z-index: 2;
+}
+
+.p-box {
+    padding: 30rem;
+    border-radius: 12rem;
+    background-color: #fff;
+    box-shadow: 0 15rem 50rem 0 rgba(80, 86, 131, .2);
+}
+
+.p-box-icon {
+    width: 50rem;
+    height: 50rem;
+    color: #fff;
+    font-size: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    margin-bottom: 20rem;
+}
+
+.p-box-text h6 {
+    color: #222;
+    font-size: 24rem;
+}
+
+.p-box-text p {
+    color: #333;
+    font-size: 16rem;
+    line-height: 1.3;
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: -0.5rem;
+}
+
+
+.p-banner {
+    width: 100%;
+    padding: 30rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.pb-wrap {
+    width: 1400rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pb-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.pb-left h6 {
+    color: #fff;
+    font-size: 26rem;
+}
+
+.pb-left p {
+    color: #ffffffb7;
+    font-size: 17rem;
+    margin-top: 10px;
+}
+
+.pb-right {
+    width: 15%;
 }
 
 
 /*==================================================*/
-@media (min-width: 1921px) {
-    .p-image {
-        bottom: 20px; right: 0;
-        width: 1400px;
-    }
-
-    .p-text {
-        margin-bottom: 12rem;
-    }
-
-    .p-text h1 {
-        font-size: 65px;
-    }
-
-    .p-text p {
-        font-size: 26px;
-        font-weight: 500;
-    }
-}
-
-
-@media (max-width: 1250px) {
+@media (max-width: 1450px) {
     .promotion-wrapper {
-        width: 100%;
-        padding: 0 20px;
-    }
-}
-
-
-@media (max-width: 950px) {
-    .p-image {
-        bottom: 8%; right: -20%;
-        width: 80%;
-        min-width: 130%;
-    }
-
-    .p-text h1 {
-        font-size: 50px;
-    }
-
-    .p-text p {
-        font-size: 22px;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .promotion {
-        height: 900px !important;
-    }
-
-    .p-text {
-        margin-bottom: 18rem;
-    }
-    
-    .p-text h1 {
-        font-size: 40px;
-    }
-
-    .p-text p {
-        font-size: 18px;
-        font-weight: 300;
-    }
-}
-
-
-@media (max-width: 550px) {
-    .promotion {
-        height: 750px !important;
-    }
-
-    .p-text {
-        margin-bottom: 12rem;
-    }
-
-    .p-text h1 {
-        font-size: 36px;
-    }
-
-    .p-text p {
-        margin-top: 1.3rem;
-    }
-
-    .p-text p br {
-        display: block;
-    }
-}
-
-
-@media (max-width: 450px) {
-    .p-image {
-        bottom: 10%;
-    }
-
-    .p-text h1 {
-        font-size: 28px;
-        line-height: 1.4;
-    }
-
-    .p-text p {
-        font-size: 15px;
+        width: 90%;
     }
 }
