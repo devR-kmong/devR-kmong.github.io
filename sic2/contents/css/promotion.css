@@ -1,0 +1,117 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion-wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.icon-wrap {
+    position: relative;
+    width: 70%;
+}
+
+.icon-origin {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.icon-shadow {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* img 태그 자체는 숨기고 mask만 활용 */
+.icon-shadow img {
+    display: none;
+}
+
+.p-text {
+    width: 50%;
+    color: #fff;
+    text-align: center;
+    margin-top: 50rem;
+}
+
+.p-text h5 {
+    font-size: 36rem;
+    font-family: 'Montserrat';
+}
+
+.p-text p {
+    font-size: 22rem;
+    line-height: 1.5;
+    margin-top: 20rem;
+}
+
+.p-info {
+    width: 35%;
+    padding: 20rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(20rem);
+    border: 1px solid #ffffff52;
+    background-color: #ffffff1c;
+    margin-top: 50rem;
+}
+
+.p-info span {
+    color: #fff;
+    font-size: 36rem;
+    font-family: 'Bebas Neue';
+    letter-spacing: 2rem;
+}
+
+.pBtn {
+    width: 35%;
+    height: 90rem;
+    color: #fff;
+    font-size: 36rem;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--main-color);
+    background: linear-gradient(135deg, #ff6b6b, #845ef7);
+    margin-top: 30rem;
+    transition: all .3s;
+}
+.pBtn i {
+    margin-top: -3px;
+    font-weight: lighter;
+}
+
+.pBtn:hover {
+    font-size: 40rem;
+}
+
+
+/*==================================================*/
+@media (max-width: 1024px) {
+
+}
+
+
+@media (max-width: 550px) {
+
+}
