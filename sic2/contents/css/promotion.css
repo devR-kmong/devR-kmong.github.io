@@ -18,29 +18,8 @@
     z-index: 2;
 }
 
-.icon-wrap {
-    position: relative;
-    width: 70%;
-}
-
-.icon-origin {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-}
-
-.icon-shadow {
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* img 태그 자체는 숨기고 mask만 활용 */
-.icon-shadow img {
-    display: none;
+.p-logo {
+    width: 33%;
 }
 
 .p-text {
@@ -51,14 +30,18 @@
 }
 
 .p-text h5 {
-    font-size: 36rem;
-    font-family: 'Montserrat';
+    font-size: 45rem;
+    font-family: 'Bebas Neue';
+    text-shadow: 0 0 30px rgb(153, 0, 255);
+    letter-spacing: 2rem;
 }
 
 .p-text p {
-    font-size: 22rem;
-    line-height: 1.5;
-    margin-top: 20rem;
+    font-size: 24rem;
+    font-family: 'Bebas Neue';
+    text-shadow: 0 0 20px red;
+    letter-spacing: 0.5rem;
+    margin-top: 10px;
 }
 
 .p-info {
