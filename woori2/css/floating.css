@@ -1,0 +1,68 @@
+.floating {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 98;
+}
+
+.flBtn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 20px;
+    border: 1px solid #ffffff40;
+    cursor: pointer;
+}
+
+.flBtn.topBtn {
+    background: var(--main-color);
+}
+
+.flBtn.topBtn i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.flBtn.telBtn {
+    background: #00ab66;
+}
+
+.flBtn.mailBtn {
+    background: var(--main-color);
+}
+
+.flBtn.telBtn a,
+.flBtn.mailBtn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.flBtn.telBtn i,
+.flBtn.mailBtn i {
+    color: #fff;
+    font-size: 24px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1024px) {
+    .floating {
+        bottom: 35px;
+        right: 35px;
+    }
+
+    .floating a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 16px;
+        cursor: unset;
+    }
+}

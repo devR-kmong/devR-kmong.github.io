@@ -1,0 +1,126 @@
+.article3 {
+    position: relative;
+    height: 100vh;
+}
+
+.bg-text-track {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.bg-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    color: transparent;
+    font-size: 700rem;
+    font-weight: 600;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 10px;
+}
+
+.content .list {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    list-style: none;
+    flex-grow: 0;
+    width: 450rem;
+    flex-shrink: 0;
+}
+
+.content .list li {
+    padding: 12rem 16rem;
+    font-size: 24rem;
+    font-weight: 700;
+    line-height: 1.5;
+    cursor: default;
+    color: #222;
+}
+
+.content .fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: var(--main-color);
+}
+
+.content .right {
+    position: relative;
+    flex-grow: 1;
+}
+
+.right .slide {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding-left: 40px;
+}
+
+.right .slide h2 {
+    color: var(--main-color);
+    font-size: 32rem;
+    font-weight: 700;
+    margin: 40rem 0 20rem 0;
+}
+
+.slide-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.slide-section h4 {
+    color: #333;
+    font-size: 22rem;
+    font-weight: 700;
+    margin: 15rem 0;
+}
+
+.slide-section ul {
+    list-style: none;
+    padding: 22rem 30rem;
+    margin: 0;
+    border-radius: 15rem;
+    border: 1px solid #eee;
+    background-color: #f5f5f5;
+}
+
+.slide-section ul li {
+    color: #555;
+    font-size: 17rem;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: -0.5rem;
+}
+
+.slide-section ul li::before {
+    content: '· ';
+}
+
+.slide-stack img {
+    height: 80rem;
+    mix-blend-mode: multiply;
+}
+
+
+/*==================================================*/
+@media (max-width: 1024px) {
+    
+}
