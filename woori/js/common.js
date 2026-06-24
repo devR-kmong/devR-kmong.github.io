@@ -122,6 +122,7 @@ document.querySelectorAll('.faq-cat-btn').forEach(btn => {
         document.querySelectorAll('.faq-item').forEach(item => {
             if (cat === 'all' || item.dataset.cat === cat) {
                 item.style.display = '';
+                gsap.set(item, { autoAlpha: 1, y: 0 });
             } else {
                 item.style.display = 'none';
                 item.classList.remove('open');

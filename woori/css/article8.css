@@ -1,6 +1,6 @@
 .faq-wrap {
     width: 100%;
-    max-width: 900px;
+    max-width: 900rem;
     margin: 0 auto;
 }
 
@@ -9,13 +9,13 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-bottom: 50rem;
+    margin: -30rem 0 50rem 0;
     flex-wrap: wrap;
 }
 
 .faq-cat-btn {
-    padding: 12rem 28rem;
-    border: 2rem solid #ddd;
+    padding: 10rem 22rem;
+    border: 2px solid #ddd;
     border-radius: 100rem;
     background: #fff;
     font-size: 16rem;
@@ -27,13 +27,21 @@
 
 .faq-cat-btn.active,
 .faq-cat-btn:hover {
-    border-color: var(--main-color);
-    color: var(--main-color);
-    background: #fff;
+    color: #fff;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
 }
 
 .faq-item {
-    border-bottom: 1px solid #eee;
+    padding: 0 30rem;
+    border-radius: 20rem;
+    background-color: #f5f5f5;
 }
 
 .faq-q {
@@ -45,18 +53,19 @@
     background: none;
     border: none;
     text-align: left;
-    font-size: 18rem;
-    font-weight: 600;
-    color: #111;
+    color: #222;
+    font-size: 22rem;
+    font-weight: 700;
     cursor: pointer;
 }
 
 .faq-q i {
-    margin-left: auto;
-    font-size: 24rem;
     color: #aaa;
+    font-size: 24rem;
+    font-weight: lighter;
     transition: transform 0.3s;
     flex-shrink: 0;
+    margin-left: auto;
 }
 
 .faq-item.open .faq-q i {
@@ -75,23 +84,32 @@
 }
 
 .faq-a {
-    display: none;
-    padding: 0 0 28rem 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, padding 0.6s ease;
 }
 
 .faq-item.open .faq-a {
-    display: block;
+    max-height: 500px;
+    /* 답변 최대 높이보다 크면 됨 */
 }
 
 .faq-a p {
-    font-size: 16rem;
     color: #555;
+    padding-bottom: 30rem;
+    font-size: 18rem;
+    font-weight: 500;
     line-height: 1.8;
     margin: 0 0 14rem;
 }
 
 .faq-a p:last-child {
     margin-bottom: 0;
+}
+
+.faq-a a {
+    color: #0077b4;
+    text-decoration: underline;
 }
 
 

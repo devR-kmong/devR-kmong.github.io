@@ -21,6 +21,7 @@ header.Fixed {
     backdrop-filter: blur(20rem);
     border: 1px solid #ffffff30;
     background: #ffffffb9;
+    box-shadow: 0 0 30rem #00000015;
 }
 
 nav {

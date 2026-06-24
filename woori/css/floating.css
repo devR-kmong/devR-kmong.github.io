@@ -14,6 +14,7 @@
     text-align: center;
     line-height: 50px;
     border-radius: 20px;
+    border: 1px solid #ffffff40;
     cursor: pointer;
 }
 
@@ -23,68 +24,32 @@
 
 .flBtn.topBtn i {
     color: #fff;
-    font-size: 22px;
+    font-size: 24px;
 }
 
-.flBtn.contactBtn {
-    background: #111;
-    position: relative;
+.flBtn.telBtn {
+    background: #00ab66;
 }
 
-.flBtn.contactBtn>i {
-    color: #fff;
-    font-size: 22px;
+.flBtn.mailBtn {
+    background: var(--main-color);
 }
 
-.flContact {
-    position: absolute;
-    right: 60px;
-    bottom: 0;
-    background: #111;
-    border-radius: 16px;
-    padding: 20px 24px;
-    width: 240px;
-    display: none;
-    text-align: left;
-    line-height: 1;
-}
-
-.flBtn.contactBtn:hover .flContact {
-    display: block;
-}
-
-.flContact-title {
-    font-size: 13px;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 14px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #333;
-}
-
-.flContact ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.flContact ul li {
-    font-size: 13px;
-    color: #ccc;
+.flBtn.telBtn a,
+.flBtn.mailBtn a {
     display: flex;
     align-items: center;
-    gap: 8px;
-    line-height: 1.4;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
-.flContact ul li i {
-    font-size: 15px;
-    color: var(--main-color);
-    flex-shrink: 0;
+.flBtn.telBtn i,
+.flBtn.mailBtn i {
+    color: #fff;
+    font-size: 24px;
 }
+
 
 /*==================================================*/
 @media (max-width: 1024px) {
