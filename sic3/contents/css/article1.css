@@ -1,5 +1,6 @@
 .article1 {
     height: 100vh;
+    height: 100svh;
     padding: 0 !important;
     display: flex;
     flex-direction: column;
@@ -12,6 +13,7 @@
     padding: 0 5%;
     display: flex;
     flex-wrap: nowrap;
+    width: -webkit-max-content;
     width: max-content;
     gap: 24px;
 }
@@ -61,7 +63,7 @@
 
 .a1-sns a i {
     font-size: 28px;
-    transform: all .2s;
+    transition: all .2s;
 }
 
 .a1-sns a:hover i {
