@@ -77,11 +77,12 @@ button, input {
 }
 
 .main-bg {
-    position: relative;
     position: fixed;
     top: 0; left: 0;
     width: 100%;
     height: 100vh;
+    height: 100svh;
+    background: #000;
     background: url(../images/hero.avif);
     background-position: center;
     background-size: cover;
@@ -96,7 +97,8 @@ button, input {
     top: 0;
     width: 100%;
     height: 100vh;
-    -webkit-backdrop-filter: blur(30rem);
+    height: 100svh;
+    -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30rem);
     background-color: #00000010;
     z-index: 1;
@@ -125,7 +127,8 @@ button, input {
     display: flex;
     justify-content: center;
     align-items: center;
-    writing-mode: sideways-lr;
+    writing-mode: vertical-rl;
+    transform: translate(0, -50%) rotate(180deg);
     background-color: #000;
     box-shadow: 0 0 30px #8c00ff;
     z-index: 9998;
