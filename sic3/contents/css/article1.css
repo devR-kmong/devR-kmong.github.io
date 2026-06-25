@@ -24,6 +24,8 @@
     padding-bottom: 50px;
     border: 1px solid #ffffff30;
     background-color: #000;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     overflow: hidden;
 }
 .a1-box::before {
@@ -37,9 +39,15 @@
 }
 
 .a1-box img {
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center top;
     margin-bottom: -5px;
-    transition: all .6s;
+    transition: transform .6s;
+    display: block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .a1-box:hover img {
