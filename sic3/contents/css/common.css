@@ -160,10 +160,13 @@ button, input {
     html.safari.desktop {
         font-size: 0.10430vw;
     }
+}
 
+
+@media (max-width: 550px) {
     .fixedBtn {
-        width: 60rem;
-        padding: 25rem 0;
-        font-size: 20rem;
+        width: 46px;
+        padding: 16px 0;
+        font-size: 14px;
     }
 }
