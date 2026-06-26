@@ -165,8 +165,8 @@ button, input {
 
 @media (max-width: 550px) {
     .fixedBtn {
-        width: 46px;
-        padding: 16px 0;
-        font-size: 14px;
+        width: 38px;
+        padding: 12px 0;
+        font-size: 12px;
     }
 }
