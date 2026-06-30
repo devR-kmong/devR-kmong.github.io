@@ -1,0 +1,59 @@
+.article3 {
+    height: 250rem;
+    border-top: 1px solid #ffffff33;
+    background-color: #0e1011;
+}
+
+.a3-box-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.a3-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.a3-box p {
+    color: #aaa;
+    font-size: 18rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.a3-box h5 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 120rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1;
+}
+
+.flip-digit {
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    height: 1.1em;
+    width: 0.65em;
+}
+
+.flip-digit .digit-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    will-change: transform;
+}
+
+.flip-digit .digit-inner span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.1em;
+    width: 0.65em;
+    line-height: 1;
+}
