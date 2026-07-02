@@ -1,0 +1,124 @@
+.article1 {
+    position: relative;
+    height: 100vh;
+    height: 100svh;
+    padding-top: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.a1-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 50rem;
+    font-weight: 600;
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.a1-box-wrapper {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40rem;
+    opacity: 0;
+    z-index: 2;
+}
+
+.a1-box {
+    color: #fff;
+    padding: 70rem 50rem;
+    max-width: 450rem;
+    border-radius: 20rem;
+    background-color: #fff;
+    transition: all .3s;
+}
+.a1-box:hover {
+    background-color: var(--point-color);
+}
+
+.a1-box span {
+    width: fit-content;
+    display: flex;
+    padding: 4px 6px;
+    font-size: 17rem;
+    font-weight: 600;
+    border-radius: 3px;
+    background-color: var(--main-color);
+    margin-bottom: 20rem;
+}
+
+.a1-box h6 {
+    color: #222;
+    font-size: 30rem;
+}
+
+.a1-box p {
+    padding-right: 11%;
+    color: #222;
+    font-size: 20rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 20rem;
+}
+
+.a1-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    overflow: hidden;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+.a1-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.a1-final {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
+    font-size: 55rem;
+    line-height: 1.3;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+}
+
+.reveal-text,
+.reveal-text2 {
+    color: rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(to right, #fff, #fff);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+/*==================================================*/
+@media (max-width: 1024px) {
+    
+}
