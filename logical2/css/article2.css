@@ -1,0 +1,138 @@
+.article2 {
+    position: relative;
+    padding-top: 150rem;
+    background: #0e1011;
+    background: linear-gradient(to bottom, #000, #0e1011, #222);
+    overflow: hidden;
+}
+
+.a2-line-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.a2-line-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: visible;
+}
+
+.a2-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 120rem;
+    z-index: 2;
+}
+
+.a2-title {
+    min-width: 500rem;
+    height: fit-content;
+    color: #fff;
+}
+
+.a2-title h5 {
+    font-size: 50rem;
+}
+
+.a2-title p {
+    font-size: 20rem;
+    line-height: 1.5;
+    margin-top: 30rem;
+}
+
+.a2-box-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.a2-box {
+    height: 600rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+}
+
+.a2-box:nth-child(even) {
+    align-self: flex-start;
+}
+.a2-box:nth-child(odd) {
+    align-self: flex-end;
+}
+
+.a2-box-text h6 {
+    color: #fff;
+    font-size: 36rem;
+    font-weight: 600;
+}
+
+.a2-box-text p {
+    color: #fff;
+    font-size: 22rem;
+    line-height: 1.5;
+    margin-top: 24rem;
+}
+
+.a2-box-image {
+    width: 100%;
+    height: 500rem;
+}
+
+.a2-box-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 1024px) {
+    .a2-wrapper {
+        flex-direction: column;
+    }
+
+    .a2-title {
+        min-width: unset;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a2-box-wrapper {
+        margin-top: 120rem;
+    }
+    
+    .a2-box {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .a2-title h5 {
+        font-size: 70rem;
+    }
+
+    .a2-title p {
+        font-size: 32rem;
+    }
+    
+    .a2-box:nth-child(2n) {
+        margin-left: 8%;
+    }
+    
+    .a2-box-text h6 {
+        font-size: 40rem;
+    }
+
+    .a2-box-text p {
+        font-size: 30rem;
+    }
+}
