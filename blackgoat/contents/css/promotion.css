@@ -1,0 +1,137 @@
+.promotion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.promotion::before {
+    content: '';
+    position: absolute;
+    top: 8%;
+    width: 95%;
+    height: 85%;
+    border: 1px solid var(--main-color);
+    z-index: 1;
+}
+
+.p-sb {
+    position: absolute;
+    top: 150rem;
+    height: 90%;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(343deg) brightness(107%) contrast(102%);
+    opacity: .07;
+    z-index: 1;
+}
+
+.promotion-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-bowl {
+    width: 75%;
+    margin: -180rem 0 -500rem 0;
+    animation: upDown 2s ease-in-out infinite;
+    z-index: 2;
+}
+
+.p-text {
+    text-align: center;
+    z-index: 3;
+}
+
+.p-text p {
+    color: rgba(255, 255, 255, .8);
+    font-size: 26rem;
+    font-weight: 700;
+    font-family: 'Nanum Myeongjo';
+    letter-spacing: -1.7px;
+    margin-bottom: 40rem;
+}
+
+.p-text h5 {
+    color: #fff;
+    font-size: 110rem;
+    line-height: 1.15;
+    font-family: 'Gmarket Sans';
+    letter-spacing: -4px;
+}
+
+.p-text h5 span {
+    color: var(--main-color);
+    font-family: 'Gmarket Sans';
+    text-shadow: 0 0 30rem rgba(0, 0, 0, .9);
+    letter-spacing: -4px;
+}
+
+
+
+/*==================================================*/
+@media (min-width: 2250px) {
+    .p-bowl {
+        width: 90%;
+        margin: -180rem 0 -500rem 0;
+    }
+    
+    .p-text p {
+        font-size: 30rem;
+        margin-bottom: 50rem;
+    }
+    
+    .p-text h5 {
+        font-size: 130rem;
+    }
+}
+
+
+@media (max-width: 1650px) {
+    .promotion {
+        height: auto !important;
+    }
+}
+
+
+@media (max-width: 1450px) {
+    .promotion-wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .promotion::before {
+        top: 90rem;
+    }
+    
+    .p-sb {
+        top: -30rem;
+    }
+    
+    .p-text {
+        margin-top: 120rem;
+    }
+    
+    .p-text p {
+        font-size: 22rem;
+    }
+    
+    .p-text h5 {
+        font-size: 90rem;
+        font-family: 'Gmarket Sans';
+    }
+
+    .p-text h5 span {
+        font-family: 'Gmarket Sans';
+    }
+
+    .p-bowl {
+        width: 90%;
+        margin: -50rem 0 -150rem 0;
+    }
+}

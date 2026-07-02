@@ -1,0 +1,222 @@
+.article4 {
+    position: relative;
+    padding: 0;
+    height: 90vh;
+    background-color: #111;
+    border: 15rem solid var(--main-color);
+    border-top: none;
+    border-bottom: none;
+}
+
+.a4-image {
+    position: absolute;
+    top: 50%;
+    width: 55%;
+}
+
+.article4 .article-wrapper {
+    width: 100% !important;
+}
+
+.a4-title {
+    position: absolute;
+    top: 120rem;
+    width: fit-content;
+    text-align: center;
+}
+
+.a4-title p {
+    color: #fff;
+}
+
+.a4-title h5 span {
+    font-size: 90rem;
+}
+
+.a4-title h6 {
+    margin-top: 15rem;
+}
+
+.a4-box-wrapper {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.a4-box {
+    width: 50%;
+    padding: 300rem 200rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all .6s ease;
+    overflow: hidden;
+}
+
+.a4-box-text {
+    text-align: center;
+}
+
+.a4-box-text p {
+    color: #fff;
+    font-size: 30rem;
+    font-family: 'Nanum Myeongjo';
+    margin-bottom: 20rem;
+}
+
+.a4-box-text h5 {
+    color: rgba(255, 255, 255, .2);
+    font-size: 70rem;
+    font-family: 'Danjo-bold-Regular';
+    -webkit-text-stroke: 1px #fff;
+    transition: all .6s ease;
+}
+
+.a4-left {
+    align-items: flex-start;
+    background: #333;
+    background: url(../images/a4-left.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.a4-right {
+    align-items: flex-end;
+    background: #444;
+    background: url(../images/a4-right.jpg) no-repeat;
+    background-position: right;
+    background-size: 100%;
+}
+
+.a4-box:hover {
+    padding: 300rem 250rem;
+    background-size: 105%;
+}
+
+.a4-box:hover h5 {
+    color: #fff;
+}
+
+
+/*==================================================*/
+@media (max-width: 1919px) and (min-height: 1100px) {
+    .a4-left,
+    .a4-right {
+        background-size: cover;
+    }
+
+    .a4-box:hover {
+        background-size: cover;
+    }
+}
+
+
+@media (min-width: 2250px) {
+    .a4-box-text p {
+        font-size: 40rem;
+    }
+
+    .a4-box-text h5 {
+        font-size: 90rem;
+    }
+}
+
+
+@media (min-width: 1921px) {
+    .a4-left,
+    .a4-right {
+        background-size: 110%;
+    }
+
+    .a4-box:hover {
+        background-size: 115%;
+    }
+}
+
+
+@media (max-width: 1919px) {
+    .article4,
+    .a4-box-wrapper {
+        height: auto;
+    }
+
+    .a4-image {
+        width: 75%;
+    }
+
+    .a4-box,
+    .a4-box:hover {
+        padding: 200rem;
+    }
+
+    .a4-box-text {
+        margin-bottom: 70%;
+    }
+}
+
+
+@media (max-width: 1450px) {
+    .article4 .article-wrapper {
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .a4-box,
+    .a4-box:hover {
+        padding: 200rem 120rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article4 {
+        padding-top: 80rem;
+    }
+
+    .a4-left,
+    .a4-right {
+        border-top: 1px solid var(--main-color);
+    }
+    
+    .a4-image {
+        top: 47%;
+    }
+    
+    .a4-title {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .a4-title h6 {
+        width: 70%;
+    }
+    
+    .a4-box-wrapper {
+        flex-direction: column;
+    }
+
+    .a4-box {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .a4-box:hover {
+        padding: 0;
+    }
+
+    .a4-box:nth-child(1) .a4-box-text {
+        margin: 100rem 0 300rem 0;
+    }
+    .a4-box:nth-child(2) .a4-box-text {
+        margin: 300rem 0 100rem 0;
+    }
+
+    .a4-box-text h5 br {
+        display: none;
+    }
+}

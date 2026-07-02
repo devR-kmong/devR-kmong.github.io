@@ -1,0 +1,33 @@
+.article0 {
+    background: #250101;
+    background: url(../images/a0-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    animation: innerglow .5s infinite;
+    border: 15rem solid #db0000;
+}
+
+.a0-box-wrapper {
+    margin-top: 30rem !important;
+}
+
+.a0-box {
+    border-top: 6px solid #db0000 !important;
+}
+
+.a0-box .a2-box-num {
+    background-color: #db0000;
+}
+
+.a0-box .a2-box-image img {
+    filter: grayscale(.8) brightness(50%);
+}
+
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .a0-box-wrapper {
+        margin-top: 60rem !important;
+    }
+}

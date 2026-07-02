@@ -1,0 +1,102 @@
+.article7 {
+    background: #000;
+    background: url(../images/a7-bg.jpg);
+    border: 15rem solid var(--main-color);
+    animation: innerglow2 .5s infinite;
+    border-bottom: none;
+}
+
+.article7 .article-wrapper {
+    width: 90%;
+}
+
+.a7-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60rem 30rem;
+    margin-top: 30rem;
+    z-index: 2;
+}
+
+.a7-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+}
+
+.a7-box-image {
+    position: relative;
+    width: 100%;
+    border: 1px solid var(--main-color);
+}
+
+.a7-box-price {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #000;
+    border-top: 1px solid var(--main-color);
+}
+
+.a7-box-price p {
+    color: #fff;
+    font-size: 30rem;
+}
+
+.a7-box-price span {
+    color: #db1000;
+    font-size: 40rem;
+    font-weight: 700;
+    font-family: 'GMarket Sans';
+    animation: pulse .8s infinite;
+    text-shadow: -3px 0px #fff, 0px 3px #fff, 3px 0px #fff, 0px -3px #fff;
+}
+
+.a7-box-image img {
+    height: 100%;
+    object-fit: cover;
+    transition: all .2s;
+    margin-bottom: -5px;
+}
+
+.a7-box-text {
+    color: #fff;
+}
+
+.a7-box-text h5 {
+    font-size: 30rem;
+    font-family: 'GMarket Sans';
+    margin-bottom: -5px;
+}
+
+.a7-box-text p {
+    color: #aaa;
+    font-size: 19rem;
+    margin-top: 10px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1250px) {
+    .article7 .article-wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .a7-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .a7-box-text {
+        text-align: center;
+    }
+}
