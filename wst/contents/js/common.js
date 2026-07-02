@@ -45,3 +45,26 @@ document.addEventListener('click', function (e) {
         }
     }
 });
+
+
+
+
+
+$(function () {
+    let resizeTimer;
+    let lastWidth = $(window).width();
+
+    $(window).on('resize', function () {
+        clearTimeout(resizeTimer);
+
+        resizeTimer = setTimeout(function () {
+            const currentWidth = $(window).width();
+
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            if (!isMobile && currentWidth !== lastWidth) {
+                location.reload();
+            }
+        }, 500);
+    });
+});
