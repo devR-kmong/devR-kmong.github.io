@@ -1,0 +1,118 @@
+.a0-bg {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: lighten;
+    animation: glow 4s infinite;
+    z-index: 2;
+}
+
+@keyframes glow {
+    50% {
+        filter: brightness(150%);
+    }
+}
+
+.about-show__inner {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-show__head {
+    margin-bottom: 40px;
+}
+
+.about-show__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 12px;
+    color: #ffffff;
+    text-indent: 12px;
+}
+
+.about-show__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.about-show__divider-line {
+    width: 130px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(200, 160, 255, 0.7), transparent);
+}
+
+.about-show__divider-star {
+    width: 14px;
+    height: 14px;
+    background: #c9a4ff;
+    transform: rotate(45deg);
+    box-shadow: 0 0 12px 2px rgba(180, 120, 255, 0.7);
+}
+
+.about-show__body {
+    color: rgba(235, 230, 250, 0.92);
+}
+
+.about-show__lead {
+    margin: 0 0 34px;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(220, 210, 245, 0.95);
+}
+
+.about-show__brand {
+    font-weight: 800;
+    color: #d9a8ff;
+    letter-spacing: 1px;
+}
+
+.about-show__para {
+    margin: 0 0 30px;
+    font-size: 19px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: rgba(228, 222, 245, 0.9);
+}
+
+.about-show__para:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 768px) {
+    .a0-bg {
+        right: 0;
+        min-width: 900px;
+        transform: scale(1.2);
+    }
+    
+    .about-show {
+        padding: 70px 24px;
+    }
+
+    .about-show__title {
+        font-size: 22px;
+        letter-spacing: 8px;
+        text-indent: 8px;
+    }
+
+    .about-show__divider-line {
+        width: 70px;
+    }
+
+    .about-show__lead {
+        font-size: 18px;
+    }
+
+    .about-show__para {
+        font-size: 16px;
+    }
+}

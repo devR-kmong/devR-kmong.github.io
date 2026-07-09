@@ -1,0 +1,83 @@
+.article1 {
+    height: 100vh;
+    height: 100svh;
+    height: calc(var(--vh, 1vh) * 100);
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.a1-box-wrapper {
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    width: -webkit-max-content;
+    width: max-content;
+    gap: 24px;
+}
+
+.a1-box {
+    position: relative;
+    height: 60vh;
+    padding-bottom: 50px;
+    border: 1px solid #ffffff30;
+    background-color: #000;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    overflow: hidden;
+}
+.a1-box::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-image: linear-gradient(to top, #000 50%, transparent);
+    z-index: 2;
+}
+
+.a1-box img {
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: -5px;
+    transition: transform .6s;
+    display: block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.a1-box:hover img {
+    transform: scale(1.05);
+}
+
+.a1-sns {
+    position: absolute;
+    bottom: 0; left: 0;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 3;
+}
+
+.a1-sns a i {
+    font-size: 28px;
+    transition: all .2s;
+}
+
+.a1-sns a:hover i {
+    font-size: 32px;
+}
+
+
+/*==================================================*/
+@media (max-width: 1024px) {
+    
+}
