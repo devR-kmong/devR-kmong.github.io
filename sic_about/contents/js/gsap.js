@@ -29,19 +29,57 @@ gsap.timeline({ defaults: { ease: "power3.out" } })
 
 
 
-const a0 = gsap.timeline();
-
-a0.from(".a0-bg", {
+gsap.set(".a0-bg", {
     opacity: 0,
+})
+gsap.set(".about-show__inner img", {
+    opacity: 0,
+    x: 60,
+})
+gsap.set(".about-show__title, .about-show__body", {
+    opacity: 0,
+    y: 60
 });
 
-ScrollTrigger.create({
-    animation: a0,
-    trigger: ".article0",
-    start: "top 70%",
-    end: "top 50%",
-    scrub: 2,
+const aboutTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".article0",
+        start: "top top",
+        end: "+=1600",
+        pin: true,
+        scrub: 1
+    }
 });
+
+aboutTl
+    .to(".a0-bg", {
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out"
+    }, "+=0.5")
+    .to(".about-show__title", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out"
+    }, "+=0.5")
+    .to(".about-show__body", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out"
+    }, "+=0.5")
+    .to(".about-show__inner img", {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power2.out"
+    }, "<")
+    .to(".a0-bg", {
+        opacity: 0,
+    })
+
+
 
 
 
