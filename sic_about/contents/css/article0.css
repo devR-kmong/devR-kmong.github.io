@@ -18,11 +18,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80rem;
+    gap: 120rem;
 }
 
 .about-show__inner img {
-    width: 40%;
+    width: 160rem;
 }
 
 .about-show__text {
@@ -34,9 +34,15 @@
     font-size: 50px;
     font-weight: 700;
     font-family: 'Bebas Neue';
-    text-shadow: 0 0 30px red;
     margin-bottom: 10px;
     letter-spacing: 2px;
+    border-bottom: 1px solid #ffffff40;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.about-show__title span {
+    font-family: 'Bebas Neue';
 }
 
 .about-show__body {
@@ -44,26 +50,28 @@
 }
 
 .about-show__lead {
+    color: #fff;
     margin: 0 0 34px;
     font-size: 22px;
     font-weight: 400;
-    color: rgba(220, 210, 245, 0.95);
+    text-shadow: 0 0 20px red;
 }
 
 .about-show__brand {
-    color: #d9a8ff;
+    color: #fff;
     font-size: 30px;
-    text-shadow: 0 0 20px rgb(153, 0, 255);
     font-family: 'Bebas Neue';
+    text-shadow: 0 0 20px red;
     letter-spacing: 1px;
 }
 
 .about-show__para {
+    color: #fff;
     margin: 0 0 30px;
     font-size: 19px;
     line-height: 1.7;
     font-weight: 600;
-    color: rgba(228, 222, 245, 0.9);
+    text-shadow: 0 0 20px red;
 }
 
 .about-show__para:last-child {

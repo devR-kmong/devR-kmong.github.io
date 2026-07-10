@@ -29,35 +29,45 @@ gsap.timeline({ defaults: { ease: "power3.out" } })
 
 
 
-gsap.set(".a0-bg", { opacity: 0 });
-gsap.set([".about-show__title", ".about-show__body"], { opacity: 0, y: 60 });
-gsap.set(".about-show__inner img", { opacity: 0, x: 60 });
-
-// .a0-bg : 등장 + 퇴장을 하나의 scrub 트리거로 처리 (이것만 .a0-bg를 건드림)
-gsap.timeline({
-    scrollTrigger: {
-        trigger: ".article0",
-        start: "top 80%",
-        end: "bottom top",
-        scrub: true
-    }
-})
-    .to(".a0-bg", { opacity: 1, ease: "power2.out" })
-    .to(".a0-bg", { opacity: 1, ease: "none" })   // 유지 구간
-    .to(".a0-bg", { opacity: 0, ease: "power2.out" });
-
-// 텍스트/이미지 등장 : 별도 트리거
-gsap.timeline({
-    scrollTrigger: {
-        trigger: ".article0",
-        start: "top 80%",
-        toggleActions: "play none none reverse"
-    }
-})
-    .to(".about-show__title", { opacity: 1, y: 0, duration: 1, ease: "power2.out" })
-    .to(".about-show__body", { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=0.5")
-    .to(".about-show__inner img", { opacity: 1, x: 0, duration: 1, ease: "power2.out" }, "<");
-
+    gsap.set(".a0-bg", { opacity: 0 });
+    gsap.set(".about-show__body", { opacity: 0, y: 60 });
+    gsap.set(".about-show__inner img", { opacity: 0, x: 60 });
+    
+    // 타이틀 글자 단위 분리
+    const titleEl = document.querySelector(".about-show__title");
+    const titleChars = [];
+    titleEl.textContent.split("").forEach((ch) => {
+        const span = document.createElement("span");
+        span.textContent = ch === " " ? "\u00A0" : ch;
+        span.style.display = "inline-block";
+        span.style.opacity = "0";
+        titleChars.push(span);
+    });
+    titleEl.textContent = "";
+    titleChars.forEach((s) => titleEl.appendChild(s));
+    
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: ".article0",
+            start: "top 80%",
+            end: "bottom top",
+            scrub: true
+        }
+    })
+        .to(".a0-bg", { opacity: 1, ease: "power2.out" })
+        .to(".a0-bg", { opacity: 1, ease: "none" })
+        .to(".a0-bg", { opacity: 0, ease: "power2.out" });
+    
+    gsap.timeline({
+        scrollTrigger: {
+            trigger: ".article0",
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+        }
+    })
+        .to(titleChars, { opacity: 1, duration: 0.05, ease: "none", stagger: 0.08 })
+        .to(".about-show__body", { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=0.3")
+        .to(".about-show__inner img", { opacity: 1, x: 0, duration: 1, ease: "power2.out" }, "<");
 
 
 
