@@ -44,6 +44,17 @@ document.addEventListener('click', function (e) {
             return;
         }
 
+        if (targetId === '#about') {
+            const st = aboutTl.scrollTrigger;
+            const target = st.start + (st.end - st.start) * 0.83;
+            lenis.scrollTo(target, {
+                offset: 0,
+                immediate: false,
+                duration: 1.2
+            });
+            return;
+        }
+
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             lenis.scrollTo(targetElement, {
