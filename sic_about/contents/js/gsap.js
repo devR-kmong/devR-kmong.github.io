@@ -29,55 +29,34 @@ gsap.timeline({ defaults: { ease: "power3.out" } })
 
 
 
-gsap.set(".a0-bg", {
-    opacity: 0,
-})
-gsap.set(".about-show__inner img", {
-    opacity: 0,
-    x: 60,
-})
-gsap.set(".about-show__title, .about-show__body", {
-    opacity: 0,
-    y: 60
-});
+gsap.set(".a0-bg", { opacity: 0 });
+gsap.set([".about-show__title", ".about-show__body"], { opacity: 0, y: 60 });
+gsap.set(".about-show__inner img", { opacity: 0, x: 60 });
 
-const aboutTl = gsap.timeline({
+// .a0-bg : 등장 + 퇴장을 하나의 scrub 트리거로 처리 (이것만 .a0-bg를 건드림)
+gsap.timeline({
     scrollTrigger: {
         trigger: ".article0",
-        start: "top top",
-        end: "+=1600",
-        pin: true,
-        scrub: 1
+        start: "top 80%",
+        end: "bottom top",
+        scrub: true
     }
-});
+})
+    .to(".a0-bg", { opacity: 1, ease: "power2.out" })
+    .to(".a0-bg", { opacity: 1, ease: "none" })   // 유지 구간
+    .to(".a0-bg", { opacity: 0, ease: "power2.out" });
 
-aboutTl
-    .to(".a0-bg", {
-        opacity: 1,
-        duration: 1,
-        ease: "power2.out"
-    }, "+=0.5")
-    .to(".about-show__title", {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power2.out"
-    }, "+=0.5")
-    .to(".about-show__body", {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power2.out"
-    }, "+=0.5")
-    .to(".about-show__inner img", {
-        opacity: 1,
-        x: 0,
-        duration: 1,
-        ease: "power2.out"
-    }, "<")
-    .to(".a0-bg", {
-        opacity: 0,
-    })
+// 텍스트/이미지 등장 : 별도 트리거
+gsap.timeline({
+    scrollTrigger: {
+        trigger: ".article0",
+        start: "top 80%",
+        toggleActions: "play none none reverse"
+    }
+})
+    .to(".about-show__title", { opacity: 1, y: 0, duration: 1, ease: "power2.out" })
+    .to(".about-show__body", { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=0.5")
+    .to(".about-show__inner img", { opacity: 1, x: 0, duration: 1, ease: "power2.out" }, "<");
 
 
 

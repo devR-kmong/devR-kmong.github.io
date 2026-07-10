@@ -30,10 +30,13 @@
 }
 
 .about-show__title {
-    font-size: 30px;
-    font-weight: 700;
     color: #ffffff;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Bebas Neue';
+    text-shadow: 0 0 30px red;
     margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 .about-show__body {
@@ -48,8 +51,10 @@
 }
 
 .about-show__brand {
-    font-weight: 800;
     color: #d9a8ff;
+    font-size: 30px;
+    text-shadow: 0 0 20px rgb(153, 0, 255);
+    font-family: 'Bebas Neue';
     letter-spacing: 1px;
 }
 
@@ -57,7 +62,7 @@
     margin: 0 0 30px;
     font-size: 19px;
     line-height: 1.7;
-    font-weight: 400;
+    font-weight: 600;
     color: rgba(228, 222, 245, 0.9);
 }
 
