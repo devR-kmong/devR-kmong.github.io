@@ -1,0 +1,391 @@
+.floating {
+    position: relative;
+    position: sticky;
+    bottom: -1px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, .1);
+    background-color: var(--main-color);
+    z-index: 98;
+}
+
+.topBtn {
+    position: absolute;
+    bottom: 100px; right: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 6px 6px 18px rgba(0, 0, 0, .25);
+    background-color: var(--gold-color);
+    cursor: pointer;
+    z-index: 98;
+}
+
+.topBtn i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.topBtn p {
+    color: rgba(255, 255, 255, .5);
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.topBtn:hover p {
+    color: #fff;
+}
+
+.floating-wrapper {
+    width: 1400rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.f-closeBtn {
+    display: none;
+}
+
+.floating-title {
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
+.ff-open-mobile {
+    display: none;
+}
+
+.f-tel img {
+    width: 55rem;
+    min-width: 55rem;
+    animation: updown 1s infinite ease-in-out;
+}
+
+@keyframes updown {
+    0% {transform:translateY(0);}
+    10% {transform:translateY(-3px);}
+    20% {transform:translateY(0);}
+    30% {transform:translateY(-3px);}
+    40% {transform:translateY(0);}
+    100% {transform:translateY(0);}
+}
+
+.ft-text p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.ft-text h5 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.f-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.f-form .inputbox {
+    color: #222;
+    width: 225rem;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 500;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+.f-form .inputbox::placeholder {
+    color: #aaa;
+}
+
+.f-form .select {
+    position: relative;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.f-form .select select {
+    color: #222;
+    width: 225rem;
+    height: 50px;
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    -webkit-appearance: none;
+}
+
+.f-form .select select option {
+    font-size: 17px;
+    background-color: #fff;
+}
+
+.select-arrow {
+    color: #aaa;
+    font-size: 17px;
+    font-weight: 500;
+    font-weight: lighter;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.select-arrow p {
+    position: absolute;
+    top: 50%; left: 20px;
+    transform: translate(0, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    cursor: default;
+}
+
+.select-arrow i {
+    position: absolute;
+    top: 50%; right: 20px;
+    transform: translate(0, -50%);
+}
+
+.f-form .f-submit {
+    color: #fff;
+    width: 225rem;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 19px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.f-form .f-submit:disabled {
+    color: #aaa;
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+
+.f-personal {
+    display: flex;
+    align-items: center;
+    margin-top: 12rem;
+    gap: 5px;
+}
+
+.f-personal input {
+    display: none;
+}
+
+.f-personal label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.f-personal label em {
+    position: relative;
+    width: 14px;
+    min-width: 14px;
+    height: 14px;
+    min-height: 14px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.f-personal label em::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    display: none;
+}
+
+.f-personal label p,
+.f-personal span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#cb2:checked ~ label em::after {
+    display: block;
+}
+
+
+
+/*==================================================*/
+@media (max-width: 1650px) {
+    .topBtn {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1450px) {
+    .floating-wrapper {
+        width: 100%;
+        padding: 0 20px;
+        gap: 50rem;
+    }
+
+    .floating-title {
+        min-width: 300rem;
+        gap: 10px;
+    }
+
+    .ft-text p {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    
+    .ft-text h5 {
+        font-size: 32px;
+    }
+
+    .floating-wrapper form,
+    .f-form,
+    .select,
+    .f-form .select select,
+    .f-form .inputbox,
+    .f-form .f-submit {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1050px) {   
+    .floating {
+        position: fixed;
+        bottom: -262px;
+        padding: 0;
+        transition: all .3s ease;
+    }
+
+    .up {
+        bottom: 0;
+    }
+    
+    .floating-wrapper {
+        padding: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .floating-title {
+        display: none;
+    }
+
+    .floating .ff-open-mobile {
+        width: 100%;
+        height: 55px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ff-omBtn {
+        flex: 1;
+        padding: 0 20px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--gold-color);
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    .ff-omBtn:nth-child(2) {
+        background-color: var(--main-color);
+    }
+
+    .ff-closeBtn {
+        position: relative;
+    }
+    
+    .ff-closeBtn span {
+        display: block;
+        width: 14px;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .ff-closeBtn span:nth-child(2) {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 2px;
+        height: 14px;
+    }
+
+    .i-rotate2 {
+        transform: rotate(45deg);
+    }
+
+
+    .fl-form {
+        padding: 20px;
+    }
+
+    .f-form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .f-form .select select,
+    .f-form .inputbox,
+    .f-form .f-submit {
+        width: 100%;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .select-arrow p {
+        left: 15px;
+        font-size: 14px;
+    }
+
+    .f-personal label p,
+    .f-personal span {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .floating .ff-open-mobile {
+        height: 45px;
+    }
+
+    .ff-omBtn {
+        font-size: 14px;
+    }
+}

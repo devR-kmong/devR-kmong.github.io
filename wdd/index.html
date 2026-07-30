@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contents/css/common.css">
+    <link rel="stylesheet" href="contents/css/header.css">
+    <link rel="stylesheet" href="contents/css/promotion.css">
+    <link rel="stylesheet" href="contents/css/article_common.css">
+    <link rel="stylesheet" href="contents/css/article1.css">
+    <link rel="stylesheet" href="contents/css/article2.css">
+    <link rel="stylesheet" href="contents/css/article3.css">
+    <link rel="stylesheet" href="contents/css/article4.css">
+    <link rel="stylesheet" href="contents/css/footer.css">
+    <link rel="stylesheet" href="contents/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="contents/css/floating.css">
+    <link rel="shortcut icon" href="contents/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="contents/js/swiper-bundle.min.js"></script>
+    <title>윈도닥</title>
+</head>
+<style>
+    .header .menu li:first-child { display: none; }
+</style>
+<body>
+    <header class="header">
+        <div class="gnb">
+            <div class="gnb-left">
+                <a href="<?php echo G5_URL?>" class="logo-w"><img src="contents/images/logo-w.svg"></a>
+                <a href="<?php echo G5_URL?>" class="logo active"><img src="contents/images/logo.svg"></a>
+                <ul class="menu">
+                    <li class="menu-item no-sub" data-target="data1"><a href="<?php echo G5_URL?>/sub/about">회사소개</a></li>
+                    <li class="menu-item dt" data-target="data2"><a href="<?php echo G5_URL?>/sub/sash_repair/1">샷시수리</a></li>
+                    <li class="menu-item no-sub" data-target="data3"><a href="<?php echo G5_URL?>/sash_remodeling">샷시리폼</a></li>
+                    <li class="menu-item no-sub" data-target="data4"><a href="<?php echo G5_URL?>/sub/insect_screen/replacement">방충망 교체</a></li>
+                    <li class="menu-item dt" data-target="data5"><a href="<?php echo G5_URL?>/sub/insect_screen/1">맞춤형 방충망</a></li>
+                </ul>
+                <div class="sub-menu">
+                    <ul id="data2">
+                        <li><a href="<?php echo G5_URL?>/sub/sash_repair/1">롤러교체</a></li>
+                        <li><a href="<?php echo G5_URL?>/sub/sash_repair/2">손잡이 잠김개방</a></li>
+                        <li><a href="<?php echo G5_URL?>/sub/sash_repair/3">터닝도어 수리</a></li>
+                    </ul>
+                    <ul id="data5">
+                        <li><a href="<?php echo G5_URL?>/sub/insect_screen/1">롤 방충망</a></li>
+                        <li><a href="<?php echo G5_URL?>/sub/insect_screen/2">주름 방충망</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gnb-right">
+                <a href="<?php echo G5_URL?>/contact/write" class="contactBtn">
+                    견적문의
+                </a>
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <div class="menuBtns">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </label>
+                <div class="mobile-menu">
+                    <div class="menu-item no-sub" data-target="data1">
+                        <a href="<?php echo G5_URL?>/sub/about" class="m-head">회사소개<i class="ri-arrow-down-s-line"></i></a>
+                    </div>
+                    <div class="menu-item dt" data-target="data2">
+                        <div class="m-head">샷시수리<i class="ri-arrow-down-s-line"></i></div>
+                        <ul id="data2" class="m-sub">
+                            <li><a href="<?php echo G5_URL?>/sub/sash_repair/1">롤러교체</a></li>
+                            <li><a href="<?php echo G5_URL?>/sub/sash_repair/2">손잡이 잠김개방</a></li>
+                            <li><a href="<?php echo G5_URL?>/sub/sash_repair/3">터닝도어 수리</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-item no-sub" data-target="data3">
+                        <a href="<?php echo G5_URL?>/sub/sash_remodeling" class="m-head">샷시리폼<i class="ri-arrow-down-s-line"></i></a>
+                    </div>
+                    <div class="menu-item no-sub" data-target="data4">
+                        <a href="<?php echo G5_URL?>/sub/insect_screen/replacement" class="m-head">방충망 교체<i class="ri-arrow-down-s-line"></i></a>
+                    </div>
+                    <div class="menu-item dt" data-target="data5">
+                        <div class="m-head">맞춤형 방충망<i class="ri-arrow-down-s-line"></i></div>
+                        <ul id="data5" class="m-sub">
+                            <li><a href="<?php echo G5_URL?>/sub/insect_screen/1">롤 방충망</a></li>
+                            <li><a href="<?php echo G5_URL?>/sub/insect_screen/2">주름 방충망</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="promotion">
+            <img src="contents/images/hero.png" class="hero">
+        </section>
+        <section class="article article1">
+            <img src="contents/images/cloud.png" class="cloud">
+            <img src="contents/images/sky.png" class="sky">
+            <div class="article-wrapper">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-top">
+                <a href="<?php echo G5_URL?>" class="logo-f">
+                    <img src="contents/images/logo-w.svg">
+                </a>
+                <div class="fBtn-wrapper">
+                    <a href="<?php echo G5_URL?>/terms/privacy-policy" target="_blank" class="fBtn">
+                        개인정보처리방침
+                    </a>
+                    <a href="<?php echo G5_URL?>/terms/terms-of-use" target="_blank" class="fBtn">
+                        서비스이용약관
+                    </a>
+                </div>
+            </div>
+            <div class="footer-mid">
+                <div class="footer-text">
+                    <p>
+                        윈도닥<br/>
+                        대표 : 정윤재<br/>
+                        사업자등록번호 : 219-08-71051<br/>
+                        이메일 : windowdoctor_@naver.com<br/>
+                        경기 용인시 기흥구 흥덕중앙로 59, 5층 505호 J-25호 (영덕동, 용인흥덕노블레스)
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <div class="fb-left">
+                    <p>
+                        ⓒ WINDOWDOCTOR. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contents/js/common.js"></script>
+    <script src="contents/js/header.js"></script>
+    <script src="contents/js/gsap.js"></script>
+
+</body>
+</html>

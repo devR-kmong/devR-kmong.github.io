@@ -1,0 +1,34 @@
+.article1 {
+    position: relative;
+    padding: 0;
+    z-index: 1;
+}
+
+.sky {
+    width: 100%;
+}
+
+.cloud {
+    position: absolute;
+    top: -50px;
+    left: 10%;
+    width: 80%;
+    animation: flowLeft 60s linear infinite;
+    z-index: 1;
+}
+
+@keyframes flowLeft {
+    from {
+        left: 10%;
+    }
+
+    to {
+        left: -300px;
+    }
+}
+
+
+/*==================================================*/
+@media (max-width: 1024px) {
+    
+}
