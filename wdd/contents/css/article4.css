@@ -1,3 +1,47 @@
+.article4 {
+    padding: 160rem 0;
+    background-color: var(--main-color);
+    background: url(../images/a4-bg.png);
+}
+
+.a4-title {
+    color: #fff;
+    text-align: center;
+}
+
+.a4-title h5 {
+    font-size: 40px;
+}
+
+.a4-title p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.a4Btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.a4Btn {
+    padding: 20px 40px;
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.a4Btn:hover {
+    filter: brightness(90%);
+}
+
+.a4Btn:last-child {
+    color: #fff;
+    background-color: var(--main-color);
+}
 
 
 

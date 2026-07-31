@@ -6,9 +6,13 @@ gsap.registerPlugin(ScrollTrigger);
 const prom = gsap.timeline();
 
 
-prom.to(".hero", {
-    scale: 5,
+prom.to(".p-text", {
+    duration: 0.1,
+    opacity: 0,
 })
+.to(".hero", {
+    scale: 5,
+}, "<")
 .to(".hero", {
     opacity: 0,
 })
@@ -19,6 +23,6 @@ ScrollTrigger.create({
     animation: prom,
     trigger: ".promotion",
     start: "top top",
-    end: "+=3000",
+    end: "+=2000",
     scrub: 1,
 });

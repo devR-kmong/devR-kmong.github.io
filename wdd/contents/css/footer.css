@@ -14,63 +14,19 @@
     gap: 50rem;
 }
 
-.footer-top {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom: 50rem;
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
-}
-
 .logo-f {
     width: 180px;
 }
 
-.fBtn-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 50rem;
-}
-
-.fBtn {
-    color: #fff;
-    font-size: 18rem;
-    font-weight: 600;
-    cursor: pointer;
-}
-
 .footer-text p {
-    color: rgba(255, 255, 255, .5);
-    font-size: 15rem;
+    color: #fff;
+    font-size: 15px;
     line-height: 1.8;
     letter-spacing: 0;
 }
 
-.footer-bot {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.fb-left p {
-    color: rgba(255, 255, 255, .3);
-    font-size: 15rem;
-    font-weight: 300;
-    letter-spacing: 0;
-}
-
-.admBtn {
-    color: rgba(255, 255, 255, .3);
-    font-size: 13rem;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.f-menu {
-    display: none;
+.footer-text p+p {
+    margin-top: 15px;
 }
 
 

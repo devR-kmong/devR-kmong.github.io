@@ -1,3 +1,18 @@
+$(function () {
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('.scrollDown').fadeOut(80);
+            } else {
+                $('.scrollDown').fadeIn(80);
+            }
+        });
+    });
+});
+
+
+
+
 if (navigator.userAgent.indexOf("Trident") > 0) {
     alert("이 사이트에 대한 Internet Explorer 지원이 종료되었습니다. " +
         "확인 버튼을 누르면 Edge 브라우저로 이동합니다.")
@@ -8,7 +23,7 @@ if (navigator.userAgent.indexOf("Trident") > 0) {
 
 const lenis = new Lenis({
     duration: 1.2,
-    wheelMultiplier: 0.7,
+    wheelMultiplier: 0.5,
     smoothWheel: true
 });
 
