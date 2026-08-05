@@ -1,0 +1,115 @@
+.article1 {
+    padding: 0;
+    overflow: hidden;
+}
+
+.a1-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.a1-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.a1-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1-left {
+    width: 50%;
+    padding-right: 5%;
+}
+
+.a1-right {
+    width: 50%;
+    border-left: 1px solid #ddd;
+}
+
+.a1-left .a1-content {
+    float: right;
+}
+
+.a1-r-box p {
+    padding: 80px;
+    margin-top: 0 !important;
+}
+
+.a1-1 {
+    width: 800rem;
+    padding: 80px;
+    padding-top: 0;
+}
+
+
+.a1-content h5 {
+    font-size: 70px;
+    line-height: 1;
+    font-weight: unset !important;
+    font-family: "Fraunces", serif;
+}
+
+.a1-content h6 {
+    font-size: 40px;
+    font-weight: 300 !important;
+    font-family: "Fraunces", serif;
+}
+
+.a1-content h5 span,
+.a1-content h6 span {
+    color: var(--main-color);
+    font-weight: 500;
+    font-family: "Fraunces", serif;
+}
+
+.a1-content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 50px;
+}
+
+.a1-content p span {
+    color: #111;
+    display: block;
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 50px;
+}
+
+.a1-2 {
+    width: 400rem;
+}
+
+
+.a1-bottom .a1-right .a1-content {
+    padding: 80px;
+}
+
+.a1-3 {
+    width: 600rem;
+    margin-top: 80px;
+}
+
+
+
+
+@media (max-width: 991px) {
+
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 450px) {
+
+}
