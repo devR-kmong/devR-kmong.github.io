@@ -19,6 +19,8 @@
 
 .sub-p-text p {
     color: #222;
+    font-size: 16px;
+    line-height: 1.4;
     font-weight: 500;
     margin-top: 15px;
 }

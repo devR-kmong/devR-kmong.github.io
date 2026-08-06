@@ -1,6 +1,6 @@
 .sv2,
 .sv3 {
-    margin-top: -60px;
+    margin-top: -60rem;
 }
 
 .sv-title {
@@ -27,13 +27,12 @@
 }
 
 .sv-box {
-    background: #fff;
     padding: 30px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 7px;
-    box-shadow: 0 10rem 30rem 0 rgba(80, 86, 131, .1);
+    border-radius: 12px;
+    border: 1px solid #e7e7e7;
 }
 
 .sv-box-icon {
@@ -60,14 +59,32 @@
     color: #444;
 }
 
-.sv1 .sv-title h5 { color: #c9a44c; }
-.sv1 .sv-box-icon { background: #f3f0e7; }
-.sv1 .sv-box-icon i { color: #c9a44c; }
+.sv1 .sv-title h5,
+.sv1 .sv-box-icon i {
+    color: #c9a44c;
+}
 
-.sv2 .sv-title h5 { color: #6f86c9; }
-.sv2 .sv-box-icon { background: #e7eaf3; }
-.sv2 .sv-box-icon i { color: #6f86c9 }
+.sv1 .sv-box-icon {
+    background: #f3f0e7;
+    border: 1px solid #c9a44c30;
+}
 
-.sv3 .sv-title h5 { color: #6fae86; }
-.sv3 .sv-box-icon { background: #e4f0e7; }
-.sv3 .sv-box-icon i { color: #6fae86; }
+.sv2 .sv-title h5,
+.sv2 .sv-box-icon i {
+    color: #6f86c9;
+}
+
+.sv2 .sv-box-icon {
+    background: #e7eaf3;
+    border: 1px solid #6f86c930;
+}
+
+.sv3 .sv-title h5,
+.sv3 .sv-box-icon i {
+    color: #6fae86;
+}
+
+.sv3 .sv-box-icon {
+    background: #e4f0e7;
+    border: 1px solid #6fae8630;
+}
