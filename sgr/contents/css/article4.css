@@ -1,0 +1,73 @@
+.a4-title {
+    margin-bottom: 70px;
+}
+
+.a4-title h5 {
+    text-align: center;
+}
+
+.a4-box-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30rem;
+}
+
+.a4-box {
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 15rem 50rem 0 rgba(80, 86, 131, .15);
+    border-radius: 20rem;
+}
+
+.a4-box-icon {
+    color: var(--main-color);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.a4-box-text h6 {
+    color: #222;
+    font-size: 26px;
+}
+
+.a4-box-text p {
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+
+
+
+/*==================================================*/
+@media (max-width: 991px) {
+    .a4-box-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 550px) {
+    .a4-box-icon {
+        left: unset; right: 50px;
+        font-size: 60px;
+    }
+    
+    .a4-box-text p {
+        font-size: 24px;
+    }
+
+    .a4-box-text h6 {
+        color: #222;
+        font-size: 45px;
+    }
+
+    .a4-box:hover .a4-box-icon {
+        transform: scale(1);
+    }
+}

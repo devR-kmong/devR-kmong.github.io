@@ -1,0 +1,50 @@
+.article8 {
+    padding-top: 0;
+}
+
+.a8-wrapper {
+    width: 100%;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30rem;
+    background-color: var(--main-color);
+}
+
+.a8-text {
+    color: #fff;
+}
+
+.a8-text h5 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.a8-text p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.a8Btn {
+    border: none;
+}
+
+.a8Btn:first-child {
+    background-color: #111;
+}
+
+.a8Btn:last-child {
+    color: var(--main-color);
+    background-color: #fff !important;
+}
+
+
+/*==================================================*/
+@media (max-width: 1024px) {
+    
+}
