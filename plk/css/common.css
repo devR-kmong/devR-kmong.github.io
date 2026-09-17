@@ -60,6 +60,11 @@ button, input {
     --gold-soft: #e0be7f;
     --mist: #dde3ee;
     --line: rgba(12, 79, 163, .14);
+
+    --color-tier-1: #5e9eb1;
+    --color-tier-2: #314b85;
+    --color-tier-3: #1bad7d;
+    --color-tier-4: #5d40a1;
 }
 
 

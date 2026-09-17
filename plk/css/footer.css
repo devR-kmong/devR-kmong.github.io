@@ -60,6 +60,12 @@
     cursor: pointer;
 }
 
+.footer-bot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-text p {
     color: rgba(255, 255, 255, .5);
     font-size: 15rem;
@@ -67,31 +73,35 @@
     letter-spacing: 0;
 }
 
-.footer-bot {
-    width: 100%;
+.footer-text p+p {
+    margin-top: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.f-logo {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-}
-
-.fb-left p {
-    color: rgba(255, 255, 255, .3);
-    font-size: 15rem;
-    font-weight: 300;
-    letter-spacing: 0;
-}
-
-.admBtn {
-    color: rgba(255, 255, 255, .3);
-    font-size: 13rem;
-    display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 10px;
 }
 
-.f-menu {
-    display: none;
+.f-logo img {
+    height: 60px;
 }
+
+.f-logo p {
+    max-width: 180px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
 
 
 /*==================================================*/

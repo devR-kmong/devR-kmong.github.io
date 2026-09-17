@@ -22,13 +22,12 @@
     font-weight: 600;
     color: #fff;
     cursor: pointer;
-    border-bottom: 3px solid transparent;
     margin-bottom: -2px;
     transition: color .2s, border-color .2s;
 }
 
 .tab-btn.active {
-    color: var(--brand);
+    color: var(--tier, var(--brand));
     font-weight: 700;
     background-color: #fff;
 }
@@ -47,6 +46,30 @@
     --text-muted: #666;
 }
 
+/* ===== TIER THEME (탭 + 패널 공통) ===== */
+.tab-btn[data-target="personal"],
+#personal {
+    --tier: var(--color-tier-1);
+    --tier-light: #eaf3f6;
+}
+
+.tab-btn[data-target="corporate"],
+#corporate {
+    --tier: var(--color-tier-2);
+    --tier-light: #e9edf5;
+}
+
+.tab-btn[data-target="return"],
+#return {
+    --tier: var(--color-tier-3);
+    --tier-light: #e6f7f1;
+}
+
+.tab-btn[data-target="premium"],
+#premium {
+    --tier: var(--color-tier-4);
+    --tier-light: #eeeaf7;
+}
 
 /* ===== PANELS ===== */
 .panel {
@@ -75,6 +98,7 @@
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 6px;
+    color: var(--tier, var(--brand));
 }
 
 .panel-eng {
@@ -92,8 +116,8 @@
 }
 
 .badge {
-    background: var(--brand-light);
-    color: var(--brand);
+    background: var(--tier-light, var(--brand-light));
+    color: var(--tier, var(--brand));
     font-size: 15px;
     font-weight: 700;
     padding: 8px 16px;
@@ -133,10 +157,16 @@ td.sub-head {
 }
 
 thead th.col-head {
-    background: var(--brand-light);
-    color: var(--brand);
+    background: var(--tier-light, var(--brand-light));
+    color: var(--tier, var(--brand));
     font-weight: 700;
     font-size: 18px;
+}
+
+thead th.row-head {
+    background: var(--tier, var(--brand));
+    color: #fff;
+    border-color: var(--tier, var(--brand));
 }
 
 td .small {
@@ -165,6 +195,7 @@ td.left li::before {
     content: "·";
     position: absolute;
     left: 2px;
+    color: var(--tier, var(--brand));
 }
 
 .note {
@@ -176,6 +207,7 @@ td.left li::before {
 
 .price {
     font-weight: 700;
+    color: var(--tier, var(--brand));
 }
 
 @media (max-width: 768px) {
@@ -196,7 +228,7 @@ td.left li::before {
         font-size: 13px;
         padding: 5px 10px;
     }
-    
+
     table {
         font-size: 12px;
     }

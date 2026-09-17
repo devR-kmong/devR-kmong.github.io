@@ -29,7 +29,7 @@
     flex-direction: column;
     border-radius: 10rem;
     background-color: #fff;
-    box-shadow: 0 15rem 50rem 0 rgba(80, 86, 131, .2);
+    border: 1px solid #ddd;
 }
 
 .card-name {
@@ -165,13 +165,6 @@
     text-align: center;
     letter-spacing: 0;
     margin-top: 40rem;
-}
-
-:root {
-    --color-tier-1: #967665;
-    --color-tier-2: #9d9d9d;
-    --color-tier-3: #c89948;
-    --color-tier-4: #5d40a1;
 }
 
 .card:nth-child(1) .price-block {

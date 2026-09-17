@@ -25,7 +25,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20rem;
+    gap: 30rem;
     z-index: 2;
 }
 
@@ -41,6 +41,7 @@
     width: 100%;
     padding: 50rem;
     text-align: center;
+    border-radius: 10rem;
     background-color: #fff;
 }
 
