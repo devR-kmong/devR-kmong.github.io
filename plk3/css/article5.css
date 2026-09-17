@@ -21,6 +21,10 @@
     pointer-events: none;
 }
 
+.a5-title {
+    display: none;
+}
+
 .a5-content {
     display: grid;
     grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
