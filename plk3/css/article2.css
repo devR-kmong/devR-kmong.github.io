@@ -85,7 +85,7 @@
 
 
 /*==================================================*/
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
     .a2-box-wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

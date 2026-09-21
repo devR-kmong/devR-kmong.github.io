@@ -70,7 +70,7 @@ button, input {
 
 
 /*==================================================*/
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
     html,
     html.safari.desktop {
         font-size: 0.8px;
