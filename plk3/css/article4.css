@@ -1,16 +1,17 @@
 .article4 {
     position: relative;
-    padding-bottom: 0;
+    padding: 0;
     overflow: hidden;
 }
 
 .article4 .article-wrapper {
-    width: 90%;
+    width: 100%;
 }
 
 .a4-content {
     width: 100%;
     display: flex;
+    align-items: flex-end;
     gap: 4%;
     margin-bottom: -5px;
 }
@@ -20,7 +21,7 @@
 }
 
 .a4-video {
-    min-width: 36%;
+    min-width: 50%;
     align-self: center;
 }
 
@@ -28,7 +29,6 @@
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    border-radius: 20px;
     overflow: hidden;
     background: #000;
     box-shadow: 0 24px 60px rgba(16, 32, 64, .20);
@@ -73,10 +73,6 @@
 
 
 @media (max-width: 991px) {
-    .article4 .article-wrapper {
-        width: 100%;
-    }
-    
     .a4-content {
         flex-direction: column;
     }
