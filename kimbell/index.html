@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>킴벨피부과병원</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Serif+KR:wght@300;400;500;600&display=swap">
+
+<!-- ▼ 미리보기 전용 : 실제 사이트에서는 common.css / 빌더 헤더가 대신함 (삭제) -->
+<style>
+:root { --main-color: #382031; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 6.25%; }
+body { font-family: 'Pretendard', sans-serif; font-size: 16rem; color: #1f1a1d; background: #fff; word-break: keep-all; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+img { display: block; max-width: 100%; }
+button { border: 0; background: none; cursor: pointer; font: inherit; color: inherit; }
+section.article { padding: 120rem 0; }
+.article-wrapper { width: 1400rem; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+@media (max-width: 1450px) { .article-wrapper { width: 90%; } }
+@media (max-width: 1024px) { html, html.safari.desktop { font-size: 0.8px; } }
+@media (max-width: 768px) { html, html.safari.desktop { font-size: 0.10430vw; } section.article { padding: 60px 0; } }
+.preview-header { position: absolute; left: 0; right: 0; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; height: 100px; padding: 0 5%; color: #fff; }
+.preview-header img { width: 170px; filter: brightness(0) invert(1); }
+.preview-header nav { display: flex; gap: 48px; font-size: 15px; letter-spacing: -0.01em; }
+@media (max-width: 768px) { .preview-header { height: 64px; } .preview-header img { width: 120px; } .preview-header nav { display: none; } }
+</style>
+<!-- ▲ 미리보기 전용 -->
+
+<link rel="stylesheet" href="contents/css/main.css">
+<link rel="stylesheet" href="contents/css/footer.css">
+</head>
+<body>
+
+<!-- ▼ 미리보기 전용 헤더 (빌더 헤더로 대체) -->
+<header class="preview-header">
+	<img src="contents/images/logo.svg" alt="킴벨피부과병원">
+	<nav><a href="#">병원소개</a><a href="#">리프팅</a><a href="#">항노화</a><a href="#">흉터</a><a href="#">커뮤니티</a></nav>
+</header>
+<!-- ▲ 미리보기 전용 -->
+
+<!-- ================= 00. HERO ================= -->
+<section class="kb-hero">
+	<div class="kb-hero-slides">
+		<!-- 영상 사용 시 : <div class="kb-hero-slide"><video src="contents/images/hero01.mp4" poster="contents/images/hero01.jpg" autoplay muted loop playsinline></video></div> -->
+		<div class="kb-hero-slide is-active"><img src="contents/images/hero01.jpg" alt=""></div>
+		<div class="kb-hero-slide"><img src="contents/images/hero02.jpg" alt=""></div>
+		<div class="kb-hero-slide"><img src="contents/images/hero03.jpg" alt=""></div>
+		<div class="kb-hero-slide"><img src="contents/images/hero04.jpg" alt=""></div>
+	</div>
+	<div class="kb-hero-dim" aria-hidden="true"></div>
+
+	<div class="kb-hero-inner">
+		<div class="kb-hero-copy">
+			<p class="kb-hero-label"><span>Kimbell Dermatology Hospital</span></p>
+			<h2 class="kb-hero-title">
+				<span class="kb-line"><span><em>Timeless</em> Beauty,</span></span>
+				<span class="kb-line"><span>Begins at Kimbell</span></span>
+			</h2>
+			<p class="kb-hero-sub"><span class="kb-line"><span>시간이 머무는 피부, 킴벨피부과병원</span></span></p>
+		</div>
+
+		<div class="kb-hero-ctrl">
+			<div class="kb-hero-num"><b class="kb-hero-cur">01</b><i></i><span>04</span></div>
+			<ul class="kb-hero-bars">
+				<li class="is-active"><button type="button" aria-label="1번 슬라이드"><i></i></button></li>
+				<li><button type="button" aria-label="2번 슬라이드"><i></i></button></li>
+				<li><button type="button" aria-label="3번 슬라이드"><i></i></button></li>
+				<li><button type="button" aria-label="4번 슬라이드"><i></i></button></li>
+			</ul>
+			<button type="button" class="kb-hero-toggle" aria-label="일시정지"></button>
+		</div>
+	</div>
+
+	<p class="kb-hero-side" aria-hidden="true">Secondary Dermatology Hospital &nbsp;·&nbsp; Daejeon</p>
+	<a href="#kb-intro" class="kb-hero-scroll"><span>Scroll</span><i></i></a>
+</section>
+
+
+<!-- ================= 01. INTRO ================= -->
+<section class="article kb-intro" id="kb-intro">
+	<div class="article-wrapper">
+		<div class="kb-intro-head">
+			<div class="kb-intro-left">
+				<p class="kb-label kb-reveal">About Kimbell</p>
+				<h2 class="kb-intro-title kb-reveal">국내 유일<br><strong>피부과 2차 병원</strong></h2>
+			</div>
+			<div class="kb-intro-right kb-reveal">
+				<p class="kb-intro-sub">피부과 진료 병원급 의료기관</p>
+				<p class="kb-intro-en">The Secondary Dermatology Hospital</p>
+			</div>
+		</div>
+		<div class="kb-intro-visual">
+			<div class="kb-intro-media">
+				<img src="contents/images/intro.jpg" alt="킴벨피부과병원">
+			</div>
+			<div class="kb-intro-badge" aria-hidden="true">
+				<svg viewBox="0 0 200 200">
+					<defs><path id="kbBadgePath" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"></path></defs>
+					<text><textPath href="#kbBadgePath">KIMBELL · SECONDARY DERMATOLOGY HOSPITAL ·</textPath></text>
+				</svg>
+				<span class="kb-intro-badge-num">2<sup>nd</sup></span>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- ================= 02. SIGNATURE SOLUTION ================= -->
+<section class="article kb-signature">
+	<div class="kb-sig-clock" aria-hidden="true">
+		<div class="kb-sig-ring">
+			<svg class="kb-sig-circle" viewBox="0 0 1000 1000">
+				<circle class="kb-sig-circle-base" cx="500" cy="500" r="498"></circle>
+				<circle class="kb-sig-circle-arc" cx="500" cy="500" r="498" pathLength="100"></circle>
+			</svg>
+			<span class="kb-sig-n" style="--a:0deg">12</span>
+			<span class="kb-sig-n" style="--a:60deg">02</span>
+			<span class="kb-sig-n" style="--a:180deg">06</span>
+			<span class="kb-sig-n" style="--a:300deg">10</span>
+		</div>
+	</div>
+	<div class="article-wrapper">
+		<div class="kb-sec-head kb-sec-head--light">
+			<p class="kb-eyebrow kb-reveal">Signature Solution.</p>
+			<h2 class="kb-title kb-reveal">킴벨피부과병원만의 <strong>시그니처 솔루션</strong></h2>
+			<p class="kb-desc kb-reveal">당신에게 마법같은 시간을 선물할<br>킴벨피부과병원의 시그니처 시술을 소개합니다.</p>
+		</div>
+		<ul class="kb-sig-list">
+			<li class="kb-sig-item kb-reveal">
+				<a href="#">
+					<figure class="kb-sig-img"><img src="contents/images/sig01.jpg" alt="리프팅"></figure>
+					<div class="kb-sig-txt">
+						<div class="kb-sig-top">
+							<span class="kb-sig-idx">01</span>
+							<span class="kb-sig-en">Lifting</span>
+							<h3>리프팅</h3>
+						</div>
+						<div class="kb-sig-bottom">
+							<p>시간에 이끌리지 않고<br>내가 원하는 시간으로 사는 방법</p>
+							<span class="kb-sig-more">View more</span>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="kb-sig-item kb-reveal">
+				<a href="#">
+					<figure class="kb-sig-img"><img src="contents/images/sig02.jpg" alt="항노화"></figure>
+					<div class="kb-sig-txt">
+						<div class="kb-sig-top">
+							<span class="kb-sig-idx">02</span>
+							<span class="kb-sig-en">Anti-aging</span>
+							<h3>항노화</h3>
+						</div>
+						<div class="kb-sig-bottom">
+							<p>빛나는 순간이<br>빛나는 영원이 되는 시간</p>
+							<span class="kb-sig-more">View more</span>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="kb-sig-item kb-reveal">
+				<a href="#">
+					<figure class="kb-sig-img"><img src="contents/images/sig03.jpg" alt="흉터"></figure>
+					<div class="kb-sig-txt">
+						<div class="kb-sig-top">
+							<span class="kb-sig-idx">03</span>
+							<span class="kb-sig-en">Scar</span>
+							<h3>흉터</h3>
+						</div>
+						<div class="kb-sig-bottom">
+							<p>더해진 시간을 지워<br>처음의 나와 마주하는 순간</p>
+							<span class="kb-sig-more">View more</span>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+<!-- ================= 03. COUNT ================= -->
+<section class="article kb-count">
+	<div class="kb-count-rings" aria-hidden="true"><span></span><span></span><span></span></div>
+	<div class="article-wrapper">
+		<p class="kb-label kb-label--center kb-reveal">Trusted Nationwide</p>
+		<h2 class="kb-count-title kb-reveal">전국에서 찾아오는 병원</h2>
+		<div class="kb-count-num kb-reveal">
+			<span class="kb-counter" data-count="449000">449,000</span><em>명</em>
+		</div>
+	</div>
+	<div class="kb-count-marquee" aria-hidden="true">
+		<div class="kb-count-marquee-track">
+			<span>Kimbell Dermatology Hospital</span><i></i>
+			<span>Timeless Beauty</span><i></i>
+			<span>Kimbell Dermatology Hospital</span><i></i>
+			<span>Timeless Beauty</span><i></i>
+		</div>
+	</div>
+</section>
+
+
+<!-- ================= 04. SPECIAL ================= -->
+<section class="article kb-special">
+	<div class="article-wrapper">
+		<div class="kb-sec-head">
+			<p class="kb-eyebrow kb-reveal">Kimbell Special</p>
+			<h2 class="kb-title kb-reveal">킴벨피부과병원만의 <strong class="kb-en">special</strong></h2>
+		</div>
+		<ul class="kb-special-list kb-reveal">
+			<li class="kb-special-item is-active">
+				<figure><img src="contents/images/special01.jpg" alt="피부과 전문의"></figure>
+				<div class="kb-special-txt">
+					<span class="kb-special-num">01</span>
+					<span class="kb-special-en">Dermatologist</span>
+					<h3>피부과 전문의</h3>
+					<p>피부과 전문의가 직접 상담하고 진료합니다.</p>
+				</div>
+			</li>
+			<li class="kb-special-item">
+				<figure><img src="contents/images/special02.jpg" alt="성능검증된 프리미엄 장비"></figure>
+				<div class="kb-special-txt">
+					<span class="kb-special-num">02</span>
+					<span class="kb-special-en">Premium Device</span>
+					<h3>성능검증된<br> 프리미엄 장비</h3>
+					<p>안전성과 효과가 검증된 장비만을 사용합니다.</p>
+				</div>
+			</li>
+			<li class="kb-special-item">
+				<figure><img src="contents/images/special03.jpg" alt="2차 병원"></figure>
+				<div class="kb-special-txt">
+					<span class="kb-special-num">03</span>
+					<span class="kb-special-en">Secondary Hospital</span>
+					<h3>2차 병원</h3>
+					<p>피부과 진료 병원급 의료기관의 체계적인 진료</p>
+				</div>
+			</li>
+			<li class="kb-special-item">
+				<figure><img src="contents/images/special04.jpg" alt="프리미엄 케어"></figure>
+				<div class="kb-special-txt">
+					<span class="kb-special-num">04</span>
+					<span class="kb-special-en">Premium Care</span>
+					<h3>프리미엄 케어</h3>
+					<p>스킨수티컬즈 제품</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+<!-- ================= 05. COMFORTABLE SPACE ================= -->
+<section class="article kb-space">
+	<div class="article-wrapper">
+		<div class="kb-space-head">
+			<div class="kb-space-title">
+				<p class="kb-eyebrow kb-reveal">Comfortable Space</p>
+				<h2 class="kb-title kb-reveal">킴벨의 <strong>편안한 공간</strong></h2>
+			</div>
+			<div class="kb-space-ctrl kb-reveal">
+				<span class="kb-space-count"><b class="kb-space-cur">01</b> / 06</span>
+				<button type="button" class="kb-space-btn kb-space-prev" aria-label="이전"></button>
+				<button type="button" class="kb-space-btn kb-space-next" aria-label="다음"></button>
+			</div>
+		</div>
+	</div>
+	<div class="kb-space-slider kb-reveal">
+		<ul class="kb-space-track">
+			<li><figure><img src="contents/images/space01.jpg" alt="킴벨피부과병원 공간 01" draggable="false"></figure></li>
+			<li><figure><img src="contents/images/space02.jpg" alt="킴벨피부과병원 공간 02" draggable="false"></figure></li>
+			<li><figure><img src="contents/images/space03.jpg" alt="킴벨피부과병원 공간 03" draggable="false"></figure></li>
+			<li><figure><img src="contents/images/space04.jpg" alt="킴벨피부과병원 공간 04" draggable="false"></figure></li>
+			<li><figure><img src="contents/images/space05.jpg" alt="킴벨피부과병원 공간 05" draggable="false"></figure></li>
+			<li><figure><img src="contents/images/space06.jpg" alt="킴벨피부과병원 공간 06" draggable="false"></figure></li>
+		</ul>
+	</div>
+	<div class="article-wrapper">
+		<div class="kb-space-progress"><span></span></div>
+	</div>
+</section>
+
+
+<!-- ================= 06. LOCATION (공통 : footer 위) ================= -->
+<section class="article kb-location" id="kb-location">
+	<div class="article-wrapper">
+		<div class="kb-sec-head">
+			<p class="kb-eyebrow kb-reveal">Location</p>
+			<h2 class="kb-title kb-reveal">오시는길</h2>
+		</div>
+
+		<div class="kb-loc-body kb-reveal">
+			<div class="kb-loc-map">
+				<!-- 카카오맵 퍼가기 / 지도 API 코드 삽입 영역 (img 는 미리보기용) -->
+				<img src="contents/images/map.jpg" alt="킴벨피부과병원 지도">
+			</div>
+			<div class="kb-loc-info">
+				<img class="kb-loc-logo" src="contents/images/logo.svg" alt="킴벨피부과병원">
+				<dl class="kb-loc-row">
+					<dt>Address</dt>
+					<dd>대전광역시 서구 대덕대로238 킴벨빌딩 2층<small>지번 : 대전광역시 서구 둔산동 1367 킴벨빌딩 2층</small></dd>
+				</dl>
+				<dl class="kb-loc-row">
+					<dt>Contact</dt>
+					<dd><a class="kb-loc-tel" href="tel:042-000-0000">042.000.0000</a></dd>
+				</dl>
+				<dl class="kb-loc-row">
+					<dt>Hours</dt>
+					<dd>
+						<ul class="kb-loc-time">
+							<li><span>평일</span><b>00:00 ~ 00:00</b></li>
+							<li><span>토요일</span><b>00:00 ~ 00:00</b></li>
+							<li><span>점심시간</span><b>00:00 ~ 00:00</b></li>
+						</ul>
+						<small>일요일, 공휴일 휴진</small>
+					</dd>
+				</dl>
+				<div class="kb-loc-btns">
+					<a href="https://map.naver.com/p/search/%ED%82%B4%EB%B2%A8%ED%94%BC%EB%B6%80%EA%B3%BC%EB%B3%91%EC%9B%90" target="_blank" rel="noopener">네이버 지도</a>
+					<a href="https://map.kakao.com/?q=%ED%82%B4%EB%B2%A8%ED%94%BC%EB%B6%80%EA%B3%BC%EB%B3%91%EC%9B%90" target="_blank" rel="noopener">카카오맵</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ================= FOOTER (공통) ================= -->
+<footer class="kb-footer">
+	<div class="kb-footer-inner">
+		<div class="kb-footer-top">
+			<div class="kb-footer-brand">
+				<a href="/" class="kb-footer-logo"><img src="contents/images/logo.svg" alt="킴벨피부과병원"></a>
+				<p class="kb-footer-slogan"><em>Timeless</em> Beauty,<br>Begins at Kimbell</p>
+			</div>
+			<div class="kb-footer-cs">
+				<span class="kb-footer-label">Contact</span>
+				<a class="kb-footer-tel" href="tel:042-000-0000">042.000.0000</a>
+				<ul class="kb-footer-sns">
+					<li><a href="#" target="_blank" rel="noopener" aria-label="네이버 블로그"><i class="kb-sns kb-sns-blog"></i></a></li>
+					<li><a href="#" target="_blank" rel="noopener" aria-label="인스타그램"><i class="kb-sns kb-sns-insta"></i></a></li>
+					<li><a href="#" target="_blank" rel="noopener" aria-label="카카오톡 채널"><i class="kb-sns kb-sns-kakao"></i></a></li>
+					<li><a href="#" target="_blank" rel="noopener" aria-label="유튜브"><i class="kb-sns kb-sns-youtube"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="kb-footer-mid">
+			<ul class="kb-footer-policy">
+				<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">비급여 진료비용</a></li>
+			</ul>
+			<ul class="kb-footer-info">
+				<li><span>상호</span>킴벨피부과병원</li>
+				<li><span>대표자</span>000</li>
+				<li><span>사업자등록번호</span>000-00-00000</li>
+				<li><span>주소</span>대전광역시 서구 대덕대로238 킴벨빌딩 2층</li>
+				<li><span>대표전화</span>042.000.0000</li>
+			</ul>
+		</div>
+
+		<div class="kb-footer-bottom">
+			<p class="kb-footer-copy">&copy; KIMBELL DERMATOLOGY HOSPITAL. ALL RIGHTS RESERVED.</p>
+			<a href="#" class="kb-footer-totop" aria-label="맨 위로"><span>Top</span></a>
+		</div>
+	</div>
+	<div class="kb-footer-mark" aria-hidden="true">KIMBELL</div>
+</footer>
+
+<!-- 미리보기용 GSAP (실제 사이트에서는 기존 로드분 사용) -->
+<script src="contents/js/lib/gsap.min.js"></script>
+<script src="contents/js/lib/ScrollTrigger.min.js"></script>
+<script src="contents/js/main.js"></script>
+</body>
+</html>
