@@ -234,7 +234,22 @@
 					.fromTo(bars, { autoAlpha: 0, y: 14 }, { autoAlpha: 1, y: 0, duration: 1, stagger: 0.07 }, 1.9)
 					.fromTo(toggleEl, { autoAlpha: 0, scale: 0.6 }, { autoAlpha: 1, scale: 1, duration: 1, ease: 'back.out(1.8)' }, 2.1)
 					.fromTo(side, { clipPath: 'inset(0% 0% 100% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.4, ease: 'expo.inOut' }, 1.9)
-					.fromTo(scrollEls, { autoAlpha: 0, y: 12 }, { autoAlpha: 1, y: 0, duration: 1, stagger: 0.1 }, 2.2);
+					.fromTo(scrollEls, { autoAlpha: 0, y: 12 }, { autoAlpha: 1, y: 0, duration: 1, stagger: 0.1 }, 2.2)
+					/* 4. 배경 확대(타원 펼침 + 스케일) 완료 후 헤더 · 플로팅 메뉴 등장 */
+					.call(showChrome, null, 2.85);
+			};
+
+			/* 헤더 · 플로팅 메뉴 등장 : transform 은 기존(is-hide, translateY(-50%))과 겹치지 않게 CSS translate 속성으로 */
+			var chromeShown = false;
+			var showChrome = function () {
+				if (chromeShown) return;
+				chromeShown = true;
+				var hd = $('.kb-header'), qk = $('.kb-quick');
+				if (hd) gsap.set(hd, { autoAlpha: 0, translate: '0px -30px' });
+				if (qk) gsap.set(qk, { autoAlpha: 0, translate: '30px 0px' });
+				root.classList.add('kb-chrome-in');
+				if (hd) gsap.to(hd, { autoAlpha: 1, translate: '0px 0px', duration: 1.1, ease: 'expo.out', clearProps: 'opacity,visibility,translate' });
+				if (qk) gsap.to(qk, { autoAlpha: 1, translate: '0px 0px', duration: 1.1, delay: 0.15, ease: 'expo.out', clearProps: 'opacity,visibility,translate' });
 			};
 
 			/* 첫 이미지와 폰트가 준비되면 시작 (최대 1.2초 대기) */

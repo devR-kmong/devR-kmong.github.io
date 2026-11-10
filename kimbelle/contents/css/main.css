@@ -2565,6 +2565,13 @@ html.kb-motion .kb-hero-side {
 	clip-path: inset(0 0 100% 0);
 }
 
+/* 헤더 · 플로팅 메뉴 : hero 배경 확대 인트로가 끝난 뒤 등장 (main.js 가 html.kb-chrome-in 부여) */
+html.kb-motion:not(.kb-chrome-in):has(.kb-hero) .kb-header,
+html.kb-motion:not(.kb-chrome-in):has(.kb-hero) .kb-quick {
+	opacity: 0;
+	visibility: hidden;
+}
+
 .kb-ch {
 	display: inline-block;
 }

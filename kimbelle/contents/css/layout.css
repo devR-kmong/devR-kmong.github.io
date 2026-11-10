@@ -103,7 +103,7 @@
 
 /* 접기 / 펼치기 버튼 */
 .kb-quick-toggle { position: relative; display: block; width: 56rem; height: 56rem; border-radius: 50%; background: var(--main-color); box-shadow: 0 12rem 30rem color-mix(in srgb, var(--main-color) 28%, transparent); transition: transform 0.8s cubic-bezier(.65,0,.35,1), background 0.4s ease; }
-.kb-quick.is-fold .kb-quick-toggle { transform: rotate(360deg); background: #fff; }
+.kb-quick.is-fold .kb-quick-toggle { background: #fff; }
 .kb-quick-x,
 .kb-quick-logo { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; transition: opacity 0.4s ease; }
 .kb-quick-x::before,
