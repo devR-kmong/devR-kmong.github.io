@@ -356,6 +356,7 @@
 
 	/* ---------- 02. SIGNATURE ---------- */
 	var sigBody = $('.kb-sig-body');
+	var sigStage = $('.kb-sig-stage') || sigBody; /* 제목 + 목록을 함께 고정 */
 	var sigList = $('.kb-sig-list');
 	var sigItems = $$('.kb-sig-item');
 	var sigImgs = $$('.kb-sig-arch img');
@@ -451,8 +452,9 @@
 			ScrollTrigger.addEventListener('refreshInit', lockSigList);
 			ScrollTrigger.addEventListener('refresh', onSigRefresh);
 			sigScrub = ScrollTrigger.create({
-				trigger: sigBody,
-				start: 'center center',
+				trigger: sigStage,
+				/* 화면보다 작으면 가운데, 크면 위에 맞춰 고정 */
+				start: function () { return sigStage.offsetHeight <= window.innerHeight ? 'center center' : 'top top'; },
 				end: function () { return '+=' + Math.round(window.innerHeight * 0.55 * (count - 1)); },
 				pin: true,
 				pinSpacing: true, /* 부모(.article-wrapper)가 flex 라 명시 필요 */
@@ -465,9 +467,9 @@
 				y: -40, ease: 'none',
 				scrollTrigger: { trigger: '.kb-signature', start: 'top bottom', end: 'bottom top', scrub: true }
 			});
-			gsap.fromTo('.kb-sig-arch', { clipPath: 'inset(100% 0% 0% 0% round 250px 250px 10px 10px)' },
+			gsap.fromTo('.kb-sig-arch', { clipPath: 'inset(100% 0% 0% 0% round 20px)' },
 				{
-					clipPath: 'inset(0% 0% 0% 0% round 250px 250px 10px 10px)', duration: 1.6, ease: 'expo.inOut',
+					clipPath: 'inset(0% 0% 0% 0% round 20px)', duration: 1.6, ease: 'expo.inOut',
 					scrollTrigger: { trigger: sigBody, start: 'top 80%', once: true },
 					onComplete: function () { gsap.set('.kb-sig-arch', { clipPath: 'none' }); }
 				});
@@ -493,55 +495,7 @@
 		});
 	}
 
-	/* ---------- 03. COUNT : 449,000 오도미터 ---------- */
-	var odo = $('.kb-odo');
-	if (motion && odo) {
-		var value = odo.getAttribute('data-value') || odo.textContent;
-		var cells = '';
-		for (var r = 0; r < 3; r++) for (var d = 0; d < 10; d++) cells += '<span>' + d + '</span>';
-		odo.setAttribute('aria-hidden', 'true');
-		odo.innerHTML = value.split('').map(function (ch) {
-			return /\d/.test(ch) ? '<span class="kb-odo-d" data-d="' + ch + '"><span class="kb-odo-strip">' + cells + '</span></span>' : '<span class="kb-odo-c">' + ch + '</span>';
-		}).join('');
-		gsap.set('.kb-count-num', { visibility: 'visible' });
-	}
-	if (mm && $('.kb-count')) {
-		mm.add('(min-width: 1px)', function () {
-			var sec = $('.kb-count');
-			var num = $('.kb-count-num', sec);
-			var digits = $$('.kb-odo-d', sec);
-			var rings = $$('.kb-count-rings circle', sec);
-			var n = digits.length;
-			var tl = gsap.timeline({ scrollTrigger: { trigger: num, start: 'top 85%', once: true } });
-			tl.fromTo(num, { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0, duration: 1.2, ease: 'power3.out' }, 0);
-			/* 오른쪽 자리일수록 더 많이 돌고 늦게 멈춤 (슬롯머신처럼) */
-			digits.forEach(function (el, i) {
-				var dgt = +el.getAttribute('data-d');
-				var rounds = 1 + Math.round(i / Math.max(1, n - 1));
-				var cell = rounds * 10 + dgt;
-				tl.fromTo($('.kb-odo-strip', el), { yPercent: 0 }, { yPercent: -cell * 100 / 30, duration: 2.2 + i * 0.16, ease: 'expo.out' }, 0.1);
-			});
-			/* 원형 라인 : 그려지면서 스크롤에 따라 회전 */
-			rings.forEach(function (c, i) {
-				if (i === 1) return; /* 점선 원은 그대로 */
-				var len = c.getTotalLength();
-				gsap.fromTo(c, { strokeDasharray: len, strokeDashoffset: len }, {
-					strokeDashoffset: 0, duration: 2.4, ease: 'expo.inOut', delay: i * 0.15,
-					scrollTrigger: { trigger: sec, start: 'top 75%', once: true }
-				});
-			});
-			gsap.fromTo('.kb-count-rings', { rotate: -20 }, {
-				rotate: 40, ease: 'none',
-				scrollTrigger: { trigger: sec, start: 'top bottom', end: 'bottom top', scrub: true }
-			});
-			gsap.fromTo('.kb-count-glow', { scale: 0.65, opacity: 0.4 }, {
-				scale: 1.15, opacity: 1, ease: 'none',
-				scrollTrigger: { trigger: sec, start: 'top bottom', end: 'center center', scrub: true }
-			});
-		});
-	}
-
-	/* ---------- 04. NUMBERS : 2% · 10년 · 650,000건 ---------- */
+	/* ---------- 03. NUMBERS : 2% · 10년 · 650,000명 ---------- */
 	if (mm && $('.kb-num')) {
 		mm.add('(min-width: 1px)', function () {
 			var sec = $('.kb-num');
@@ -566,11 +520,23 @@
 				scrollTrigger: { trigger: fig, start: 'top 82%', once: true }
 			});
 			/* 배경 곡선 : 스크롤에 맞춰 그려짐 */
+			/* non-scaling-stroke 라 대시 길이는 화면 픽셀 기준 → getTotalLength(도면 단위)로 잡으면 선이 끝까지 안 그려져 끊겨 보임
+			   → 화면 좌표로 환산한 실제 길이로 계산, 리사이즈 시 다시 계산 */
 			if (path) {
-				var len = path.getTotalLength();
-				gsap.fromTo(path, { strokeDasharray: len, strokeDashoffset: len }, {
+				var lineLen = function () {
+					var m = path.getScreenCTM(), L = path.getTotalLength(), sum = 0, px = null, py = null;
+					if (!m) return L;
+					for (var k = 0; k <= 120; k++) {
+						var pt = path.getPointAtLength(L * k / 120);
+						var x = m.a * pt.x + m.c * pt.y + m.e, y = m.b * pt.x + m.d * pt.y + m.f;
+						if (px !== null) sum += Math.sqrt((x - px) * (x - px) + (y - py) * (y - py));
+						px = x; py = y;
+					}
+					return Math.ceil(sum) + 4;
+				};
+				gsap.fromTo(path, { strokeDasharray: lineLen, strokeDashoffset: lineLen }, {
 					strokeDashoffset: 0, ease: 'none',
-					scrollTrigger: { trigger: sec, start: 'top 80%', end: 'bottom 40%', scrub: true }
+					scrollTrigger: { trigger: sec, start: 'top 80%', end: 'center 50%', scrub: true, invalidateOnRefresh: true }
 				});
 			}
 			/* 지표 : 줄마다 숫자가 차오르고 아래 선이 그어짐 */
@@ -652,57 +618,60 @@
 	};
 
 	if (mm && space) {
-		mm.add('(min-width: 1025px)', function () {
-			space.classList.add('is-hpin');
-			dragOff = true;
-			slider.scrollLeft = 0;
-			var dist = function () { return Math.max(0, track.scrollWidth - window.innerWidth); };
-
-			var hTween = gsap.fromTo(track, { x: 0 }, {
-				x: function () { return -dist(); },
-				ease: 'none',
-				scrollTrigger: {
-					trigger: space, start: 'top top',
-					end: function () { return '+=' + Math.round(dist() * 1.4 + window.innerHeight * 0.3); },
-					pin: true, scrub: 1, invalidateOnRefresh: true,
-					onUpdate: function (self) { if (bar) bar.style.width = (25 + self.progress * 75) + '%'; syncSpaceCtrl(); },
-					onRefresh: syncSpaceCtrl
-				}
-			});
-			spaceST = hTween.scrollTrigger;
-			syncSpaceCtrl();
-			spaceItems.forEach(function (li) {
-				var img = $('img', li);
-				gsap.fromTo(img, { xPercent: -6, scale: 1.16 }, {
-					xPercent: 6, scale: 1.16, ease: 'none',
-					scrollTrigger: { trigger: li, containerAnimation: hTween, start: 'left right', end: 'right left', scrub: true }
-				});
-			});
-			gsap.fromTo(spaceItems, { y: 80, autoAlpha: 0 }, {
-				y: 0, autoAlpha: 1, duration: 1.2, ease: 'power3.out', stagger: 0.1,
-				scrollTrigger: { trigger: space, start: 'top 70%', once: true }
-			});
-
-			return function () { space.classList.remove('is-hpin'); dragOff = false; spaceST = null; if (bar) bar.style.width = ''; };
-		});
-
-		mm.add('(max-width: 1024px)', function () {
-			gsap.fromTo(spaceItems, { x: 80, autoAlpha: 0 }, {
+		/* PC 도 가로 고정 스크롤 대신 드래그·버튼 슬라이더 (휠은 페이지 스크롤 그대로) */
+		mm.add('(min-width: 1px)', function () {
+			/* li 가 아닌 안쪽 요소를 움직임 (li 를 옮기면 스냅 위치가 같이 밀려 첫 화면이 80px 틀어짐) */
+			gsap.fromTo($$('.kb-space-track li > *'), { x: 80, autoAlpha: 0 }, {
 				x: 0, autoAlpha: 1, duration: 1.1, ease: 'power3.out', stagger: 0.1,
 				scrollTrigger: { trigger: slider, start: 'top 85%', once: true }
 			});
 		});
 	}
 
-	/* 태블릿·모바일(또는 GSAP 없음) : 스와이프/드래그 슬라이더 */
+	/* 스와이프/드래그 슬라이더 (전 해상도) */
 	if (slider) {
 		var prevBtn = $('.kb-space-prev');
 		var nextBtn = $('.kb-space-next');
 		var count = spaceItems.length;
+		var spaceTotal = $('.kb-space-total');
+		if (spaceTotal) spaceTotal.textContent = pad(count);
 		var maxScroll = function () { return Math.max(0, slider.scrollWidth - slider.clientWidth); };
+		/* 사진 폭이 제각각이라 끝쪽 몇 장은 화면에 같이 들어와 시작점까지 갈 수 없음(maxScroll 에 걸림)
+		   → 멈춤 위치 후보 = 사진 왼쪽 끝을 왼쪽에 맞춘 위치 + 사진 오른쪽 끝을 오른쪽(마지막 화면 기준)에 맞춘 위치
+		   → 그중 균등 간격에 가장 가까운 장수(count)만큼 골라 01~마지막까지 한 장씩 멈춤
+		     (항상 어떤 사진의 가장자리에 맞춰 멈추므로 사진 중간에서 어색하게 걸리지 않음) */
 		var stops = function () {
 			var base = spaceItems[0].offsetLeft, max = maxScroll();
-			return spaceItems.map(function (li) { return Math.min(li.offsetLeft - base, max); });
+			var L = spaceItems.map(function (li) { return li.offsetLeft - base; });
+			var reach = L.filter(function (p) { return p < max - 2; }).length;
+			if (reach >= count - 1) return L.map(function (p) { return Math.min(p, max); });
+			/* 마지막 화면에서 마지막 사진 오른쪽 끝 = 오른쪽 기준선 */
+			var off = L[count - 1] + spaceItems[count - 1].offsetWidth - max;
+			var cand = [0, max].concat(L.slice(0, reach), spaceItems.map(function (li, i) { return L[i] + li.offsetWidth - off; }))
+				.filter(function (p) { return p >= 0 && p <= max; })
+				.map(Math.round).sort(function (a, b) { return a - b; });
+			var c = [];
+			cand.forEach(function (p) { if (!c.length || p - c[c.length - 1] > 2) c.push(p); });
+			c[c.length - 1] = max;
+			var n = c.length;
+			if (n < count) return L.map(function (p, i) { return Math.round(max * i / (count - 1)); });
+			/* DP : 첫 칸 0, 끝 칸 max 고정, 순서대로 count 개를 골라 균등 목표와의 거리 합이 최소가 되게 */
+			var cost = [], from = [], k, i, q;
+			for (k = 0; k < count; k++) { cost.push([]); from.push([]); }
+			for (i = 0; i < n; i++) cost[0][i] = i === 0 ? 0 : Infinity;
+			for (k = 1; k < count; k++) {
+				var t = max * k / (count - 1);
+				for (i = 0; i < n; i++) {
+					cost[k][i] = Infinity;
+					for (q = 0; q < i; q++) {
+						var v = cost[k - 1][q] + Math.abs(c[i] - t);
+						if (v < cost[k][i]) { cost[k][i] = v; from[k][i] = q; }
+					}
+				}
+			}
+			var out = [], at = n - 1;
+			for (k = count - 1; k >= 0; k--) { out.unshift(c[at]); at = from[k][at]; }
+			return out;
 		};
 		var nearest = function () {
 			var arr = stops(), x = slider.scrollLeft, best = 0;
@@ -740,7 +709,20 @@
 			var arr = stops();
 			slider.scrollTo({ left: arr[Math.max(0, Math.min(count - 1, n))], behavior: 'smooth' });
 		};
+		/* 중간 위치는 li 시작점이 아니라 CSS 스냅이 끌어당기므로 스냅은 끄고 JS 로 멈춤 */
+		slider.style.scrollSnapType = 'none';
+		/* 트랙패드·shift+휠 등 네이티브 가로 스크롤이 멈추면 가장 가까운 위치로 맞춤 */
+		var settleT = null;
+		var settle = function () {
+			clearTimeout(settleT);
+			settleT = setTimeout(function () {
+				if (down || slider.classList.contains('is-drag')) return;
+				var u = positions(), k = nearestPos();
+				if (Math.abs(slider.scrollLeft - u[k]) > 1) goPos(k);
+			}, 140);
+		};
 		slider.addEventListener('scroll', update, { passive: true });
+		slider.addEventListener('scroll', settle, { passive: true });
 		window.addEventListener('resize', update);
 		window.addEventListener('load', update);
 		update();
@@ -910,7 +892,6 @@
 			if (y > 200 && y > lastY + 4) header.classList.add('is-hide');
 			else if (y < lastY - 4 || y <= 200) header.classList.remove('is-hide');
 		}
-		if (quick) quick.classList.toggle('is-show', y > window.innerHeight * 0.5);
 		lastY = y;
 	};
 	window.addEventListener('scroll', onScroll, { passive: true });
@@ -968,6 +949,15 @@
 		window.addEventListener('resize', function () { if (window.innerWidth > 1024 && mmenu.classList.contains('is-open')) setMenu(false); });
 	}
 
+	/* 퀵메뉴 : 처음부터 펼침 → X 로 접기(버튼이 돌며 K 로고로) → 로고로 다시 펼치기 */
+	var quickToggle = $('.kb-quick-toggle');
+	if (quick && quickToggle) quickToggle.addEventListener('click', function () {
+		var fold = !quick.classList.contains('is-fold');
+		quick.classList.toggle('is-fold', fold);
+		quickToggle.setAttribute('aria-expanded', fold ? 'false' : 'true');
+		quickToggle.setAttribute('aria-label', fold ? '빠른 메뉴 열기' : '빠른 메뉴 닫기');
+	});
+
 	var topBtn = $('.kb-quick-top');
 	if (topBtn) topBtn.addEventListener('click', function () {
 		if (lenis) lenis.scrollTo(0, { duration: 1.4 });
@@ -983,7 +973,17 @@
 		   GSAP 3.12.x 는 matchMedia 구간이 바뀌는 refresh 도중, 이미 지나간 hero pin(pinSpacing:false)을
 		   이동된 상태 그대로 재서 시작 위치가 틀어짐 → 구간이 바뀐 refresh 직후 한 번 더 refresh */
 		var bpKey = function () { var w = window.innerWidth; return (w > 1024 ? 'a' : '') + (w > 768 ? 'b' : '') + (w > 550 ? 'c' : ''); };
-		var lastBp = bpKey(), bpFix = false;
+		var lastBp = bpKey(), bpFix = false, rzBp = lastBp;
+		/* 구간이 바뀌는 리사이즈 : 기본 refresh(지연 실행)를 기다리면 한 프레임 동안 pin 여백 없이 그려져 아래 섹션이 튐
+		   → ResizeObserver(레이아웃 직후·화면에 그리기 전 실행)에서 바로 refresh */
+		var onBpResize = function () {
+			var k = bpKey();
+			if (k === rzBp) return;
+			rzBp = k;
+			ScrollTrigger.refresh();
+		};
+		if (window.ResizeObserver) new ResizeObserver(onBpResize).observe(document.documentElement);
+		window.addEventListener('resize', onBpResize);
 		ScrollTrigger.addEventListener('refresh', function () {
 			var k = bpKey();
 			if (bpFix) { bpFix = false; lastBp = k; return; }

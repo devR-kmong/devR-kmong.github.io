@@ -526,7 +526,7 @@
 
 .kb-hero-side {
 	position: absolute;
-	right: 50rem;
+	right: 140rem; /* 처음부터 보이는 퀵메뉴와 겹치지 않게 */
 	top: 50%;
 	z-index: 4;
 	writing-mode: vertical-rl;
@@ -650,18 +650,18 @@
 	fill: var(--kb-champagne);
 }
 
-.kb-about-badge-txt {
+/* 가운데 KIMBELLE 의 K 로고 */
+.kb-about-badge-k {
 	position: relative;
-	font-family: var(--kb-serif-en);
-	font-size: 21rem;
-	line-height: 1.05;
-	text-align: center;
-	color: #fff;
+	display: block;
+	width: 52rem;
 }
 
-.kb-about-badge-txt em {
-	font-style: italic;
-	color: var(--kb-champagne);
+.kb-about-badge-k img {
+	display: block;
+	width: 100%;
+	height: auto;
+	filter: brightness(0) invert(1);
 }
 
 @keyframes kbSpin {
@@ -763,6 +763,16 @@
 	color: rgba(255, 255, 255, 0.6);
 }
 
+.kb-sig-stage {
+	width: 100%;
+}
+
+@media (min-width: 1025px) {
+	.kb-sig-visual {
+		max-width: calc((100vh - 300px) * 0.78125);
+	}
+}
+
 .kb-sig-body {
 	display: grid;
 	grid-template-columns: 500rem 1fr;
@@ -780,7 +790,7 @@
 	overflow: hidden;
 	width: 100%;
 	aspect-ratio: 500 / 640;
-	border-radius: 250rem 250rem 10rem 10rem;
+	border-radius: 20rem; /* 위 ABOUT 의 아치형과 다른 틀 */
 	background: rgba(255, 255, 255, 0.05);
 }
 
@@ -789,7 +799,7 @@
 	position: absolute;
 	inset: 14rem;
 	border: 1px solid rgba(230, 211, 179, 0.35);
-	border-radius: 236rem 236rem 4rem 4rem;
+	border-radius: 10rem;
 	pointer-events: none;
 }
 
@@ -1052,6 +1062,11 @@
 	transition: scale 1.4s var(--kb-ease);
 }
 
+/* 01 전문의 사진 : 얼굴이 잘리지 않게 위쪽 기준 */
+.kb-why-item:first-child .kb-why-img>img:first-child {
+	object-position: 50% 12%;
+}
+
 .kb-why-img::before {
 	content: '';
 	position: absolute;
@@ -1267,6 +1282,14 @@
 	cursor: grab;
 }
 
+/* common.css 의 .article { display:flex; align-items:center } 때문에 슬라이더가 사진 전체 길이만큼 늘어나 가운데 정렬됨
+   → 스크롤할 폭이 0 이 되어 드래그가 안 되고, PC 에서는 1번 사진이 화면 왼쪽 밖으로 밀려 잘림. 화면 폭에 고정 */
+.kb-space > .kb-space-slider {
+	align-self: stretch;
+	width: 100%;
+	min-width: 0;
+}
+
 .kb-space-slider::-webkit-scrollbar {
 	display: none;
 }
@@ -1348,29 +1371,30 @@
 	transition: width 0.25s linear;
 }
 
-/* 태블릿·모바일 슬라이더 : 사진 원본 비율 그대로(세로 사진 안 잘림) + 화면보다 넓은 사진만 너비 제한 + 한 장씩 멈춤 */
+/* 슬라이더 (전 해상도) : 드래그·버튼으로 한 장씩 멈춤 */
+.kb-space-slider {
+	scroll-snap-type: x mandatory;
+	scroll-padding: 0 calc((100vw - 1400rem) / 2);
+	overscroll-behavior-x: contain;
+	-webkit-overflow-scrolling: touch;
+	-webkit-user-select: none;
+	user-select: none;
+	touch-action: pan-y;
+}
+
+.kb-space-slider.is-drag {
+	scroll-snap-type: none;
+}
+
+.kb-space-track li {
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+}
+
+/* 태블릿·모바일 : 사진 원본 비율 그대로(세로 사진 안 잘림) + 화면보다 넓은 사진만 너비 제한 */
 @media (max-width: 1024px) {
-	.kb-space-slider {
-		scroll-snap-type: x mandatory;
-		scroll-padding: 0 5vw;
-		overscroll-behavior-x: contain;
-		-webkit-overflow-scrolling: touch;
-	}
-
-	.kb-space-slider.is-drag {
-		scroll-snap-type: none;
-	}
-
-	.kb-space-slider {
-		-webkit-user-select: none;
-		user-select: none;
-		touch-action: pan-y;
-	}
-
 	.kb-space-track li {
 		max-width: 70vw;
-		scroll-snap-align: start;
-		scroll-snap-stop: always;
 	}
 
 	.kb-space-track img {
@@ -1544,131 +1568,7 @@
 
 
 
-/* ---------- 03. COUNT : 전국에서 찾아오는 병원 ---------- */
-.kb-count {
-	position: relative;
-	overflow: hidden;
-	padding: 170rem 0 !important;
-	background: #fff;
-	text-align: center;
-}
-
-.kb-count .article-wrapper {
-	position: relative;
-	z-index: 2;
-}
-
-.kb-count-glow {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: 1100rem;
-	height: 1100rem;
-	margin: -550rem 0 0 -550rem;
-	border-radius: 50%;
-	background: radial-gradient(closest-side, rgba(230, 211, 179, 0.55), rgba(230, 211, 179, 0.18) 55%, rgba(230, 211, 179, 0));
-	pointer-events: none;
-}
-
-.kb-count-rings {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: 1000rem;
-	height: 1000rem;
-	margin: -500rem 0 0 -500rem;
-	overflow: visible;
-	pointer-events: none;
-}
-
-.kb-count-rings circle {
-	fill: none;
-	stroke: rgba(181, 148, 106, 0.32);
-	stroke-width: 1;
-	vector-effect: non-scaling-stroke;
-}
-
-.kb-count-rings circle:nth-child(2) {
-	stroke-dasharray: 2 7;
-	stroke: rgba(181, 148, 106, 0.4);
-}
-
-.kb-count-rings circle:nth-child(3) {
-	stroke: color-mix(in srgb, var(--main-color) 10%, transparent);
-}
-
-.kb-label--center::after {
-	content: '';
-	width: 40rem;
-	height: 1px;
-	background: currentColor;
-}
-
-.kb-count .kb-title {
-	margin-top: 24rem;
-}
-
-.kb-count-num {
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-	gap: 14rem;
-	margin-top: 40rem;
-	color: var(--main-color);
-}
-
-.kb-odo {
-	display: inline-flex;
-	font-family: var(--kb-serif-en);
-	font-size: 230rem;
-	font-weight: 300;
-	line-height: 1;
-	letter-spacing: -0.03em;
-	font-variant-numeric: lining-nums tabular-nums;
-}
-
-.kb-odo-d {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	height: 1em;
-}
-
-.kb-odo-strip {
-	display: flex;
-	flex-direction: column;
-}
-
-.kb-odo-strip span {
-	display: block;
-	height: 1em;
-	line-height: 1;
-}
-
-.kb-odo-c {
-	display: inline-block;
-}
-
-.kb-count-num em {
-	margin-bottom: 0.32em;
-	font-family: var(--kb-serif-kr);
-	font-style: normal;
-	font-size: 48rem;
-	font-weight: 400;
-}
-
-.kb-count-note {
-	margin-top: 34rem;
-	font-size: 14rem;
-	letter-spacing: -0.01em;
-	color: #a39a9e;
-}
-
-html.kb-motion .kb-count-num {
-	visibility: hidden;
-}
-
-/* ---------- 03. NUMBERS : 전국에서 찾아오는 병원 ---------- */
+/* ---------- 03. NUMBERS : 2% · 10년 · 650,000명 ---------- */
 .kb-num {
 	position: relative;
 	overflow: hidden;
@@ -1873,6 +1773,10 @@ html.kb-motion .kb-count-num {
 		padding: 0 5vw;
 	}
 
+	.kb-space-slider {
+		scroll-padding: 0 5vw;
+	}
+
 	.kb-loc-body {
 		border-radius: 0 !important;
 	}
@@ -2016,6 +1920,8 @@ html.kb-motion .kb-count-num {
 
 	.kb-hero-ctrl {
 		bottom: 210rem;
+		justify-content: flex-start; /* 오른쪽 퀵메뉴와 겹치지 않게 일시정지 버튼을 막대 바로 옆으로 */
+		gap: 50rem;
 	}
 
 	.kb-hero-bars {
@@ -2103,8 +2009,8 @@ html.kb-motion .kb-count-num {
 		inset: 12rem;
 	}
 
-	.kb-about-badge-txt {
-		font-size: 32rem;
+	.kb-about-badge-k {
+		width: 76rem;
 	}
 
 	.kb-about-title {
@@ -2215,49 +2121,6 @@ html.kb-motion .kb-count-num {
 
 	.kb-sig-detail .kb-more {
 		margin-bottom: 60rem;
-	}
-
-	/* count */
-	.kb-count {
-		padding: 90px 0 !important;
-	}
-
-	.kb-count-glow {
-		width: 1300rem;
-		height: 1300rem;
-		margin: -650rem 0 0 -650rem;
-	}
-
-	.kb-count-rings {
-		width: 1100rem;
-		height: 1100rem;
-		margin: -550rem 0 0 -550rem;
-	}
-
-	.kb-label--center::after {
-		width: 60rem;
-	}
-
-	.kb-count .kb-title {
-		margin-top: 30rem;
-	}
-
-	.kb-count-num {
-		gap: 10rem;
-		margin-top: 50rem;
-	}
-
-	.kb-odo {
-		font-size: 200rem;
-	}
-
-	.kb-count-num em {
-		font-size: 60rem;
-	}
-
-	.kb-count-note {
-		margin-top: 44rem;
-		font-size: 28rem;
 	}
 
 	/* numbers */
@@ -2625,32 +2488,6 @@ html.kb-motion .kb-about-arch {
 	cursor: pointer;
 }
 
-/* space : 데스크톱 가로 스크롤 고정 모드 */
-.kb-space.is-hpin {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	min-height: 100vh;
-	padding: 70rem 0 !important;
-}
-
-.kb-space.is-hpin .kb-space-slider {
-	overflow: visible;
-	cursor: default;
-}
-
-.kb-space.is-hpin .kb-space-track {
-	will-change: transform;
-}
-
-.kb-space.is-hpin .kb-space-track figure {
-	height: clamp(360px, 56vh, 640px);
-}
-
-.kb-space.is-hpin .kb-space-track img {
-	height: 100%;
-}
-
 .kb-space-track figure {
 	position: relative;
 }
@@ -2746,7 +2583,7 @@ html.kb-motion .kb-sig-item,
 html.kb-motion .kb-num-list li,
 html.kb-motion .kb-num-card,
 html.kb-motion .kb-why-txt,
-html.kb-motion .kb-space-track li,
+html.kb-motion .kb-space-track li > *,
 html.kb-motion .kb-loc-info,
 html.kb-motion .kb-loc-logo,
 html.kb-motion .kb-loc-row,
@@ -2763,7 +2600,7 @@ html.kb-motion .kb-num-list li {
 
 @media (min-width: 1025px) {
 	html.kb-motion .kb-sig-arch {
-		clip-path: inset(100% 0 0 0 round 250rem 250rem 10rem 10rem);
+		clip-path: inset(100% 0 0 0 round 20rem);
 	}
 }
 
@@ -2777,8 +2614,18 @@ html.kb-motion .kb-sig-arch img {
 	transition: none !important;
 }
 
-.kb-space>.kb-space-slider {
-	align-self: stretch;
-	width: 100%;
-	min-width: 0;
+/* 높이가 낮은 화면(노트북 등) : 시그니처 제목+목록이 한 화면에 들어오도록 간격 축소 (파일 끝에 두어 위 규칙보다 우선) */
+@media (min-width: 1025px) and (max-height: 900px) {
+	.kb-sig-head {
+		margin-bottom: 30px;
+	}
+
+	.kb-sig-row {
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+	.kb-sig-detail-in {
+		gap: 14px;
+	}
 }
